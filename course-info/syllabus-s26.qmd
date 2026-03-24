@@ -355,7 +355,7 @@ activities, lab assignments, challenges, review questions, and selected solution
 also contain detailed weekly schedules throughout the term. You are responsible for
 checking the Canvas page on a *regular* basis and making sure you see Canvas Announcements.
 
-I will also be posting material on [this website](https://manncz.github.io/stat-331-s26/) for easy access to materials. Please note that **this website does not include deadlines** and links to all material will additionally be posted to Canvas. Canvas will always contain the most updated information about course deadlines and details, so always defer to these. 
+I will also be posting material on [this website](https://manncz.github.io/stat331-calpoly-s26/) for easy access to materials. Please note that **this website does not include deadlines** and links to all material will additionally be posted to Canvas. Canvas will always contain the most updated information about course deadlines and details, so always defer to these. 
 
 **Textbook**
 

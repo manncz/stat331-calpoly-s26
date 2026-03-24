@@ -263,7 +263,7 @@
 <li class="fragment">💬 Discord
 <ul>
 <li class="fragment">any and all questions!!</li>
-<li class="fragment">you will join and introduce yourself before Wednesday</li>
+<li class="fragment">you will join and introduce yourself by Wednesday</li>
 </ul></li>
 <li class="fragment">🏢 office hours
 <ul>
@@ -287,7 +287,7 @@
 <li class="fragment">free online book by major R players</li>
 <li class="fragment">supplemented with videos &amp; tutorials</li>
 </ul></li>
-<li class="fragment">🖥️ <a href="https://manncz.github.io/stat-331-s25/">materials website</a>
+<li class="fragment">🖥️ <a href="https://manncz.github.io/stat331-calpoly-s26/">materials website</a>
 <ul>
 <li class="fragment">slides, readings, notes, labs, and practice activities are organized</li>
 <li class="fragment">this is for convenience, but everything will also be linked in Canvas</li>
@@ -316,21 +316,14 @@
 </ul></li>
 </ul>
 </div>
-<div class="fragment">
-<div class="callout callout-tip callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Work with other’s!</strong></p>
-</div>
-<div class="callout-content">
-<p>You should work with other’s on all assignments! The final work you submit for a Lab should be your own.</p>
-</div>
-</div>
-</div>
-</div>
+<!--. . .
+
+:::callout-tip
+# Work with other's!
+
+You should work with other's on all assignments! The final work you submit for a Lab should be your own.
+:::
+-->
 </section>
 <section id="assessments---evaluative" class="slide level2">
 <h2>Assessments - Evaluative</h2>
@@ -384,6 +377,9 @@
 <li class="fragment">email me <em>before</em> the deadline for a 24 hour extention</li>
 </ul>
 <p><strong>Attendance</strong></p>
+<ul>
+<li class="fragment">you will learn more if you work with your group!</li>
+</ul>
 <p><strong>Accessibility and Accomodations</strong></p>
 <ul>
 <li class="fragment">let me know what I can do better</li>
@@ -397,7 +393,7 @@
 <ul>
 <li class="fragment">let’s be <strong>proactive</strong> to prevent situations where you are overwhelmed!</li>
 <li class="fragment">use generative AI as a tutor, not a substitute for your own work</li>
-<li class="fragment"><strong>cite outside resources!</strong></li>
+<li class="fragment"><strong>cite outside resources!</strong> including AI</li>
 <li class="fragment">please review the <a href="../../course-info/syllabus-s26.html">syllabus</a> carefully</li>
 </ul>
 </div>
@@ -412,7 +408,10 @@
 <li class="fragment">this includes working with others!</li>
 </ul></li>
 <li class="fragment">engage with what we are all doing together during class</li>
-<li class="fragment">work towards independent learning</li>
+<li class="fragment">work towards independent learning
+<ul>
+<li class="fragment">productive struggle</li>
+</ul></li>
 </ul>
 </div>
 </section>
@@ -755,19 +754,20 @@
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Open our “starter” notes to follow along</strong></p>
+<p><strong>Open our handout</strong></p>
 </div>
 <div class="callout-content">
 <ul>
-<li><p>If on your computer: Download and save <a href="../../student-versions/notes/w1-notes.qmd">w1-notes.qmd</a> on your computer and open it in RStudio.</p></li>
+<li><p>If on your computer: Download and save <a href="../../student-versions/handouts/w1.1-handout.qmd">w1.1-handout.qmd</a> on your computer and open it in RStudio.</p></li>
 <li><p>If on Posit Cloud: Open “w1-notes.qmd”</p></li>
+<li><p>When you see 🧩 in the slides, there is something to practice in the handout</p></li>
 </ul>
 </div>
 </div>
 </div>
 </section>
 <section id="how-do-i-run-code-in-r" class="slide level2">
-<h2>How do I run code in R?</h2>
+<h2>How do I run code in R? 🧩</h2>
 <div>
 <ul>
 <li class="fragment">You can run any lines of code directly in the <em>Console</em>
@@ -784,7 +784,7 @@
 </div>
 </section>
 <section id="packages-1" class="slide level2">
-<h2>Packages</h2>
+<h2>Packages 🧩</h2>
 <p>To <strong>install</strong> a package use:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tibble"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -816,33 +816,6 @@
 </div>
 </div>
 </div>
-</div>
-</section>
-<section id="data-types" class="slide level2">
-<h2>Data Types</h2>
-<ul>
-<li><p>A <strong>value</strong> is a basic unit of stuff that a program works with.</p></li>
-<li><p>Values have <strong>types</strong>:</p></li>
-</ul>
-<div class="fragment">
-<ol type="1">
-<li><strong>logical / boolean</strong>: FALSE/TRUE or 0/1 values.</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="2" type="1">
-<li><strong>integer</strong>: whole numbers.</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="3" type="1">
-<li><strong>double / float / numeric</strong>: decimal numbers.</li>
-</ol>
-</div>
-<div class="fragment">
-<ol start="4" type="1">
-<li><strong>character / string</strong> - holds text, usually enclosed in quotes.</li>
-</ol>
 </div>
 </section>
 <section id="variables" class="slide level2">
@@ -886,8 +859,35 @@
 </div>
 </div>
 </section>
+<section id="data-types" class="slide level2">
+<h2>Data Types 🧩</h2>
+<ul>
+<li><p>A <strong>value</strong> is a basic unit of stuff that a program works with.</p></li>
+<li><p>Values have <strong>types</strong>:</p></li>
+</ul>
+<div class="fragment">
+<ol type="1">
+<li><strong>logical / boolean</strong>: FALSE/TRUE or 0/1 values.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="2" type="1">
+<li><strong>integer</strong>: whole numbers.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="3" type="1">
+<li><strong>double / float / numeric</strong>: decimal numbers.</li>
+</ol>
+</div>
+<div class="fragment">
+<ol start="4" type="1">
+<li><strong>character / string</strong> - holds text, usually enclosed in quotes.</li>
+</ol>
+</div>
+</section>
 <section id="data-structures" class="slide level2">
-<h2>Data Structures</h2>
+<h2>Data Structures 🧩</h2>
 <p><em>Homogeneous</em>: every element has the same data type.</p>
 <ul>
 <li><p><strong>Vector</strong>: a one-dimensional column of homogeneous data.</p></li>
@@ -902,7 +902,7 @@
 </div>
 </section>
 <section id="indexing" class="slide level2">
-<h2>Indexing</h2>
+<h2>Indexing 🧩</h2>
 <p>We use <strong>square brackets</strong> (<code>[]</code>) to access elements within data structures.</p>
 <ul>
 <li>In R, we start indexing from 1.</li>
@@ -948,7 +948,7 @@
 </div>
 </section>
 <section id="logic" class="slide level2">
-<h2>Logic</h2>
+<h2>Logic 🧩</h2>
 <p>We can combine logical statements using and, or, and not.</p>
 <ul>
 <li><p>(X AND Y) requires that both X and Y are true.</p></li>
@@ -1041,120 +1041,47 @@
 </div>
 </div>
 </div>
+</section>
+<section id="logic-indexing-and-vectorization" class="slide level2">
+<h2>Logic, Indexing, and Vectorization 🧩</h2>
+<div>
+<ul>
+<li class="fragment"><p>We can do some nifty things putting logic, indexing and vectorization together!</p></li>
+<li class="fragment"><p>Booleans can be used for indexing, where <code>TRUE</code> elements are kept</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<span id="cb20-2"><a></a></span>
+<span id="cb20-3"><a></a>vec <span class="sc">&gt;</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] FALSE FALSE  TRUE</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>vec[vec <span class="sc">&gt;</span> <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 3</code></pre>
+</div>
+</div>
+<ul>
+<li class="fragment"><code>TRUE</code> and <code>FALSE</code> booleans are treated as 1 and 0, respectively
+<ul>
+<li class="fragment">can be used to find counts or proportions that meet given criteria</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">sum</span>(vec <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+</div>
+</div>
 </section></section>
 <section id="troubleshooting-errors" class="title-slide slide level1 center">
 <h1>Troubleshooting Errors!</h1>
 
 </section>
 
-<section>
-<section id="syntax-errors" class="title-slide slide level1 center">
-<h1>Syntax Errors</h1>
-
-</section>
-<section id="did-you-leave-off-a-parenthesis" class="slide level2">
-<h2>Did you leave off a parenthesis?</h2>
-<p>seq<span style="background-color:#ffff7f">(</span>from = 1, to = 10, by = 1</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in parse(text = input): &lt;text&gt;:2:0: unexpected end of input
-1: seq(from = 1, to = 10, by = 1
-   ^</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="did-you-leave-off-a-comma" class="slide level2">
-<h2>Did you leave off a comma?</h2>
-<p>seq(from = 1, to = 10 <span style="background-color:#ffff7f">by</span> = 1)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span> <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in parse(text = input): &lt;text&gt;:1:23: unexpected symbol
-1: seq(from = 1, to = 10 by
-                          ^</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="did-you-make-a-typo-are-you-using-the-right-names" class="slide level2">
-<h2>Did you make a typo? Are you using the right names?</h2>
-<p><span style="background-color:#ffff7f">sequence</span>(from = 1, to = 10, by = 1)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sequence</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `sequence.default()`:
-! argument "nvec" is missing, with no default</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
-</div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="object-type-errors" class="title-slide slide level1 center">
-<h1>Object Type Errors</h1>
-
-</section>
-<section id="are-you-using-the-right-input-that-the-function-expects" class="slide level2">
-<h2>Are you using the right <em>input</em> that the function expects?</h2>
-<p>sqrt(<span style="background-color:#ffff7f">‘1’</span>)</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">'1'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `sqrt()`:
-! non-numeric argument to mathematical function</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 1</code></pre>
-</div>
-</div>
-</div>
-</section>
-<section id="are-you-expecting-the-right-output-of-the-function" class="slide level2">
-<h2>Are you expecting the right <em>output</em> of the function?</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a>my_obj <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span>
-<span id="cb36-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb36-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">my_obj</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-error">
-<pre><code>Error in `my_obj()`:
-! could not find function "my_obj"</code></pre>
-</div>
-</div>
-<div class="fragment">
-<div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a>my_obj[<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-</div>
-</div>
-</section></section>
 <section>
 <section id="errors-warnings-messages" class="title-slide slide level1 center">
 <h1>Errors + Warnings + Messages</h1>
@@ -1168,7 +1095,7 @@
 <li>For example, you will often see:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: Matrix</code></pre>
 </div>
@@ -1185,9 +1112,9 @@
 <div class="fragment">
 <p><strong>Does this look right?</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
-<span id="cb42-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb42-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(my_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
+<span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(my_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
@@ -1195,7 +1122,7 @@
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a>my_new_vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>my_new_vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA</code></pre>
 </div>
@@ -1210,19 +1137,145 @@
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
-<span id="cb46-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> my_vec <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
+<span id="cb32-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> my_vec <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `my_vec + 1`:
 ! non-numeric argument to binary operator</code></pre>
 </div>
 </div>
 </div>
+</section>
+<section id="types-of-errors" class="slide level2">
+<h2>Types of Errors</h2>
+<div>
+<ul>
+<li class="fragment">syntax errors (aka typos)
+<ul>
+<li class="fragment">did you forget a parenthesis?</li>
+<li class="fragment">did you forget a comma?</li>
+<li class="fragment">are you using the right argument names? function names?</li>
+</ul></li>
+<li class="fragment">object type errors
+<ul>
+<li class="fragment">are you using the right type of input?</li>
+<li class="fragment">are you getting the type of output you expect?</li>
+</ul></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="syntax-errors" class="title-slide slide level1 center">
+<h1>Syntax Errors 🧩</h1>
+
+</section>
+<section id="did-you-leave-off-a-parenthesis" class="slide level2">
+<h2>Did you leave off a parenthesis?</h2>
+<p>seq<span style="background-color:#ffff7f">(</span>from = 1, to = 10, by = 1</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:2:0: unexpected end of input
+1: seq(from = 1, to = 10, by = 1
+   ^</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="did-you-leave-off-a-comma" class="slide level2">
+<h2>Did you leave off a comma?</h2>
+<p>seq(from = 1, to = 10 <span style="background-color:#ffff7f">by</span> = 1)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span> <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in parse(text = input): &lt;text&gt;:1:23: unexpected symbol
+1: seq(from = 1, to = 10 by
+                          ^</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="did-you-make-a-typo-are-you-using-the-right-names" class="slide level2">
+<h2>Did you make a typo? Are you using the right names?</h2>
+<p><span style="background-color:#ffff7f">sequence</span>(from = 1, to = 10, by = 1)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sequence</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `sequence.default()`:
+! argument "nvec" is missing, with no default</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="object-type-errors" class="title-slide slide level1 center">
+<h1>Object Type Errors</h1>
+
+</section>
+<section id="are-you-using-the-right-input-that-the-function-expects" class="slide level2">
+<h2>Are you using the right <em>input</em> that the function expects?</h2>
+<p>sqrt(<span style="background-color:#ffff7f">‘1’</span>)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">'1'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `sqrt()`:
+! non-numeric argument to mathematical function</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+</div>
+</div>
+</section>
+<section id="are-you-expecting-the-right-output-of-the-function" class="slide level2">
+<h2>Are you expecting the right <em>output</em> of the function?</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a aria-hidden="true" tabindex="-1"></a>my_obj <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span>
+<span id="cb50-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">my_obj</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>Error in `my_obj()`:
+! could not find function "my_obj"</code></pre>
+</div>
+</div>
+<div class="fragment">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-hidden="true" tabindex="-1"></a>my_obj[<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</div>
 </section></section>
 <section>
 <section id="r-what-are-you-trying-to-tell-me" class="title-slide slide level1 center">
-<h1><code>R</code> what are you trying to tell me??</h1>
+<h1><code>R</code> what are you trying to tell me?? 🧩</h1>
 
 </section>
 <section id="r-says" class="slide level2">
@@ -1253,9 +1306,9 @@
 <p>You haven’t run the code to create <code>some_obj</code> OR you have a typo in the name!</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a aria-hidden="true" tabindex="-1"></a>some_ojb <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
-<span id="cb48-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(some_obj)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-hidden="true" tabindex="-1"></a>some_ojb <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb54-2"><a aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb54-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(some_obj)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `h()`:
 ! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found</code></pre>
@@ -1274,7 +1327,7 @@
 <p>Oops, you tried to use square brackets on a function</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a aria-hidden="true" tabindex="-1"></a>mean[<span class="dv">1</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a aria-hidden="true" tabindex="-1"></a>mean[<span class="dv">1</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `mean[1, 2]`:
 ! object of type 'closure' is not subsettable</code></pre>
@@ -1293,7 +1346,7 @@
 <p>You tried to do math on data that isn’t numeric.</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"a"</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"a"</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `"a" + 2`:
 ! non-numeric argument to binary operator</code></pre>
@@ -1304,7 +1357,7 @@
 <section id="what-if-none-of-these-solved-my-error" class="slide level2">
 <h2>What if none of these solved my error?</h2>
 <ul>
-<li><p>Look at the <strong>help file</strong> for the function!</p></li>
+<li><p>Look at the <strong>help file</strong> for the function! <code>?function</code></p></li>
 <li><p>Break what you are doing down into smaller pieces and look at whether or not each step gives you what you expect</p></li>
 <li><p>When all else fails, <strong>Google</strong> your error message.</p>
 <ul>
@@ -1316,7 +1369,7 @@
 <h2>Try it…</h2>
 <p><strong>What’s wrong here?</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>), <span class="at">num_row =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>), <span class="at">num_row =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `matrix()`:
 ! unused argument (num_row = 2)</code></pre>
@@ -1350,14 +1403,14 @@
 <section id="to-do" class="slide level2">
 <h2>To do…</h2>
 <ul>
-<li><strong>Read Chapter 1: Introduction</strong></li>
-<li><strong>Check-ins 1.1 - 1.4</strong>
+<li><strong>Reading &amp; review</strong></li>
+<li><strong>Course Setup Assignments</strong>
 <ul>
-<li>Due Wednesday before class</li>
+<li>Due <em>Wednesday</em> at 11:59pm</li>
 </ul></li>
 <li><strong>PA 1: Find the Mistakes</strong>
 <ul>
-<li>Due</li>
+<li>Due <em>Wednesday</em> at 11:59pm</li>
 </ul></li>
 </ul>
 

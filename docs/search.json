@@ -219,9 +219,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Statistical Computing in R",
+    "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -431,7 +431,7 @@
     "href": "slides/week-1/w1-intro-r.html#communication",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Communication",
-    "text": "Communication\n\n\n✉️ email\n\nwith your @calpoly.edu email address\nwith questions that relate to you as an individual\n\n💬 Discord\n\nany and all questions!!\nyou will join and introduce yourself before Wednesday\n\n🏢 office hours\n\ncome and discuss anything during my scheduled hours!\nreach out to schedule other times"
+    "text": "Communication\n\n\n✉️ email\n\nwith your @calpoly.edu email address\nwith questions that relate to you as an individual\n\n💬 Discord\n\nany and all questions!!\nyou will join and introduce yourself by Wednesday\n\n🏢 office hours\n\ncome and discuss anything during my scheduled hours!\nreach out to schedule other times"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#course-materials",
@@ -445,7 +445,7 @@
     "href": "slides/week-1/w1-intro-r.html#assessments---formative",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Assessments - Formative",
-    "text": "Assessments - Formative\n\n\nGroup Quizes (10%)\n\n“check” that you have a good understanding of previous week\nin-class on Mondays, on paper, with your group\nneed to be present, but one excused quiz a quarter\n\nPractice Activities (10%)\n\nfirst attempt at new skills\nget the hang of the week’s R skills\n\nLab Activities (20%)\n\n“homework”\n\n\n\n\n\n\n\n\n\n\nWork with other’s!\n\n\nYou should work with other’s on all assignments! The final work you submit for a Lab should be your own."
+    "text": "Assessments - Formative\n\n\nGroup Quizes (10%)\n\n“check” that you have a good understanding of previous week\nin-class on Mondays, on paper, with your group\nneed to be present, but one excused quiz a quarter\n\nPractice Activities (10%)\n\nfirst attempt at new skills\nget the hang of the week’s R skills\n\nLab Activities (20%)\n\n“homework”"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#assessments---evaluative",
@@ -473,21 +473,21 @@
     "href": "slides/week-1/w1-intro-r.html#course-policies",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Course Policies",
-    "text": "Course Policies\n\nLate Policy\n\n4 “deadline extensions”\nemail me before the deadline for a 24 hour extention\n\nAttendance\nAccessibility and Accomodations\n\nlet me know what I can do better\nemail me if you use the DRC"
+    "text": "Course Policies\n\nLate Policy\n\n4 “deadline extensions”\nemail me before the deadline for a 24 hour extention\n\nAttendance\n\nyou will learn more if you work with your group!\n\nAccessibility and Accomodations\n\nlet me know what I can do better\nemail me if you use the DRC"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#academic-integrity",
     "href": "slides/week-1/w1-intro-r.html#academic-integrity",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Academic Integrity",
-    "text": "Academic Integrity\n\n\nlet’s be proactive to prevent situations where you are overwhelmed!\nuse generative AI as a tutor, not a substitute for your own work\ncite outside resources!\nplease review the syllabus carefully"
+    "text": "Academic Integrity\n\n\nlet’s be proactive to prevent situations where you are overwhelmed!\nuse generative AI as a tutor, not a substitute for your own work\ncite outside resources! including AI\nplease review the syllabus carefully"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#my-expectations-for-you",
     "href": "slides/week-1/w1-intro-r.html#my-expectations-for-you",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "My expectations for you",
-    "text": "My expectations for you\n\n\nask lots of questions\ntake advantage of resources to help you learn\n\nthis includes working with others!\n\nengage with what we are all doing together during class\nwork towards independent learning"
+    "text": "My expectations for you\n\n\nask lots of questions\ntake advantage of resources to help you learn\n\nthis includes working with others!\n\nengage with what we are all doing together during class\nwork towards independent learning\n\nproductive struggle"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#my-expectations-for-me",
@@ -619,22 +619,15 @@
     "objectID": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
     "href": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "How do I run code in R?",
-    "text": "How do I run code in R?\n\n\nYou can run any lines of code directly in the Console\n\nBut then your code isn’t saved!\nThis is best for exporatory and one-off tasks\n\nWe primarily write and run code in R scripts or notebooks in Source\n\nThese are documents where you can organize and save code!\nMore on scripts vs. notebooks tomorrow"
+    "section": "How do I run code in R? 🧩",
+    "text": "How do I run code in R? 🧩\n\n\nYou can run any lines of code directly in the Console\n\nBut then your code isn’t saved!\nThis is best for exporatory and one-off tasks\n\nWe primarily write and run code in R scripts or notebooks in Source\n\nThese are documents where you can organize and save code!\nMore on scripts vs. notebooks tomorrow"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#packages-1",
     "href": "slides/week-1/w1-intro-r.html#packages-1",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Packages",
-    "text": "Packages\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
-  },
-  {
-    "objectID": "slides/week-1/w1-intro-r.html#data-types",
-    "href": "slides/week-1/w1-intro-r.html#data-types",
-    "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Data Types",
-    "text": "Data Types\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n\n\n\ninteger: whole numbers.\n\n\n\n\ndouble / float / numeric: decimal numbers.\n\n\n\n\ncharacter / string - holds text, usually enclosed in quotes."
+    "section": "Packages 🧩",
+    "text": "Packages 🧩\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#variables",
@@ -651,25 +644,32 @@
     "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\nJust pick one and stick with it!"
   },
   {
+    "objectID": "slides/week-1/w1-intro-r.html#data-types",
+    "href": "slides/week-1/w1-intro-r.html#data-types",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Data Types 🧩",
+    "text": "Data Types 🧩\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n\n\n\ninteger: whole numbers.\n\n\n\n\ndouble / float / numeric: decimal numbers.\n\n\n\n\ncharacter / string - holds text, usually enclosed in quotes."
+  },
+  {
     "objectID": "slides/week-1/w1-intro-r.html#data-structures",
     "href": "slides/week-1/w1-intro-r.html#data-structures",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Data Structures",
-    "text": "Data Structures\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
+    "section": "Data Structures 🧩",
+    "text": "Data Structures 🧩\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#indexing",
     "href": "slides/week-1/w1-intro-r.html#indexing",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Indexing",
-    "text": "Indexing\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
+    "section": "Indexing 🧩",
+    "text": "Indexing 🧩\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#logic",
     "href": "slides/week-1/w1-intro-r.html#logic",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Logic",
-    "text": "Logic\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
+    "section": "Logic 🧩",
+    "text": "Logic 🧩\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#vectorization",
@@ -684,6 +684,41 @@
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Vectorization",
     "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#logic-indexing-and-vectorization",
+    "href": "slides/week-1/w1-intro-r.html#logic-indexing-and-vectorization",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Logic, Indexing, and Vectorization 🧩",
+    "text": "Logic, Indexing, and Vectorization 🧩\n\n\nWe can do some nifty things putting logic, indexing and vectorization together!\nBooleans can be used for indexing, where TRUE elements are kept\n\n\nvec &lt;- c(1, 2, 3)\n\nvec &gt; 2\n\n[1] FALSE FALSE  TRUE\n\n\n\nvec[vec &gt; 2]\n\n[1] 3\n\n\n\nTRUE and FALSE booleans are treated as 1 and 0, respectively\n\ncan be used to find counts or proportions that meet given criteria\n\n\n\nsum(vec &gt; 2)\n\n[1] 1"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#messages",
+    "href": "slides/week-1/w1-intro-r.html#messages",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Messages",
+    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#warnings",
+    "href": "slides/week-1/w1-intro-r.html#warnings",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Warnings",
+    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n\n\n\nmy_new_vec\n\n[1] NA NA NA"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#errors",
+    "href": "slides/week-1/w1-intro-r.html#errors",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Errors",
+    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#types-of-errors",
+    "href": "slides/week-1/w1-intro-r.html#types-of-errors",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Types of Errors",
+    "text": "Types of Errors\n\n\nsyntax errors (aka typos)\n\ndid you forget a parenthesis?\ndid you forget a comma?\nare you using the right argument names? function names?\n\nobject type errors\n\nare you using the right type of input?\nare you getting the type of output you expect?"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-parenthesis",
@@ -721,27 +756,6 @@
     "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n\n\nmy_obj[5]\n\n[1] 5"
   },
   {
-    "objectID": "slides/week-1/w1-intro-r.html#messages",
-    "href": "slides/week-1/w1-intro-r.html#messages",
-    "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Messages",
-    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
-  },
-  {
-    "objectID": "slides/week-1/w1-intro-r.html#warnings",
-    "href": "slides/week-1/w1-intro-r.html#warnings",
-    "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Warnings",
-    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n\n\n\nmy_new_vec\n\n[1] NA NA NA"
-  },
-  {
-    "objectID": "slides/week-1/w1-intro-r.html#errors",
-    "href": "slides/week-1/w1-intro-r.html#errors",
-    "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Errors",
-    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
-  },
-  {
     "objectID": "slides/week-1/w1-intro-r.html#r-says",
     "href": "slides/week-1/w1-intro-r.html#r-says",
     "title": "Intro to STAT 331/531 + Intro to R",
@@ -774,7 +788,7 @@
     "href": "slides/week-1/w1-intro-r.html#what-if-none-of-these-solved-my-error",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "What if none of these solved my error?",
-    "text": "What if none of these solved my error?\n\nLook at the help file for the function!\nBreak what you are doing down into smaller pieces and look at whether or not each step gives you what you expect\nWhen all else fails, Google your error message.\n\nInclude the function you are using."
+    "text": "What if none of these solved my error?\n\nLook at the help file for the function! ?function\nBreak what you are doing down into smaller pieces and look at whether or not each step gives you what you expect\nWhen all else fails, Google your error message.\n\nInclude the function you are using."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#try-it",
@@ -795,6 +809,6 @@
     "href": "slides/week-1/w1-intro-r.html#to-do",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "To do…",
-    "text": "To do…\n\nRead Chapter 1: Introduction\nCheck-ins 1.1 - 1.4\n\nDue Wednesday before class\n\nPA 1: Find the Mistakes\n\nDue"
+    "text": "To do…\n\nReading & review\nCourse Setup Assignments\n\nDue Wednesday at 11:59pm\n\nPA 1: Find the Mistakes\n\nDue Wednesday at 11:59pm"
   }
 ]
