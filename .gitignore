@@ -1,0 +1,31 @@
+# R project files
+.Rproj.user
+.DS_Store
+*.Rproj
+*.Rhistory
+
+# Ignore htmls not part of actual website rendering
+labs/*/*.html
+practice-activities/*.html
+slides/*/*.html
+
+
+# Non-sharable info
+*/stud-info/*
+notes.md
+*_check.qmd
+*_check.html
+*_old.qmd
+*_old.html
+*schedule_s26.xlsx
+solutions/*
+exams/*
+project/*
+
+student-versions/setup/*
+
+/.quarto/
+
+# Large files
+*.docx
+labs/lab5/bCH_murder_data/*

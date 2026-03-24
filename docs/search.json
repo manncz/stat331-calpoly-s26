@@ -1,0 +1,800 @@
+[
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#thursday-april-3",
+    "href": "slides/week-1/w1-notebooks.html#thursday-april-3",
+    "title": "Quarto & Reproducibility",
+    "section": "Thursday, April 3",
+    "text": "Thursday, April 3\nToday we will…\n\nAnswer Clarifying Questions:\n\nSyllabus?\nChapter 1 Reading?\nPA 1: Find the Mistakes?\n\nNew Material\n\nReproducibility\nScripts + Notebooks\n\nLab 1: Introduction to Quarto"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#reproducibility",
+    "href": "slides/week-1/w1-notebooks.html#reproducibility",
+    "title": "Quarto & Reproducibility",
+    "section": "Reproducibility",
+    "text": "Reproducibility\n\n\nIn computing: analyses can be executed again with identical results (either by you or by someone else!)\nDiscussion: Why does it matter?\n\n\n\nAbstruse Goose"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#principles-of-reproducibility",
+    "href": "slides/week-1/w1-notebooks.html#principles-of-reproducibility",
+    "title": "Quarto & Reproducibility",
+    "section": "Principles of Reproducibility",
+    "text": "Principles of Reproducibility\nYou can to send your code to someone else, and they can jump in and start working right away.\nThis means:\n\n\nFiles are organized and well-named.\nReferences to data and code work for everyone.\nPackage dependency is clear.\nCode will run the same every time, even if data values change.\nAnalysis process is well-explained and easy to read."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#principles-of-reproducibility-1",
+    "href": "slides/week-1/w1-notebooks.html#principles-of-reproducibility-1",
+    "title": "Quarto & Reproducibility",
+    "section": "Principles of Reproducibility",
+    "text": "Principles of Reproducibility\nYou can to send your code to someone else, and they can jump in and start working right away.\nThis means:\n\nFiles are organized and well-named.\nReferences to data and code work for everyone.\nPackage dependency is clear.\nCode will run the same every time, even if data values change.\nAnalysis process is well-explained and easy to read."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#paths",
+    "href": "slides/week-1/w1-notebooks.html#paths",
+    "title": "Quarto & Reproducibility",
+    "section": "Paths",
+    "text": "Paths\n\nA path describes where a certain file or directory lives.\n\n\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\nThis file lives in my user files Users/…\n…on my account czmann/ …\n…in my Documents folder …\n…in a series of organized folders."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths",
+    "href": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths",
+    "title": "Quarto & Reproducibility",
+    "section": "Absolute vs. Relative File Paths",
+    "text": "Absolute vs. Relative File Paths\n\nabsolute file path: full path from the root directory on your computer\nrelative file path: path based on the relationship with a current working directory in terms of a hierarchichy of directories\n\n../ is the relative path to a parent directory\nexamples to folow!\n\n\n\n\n\n\n\n\n\nWarning\n\n\nAn absolute file path will only work on your computer!!\n\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\""
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths-1",
+    "href": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths-1",
+    "title": "Quarto & Reproducibility",
+    "section": "Absolute vs. Relative File Paths",
+    "text": "Absolute vs. Relative File Paths"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#working-directories-in-r",
+    "href": "slides/week-1/w1-notebooks.html#working-directories-in-r",
+    "title": "Quarto & Reproducibility",
+    "section": "Working Directories in R",
+    "text": "Working Directories in R\n\nYour working directory is the folder that R “thinks it lives” in at the moment.\n\nIf you import or reference files, R will look in the working directory by default\nIf you save things you have created, they save to your working directory by default.\n\n\n\n\ngetwd()\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nIf you are in practice of using setwd() to set a working directory in R FORGET THIS. We will be using other, better practice methods to set a working directory."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#reproducibility-pulling-it-all-together",
+    "href": "slides/week-1/w1-notebooks.html#reproducibility-pulling-it-all-together",
+    "title": "Quarto & Reproducibility",
+    "section": "Reproducibility: Pulling it all together",
+    "text": "Reproducibility: Pulling it all together\nRelative file paths allow someone else to run your code exactly (reproducibly!), as long as they\n\nhave everything organized the exact way that you do and\nthe same working directory\n\n\nEnter R Projects!"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects",
+    "href": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects",
+    "title": "Quarto & Reproducibility",
+    "section": "The Beauty of R Projects",
+    "text": "The Beauty of R Projects\n\nAn R Project is basically a “flag” planted in a certain directory.\n\n\n\nWhen you double click an .Rproj file, it:\n\n\n\n\nOpens RStudio\nSets the working directory to be wherever the .Rproj file lives.\nHas any files open or elements in your environment that you last saved.\nLinks to GitHub, if set up (more on that later!)"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects-1",
+    "href": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects-1",
+    "title": "Quarto & Reproducibility",
+    "section": "The Beauty of R Projects",
+    "text": "The Beauty of R Projects\n\n\nR Projects are great for reproducibility!\n\nYou can send anyone your folder with your .Rproj file and they will be able to run your code on their computer.\n\nR Projects are great for organization\n\nHaving a separate R project for every ..well.. project will keep your analyses separate and organized!\nWhenever you want to work on this class, double click the R Project you created to open everything up"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#scripts",
+    "href": "slides/week-1/w1-notebooks.html#scripts",
+    "title": "Quarto & Reproducibility",
+    "section": "Scripts",
+    "text": "Scripts\n\nScripts (File &gt; New File &gt; R Script) are files of code that are meant to be run on their own.\n\n\n\nScripts can be run in RStudio by clicking the Run button at the top of the editor window when the script is open.\nYou can also run code interactively in a script by:\n\nhighlighting lines of code and hitting run.\nplacing your cursor on a line of code and hitting run.\nplacing your cursor on a line of code and hitting ctrl + enter or command + enter."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#notebooks",
+    "href": "slides/week-1/w1-notebooks.html#notebooks",
+    "title": "Quarto & Reproducibility",
+    "section": "Notebooks",
+    "text": "Notebooks\nNotebooks are an implementation of literate programming.\n\nThey allow you to integrate code, output, text, images, etc. into a single document.\nE.g.,\n\nR Markdown notebook\nQuarto notebook\nJupyter notebook\n\n\nReproducibility!"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#what-is-markdown",
+    "href": "slides/week-1/w1-notebooks.html#what-is-markdown",
+    "title": "Quarto & Reproducibility",
+    "section": "What is Markdown?",
+    "text": "What is Markdown?\nMarkdown is a markup language.\n\nIt uses special symbols and formatting to make pretty documents.\nMarkdown files have the .md extension."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#what-is-quarto",
+    "href": "slides/week-1/w1-notebooks.html#what-is-quarto",
+    "title": "Quarto & Reproducibility",
+    "section": "What is Quarto?",
+    "text": "What is Quarto?\nQuarto uses regular Markdown, AND it can run and display R code.\n\n(Other languages, too!)\nQuarto files have the .qmd extension.\n\n\n\nQuarto is the next generation R Markdown"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto---rendering",
+    "href": "slides/week-1/w1-notebooks.html#quarto---rendering",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto - Rendering",
+    "text": "Quarto - Rendering\nTo take your .qmd file and make it look pretty, you have to render it."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#rendering-your-quarto-document",
+    "href": "slides/week-1/w1-notebooks.html#rendering-your-quarto-document",
+    "title": "Quarto & Reproducibility",
+    "section": "Rendering your Quarto Document",
+    "text": "Rendering your Quarto Document"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#rendering---what-happens",
+    "href": "slides/week-1/w1-notebooks.html#rendering---what-happens",
+    "title": "Quarto & Reproducibility",
+    "section": "Rendering - What happens?",
+    "text": "Rendering - What happens?\nWhen you render:\n\nYour file is saved.\nThe R code written in your .qmd file gets run in order.\n\nIt starts from scratch, even if you previously ran some of the code.\n\nA new file is created.\n\nIf your Quarto file is called “lab1.qmd”, then a file called “lab1.html” will be created.\nThis will be saved in the same folder as “lab1.qmd”."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#rendering---under-the-hood",
+    "href": "slides/week-1/w1-notebooks.html#rendering---under-the-hood",
+    "title": "Quarto & Reproducibility",
+    "section": "Rendering - Under the hood",
+    "text": "Rendering - Under the hood\nQuarto CLI (command line interface) orchestrates each step of rendering:\n\nProcess the executable code chunks with either knitr or jupyter.\nConvert the resulting Markdown file to the desired output."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto-components",
+    "href": "slides/week-1/w1-notebooks.html#quarto-components",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto Components",
+    "text": "Quarto Components"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto---front-matter",
+    "href": "slides/week-1/w1-notebooks.html#quarto---front-matter",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto - Front Matter",
+    "text": "Quarto - Front Matter\n\nConfiguration instructions: YAML\nBasic specifications like:\n\nDocument type\nTitle\nAuthor\nDate\n\nFancier specifications (you will explore this in Lab 1!)"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto---code",
+    "href": "slides/week-1/w1-notebooks.html#quarto---code",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto - Code",
+    "text": "Quarto - Code\n\n“code chunks”\noutput of code appears below the chunk\ngood practice: divide your code throughout a document into steps in different chunks\nyou specify how you want Quarto to handle code in each chunk in the final “rendered” document"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#r-code-options-in-quarto",
+    "href": "slides/week-1/w1-notebooks.html#r-code-options-in-quarto",
+    "title": "Quarto & Reproducibility",
+    "section": "R Code Options in Quarto",
+    "text": "R Code Options in Quarto\nR code chunk options are included at the top of each code chunk, prefaced with a #| (hashpipe).\n\nThese options control how the following code is run and reported in the final Quarto document.\nR code options can also be included in the front matter (YAML) and are applied globally to the document."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto---markdown",
+    "href": "slides/week-1/w1-notebooks.html#quarto---markdown",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto - Markdown",
+    "text": "Quarto - Markdown\n\nAnything other that code and output should be included as Markdown in a Quarto notebook\nSome Markdown text basics:\n\n*text* – makes italics\n**text** – makes bold text\n# – makes headers\n![ ]( ) – includes images or HTML links\n&lt; &gt; – embeds URLs\n\nFind more Markdown basics here."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#so-many-hashtags",
+    "href": "slides/week-1/w1-notebooks.html#so-many-hashtags",
+    "title": "Quarto & Reproducibility",
+    "section": "#so many hashtags??",
+    "text": "#so many hashtags??\n#’s are used in three different ways in Quarto documents…\n\n\nIn MARKDOWN, they define HEADERS\nIn YAML, they are preceded by a pipe | to define R CODE CHUNK OPTIONS\nIn R CODE, they define a COMMENT"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto-working-directory",
+    "href": "slides/week-1/w1-notebooks.html#quarto-working-directory",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto Working Directory",
+    "text": "Quarto Working Directory\n\nQuarto automatically sets the working directory to be where the notebook you are working in is located\nTHIS OVERRIDES R PROJECTS"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto-relative-file-paths",
+    "href": "slides/week-1/w1-notebooks.html#quarto-relative-file-paths",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto & Relative File Paths",
+    "text": "Quarto & Relative File Paths\n\nALWAYSNEVER 💥\n\n\n\nUse relative file paths!\nRemember that when you run code within a .qmd file or render it, the working directory is the directory where the .qmd file is saved.\n\n\n\n\nput something like this at the top of your .qmd file:\n\n\nsetwd(\"/User/chappelroan/Desktop/R_Class/Lab_1/\")\n\n\nSetting working directory by hand = ☠️\nAbsolute file paths = ☠️\nsome one else’s computer will have no idea “where” this working directory is"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#quarto-formats",
+    "href": "slides/week-1/w1-notebooks.html#quarto-formats",
+    "title": "Quarto & Reproducibility",
+    "section": "Quarto Formats",
+    "text": "Quarto Formats\nQuarto makes moving between outputs straightforward.\n\nAll that needs to change between these formats is a few lines in the front matter (YAML)!\n\n\n\nDocument\ntitle: \"Lesson 1\"\nformat: html\nPresentation\ntitle: \"Lesson 1\"\nformat: revealjs\n\nWebsite\nproject:\n  type: website\n\nwebsite: \n  navbar: \n    left:\n      - lesson-1.qmd"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#summary---highlights-of-quarto",
+    "href": "slides/week-1/w1-notebooks.html#summary---highlights-of-quarto",
+    "title": "Quarto & Reproducibility",
+    "section": "Summary - Highlights of Quarto",
+    "text": "Summary - Highlights of Quarto\n\n\nSupports reproducibility!\n\nCode, output, figures, and text all in one place\n\nConsistent implementation of pretty and handy features across different formats\n\ndocuments, presentations, websites, books, & more\n\nGuardrails that are helpful when learning:\n\nE.g., YAML completion, informative syntax errors, etc.\n\nSupport for other languages like Python, Julia, Observable, and more."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#lab-1-introduction-to-quarto",
+    "href": "slides/week-1/w1-notebooks.html#lab-1-introduction-to-quarto",
+    "title": "Quarto & Reproducibility",
+    "section": "Lab 1: Introduction to Quarto",
+    "text": "Lab 1: Introduction to Quarto\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#to-do",
+    "href": "slides/week-1/w1-notebooks.html#to-do",
+    "title": "Quarto & Reproducibility",
+    "section": "To do…",
+    "text": "To do…\n\nLab 1: Introduction to Quarto\n\nDue Monday 4/7 at 11:59pm\n\nRead Chapter 2: Importing Data + Basics of Graphics\n\nCheck-in 2.1 + 2.2 due Tuesday (4/8) before class"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Statistical Computing in R",
+    "section": "",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "crumbs": [
+      "Course information",
+      "Schedule"
+    ]
+  },
+  {
+    "objectID": "course-info/discord-instructions.html",
+    "href": "course-info/discord-instructions.html",
+    "title": "Course Discord Instructions",
+    "section": "",
+    "text": "We’ll be using Discord to interact with our peers and group members.\nDiscord is a platform for text chatting, voice chatting, and screen sharing."
+  },
+  {
+    "objectID": "course-info/discord-instructions.html#join-the-server",
+    "href": "course-info/discord-instructions.html#join-the-server",
+    "title": "Course Discord Instructions",
+    "section": "1 Join the server",
+    "text": "1 Join the server\nJoin the Stat 331/531 Server to start experimenting with the interface.\nWhen you join the server, you will be given some suggestions to get started.\n\nI recommend you click through these - and in particular, it is probably a good idea to download the desktop version of Discord, and perhaps to install it on your phone if you wish."
+  },
+  {
+    "objectID": "course-info/discord-instructions.html#set-up-your-account",
+    "href": "course-info/discord-instructions.html#set-up-your-account",
+    "title": "Course Discord Instructions",
+    "section": "2 Set up your account",
+    "text": "2 Set up your account\n\nVerify your email\nTo use this Discord server, you must have a verified email.\nNobody (including your professors) will be able to see this email, and it does not have to be your Cal Poly email. This is simply to keep the server from being overrun by temporary accounts.\n\n\nCreate your identity\nThe first thing you should do is decide what name and picture you would like to use.\n\nI would like to strongly encourage you to use your real name and picture, so that everyone can get to know you. This also helps me know who I am talking to! However, if you prefer to remain anonymous, you are free to do so.\n\n(Please do not be like Regina and use the name of another student, however!\nThis kind of impersonation will result in a permanent ban from the server.)\n\n\nDecide about privacy and notifications\nThe default settings on the channel are probably just fine for you.\nFeel free to make any changes that work for you, though.\nYou can change your message notifications:\n\nYou can edit your privacy settings, although most things are already private:"
+  },
+  {
+    "objectID": "course-info/discord-instructions.html#using-the-channels",
+    "href": "course-info/discord-instructions.html#using-the-channels",
+    "title": "Course Discord Instructions",
+    "section": "3 Using the Channels",
+    "text": "3 Using the Channels\nThe server is made up of many channels. Some are text chatrooms, while some are “Voice Channels” that connect you via audio to everyone else in the channel.\n\nText Channels\nUse the #general channel for anything and everything:\n\nIf your question is about course logistics, rather than the material itself, consider using the #class-logistics channel:\n\nYou can use the specific weekly channels to ask questions about the material…\n\n… or the specific lab assignment.\n\nNotice that you can use tick marks (```), like in Markdown, to make your code appear in a formatted code box.\n\n\nPrivate messages\nIt is also easy to send private messages, to your professor or to each other. These private messages can also easily be used to launch a private video chat and / or screen sharing."
+  },
+  {
+    "objectID": "course-info/discord-instructions.html#creating-your-own-server",
+    "href": "course-info/discord-instructions.html#creating-your-own-server",
+    "title": "Course Discord Instructions",
+    "section": "4 Creating your own server",
+    "text": "4 Creating your own server\nLast but not least - for the teams you are a part of, you may want to use Discord to communicate with each other about the weekly assignments. You can do this by creating your own server! You can easily hop between servers during work parties, to ask each other questions or just to take a break and chat about life."
+  },
+  {
+    "objectID": "course-info/course-resources.html",
+    "href": "course-info/course-resources.html",
+    "title": "R Resources",
+    "section": "",
+    "text": "Tip\n\n\n\nClick on the link to access the R Cheatsheet related to a specific topic / package!\n\n\n\nWeekly R Cheatsheets\nWeek 1\n\nRStudion IDE\nQuarto\nBase R\nGit & GitHub\n\nWeek 2\n\nData Visualization with ggplot2\nData Import with readr\n\nWeek 3\n\nData Wrangling with dplyr\n\nWeek 4\n\nData Tidying with tidyr\nFactors with forcats\n\nWeek 5\n\nDates with lubridate\nStrings with stringr\nRegular Expressions\n\nWeek 7\n\nTidy Evaluation\n\nWeek 8\n\nIteration with purrr",
+    "crumbs": [
+      "Course information",
+      "R Resources"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html",
+    "href": "course-info/syllabus-s26.html",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "",
+    "text": "Dr. Charlotte Zilber Mann\nYou can call me Professor, Professor/Prof. C. or Dr. C.\n Email: czmann@calpoly.edu\n Office: Building 25 Office 201\nEmail:\n\nOnly email me with your @calpoly.edu email – I cannot respond to other email addresses\nStart your email subject line with “[STAT 331]”\nI will do my best to respond within 24 hours during the week\nIf you send me an email past 6pm or on the weekend, I will likely not respond until the morning of the next working day\nYou should only email me about things that relate to you as an individual. Any other questions should be posted on the course Discord (more details below).\n\nCourse Discord Page:\nFor questions of general interest, such as course clarifications or conceptual questions, please use the course Discord page (you will join this Week 1). If you have a question – someone else in class does too! I encourage you all to respond to each other. I will do my best to check Discord twice each weekday during working hours (8-6) to ensure that questions are being answered accurately.\nI encourage you to give your post a concise and informative initial sentence, so that other people can find it. For example, “How do I color bars in a barplot with ggplot?” is a better opening sentence than “help with plotting”.\nYou may post snippets of your code and errors on Discord, but please do not post full solutions to lab assignments.\n While your posts are not anonymous, in this case there is no such thing as a bad question!",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#communication",
+    "href": "course-info/syllabus-s26.html#communication",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "",
+    "text": "Dr. Charlotte Zilber Mann\nYou can call me Professor, Professor/Prof. C. or Dr. C.\n Email: czmann@calpoly.edu\n Office: Building 25 Office 201\nEmail:\n\nOnly email me with your @calpoly.edu email – I cannot respond to other email addresses\nStart your email subject line with “[STAT 331]”\nI will do my best to respond within 24 hours during the week\nIf you send me an email past 6pm or on the weekend, I will likely not respond until the morning of the next working day\nYou should only email me about things that relate to you as an individual. Any other questions should be posted on the course Discord (more details below).\n\nCourse Discord Page:\nFor questions of general interest, such as course clarifications or conceptual questions, please use the course Discord page (you will join this Week 1). If you have a question – someone else in class does too! I encourage you all to respond to each other. I will do my best to check Discord twice each weekday during working hours (8-6) to ensure that questions are being answered accurately.\nI encourage you to give your post a concise and informative initial sentence, so that other people can find it. For example, “How do I color bars in a barplot with ggplot?” is a better opening sentence than “help with plotting”.\nYou may post snippets of your code and errors on Discord, but please do not post full solutions to lab assignments.\n While your posts are not anonymous, in this case there is no such thing as a bad question!",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#course-logistics",
+    "href": "course-info/syllabus-s26.html#course-logistics",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Course Logistics",
+    "text": "Course Logistics\nClass Meeting Times: Mondays / Wednesdays\n\nSection 70: 8:10am - 10:00am\nSection 71: 10:10am - 12:00am\n\nClassroom 38-122\nOffice Hours are held in my office (25-201) during the following times:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOffice hours are for you! During this time, I am available to talk about anything related to the course.\nOffice hours are also helpful for me… this is my chance to get to know you all better and also get a good idea of what is most challenging and most interesting to you.\nSee this resource for ways that students use office hours.\nOne thing I will not do during office hours is tell you whether an answer to a problem is “correct” or not. We can talk through your thinking that led to your solution, but will leave the final assessment to once you have submitted an assignment.\nNote that office hours are not just for when you have content questions. Stop by to introduce yourself, ask questions about the broader field of statistics, or share what you are working on!",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#course-description",
+    "href": "course-info/syllabus-s26.html#course-description",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Course Description",
+    "text": "Course Description\nStat 335/531 provides you with an introduction to programming for data and statistical analysis. The course covers basic programming concepts necessary for statistics, good computing practice, and use of built-in functions to complete basic statistical analyses.\nPrerequisites\nEntrance to STAT 331/531 requires successful completion of:\n\na Stat II qualifying course, and\nan introductory programming course.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#learning-objectives",
+    "href": "course-info/syllabus-s26.html#learning-objectives",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nThis course will teach you the foundations of statistical computing principles in the language of R.\nAfter taking this course, you will be able to:\n\nWork with the RStudio Integrated development environment (IDE) and quarto documents.\nImport, manage, and clean data from a wide variety of data sources.\nVisualize and summarize data for informative exploratory data analysis and presentations.\nWrite efficient, well-documented, and tidy R code.\nProgram random experiments and simulations from probability models.\n\nAdditionally, it is my hope that you will learn to:\n\nExtend your R skills independently through documentation and online resources.\nBe thoughtful, deliberate, and ethical in your use of R and similar tools.\nUse R to be playful, creative, and fun!",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#course-materials",
+    "href": "course-info/syllabus-s26.html#course-materials",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Course Materials",
+    "text": "Course Materials\nCourse Webpage (Canvas)\nAll course material will be made available on our Canvas page, including check-ins, practice activities, lab assignments, challenges, review questions, and selected solutions. Canvas will also contain detailed weekly schedules throughout the term. You are responsible for checking the Canvas page on a regular basis and making sure you see Canvas Announcements.\nI will also be posting material on this website for easy access to materials. Please note that this website does not include deadlines and links to all material will additionally be posted to Canvas. Canvas will always contain the most updated information about course deadlines and details, so always defer to these.\nTextbook\n R for Data Science (2nd edition).\nThere is an abundance of free online resources for learning programming and R. We will primarily use R for Data Science (2nd edition), by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund for readings.\nEach week you can reference readings with some additional commentary and videos through the schedule. This material is based on work by Dr. Emily Robinson, Dr. Susan VanderPlas, Dr. Allison Theobold, and Dr. Kelly Bodwin.\nIn addition, you may find it useful to reference some of the following resources during the course. Most are available online for free.\n\nModern Dive\nIntroduction to Modern Statistics\nAdvanced R\n\nComputing\n You will need access to a laptop for this course. If this requirement is limiting for you, please contact me ASAP.\nWe will (obviously) be using the R statistical software throughout this course. In addition, you are required to use RStudio, a companion integrated developer environment (IDE). Both R and RStudio are freely available. Download instructions are available on Canvas.\n\n\n\n\n\n\nWarning\n\n\n\nChromebooks and iPads will not be sufficient to use R. If this requirement is limiting for you, please contact me ASAP.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#class-schedule-topic-outline",
+    "href": "course-info/syllabus-s26.html#class-schedule-topic-outline",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Class Schedule & Topic Outline",
+    "text": "Class Schedule & Topic Outline\nThis schedule is tentative and subject to change.\n\n\n\n\n\nNote that we do not have class on Monday May, 25th for the Memorial Day Holiday.\n\n\n\n\n\n\n\nTentative schedule of class topics and important due dates\n\n\nDate\nTopic\n\n\n\n\nMar 30, Apr 1\nIntroduction to R\n\n\nApr 6, Apr 8\nBasics of Graphics\n\n\nApr 13, Apr 15\nData Cleaning and Manipulation\n\n\nApr 20, Apr 22\nData Transformations + Factors\n\n\nApr 27, Apr 29\nSpecial Data Types\n\n\nMay 4\nVersion Control\n\n\nMay 6\nMidterm Exam\n\n\nMay 11, May 13\nFunctions\n\n\nMay 18, May 20\nFunctional Programming\n\n\nMay 27\nSimulation\n\n\nJun 1, Jun 3\nInference and Advanced Graphics\n\n\nJun 5\nProject Final Report Due\n\n\nJun 6\nTentative Common Final Exam",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#assessments",
+    "href": "course-info/syllabus-s26.html#assessments",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Assessments",
+    "text": "Assessments\n\nGeneral Evaluation Criteria\nIn every assignment, discussion, and written component of this class, you are expected to demonstrate that you are intellectually engaging with the material. I will evaluate you based on this engagement, which means that technically correct but low effort answers which do not demonstrate engagement or understanding will receive no credit.\nWhen you answer questions in this class, your goal is to show that you either understand the material or are actively engaging with it. If you did not achieve this goal, then your answer is incomplete, regardless of whether or not it is technically correct. This is not to encourage you to add unnecessary complexity to your answer - simple, elegant solutions are always preferable to unwieldly, complex solutions that accomplish the same task.\nWhile this is not an English class, grammar and spelling are important, as is your ability to communicate technical information in writing; both of these criteria will be used in addition to assignment-specific rubrics to evaluate your work.\n\n\nFormative Assessments\n\nGroup Quizzes\nAt the beginning of class on Mondays, you will take a short quiz on paper with your working group to check that you have a good understanding of the material from the previous week. You will have access to relvant code cheatsheets during the quiz.\nYou need to be present with your group to receive credit on the quiz. However, you can have one excused quiz during the quarter.\n\nPractice Activities are typically Mondays at the beginning of class\n\n\n\nPractice Activities\nMost Tuesdays’s, you will be given a Practice Activity to complete with your group, to get the hang of the week’s necessary R skills. These activities will always result in a single, straightforward correct answer, that you will submit via Canvas (two attempts, the average score being kept).\nSince these activities are intended to be your first attempt at new skills, they are meant to be done with help from me and your peers. Therefore, you will always be given some time in class to work on them.\n\nPractice Activities are (typically) due Tuesdays at 11:59pm\n\n\n\nLab Assignments\nYour typical homework assignments will be weekly labs. You will follow each lab’s instructions to complete tasks in R and submit a rendered .html Quarto document to Canvas.\nMost weeks, there will be class time on Wednesdays dedicated to working on completing lab assignments. While you will work with peers during class time on Wednesdays, you will be expected to submit your own individual work for the final submission.\n\nLabs are (typically) due on Sundays at 11:59pm.\n\n\n\n\nEvaluative Assessments\n\nFinal Project\nI am changing the final project from previous quarters, so it is still TBD.\n\n\nExams\nThere will be a midterm exam and a final exam. The midterm will have both in-class and take-home portions. The final will be entirely in-class. I am requesting a Common Final Exam time. More information will follow.\n\n\n\nCourse Grade\nYour grade in STAT 331/531 will contain the following components:\n\n\n\nAssignments\nWeight\n\n\n\n\nGroup Quizzes & Misc.\n10%\n\n\nPractice Activities\n10%\n\n\nLab Assignments\n20%\n\n\nMidterm Exam\n20%\n\n\nFinal Project\n15%\n\n\nFinal Exam\n25%\n\n\n\nLower bounds for grade cutoffs are shown in the following table. It is possible that I could lower any of the grade cutoffs. You will only have the opportunity for grade rounding to the nearest tenth of a percent if you completed all assignments in the course.\n\n\n\nLetter grade\nX +\nX\nX -\n\n\n\n\nA\n.\n93\n90\n\n\nB\n87\n83\n80\n\n\nC\n77\n73\n70\n\n\nD\n67\n63\n60\n\n\nF\n&lt;60\n\n\n\n\n\nInterpretation of this table:\n\nA grade of 85 will receive a B.\nA grade of 77 will receive a C+.\nA grade of 70 will receive a C-.\nAnything below a 60 will receive an F.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#course-policies",
+    "href": "course-info/syllabus-s26.html#course-policies",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nAttendance & Participation\nI do not take formal attendance in this class. The only time your attendance is required is for the Group Quizzes on Mondays. However, it is my expectation that you remain in class and on task until you have finished all your activities and assignments.\nIf you are feeling ill, please do not come to class.\nHere’s what you should do if you do miss a class:\n\nTalk to a classmate to figure out what information you missed\nCheck Canvas for any necessary handouts or changes to assignments\nPost on Discord with any questions you have after reviewing notes and handouts\n\nIf you miss a bunch of classes, please come talk to me. I’m working from the assumption that you care and are trying, but something is getting in your way (health issues? college stress? work?); let’s figure out what that is and how I can help.\n\n\nAccessibility and Accomodations\nI have taken numerous steps to ensure that all of the materials presented in this course are accessible to all participants, regardless of physical or learning disabilities. I know that everyone is unique and I may have unintentionally overlooked something that limits access to some materials or activities. Please let me know if you cannot access any content. If you find you need additional accommodations to complete the required course work, please contact me as soon as possible! I want to support your success.\nIf you wish to request disability-related accommodations such as extra exam time for this or any other course, please contact the Disability Resource Center. It’s important to do this with as much advanced notice as possible, so you have full access to your course materials and activities in a timely manner. Please also email me to let me know that I should expect an email from the DRC to get you the accommodations that you need.\n\n\nInclusive Classroom\nBecause data are collected by and about humans, data necessarily encode aspects of our proclivities and biases. As a result, this course may touch upon difficult topics related to race, gender, inequality, class, and oppression. We each come into this class with different perspectives that can be shared to enhance our understanding of these issues. I ask that you enter these conversations with respect, curiosity, and cultural humility. You should be open to alternative perspectives and be willing to revise beliefs that are based on misinformation. As a general rule, your ideas and experiences can always be shared during these conversations, but please refrain from dismissing the experiences of others. Personal attacks of any kind will not be tolerated.\n\n\nGroup Work\nThis course will rely heavily on in-class group work. You will be expected to work with classmates on in-class material. If you have concerns about random group assignment, please talk to me at the start of the term.\nYou are also encouraged to discuss your ideas for lab assignments; however, I expect that these collaborations are about ideas and no R code is shared. Each person’s lab assignment submissions are expected to reflect their own thinking, and thus copying the work of others does not provide me with any information about your learning.\nThe community standards for student-to-student and student-to-instructor interactions include the following:\n\nListen actively and attentively.\nAsk for clarification if you are confused.\nChallenge one another respectfully.\nGracefully accept constructive criticism.\nTake responsibility for the quality of the discussion and the work.\nDo not monopolize discussion.\nAcknowledge that everyone has something to offer.\nSpeak from your own experience, without generalizing.\n\n\n\nLate Policy\nEveryone will be given a “bank” of 4 deadline extensions which can be used on Practice Activities and Lab Assignments at any point in the quarter. One deadline extension will get you a 24 hour extension on a given assignment. You can use all of your deadline extensions on one assignment or split them up in any way.\n\nLike how the “real world” works, you must request a deadline extension before the deadline. To use your deadline extensions, you need to email me before the assignment deadline. You don’t need to get a response from me, you just need to email me at least a minute before the deadline.\nIf you do not email me before the assignment deadline (or you run out of late days), you will be docked 20% for each day that the assignment is late. (e.g. you can get a maximum of 80% on the assignment if it is submitted within 24 hours after the original due date and time.)\n\nA note on this policy: my priority is for all of you to engage with and understand the course materials. The best way to achieve this is to complete all assignments and receive feedback on your work. At the same time, I understand that things happen outside of our control and that you are balancing many responsibilities.\n\n\n\n\n\n\nAutomatic Canvas Settings\n\n\n\nCanvas is set up to automatically input 0% for missing assignments (as an incentive to go complete the assignment) and apply the 20% grade deduction policy. I will need to manually adjust your grade when you use your “deadline extensions.” You are responsible for double checking your grade to make sure I didn’t miss anything.\n\n\nIf you find yourself with extenuating circumstances beyond the defined late policy, please email me before the due date.\n\n\nExam Conflicts\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date. If an illness or a family emergency arises, please let me know as soon as possible, and we will work out a solution. This may involve taking the exam at a later date or replacing the missed exam score with the final exam score. If you are unable to take the final exam, you will likely receive an Incomplete in the course.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#course-expectations",
+    "href": "course-info/syllabus-s26.html#course-expectations",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Course Expectations",
+    "text": "Course Expectations\nFor Students, I expect:\n\nYou will ask lots of questions.\nYou will do reading and other assignments outside of class and be prepared for each class meeting.\nYou will engage in some productive struggle/challenge when working on assignments (i.e. not give up and google or use ChatGPT immediately!)\nIf you find yourself struggling in general or feel that you are falling behind, please reach out to me as soon as possible so that we can develop a plan for your success together.\nYou will take advantage of the resources that I provide and to seek out additional resources if you find that you are struggling with the material. You do not need to seek out additional resources all on your own – we can figure out what additional resources you may need.\n\nYou will be doing your best to engage with what we are all doing together during class. This means that you are using technology (i.e. laptops/tablets/phones) for class activities and not in ways that distract you.\nYou will approach the course with academic integrity.\nYou will come to class on time and work on class material with your peers.\nEveryone can learn the material in this course.\n\nFor Me:\n\nI am responsible for ensuring that all students feel welcome and valued in the classroom.\nI am responsible for providing the resources necessary so that all students in the course can achieve the learning objectives.\nI am responsible for providing prompt and clear feedback on your coursework.\nI welcome and appreciate any actionable feedback regarding how the class is meeting your learning needs. We can discuss ways to adjust the course to ensure it is supporting your learning and do more of anything that is working well!\n\n\nMake Mistakes!\nProgramming is the process of making a series of silly or stupid mistakes, and then slowly fixing each mistake (while adding a few more). The only way to know how to fix these mistakes (and avoid them in the future) is to make them. (Sometimes, you have to make the same mistake a few dozen times before you can avoid it in the future). At some point during the class, you will find that you’ve spent 30 minutes staring at an error caused by a typo, a space, a parenthesis in the wrong place. You may ask for help debugging this weird error, only to have someone immediately point out the problem… it is always easier to see these things in someone else’s code. This is part of programming, it is normal, and you shouldn’t feel embarrassed or sorry (unless you put no effort into troubleshooting the problem before you asked for help)\nIf you manage to produce an error I haven’t seen before, then congratulations. You have achieved something special, and that achievement should be celebrated. Each new and bizarre error is an opportunity to learn a bit more about the programming language, the operating system, or the interaction between the two.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#academic-integrity-and-class-conduct",
+    "href": "course-info/syllabus-s26.html#academic-integrity-and-class-conduct",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Academic Integrity and Class Conduct",
+    "text": "Academic Integrity and Class Conduct\nOur academic community is at its best when we treat each other with fairness, honesty, respect, and trust. Unfortunately, sometimes students slip up and do something that gives themselves (or someone else) an unfair advantage over other students. Such actions will not be tolerated in this class.\nIt is most likely that a student will slip up if they are feeling overwhelmed or unsure of how to approach a problem that they are stuck on. So let’s be proactive to prevent those situations!! If you are helpless in an assignment or in studying, post on discord, come to office hours, or email me or one of your classmates! I am working hard to provide all of the resources you need to succeed\nHowever, the college doesn’t really care if you break the rules on purpose or by accident. If I suspect you have done something that violates academic integrity on any graded elements of the course (included those graded for completion), you will receive an email to tell you about my suspicion and how the situation will be handled. Typically, students earn a 0 for the assignment on which academic misconduct is found. University policy dictates that we must report every instance of suspected academic dishonesty to the Office of Student Rights and Responsibilities, no matter how small. For more information on academic misconduct and what constitutes cheating and plagiarism, please see academicprograms.calpoly.edu/content/academicpolicies/Cheating.\nIt is important to note that paraphrasing or quoting another’s work without proper citation is a form of academic misconduct. This includes the R code produced by someone else! Writing code is like writing a paper, it is obvious if you copied-and-pasted a sentence from someone else into your paper because the way each person writes is different.\nEven inadvertent or unintentional misuse or appropriation of another’s work (such as relying heavily on source material that is not expressly acknowledged) is considered plagiarism. This includes using Generative AI, which should only be used to help you problem solve just as a tutor or peer would, and not as a substitute for your own work. If you are struggling with writing the R code for an assignment, please reach out to me and post to Discord. I would prefer that I get to help you rather than you spending hours Googling things and get nowhere!\n\nGenerative AI Policy\nGenerative AI (like Chat GPT) is a powerful tool to help write code. However, it should only be used once you understand the software, which is what you are in this class to do!! At this stage of learning R software, your own thoughts and creativity are what you need.\nClass time is structured around active learning and I expect you to actively engage with the software, so you may not use generative AI for in-class work and activities. You have each other and me to grapple with the material during class. If you use generative AI in class, there will be a deduction in your “Group Quizzes & Misc.” portion of the grade.\nYou can use generative AI to complete lab assignments. However, I encourage you to give all problems a full effort on your own, referencing the provided course materials and cheatsheets before turning to AI. You will learn SO much more this way!! You should also give thought to how you are using AI, and try to approach it more as a tutor, asking it specific questions to help you solve a problem, rather than just feeding it the lab assignment. When you do use AI to help with a problem, make sure you understand why the code it provides works. If you choose to use AI, you must cite your use including the prompt that you gave.\nNote that work created by AI tools may not be considered original work and instead, considered automated plagiarism. It is derived from previously created texts from other sources that the models were trained on, yet doesn’t cite sources. Thus, there is a high risk that you can unintentionally plagiarize other sources from the web.\nA final personal opinion is that I find YOU so much more interesting than AI! I would so much rather see and read what you are thinking and how you structure code for a problem than something you may think looks more “clean” from AI.\n\n\n\n\n\n\nAlways Cite Outside Resources!\n\n\n\nIn this class the assumed knowledge is the course materials, including the course textbook, coursework pages, and course slides. If you use outside resources on assignments I expect that you will cite those resources. This means that\n\nIf you use any R functions or code that are not in the course materials, you must cite where you found it. e.g., if you look up the help file for mutate() and you learn about a function not covered in the course materials, you are required to cite the documentation when using that function.\nIf you use Google you are expected to “inform” me of any resources you used by pasting the link to the resource in a code comment next to where you used that resource.\nIf you use AI you are expected to “inform” me by stating that you used it in a code comment next to where you used it including the full prompt that you gave AI (like ChatGPT).\nIf you work with classmates on an assignment, you are expected to “inform” me by including a note with their names.\n\n\n\nIf you have any questions about using and citing sources, you are expected to ask for clarification.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "course-info/syllabus-s26.html#learning-environment-and-support",
+    "href": "course-info/syllabus-s26.html#learning-environment-and-support",
+    "title": "Stat 331/531: Statistical Computing with R Syllabus",
+    "section": "Learning Environment and Support",
+    "text": "Learning Environment and Support\nMy priority is your success in this course. I understand that things happen unexpectedly and obtaining official accommodations can be slow.\nIf you feel that any circumstances or factors beyond your control may affect your presence and work in this class, please reach out to me and we will work to accommodate your needs. You do not need to share personal information with me when you reach out, unless you would like to.\n\nMental Health\nNational surveys of college students have consistently found that stress, sleep problems, anxiety, depression, interpersonal concerns, death of a significant other and alcohol use are among the top ten health impediments to academic performance. If you are experiencing any mental health issues, I and Cal Poly are here to help you. Cal Poly’s Counseling Services (805-756-2511) is a free and confidential resource for assistance, support and advocacy https://chw.calpoly.edu/counseling.\n\n\nSupport Services\nIf you are experiencing food insecurity, housing instability, or other challenges that may impact your ability to succeed in this course, please refer to the resources listed on Canvas under “Student Support Services at Cal Poly.” These resources provide a range of essential support services, including emergency financial assistance, counseling, and academic support.",
+    "crumbs": [
+      "Course information",
+      "Syllabus"
+    ]
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#monday-march-30",
+    "href": "slides/week-1/w1-intro-r.html#monday-march-30",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Monday, March 30",
+    "text": "Monday, March 30\nToday we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#me",
+    "href": "slides/week-1/w1-intro-r.html#me",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Me!",
+    "text": "Me!\n\n\nHi, I’m Dr. C!\n\n\nI am a transplant to the west coast.\nMy favorite things right now are cooking, knitting, and biking around SLO county.\nI genuinely love R."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#you",
+    "href": "slides/week-1/w1-intro-r.html#you",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "You!",
+    "text": "You!\nI am looking forward to reading your introductions on Discord!\n\nPlease read the intros of your classmates so you can discover who you will be learning with this quarter."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#communication",
+    "href": "slides/week-1/w1-intro-r.html#communication",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Communication",
+    "text": "Communication\n\n\n✉️ email\n\nwith your @calpoly.edu email address\nwith questions that relate to you as an individual\n\n💬 Discord\n\nany and all questions!!\nyou will join and introduce yourself before Wednesday\n\n🏢 office hours\n\ncome and discuss anything during my scheduled hours!\nreach out to schedule other times"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#course-materials",
+    "href": "slides/week-1/w1-intro-r.html#course-materials",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Course Materials",
+    "text": "Course Materials\n\n\n🏫 Canvas\n\neverything will be linked or posted on Canvas!\nrefer to Canvas for current deadilnes & announcements\n\n📕 R for Data Science (2nd ed.)\n\nfree online book by major R players\nsupplemented with videos & tutorials\n\n🖥️ materials website\n\nslides, readings, notes, labs, and practice activities are organized\nthis is for convenience, but everything will also be linked in Canvas"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#assessments---formative",
+    "href": "slides/week-1/w1-intro-r.html#assessments---formative",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Assessments - Formative",
+    "text": "Assessments - Formative\n\n\nGroup Quizes (10%)\n\n“check” that you have a good understanding of previous week\nin-class on Mondays, on paper, with your group\nneed to be present, but one excused quiz a quarter\n\nPractice Activities (10%)\n\nfirst attempt at new skills\nget the hang of the week’s R skills\n\nLab Activities (20%)\n\n“homework”\n\n\n\n\n\n\n\n\n\n\nWork with other’s!\n\n\nYou should work with other’s on all assignments! The final work you submit for a Lab should be your own."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#assessments---evaluative",
+    "href": "slides/week-1/w1-intro-r.html#assessments---evaluative",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Assessments - Evaluative",
+    "text": "Assessments - Evaluative\n\nExams\n\nMidterm Exam (20%)\nFinal Exam (25%)\n\nFinal project (15%)\n\nmore info soon\ndue end of week 10\n\n\n\n\n\n\n\n\nExam Conflicts\n\n\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#assessments---general-criteria",
+    "href": "slides/week-1/w1-intro-r.html#assessments---general-criteria",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Assessments - General Criteria",
+    "text": "Assessments - General Criteria\n\n\ncorrect outputs are great, but you will also need to demonstrate that you are intellectually engaging with the material in assignments\nin addition to getting a correct output from your code, you will be assessed for efficiency and formatting\ntechnical communication will also be an important element of assessments\nI hope you will be proud of your work in this class!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#weekly-overview",
+    "href": "slides/week-1/w1-intro-r.html#weekly-overview",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Weekly Overview",
+    "text": "Weekly Overview"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#course-policies",
+    "href": "slides/week-1/w1-intro-r.html#course-policies",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Course Policies",
+    "text": "Course Policies\n\nLate Policy\n\n4 “deadline extensions”\nemail me before the deadline for a 24 hour extention\n\nAttendance\nAccessibility and Accomodations\n\nlet me know what I can do better\nemail me if you use the DRC"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#academic-integrity",
+    "href": "slides/week-1/w1-intro-r.html#academic-integrity",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Academic Integrity",
+    "text": "Academic Integrity\n\n\nlet’s be proactive to prevent situations where you are overwhelmed!\nuse generative AI as a tutor, not a substitute for your own work\ncite outside resources!\nplease review the syllabus carefully"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#my-expectations-for-you",
+    "href": "slides/week-1/w1-intro-r.html#my-expectations-for-you",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "My expectations for you",
+    "text": "My expectations for you\n\n\nask lots of questions\ntake advantage of resources to help you learn\n\nthis includes working with others!\n\nengage with what we are all doing together during class\nwork towards independent learning"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#my-expectations-for-me",
+    "href": "slides/week-1/w1-intro-r.html#my-expectations-for-me",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "My expectations for me",
+    "text": "My expectations for me\n\n\ncreating an inclusive and accessible classroom\nproviding resources needed to learn the material\nproviding prompt and clear feedback\ndoing my best to make class worth your time\nclearly communicating"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-to-expect-from-this-course",
+    "href": "slides/week-1/w1-intro-r.html#what-to-expect-from-this-course",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What to expect from this course",
+    "text": "What to expect from this course\n\n\neveryone comes with different knowledge and skills – figure out what helps you learn the best in this course\nindependent learning and learning from documentation is part of the course\ncoding involves unique challenges, frustrations, and satisfaction!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#statistical-computing-involves",
+    "href": "slides/week-1/w1-intro-r.html#statistical-computing-involves",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Statistical computing involves…",
+    "text": "Statistical computing involves…\n\n\nunderstanding data structures\n\ni.e. “what you have to work with”\n\ndeveloping an algorithm\n\ni.e. “what you want the computer to do”\n\nknowing the syntax of a specific language\n\ni.e. “how to tell the computer what to do so it will understand”\n\nimproving efficiency of your code\n\n\n\n\n\n\n\n\n\nNot just syntax\n\n\nAll of these skills improve as the others improve and we will work on all of them in this course!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#paper-planes",
+    "href": "slides/week-1/w1-intro-r.html#paper-planes",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Paper Planes",
+    "text": "Paper Planes\n\n\nWork with the person next to you & introduce yourself!\nWrite a set of instructions to create the paper item I provided for you\nSwap the instructions with the pair next to you\nFollow their instructions as literally as possible to fold a plane"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-is-r",
+    "href": "slides/week-1/w1-intro-r.html#what-is-r",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What is R?",
+    "text": "What is R?\n\nR is a programming language designed originally for statistical analyses.\nR is open source"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-going-on-with-r",
+    "href": "slides/week-1/w1-intro-r.html#what-going-on-with-r",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What’ going on with R?",
+    "text": "What’ going on with R?\n\nStrengthsWeaknesses\n\n\nR’s strengths are…\n\n\nhandling data with lots of different types of variables.\nmaking nice and complex data visualizations.\nhaving cutting-edge statistical methods available to users.\n\n\n\n\nR’s weaknesses are…\n\n\nperforming non-analysis programming tasks, like website creation (python, ruby, …).\nhyper-efficient numerical computation (matlab, C, …).\nbeing a simple tool for all audiences (SPSS, STATA, JMP, minitab, …)."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#but-wait",
+    "href": "slides/week-1/w1-intro-r.html#but-wait",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "But wait!",
+    "text": "But wait!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#packages",
+    "href": "slides/week-1/w1-intro-r.html#packages",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Packages",
+    "text": "Packages\nThe heart and soul of R are packages.\n\n\nThese are “extra” sets of code that add new functionality to R when installed.\n“base” R refers to functions that are in the R software, and do not require a package."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#open-source",
+    "href": "slides/week-1/w1-intro-r.html#open-source",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Open-Source",
+    "text": "Open-Source\nImportantly, R is open-source.\n\n\nThere is no company that owns R, like there is for SAS or Matlab.\nThis means packages are created by users like you and me!\n“Official” R packages live on the Comprehensive R Archive Network, or CRAN.\nBut anyone can write and share new code in “package form”"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#open-source-1",
+    "href": "slides/week-1/w1-intro-r.html#open-source-1",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Open-Source",
+    "text": "Open-Source\nBeing a good open-source citizen means…\n\n\nsharing your code publicly when possible (later in this course, we’ll learn about GitHub!).\ncontributing to public projects and packages, as you are able.\ncreating your own packages, if you can.\nusing R for ethical and respectful projects."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-is-rstudio",
+    "href": "slides/week-1/w1-intro-r.html#what-is-rstudio",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What is RStudio?",
+    "text": "What is RStudio?\nRStudio is an IDE (Integrated Developer Environment).\n\nThis means it is an application that makes it easier for you to interact with R."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#rstudio-is-your-friend",
+    "href": "slides/week-1/w1-intro-r.html#rstudio-is-your-friend",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "RStudio is Your Friend!",
+    "text": "RStudio is Your Friend!\n\nYou will always interact with R through RStudio\nHelps with organization and some “point-and-click” options if desired"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#a-lot-of-pieces-go-into-a-data-analysis",
+    "href": "slides/week-1/w1-intro-r.html#a-lot-of-pieces-go-into-a-data-analysis",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "A lot of pieces go into a data analysis!",
+    "text": "A lot of pieces go into a data analysis!\n\n\n\nfiles with code\ndata files\ndocumentation\nimages\nreports\netc.\n\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#organization-is-key",
+    "href": "slides/week-1/w1-intro-r.html#organization-is-key",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Organization is key!",
+    "text": "Organization is key!\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-is-a-directory",
+    "href": "slides/week-1/w1-intro-r.html#what-is-a-directory",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What is a directory?",
+    "text": "What is a directory?\n\n\nA directory is just a fancy name for a folder.\nDirectories are your friends!\nBest practice:\n\neverything should have a place in a well-named directory\ndo not include spaces in directory names"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#project-directory-examples",
+    "href": "slides/week-1/w1-intro-r.html#project-directory-examples",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Project Directory Examples",
+    "text": "Project Directory Examples\n\nGOOD 😃BAD ☠️"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#class-directory-examples",
+    "href": "slides/week-1/w1-intro-r.html#class-directory-examples",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Class Directory Examples",
+    "text": "Class Directory Examples\n\nGOOD 😃BAD ☠️"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#manage-your-class-directory",
+    "href": "slides/week-1/w1-intro-r.html#manage-your-class-directory",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Manage your Class Directory",
+    "text": "Manage your Class Directory\nCreate a directory for this class!\n\n\nIs it in a place you can easily find it?\n\nNOT IN YOUR DOWNLOADS FOLDER ☠️\n\nDoes it have an informative name?\n\nlike “stat-331” or similar\n\nAre the files inside it well-organized?\n\n\n\n\n\n\n\n\n\nWarning\n\n\nI cannot stress how important this is!!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
+    "href": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "How do I run code in R?",
+    "text": "How do I run code in R?\n\n\nYou can run any lines of code directly in the Console\n\nBut then your code isn’t saved!\nThis is best for exporatory and one-off tasks\n\nWe primarily write and run code in R scripts or notebooks in Source\n\nThese are documents where you can organize and save code!\nMore on scripts vs. notebooks tomorrow"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#packages-1",
+    "href": "slides/week-1/w1-intro-r.html#packages-1",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Packages",
+    "text": "Packages\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#data-types",
+    "href": "slides/week-1/w1-intro-r.html#data-types",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Data Types",
+    "text": "Data Types\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n\n\n\ninteger: whole numbers.\n\n\n\n\ndouble / float / numeric: decimal numbers.\n\n\n\n\ncharacter / string - holds text, usually enclosed in quotes."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#variables",
+    "href": "slides/week-1/w1-intro-r.html#variables",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Variables",
+    "text": "Variables\nVariables are names that refer to values.\n\nA variable is like a container that holds something - when you refer to the container, you get whatever is stored inside.\nWe assign values to variables using the syntax object_name &lt;- value.\n\nYou can read this as “object name gets value” in your head.\n\n\n\n\nmessage &lt;- \"So long and thanks for all the fish\"\nyear &lt;- 2025\nthe_answer &lt;- 42\nearth_demolished &lt;- FALSE"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#naming-conventions",
+    "href": "slides/week-1/w1-intro-r.html#naming-conventions",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Naming Conventions",
+    "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\nJust pick one and stick with it!"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#data-structures",
+    "href": "slides/week-1/w1-intro-r.html#data-structures",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Data Structures",
+    "text": "Data Structures\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#indexing",
+    "href": "slides/week-1/w1-intro-r.html#indexing",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Indexing",
+    "text": "Indexing\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#logic",
+    "href": "slides/week-1/w1-intro-r.html#logic",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Logic",
+    "text": "Logic\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#vectorization",
+    "href": "slides/week-1/w1-intro-r.html#vectorization",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Vectorization",
+    "text": "Vectorization\n\n\nR is designed to do vector and matrix math nicely\nMany operations in R are vectorized.\n\nThese functions operate on vectors of values rather than a single value.\ni.e. the function applies to every element of a vector individually.\n\n\n\n\ne.g.:\n\nx &lt;- seq(from = -2, to = 2)\nx\n\n[1] -2 -1  0  1  2\n\n\nSay we want to add 1 to every element of x…"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#vectorization-1",
+    "href": "slides/week-1/w1-intro-r.html#vectorization-1",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Vectorization",
+    "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-parenthesis",
+    "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-parenthesis",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Did you leave off a parenthesis?",
+    "text": "Did you leave off a parenthesis?\nseq(from = 1, to = 10, by = 1\n\nseq(from = 1, to = 10, by = 1\n\nError in parse(text = input): &lt;text&gt;:2:0: unexpected end of input\n1: seq(from = 1, to = 10, by = 1\n   ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
+    "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Did you leave off a comma?",
+    "text": "Did you leave off a comma?\nseq(from = 1, to = 10 by = 1)\n\nseq(from = 1, to = 10 by = 1)\n\nError in parse(text = input): &lt;text&gt;:1:23: unexpected symbol\n1: seq(from = 1, to = 10 by\n                          ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
+    "href": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Did you make a typo? Are you using the right names?",
+    "text": "Did you make a typo? Are you using the right names?\nsequence(from = 1, to = 10, by = 1)\n\nsequence(from = 1, to = 10, by = 1)\n\nError in `sequence.default()`:\n! argument \"nvec\" is missing, with no default\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
+    "href": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Are you using the right input that the function expects?",
+    "text": "Are you using the right input that the function expects?\nsqrt(‘1’)\n\nsqrt('1')\n\nError in `sqrt()`:\n! non-numeric argument to mathematical function\n\n\n\n\nsqrt(1)\n\n[1] 1"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
+    "href": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Are you expecting the right output of the function?",
+    "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n\n\nmy_obj[5]\n\n[1] 5"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#messages",
+    "href": "slides/week-1/w1-intro-r.html#messages",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Messages",
+    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#warnings",
+    "href": "slides/week-1/w1-intro-r.html#warnings",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Warnings",
+    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n\n\n\nmy_new_vec\n\n[1] NA NA NA"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#errors",
+    "href": "slides/week-1/w1-intro-r.html#errors",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Errors",
+    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#r-says",
+    "href": "slides/week-1/w1-intro-r.html#r-says",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "R says…",
+    "text": "R says…\n\nError in ggplot() : could not find function “ggplot”\n\n\nIt probably means…\n\nYou haven’t installed/loaded the package that includes the ggplot() function OR you mispelled the function name\n\nYou should:\n\ncheck if the package is installed\nload the package (library())"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#r-says-1",
+    "href": "slides/week-1/w1-intro-r.html#r-says-1",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "R says…",
+    "text": "R says…\n\nError: Object some_obj not found.\n\n\nIt probably means…\n\nYou haven’t run the code to create some_obj OR you have a typo in the name!\n\n\nsome_ojb &lt;- 1:10\n\nmean(some_obj)\n\nError in `h()`:\n! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#r-says-2",
+    "href": "slides/week-1/w1-intro-r.html#r-says-2",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "R says…",
+    "text": "R says…\n\nError: Object of type ‘closure’ is not subsettable.\n\n\nIt probably means…\n\nOops, you tried to use square brackets on a function\n\n\nmean[1, 2]\n\nError in `mean[1, 2]`:\n! object of type 'closure' is not subsettable"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#r-says-3",
+    "href": "slides/week-1/w1-intro-r.html#r-says-3",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "R says…",
+    "text": "R says…\n\nError: Non-numeric argument to binary operator.\n\n\nIt probably means…\n\nYou tried to do math on data that isn’t numeric.\n\n\n\"a\" + 2\n\nError in `\"a\" + 2`:\n! non-numeric argument to binary operator"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#what-if-none-of-these-solved-my-error",
+    "href": "slides/week-1/w1-intro-r.html#what-if-none-of-these-solved-my-error",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "What if none of these solved my error?",
+    "text": "What if none of these solved my error?\n\nLook at the help file for the function!\nBreak what you are doing down into smaller pieces and look at whether or not each step gives you what you expect\nWhen all else fails, Google your error message.\n\nInclude the function you are using."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#try-it",
+    "href": "slides/week-1/w1-intro-r.html#try-it",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Try it…",
+    "text": "Try it…\nWhat’s wrong here?\n\nmatrix(c(\"a\", \"b\", \"c\", \"d\"), num_row = 2)\n\nError in `matrix()`:\n! unused argument (num_row = 2)\n\n\n\n\n\n\n\n\n\nTip\n\n\nLook up the help file for the function matrix by running ?matrix in the Console."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#pa-1-find-the-mistakes",
+    "href": "slides/week-1/w1-intro-r.html#pa-1-find-the-mistakes",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "PA 1: Find the Mistakes",
+    "text": "PA 1: Find the Mistakes\nPart One:\nThis file has many mistakes in the code. Some are errors that will prevent the file from knitting; some are mistakes that do NOT result in an error.\nFix all the problems in the code chunks.\nPart Two:\nFollow the instructions in the file to uncover a secret message.\nSubmit the name of the poem as the answer to the Canvas Quiz question."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#to-do",
+    "href": "slides/week-1/w1-intro-r.html#to-do",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "To do…",
+    "text": "To do…\n\nRead Chapter 1: Introduction\nCheck-ins 1.1 - 1.4\n\nDue Wednesday before class\n\nPA 1: Find the Mistakes\n\nDue"
+  }
+]

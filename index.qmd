@@ -1,0 +1,77 @@
+---
+title: "Statistical Computing in R"
+---
+
+<!--
+Note that for the calendar to work, you need to install the fontawesome extension for Quarto and have initiated the extension somewhere in the page as well, like what is done with the calendar icon below. Very strange, but it works for some reason.
+-->
+
+{{< fa calendar title="An calendar" >}}  This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here. 
+
+
+```{r}
+#| label: packages
+#| echo: false
+#| message: false
+#| warning: false
+
+library(gt)
+library(tidyverse)
+```
+
+
+```{r}
+#| label: read-data
+#| echo: false
+
+d <- readxl::read_excel("course-info/stat-331-s26-schedule.xlsx")
+
+```
+
+
+```{r}
+#| label: format-calendar-entries
+#| echo: false
+
+t <- d |>
+  select(-date_check) |> 
+  gt() |> 
+    text_transform(cells_body(columns = c(reading)),
+                 fn = function(x){
+                   ifelse(is.na(x), fontawesome::fa('book', fill_opacity = 0.1), 
+                          glue::glue('<a href="{x}"><i class="fa fa-book" style="color: purple;"></i></a>'))
+                 }) |> 
+  text_transform(cells_body(columns = c(slides)),
+                 fn = function(x){
+                   ifelse(is.na(x), fontawesome::fa('laptop', fill_opacity = 0.1), 
+                           glue::glue('<a href="{x}"><i class="fa fa-laptop" style="color: purple;"></i></a>'))
+                 }) |> 
+  text_transform(cells_body(columns = c(activity)),
+                 fn = function(x){
+                   ifelse(is.na(x), fontawesome::fa('users', fill_opacity = 0.1),
+                          glue::glue('<a href="{x}"><i class="fa fa-users" style="color: purple;"></i></a>'))
+                  }) |> 
+  text_transform(cells_body(columns = c(lab)),
+                 fn = function(x){
+                   ifelse(is.na(x), fontawesome::fa('pencil', fill_opacity = 0.1), 
+                          glue::glue('<a href="{x}"><i class="fa fa-pencil" style="color: purple;"></i></a>'))
+                 }) |> 
+  text_transform(cells_body(columns = c(notes)),
+                 fn = function(x){
+                   ifelse(is.na(x), fontawesome::fa('clipboard', fill_opacity = 0.1), 
+                          glue::glue('<a href="{x}"><i class="fa fa-clipboard"></i></a>'))
+                 }) |> 
+  sub_missing(columns = date, missing_text = "") 
+
+t <- t |>
+  as_raw_html() 
+```
+
+```{r}
+#| echo: false
+#| results: "asis"
+#| label: output-calendar
+
+cat(t)
+```
+
