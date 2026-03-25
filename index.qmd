@@ -24,7 +24,7 @@ library(tidyverse)
 #| label: read-data
 #| echo: false
 
-d <- readxl::read_excel("course-info/stat-331-s26-schedule.xlsx")
+d <- readxl::read_excel("stat-331-s26-schedule.xlsx")
 
 ```
 
@@ -59,7 +59,7 @@ t <- d |>
   text_transform(cells_body(columns = c(notes)),
                  fn = function(x){
                    ifelse(is.na(x), fontawesome::fa('clipboard', fill_opacity = 0.1), 
-                          glue::glue('<a href="{x}"><i class="fa fa-clipboard"></i></a>'))
+                          glue::glue('<a href="{x}"><i class="fa fa-clipboard" style="color: purple;"></i></a>'))
                  }) |> 
   sub_missing(columns = date, missing_text = "") 
 

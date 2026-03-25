@@ -221,7 +221,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -810,5 +810,89 @@
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "To do…",
     "text": "To do…\n\nReading & review\nCourse Setup Assignments\n\nDue Wednesday at 11:59pm\n\nPA 1: Find the Mistakes\n\nDue Wednesday at 11:59pm"
+  },
+  {
+    "objectID": "reading/week-1.1.html",
+    "href": "reading/week-1.1.html",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "",
+    "text": "For the first portion of this week’s coursework, we are going to learn about / refresh our memory on R and RStudio. This course is all about you learning skills for working with data in R, so you will need to have local installations of both R and RStudio on your computer."
+  },
+  {
+    "objectID": "reading/week-1.1.html#updating-your-version-of-r",
+    "href": "reading/week-1.1.html#updating-your-version-of-r",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "1.1 Updating Your Version of R",
+    "text": "1.1 Updating Your Version of R\nIf you already have R downloaded, you need to confirm that you have the most up to date version of R. Do not ignore these instructions. If you neglect to update your version of R, you may find that updating a package will make it so your code will not run.\n\nStep 1: Open RStudio\nStep 2: At the top of the the Console it will say what version of R you are using\n\n\nIf the version is not 4.5.3 (like the image above), you need to update your version of R! The simplest way to do this is to follow the instructions below to install R."
+  },
+  {
+    "objectID": "reading/week-1.1.html#installing-r-1",
+    "href": "reading/week-1.1.html#installing-r-1",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "1.2 Installing R",
+    "text": "1.2 Installing R\nDownload and install R by going to https://cloud.r-project.org/. Here, you will find three options for installing R—click on the option for your computer’s operating system.\n\n\n\n\nIf you are a Windows user:\n\nClick on “Download R for Windows”\nClick on “base”\nClick on the Download link.\nWhen you open the execution file (.exe) you will be prompted with a variety of questions about installing R. Feel free to use the default features / settings that come with R (continue to click “Ok” until the download starts).\n\n\n\n\n\n\n\nMultiple Versions of R\n\n\n\nBeware that if you had a previous version of R downloaded on your PC, that old version will not be deleted when you download the most recent version of R. We do not want to have two versions of R installed, as your computer can get confused what version of R to use. So, you need to remove the old version of R.\nTo do this you need to:\n\nNavigate to your computer’s settings\nClick on the “Apps” option on the left-hand panel\nSearch for or scroll down to R\nFind the older version of R\n\n\n\nClick on the ... on the right side\nSelect “Uninstall”\n\n\n\n\n\n\nIf you are macOS user:\n\nClick on “Download R for (Mac) OS X”\nUnder “Latest release:” click on R-X.X.X.pkg, where R-X.X.X is the version number. For example, the latest version of R as of March 11, 2026 was R-4.5.3 (Reassured Reassurer).\nWhen installing, use the default features / settings that come with R (click Ok until the download starts).\n\n\n\n\n\n\n\nTroubleshooting for Macs\n\n\n\nFirst, identify which version of OSx you are running. How-to\nNext, find out which version of R your computer can run. Link\nIf this version is 3.6 or later, download the latest version that your computer can handle.\nIf this version is 3.4 or earlier, you’re going to run in to some trouble. I recommend updating your version of OSx, if you are willing. If you can’t, then you can use Posit Cloud to run R and RStudio on a free server. However, I recommend strongly against this option; your files will not be saved indefinitely, you will have limited hours to complete your work, your computing power will be limited, and you will need an internet connection at all times to do your work.\n\n\n\n\nIf you are a Linux user:\nClick on “Download R for Linux” and choose your distribution for more information on installing R for your setup."
+  },
+  {
+    "objectID": "reading/week-1.1.html#updating-your-version-of-rstudio",
+    "href": "reading/week-1.1.html#updating-your-version-of-rstudio",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.1 Updating Your Version of RStudio",
+    "text": "2.1 Updating Your Version of RStudio\nIf you already have RStudio, you need to double check if you have the most recent version. You will not have access to the newest features for Quarto documents unless you have the most recent version of RStudio.\n\nStep 1: Open RStudio\nStep 2: Click on “Help” in the upper menu\nStep 3: Click on “Check for Updates”\n\nIf there are no updates to RStudio since you installed it, you are good to go! If you need to update RStudio, you will be sent to Posit (the parent company) to download the most recent version of RStudio desktop."
+  },
+  {
+    "objectID": "reading/week-1.1.html#installing-rstudio",
+    "href": "reading/week-1.1.html#installing-rstudio",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.2 Installing RStudio",
+    "text": "2.2 Installing RStudio\n\n\n\n\nDownloading the most recent version of RStudio works the same way regardless of whether you’ve never downloaded RStudio before or if you just need to update your version of RStudio.\nWhen you navigate to the RStudio download page (https://rstudio.com/products/rstudio/download/), the website should automatically detect your computer’s operating system. So, you should be able to simply click the blue “Download RStudio Desktop for [insert operating system here]” button.\nClicking the button will begin installing RStudio. Once the download has completed, you will need to open the application file (on a Mac this is a .dmg file, on Windows this is an exe file)."
+  },
+  {
+    "objectID": "reading/week-1.1.html#debugging-r-code",
+    "href": "reading/week-1.1.html#debugging-r-code",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "3.1 Debugging R Code",
+    "text": "3.1 Debugging R Code\n\n📽️ Required Video: Debugging R Code"
+  },
+  {
+    "objectID": "practice-activities/pa1.html",
+    "href": "practice-activities/pa1.html",
+    "title": "PA 1: Find the Mistakes",
+    "section": "",
+    "text": "Today you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#access",
+    "href": "practice-activities/pa1.html#access",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Access",
+    "text": "Access\nYou can access PA1: Find the Mistakes in RStudio in one of two ways:\n\nClick here to access a Posit Cloud project.\n\n\nNote: if you do not have a Posit Cloud account, you will be asked to create one.\nNote: make sure you save a permanent version!\n\n\nIf you have already installed R, RStudio, and Quarto, you can download the practice activity template here.\n\n\nMake sure to move this from your Downloads folder into your stat-331/practice-activities folder (or equivalent)!"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-one-setup",
+    "href": "practice-activities/pa1.html#part-one-setup",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause one or more errors and / or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\",\n                \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\",\n                \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", '\"', \"(\", \")\", \" \", \"-\", \";\", \":\")\n\nError in parse(text = input): &lt;text&gt;:3:56: unexpected string constant\n2:                 \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n3: upper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\"\n                                                          ^\n\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\nError:\n! object 'lower_case' not found\n\n\n\nTurn the my_symbols vector into a data frame, with one column named “Symbol”.\n\n\nmy_symbols &lt;- dataframe(Symbol = my_symbols)\n\nError in `dataframe()`:\n! could not find function \"dataframe\"\n\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\nError:\n! object 'my_symbols' not found\n\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len\n\nError in parse(text = input): &lt;text&gt;:1:11: unexpected input\n1: my_symbols%Num &lt;- 1:len\n              ^"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
+    "href": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector.\n\nlibrary(readr)\ntop_secret &lt;- read_csv(\"https://www.dropbox.com/s/k72h1zewk4gtqep/PA_Secret_Code?dl=1\", \n                       col_names = FALSE)$X1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps, in the order given below.\nHint: To update a vector after performing an operation, you overwrite the existing object with the updated version. This looks something like this:\nx &lt;- x + 12,\nwhere the original value(s) in x have had 12 added to them, and the resulting values are put back in to the object named x.\nBe careful not to overwrite more than you intend. If this happens, go back and re-read in the raw data and run and any subsequent code chunks to start fresh with the top_secret vector.\n\nAdd 14 to every number (completed for you!)\n\n\n## Code completed for you\ntop_secret &lt;- top_secret + 14\n\n\nMultiply every number by 18, then subtract 257 (watch your order of operations!)\n\n\n## Code to carry out step 1\n\n\nUse the exp() function to exponentiate every number.\n\n\n## Code to carry out step 2\n\n\nSquare every number.\n\n\n## Code to carry out step 3\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17. The code below verifies that this is true for your top_secret object!\nHint: This is what is called a “relational” comparison, where you compare an object to a number and R will give you a vector of TRUEs and FALSEs based on whether the comparison is / is not met. You can then use these TRUEs and FALSEs as numbers, since TRUE = 1 and FALSE = 0 in R land.\n\n# Write code to verify that there are 352 numbers with values **below** 17\n\nNext, carry out the following steps:\n\nTurn your vector of numbers into a matrix with 5 columns. (I would recommend naming this something different than top_secret and informative such as secret_mat.)\n\n\n## Write code to carry out step 4.\n\n\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it evens. That is, evens should contain 2, 4, 6, 8 …, 382.\n\n\n## Write code to carry out step 5.\n\n\nSubtract the “evens” vector from the first column of your secret message matrix.\n\n\n## Write code to carry out step 6.\n\n\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column of your secret message matrix.\n\n\n## Code to carry out step 7.\n\n\nMultiply all numbers in the 4th and 5th column of your secret message matrix by 2.\n\n\n## Code to carry out step 8.\n\n\nTurn your secret message matrix back into a vector.\n\n\n## Code to carry out step 9.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100. The code below verifies that this is true for your top_secret object!\n\n# Write code to verify that indices 500 and beyond have values **below** 100\n\n\nTake the square root of all numbers in indices 38 to 465.\n\n\n## Code to carry out step 10.\n\n\nUse the round() function to round all numbers to the nearest whole number.\n\n\n## Code to carry out step 11.\n\n\nReplace all instances of the number 39 with 20.\n\n\nThis step requires another relational comparison, but this time it is equality. Equality in R is checked with a double equal sign == rather than a single equal sign!\n\n\n## Code to carry out step 12.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers.\nHint: Checking for divisibility is an interesting operation that isn’t done much in R. Modulus is the operation you are interested in, where you are checking for whether the numbers are divisible by 2, with no remainder. See what you can find about modulus in R!\n\n# Code to verify how many even numbers are in your top_secret vector\n# Should be 344!"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-three-the-secret-message",
+    "href": "practice-activities/pa1.html#part-three-the-secret-message",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part Three: The secret message!",
+    "text": "Part Three: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message, by running the following code. Note: if your vector of numbers is not named top_secret at this point, change the code below appropriately to use your correct vector!\n\nstringr::str_c(my_symbols$Symbol[top_secret], collapse = \"\")\n\nError:\n! object 'my_symbols' not found\n\n\nGoogle the first line of this message, if you do not recognize it, to see what poem it is.\nYou will enter your answer in the PA1 Canvas assignment."
+  },
+  {
+    "objectID": "reading/week-1.1.html#ensure-quarto-is-installed",
+    "href": "reading/week-1.1.html#ensure-quarto-is-installed",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.3 ✅ Ensure Quarto is Installed",
+    "text": "2.3 ✅ Ensure Quarto is Installed\nWe will learn more about Quarto notebooks later in the week, so for now, just make sure that you have the software set up! It is likely that it was already installed automatically.\nTo check, open a new Rstudio window click the + icon in the top left of the Rstudio window and see if Quarto is an option. See screenshot below.\n\nIf you do not see Quarto, download and install the latest version of Quarto for your operating system."
   }
 ]
