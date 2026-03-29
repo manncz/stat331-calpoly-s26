@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto &amp; Reproducibility – Introduction to Statistical Computing in R</title>
+<title>Lab 1: Introduction to Quarto – Introduction to Statistical Computing in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -102,6 +102,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -185,55 +214,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#wednesday-april-1" id="toc-wednesday-april-1" class="nav-link active" data-scroll-target="#wednesday-april-1">Wednesday, April 1</a></li>
-  <li><a href="#reproducibility-r-projects" id="toc-reproducibility-r-projects" class="nav-link" data-scroll-target="#reproducibility-r-projects">Reproducibility &amp; R Projects</a>
+  <li><a href="#setup" id="toc-setup" class="nav-link active" data-scroll-target="#setup">Setup</a>
   <ul class="collapse">
-  <li><a href="#reproducibility" id="toc-reproducibility" class="nav-link" data-scroll-target="#reproducibility">Reproducibility</a></li>
-  <li><a href="#principles-of-reproducibility" id="toc-principles-of-reproducibility" class="nav-link" data-scroll-target="#principles-of-reproducibility">Principles of Reproducibility</a></li>
-  <li><a href="#principles-of-reproducibility-1" id="toc-principles-of-reproducibility-1" class="nav-link" data-scroll-target="#principles-of-reproducibility-1">Principles of Reproducibility</a></li>
-  <li><a href="#paths" id="toc-paths" class="nav-link" data-scroll-target="#paths">Paths</a></li>
-  <li><a href="#absolute-vs.-relative-file-paths" id="toc-absolute-vs.-relative-file-paths" class="nav-link" data-scroll-target="#absolute-vs.-relative-file-paths">Absolute vs.&nbsp;Relative File Paths</a></li>
-  <li><a href="#absolute-vs.-relative-file-paths-1" id="toc-absolute-vs.-relative-file-paths-1" class="nav-link" data-scroll-target="#absolute-vs.-relative-file-paths-1">Absolute vs.&nbsp;Relative File Paths</a></li>
-  <li><a href="#working-directories-in-r" id="toc-working-directories-in-r" class="nav-link" data-scroll-target="#working-directories-in-r">Working Directories in R</a></li>
-  <li><a href="#reproducibility-pulling-it-all-together" id="toc-reproducibility-pulling-it-all-together" class="nav-link" data-scroll-target="#reproducibility-pulling-it-all-together">Reproducibility: Pulling it all together</a></li>
-  <li><a href="#r-projects" id="toc-r-projects" class="nav-link" data-scroll-target="#r-projects">R Projects</a></li>
-  <li><a href="#the-beauty-of-r-projects" id="toc-the-beauty-of-r-projects" class="nav-link" data-scroll-target="#the-beauty-of-r-projects">The Beauty of R Projects</a></li>
+  <li><a href="#make-a-lab-directory" id="toc-make-a-lab-directory" class="nav-link" data-scroll-target="#make-a-lab-directory">Make a Lab Directory</a></li>
+  <li><a href="#create-your-lab-1-file" id="toc-create-your-lab-1-file" class="nav-link" data-scroll-target="#create-your-lab-1-file">Create your Lab 1 File</a></li>
   </ul></li>
-  <li><a href="#scripts-notebooks" id="toc-scripts-notebooks" class="nav-link" data-scroll-target="#scripts-notebooks">Scripts + Notebooks</a>
-  <ul class="collapse">
-  <li><a href="#scripts" id="toc-scripts" class="nav-link" data-scroll-target="#scripts">Scripts</a></li>
-  <li><a href="#notebooks" id="toc-notebooks" class="nav-link" data-scroll-target="#notebooks">Notebooks</a></li>
-  <li><a href="#what-is-markdown" id="toc-what-is-markdown" class="nav-link" data-scroll-target="#what-is-markdown">What is Markdown?</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
-  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#quarto---rendering" id="toc-quarto---rendering" class="nav-link" data-scroll-target="#quarto---rendering">Quarto - Rendering</a></li>
-  <li><a href="#rendering-your-quarto-document" id="toc-rendering-your-quarto-document" class="nav-link" data-scroll-target="#rendering-your-quarto-document">Rendering your Quarto Document</a></li>
-  <li><a href="#rendering---what-happens" id="toc-rendering---what-happens" class="nav-link" data-scroll-target="#rendering---what-happens">Rendering - What happens?</a></li>
-  <li><a href="#rendering---under-the-hood" id="toc-rendering---under-the-hood" class="nav-link" data-scroll-target="#rendering---under-the-hood">Rendering - Under the hood</a></li>
-  <li><a href="#quarto-components" id="toc-quarto-components" class="nav-link" data-scroll-target="#quarto-components">Quarto Components</a></li>
-  <li><a href="#quarto---front-matter" id="toc-quarto---front-matter" class="nav-link" data-scroll-target="#quarto---front-matter">Quarto - Front Matter</a></li>
-  <li><a href="#quarto---code" id="toc-quarto---code" class="nav-link" data-scroll-target="#quarto---code">Quarto - Code</a></li>
-  <li><a href="#r-code-options-in-quarto" id="toc-r-code-options-in-quarto" class="nav-link" data-scroll-target="#r-code-options-in-quarto">R Code Options in Quarto</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1"></a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2"></a></li>
-  <li><a href="#quarto---markdown" id="toc-quarto---markdown" class="nav-link" data-scroll-target="#quarto---markdown">Quarto - Markdown</a></li>
-  <li><a href="#so-many-hashtags" id="toc-so-many-hashtags" class="nav-link" data-scroll-target="#so-many-hashtags">#so many hashtags??</a></li>
-  <li><a href="#quarto-working-directory" id="toc-quarto-working-directory" class="nav-link" data-scroll-target="#quarto-working-directory">Quarto Working Directory</a></li>
-  <li><a href="#quarto-relative-file-paths" id="toc-quarto-relative-file-paths" class="nav-link" data-scroll-target="#quarto-relative-file-paths">Quarto &amp; Relative File Paths</a></li>
-  <li><a href="#quarto-formats" id="toc-quarto-formats" class="nav-link" data-scroll-target="#quarto-formats">Quarto Formats</a></li>
-  <li><a href="#summary---highlights-of-quarto" id="toc-summary---highlights-of-quarto" class="nav-link" data-scroll-target="#summary---highlights-of-quarto">Summary - Highlights of Quarto</a></li>
-  <li><a href="#lab-1-introduction-to-quarto" id="toc-lab-1-introduction-to-quarto" class="nav-link" data-scroll-target="#lab-1-introduction-to-quarto">Lab 1: Introduction to Quarto</a></li>
-  <li><a href="#to-do" id="toc-to-do" class="nav-link" data-scroll-target="#to-do">To do…</a></li>
-  </ul></li>
+  <li><a href="#changing-the-execution-options" id="toc-changing-the-execution-options" class="nav-link" data-scroll-target="#changing-the-execution-options">Changing the Execution Options</a></li>
+  <li><a href="#running-the-provided-code" id="toc-running-the-provided-code" class="nav-link" data-scroll-target="#running-the-provided-code">Running the Provided Code</a></li>
+  <li><a href="#check-the-data-documentation" id="toc-check-the-data-documentation" class="nav-link" data-scroll-target="#check-the-data-documentation">Check the Data Documentation</a></li>
+  <li><a href="#sec-creating-a-plot" id="toc-sec-creating-a-plot" class="nav-link" data-scroll-target="#sec-creating-a-plot">Creating a Plot</a></li>
+  <li><a href="#inserting-a-new-code-chunk" id="toc-inserting-a-new-code-chunk" class="nav-link" data-scroll-target="#inserting-a-new-code-chunk">Inserting a New Code Chunk</a></li>
+  <li><a href="#conducting-statistical-analyses" id="toc-conducting-statistical-analyses" class="nav-link" data-scroll-target="#conducting-statistical-analyses">Conducting Statistical Analyses</a></li>
+  <li><a href="#render-your-document" id="toc-render-your-document" class="nav-link" data-scroll-target="#render-your-document">Render your Document</a></li>
+  <li><a href="#include-an-image" id="toc-include-an-image" class="nav-link" data-scroll-target="#include-an-image">Include an Image</a></li>
+  <li><a href="#styling-your-quarto-document" id="toc-styling-your-quarto-document" class="nav-link" data-scroll-target="#styling-your-quarto-document">Styling your Quarto Document</a></li>
+  <li><a href="#render-again" id="toc-render-again" class="nav-link" data-scroll-target="#render-again">Render again!</a></li>
+  <li><a href="#turn-it-in" id="toc-turn-it-in" class="nav-link" data-scroll-target="#turn-it-in">Turn it in!</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/manncz/stat-331-s26/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div><div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="w1-notebooks.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/manncz/stat-331-s26/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Quarto &amp; Reproducibility</h1>
+<h1 class="title">Lab 1: Introduction to Quarto</h1>
 </div>
 
 
@@ -250,89 +255,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="wednesday-april-1" class="level2">
-<h2 class="anchored" data-anchor-id="wednesday-april-1">Wednesday, April 1</h2>
-<p>Today we will…</p>
-<ul>
-<li>Answer Clarifying Questions:
-<ul>
-<li>Syllabus?</li>
-<li>Reading?</li>
-<li>PA 1: Find the Mistakes?</li>
-</ul></li>
-<li>New Material
-<ul>
-<li>Reproducibility</li>
-<li>Scripts + Notebooks</li>
-</ul></li>
-<li>Lab 1: Introduction to Quarto</li>
-</ul>
-</section>
-<section id="reproducibility-r-projects" class="level1">
-<h1>Reproducibility &amp; R Projects</h1>
-<section id="reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility">Reproducibility</h2>
-<div class="incremental">
-<ul class="incremental">
-<li><p>In computing: analyses can be executed again with identical results (either by you or by someone else!)</p></li>
-<li><p><strong>Discussion: Why does it matter?</strong></p></li>
-</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
-<!--![Abstruse Goose](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4kMWHzPLU0tCYlQd9wsNFg.png)-->
-</section>
-<section id="principles-of-reproducibility" class="level2">
-<h2 class="anchored" data-anchor-id="principles-of-reproducibility">Principles of Reproducibility</h2>
-<p>You can to send your code to someone else, and they can jump in and start working right away.</p>
-<p>This means:</p>
-<div class="incremental">
-<ol class="incremental" type="1">
-<li>Files are organized and well-named.</li>
-<li>References to data and code work for everyone.</li>
-<li>Package dependency is clear.</li>
-<li>Code will run the same every time, even if data values change.</li>
-<li>Analysis process is well-explained and easy to read.</li>
-</ol>
+<div class="callout-title-container flex-fill">
+Read and follow all lab instructions carefully!
 </div>
-</section>
-<section id="principles-of-reproducibility-1" class="level2">
-<h2 class="anchored" data-anchor-id="principles-of-reproducibility-1">Principles of Reproducibility</h2>
-<p>You can to send your code to someone else, and they can jump in and start working right away.</p>
-<p>This means:</p>
+</div>
+<div class="callout-body-container callout-body">
+
+</div>
+</div>
+<section id="setup" class="level2">
+<h2 class="anchored" data-anchor-id="setup">Setup</h2>
+<section id="make-a-lab-directory" class="level3">
+<h3 class="anchored" data-anchor-id="make-a-lab-directory">Make a Lab Directory</h3>
+<p>If you have completed the course setup, you have already completed steps 1 &amp; 2 below.</p>
 <ol type="1">
-<li>Files are organized and well-named.</li>
-<li><strong>References to data and code work for everyone.</strong></li>
-<li>Package dependency is clear.</li>
-<li>Code will run the same every time, even if data values change.</li>
-<li>Analysis process is well-explained and easy to read.</li>
+<li><p>If you have not already, create a folder on your computer called “stat-331” or similar.</p></li>
+<li><p>Create an RStudio Project <strong>inside</strong> of this folder.</p></li>
+<li><p>Inside your stat-331 folder, create another folder called either “week-1” or “labs”. Remember, we are trying to be organized and <strong>not work out of our Downloads folder</strong>!</p></li>
+<li><p>Inside of this folder, create another folder called “lab1” or similar.</p></li>
 </ol>
 </section>
-<section id="paths" class="level2">
-<h2 class="anchored" data-anchor-id="paths">Paths</h2>
-<ul>
-<li>A <strong>path</strong> describes where a certain file or directory lives.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1"</code></pre>
-</div>
-</div>
-<p>This file lives in my user files <code>Users/</code>…</p>
-<p>…on my account <code>czmann/</code> …</p>
-<p>…in my <code>Documents</code> folder …</p>
-<p>…in a series of <strong>organized</strong> folders.</p>
-</section>
-<section id="absolute-vs.-relative-file-paths" class="level2">
-<h2 class="anchored" data-anchor-id="absolute-vs.-relative-file-paths">Absolute vs.&nbsp;Relative File Paths</h2>
-<ul>
-<li><p><strong>absolute file path</strong>: full path from the root directory on <em>your</em> computer</p></li>
-<li><p><strong>relative file path</strong>: path based on the relationship with a current <em>working directory</em> in terms of a hierarchichy of directories</p>
-<ul>
-<li><code>../</code> is the relative path to a parent directory</li>
-<li>examples to folow!</li>
-</ul></li>
-</ul>
-<p>. . .</p>
+<section id="create-your-lab-1-file" class="level3">
+<h3 class="anchored" data-anchor-id="create-your-lab-1-file">Create your Lab 1 File</h3>
+<p>To create a Quarto document, you first need to ensure Quarto is installed on your computer. (You should have already done this! If not, follow the instructions in the <a href="../../reading/week-1.1.html">Week 1 Reading</a>).</p>
+<ol type="1">
+<li><p>Once you have Quarto installed, open RStudio on your computer.</p></li>
+<li><p>In RStudio, go to <code>File</code> &gt; <code>New File</code> &gt; <code>Quarto Document...</code> and click on <code>Create</code> in the dialog box <strong>without changing anything</strong>.</p></li>
+</ol>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -343,402 +297,287 @@ Warning
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>An absolute file path will only work on your computer!!</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1"</code></pre>
+<p>For the instructions in this lab, I am expecting that the .qmd document you just created will look <em>exactly</em> like the one shown in the <a href="../../slides/week-1/w1-notebooks.html#/quarto---rendering">Quarto-Rendering</a> course slide. If your document is instead entirely blank other than a YAML header, some of these instructions will be confusing and you should talk to me!</p>
 </div>
 </div>
-</div>
-</div>
-</section>
-<section id="absolute-vs.-relative-file-paths-1" class="level2">
-<h2 class="anchored" data-anchor-id="absolute-vs.-relative-file-paths-1">Absolute vs.&nbsp;Relative File Paths</h2>
-<p><img src="images/relative-absolute.png" class="img-fluid"></p>
-</section>
-<section id="working-directories-in-r" class="level2">
-<h2 class="anchored" data-anchor-id="working-directories-in-r">Working Directories in R</h2>
+<ol start="3" type="1">
+<li><p>Change the title of your document to be “Lab 1: Introduction to Quarto”</p></li>
+<li><p>Add additional lines to your YAML header:</p></li>
+</ol>
 <ul>
-<li>Your <strong>working directory</strong> is the folder that <code>R</code> “thinks it lives” in at the moment.
-<ul>
-<li>If you import or reference files, R will look in the working directory by default</li>
-<li>If you save things you have created, they save to your working directory by default.</li>
-</ul></li>
+<li>add a line with <code>author:</code> and your name.</li>
+<li>add a line with <code>embed-resources: true</code>.</li>
+<li>add a line with <code>code-tools: true</code>.</li>
+<li>(optional) add a line to specify the <code>editor</code> as your preference for either source or visual.</li>
 </ul>
-<p>. . .</p>
+<ol start="5" type="1">
+<li>Save the Quarto file as “lab1.qmd” in your “week-1” or “labs” folder. You can change up the name of your document, but the name <strong>cannot</strong> have spaces and it should describe what the document is.</li>
+</ol>
+</section>
+</section>
+<section id="changing-the-execution-options" class="level2">
+<h2 class="anchored" data-anchor-id="changing-the-execution-options">Changing the Execution Options</h2>
+<p>Execution options specify how the R code in your Quarto document should be displayed. This <a href="https://quarto.org/docs/computations/execution-options.html">guide</a> provides descriptions on the options you can specify in a document’s execution.</p>
+<p>To start, your YAML should look something like this:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] "/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1"</code></pre>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lab 1: Introduction to Quarto"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Dr. C"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">code-tools</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">editor</span><span class="kw">:</span><span class="at"> source (or visual)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Similar to how you added an <code>author</code>, <code>embed-resources</code>, (and <code>editor</code>) line, you will first need to add an <code>execute</code> line to your YAML that includes multiple options.</p>
+<p><strong>Use the <a href="https://quarto.org/docs/computations/execution-options.html">guide</a> to specify execution options so that:</strong></p>
+<ol type="1">
+<li>your source code is always output on the page.</li>
+<li>your document will render even if there are errors.</li>
+</ol>
+</section>
+<section id="running-the-provided-code" class="level2">
+<h2 class="anchored" data-anchor-id="running-the-provided-code">Running the Provided Code</h2>
+<p>Next, click on the “Play” button on the right of the first auto-populated code chunk. Alternatively, you can highlight (or simply put your cursor on the line of) the code you want to run and hit <kbd>ctrl</kbd> + <kbd>Enter</kbd> or <kbd>⌘</kbd> + <kbd>Enter</kbd>.</p>
+<p>You should see the code appear in the console, as well as the result of the code (<code>2</code>). Keep in mind the <code>[1]</code> before the <code>2</code> is vector notation. This means the result is a <em>vector</em> of length 1, whose first element is <code>2</code>.</p>
+<p>Let’s spice this code up a bit. Delete <code>1 + 1</code> from the code chunk and write the following code:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load a dataset into the R Environment.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(ToothGrowth)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at the summary of the variables in the dataset.</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(ToothGrowth)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at a frequency table of a categorical variable.</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(ToothGrowth<span class="sc">$</span>supp)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now run this code. You should see a six-number summary of the variables <code>len</code> and <code>dose</code> included in the <code>ToothGrowth</code> dataset, as well as the frequency of the levels contained in the <code>supp</code> variable. Second, there is just the frequency table for the <code>supp</code> variable. Further, if you inspect the Environment tab, the <code>ToothGrowth</code> dataset should appear. You can click on the dataset name (not the blue play button!) to look at the data.</p>
+</section>
+<section id="check-the-data-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="check-the-data-documentation">Check the Data Documentation</h2>
+<p>In your <strong>console</strong> (<em>not</em> in the Quarto document), type <code>?ToothGrowth</code> (or alternatively <code>help(ToothGrowth)</code>.</p>
+<ol type="1">
+<li><p>Use the information that pops up in the <em>Help</em> pane in RStudio to fill in the blanks below.</p></li>
+<li><p>Add the questions and your responses <em>after</em> the R code chunk.</p></li>
+<li><p><em>Before</em> the code chunk, create a section header (using <code>#</code>s) that describes the contents of the section (e.g., Tooth Growth Dataset).</p></li>
+</ol>
+<p><em>This dataset investigates the effect of ______ ____ on tooth growth in _________ ________.</em></p>
+<p><em>The two supplement delivery methods include OJ (_______ _______) and VC (_________ ______).</em></p>
+<p><em>It is a data frame with ____ observations and ____ variables.</em></p>
+<p>Your Tooth Growth Dataset section should look something like this (although it will also include the table of <code>supp</code>):</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/tooth_dataset_section.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
 </div>
 </div>
-<p>. . .</p>
-<div class="callout callout-style-default callout-warning callout-titled">
+</div>
+</section>
+<section id="sec-creating-a-plot" class="level2">
+<h2 class="anchored" data-anchor-id="sec-creating-a-plot">Creating a Plot</h2>
+<p>The second code chunk automatically provided is just as boring as your first, so let’s spice it up! Replace the <code>2 * 2</code> code with the following (we will talk about graphics next week!):</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># make sure to load the package ggplot2</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> ToothGrowth, </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>       <span class="fu">aes</span>(<span class="at">x =</span> supp,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>           <span class="at">y =</span> len)) <span class="sc">+</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>() <span class="sc">+</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Now, run this code chunk! You should see side-by-side boxplots comparing tooth length between the two supplement delivery methods contained in the <code>ToothGrowth</code> data set.</p>
+<p>Look back at the help documentation for the <code>ToothGrowth</code> dataset to determine what <code>len</code> represents (i.e., “Length of xxx”).</p>
+<p>Next, look up the help file on the <code>labs()</code> ggplot2 function to find the arguments you can use to specify the <span class="math inline">\(x\)</span>- and <span class="math inline">\(y\)</span>-axis labels. Change the <span class="math inline">\(x\)</span>-axis and <span class="math inline">\(y\)</span>-axis labels to display reader-friendly axis labels as found in the <code>ToothGrowth</code> help file. For example, “Supplement Type” is better than “supp”.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Warning
+Hint - help files for axis labels
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>If you are in practice of using <code>setwd()</code> to set a working directory in <code>R</code> <strong>FORGET THIS</strong>. We will be using other, better practice methods to set a working directory.</p>
+<p>Particularly, looking at the <em>examples</em> at the bottom of the help file and <a href="https://www.sthda.com/english/wiki/ggplot2-title-main-axis-and-legend-titles">this site</a> may also be helpful.</p>
+<p>You should not be using <code>xlab()</code> and <code>ylab()</code>, but arguments <em>in</em> the <code>labs()</code> function.</p>
 </div>
 </div>
+<p>Note that <code>#| echo: false</code> is an output option applied only to this specific code chunk. <strong>Remove this line so the code appears in your final rendered document.</strong></p>
+<p>Create another section header (like you did before) stating what is included in this section.</p>
 </section>
-<section id="reproducibility-pulling-it-all-together" class="level2">
-<h2 class="anchored" data-anchor-id="reproducibility-pulling-it-all-together">Reproducibility: Pulling it all together</h2>
-<p><strong>Relative file paths</strong> allow someone else to run your code exactly (reproducibly!), as long as they</p>
+<section id="inserting-a-new-code-chunk" class="level2">
+<h2 class="anchored" data-anchor-id="inserting-a-new-code-chunk">Inserting a New Code Chunk</h2>
+<p>Navigate to the last sentence of the Quarto document. We’re now going to insert a new <code>R</code> code chunk at the bottom of the document.</p>
+<p>There are four different ways to do this:</p>
 <ol type="1">
-<li><p>have everything <strong>organized</strong> the exact way that you do and</p></li>
-<li><p>the same <strong>working directory</strong></p></li>
+<li><p>type <kbd>ctrl</kbd> + <kbd>alt</kbd> + <kbd>i</kbd> on Windows, or <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>i</kbd> on macOS,</p></li>
+<li><p>Click on the <img src="images/add-code-chunk.jpg" class="img-fluid"> symbol. This should automatically default to R code, but if you have a Python compiler on your computer, you might need to select “R” from the options.</p></li>
+<li><p>If you are using the Visual editor, click on the “Insert” button, then select “Code Chunk”, and finally select “R”.</p></li>
+<li><p>Manually add the code chunk by typing <code>```{r}</code>. Make sure to close your code chunk with <code>```</code>.</p></li>
 </ol>
-<p>. . .</p>
-<p>We will learn multiple ways to stay organized! <em>R Projects</em> and <em>Notebooks</em></p>
-</section>
-<section id="r-projects" class="level2">
-<h2 class="anchored" data-anchor-id="r-projects">R Projects</h2>
-<ul>
-<li>An <strong>R Project</strong> is basically a “flag” planted in a certain directory.</li>
-</ul>
-<p>. . .</p>
-<ul>
-<li>When you double click an <strong>.Rproj</strong> file, it:</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ol type="1">
-<li><p>Opens RStudio</p></li>
-<li><p>Sets the working directory to be wherever the .Rproj file lives.</p></li>
-<li><p>Has any files open or elements in your environment that you last saved.</p></li>
-<li><p>Links to GitHub, if set up (more on that later!)</p></li>
-</ol>
-</div><div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/project_flag.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="the-beauty-of-r-projects" class="level2">
-<h2 class="anchored" data-anchor-id="the-beauty-of-r-projects">The Beauty of R Projects</h2>
-<div class="incremental">
-<ul class="incremental">
-<li><p>R Projects are great for <strong>reproducibility</strong>!</p>
-<ul class="incremental">
-<li>You can send anyone your folder with your .Rproj file and they will be able to run your code on their computer.</li>
-</ul></li>
-<li><p>R Projects are great for <strong>organization</strong></p>
-<ul class="incremental">
-<li>Having a separate R project for every ..well.. project will keep your analyses separate and organized!</li>
-<li>Whenever you want to work on this class, double click the R Project you created to open everything up</li>
-</ul></li>
-</ul>
-</div>
-</section>
-</section>
-<section id="scripts-notebooks" class="level1">
-<h1>Scripts + Notebooks</h1>
-<section id="scripts" class="level2">
-<h2 class="anchored" data-anchor-id="scripts">Scripts</h2>
-<ul>
-<li><strong>Scripts</strong> (<code>File &gt; New File &gt; R Script</code>) are files of code that are meant to be run on their own.</li>
-</ul>
-<p>. . .</p>
-<ul>
-<li><p>Scripts can be run in RStudio by clicking the <code>Run</code> button at the top of the editor window when the script is open.</p></li>
-<li><p>You can also run code interactively in a script by:</p>
-<ul>
-<li><p>highlighting lines of code and hitting run.</p></li>
-<li><p>placing your cursor on a line of code and hitting run.</p></li>
-<li><p>placing your cursor on a line of code and hitting <code>ctrl + enter</code> or <code>command + enter</code>.</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="notebooks" class="level2">
-<h2 class="anchored" data-anchor-id="notebooks">Notebooks</h2>
-<p>Notebooks are an implementation of <strong>literate programming</strong>.</p>
-<ul>
-<li><p>They allow you to integrate code, output, text, images, etc. into a single document.</p></li>
-<li><p>E.g.,</p>
-<ul>
-<li>R Markdown notebook</li>
-<li><strong>Quarto notebook</strong></li>
-<li>Jupyter notebook</li>
-</ul></li>
-</ul>
-<p><strong>Reproducibility!</strong></p>
-</section>
-<section id="what-is-markdown" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-markdown">What is Markdown?</h2>
-<p><strong>Markdown</strong> is a <em>markup language</em>.</p>
-<ul>
-<li><p>It uses special symbols and formatting to make pretty documents.</p></li>
-<li><p>Markdown files have the <strong>.md</strong> extension.</p></li>
-</ul>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-<center>
-<img src="https://d33wubrfki0l68.cloudfront.net/59f29676ef5e4d74685e14f801bbc10c2dbd3cef/c0688/lesson-images/markdown-1-markup.png" class="img-fluid">
-</center>
-</section>
-<section id="what-is-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-quarto">What is Quarto?</h2>
-<p>Quarto uses regular <em>Markdown</em>, <strong>AND</strong> it can run and display <code>R</code> code.</p>
-<ul>
-<li>(Other languages, too!)</li>
-<li>Quarto files have the <strong>.qmd</strong> extension.</li>
-</ul>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/rmd_ecosystem.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:50.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>Quarto is the next generation R Markdown</li>
-</ul>
-</section>
-<section id="quarto---rendering" class="level2">
-<h2 class="anchored" data-anchor-id="quarto---rendering">Quarto - Rendering</h2>
-<p>To take your <em>.qmd</em> file and make it look pretty, you have to <strong>render</strong> it.</p>
-<p><img src="images/quarto.png" class="img-fluid"></p>
-</section>
-<section id="rendering-your-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="rendering-your-quarto-document">Rendering your Quarto Document</h2>
-<center>
-<p><img src="images/render.png" class="img-fluid"></p>
-<p><img src="images/render_on_save.png" class="img-fluid"></p>
-</center>
-</section>
-<section id="rendering---what-happens" class="level2">
-<h2 class="anchored" data-anchor-id="rendering---what-happens">Rendering - What happens?</h2>
-<p>When you render:</p>
-<ul>
-<li>Your file is saved.</li>
-<li>The R code written in your <em>.qmd</em> file gets run <strong>in order</strong>.
-<ul>
-<li>It starts from scratch, even if you previously ran some of the code.</li>
-</ul></li>
-<li>A new file is created.
-<ul>
-<li>If your Quarto file is called “lab1.qmd”, then a file called “lab1.html” will be created.</li>
-<li>This will be saved in the same folder as “lab1.qmd”.</li>
-</ul></li>
-</ul>
-</section>
-<section id="rendering---under-the-hood" class="level2">
-<h2 class="anchored" data-anchor-id="rendering---under-the-hood">Rendering - Under the hood</h2>
-<p>Quarto CLI (command line interface) orchestrates each step of rendering:</p>
-<ol type="1">
-<li>Process the executable code chunks with either <code>knitr</code> or <code>jupyter</code>.</li>
-<li>Convert the resulting Markdown file to the desired output.</li>
-</ol>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/horst_qmd_render_schema.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="4522"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="quarto-components" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-components">Quarto Components</h2>
-<p><img src="images/quarto_sections.jpeg" class="img-fluid" style="width:80.0%"></p>
-</section>
-<section id="quarto---front-matter" class="level2">
-<h2 class="anchored" data-anchor-id="quarto---front-matter">Quarto - Front Matter</h2>
-<ul>
-<li>Configuration instructions: YAML</li>
-<li>Basic specifications like:
-<ul>
-<li>Document type</li>
-<li>Title</li>
-<li>Author</li>
-<li>Date</li>
-</ul></li>
-<li>Fancier specifications (you will explore this in Lab 1!)</li>
-</ul>
-<p><img src="images/yaml.png" class="img-fluid"></p>
-</section>
-<section id="quarto---code" class="level2">
-<h2 class="anchored" data-anchor-id="quarto---code">Quarto - Code</h2>
-<ul>
-<li>“code chunks”</li>
-<li>output of code appears below the chunk</li>
-<li><em>good practice:</em> divide your code throughout a document into steps in different chunks</li>
-<li>you specify how you want Quarto to handle code in each chunk in the final “rendered” document</li>
-</ul>
-<p><img src="images/code-chunk.png" class="img-fluid"></p>
-</section>
-<section id="r-code-options-in-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="r-code-options-in-quarto">R Code Options in Quarto</h2>
-<p><strong>R code chunk</strong> options are included at the top of each code chunk, prefaced with a #| (hashpipe).</p>
-<ul>
-<li>These options control how the following code is run and reported in the final Quarto document.</li>
-<li>R code options can also be included in the front matter (YAML) and are applied globally to the document.</li>
-</ul>
-<p><img src="images/code-chunk-options.png" class="img-fluid"></p>
-</section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1"></h2>
-<center>
-<img src="images/code_options.png" class="img-fluid">
-</center>
-</section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2"></h2>
-<center>
-<img src="images/quarto_code_options.png" class="img-fluid">
-</center>
-</section>
-<section id="quarto---markdown" class="level2">
-<h2 class="anchored" data-anchor-id="quarto---markdown">Quarto - Markdown</h2>
-<ul>
-<li><p>Anything other that code and output should be included as Markdown in a Quarto notebook</p></li>
-<li><p>Some <strong>Markdown</strong> text basics:</p>
-<ul>
-<li>*text* – makes italics</li>
-<li>**text** – makes bold text</li>
-<li># – makes headers</li>
-<li>![ ]( ) – includes images or HTML links</li>
-<li>&lt; &gt; – embeds URLs</li>
-</ul></li>
-<li><p>Find more Markdown basics <a href="https://quarto.org/docs/authoring/markdown-basics.html">here</a>.</p></li>
-</ul>
-</section>
-<section id="so-many-hashtags" class="level2">
-<h2 class="anchored" data-anchor-id="so-many-hashtags">#so many hashtags??</h2>
-<p>#’s are used in three different ways in Quarto documents…</p>
-<div class="incremental">
-<ol class="incremental" type="1">
-<li>In MARKDOWN, they define <strong>HEADERS</strong></li>
-<li>In YAML, they are preceded by a pipe | to define R <strong>CODE CHUNK OPTIONS</strong></li>
-<li>In R CODE, they define a <strong>COMMENT</strong></li>
-</ol>
-</div>
-<p><img src="images/hashtags.png" class="img-fluid"></p>
-</section>
-<section id="quarto-working-directory" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-working-directory">Quarto Working Directory</h2>
-<ul>
-<li>Quarto automatically sets the working directory to be <strong>where the notebook you are working in is located</strong></li>
-<li>🚨🚨<strong>THIS OVERRIDES R PROJECTS</strong>🚨🚨</li>
-</ul>
-<p>. . .</p>
-<p><img src="images/relative-quarto.png" class="img-fluid" style="width:90.0%"></p>
-</section>
-<section id="quarto-relative-file-paths" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-relative-file-paths">Quarto &amp; Relative File Paths</h2>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">ALWAYS</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">NEVER 💥</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<ul>
-<li><p>Use relative file paths!</p></li>
-<li><p>Remember that when you run code within a .qmd file or render it, <strong>the working directory is the directory where the .qmd file is saved.</strong></p></li>
-</ul>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<ul>
-<li>put something like this at the top of your .qmd file:</li>
-</ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"/User/chappelroan/Desktop/R_Class/Lab_1/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="images/new_code_chunk.png" class="img-fluid figure-img" width="687"></p>
+</figure>
 </div>
+</div>
+</div>
+</section>
+<section id="conducting-statistical-analyses" class="level2">
+<h2 class="anchored" data-anchor-id="conducting-statistical-analyses">Conducting Statistical Analyses</h2>
+<p>Using R to conduct statistical analyses is an element of this course that we will mainly explore in labs before the end of the quarter. This will also help you practice reading R documentation.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Refresher on a two-sample independent t-test
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>While a second course in statistics is a pre-requisite for this class, you may want to go <a href="https://openintro-ims.netlify.app/inference-two-means">here</a> for a refresher on conducting two-sample independent t-tests.</p>
+</div>
+</div>
+<p>In this section, we are going to conduct a <strong>two-sample independent t-test</strong> to compare tooth length between the two supplement methods in the <code>ToothGrowth</code> dataset. I have outlined the null and alternative hypotheses we will be testing:</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Null
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The treatment mean tooth length for the OJ supplement delivery method is the same as the treatment mean tooth length for the VC supplement delivery method.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alternative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The treatment mean tooth length for the OJ supplement delivery method is different from the treatment mean tooth length for the VC supplement delivery method.</p>
+</div>
+</div>
+<p>Carry out the following steps:</p>
+<ol type="1">
+<li>Look up the help documentation for <code>t.test()</code>.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hint - Formula Syntax
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Look at the example for a two-sample t-test comparing <code>mpg</code> in morning and afternoon with the <code>mtcars</code> data.</p>
+<p>The most straight-forward approach (IMO) is using <strong>formula</strong> syntax, which is commonly employed in functions for statistical tests! I suggest you read more about <a href="http://econometrics.blog/post/the-r-formula-cheatsheet/">formula syntax</a> as well.</p>
+</div>
+</div>
+<ol start="2" type="1">
+<li><p>Using the function <code>t.test()</code>, write code to carry out the analysis. You can assume unequal variances and a two-sided alternative.</p></li>
+<li><p>Run your code chunk to obtain the output for your statistical test.</p></li>
+<li><p>Write a numbered list (in Markdown, like what you see here) below the code chunk presenting:</p>
+<ol type="1">
+<li>Your conclusion (in the context of these data) based on the p-value.</li>
+<li>The confidence interval for the difference in treatment means making clear the direction of the difference (make sure to read what confidence level is used by default).</li>
+</ol></li>
+<li><p>Create another section header, describing the contents of this section.</p></li>
+</ol>
+</section>
+<section id="render-your-document" class="level2">
+<h2 class="anchored" data-anchor-id="render-your-document">Render your Document</h2>
+<p>Render your document as an <strong>html</strong> file. Use the “Render” button (the blue arrow!) at the top of your screen.</p>
+<p>If you run into trouble rendering your document, try restarting R and running your code chunks in order, and see if you can find the problem.</p>
+<p>Another common issue is deleting the tick marks (<code>```</code>) that surround your code chunks. If you notice that the code chunks are not showing a “Play” button, or that they are not highlighted in gray, double check your tick marks!</p>
+<p>Recall we included <code>error: true</code> in our YAML execution options. This means that your document will still render even if there are errors. Make sure you are double checking your work!</p>
+<p>You will notice that there is auto-generated text that is unrelated to the work that you completed. It is always a good idea to delete this extra text!</p>
+</section>
+<section id="include-an-image" class="level2">
+<h2 class="anchored" data-anchor-id="include-an-image">Include an Image</h2>
+<ol type="1">
+<li>Save an image of an activity, place, book, or movie that you enjoy. Save the image somewhere that makes sense to you in your course directory.</li>
+<li>Check out this <a href="https://quarto.org/docs/authoring/figures.html">documentation</a> for how to include an image/figure in Markdown.</li>
+<li>Include your image at the end of your lab, along with a brief description.</li>
+</ol>
 <ul>
-<li>Setting working directory by hand = ☠️</li>
-<li>Absolute file paths = ☠️</li>
-<li>some one else’s computer will have no idea “where” this working directory is</li>
+<li>The Markdown code will look something like: <code>![Brief description](relativepath/image.png)</code></li>
+<li>You must use a <strong>relative file path</strong> to your image!</li>
+<li>You may want to adjust the image size.</li>
 </ul>
-</div>
-</div>
-</div>
-</section>
-<section id="quarto-formats" class="level2">
-<h2 class="anchored" data-anchor-id="quarto-formats">Quarto Formats</h2>
-<p>Quarto makes moving between outputs straightforward.</p>
-<ul>
-<li>All that needs to change between these formats is a few lines in the front matter (YAML)!</li>
-</ul>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Document</strong></p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><strong>Presentation</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Lesson 1"</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> revealjs</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
-<p><strong>Website</strong></p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="fu">website</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">navbar</span><span class="kw">:</span><span class="at"> </span></span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span></span>
-<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="kw">-</span><span class="at"> lesson-1.qmd</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="summary---highlights-of-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="summary---highlights-of-quarto">Summary - Highlights of Quarto</h2>
-<div class="incremental">
-<ul class="incremental">
-<li><p>Supports reproducibility!</p>
-<ul class="incremental">
-<li>Code, output, figures, and text all in one place</li>
-</ul></li>
-<li><p>Consistent implementation of pretty and handy features across different formats</p>
-<ul class="incremental">
-<li>documents, presentations, websites, books, &amp; more</li>
-</ul></li>
-<li><p>Guardrails that are helpful when learning:</p>
-<ul class="incremental">
-<li>E.g., YAML completion, informative syntax errors, etc.</li>
-</ul></li>
-<li><p>Support for other languages like Python, Julia, Observable, and more.</p></li>
-</ul>
-</div>
-</section>
-<section id="lab-1-introduction-to-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="lab-1-introduction-to-quarto">Lab 1: Introduction to Quarto</h2>
+<ol start="4" type="1">
+<li>Add a new section header before your image.</li>
+<li>Render your document again to make sure it worked.</li>
+</ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/ac60a4fb-6b2e-43f4-b0b9-44e137d4cef4_rw_3840.png?h=08991bf991acf8efd32f4b022354b535" class="img-fluid figure-img" style="width:10.0%"></p>
-<figcaption>Artwork by Allison Horst</figcaption>
+<p><img src="images/Paper_Menagerie_cover-360x570.jpg" class="img-fluid figure-img" style="width:30.0%"></p>
+<figcaption>I am obsessed with this book of short stories by Ken Liu.</figcaption>
 </figure>
 </div>
 </section>
-<section id="to-do" class="level2">
-<h2 class="anchored" data-anchor-id="to-do">To do…</h2>
-<ul>
-<li><strong>Lab 1: Introduction to Quarto</strong>
-<ul>
-<li>Due Sunday at 11:59pm</li>
-</ul></li>
-<li><strong>Read Chapter 2: Importing Data + Basics of Graphics</strong>
-<ul>
-<li><strong>Check-in 2.1 + 2.2</strong> due Tuesday (4/8) before class</li>
-</ul></li>
-</ul>
-
-
+<section id="styling-your-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="styling-your-quarto-document">Styling your Quarto Document</h2>
+<p>You can find a list of every option you can use to format an HTML document <a href="https://quarto.org/docs/output-formats/html-basics.html">here</a> and <a href="https://quarto.org/docs/reference/cells/cells-knitr.html">here</a>. Further, <a href="https://quarto.org/docs/output-formats/html-themes.html">here</a> are lists of different themes you can specify in your YAML to produce differently styled outputs.</p>
+<p>Make the following changes to your document:</p>
+<ol type="1">
+<li><p>Specify <strong>“Code Folding”</strong> in your YAML document options.</p></li>
+<li><p>Specify in the code chunk options that your boxplots of tooth length by supplement delivery method should be <strong>center aligned</strong>.</p></li>
+<li><p>Write and include a <strong>figure caption</strong> for the boxplots using a code-chunk option.</p></li>
+<li><p>Clean it up - delete the any automatically included headers or text in the file that are still there.</p></li>
+</ol>
+<p>You might have fun playing around with other themes or options!</p>
 </section>
+<section id="render-again" class="level2">
+<h2 class="anchored" data-anchor-id="render-again">Render again!</h2>
+<p>Notice that when you render the document, all of the code reruns again, producing the same output as before, but with your changes – this is called reproducibility!</p>
+<p>You should render <strong>often</strong> while completing your practice activities and lab assignments. Make small changes, then make sure the file still renders rather than making a bunch of big changes and then realizing something is wrong.</p>
+</section>
+<section id="turn-it-in" class="level2">
+<h2 class="anchored" data-anchor-id="turn-it-in">Turn it in!</h2>
+<p>Open the .html file on your computer to make sure it looks as you expected. Then upload the rendered (.html extension) document to Canvas!</p>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Double check that you have <code>embed-resources: true</code> in your YAML. Without this, your html will <strong>not</strong> be formatted correctly on Canvas. You should re-download what you submitted through your Canvas portal to ensure it all looks right!</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You’ll be doing this same process for all your future Lab Assignments. Each of these will involve a Quarto file. Some weeks, I may have a template for you to copy into the Quarto file just as with the first practice activity.</p>
+</div>
+</div>
+
+
 </section>
 
 </main> <!-- /main -->

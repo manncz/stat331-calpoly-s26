@@ -1,0 +1,266 @@
+---
+title: "STAT 331 Day 1 Handout"
+---
+
+## Running Code
+
+```{r}
+1 + 1
+2 + 1
+```
+
+What are three different ways to run the code above?
+
+
+How can you run both lines together?
+
+
+How can you run *just* the first line?
+
+
+## Packages
+
+1. Install the package `ggplot2` in the *console* or using the "Packages" tab in the RStudio viewer.
+
+2. Load the `ggplot2` package in the code chunk below:
+
+```{r}
+
+```
+
+
+## Data Types & Variables
+
+
+```{r}
+message <- "So long and thanks for all the fish"
+year <- 2025
+the_answer <- 42
+earth_demolished <- FALSE
+```
+
+Data types:
+- `message` is:
+- `year` is:
+- `the_answer` is:
+- `earth_demolished` is:
+
+
+## Data Structures
+
+- vector
+
+```{r}
+vec <- c(1, 2, 3)
+```
+
+- matrix
+
+```{r}
+mat <- matrix(seq(1:9), ncol = 3)
+```
+
+- list
+
+```{r}
+li <- list(vec = vec,
+           mat = mat,
+           other = c("a", "b", "c"))
+```
+
+- dataframe 
+
+```{r}
+df <- data.frame(x = c("a", "b", "c"),
+                 y = c(1, 2, 3))
+```
+
+How do different data structures appear differently in...
+
+...the *Environment*?
+
+
+
+... *inline*?
+
+
+
+
+What are the dimensions of ...
+
+- `vec`:
+- `mat`:
+- `li`:
+- `df`:
+
+
+## Indexing
+
+**Try it:**
+
+- index the second and third elements of the **vector** `vec`
+
+```{r}
+
+```
+
+- index the first **row** of the **matrix** `mat`
+
+```{r}
+
+```
+
+- index the third element of the second **column** of the **matrix** `mat`
+
+```{r}
+
+```
+
+- index the second element of the **list** `li`
+
+```{r}
+
+```
+
+- in *three* different ways, index the column `y` in the **dataframe** `df`
+
+```{r}
+
+```
+
+
+## Logic
+
+```{r}
+a <- c(TRUE, FALSE, TRUE, FALSE)
+b <- c(TRUE, TRUE, FALSE, FALSE)
+```
+
+
+Anticipate what each of the following lines of code will result in.
+
+
+```{r}
+a & b   # AND
+```
+
+```{r}
+a | b   # OR
+```
+
+```{r}
+!a & b  # NOT X AND Y
+```
+
+## Logic & Indexing
+
+```{r}
+vec > 2
+```
+
+```{r}
+vec[vec > 2]
+```
+
+
+## Vectorization
+
+
+```{r}
+vec + 1
+
+mat + 1
+```
+
+
+```{r}
+mean(vec)
+sd(vec)
+```
+
+
+```{r}
+sum(a | b)
+```
+
+**Try it:** find the *proportion* of elements in the matrix `mat` that are less than 4
+
+```{r}
+# your code here
+
+```
+
+
+## Errors
+
+### Syntax Errors
+
+We want to do the following:
+
+```{r}
+seq(from = 1, to = 10, by = 1)
+```
+
+Note the errors:
+
+```{r}
+seq(from = 1, to = 10, by = 1
+```
+
+```{r}
+seq(from = 1, to = 10 by = 1)
+```
+
+```{r}
+sequence(from = 1, to = 10, by = 1)
+```
+
+### Object-type Errors
+
+```{r}
+sqrt('1')
+```
+
+```{r}
+my_obj <- seq(from = 1, to = 10, by = 1)
+
+my_obj(5)
+```
+
+
+### Some Common Errors
+
+```{r}
+some_ojb <- 1:10
+
+mean(some_obj)
+```
+
+> Error: Object `some_obj` not found.
+
+- probably means:
+
+
+```{r}
+mean[1, 2]
+```
+
+> Error: object of type 'closure' is not subsettable.
+
+- probably means:
+
+
+```{r}
+"a" + 2
+```
+
+> Error: Non-numeric argument to binary operator.
+
+- probaby means:
+
+*Try it:* Fix the code below
+
+```{r}
+matrix(c("a", "b", "c", "d"), num_row = 2)
+```
+

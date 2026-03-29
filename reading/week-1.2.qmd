@@ -1,0 +1,72 @@
+---
+title: "Week 1, Part 2: Reproducibility & Quarto"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+```
+The theme of these readings is good management of your files and data. In part two
+of this week's coursework you learned how to identify **folders** and 
+**paths**, and create **Quarto documents**.
+
+
+#### 📖 Readings: 30 minutes
+
+#### 📽 Watch Video: 20-30 min
+
+------------------------------------------------------------------------
+
+
+# Reproducibility and Workflow
+
+
+
+
+As boring as it sounds, file management is arguably one of the most important
+skills a data scientist should have. The success of a project depends
+just as much on the way in which the project was stored as the computing tools
+used. While using R and Quarto make an important step in creating a reproducible
+analysis, there are other pieces that are arguably just as important---such as
+**file management**.
+
+There has been a bit of generational shift as computers have evolved:
+the "file system" metaphor itself is outdated because no one uses physical files
+anymore. [This article](https://futurism.com/the-byte/gen-z-kids-file-systems) 
+is an interesting discussion of the problem: it makes the argument that with
+modern search capabilities, most people use their computers as a laundry hamper
+instead of as a nice, organized filing cabinet. I will say I have noticed this anecdotally - and while this may work for you a lot of the time, if you aren't organized with coding you will run into some serious headaches!
+
+::: column-margin
+{{< video https://www.youtube.com/embed/BV0-EPUYuQc >}}
+Stop watching at 4:16.
+:::
+
+::: column-margin
+{{< video https://www.youtube.com/embed/BMT3JUWmqYY >}}
+:::
+
+### 📖 Required Reading: [R4DS: Workflow and Scripts](https://r4ds.hadley.nz/workflow-scripts.html)
+
+
+
+If you are still feeling hazy on file systems and file paths, watch the optional videos 📽. 
+
+# Quarto
+
+### 📖 Required Reading: [R4DS: Intro to Quarto](https://r4ds.hadley.nz/quarto.html)
+
+
+### HTML Documents
+
+We will exclusively use HTML documents in this course. If you are interested in
+learning more about formatting options for Quarto HTML documents, I would 
+recommend checking out:
+
+-   [a discussion of the basics of formatting HTML documents in Quarto](https://quarto.org/docs/output-formats/html-basics.html)
+
+-   [the list of all HTML formatting options for Quarto documents](https://quarto.org/docs/reference/formats/html.html)

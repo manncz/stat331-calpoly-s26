@@ -6,13 +6,13 @@ format:
 editor: source
 ---
 
-## Thursday, April 3
+## Wednesday, April 1
 
 Today we will...
 
 -   Answer Clarifying Questions:
     -   Syllabus?
-    -   Chapter 1 Reading?
+    -   Reading?
     -   PA 1: Find the Mistakes?
 -   New Material
     -   Reproducibility
@@ -30,7 +30,7 @@ Today we will...
 :::
 
 
-![Abstruse Goose](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4kMWHzPLU0tCYlQd9wsNFg.png)
+<!--![Abstruse Goose](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4kMWHzPLU0tCYlQd9wsNFg.png)-->
 
 ## Principles of Reproducibility
 
@@ -133,13 +133,10 @@ If you are in practice of using `setwd()` to set a working directory in `R` **FO
 
 . . .
 
-Enter **R Projects!**
+We will learn multiple ways to stay organized! *R Projects* and *Notebooks*
 
-```{r, out.width = "30%", fig.align='center', echo = F}
-knitr::include_graphics("images/project_flag.jpg")
-```
 
-## The Beauty of R Projects
+## R Projects
 
 -   An **R Project** is basically a "flag" planted in a certain directory.
 
@@ -365,7 +362,7 @@ knitr::include_graphics("images/horst_qmd_render_schema.png")
 ## Quarto Working Directory
 
 - Quarto automatically sets the working directory to be **where the notebook you are working in is located**
-- **THIS OVERRIDES R PROJECTS**
+- 🚨🚨**THIS OVERRIDES R PROJECTS**🚨🚨
 
 . . .
 
@@ -468,6 +465,6 @@ website:
 ## To do...
 
 -   **Lab 1: Introduction to Quarto**
-    -   Due Monday 4/7 at 11:59pm
+    -   Due Sunday  at 11:59pm
 -   **Read Chapter 2: Importing Data + Basics of Graphics**
     -   **Check-in 2.1 + 2.2** due Tuesday (4/8) before class
