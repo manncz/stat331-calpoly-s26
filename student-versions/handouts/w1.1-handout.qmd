@@ -1,5 +1,5 @@
 ---
-title: "STAT 331 Day 1 Handout"
+title: "STAT 331 Week 1 Day 1 Handout"
 ---
 
 ## Running Code

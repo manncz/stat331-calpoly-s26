@@ -77,6 +77,27 @@ This file lives in my user files `Users/`...
 
 ...in a series of **organized** folders.
 
+## Working Directories in R
+
+-   Your **working directory** is the folder that `R` "thinks it lives" in at the moment.
+    -   If you import or reference files, R will look in the working directory by default
+    -   If you save things you have created, they save to your working directory by default.
+
+
+. . .
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+getwd()
+```
+
+. . .
+
+::: callout-warning
+If you are in practice of using `setwd()` to set a working directory in `R` **FORGET THIS**. We will be using other, better practice methods to set a working directory.
+:::
+
 
 ## Absolute vs. Relative File Paths
 
@@ -102,26 +123,7 @@ getwd()
 
 ![](images/relative-absolute.png)
 
-## Working Directories in R
 
--   Your **working directory** is the folder that `R` "thinks it lives" in at the moment.
-    -   If you import or reference files, R will look in the working directory by default
-    -   If you save things you have created, they save to your working directory by default.
-
-
-. . .
-
-```{r}
-#| echo: true
-#| code-line-numbers: false
-getwd()
-```
-
-. . .
-
-::: callout-warning
-If you are in practice of using `setwd()` to set a working directory in `R` **FORGET THIS**. We will be using other, better practice methods to set a working directory.
-:::
 
 ## Reproducibility: Pulling it all together
 
@@ -313,7 +315,7 @@ knitr::include_graphics("images/horst_qmd_render_schema.png")
 
 ## R Code Options in Quarto
 
-**R code chunk** options are included at the top of each code chunk, prefaced with a #\| (hashpipe).
+**R code chunk** options are included at the top of each code chunk, prefaced with a `#|` (hashpipe).
 
 -   These options control how the following code is run and reported in the final Quarto document.
 -   R code options can also be included in the front matter (YAML) and are applied globally to the document.
@@ -464,7 +466,9 @@ website:
 
 ## To do...
 
--   **Lab 1: Introduction to Quarto**
+-   **[Lab 1](../../labs/lab1/lab1-quarto.qmd): Introduction to Quarto**
     -   Due Sunday  at 11:59pm
--   **Read Chapter 2: Importing Data + Basics of Graphics**
-    -   **Check-in 2.1 + 2.2** due Tuesday (4/8) before class
+-   **Required [Reading](../../reading/week-1.2.qmd) and Suggested Videos**
+-   Review all material from this week for the **group quiz on Monday**!
+    - Make sure that you can answer all of the questions in this week's notes!
+    - Group quiz at the **beginning** of class

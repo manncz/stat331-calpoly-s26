@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "slides/week-1/w1-notebooks.html#thursday-april-3",
-    "href": "slides/week-1/w1-notebooks.html#thursday-april-3",
+    "objectID": "slides/week-1/w1-notebooks.html#wednesday-april-1",
+    "href": "slides/week-1/w1-notebooks.html#wednesday-april-1",
     "title": "Quarto & Reproducibility",
-    "section": "Thursday, April 3",
-    "text": "Thursday, April 3\nToday we will…\n\nAnswer Clarifying Questions:\n\nSyllabus?\nChapter 1 Reading?\nPA 1: Find the Mistakes?\n\nNew Material\n\nReproducibility\nScripts + Notebooks\n\nLab 1: Introduction to Quarto"
+    "section": "Wednesday, April 1",
+    "text": "Wednesday, April 1\nToday we will…\n\nAnswer Clarifying Questions:\n\nSyllabus?\nReading?\nPA 1: Find the Mistakes?\n\nNew Material\n\nReproducibility\nScripts + Notebooks\n\nLab 1: Introduction to Quarto"
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#reproducibility",
@@ -32,14 +32,21 @@
     "href": "slides/week-1/w1-notebooks.html#paths",
     "title": "Quarto & Reproducibility",
     "section": "Paths",
-    "text": "Paths\n\nA path describes where a certain file or directory lives.\n\n\ngetwd()\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\nThis file lives in my user files Users/…\n…on my account czmann/ …\n…in my Documents folder …\n…in a series of organized folders."
+    "text": "Paths\n\nA path describes where a certain file or directory lives.\n\n\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\nThis file lives in my user files Users/…\n…on my account czmann/ …\n…in my Documents folder …\n…in a series of organized folders."
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#working-directories-in-r",
+    "href": "slides/week-1/w1-notebooks.html#working-directories-in-r",
+    "title": "Quarto & Reproducibility",
+    "section": "Working Directories in R",
+    "text": "Working Directories in R\n\nYour working directory is the folder that R “thinks it lives” in at the moment.\n\nIf you import or reference files, R will look in the working directory by default\nIf you save things you have created, they save to your working directory by default.\n\n\n\n\ngetwd()\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\n\n\n\n\n\n\n\n\nWarning\n\n\nIf you are in practice of using setwd() to set a working directory in R FORGET THIS. We will be using other, better practice methods to set a working directory."
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths",
     "href": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths",
     "title": "Quarto & Reproducibility",
     "section": "Absolute vs. Relative File Paths",
-    "text": "Absolute vs. Relative File Paths\n\nabsolute file path: full path from the root directory on your computer\nrelative file path: path based on the relationship with a current working directory in terms of a hierarchichy of directories\n\n../ is the relative path to a parent directory\nexamples to folow!\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nAn absolute file path will only work on your computer!!\n\ngetwd()\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\""
+    "text": "Absolute vs. Relative File Paths\n\nabsolute file path: full path from the root directory on your computer\nrelative file path: path based on the relationship with a current working directory in terms of a hierarchichy of directories\n\n../ is the relative path to a parent directory\nexamples to folow!\n\n\n\n\n\n\n\n\n\nWarning\n\n\nAn absolute file path will only work on your computer!!\n\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\""
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#absolute-vs.-relative-file-paths-1",
@@ -49,18 +56,18 @@
     "text": "Absolute vs. Relative File Paths"
   },
   {
-    "objectID": "slides/week-1/w1-notebooks.html#working-directories-in-r",
-    "href": "slides/week-1/w1-notebooks.html#working-directories-in-r",
-    "title": "Quarto & Reproducibility",
-    "section": "Working Directories in R",
-    "text": "Working Directories in R\n\nYour working directory is the folder that R “thinks it lives” in at the moment.\n\nIf you import or reference files, R will look in the working directory by default\nIf you save things you have created, they save to your working directory by default.\n\n\n. . .\n\ngetwd()\n\n[1] \"/Users/czmann/Documents/teaching/stat331/stat331-calpoly-s26/slides/week-1\"\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nIf you are in practice of using setwd() to set a working directory in R FORGET THIS. We will be using other, better practice methods to set a working directory."
-  },
-  {
     "objectID": "slides/week-1/w1-notebooks.html#reproducibility-pulling-it-all-together",
     "href": "slides/week-1/w1-notebooks.html#reproducibility-pulling-it-all-together",
     "title": "Quarto & Reproducibility",
     "section": "Reproducibility: Pulling it all together",
-    "text": "Reproducibility: Pulling it all together\nRelative file paths allow someone else to run your code exactly (reproducibly!), as long as they\n\nhave everything organized the exact way that you do and\nthe same working directory\n\n. . .\nWe will learn multiple ways to stay organized! R Projects and Notebooks"
+    "text": "Reproducibility: Pulling it all together\nRelative file paths allow someone else to run your code exactly (reproducibly!), as long as they\n\nhave everything organized the exact way that you do and\nthe same working directory\n\n\nWe will learn multiple ways to stay organized! R Projects and Notebooks"
+  },
+  {
+    "objectID": "slides/week-1/w1-notebooks.html#r-projects",
+    "href": "slides/week-1/w1-notebooks.html#r-projects",
+    "title": "Quarto & Reproducibility",
+    "section": "R Projects",
+    "text": "R Projects\n\nAn R Project is basically a “flag” planted in a certain directory.\n\n\n\nWhen you double click an .Rproj file, it:\n\n\n\n\nOpens RStudio\nSets the working directory to be wherever the .Rproj file lives.\nHas any files open or elements in your environment that you last saved.\nLinks to GitHub, if set up (more on that later!)"
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects",
@@ -70,18 +77,11 @@
     "text": "The Beauty of R Projects\n\n\nR Projects are great for reproducibility!\n\nYou can send anyone your folder with your .Rproj file and they will be able to run your code on their computer.\n\nR Projects are great for organization\n\nHaving a separate R project for every ..well.. project will keep your analyses separate and organized!\nWhenever you want to work on this class, double click the R Project you created to open everything up"
   },
   {
-    "objectID": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects-1",
-    "href": "slides/week-1/w1-notebooks.html#the-beauty-of-r-projects-1",
-    "title": "Quarto & Reproducibility",
-    "section": "The Beauty of R Projects",
-    "text": "The Beauty of R Projects\n\n\nR Projects are great for reproducibility!\n\nYou can send anyone your folder with your .Rproj file and they will be able to run your code on their computer.\n\nR Projects are great for organization\n\nHaving a separate R project for every ..well.. project will keep your analyses separate and organized!\nWhenever you want to work on this class, double click the R Project you created to open everything up"
-  },
-  {
     "objectID": "slides/week-1/w1-notebooks.html#scripts",
     "href": "slides/week-1/w1-notebooks.html#scripts",
     "title": "Quarto & Reproducibility",
     "section": "Scripts",
-    "text": "Scripts\n\nScripts (File &gt; New File &gt; R Script) are files of code that are meant to be run on their own.\n\n. . .\n\nScripts can be run in RStudio by clicking the Run button at the top of the editor window when the script is open.\nYou can also run code interactively in a script by:\n\nhighlighting lines of code and hitting run.\nplacing your cursor on a line of code and hitting run.\nplacing your cursor on a line of code and hitting ctrl + enter or command + enter."
+    "text": "Scripts\n\nScripts (File &gt; New File &gt; R Script) are files of code that are meant to be run on their own.\n\n\n\nScripts can be run in RStudio by clicking the Run button at the top of the editor window when the script is open.\nYou can also run code interactively in a script by:\n\nhighlighting lines of code and hitting run.\nplacing your cursor on a line of code and hitting run.\nplacing your cursor on a line of code and hitting ctrl + enter or command + enter."
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#notebooks",
@@ -102,7 +102,7 @@
     "href": "slides/week-1/w1-notebooks.html#what-is-quarto",
     "title": "Quarto & Reproducibility",
     "section": "What is Quarto?",
-    "text": "What is Quarto?\nQuarto uses regular Markdown, AND it can run and display R code.\n\n(Other languages, too!)\nQuarto files have the .qmd extension.\n\n\n\n\n\n\n\n\n\n\n\nQuarto is the next generation R Markdown"
+    "text": "What is Quarto?\nQuarto uses regular Markdown, AND it can run and display R code.\n\n(Other languages, too!)\nQuarto files have the .qmd extension.\n\n\n\nQuarto is the next generation R Markdown"
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#quarto---rendering",
@@ -179,7 +179,7 @@
     "href": "slides/week-1/w1-notebooks.html#quarto-working-directory",
     "title": "Quarto & Reproducibility",
     "section": "Quarto Working Directory",
-    "text": "Quarto Working Directory\n\nQuarto automatically sets the working directory to be where the notebook you are working in is located\n🚨🚨THIS OVERRIDES R PROJECTS🚨🚨\n\n. . ."
+    "text": "Quarto Working Directory\n\nQuarto automatically sets the working directory to be where the notebook you are working in is located\n🚨🚨THIS OVERRIDES R PROJECTS🚨🚨"
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#quarto-relative-file-paths",
@@ -207,21 +207,63 @@
     "href": "slides/week-1/w1-notebooks.html#lab-1-introduction-to-quarto",
     "title": "Quarto & Reproducibility",
     "section": "Lab 1: Introduction to Quarto",
-    "text": "Lab 1: Introduction to Quarto\n\n\n\nArtwork by Allison Horst"
+    "text": "Lab 1: Introduction to Quarto\n\nArtwork by Allison Horst"
   },
   {
     "objectID": "slides/week-1/w1-notebooks.html#to-do",
     "href": "slides/week-1/w1-notebooks.html#to-do",
     "title": "Quarto & Reproducibility",
     "section": "To do…",
-    "text": "To do…\n\nLab 1: Introduction to Quarto\n\nDue Sunday at 11:59pm\n\nRead Chapter 2: Importing Data + Basics of Graphics\n\nCheck-in 2.1 + 2.2 due Tuesday (4/8) before class"
+    "text": "To do…\n\nLab 1: Introduction to Quarto\n\nDue Sunday at 11:59pm\n\nRequired Reading and Suggested Videos\nReview all material from this week for the group quiz on Monday!\n\nMake sure that you can answer all of the questions in this week’s notes!\nGroup quiz at the beginning of class"
+  },
+  {
+    "objectID": "reading/week-1.2.html",
+    "href": "reading/week-1.2.html",
+    "title": "Week 1, Part 2: Reproducibility & Quarto",
+    "section": "",
+    "text": "The theme of these readings is good management of your files and data. In part two of this week’s coursework you learned how to identify folders and paths, and create Quarto documents.\n\n📖 Readings: 30 minutes\n\n\n📽 Watch Video: 20-30 min\n\n\n\n1 Reproducibility and Workflow\nAs boring as it sounds, file management is arguably one of the most important skills a data scientist should have. The success of a project depends just as much on the way in which the project was stored as the computing tools used. While using R and Quarto make an important step in creating a reproducible analysis, there are other pieces that are arguably just as important—such as file management.\nThere has been a bit of generational shift as computers have evolved: the “file system” metaphor itself is outdated because no one uses physical files anymore. This article is an interesting discussion of the problem: it makes the argument that with modern search capabilities, most people use their computers as a laundry hamper instead of as a nice, organized filing cabinet. I will say I have noticed this anecdotally - and while this may work for you a lot of the time, if you aren’t organized with coding you will run into some serious headaches!\n\n\n\nStop watching at 4:16.\n\n\n\n\n📖 Required Reading: R4DS: Workflow and Scripts\nIf you are still feeling hazy on file systems and file paths, watch the optional videos 📽.\n\n\n\n2 Quarto\n\n📖 Required Reading: R4DS: Intro to Quarto\n\n\nHTML Documents\nWe will exclusively use HTML documents in this course. If you are interested in learning more about formatting options for Quarto HTML documents, I would recommend checking out:\n\na discussion of the basics of formatting HTML documents in Quarto\nthe list of all HTML formatting options for Quarto documents"
+  },
+  {
+    "objectID": "practice-activities/pa1.html",
+    "href": "practice-activities/pa1.html",
+    "title": "PA 1: Find the Mistakes",
+    "section": "",
+    "text": "Today you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#access",
+    "href": "practice-activities/pa1.html#access",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Access",
+    "text": "Access\nYou can access PA1: Find the Mistakes in RStudio in one of two ways:\n\nClick here to access a Posit Cloud project.\n\n\nNote: if you do not have a Posit Cloud account, you will be asked to create one.\nNote: make sure you save a permanent version!\n\n\nIf you have already installed R, RStudio, and Quarto, you can download the practice activity template here.\n\n\nMake sure to move this from your Downloads folder into your stat-331/practice-activities folder (or equivalent)!"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-one-setup",
+    "href": "practice-activities/pa1.html#part-one-setup",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part One: Setup",
+    "text": "Part One: Setup\nEach of the following R chunks will cause one or more errors and / or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\",\n                \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\",\n                \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", '\"', \"(\", \")\", \" \", \"-\", \";\", \":\")\n\nError in parse(text = input): &lt;text&gt;:3:56: unexpected string constant\n2:                 \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n3: upper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\"\n                                                          ^\n\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\nError:\n! object 'lower_case' not found\n\n\n\nTurn the my_symbols vector into a data frame, with one column named “Symbol”.\n\n\nmy_symbols &lt;- dataframe(Symbol = my_symbols)\n\nError in `dataframe()`:\n! could not find function \"dataframe\"\n\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\nError:\n! object 'my_symbols' not found\n\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len\n\nError in parse(text = input): &lt;text&gt;:1:11: unexpected input\n1: my_symbols%Num &lt;- 1:len\n              ^"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
+    "href": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part Two: Decoding the secret message.",
+    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector.\n\nlibrary(readr)\ntop_secret &lt;- read_csv(\"https://www.dropbox.com/s/k72h1zewk4gtqep/PA_Secret_Code?dl=1\", \n                       col_names = FALSE)$X1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps, in the order given below.\nHint: To update a vector after performing an operation, you overwrite the existing object with the updated version. This looks something like this:\nx &lt;- x + 12,\nwhere the original value(s) in x have had 12 added to them, and the resulting values are put back in to the object named x.\nBe careful not to overwrite more than you intend. If this happens, go back and re-read in the raw data and run and any subsequent code chunks to start fresh with the top_secret vector.\n\nAdd 14 to every number (completed for you!)\n\n\n## Code completed for you\ntop_secret &lt;- top_secret + 14\n\n\nMultiply every number by 18, then subtract 257 (watch your order of operations!)\n\n\n## Code to carry out step 1\n\n\nUse the exp() function to exponentiate every number.\n\n\n## Code to carry out step 2\n\n\nSquare every number.\n\n\n## Code to carry out step 3\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17. The code below verifies that this is true for your top_secret object!\nHint: This is what is called a “relational” comparison, where you compare an object to a number and R will give you a vector of TRUEs and FALSEs based on whether the comparison is / is not met. You can then use these TRUEs and FALSEs as numbers, since TRUE = 1 and FALSE = 0 in R land.\n\n# Write code to verify that there are 352 numbers with values **below** 17\n\nNext, carry out the following steps:\n\nTurn your vector of numbers into a matrix with 5 columns. (I would recommend naming this something different than top_secret and informative such as secret_mat.)\n\n\n## Write code to carry out step 4.\n\n\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it evens. That is, evens should contain 2, 4, 6, 8 …, 382.\n\n\n## Write code to carry out step 5.\n\n\nSubtract the “evens” vector from the first column of your secret message matrix.\n\n\n## Write code to carry out step 6.\n\n\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column of your secret message matrix.\n\n\n## Code to carry out step 7.\n\n\nMultiply all numbers in the 4th and 5th column of your secret message matrix by 2.\n\n\n## Code to carry out step 8.\n\n\nTurn your secret message matrix back into a vector.\n\n\n## Code to carry out step 9.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100. The code below verifies that this is true for your top_secret object!\n\n# Write code to verify that indices 500 and beyond have values **below** 100\n\n\nTake the square root of all numbers in indices 38 to 465.\n\n\n## Code to carry out step 10.\n\n\nUse the round() function to round all numbers to the nearest whole number.\n\n\n## Code to carry out step 11.\n\n\nReplace all instances of the number 39 with 20.\n\n\nThis step requires another relational comparison, but this time it is equality. Equality in R is checked with a double equal sign == rather than a single equal sign!\n\n\n## Code to carry out step 12.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers.\nHint: Checking for divisibility is an interesting operation that isn’t done much in R. Modulus is the operation you are interested in, where you are checking for whether the numbers are divisible by 2, with no remainder. See what you can find about modulus in R!\n\n# Code to verify how many even numbers are in your top_secret vector\n# Should be 344!"
+  },
+  {
+    "objectID": "practice-activities/pa1.html#part-three-the-secret-message",
+    "href": "practice-activities/pa1.html#part-three-the-secret-message",
+    "title": "PA 1: Find the Mistakes",
+    "section": "Part Three: The secret message!",
+    "text": "Part Three: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message, by running the following code. Note: if your vector of numbers is not named top_secret at this point, change the code below appropriately to use your correct vector!\n\nstringr::str_c(my_symbols$Symbol[top_secret], collapse = \"\")\n\nError:\n! object 'my_symbols' not found\n\n\nGoogle the first line of this message, if you do not recognize it, to see what poem it is.\nYou will enter your answer in the PA1 Canvas assignment."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -404,6 +446,139 @@
       "Course information",
       "Syllabus"
     ]
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html",
+    "href": "labs/lab1/lab1-quarto.html",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "",
+    "text": "Read and follow all lab instructions carefully!"
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#setup",
+    "href": "labs/lab1/lab1-quarto.html#setup",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Setup",
+    "text": "Setup\n\nMake a Lab Directory\nIf you have completed the course setup, you have already completed steps 1 & 2 below.\n\nIf you have not already, create a folder on your computer called “stat-331” or similar.\nCreate an RStudio Project inside of this folder.\nInside your stat-331 folder, create another folder called either “week-1” or “labs”. Remember, we are trying to be organized and not work out of our Downloads folder!\nInside of this folder, create another folder called “lab1” or similar.\n\n\n\nCreate your Lab 1 File\nTo create a Quarto document, you first need to ensure Quarto is installed on your computer. (You should have already done this! If not, follow the instructions in the Week 1 Reading).\n\nOnce you have Quarto installed, open RStudio on your computer.\nIn RStudio, go to File &gt; New File &gt; Quarto Document... and click on Create in the dialog box without changing anything.\n\n\n\n\n\n\n\nWarning\n\n\n\nFor the instructions in this lab, I am expecting that the .qmd document you just created will look exactly like the one shown in the Quarto-Rendering course slide. If your document is instead entirely blank other than a YAML header, some of these instructions will be confusing and you should talk to me!\n\n\n\nChange the title of your document to be “Lab 1: Introduction to Quarto”\nAdd additional lines to your YAML header:\n\n\nadd a line with author: and your name.\nadd a line with embed-resources: true.\nadd a line with code-tools: true.\n(optional) add a line to specify the editor as your preference for either source or visual.\n\n\nSave the Quarto file as “lab1.qmd” in your “week-1” or “labs” folder. You can change up the name of your document, but the name cannot have spaces and it should describe what the document is."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#changing-the-execution-options",
+    "href": "labs/lab1/lab1-quarto.html#changing-the-execution-options",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Changing the Execution Options",
+    "text": "Changing the Execution Options\nExecution options specify how the R code in your Quarto document should be displayed. This guide provides descriptions on the options you can specify in a document’s execution.\nTo start, your YAML should look something like this:\n\n---\ntitle: \"Lab 1: Introduction to Quarto\"\nauthor: \"Dr. C\"\nformat: html\nembed-resources: true\ncode-tools: true\neditor: source (or visual)\n---\n\nSimilar to how you added an author, embed-resources, (and editor) line, you will first need to add an execute line to your YAML that includes multiple options.\nUse the guide to specify execution options so that:\n\nyour source code is always output on the page.\nyour document will render even if there are errors."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#running-the-provided-code",
+    "href": "labs/lab1/lab1-quarto.html#running-the-provided-code",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Running the Provided Code",
+    "text": "Running the Provided Code\nNext, click on the “Play” button on the right of the first auto-populated code chunk. Alternatively, you can highlight (or simply put your cursor on the line of) the code you want to run and hit ctrl + Enter or ⌘ + Enter.\nYou should see the code appear in the console, as well as the result of the code (2). Keep in mind the [1] before the 2 is vector notation. This means the result is a vector of length 1, whose first element is 2.\nLet’s spice this code up a bit. Delete 1 + 1 from the code chunk and write the following code:\n\n# Load a dataset into the R Environment.\ndata(ToothGrowth)\n\n# Look at the summary of the variables in the dataset.\nsummary(ToothGrowth)\n\n# Look at a frequency table of a categorical variable.\ntable(ToothGrowth$supp)\n\nNow run this code. You should see a six-number summary of the variables len and dose included in the ToothGrowth dataset, as well as the frequency of the levels contained in the supp variable. Second, there is just the frequency table for the supp variable. Further, if you inspect the Environment tab, the ToothGrowth dataset should appear. You can click on the dataset name (not the blue play button!) to look at the data."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#check-the-data-documentation",
+    "href": "labs/lab1/lab1-quarto.html#check-the-data-documentation",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Check the Data Documentation",
+    "text": "Check the Data Documentation\nIn your console (not in the Quarto document), type ?ToothGrowth (or alternatively help(ToothGrowth).\n\nUse the information that pops up in the Help pane in RStudio to fill in the blanks below.\nAdd the questions and your responses after the R code chunk.\nBefore the code chunk, create a section header (using #s) that describes the contents of the section (e.g., Tooth Growth Dataset).\n\nThis dataset investigates the effect of ______ ____ on tooth growth in _________ ________.\nThe two supplement delivery methods include OJ (_______ _______) and VC (_________ ______).\nIt is a data frame with ____ observations and ____ variables.\nYour Tooth Growth Dataset section should look something like this (although it will also include the table of supp):"
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#sec-creating-a-plot",
+    "href": "labs/lab1/lab1-quarto.html#sec-creating-a-plot",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Creating a Plot",
+    "text": "Creating a Plot\nThe second code chunk automatically provided is just as boring as your first, so let’s spice it up! Replace the 2 * 2 code with the following (we will talk about graphics next week!):\n\n# make sure to load the package ggplot2\nlibrary(ggplot2)\nggplot(data = ToothGrowth, \n       aes(x = supp,\n           y = len)) +\n  geom_boxplot() +\n  labs()\n\nNow, run this code chunk! You should see side-by-side boxplots comparing tooth length between the two supplement delivery methods contained in the ToothGrowth data set.\nLook back at the help documentation for the ToothGrowth dataset to determine what len represents (i.e., “Length of xxx”).\nNext, look up the help file on the labs() ggplot2 function to find the arguments you can use to specify the \\(x\\)- and \\(y\\)-axis labels. Change the \\(x\\)-axis and \\(y\\)-axis labels to display reader-friendly axis labels as found in the ToothGrowth help file. For example, “Supplement Type” is better than “supp”.\n\n\n\n\n\n\nHint - help files for axis labels\n\n\n\nParticularly, looking at the examples at the bottom of the help file and this site may also be helpful.\nYou should not be using xlab() and ylab(), but arguments in the labs() function.\n\n\nNote that #| echo: false is an output option applied only to this specific code chunk. Remove this line so the code appears in your final rendered document.\nCreate another section header (like you did before) stating what is included in this section."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#inserting-a-new-code-chunk",
+    "href": "labs/lab1/lab1-quarto.html#inserting-a-new-code-chunk",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Inserting a New Code Chunk",
+    "text": "Inserting a New Code Chunk\nNavigate to the last sentence of the Quarto document. We’re now going to insert a new R code chunk at the bottom of the document.\nThere are four different ways to do this:\n\ntype ctrl + alt + i on Windows, or ⌘ + ⌥ + i on macOS,\nClick on the  symbol. This should automatically default to R code, but if you have a Python compiler on your computer, you might need to select “R” from the options.\nIf you are using the Visual editor, click on the “Insert” button, then select “Code Chunk”, and finally select “R”.\nManually add the code chunk by typing ```{r}. Make sure to close your code chunk with ```."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#conducting-statistical-analyses",
+    "href": "labs/lab1/lab1-quarto.html#conducting-statistical-analyses",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Conducting Statistical Analyses",
+    "text": "Conducting Statistical Analyses\nUsing R to conduct statistical analyses is an element of this course that we will mainly explore in labs before the end of the quarter. This will also help you practice reading R documentation.\n\n\n\n\n\n\nRefresher on a two-sample independent t-test\n\n\n\nWhile a second course in statistics is a pre-requisite for this class, you may want to go here for a refresher on conducting two-sample independent t-tests.\n\n\nIn this section, we are going to conduct a two-sample independent t-test to compare tooth length between the two supplement methods in the ToothGrowth dataset. I have outlined the null and alternative hypotheses we will be testing:\n\n\n\n\n\n\nNull\n\n\n\nThe treatment mean tooth length for the OJ supplement delivery method is the same as the treatment mean tooth length for the VC supplement delivery method.\n\n\n\n\n\n\n\n\nAlternative\n\n\n\nThe treatment mean tooth length for the OJ supplement delivery method is different from the treatment mean tooth length for the VC supplement delivery method.\n\n\nCarry out the following steps:\n\nLook up the help documentation for t.test().\n\n\n\n\n\n\n\nHint - Formula Syntax\n\n\n\nLook at the example for a two-sample t-test comparing mpg in morning and afternoon with the mtcars data.\nThe most straight-forward approach (IMO) is using formula syntax, which is commonly employed in functions for statistical tests! I suggest you read more about formula syntax as well.\n\n\n\nUsing the function t.test(), write code to carry out the analysis. You can assume unequal variances and a two-sided alternative.\nRun your code chunk to obtain the output for your statistical test.\nWrite a numbered list (in Markdown, like what you see here) below the code chunk presenting:\n\nYour conclusion (in the context of these data) based on the p-value.\nThe confidence interval for the difference in treatment means making clear the direction of the difference (make sure to read what confidence level is used by default).\n\nCreate another section header, describing the contents of this section."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#render-your-document",
+    "href": "labs/lab1/lab1-quarto.html#render-your-document",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Render your Document",
+    "text": "Render your Document\nRender your document as an html file. Use the “Render” button (the blue arrow!) at the top of your screen.\nIf you run into trouble rendering your document, try restarting R and running your code chunks in order, and see if you can find the problem.\nAnother common issue is deleting the tick marks (```) that surround your code chunks. If you notice that the code chunks are not showing a “Play” button, or that they are not highlighted in gray, double check your tick marks!\nRecall we included error: true in our YAML execution options. This means that your document will still render even if there are errors. Make sure you are double checking your work!\nYou will notice that there is auto-generated text that is unrelated to the work that you completed. It is always a good idea to delete this extra text!"
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#include-an-image",
+    "href": "labs/lab1/lab1-quarto.html#include-an-image",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Include an Image",
+    "text": "Include an Image\n\nSave an image of an activity, place, book, or movie that you enjoy. Save the image somewhere that makes sense to you in your course directory.\nCheck out this documentation for how to include an image/figure in Markdown.\nInclude your image at the end of your lab, along with a brief description.\n\n\nThe Markdown code will look something like: ![Brief description](relativepath/image.png)\nYou must use a relative file path to your image!\nYou may want to adjust the image size.\n\n\nAdd a new section header before your image.\nRender your document again to make sure it worked.\n\n\n\n\nI am obsessed with this book of short stories by Ken Liu."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#styling-your-quarto-document",
+    "href": "labs/lab1/lab1-quarto.html#styling-your-quarto-document",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Styling your Quarto Document",
+    "text": "Styling your Quarto Document\nYou can find a list of every option you can use to format an HTML document here and here. Further, here are lists of different themes you can specify in your YAML to produce differently styled outputs.\nMake the following changes to your document:\n\nSpecify “Code Folding” in your YAML document options.\nSpecify in the code chunk options that your boxplots of tooth length by supplement delivery method should be center aligned.\nWrite and include a figure caption for the boxplots using a code-chunk option.\nClean it up - delete the any automatically included headers or text in the file that are still there.\n\nYou might have fun playing around with other themes or options!"
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#render-again",
+    "href": "labs/lab1/lab1-quarto.html#render-again",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Render again!",
+    "text": "Render again!\nNotice that when you render the document, all of the code reruns again, producing the same output as before, but with your changes – this is called reproducibility!\nYou should render often while completing your practice activities and lab assignments. Make small changes, then make sure the file still renders rather than making a bunch of big changes and then realizing something is wrong."
+  },
+  {
+    "objectID": "labs/lab1/lab1-quarto.html#turn-it-in",
+    "href": "labs/lab1/lab1-quarto.html#turn-it-in",
+    "title": "Lab 1: Introduction to Quarto",
+    "section": "Turn it in!",
+    "text": "Turn it in!\nOpen the .html file on your computer to make sure it looks as you expected. Then upload the rendered (.html extension) document to Canvas!\n\n\n\n\n\n\nCaution\n\n\n\nDouble check that you have embed-resources: true in your YAML. Without this, your html will not be formatted correctly on Canvas. You should re-download what you submitted through your Canvas portal to ensure it all looks right!\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou’ll be doing this same process for all your future Lab Assignments. Each of these will involve a Quarto file. Some weeks, I may have a template for you to copy into the Quarto file just as with the first practice activity."
+  },
+  {
+    "objectID": "reading/week-1.1.html",
+    "href": "reading/week-1.1.html",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "",
+    "text": "For the first portion of this week’s coursework, we are going to learn about / refresh our memory on R and RStudio. This course is all about you learning skills for working with data in R, so you will need to have local installations of both R and RStudio on your computer."
+  },
+  {
+    "objectID": "reading/week-1.1.html#updating-your-version-of-r",
+    "href": "reading/week-1.1.html#updating-your-version-of-r",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "1.1 Updating Your Version of R",
+    "text": "1.1 Updating Your Version of R\nIf you already have R downloaded, you need to confirm that you have the most up to date version of R. Do not ignore these instructions. If you neglect to update your version of R, you may find that updating a package will make it so your code will not run.\n\nStep 1: Open RStudio\nStep 2: At the top of the the Console it will say what version of R you are using\n\n\nIf the version is not 4.5.3 (like the image above), you need to update your version of R! The simplest way to do this is to follow the instructions below to install R."
+  },
+  {
+    "objectID": "reading/week-1.1.html#installing-r-1",
+    "href": "reading/week-1.1.html#installing-r-1",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "1.2 Installing R",
+    "text": "1.2 Installing R\nDownload and install R by going to https://cloud.r-project.org/. Here, you will find three options for installing R—click on the option for your computer’s operating system.\n\n\n\n\nIf you are a Windows user:\n\nClick on “Download R for Windows”\nClick on “base”\nClick on the Download link.\nWhen you open the execution file (.exe) you will be prompted with a variety of questions about installing R. Feel free to use the default features / settings that come with R (continue to click “Ok” until the download starts).\n\n\n\n\n\n\n\nMultiple Versions of R\n\n\n\nBeware that if you had a previous version of R downloaded on your PC, that old version will not be deleted when you download the most recent version of R. We do not want to have two versions of R installed, as your computer can get confused what version of R to use. So, you need to remove the old version of R.\nTo do this you need to:\n\nNavigate to your computer’s settings\nClick on the “Apps” option on the left-hand panel\nSearch for or scroll down to R\nFind the older version of R\n\n\n\nClick on the ... on the right side\nSelect “Uninstall”\n\n\n\n\n\n\nIf you are macOS user:\n\nClick on “Download R for (Mac) OS X”\nUnder “Latest release:” click on R-X.X.X.pkg, where R-X.X.X is the version number. For example, the latest version of R as of March 11, 2026 was R-4.5.3 (Reassured Reassurer).\nWhen installing, use the default features / settings that come with R (click Ok until the download starts).\n\n\n\n\n\n\n\nTroubleshooting for Macs\n\n\n\nFirst, identify which version of OSx you are running. How-to\nNext, find out which version of R your computer can run. Link\nIf this version is 3.6 or later, download the latest version that your computer can handle.\nIf this version is 3.4 or earlier, you’re going to run in to some trouble. I recommend updating your version of OSx, if you are willing. If you can’t, then you can use Posit Cloud to run R and RStudio on a free server. However, I recommend strongly against this option; your files will not be saved indefinitely, you will have limited hours to complete your work, your computing power will be limited, and you will need an internet connection at all times to do your work.\n\n\n\n\nIf you are a Linux user:\nClick on “Download R for Linux” and choose your distribution for more information on installing R for your setup."
+  },
+  {
+    "objectID": "reading/week-1.1.html#updating-your-version-of-rstudio",
+    "href": "reading/week-1.1.html#updating-your-version-of-rstudio",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.1 Updating Your Version of RStudio",
+    "text": "2.1 Updating Your Version of RStudio\nIf you already have RStudio, you need to double check if you have the most recent version. You will not have access to the newest features for Quarto documents unless you have the most recent version of RStudio.\n\nStep 1: Open RStudio\nStep 2: Click on “Help” in the upper menu\nStep 3: Click on “Check for Updates”\n\nIf there are no updates to RStudio since you installed it, you are good to go! If you need to update RStudio, you will be sent to Posit (the parent company) to download the most recent version of RStudio desktop."
+  },
+  {
+    "objectID": "reading/week-1.1.html#installing-rstudio",
+    "href": "reading/week-1.1.html#installing-rstudio",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.2 Installing RStudio",
+    "text": "2.2 Installing RStudio\n\n\n\n\nDownloading the most recent version of RStudio works the same way regardless of whether you’ve never downloaded RStudio before or if you just need to update your version of RStudio.\nWhen you navigate to the RStudio download page (https://rstudio.com/products/rstudio/download/), the website should automatically detect your computer’s operating system. So, you should be able to simply click the blue “Download RStudio Desktop for [insert operating system here]” button.\nClicking the button will begin installing RStudio. Once the download has completed, you will need to open the application file (on a Mac this is a .dmg file, on Windows this is an exe file)."
+  },
+  {
+    "objectID": "reading/week-1.1.html#ensure-quarto-is-installed",
+    "href": "reading/week-1.1.html#ensure-quarto-is-installed",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.3 ✅ Ensure Quarto is Installed",
+    "text": "2.3 ✅ Ensure Quarto is Installed\nWe will learn more about Quarto notebooks later in the week, so for now, just make sure that you have the software set up! It is likely that it was already installed automatically.\nTo check, open a new Rstudio window click the + icon in the top left of the Rstudio window and see if Quarto is an option. See screenshot below.\n\nIf you do not see Quarto, download and install the latest version of Quarto for your operating system."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#monday-march-30",
@@ -805,213 +980,24 @@
     "text": "PA 1: Find the Mistakes\nPart One:\nThis file has many mistakes in the code. Some are errors that will prevent the file from knitting; some are mistakes that do NOT result in an error.\nFix all the problems in the code chunks.\nPart Two:\nFollow the instructions in the file to uncover a secret message.\nSubmit the name of the poem as the answer to the Canvas Quiz question."
   },
   {
+    "objectID": "slides/week-1/w1-intro-r.html#collaborative-protocol",
+    "href": "slides/week-1/w1-intro-r.html#collaborative-protocol",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Collaborative Protocol",
+    "text": "Collaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code."
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html#submission",
+    "href": "slides/week-1/w1-intro-r.html#submission",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "Submission",
+    "text": "Submission\n\nWhen you have completed the puzzle, you will submit the name of the poem on Canvas.\n\nYou can ask me if it is correct before you submit\n\nFor future PA’s the person who was the last to be the computer will submit your code to Canvas for the whole group.\n\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person whose family name starts first alphabetically starts as the project manager, second as the computer."
+  },
+  {
     "objectID": "slides/week-1/w1-intro-r.html#to-do",
     "href": "slides/week-1/w1-intro-r.html#to-do",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "To do…",
-    "text": "To do…\n\nReading & review\nCourse Setup Assignments\n\nDue Wednesday at 11:59pm\n\nPA 1: Find the Mistakes\n\nDue Wednesday at 11:59pm"
-  },
-  {
-    "objectID": "reading/week-1.1.html",
-    "href": "reading/week-1.1.html",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "",
-    "text": "For the first portion of this week’s coursework, we are going to learn about / refresh our memory on R and RStudio. This course is all about you learning skills for working with data in R, so you will need to have local installations of both R and RStudio on your computer."
-  },
-  {
-    "objectID": "reading/week-1.1.html#updating-your-version-of-r",
-    "href": "reading/week-1.1.html#updating-your-version-of-r",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "1.1 Updating Your Version of R",
-    "text": "1.1 Updating Your Version of R\nIf you already have R downloaded, you need to confirm that you have the most up to date version of R. Do not ignore these instructions. If you neglect to update your version of R, you may find that updating a package will make it so your code will not run.\n\nStep 1: Open RStudio\nStep 2: At the top of the the Console it will say what version of R you are using\n\n\nIf the version is not 4.5.3 (like the image above), you need to update your version of R! The simplest way to do this is to follow the instructions below to install R."
-  },
-  {
-    "objectID": "reading/week-1.1.html#installing-r-1",
-    "href": "reading/week-1.1.html#installing-r-1",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "1.2 Installing R",
-    "text": "1.2 Installing R\nDownload and install R by going to https://cloud.r-project.org/. Here, you will find three options for installing R—click on the option for your computer’s operating system.\n\n\n\n\nIf you are a Windows user:\n\nClick on “Download R for Windows”\nClick on “base”\nClick on the Download link.\nWhen you open the execution file (.exe) you will be prompted with a variety of questions about installing R. Feel free to use the default features / settings that come with R (continue to click “Ok” until the download starts).\n\n\n\n\n\n\n\nMultiple Versions of R\n\n\n\nBeware that if you had a previous version of R downloaded on your PC, that old version will not be deleted when you download the most recent version of R. We do not want to have two versions of R installed, as your computer can get confused what version of R to use. So, you need to remove the old version of R.\nTo do this you need to:\n\nNavigate to your computer’s settings\nClick on the “Apps” option on the left-hand panel\nSearch for or scroll down to R\nFind the older version of R\n\n\n\nClick on the ... on the right side\nSelect “Uninstall”\n\n\n\n\n\n\nIf you are macOS user:\n\nClick on “Download R for (Mac) OS X”\nUnder “Latest release:” click on R-X.X.X.pkg, where R-X.X.X is the version number. For example, the latest version of R as of March 11, 2026 was R-4.5.3 (Reassured Reassurer).\nWhen installing, use the default features / settings that come with R (click Ok until the download starts).\n\n\n\n\n\n\n\nTroubleshooting for Macs\n\n\n\nFirst, identify which version of OSx you are running. How-to\nNext, find out which version of R your computer can run. Link\nIf this version is 3.6 or later, download the latest version that your computer can handle.\nIf this version is 3.4 or earlier, you’re going to run in to some trouble. I recommend updating your version of OSx, if you are willing. If you can’t, then you can use Posit Cloud to run R and RStudio on a free server. However, I recommend strongly against this option; your files will not be saved indefinitely, you will have limited hours to complete your work, your computing power will be limited, and you will need an internet connection at all times to do your work.\n\n\n\n\nIf you are a Linux user:\nClick on “Download R for Linux” and choose your distribution for more information on installing R for your setup."
-  },
-  {
-    "objectID": "reading/week-1.1.html#updating-your-version-of-rstudio",
-    "href": "reading/week-1.1.html#updating-your-version-of-rstudio",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "2.1 Updating Your Version of RStudio",
-    "text": "2.1 Updating Your Version of RStudio\nIf you already have RStudio, you need to double check if you have the most recent version. You will not have access to the newest features for Quarto documents unless you have the most recent version of RStudio.\n\nStep 1: Open RStudio\nStep 2: Click on “Help” in the upper menu\nStep 3: Click on “Check for Updates”\n\nIf there are no updates to RStudio since you installed it, you are good to go! If you need to update RStudio, you will be sent to Posit (the parent company) to download the most recent version of RStudio desktop."
-  },
-  {
-    "objectID": "reading/week-1.1.html#installing-rstudio",
-    "href": "reading/week-1.1.html#installing-rstudio",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "2.2 Installing RStudio",
-    "text": "2.2 Installing RStudio\n\n\n\n\nDownloading the most recent version of RStudio works the same way regardless of whether you’ve never downloaded RStudio before or if you just need to update your version of RStudio.\nWhen you navigate to the RStudio download page (https://rstudio.com/products/rstudio/download/), the website should automatically detect your computer’s operating system. So, you should be able to simply click the blue “Download RStudio Desktop for [insert operating system here]” button.\nClicking the button will begin installing RStudio. Once the download has completed, you will need to open the application file (on a Mac this is a .dmg file, on Windows this is an exe file)."
-  },
-  {
-    "objectID": "reading/week-1.1.html#debugging-r-code",
-    "href": "reading/week-1.1.html#debugging-r-code",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "3.1 Debugging R Code",
-    "text": "3.1 Debugging R Code\n\n📽️ Required Video: Debugging R Code"
-  },
-  {
-    "objectID": "practice-activities/pa1.html",
-    "href": "practice-activities/pa1.html",
-    "title": "PA 1: Find the Mistakes",
-    "section": "",
-    "text": "Today you will be creating and manipulating vectors, lists, and data frames to uncover a top secret message.\nSome advice:"
-  },
-  {
-    "objectID": "practice-activities/pa1.html#access",
-    "href": "practice-activities/pa1.html#access",
-    "title": "PA 1: Find the Mistakes",
-    "section": "Access",
-    "text": "Access\nYou can access PA1: Find the Mistakes in RStudio in one of two ways:\n\nClick here to access a Posit Cloud project.\n\n\nNote: if you do not have a Posit Cloud account, you will be asked to create one.\nNote: make sure you save a permanent version!\n\n\nIf you have already installed R, RStudio, and Quarto, you can download the practice activity template here.\n\n\nMake sure to move this from your Downloads folder into your stat-331/practice-activities folder (or equivalent)!"
-  },
-  {
-    "objectID": "practice-activities/pa1.html#part-one-setup",
-    "href": "practice-activities/pa1.html#part-one-setup",
-    "title": "PA 1: Find the Mistakes",
-    "section": "Part One: Setup",
-    "text": "Part One: Setup\nEach of the following R chunks will cause one or more errors and / or do the desired task incorrectly. Find the mistake, and correct it to complete the intended action.\n\nCreate vectors containing the upper case letters, lower case letters, and some punctuation marks.\n\n\nlower_case &lt;- c(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\", \"g\", \"h\", \"i\", \"j\", \"k\", \"l\", \"m\",\n                \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\nupper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\", \"J\", \"K\", \"L\", \"M\",\n                \"N\", \"O\", \"P\", \"Q\", \"R\", \"S\", \"T\", \"U\", \"V\", \"W\", \"X\", \"Y\", \"Z\")\npunctuation &lt;- c(\".\", \",\", \"!\", \"?\", \"'\", '\"', \"(\", \")\", \" \", \"-\", \";\", \":\")\n\nError in parse(text = input): &lt;text&gt;:3:56: unexpected string constant\n2:                 \"n\", \"o\", \"p\", \"q\", \"r\", \"s\", \"t\", \"u\", \"v\", \"w\", \"x\", \"y\", \"z\")\n3: upper_case &lt;- c(\"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\" \"I\"\n                                                          ^\n\n\n\nMake one long vector containing all the symbols.\n\n\nmy_symbols &lt;- cbind(lower_case, upper_case, punctuation)\n\nError:\n! object 'lower_case' not found\n\n\n\nTurn the my_symbols vector into a data frame, with one column named “Symbol”.\n\n\nmy_symbols &lt;- dataframe(Symbol = my_symbols)\n\nError in `dataframe()`:\n! could not find function \"dataframe\"\n\n\n\nFind the total number of symbols we have in our data frame.\n\n\nlen &lt;- length(my_symbols)\n\nError:\n! object 'my_symbols' not found\n\n\n\nCreate a new variable in your dataframe that assigns a number to each symbol.\n\n\nmy_symbols%Num &lt;- 1:len\n\nError in parse(text = input): &lt;text&gt;:1:11: unexpected input\n1: my_symbols%Num &lt;- 1:len\n              ^"
-  },
-  {
-    "objectID": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
-    "href": "practice-activities/pa1.html#part-two-decoding-the-secret-message.",
-    "title": "PA 1: Find the Mistakes",
-    "section": "Part Two: Decoding the secret message.",
-    "text": "Part Two: Decoding the secret message.\nThis chunk will load up the encoded secret message as a vector.\n\nlibrary(readr)\ntop_secret &lt;- read_csv(\"https://www.dropbox.com/s/k72h1zewk4gtqep/PA_Secret_Code?dl=1\", \n                       col_names = FALSE)$X1\n\nBy altering this top secret set of numbers, you will be able to create a message. Write your own code to complete the steps, in the order given below.\nHint: To update a vector after performing an operation, you overwrite the existing object with the updated version. This looks something like this:\nx &lt;- x + 12,\nwhere the original value(s) in x have had 12 added to them, and the resulting values are put back in to the object named x.\nBe careful not to overwrite more than you intend. If this happens, go back and re-read in the raw data and run and any subsequent code chunks to start fresh with the top_secret vector.\n\nAdd 14 to every number (completed for you!)\n\n\n## Code completed for you\ntop_secret &lt;- top_secret + 14\n\n\nMultiply every number by 18, then subtract 257 (watch your order of operations!)\n\n\n## Code to carry out step 1\n\n\nUse the exp() function to exponentiate every number.\n\n\n## Code to carry out step 2\n\n\nSquare every number.\n\n\n## Code to carry out step 3\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, there should be 352 numbers in the secret message that are below 17. The code below verifies that this is true for your top_secret object!\nHint: This is what is called a “relational” comparison, where you compare an object to a number and R will give you a vector of TRUEs and FALSEs based on whether the comparison is / is not met. You can then use these TRUEs and FALSEs as numbers, since TRUE = 1 and FALSE = 0 in R land.\n\n# Write code to verify that there are 352 numbers with values **below** 17\n\nNext, carry out the following steps:\n\nTurn your vector of numbers into a matrix with 5 columns. (I would recommend naming this something different than top_secret and informative such as secret_mat.)\n\n\n## Write code to carry out step 4.\n\n\nSeparately from your top secret numbers, create a vector of all the even numbers between 1 and 382. Name it evens. That is, evens should contain 2, 4, 6, 8 …, 382.\n\n\n## Write code to carry out step 5.\n\n\nSubtract the “evens” vector from the first column of your secret message matrix.\n\n\n## Write code to carry out step 6.\n\n\nSubtract 100 from all numbers in the 18-24th rows of the 3rd column of your secret message matrix.\n\n\n## Code to carry out step 7.\n\n\nMultiply all numbers in the 4th and 5th column of your secret message matrix by 2.\n\n\n## Code to carry out step 8.\n\n\nTurn your secret message matrix back into a vector.\n\n\n## Code to carry out step 9.\n\nCheckpoint: Headquarters has informed you that at this stage of decoding, all numbers in indices 500 and beyond are below 100. The code below verifies that this is true for your top_secret object!\n\n# Write code to verify that indices 500 and beyond have values **below** 100\n\n\nTake the square root of all numbers in indices 38 to 465.\n\n\n## Code to carry out step 10.\n\n\nUse the round() function to round all numbers to the nearest whole number.\n\n\n## Code to carry out step 11.\n\n\nReplace all instances of the number 39 with 20.\n\n\nThis step requires another relational comparison, but this time it is equality. Equality in R is checked with a double equal sign == rather than a single equal sign!\n\n\n## Code to carry out step 12.\n\nCheckpoint: Headquarters has informed you that your final message should have 344 even numbers.\nHint: Checking for divisibility is an interesting operation that isn’t done much in R. Modulus is the operation you are interested in, where you are checking for whether the numbers are divisible by 2, with no remainder. See what you can find about modulus in R!\n\n# Code to verify how many even numbers are in your top_secret vector\n# Should be 344!"
-  },
-  {
-    "objectID": "practice-activities/pa1.html#part-three-the-secret-message",
-    "href": "practice-activities/pa1.html#part-three-the-secret-message",
-    "title": "PA 1: Find the Mistakes",
-    "section": "Part Three: The secret message!",
-    "text": "Part Three: The secret message!\nUse your final vector of numbers as indices for my_symbols to discover the final message, by running the following code. Note: if your vector of numbers is not named top_secret at this point, change the code below appropriately to use your correct vector!\n\nstringr::str_c(my_symbols$Symbol[top_secret], collapse = \"\")\n\nError:\n! object 'my_symbols' not found\n\n\nGoogle the first line of this message, if you do not recognize it, to see what poem it is.\nYou will enter your answer in the PA1 Canvas assignment."
-  },
-  {
-    "objectID": "reading/week-1.1.html#ensure-quarto-is-installed",
-    "href": "reading/week-1.1.html#ensure-quarto-is-installed",
-    "title": "Week 1, Part 1: R & RStudio",
-    "section": "2.3 ✅ Ensure Quarto is Installed",
-    "text": "2.3 ✅ Ensure Quarto is Installed\nWe will learn more about Quarto notebooks later in the week, so for now, just make sure that you have the software set up! It is likely that it was already installed automatically.\nTo check, open a new Rstudio window click the + icon in the top left of the Rstudio window and see if Quarto is an option. See screenshot below.\n\nIf you do not see Quarto, download and install the latest version of Quarto for your operating system."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html",
-    "href": "labs/lab1/lab1-quarto.html",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "",
-    "text": "Read and follow all lab instructions carefully!"
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#setup",
-    "href": "labs/lab1/lab1-quarto.html#setup",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Setup",
-    "text": "Setup\n\nMake a Lab Directory\nIf you have completed the course setup, you have already completed steps 1 & 2 below.\n\nIf you have not already, create a folder on your computer called “stat-331” or similar.\nCreate an RStudio Project inside of this folder.\nInside your stat-331 folder, create another folder called either “week-1” or “labs”. Remember, we are trying to be organized and not work out of our Downloads folder!\nInside of this folder, create another folder called “lab1” or similar.\n\n\n\nCreate your Lab 1 File\nTo create a Quarto document, you first need to ensure Quarto is installed on your computer. (You should have already done this! If not, follow the instructions in the Week 1 Reading).\n\nOnce you have Quarto installed, open RStudio on your computer.\nIn RStudio, go to File &gt; New File &gt; Quarto Document... and click on Create in the dialog box without changing anything.\n\n\n\n\n\n\n\nWarning\n\n\n\nFor the instructions in this lab, I am expecting that the .qmd document you just created will look exactly like the one shown in the Quarto-Rendering course slide. If your document is instead entirely blank other than a YAML header, some of these instructions will be confusing and you should talk to me!\n\n\n\nChange the title of your document to be “Lab 1: Introduction to Quarto”\nAdd additional lines to your YAML header:\n\n\nadd a line with author: and your name.\nadd a line with embed-resources: true.\nadd a line with code-tools: true.\n(optional) add a line to specify the editor as your preference for either source or visual.\n\n\nSave the Quarto file as “lab1.qmd” in your “week-1” or “labs” folder. You can change up the name of your document, but the name cannot have spaces and it should describe what the document is."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#changing-the-execution-options",
-    "href": "labs/lab1/lab1-quarto.html#changing-the-execution-options",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Changing the Execution Options",
-    "text": "Changing the Execution Options\nExecution options specify how the R code in your Quarto document should be displayed. This guide provides descriptions on the options you can specify in a document’s execution.\nTo start, your YAML should look something like this:\n\n---\ntitle: \"Lab 1: Introduction to Quarto\"\nauthor: \"Dr. C\"\nformat: html\nembed-resources: true\ncode-tools: true\neditor: source (or visual)\n---\n\nSimilar to how you added an author, embed-resources, (and editor) line, you will first need to add an execute line to your YAML that includes multiple options.\nUse the guide to specify execution options so that:\n\nyour source code is always output on the page.\nyour document will render even if there are errors."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#running-the-provided-code",
-    "href": "labs/lab1/lab1-quarto.html#running-the-provided-code",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Running the Provided Code",
-    "text": "Running the Provided Code\nNext, click on the “Play” button on the right of the first auto-populated code chunk. Alternatively, you can highlight (or simply put your cursor on the line of) the code you want to run and hit ctrl + Enter or ⌘ + Enter.\nYou should see the code appear in the console, as well as the result of the code (2). Keep in mind the [1] before the 2 is vector notation. This means the result is a vector of length 1, whose first element is 2.\nLet’s spice this code up a bit. Delete 1 + 1 from the code chunk and write the following code:\n\n# Load a dataset into the R Environment.\ndata(ToothGrowth)\n\n# Look at the summary of the variables in the dataset.\nsummary(ToothGrowth)\n\n# Look at a frequency table of a categorical variable.\ntable(ToothGrowth$supp)\n\nNow run this code. You should see a six-number summary of the variables len and dose included in the ToothGrowth dataset, as well as the frequency of the levels contained in the supp variable. Second, there is just the frequency table for the supp variable. Further, if you inspect the Environment tab, the ToothGrowth dataset should appear. You can click on the dataset name (not the blue play button!) to look at the data."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#check-the-data-documentation",
-    "href": "labs/lab1/lab1-quarto.html#check-the-data-documentation",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Check the Data Documentation",
-    "text": "Check the Data Documentation\nIn your console (not in the Quarto document), type ?ToothGrowth (or alternatively help(ToothGrowth).\n\nUse the information that pops up in the Help pane in RStudio to fill in the blanks below.\nAdd the questions and your responses after the R code chunk.\nBefore the code chunk, create a section header (using #s) that describes the contents of the section (e.g., Tooth Growth Dataset).\n\nThis dataset investigates the effect of ______ ____ on tooth growth in _________ ________.\nThe two supplement delivery methods include OJ (_______ _______) and VC (_________ ______).\nIt is a data frame with ____ observations and ____ variables.\nYour Tooth Growth Dataset section should look something like this (although it will also include the table of supp):"
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#sec-creating-a-plot",
-    "href": "labs/lab1/lab1-quarto.html#sec-creating-a-plot",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Creating a Plot",
-    "text": "Creating a Plot\nThe second code chunk automatically provided is just as boring as your first, so let’s spice it up! Replace the 2 * 2 code with the following (we will talk about graphics next week!):\n\n# make sure to load the package ggplot2\nlibrary(ggplot2)\nggplot(data = ToothGrowth, \n       aes(x = supp,\n           y = len)) +\n  geom_boxplot() +\n  labs()\n\nNow, run this code chunk! You should see side-by-side boxplots comparing tooth length between the two supplement delivery methods contained in the ToothGrowth data set.\nLook back at the help documentation for the ToothGrowth dataset to determine what len represents (i.e., “Length of xxx”).\nNext, look up the help file on the labs() ggplot2 function to find the arguments you can use to specify the \\(x\\)- and \\(y\\)-axis labels. Change the \\(x\\)-axis and \\(y\\)-axis labels to display reader-friendly axis labels as found in the ToothGrowth help file. For example, “Supplement Type” is better than “supp”.\n\n\n\n\n\n\nHint - help files for axis labels\n\n\n\nParticularly, looking at the examples at the bottom of the help file and this site may also be helpful.\nYou should not be using xlab() and ylab(), but arguments in the labs() function.\n\n\nNote that #| echo: false is an output option applied only to this specific code chunk. Remove this line so the code appears in your final rendered document.\nCreate another section header (like you did before) stating what is included in this section."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#inserting-a-new-code-chunk",
-    "href": "labs/lab1/lab1-quarto.html#inserting-a-new-code-chunk",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Inserting a New Code Chunk",
-    "text": "Inserting a New Code Chunk\nNavigate to the last sentence of the Quarto document. We’re now going to insert a new R code chunk at the bottom of the document.\nThere are four different ways to do this:\n\ntype ctrl + alt + i on Windows, or ⌘ + ⌥ + i on macOS,\nClick on the  symbol. This should automatically default to R code, but if you have a Python compiler on your computer, you might need to select “R” from the options.\nIf you are using the Visual editor, click on the “Insert” button, then select “Code Chunk”, and finally select “R”.\nManually add the code chunk by typing ```{r}. Make sure to close your code chunk with ```."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#conducting-statistical-analyses",
-    "href": "labs/lab1/lab1-quarto.html#conducting-statistical-analyses",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Conducting Statistical Analyses",
-    "text": "Conducting Statistical Analyses\nUsing R to conduct statistical analyses is an element of this course that we will mainly explore in labs before the end of the quarter. This will also help you practice reading R documentation.\n\n\n\n\n\n\nRefresher on a two-sample independent t-test\n\n\n\nWhile a second course in statistics is a pre-requisite for this class, you may want to go here for a refresher on conducting two-sample independent t-tests.\n\n\nIn this section, we are going to conduct a two-sample independent t-test to compare tooth length between the two supplement methods in the ToothGrowth dataset. I have outlined the null and alternative hypotheses we will be testing:\n\n\n\n\n\n\nNull\n\n\n\nThe treatment mean tooth length for the OJ supplement delivery method is the same as the treatment mean tooth length for the VC supplement delivery method.\n\n\n\n\n\n\n\n\nAlternative\n\n\n\nThe treatment mean tooth length for the OJ supplement delivery method is different from the treatment mean tooth length for the VC supplement delivery method.\n\n\nCarry out the following steps:\n\nLook up the help documentation for t.test().\n\n\n\n\n\n\n\nHint - Formula Syntax\n\n\n\nLook at the example for a two-sample t-test comparing mpg in morning and afternoon with the mtcars data.\nThe most straight-forward approach (IMO) is using formula syntax, which is commonly employed in functions for statistical tests! I suggest you read more about formula syntax as well.\n\n\n\nUsing the function t.test(), write code to carry out the analysis. You can assume unequal variances and a two-sided alternative.\nRun your code chunk to obtain the output for your statistical test.\nWrite a numbered list (in Markdown, like what you see here) below the code chunk presenting:\n\nYour conclusion (in the context of these data) based on the p-value.\nThe confidence interval for the difference in treatment means making clear the direction of the difference (make sure to read what confidence level is used by default).\n\nCreate another section header, describing the contents of this section."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#render-your-document",
-    "href": "labs/lab1/lab1-quarto.html#render-your-document",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Render your Document",
-    "text": "Render your Document\nRender your document as an html file. Use the “Render” button (the blue arrow!) at the top of your screen.\nIf you run into trouble rendering your document, try restarting R and running your code chunks in order, and see if you can find the problem.\nAnother common issue is deleting the tick marks (```) that surround your code chunks. If you notice that the code chunks are not showing a “Play” button, or that they are not highlighted in gray, double check your tick marks!\nRecall we included error: true in our YAML execution options. This means that your document will still render even if there are errors. Make sure you are double checking your work!\nYou will notice that there is auto-generated text that is unrelated to the work that you completed. It is always a good idea to delete this extra text!"
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#include-an-image",
-    "href": "labs/lab1/lab1-quarto.html#include-an-image",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Include an Image",
-    "text": "Include an Image\n\nSave an image of an activity, place, book, or movie that you enjoy. Save the image somewhere that makes sense to you in your course directory.\nCheck out this documentation for how to include an image/figure in Markdown.\nInclude your image at the end of your lab, along with a brief description.\n\n\nThe Markdown code will look something like: ![Brief description](relativepath/image.png)\nYou must use a relative file path to your image!\nYou may want to adjust the image size.\n\n\nAdd a new section header before your image.\nRender your document again to make sure it worked.\n\n\n\n\nI am obsessed with this book of short stories by Ken Liu."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#styling-your-quarto-document",
-    "href": "labs/lab1/lab1-quarto.html#styling-your-quarto-document",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Styling your Quarto Document",
-    "text": "Styling your Quarto Document\nYou can find a list of every option you can use to format an HTML document here and here. Further, here are lists of different themes you can specify in your YAML to produce differently styled outputs.\nMake the following changes to your document:\n\nSpecify “Code Folding” in your YAML document options.\nSpecify in the code chunk options that your boxplots of tooth length by supplement delivery method should be center aligned.\nWrite and include a figure caption for the boxplots using a code-chunk option.\nClean it up - delete the any automatically included headers or text in the file that are still there.\n\nYou might have fun playing around with other themes or options!"
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#render-again",
-    "href": "labs/lab1/lab1-quarto.html#render-again",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Render again!",
-    "text": "Render again!\nNotice that when you render the document, all of the code reruns again, producing the same output as before, but with your changes – this is called reproducibility!\nYou should render often while completing your practice activities and lab assignments. Make small changes, then make sure the file still renders rather than making a bunch of big changes and then realizing something is wrong."
-  },
-  {
-    "objectID": "labs/lab1/lab1-quarto.html#turn-it-in",
-    "href": "labs/lab1/lab1-quarto.html#turn-it-in",
-    "title": "Lab 1: Introduction to Quarto",
-    "section": "Turn it in!",
-    "text": "Turn it in!\nOpen the .html file on your computer to make sure it looks as you expected. Then upload the rendered (.html extension) document to Canvas!\n\n\n\n\n\n\nCaution\n\n\n\nDouble check that you have embed-resources: true in your YAML. Without this, your html will not be formatted correctly on Canvas. You should re-download what you submitted through your Canvas portal to ensure it all looks right!\n\n\n\n\n\n\n\n\nTip\n\n\n\nYou’ll be doing this same process for all your future Lab Assignments. Each of these will involve a Quarto file. Some weeks, I may have a template for you to copy into the Quarto file just as with the first practice activity."
-  },
-  {
-    "objectID": "slides/week-1/w1-notebooks.html#wednesday-april-1",
-    "href": "slides/week-1/w1-notebooks.html#wednesday-april-1",
-    "title": "Quarto & Reproducibility",
-    "section": "",
-    "text": "Today we will…\n\nAnswer Clarifying Questions:\n\nSyllabus?\nReading?\nPA 1: Find the Mistakes?\n\nNew Material\n\nReproducibility\nScripts + Notebooks\n\nLab 1: Introduction to Quarto"
-  },
-  {
-    "objectID": "slides/week-1/w1-notebooks.html#r-projects",
-    "href": "slides/week-1/w1-notebooks.html#r-projects",
-    "title": "Quarto & Reproducibility",
-    "section": "R Projects",
-    "text": "R Projects\n\nAn R Project is basically a “flag” planted in a certain directory.\n\n. . .\n\nWhen you double click an .Rproj file, it:\n\n\n\n\nOpens RStudio\nSets the working directory to be wherever the .Rproj file lives.\nHas any files open or elements in your environment that you last saved.\nLinks to GitHub, if set up (more on that later!)"
-  },
-  {
-    "objectID": "slides/week-1/w1-notebooks.html",
-    "href": "slides/week-1/w1-notebooks.html",
-    "title": "Quarto & Reproducibility",
-    "section": "",
-    "text": "Today we will…\n\nAnswer Clarifying Questions:\n\nSyllabus?\nReading?\nPA 1: Find the Mistakes?\n\nNew Material\n\nReproducibility\nScripts + Notebooks\n\nLab 1: Introduction to Quarto"
-  },
-  {
-    "objectID": "reading/week-1.2.html",
-    "href": "reading/week-1.2.html",
-    "title": "Week 1, Part 2: Reproducibility & Quarto",
-    "section": "",
-    "text": "The theme of these readings is good management of your files and data. In part two of this week’s coursework you learned how to identify folders and paths, and create Quarto documents.\n\n📖 Readings: 30 minutes\n\n\n📽 Watch Video: 20-30 min\n\n\n\n1 Reproducibility and Workflow\nAs boring as it sounds, file management is arguably one of the most important skills a data scientist should have. The success of a project depends just as much on the way in which the project was stored as the computing tools used. While using R and Quarto make an important step in creating a reproducible analysis, there are other pieces that are arguably just as important—such as file management.\nThere has been a bit of generational shift as computers have evolved: the “file system” metaphor itself is outdated because no one uses physical files anymore. This article is an interesting discussion of the problem: it makes the argument that with modern search capabilities, most people use their computers as a laundry hamper instead of as a nice, organized filing cabinet. I will say I have noticed this anecdotally - and while this may work for you a lot of the time, if you aren’t organized with coding you will run into some serious headaches!\n\n\n\nStop watching at 4:16.\n\n\n\n\n📖 Required Reading: R4DS: Workflow and Scripts\nIf you are still feeling hazy on file systems and file paths, watch the optional videos 📽.\n\n\n\n2 Quarto\n\n📖 Required Reading: R4DS: Intro to Quarto\n\n\nHTML Documents\nWe will exclusively use HTML documents in this course. If you are interested in learning more about formatting options for Quarto HTML documents, I would recommend checking out:\n\na discussion of the basics of formatting HTML documents in Quarto\nthe list of all HTML formatting options for Quarto documents"
+    "text": "To do…\n\nReading & review\nCourse Setup Assignments on Canvas\n\nDue Wednesday at 11:59pm\n\nPA 1: Find the Mistakes\n\nDue Wednesday at 11:59pm"
   }
 ]
