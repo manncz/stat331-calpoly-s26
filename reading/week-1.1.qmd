@@ -194,6 +194,60 @@ To check, open a new Rstudio window click the + icon in the top left of the Rstu
 
 If you do not see Quarto, [download and install](https://quarto.org/docs/get-started/) the latest version of Quarto for your operating system.
 
+## ✅  Create an R Project
+
+Since there are often many files necessary for a project (e.g. data sources, images, etc.), `R` has a nice built in system for setting up your project organization with RProjects. You can either create a new folder on your computer containing an Rproject (e.g., you have not yet created a folder for this class) or you can add an Rproject to an existing folder on your computer (e.g., you have already created a folder for this class).
+
+::: panel-tabset
+
+#### Create with a new folder {-}
+
+To create a Rproject, first open RStudio on your computer and click `File > New Project`, then:
+
+```{r}
+#| out-width: "70%"
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/01-create-new-rproj-step1.png")
+knitr::include_graphics("images/01-create-new-rproj-step2.png")
+```
+
+Give your folder a name (it doesn't have to be my-stat331). However, it is good practice for this file folder name to not contain spaces.
+
+Then, browse on your computer for a location to save this folder to. For example, mine is saved in my Documents. Make sure you know how to find this; it should NOT be saved in your Downloads!
+
+```{r}
+#| out-width: "70%"
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/01-create-new-rproj-step3.png")
+```
+
+This new folder, `my-stat331` should now live in your Documents folder (or wherever you save it to) and contain a `my-stat331.Rproj` file. This is your new "home" base for this class - whenever you refer to a file with a relative path it will begin to look for it here.
+
+#### Add to an existing folder {-}
+
+To add a Rproject to an existing folder on your computer (e.g., you already created a folder for this class), first open RStudio on your computer and click `File > New Project`, then:
+
+```{r}
+#| out-width: "70%"
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/01-create-existing-rproj-step1.png")
+```
+
+Then, browse on your computer to select the existing folder you wish to add your Rproject to. For example, mine is saved in my Documents and called `my-stat331`.
+
+```{r}
+#| out-width: "70%"
+#| echo: false
+#| fig-align: center
+knitr::include_graphics("images/01-create-existing-rproj-step2.png")
+```
+
+Your existing folder, `my-stat331` should now contain a `my-stat331.Rproj` file. This is your new "home" base for this class - whenever you refer to a file with a relative path it will begin to look for it here.
+
+:::
 
 
 ------------------------------------------------------------------------

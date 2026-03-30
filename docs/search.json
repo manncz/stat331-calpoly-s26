@@ -1006,5 +1006,12 @@
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Paper ??",
     "text": "Paper ??\n\n\nWork with the person (or people) next to you & introduce yourself!\nWrite a set of instructions to create the paper item I provided for you\nSwap the instructions with the group across from you\nFollow their instructions as literally as possible to fold an object"
+  },
+  {
+    "objectID": "reading/week-1.1.html#create-an-r-project",
+    "href": "reading/week-1.1.html#create-an-r-project",
+    "title": "Week 1, Part 1: R & RStudio",
+    "section": "2.4 ✅ Create an R Project",
+    "text": "2.4 ✅ Create an R Project\nSince there are often many files necessary for a project (e.g. data sources, images, etc.), R has a nice built in system for setting up your project organization with RProjects. You can either create a new folder on your computer containing an Rproject (e.g., you have not yet created a folder for this class) or you can add an Rproject to an existing folder on your computer (e.g., you have already created a folder for this class).\n\nCreate with a new folderAdd to an existing folder\n\n\nTo create a Rproject, first open RStudio on your computer and click File &gt; New Project, then:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGive your folder a name (it doesn’t have to be my-stat331). However, it is good practice for this file folder name to not contain spaces.\nThen, browse on your computer for a location to save this folder to. For example, mine is saved in my Documents. Make sure you know how to find this; it should NOT be saved in your Downloads!\n\n\n\n\n\n\n\n\n\nThis new folder, my-stat331 should now live in your Documents folder (or wherever you save it to) and contain a my-stat331.Rproj file. This is your new “home” base for this class - whenever you refer to a file with a relative path it will begin to look for it here.\n\n\nTo add a Rproject to an existing folder on your computer (e.g., you already created a folder for this class), first open RStudio on your computer and click File &gt; New Project, then:\n\n\n\n\n\n\n\n\n\nThen, browse on your computer to select the existing folder you wish to add your Rproject to. For example, mine is saved in my Documents and called my-stat331.\n\n\n\n\n\n\n\n\n\nYour existing folder, my-stat331 should now contain a my-stat331.Rproj file. This is your new “home” base for this class - whenever you refer to a file with a relative path it will begin to look for it here."
   }
 ]
