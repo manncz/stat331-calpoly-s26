@@ -1,0 +1,156 @@
+---
+title: "PA 2: Using Data Visualization to Find the Penguins"
+format: html
+execute: 
+  echo: true
+  error: true
+---
+
+<!-- Insert your setup code chunk here. This is just good practice. -->
+
+[Download the .qmd template](../student-versions/practice-activities/pa2.qmd) and save it in a reasonable location.
+
+Today you will be exploring different types of visualizations to uncover which species of penguins reside on different islands.
+
+Some advice:
+
++ **Work with those around you.**
+
++ If you aren't sure how to make a specific plot or how to customize a plot, look over the slides and readings for this week and make use of the [R graphics cheatsheet](https://rstudio.github.io/cheatsheets/data-visualization.pdf).
+
++ Google is your friend! If you still aren't sure how to accomplish a certain task, type what you are trying to accomplish into Google and see what other people are saying.
+
+  + Generally, adding `ggplot` to the end of your search will help make your search results more relevant!
+  
+  
+::: callout-note
+Make sure to give your plots reader friendly axes labels!
+:::
+
+::: callout-note
+Make sure your final report **does not** display any warnings or messages from RStudio!
+:::
+
+## Getting Started
+
+We will be creating visualizations using the `ggplot2` package.
+
+For this activity, we will be exploring the `penguins` data from the `palmerpenguins` package, which has [fantastic documentation with really awesome artwork](https://allisonhorst.github.io/palmerpenguins/). So, you will need to install the **palmerpenguins** package.
+
+`install.packages("palmerpenguins")`
+
+::: {.callout-caution}
+
+## `install.packages()` in the console NOT in your `.qmd` file!
+
+You should type this into your console and NOT include it in a code chunk in your `.qmd` file. Recall that we only have to install a package **once**, but load it each time we open R. Each time you *render* your `.qmd` file, **ALL**the code chunks are run. Therefore, installing a package in a code chunk would cause R to unnecessarily install the package over and over again. Not good.
+
+:::
+
+
+## Creating a Setup Code Chunk
+
+1.  Insert a code chunk at the beginning of your document (directly under the YAML).
+2.  Name the code chunk `setup`.
+3.  Use the hashpipe `#|` to specify a code chunk option that prevents any messages (e.g., from loading in packages) from appearing.
+4.  Load in the `tidyverse` **or** `ggplot2` package.
+5.  Load in the `palmerpenguins` package.
+
+::: callout-note
+
+## Code chunk name: `setup`
+
+Naming your code chunk "setup" has special properties in a `.qmd` - specifically, this code chunk will run automatically when you try to run a subsequent code chunk. This ensures all packages and any other specifications for your document are loaded and will not cause you errors or messages.
+:::
+
+## Dataset: `penguins`
+
+I like to start by **seeing** the dataset I will be working with, so I am going to pull the `penguins` data into my R environment. Do you see it in the top right Environment tab?
+
+```{r}
+data(penguins)
+```
+
+You may notice that a dataset called `penquins_raw` also loaded. We will ignore this and focus on the `penguins` dataset.
+
+6. Get to know your data. What are the variables and what units are they measured in? What does each row represent?
+
+# Exploring the Penguins Data
+
+## Step 1: Barchart
+
+7. Create a plot of the frequency of each penguin species in the data.
+
+a. Use <https://excalidraw.com/> (or pen and paper, a tablet, etc.) to create a sketch for this plot. Label the aesthetics that will be needed.
+
+b. Use `ggplot2` to create the plot you sketched above.
+
+```{r}
+#| label: barchart
+
+
+```
+
+## Step 2: Histogram or Density Curve
+
+8. Use `ggplot2` to plot the distribution of bill lengths for the penguins included in the dataset.
+
+```{r}
+#| label: histogram
+
+
+```
+
+## Step 3: Scatterplot
+
+9. Use `ggplot2` to plot the relationship between the length of a penguin's bill (`bill_length_mm`) and the depth of their bill (`bill_depth_mm`).
+
+```{r}
+#| label: scatterplot
+
+```
+
+## Step 4: Add a Trend Line
+
+10. Add a **linear** trend line to the scatterplot you made above! 
+
+
+## Step 5: Adding A Categorical Variable
+
+11. Building off of the plot you made in Step 4, add an aesthetic to differentiate the species of the penguins in the scatterplot by color for both the points *and* the trend line.
+
+```{r}
+#| label: scatterplot-with-one-categorical-variable
+
+```
+
+12. Edit your plot in (11) above so that the points are colored by species, but there is only one overall linear trend line.
+
+```{r}
+#| label: scatterplot-one-trend
+
+```
+
+
+13. Building on your code from (11), add the location of the penguins (`island`) to your visualization. There is more than one method to address this, however, one method will more easiliy allow you to address the quesitons below.
+
+```{r}
+#| label: scatterplot-with-two-categorical-variables
+
+```
+
+## Canvas Quiz
+
+
+Working as a team, use the plots you created to answer the following questions on Canvas.
+
+1.  Which species of penguins is represented **least** in the Palmer Penguins data set?
+
+2. Which species had the weakest relationship between bill length and bill depth?
+
+3.  Which species of penguins are found on **every** island?
+
+4.  Which species of penguins are found **only** on Dream Island?
+
+5.  Which species of penguins are found **only** on Biscoe Island?
+
