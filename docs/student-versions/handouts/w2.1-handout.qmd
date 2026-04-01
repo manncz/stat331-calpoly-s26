@@ -1,0 +1,162 @@
+---
+title: "STAT 331 Week 2 Day 1 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+```
+
+## Data
+
+Car data:
+
+```{r}
+data(mpg)
+```
+
+Texas housing data:
+```{r}
+data(txhousing)
+
+# taking a subset of cities 
+# don't worry about this code - we haven't learned how to do this yet!
+sm_tx <- txhousing |>
+  filter(city %in% c("Dallas","Fort Worth", "Austin",
+                     "Houston", "El Paso"))
+```
+
+
+## `ggplot2` layers
+
+```{r}
+ggplot(data = mpg)
+```
+
+a. Why does it make sense that the above code produces just a blank plot?
+
+
+```{r}
+ggplot(data = mpg, 
+       aes(x = class, y = hwy))
+```
+
+b. What kind of variable is `class`? What about `hwy`? What kind of plot (i.e.) geometries could be appropriate here?
+
+
+c. Fill in the code below to add appropriate layers of geometries:
+
+```{r}
+ggplot(data = mpg, 
+       aes(x = class, y = hwy)) 
+```
+
+
+## Practice 
+
+Using the `sm_tx` data, make a plot of median house price over time, distinguishing between different cities.
+
+
+a. Sketch what this plot could look like. 
+
+b. What aesthetics and geometrie(s) will you use? Which variables map to each aesthetic?
+
+
+```{r}
+# plot code
+```
+
+
+## Aesthetics
+
+a. Below is an example of ______ aesthetics:
+
+```{r}
+ggplot(data = sm_tx, 
+       mapping = aes(x = date, 
+                     y = listings,
+                     color = city)) +
+  geom_line()
+```
+
+
+b. Below is an example of ______ aesthetics:
+
+```{r}
+ggplot(data = sm_tx) +
+  geom_line(mapping = aes(x = date, 
+                          y = listings,
+                          color = city))
+```
+
+c. Why do the two chunks above result in the same plot?
+
+
+```{r}
+ggplot(data = sm_tx) +
+  geom_line(mapping = aes(x = date,
+                          y = listings,
+                          color = city)) +
+  geom_hline(yintercept = 20000)
+```
+
+d. Why did we need to use local aesthetics in the plot above?
+
+
+e. Below, color is an example of a ______ aesthetic because 
+...
+
+```{r}
+ggplot(data = sm_tx,
+       mapping = aes(x = listings,
+                     y = sales,
+                     color = city)) +
+  geom_point()
+```
+
+
+f. Below, color is an example of a ______ aesthetic because ...
+
+```{r}
+ggplot(data = sm_tx) +
+  geom_point(mapping = aes(x = listings,
+                           y = sales),
+             color = "cornflowerblue")
+```
+
+g. What does the warning message indicate for the above two plots??
+      
+## Customization
+
+a. Describe what each element of the plot code below does:
+
+       
+```{r}
+ggplot(mpg, aes(x = fl, fill = drv)) + 
+  geom_bar(position = "fill") +
+  scale_fill_manual(values = c("#d73027", "#fdae61", "#4575b4"),
+                    labels = c("4-wheel","front","rear")) +
+  labs(x = "Fuel Type", 
+       y = "Proportion", 
+       fill = "Drive Train",
+       title = "Fuel Type by Car Drive Train")
+```
+
+`ggplot(mpg, aes(x = fl, fill = drv))`:
+
+`geom_bar(position = "fill")`: 
+
+`scale_fill_manual`:
+
+`values = c("#d73027", "#fdae61", "#4575b4")`:
+
+`labels = c("4-wheel","front","rear")`:
+
+`labs(...)`: 
+
+`fill = "Drive Train"`:
