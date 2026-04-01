@@ -584,8 +584,8 @@
     "objectID": "slides/week-1/w1-intro-r.html#monday-march-30",
     "href": "slides/week-1/w1-intro-r.html#monday-march-30",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "Monday, March 30",
-    "text": "Monday, March 30\nToday we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
+    "section": "",
+    "text": "Today we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#me",
@@ -627,7 +627,7 @@
     "href": "slides/week-1/w1-intro-r.html#assessments---evaluative",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Assessments - Evaluative",
-    "text": "Assessments - Evaluative\n\nExams\n\nMidterm Exam (20%)\nFinal Exam (25%)\n\nFinal project (15%)\n\nmore info soon\ndue end of week 10\n\n\n\n\n\n\n\n\nExam Conflicts\n\n\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date"
+    "text": "Assessments - Evaluative\n\nExams\n\nMidterm Exam (20%)\nFinal Exam (25%)\n\nFinal project (15%)\n\nmore info soon\ndue end of week 10\n\n\n\n\n\n\n\n\nExam Conflicts\n\n\n\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#assessments---general-criteria",
@@ -683,7 +683,7 @@
     "href": "slides/week-1/w1-intro-r.html#statistical-computing-involves",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Statistical computing involves…",
-    "text": "Statistical computing involves…\n\n\nunderstanding data structures\n\ni.e. “what you have to work with”\n\ndeveloping an algorithm\n\ni.e. “what you want the computer to do”\n\nknowing the syntax of a specific language\n\ni.e. “how to tell the computer what to do so it will understand”\n\nimproving efficiency of your code\n\n\n\n\n\n\n\n\n\nNot just syntax\n\n\nAll of these skills improve as the others improve and we will work on all of them in this course!"
+    "text": "Statistical computing involves…\n\n\nunderstanding data structures\n\ni.e. “what you have to work with”\n\ndeveloping an algorithm\n\ni.e. “what you want the computer to do”\n\nknowing the syntax of a specific language\n\ni.e. “how to tell the computer what to do so it will understand”\n\nimproving efficiency of your code\n\n\n. . .\n\n\n\n\n\n\nNot just syntax\n\n\n\nAll of these skills improve as the others improve and we will work on all of them in this course!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#paper-planes",
@@ -718,7 +718,7 @@
     "href": "slides/week-1/w1-intro-r.html#packages",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Packages",
-    "text": "Packages\nThe heart and soul of R are packages.\n\n\nThese are “extra” sets of code that add new functionality to R when installed.\n“base” R refers to functions that are in the R software, and do not require a package."
+    "text": "Packages\nThe heart and soul of R are packages.\n. . .\n\nThese are “extra” sets of code that add new functionality to R when installed.\n“base” R refers to functions that are in the R software, and do not require a package."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#open-source",
@@ -788,7 +788,7 @@
     "href": "slides/week-1/w1-intro-r.html#manage-your-class-directory",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Manage your Class Directory",
-    "text": "Manage your Class Directory\nCreate a directory for this class!\n\n\nIs it in a place you can easily find it?\n\nNOT IN YOUR DOWNLOADS FOLDER ☠️\n\nDoes it have an informative name?\n\nlike “stat-331” or similar\n\nAre the files inside it well-organized?\n\n\n\n\n\n\n\n\n\nWarning\n\n\nI cannot stress how important this is!!"
+    "text": "Manage your Class Directory\nCreate a directory for this class!\n\n\nIs it in a place you can easily find it?\n\nNOT IN YOUR DOWNLOADS FOLDER ☠️\n\nDoes it have an informative name?\n\nlike “stat-331” or similar\n\nAre the files inside it well-organized?\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nI cannot stress how important this is!!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
@@ -802,63 +802,63 @@
     "href": "slides/week-1/w1-intro-r.html#packages-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Packages 🧩",
-    "text": "Packages 🧩\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
+    "text": "Packages 🧩\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n. . .\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#variables",
     "href": "slides/week-1/w1-intro-r.html#variables",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Variables",
-    "text": "Variables\nVariables are names that refer to values.\n\nA variable is like a container that holds something - when you refer to the container, you get whatever is stored inside.\nWe assign values to variables using the syntax object_name &lt;- value.\n\nYou can read this as “object name gets value” in your head.\n\n\n\n\nmessage &lt;- \"So long and thanks for all the fish\"\nyear &lt;- 2025\nthe_answer &lt;- 42\nearth_demolished &lt;- FALSE"
+    "text": "Variables\nVariables are names that refer to values.\n\nA variable is like a container that holds something - when you refer to the container, you get whatever is stored inside.\nWe assign values to variables using the syntax object_name &lt;- value.\n\nYou can read this as “object name gets value” in your head.\n\n\n. . .\n\nmessage &lt;- \"So long and thanks for all the fish\"\nyear &lt;- 2025\nthe_answer &lt;- 42\nearth_demolished &lt;- FALSE"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#naming-conventions",
     "href": "slides/week-1/w1-intro-r.html#naming-conventions",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Naming Conventions",
-    "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\nJust pick one and stick with it!"
+    "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\n\nJust pick one and stick with it!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#data-types",
     "href": "slides/week-1/w1-intro-r.html#data-types",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Data Types 🧩",
-    "text": "Data Types 🧩\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n\n\n\ninteger: whole numbers.\n\n\n\n\ndouble / float / numeric: decimal numbers.\n\n\n\n\ncharacter / string - holds text, usually enclosed in quotes."
+    "text": "Data Types 🧩\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n. . .\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n. . .\n\ninteger: whole numbers.\n\n. . .\n\ndouble / float / numeric: decimal numbers.\n\n. . .\n\ncharacter / string - holds text, usually enclosed in quotes."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#data-structures",
     "href": "slides/week-1/w1-intro-r.html#data-structures",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Data Structures 🧩",
-    "text": "Data Structures 🧩\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
+    "text": "Data Structures 🧩\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n. . .\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#indexing",
     "href": "slides/week-1/w1-intro-r.html#indexing",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Indexing 🧩",
-    "text": "Indexing 🧩\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
+    "text": "Indexing 🧩\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n. . .\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#logic",
     "href": "slides/week-1/w1-intro-r.html#logic",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Logic 🧩",
-    "text": "Logic 🧩\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
+    "text": "Logic 🧩\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n. . .\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#vectorization",
     "href": "slides/week-1/w1-intro-r.html#vectorization",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Vectorization",
-    "text": "Vectorization\n\n\nR is designed to do vector and matrix math nicely\nMany operations in R are vectorized.\n\nThese functions operate on vectors of values rather than a single value.\ni.e. the function applies to every element of a vector individually.\n\n\n\n\ne.g.:\n\nx &lt;- seq(from = -2, to = 2)\nx\n\n[1] -2 -1  0  1  2\n\n\nSay we want to add 1 to every element of x…"
+    "text": "Vectorization\n\n\nR is designed to do vector and matrix math nicely\nMany operations in R are vectorized.\n\nThese functions operate on vectors of values rather than a single value.\ni.e. the function applies to every element of a vector individually.\n\n\n\n. . .\ne.g.:\n\nx &lt;- seq(from = -2, to = 2)\nx\n\n[1] -2 -1  0  1  2\n\n\nSay we want to add 1 to every element of x…"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#vectorization-1",
     "href": "slides/week-1/w1-intro-r.html#vectorization-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Vectorization",
-    "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
+    "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n. . .\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#logic-indexing-and-vectorization",
@@ -872,21 +872,21 @@
     "href": "slides/week-1/w1-intro-r.html#messages",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Messages",
-    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
+    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n. . .\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#warnings",
     "href": "slides/week-1/w1-intro-r.html#warnings",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Warnings",
-    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n\n\n\nmy_new_vec\n\n[1] NA NA NA"
+    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n. . .\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n. . .\n\nmy_new_vec\n\n[1] NA NA NA"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#errors",
     "href": "slides/week-1/w1-intro-r.html#errors",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Errors",
-    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
+    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n. . .\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#types-of-errors",
@@ -900,63 +900,63 @@
     "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-parenthesis",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you leave off a parenthesis?",
-    "text": "Did you leave off a parenthesis?\nseq(from = 1, to = 10, by = 1\n\nseq(from = 1, to = 10, by = 1\n\nError in parse(text = input): &lt;text&gt;:2:0: unexpected end of input\n1: seq(from = 1, to = 10, by = 1\n   ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you leave off a parenthesis?\nseq(from = 1, to = 10, by = 1\n\nseq(from = 1, to = 10, by = 1\n\nError in parse(text = input): &lt;text&gt;:2:0: unexpected end of input\n1: seq(from = 1, to = 10, by = 1\n   ^\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
     "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you leave off a comma?",
-    "text": "Did you leave off a comma?\nseq(from = 1, to = 10 by = 1)\n\nseq(from = 1, to = 10 by = 1)\n\nError in parse(text = input): &lt;text&gt;:1:23: unexpected symbol\n1: seq(from = 1, to = 10 by\n                          ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you leave off a comma?\nseq(from = 1, to = 10 by = 1)\n\nseq(from = 1, to = 10 by = 1)\n\nError in parse(text = input): &lt;text&gt;:1:23: unexpected symbol\n1: seq(from = 1, to = 10 by\n                          ^\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
     "href": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you make a typo? Are you using the right names?",
-    "text": "Did you make a typo? Are you using the right names?\nsequence(from = 1, to = 10, by = 1)\n\nsequence(from = 1, to = 10, by = 1)\n\nError in `sequence.default()`:\n! argument \"nvec\" is missing, with no default\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you make a typo? Are you using the right names?\nsequence(from = 1, to = 10, by = 1)\n\nsequence(from = 1, to = 10, by = 1)\n\nError in `sequence.default()`:\n! argument \"nvec\" is missing, with no default\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
     "href": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Are you using the right input that the function expects?",
-    "text": "Are you using the right input that the function expects?\nsqrt(‘1’)\n\nsqrt('1')\n\nError in `sqrt()`:\n! non-numeric argument to mathematical function\n\n\n\n\nsqrt(1)\n\n[1] 1"
+    "text": "Are you using the right input that the function expects?\nsqrt(‘1’)\n\nsqrt('1')\n\nError in `sqrt()`:\n! non-numeric argument to mathematical function\n\n\n. . .\n\nsqrt(1)\n\n[1] 1"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
     "href": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Are you expecting the right output of the function?",
-    "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n\n\nmy_obj[5]\n\n[1] 5"
+    "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n. . .\n\nmy_obj[5]\n\n[1] 5"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says",
     "href": "slides/week-1/w1-intro-r.html#r-says",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError in ggplot() : could not find function “ggplot”\n\n\nIt probably means…\n\nYou haven’t installed/loaded the package that includes the ggplot() function OR you mispelled the function name\n\nYou should:\n\ncheck if the package is installed\nload the package (library())"
+    "text": "R says…\n\nError in ggplot() : could not find function “ggplot”\n\n. . .\nIt probably means…\n\nYou haven’t installed/loaded the package that includes the ggplot() function OR you mispelled the function name\n\nYou should:\n\ncheck if the package is installed\nload the package (library())"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-1",
     "href": "slides/week-1/w1-intro-r.html#r-says-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Object some_obj not found.\n\n\nIt probably means…\n\nYou haven’t run the code to create some_obj OR you have a typo in the name!\n\n\nsome_ojb &lt;- 1:10\n\nmean(some_obj)\n\nError in `h()`:\n! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found"
+    "text": "R says…\n\nError: Object some_obj not found.\n\n. . .\nIt probably means…\n\nYou haven’t run the code to create some_obj OR you have a typo in the name!\n\n\nsome_ojb &lt;- 1:10\n\nmean(some_obj)\n\nError in `h()`:\n! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-2",
     "href": "slides/week-1/w1-intro-r.html#r-says-2",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Object of type ‘closure’ is not subsettable.\n\n\nIt probably means…\n\nOops, you tried to use square brackets on a function\n\n\nmean[1, 2]\n\nError in `mean[1, 2]`:\n! object of type 'closure' is not subsettable"
+    "text": "R says…\n\nError: Object of type ‘closure’ is not subsettable.\n\n. . .\nIt probably means…\n\nOops, you tried to use square brackets on a function\n\n\nmean[1, 2]\n\nError in `mean[1, 2]`:\n! object of type 'closure' is not subsettable"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-3",
     "href": "slides/week-1/w1-intro-r.html#r-says-3",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Non-numeric argument to binary operator.\n\n\nIt probably means…\n\nYou tried to do math on data that isn’t numeric.\n\n\n\"a\" + 2\n\nError in `\"a\" + 2`:\n! non-numeric argument to binary operator"
+    "text": "R says…\n\nError: Non-numeric argument to binary operator.\n\n. . .\nIt probably means…\n\nYou tried to do math on data that isn’t numeric.\n\n\n\"a\" + 2\n\nError in `\"a\" + 2`:\n! non-numeric argument to binary operator"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#what-if-none-of-these-solved-my-error",
@@ -970,7 +970,7 @@
     "href": "slides/week-1/w1-intro-r.html#try-it",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Try it…",
-    "text": "Try it…\nWhat’s wrong here?\n\nmatrix(c(\"a\", \"b\", \"c\", \"d\"), num_row = 2)\n\nError in `matrix()`:\n! unused argument (num_row = 2)\n\n\n\n\n\n\n\n\n\nTip\n\n\nLook up the help file for the function matrix by running ?matrix in the Console."
+    "text": "Try it…\nWhat’s wrong here?\n\nmatrix(c(\"a\", \"b\", \"c\", \"d\"), num_row = 2)\n\nError in `matrix()`:\n! unused argument (num_row = 2)\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nLook up the help file for the function matrix by running ?matrix in the Console."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#pa-1-find-the-mistakes",
@@ -1013,5 +1013,929 @@
     "title": "Week 1, Part 1: R & RStudio",
     "section": "2.4 ✅ Create an R Project",
     "text": "2.4 ✅ Create an R Project\nSince there are often many files necessary for a project (e.g. data sources, images, etc.), R has a nice built in system for setting up your project organization with RProjects. You can either create a new folder on your computer containing an Rproject (e.g., you have not yet created a folder for this class) or you can add an Rproject to an existing folder on your computer (e.g., you have already created a folder for this class).\n\nCreate with a new folderAdd to an existing folder\n\n\nTo create a Rproject, first open RStudio on your computer and click File &gt; New Project, then:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGive your folder a name (it doesn’t have to be my-stat331). However, it is good practice for this file folder name to not contain spaces.\nThen, browse on your computer for a location to save this folder to. For example, mine is saved in my Documents. Make sure you know how to find this; it should NOT be saved in your Downloads!\n\n\n\n\n\n\n\n\n\nThis new folder, my-stat331 should now live in your Documents folder (or wherever you save it to) and contain a my-stat331.Rproj file. This is your new “home” base for this class - whenever you refer to a file with a relative path it will begin to look for it here.\n\n\nTo add a Rproject to an existing folder on your computer (e.g., you already created a folder for this class), first open RStudio on your computer and click File &gt; New Project, then:\n\n\n\n\n\n\n\n\n\nThen, browse on your computer to select the existing folder you wish to add your Rproject to. For example, mine is saved in my Documents and called my-stat331.\n\n\n\n\n\n\n\n\n\nYour existing folder, my-stat331 should now contain a my-stat331.Rproj file. This is your new “home” base for this class - whenever you refer to a file with a relative path it will begin to look for it here."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#monday-april-6",
+    "href": "slides/week-2/w2-import-ggplot.html#monday-april-6",
+    "title": "Graphics with ggplot2",
+    "section": "Monday, April 6",
+    "text": "Monday, April 6\nToday we will…\n\nGroup Quiz (15 min)\nStyle Note of the Day\nNew Material\n\nWelcome to the Tidyverse\nGraphics with ggplot2\nGame Planning\n\nPA 2: Using Data Visualization to Find the Penguins"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#style-note-of-the-day---function-calls",
+    "href": "slides/week-2/w2-import-ggplot.html#style-note-of-the-day---function-calls",
+    "title": "Graphics with ggplot2",
+    "section": "Style Note of the Day - Function Calls",
+    "text": "Style Note of the Day - Function Calls\n\n\n\n\n\n\nTip\n\n\nName arguments in function calls\nOnly include necessary arguments! (If you are using any default values, no need to repeat them in your function call.)\n\n\n\nGood\n\nmean(1:10, na.rm = TRUE)\nseq(from = 1, to = 100, by = 5)\n\n\nBad\n\nmean(1:10, , TRUE)\nmean(1:10, trim = 0, na.rm = TRUE)\n\nseq(1, 100, 5)"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#tidywho",
+    "href": "slides/week-2/w2-import-ggplot.html#tidywho",
+    "title": "Graphics with ggplot2",
+    "section": "Tidywho?",
+    "text": "Tidywho?\n\n\n\nThe tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.1\n\n\n\n\n\n\nMost of the functionality you will need for an entire data analysis workflow with cohesive grammar\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#core-packages",
+    "href": "slides/week-2/w2-import-ggplot.html#core-packages",
+    "title": "Graphics with ggplot2",
+    "section": "Core Packages",
+    "text": "Core Packages\nThe tidyverse includes functions to:\n\n\n\nRead in data\nreadr\n\n\nVisualize data\nggplot2\n\n\nManipulate rectangular data\ntidyr, dplyr, tibble\n\n\nHandle special variable types\nstringr, forcats , lubridate\n\n\nSupport functional programming\npurrr"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#tidyverse-and-stat-331",
+    "href": "slides/week-2/w2-import-ggplot.html#tidyverse-and-stat-331",
+    "title": "Graphics with ggplot2",
+    "section": "Tidyverse and STAT 331",
+    "text": "Tidyverse and STAT 331\n\n\nThis version of the course will primarily use tidyverse packages and grammar\nReasoning:\n\nthe tidyverse is as reputable and ubiquitous as base R at this point (in my opinion)\nthe tidyverse is specifically designed to help programmers produce easy-to-read and reproducible analyses and to reduce errors\nthere is excellent documentation!\nI like it!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#using-the-tidyverse-package",
+    "href": "slides/week-2/w2-import-ggplot.html#using-the-tidyverse-package",
+    "title": "Graphics with ggplot2",
+    "section": "Using the tidyverse package",
+    "text": "Using the tidyverse package\n\nInstalling/loading the tidyverse package installs/loads all of the “tidyverse” packages\nAvoid redundantly installing or loading packages!\n\n\nDo this:\n\nlibrary(tidyverse)\n\nor\n\nlibrary(readr)\n\n\n\nNot this:\n\nlibrary(tidyverse)\nlibrary(readr)"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#why-do-we-create-graphics",
+    "href": "slides/week-2/w2-import-ggplot.html#why-do-we-create-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Why Do We Create Graphics?",
+    "text": "Why Do We Create Graphics?"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#grammar-of-graphics-1",
+    "href": "slides/week-2/w2-import-ggplot.html#grammar-of-graphics-1",
+    "title": "Importing Data and Graphics with ggplot2",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\nThe Grammar of Graphics (GoG) is a principled way of specifying exactly how to create a particular graph from a given data set. It helps us to systematically design new graphs.\n\n\nThink of a graph or a data visualization as a mapping…\n\nFROM variables in the data set (or statistics computed from the data)…\nTO visual attributes (or “aesthetics”) of marks (or “geometric elements”) on the page/screen."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#components-of-grammar-of-graphics",
+    "href": "slides/week-2/w2-import-ggplot.html#components-of-grammar-of-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Components of Grammar of Graphics",
+    "text": "Components of Grammar of Graphics\n\ndata: dataframe containing variables\naes : aesthetic mappings (position, color, symbol, …)\ngeom : geometric element (point, line, bar, box, …)\n\n\n\nstat : statistical variable transformation (identity, count, linear model, quantile, …)\nscale : scale transformation (log scale, color mapping, axes tick breaks, …)\ncoord : Cartesian, polar, map projection, …\nfacet : divide into subplots using a categorical variable"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#how-to-build-a-graphic",
+    "href": "slides/week-2/w2-import-ggplot.html#how-to-build-a-graphic",
+    "title": "Graphics with ggplot2",
+    "section": "How to Build a Graphic",
+    "text": "How to Build a Graphic\nComplete this template to build a basic graphic:\n\nggplot(\n  data = &lt;DATA&gt;, \n  mapping = aes(&lt;MAPPINGS&gt;)\n  ) +\n  &lt;GEOM FUNCTION&gt;() + \n  any other arguments...\n\n\n\nEvery + to adds another layer to a graphic."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#section",
+    "href": "slides/week-2/w2-import-ggplot.html#section",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Add dataAdd aestheticsAdd one geom per layer\n\n\nThis begins a plot that you can add layers to:\n\nggplot(data = mpg)\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy))\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy)) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy)) +\n  geom_jitter() +\n  geom_boxplot()\n\n\n\n\n\n\n\n\nHow would you make the points be on top of the boxplots?"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#aesthetics",
+    "href": "slides/week-2/w2-import-ggplot.html#aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Aesthetics",
+    "text": "Aesthetics\nWe map variables (columns) from the data to aesthetics on the graphic useing the aes() function.\n\nWhat aesthetics can we set?\n\nx, y\ncolor, fill\nlinetype\nsize\nshape\n\n(see ggplot2 cheat sheet for more)"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#aesthetics-1",
+    "href": "slides/week-2/w2-import-ggplot.html#aesthetics-1",
+    "title": "Graphics with ggplot2",
+    "section": "Aesthetics",
+    "text": "Aesthetics\nWe map variables (columns) from the data to aesthetics on the graphic useing the aes() function.\nWhat aesthetics can we set (see ggplot2 cheat sheet for more)?\n\n\n\n\nx, y\ncolor, fill\nlinetype\nlineend\nsize\nshape"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#global-v.-local-aesthetics",
+    "href": "slides/week-2/w2-import-ggplot.html#global-v.-local-aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Global v. Local Aesthetics",
+    "text": "Global v. Local Aesthetics\nGlobal Aesthetics\n\nggplot(data = mpg, \n       mapping = aes(x = class, \n                     y = hwy)) +\n  geom_boxplot()\n\n\nLocal Aesthetics\n\nggplot(data = mpg) +\n  geom_boxplot(mapping = aes(x = class, \n                             y = hwy))"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#mapping-v.-setting-aesthetics",
+    "href": "slides/week-2/w2-import-ggplot.html#mapping-v.-setting-aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Mapping v. Setting Aesthetics",
+    "text": "Mapping v. Setting Aesthetics\nMapping Aesthetics\n\nggplot(data = mpg) +\n  geom_jitter(mapping = aes(x = class, \n                             y = hwy,\n                             color = class))\n\n\nSetting Aesthetics\n\nggplot(data = mpg) +\n  geom_jitter(mapping = aes(x = class, \n                             y = hwy),\n               color = \"steelblue\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#geometric-objects",
+    "href": "slides/week-2/w2-import-ggplot.html#geometric-objects",
+    "title": "Graphics with ggplot2",
+    "section": "Geometric Objects",
+    "text": "Geometric Objects\nWe use a geom_xxx() function to represent data points.\n\n\n\none variable\n\ngeom_bar()\ngeom_density()\ngeom_histogram()\ngeom_boxplot()\n\n\ntwo variable\n\ngeom_boxplot()\ngeom_point()\ngeom_line()\n\n\n\n\n\n\n\n\nTip\n\n\nSee ggplot2 cheat sheet for more!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#section-1",
+    "href": "slides/week-2/w2-import-ggplot.html#section-1",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "geom_point()geom_text()geom_line()\n\n\n\n\nCode\nggplot(data = mpg,\n       aes(x = cty,\n           y = hwy,\n           color = class)) +\n  geom_point() +\n  labs(x = \"City (mpg)\", y = \"Highway (mpg)\") +\n  theme(axis.title = element_text(size = 14),\n        legend.title = element_blank(),\n        legend.text = element_text(size = 14))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       aes(x = cty,\n           y = hwy,\n           color = class)) +\n  geom_text(aes(label = class)) +\n  labs(x = \"City (mpg)\", y = \"Highway (mpg)\") +\n  theme(axis.title = element_text(size = 14),\n        legend.title = element_blank(),\n        legend.text = element_text(size = 14))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       aes(x = cty,\n           y = hwy,\n           color = class)) +\n  geom_line() +\n  labs(x = \"City (mpg)\", y = \"Highway (mpg)\") +\n  theme(axis.title = element_text(size = 14),\n        legend.title = element_blank(),\n        legend.text = element_text(size = 14))"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#creating-a-graphic",
+    "href": "slides/week-2/w2-import-ggplot.html#creating-a-graphic",
+    "title": "Graphics with ggplot2",
+    "section": "Creating a Graphic",
+    "text": "Creating a Graphic\nTo create a specific type of graphic, we will combine aesthetics and geometric objects.\n\n\nLet’s try it!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#game-planning",
+    "href": "slides/week-2/w2-import-ggplot.html#game-planning",
+    "title": "Graphics with ggplot2",
+    "section": "Game Planning",
+    "text": "Game Planning\nWhat: Game Plans! are strategic guides that prompt you to map your coding strategies before implementation.\nHow: Your favorite sketch app, paper + pencil, online whiteboard (Excalidraw!).\nWhy: Tool to connect data and desired graphic before you start coding"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#section-2",
+    "href": "slides/week-2/w2-import-ggplot.html#section-2",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "The GoalGame Planggplot\n\n\nStart with the TX housing data.\n\nMake a plot of median house price over time (including both individual data points and a smoothed trend line), distinguishing between different cities.\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median, color = city)) + \n  geom_point() + \n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#faceting",
+    "href": "slides/week-2/w2-import-ggplot.html#faceting",
+    "title": "Graphics with ggplot2",
+    "section": "Faceting",
+    "text": "Faceting\nExtracts subsets of data and places them in side-by-side plots.\n\nfacet_grid()facet_wrap()\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  facet_grid(cols = vars(city)) +\n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  facet_wrap(vars(city)) +\n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#faceting-1",
+    "href": "slides/week-2/w2-import-ggplot.html#faceting-1",
+    "title": "Graphics with ggplot2",
+    "section": "Faceting",
+    "text": "Faceting\nExtracts subsets of data and places them in side-by-side plots.\n\nOptionsScalesLabels\n\n\n\n\nfacet_grid(cols = vars(b)): facet into columns based on b\nfacet_grid(rows = vars(a)): facet into rows based on a\nfacet_grid(rows = vars(a), cols = vars(b)): facet into both rows and columns\nfacet_wrap(vars(b)): wrap facets into a rectangular layout\n\n\n\n\nYou can set scales to let axis limits vary across facets:\n\nfacet_grid(rows = vars(a),\n           cols = vars(b),\n           scales = ______)\n\n\n\n\"fixed\" – default, x- and y-axis limits are the same for each facet\n\"free\" – both x- and y-axis limits adjust to individual facets\n\"free_x\" – only x-axis limits adjust\n\"free_y\" – only y-axis limits adjust\n\n\n\n\nYou can set a labeller to adjust facet labels.\n\nInclude both the variable name and factor name in the labels:\n\nfacet_grid(cols = vars(b), labeller = label_both)\n\nDisplay math symbols in the labels:\n\nfacet_grid(cols = vars(b), labeller = label_bquote(cols = alpha ^ .(b)))\nfacet_grid(cols = vars(b), labeller = label_parsed)"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#example-facet-labels",
+    "href": "slides/week-2/w2-import-ggplot.html#example-facet-labels",
+    "title": "Graphics with ggplot2",
+    "section": "Example Facet Labels",
+    "text": "Example Facet Labels\n\nExample 1Example 2\n\n\nIncluding the variable and facet names using label_both:\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  facet_grid(cols = vars(city),\n             labeller = label_both) +\n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")\n\n\n\n\n\n\n\n\n\n\n\nIncluding math labels in facet names using label_bquote:\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  facet_grid(cols = vars(city),\n             labeller = label_bquote(cols = .(city)^2)) +\n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#statistical-transformation-stat",
+    "href": "slides/week-2/w2-import-ggplot.html#statistical-transformation-stat",
+    "title": "Graphics with ggplot2",
+    "section": "Statistical Transformation: stat",
+    "text": "Statistical Transformation: stat\nA stat transforms an existing variable into a new variable to plot.\n\nidentity leaves the data as is.\ncount counts the number of observations.\nsummary allows you to specify a desired transformation function.\n\n\nSometimes these statistical transformations happen under the hood when we call a geom."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#statistical-transformation-stat-1",
+    "href": "slides/week-2/w2-import-ggplot.html#statistical-transformation-stat-1",
+    "title": "Graphics with ggplot2",
+    "section": "Statistical Transformation: stat",
+    "text": "Statistical Transformation: stat\n\nstat_count()stat_summary()\n\n\n\n\n\nggplot(data = mpg,\n       mapping = aes(x = class)) +\n  geom_bar()\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg,\n       mapping = aes(x = class)) +\n  stat_count(geom = \"bar\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg,\n       mapping = aes(x = class,\n                     y = hwy)) +\n  stat_summary(geom = \"bar\",\n               fun = \"mean\") +\n  scale_y_continuous(limits = c(0,45))\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg,\n       mapping = aes(x = class,\n                     y = hwy)) +\n  stat_summary(geom = \"bar\",\n               fun = \"max\") +\n  scale_y_continuous(limits = c(0,45))"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#position-adjustements",
+    "href": "slides/week-2/w2-import-ggplot.html#position-adjustements",
+    "title": "Graphics with ggplot2",
+    "section": "Position Adjustements",
+    "text": "Position Adjustements\nPosition adjustments determine how to arrange geom’s that would otherwise occupy the same space.\n\n\nposition = 'dodge': Arrange elements side by side.\nposition = 'fill': Stack elements on top of one another + normalize height.\nposition = 'stack': Stack elements on top of one another.\nposition = 'jitter\": Add random noise to X & Y position of each element to avoid overplotting (see geom_jitter())."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#position-adjustements-1",
+    "href": "slides/week-2/w2-import-ggplot.html#position-adjustements-1",
+    "title": "Graphics with ggplot2",
+    "section": "Position Adjustements",
+    "text": "Position Adjustements\n\nggplot(mpg, aes(x = fl, fill = drv)) + \n  geom_bar(position = \"_____\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#plot-customizations",
+    "href": "slides/week-2/w2-import-ggplot.html#plot-customizations",
+    "title": "Graphics with ggplot2",
+    "section": "Plot Customizations",
+    "text": "Plot Customizations\n\nLabelsThemesScales: Axes TicksScales: Color\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x = \"Engine Displacement (liters)\", \n       y = \"Highway MPG\", \n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(xlab = \"Engine Displacement (liters)\", \n       ylab = \"Highway MPG\", \n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  theme_bw() +\n  theme(legend.position = \"bottom\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x     = \"Engine Displacement (liters)\",\n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  scale_y_continuous(\"Highway MPG\", \n                     limits = c(0,50),\n                     breaks = seq(0,50,5))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x    = \"Engine Displacement (liters)\",\n       y    = \"Highway MPG\",\n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  scale_color_gradient(low = \"white\", high = \"green4\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#formatting-your-plot-code",
+    "href": "slides/week-2/w2-import-ggplot.html#formatting-your-plot-code",
+    "title": "Graphics with ggplot2",
+    "section": "Formatting your Plot Code",
+    "text": "Formatting your Plot Code\nIt is good practice to put each geom and aes on a new line.\n\nThis makes code easier to read!\nGenerally: no line of code should be over 80 characters long.\n\n\nBad PracticeGood PracticeSomewhere In Between\n\n\n\nggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) + geom_point() + theme_bw() + labs(x = \"City (mpg)\", y = \"Highway (mpg)\")\n\n\n\n\nggplot(data = mpg, \n       mapping = aes(x = cty, \n                     y = hwy, \n                     color = class)) + \n  geom_point() + \n  theme_bw() + \n  labs(x = \"City (mpg)\", \n       y = \"Highway (mpg)\")\n\n\n\n\nggplot(data = mpg, \n       mapping = aes(x = cty, y = hwy, color = class)) + \n  geom_point() + \n  theme_bw() + \n  labs(x = \"City (mpg)\", y = \"Highway (mpg)\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#lets-practice",
+    "href": "slides/week-2/w2-import-ggplot.html#lets-practice",
+    "title": "Graphics with ggplot2",
+    "section": "Let’s Practice!",
+    "text": "Let’s Practice!\nHow would you make this plot from the diamonds dataset in ggplot2?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata\naes\ngeom\nfacet"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#creating-a-game-plan",
+    "href": "slides/week-2/w2-import-ggplot.html#creating-a-game-plan",
+    "title": "Graphics with ggplot2",
+    "section": "Creating a Game Plan",
+    "text": "Creating a Game Plan\nThere are a lot of pieces to put together when creating a good graphic.\n\nSo, when sitting down to create a plot, you should first create a game plan!\n\n\nThis game plan should include:\n\nWhat data are you starting from?\nWhat are your x- and y-axes?\nWhat type(s) of geom do you need?\nWhat other aes’s do you need?"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#section-3",
+    "href": "slides/week-2/w2-import-ggplot.html#section-3",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Make a Game Plan!ExampleR Code - Baseline PlotR Code - Formatted Plot\n\n\nUse the mpg dataset to create two side-by-side scatterplots of city MPG vs. highway MPG where the points are colored by the drive type (drv). The two plots should be separated by year.\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year)) +\n  labs(x = \"city MPG\",\n       y = \"highway MPG\") +\n  scale_color_discrete(name = \"drive type\",\n                      labels = c(\"4-wheel\",\"front\",\"rear\"))"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#pa-2-using-data-visualization-to-find-the-penguins",
+    "href": "slides/week-2/w2-import-ggplot.html#pa-2-using-data-visualization-to-find-the-penguins",
+    "title": "Graphics with ggplot2",
+    "section": "PA 2: Using Data Visualization to Find the Penguins",
+    "text": "PA 2: Using Data Visualization to Find the Penguins\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#to-do",
+    "href": "slides/week-2/w2-import-ggplot.html#to-do",
+    "title": "Graphics with ggplot2",
+    "section": "To do…",
+    "text": "To do…\n\nPA 2: Using Data Visualization to Find the Penguins\n\nDue Thursday (4/10) before class\n\nLab 2: Exploring Rodents with ggplot2\n\nDue Monday (4/14) at 11:59 pm"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-ggplot.html#grammar-of-graphics",
+    "href": "slides/week-2/w2-import-ggplot.html#grammar-of-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\nThe Grammar of Graphics (GoG) is a principled way of specifying exactly how to create a particular graph from a given data set. It helps us to systematically design new graphs.\n\n\nThink of a graph or a data visualization as a mapping…\n\nFROM variables in the data set (or statistics computed from the data)…\nTO visual attributes (or “aesthetics”) of marks (or “geometric elements”) on the page/screen."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#monday-april-6",
+    "href": "slides/week-2/w2-ggplot.html#monday-april-6",
+    "title": "Graphics with ggplot2",
+    "section": "Monday, April 6",
+    "text": "Monday, April 6\nToday we will…\n\nGroup Quiz (15 min)\nStyle Note of the Day\nNew Material\n\nWelcome to the Tidyverse\nGraphics with ggplot2\nGame Planning\n\nPA 2: Using Data Visualization to Find the Penguins"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#style-note-of-the-day---function-calls",
+    "href": "slides/week-2/w2-ggplot.html#style-note-of-the-day---function-calls",
+    "title": "Graphics with ggplot2",
+    "section": "Style Note of the Day - Function Calls",
+    "text": "Style Note of the Day - Function Calls\n\n\n\n\n\n\nTip\n\n\nName arguments in function calls\nOnly include necessary arguments! (If you are using any default values, no need to repeat them in your function call.)\n\n\n\nGood\n\nmean(1:10, na.rm = TRUE)\nseq(from = 1, to = 100, by = 5)\n\n\nBad\n\nmean(1:10, , TRUE)\nmean(1:10, trim = 0, na.rm = TRUE)\n\nseq(1, 100, 5)"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#tidywho",
+    "href": "slides/week-2/w2-ggplot.html#tidywho",
+    "title": "Graphics with ggplot2",
+    "section": "Tidywho?",
+    "text": "Tidywho?\n\n\n\nThe tidyverse is an opinionated collection of R packages designed for data science. All packages share an underlying design philosophy, grammar, and data structures.1\n\n\n\n\n\n\nMost of the functionality you will need for an entire data analysis workflow with cohesive grammar\n\n\nhttps://www.tidyverse.org/"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#core-packages",
+    "href": "slides/week-2/w2-ggplot.html#core-packages",
+    "title": "Graphics with ggplot2",
+    "section": "Core Packages",
+    "text": "Core Packages\nThe tidyverse includes functions to:\n\n\n\nRead in data\nreadr\n\n\nVisualize data\nggplot2\n\n\nManipulate rectangular data\ntidyr, dplyr, tibble\n\n\nHandle special variable types\nstringr, forcats , lubridate\n\n\nSupport functional programming\npurrr"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#tidyverse-and-stat-331",
+    "href": "slides/week-2/w2-ggplot.html#tidyverse-and-stat-331",
+    "title": "Graphics with ggplot2",
+    "section": "Tidyverse and STAT 331",
+    "text": "Tidyverse and STAT 331\n\n\nThis version of the course will primarily use tidyverse packages and grammar\nReasoning:\n\nthe tidyverse is as reputable and ubiquitous as base R at this point (in my opinion)\nthe tidyverse is specifically designed to help programmers produce easy-to-read and reproducible analyses and to reduce errors\nthere is excellent documentation!\nI like it!"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#using-the-tidyverse-package",
+    "href": "slides/week-2/w2-ggplot.html#using-the-tidyverse-package",
+    "title": "Graphics with ggplot2",
+    "section": "Using the tidyverse package",
+    "text": "Using the tidyverse package\n\nInstalling/loading the tidyverse package installs/loads all of the “tidyverse” packages\nAvoid redundantly installing or loading packages!\n\n\nDo this:\n\nlibrary(tidyverse)\n\nor\n\nlibrary(readr)\n\n\n\nNot this:\n\nlibrary(tidyverse)\nlibrary(readr)"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#why-do-we-create-graphics",
+    "href": "slides/week-2/w2-ggplot.html#why-do-we-create-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Why Do We Create Graphics?",
+    "text": "Why Do We Create Graphics?"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#grammar-of-graphics",
+    "href": "slides/week-2/w2-ggplot.html#grammar-of-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Grammar of Graphics",
+    "text": "Grammar of Graphics\nThe Grammar of Graphics (GoG) is a principled way of specifying exactly how to create a particular graph from a given data set. It helps us to systematically design new graphs.\n\n\nThink of a graph or a data visualization as a mapping…\n\nFROM variables in the data set (or statistics computed from the data)…\nTO visual attributes (or “aesthetics”) of marks (or “geometric elements”) on the page/screen."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#components-of-grammar-of-graphics",
+    "href": "slides/week-2/w2-ggplot.html#components-of-grammar-of-graphics",
+    "title": "Graphics with ggplot2",
+    "section": "Components of Grammar of Graphics",
+    "text": "Components of Grammar of Graphics\n\ndata: dataframe containing variables\naes : aesthetic mappings (position, color, symbol, …)\ngeom : geometric element (point, line, bar, box, …)\n\n\n\nstat : statistical variable transformation (identity, count, linear model, quantile, …)\nscale : scale transformation (log scale, color mapping, axes tick breaks, …)\ncoord : Cartesian, polar, map projection, …\nfacet : divide into subplots using a categorical variable"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#how-to-build-a-graphic",
+    "href": "slides/week-2/w2-ggplot.html#how-to-build-a-graphic",
+    "title": "Graphics with ggplot2",
+    "section": "How to Build a Graphic",
+    "text": "How to Build a Graphic\nTo create a specific type of graphic, we will combine aesthetics and geometric objects.\n\nComplete this template to build a basic graphic:\n\nggplot(\n  data = &lt;DATA&gt;, \n  mapping = aes(&lt;MAPPINGS&gt;)\n  ) +\n  &lt;GEOM FUNCTION&gt;() + \n  any other arguments...\n\n\n\n\nEvery + to adds another layer to a graphic."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#section",
+    "href": "slides/week-2/w2-ggplot.html#section",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Add dataAdd aesthetics 🧩Add one geom per layer\n\n\nThis begins a plot that you can add layers to:\n\nggplot(data = mpg)\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy))\n\n\n\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy)) +\n  geom_jitter()\n\n\n\n\n\n\n\n\n\n\nggplot(data = mpg, \n       aes(x = class, y = hwy)) +\n  geom_jitter() +\n  geom_boxplot()\n\n\n\n\n\n\n\n\nHow would you make the points be on top of the boxplots?"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#aesthetics",
+    "href": "slides/week-2/w2-ggplot.html#aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Aesthetics",
+    "text": "Aesthetics\nWe map variables (columns) from the data to aesthetics on the graphic useing the aes() function.\n\nWhat aesthetics can we set?\n\nx, y\ncolor, fill\nlinetype\nsize\nshape\n\n(see ggplot2 cheat sheet for more)"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#global-v.-local-aesthetics",
+    "href": "slides/week-2/w2-ggplot.html#global-v.-local-aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Global v. Local Aesthetics 🧩",
+    "text": "Global v. Local Aesthetics 🧩\nGlobal Aesthetics\n\nggplot(data = mpg, \n       mapping = aes(x = class, \n                     y = hwy)) +\n  geom_boxplot()\n\n\nLocal Aesthetics\n\nggplot(data = mpg) +\n  geom_boxplot(mapping = aes(x = class, \n                             y = hwy))"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#mapping-v.-setting-aesthetics",
+    "href": "slides/week-2/w2-ggplot.html#mapping-v.-setting-aesthetics",
+    "title": "Graphics with ggplot2",
+    "section": "Mapping v. Setting Aesthetics 🧩",
+    "text": "Mapping v. Setting Aesthetics 🧩\nMapping Aesthetics\n\nggplot(data = mpg) +\n  geom_jitter(mapping = aes(x = class, \n                             y = hwy,\n                             color = class))\n\n\nSetting Aesthetics\n\nggplot(data = mpg) +\n  geom_jitter(mapping = aes(x = class, \n                             y = hwy),\n               color = \"steelblue\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#geometric-objects",
+    "href": "slides/week-2/w2-ggplot.html#geometric-objects",
+    "title": "Graphics with ggplot2",
+    "section": "Geometric Objects",
+    "text": "Geometric Objects\nWe use a geom_xxx() function to represent data points.\n\n\n\none variable\n\ngeom_bar()\ngeom_density()\ngeom_histogram()\ngeom_boxplot()\n\n\ntwo variable\n\ngeom_boxplot()\ngeom_point()\ngeom_line()\n\n\n\n\n\n\n\n\nTip\n\n\nSee ggplot2 cheat sheet for more!"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#creating-a-graphic",
+    "href": "slides/week-2/w2-ggplot.html#creating-a-graphic",
+    "title": "Graphics with ggplot2",
+    "section": "Creating a Graphic",
+    "text": "Creating a Graphic\nTo create a specific type of graphic, we will combine aesthetics and geometric objects."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#game-planning",
+    "href": "slides/week-2/w2-ggplot.html#game-planning",
+    "title": "Graphics with ggplot2",
+    "section": "Game Planning",
+    "text": "Game Planning\nWhat: Game Plans! are strategic guides that prompt you to map your coding strategies before implementation.\nHow: Your favorite sketch app, paper + pencil, online whiteboard (Excalidraw!).\nWhy: Tool to connect data and desired graphic before you start coding"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#section-1",
+    "href": "slides/week-2/w2-ggplot.html#section-1",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Make a Game Plan!ExampleR Code - Baseline PlotR Code - Formatted Plot\n\n\nUse the mpg dataset to create two side-by-side scatterplots of city MPG vs. highway MPG where the points are colored by the drive type (drv). The two plots should be separated by year.\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year)) +\n  labs(x = \"city MPG\",\n       y = \"highway MPG\") +\n  scale_color_discrete(name = \"drive type\",\n                      labels = c(\"4-wheel\",\"front\",\"rear\"))"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#faceting",
+    "href": "slides/week-2/w2-ggplot.html#faceting",
+    "title": "Graphics with ggplot2",
+    "section": "Faceting",
+    "text": "Faceting\nExtracts subsets of data and places them in side-by-side plots.\n\nfacet_grid()facet_wrap()\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_line() + \n  facet_grid(cols = vars(city)) +\n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_line() + \n  facet_wrap(vars(city)) +\n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#faceting---details",
+    "href": "slides/week-2/w2-ggplot.html#faceting---details",
+    "title": "Graphics with ggplot2",
+    "section": "Faceting - details",
+    "text": "Faceting - details\nExtracts subsets of data and places them in side-by-side plots.\n\nOptionsScalesLabels\n\n\n\n\nfacet_grid(cols = vars(b)): facet into columns based on b\nfacet_grid(rows = vars(a)): facet into rows based on a\nfacet_grid(rows = vars(a), cols = vars(b)): facet into both rows and columns\nfacet_wrap(vars(b)): wrap facets into a rectangular layout\n\n\n\n\nYou can set scales to let axis limits vary across facets:\n\nfacet_grid(rows = vars(a),\n           cols = vars(b),\n           scales = ______)\n\n\n\n\"fixed\" – default, x- and y-axis limits are the same for each facet\n\"free\" – both x- and y-axis limits adjust to individual facets\n\"free_x\" – only x-axis limits adjust\n\"free_y\" – only y-axis limits adjust\n\n\n\n\nYou can set a labeller to adjust facet labels.\n\nInclude both the variable name and factor name in the labels:\n\nfacet_grid(cols = vars(b), labeller = label_both)"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#position-adjustements",
+    "href": "slides/week-2/w2-ggplot.html#position-adjustements",
+    "title": "Graphics with ggplot2",
+    "section": "Position Adjustements",
+    "text": "Position Adjustements\nPosition adjustments determine how to arrange geom’s that would otherwise occupy the same space.\n\n\nposition = 'dodge': Arrange elements side by side.\nposition = 'fill': Stack elements on top of one another + normalize height.\nposition = 'stack': Stack elements on top of one another.\nposition = 'jitter\": Add random noise to X & Y position of each element to avoid overplotting (see geom_jitter())."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#position-adjustments",
+    "href": "slides/week-2/w2-ggplot.html#position-adjustments",
+    "title": "Graphics with ggplot2",
+    "section": "Position Adjustments",
+    "text": "Position Adjustments\n\nggplot(mpg, aes(x = fl, fill = drv)) + \n  geom_bar(position = \"_____\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#plot-customizations",
+    "href": "slides/week-2/w2-ggplot.html#plot-customizations",
+    "title": "Graphics with ggplot2",
+    "section": "Plot Customizations",
+    "text": "Plot Customizations\n\nLabelsThemesScales: Axes TicksScales: Color\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x = \"Engine Displacement (liters)\", \n       y = \"Highway MPG\", \n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(xlab = \"Engine Displacement (liters)\", \n       ylab = \"Highway MPG\", \n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  theme_bw() +\n  theme(legend.position = \"bottom\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x     = \"Engine Displacement (liters)\",\n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  scale_y_continuous(\"Highway MPG\", \n                     limits = c(0,50),\n                     breaks = seq(0,50,5))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg) + \n  geom_jitter(mapping = aes(x = displ, y = hwy, color = cyl)) + \n  labs(x    = \"Engine Displacement (liters)\",\n       y    = \"Highway MPG\",\n       color = \"Number of \\nCylinders\",\n       title = \"Car Efficiency\") +\n  scale_color_gradient(low = \"white\", high = \"green4\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#formatting-your-plot-code",
+    "href": "slides/week-2/w2-ggplot.html#formatting-your-plot-code",
+    "title": "Graphics with ggplot2",
+    "section": "Formatting your Plot Code",
+    "text": "Formatting your Plot Code\nIt is good practice to put each geom and aes on a new line.\n\nThis makes code easier to read!\nGenerally: no line of code should be over 80 characters long.\n\n\nBad PracticeGood PracticeSomewhere In Between\n\n\n\nggplot(data = mpg, mapping = aes(x = cty, y = hwy, color = class)) + geom_point() + theme_bw() + labs(x = \"City (mpg)\", y = \"Highway (mpg)\")\n\n\n\n\nggplot(data = mpg, \n       mapping = aes(x = cty, \n                     y = hwy, \n                     color = class)) + \n  geom_point() + \n  theme_bw() + \n  labs(x = \"City (mpg)\", \n       y = \"Highway (mpg)\")\n\n\n\n\nggplot(data = mpg, \n       mapping = aes(x = cty, y = hwy, color = class)) + \n  geom_point() + \n  theme_bw() + \n  labs(x = \"City (mpg)\", y = \"Highway (mpg)\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#lets-practice",
+    "href": "slides/week-2/w2-ggplot.html#lets-practice",
+    "title": "Graphics with ggplot2",
+    "section": "Let’s Practice!",
+    "text": "Let’s Practice!\nHow would you make this plot from the diamonds dataset in ggplot2?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata\naes\ngeom\nfacet"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#creating-a-game-plan",
+    "href": "slides/week-2/w2-ggplot.html#creating-a-game-plan",
+    "title": "Graphics with ggplot2",
+    "section": "Creating a Game Plan",
+    "text": "Creating a Game Plan\nThere are a lot of pieces to put together when creating a good graphic.\n\nSo, when sitting down to create a plot, you should first create a game plan!\n\n\nThis game plan should include:\n\nWhat data are you starting from?\nWhat are your x- and y-axes?\nWhat type(s) of geom do you need?\nWhat other aes’s do you need?"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#section-2",
+    "href": "slides/week-2/w2-ggplot.html#section-2",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Make a Game Plan!ExampleR Code - Baseline PlotR Code - Formatted Plot\n\n\nUse the mpg dataset to create two side-by-side scatterplots of city MPG vs. highway MPG where the points are colored by the drive type (drv). The two plots should be separated by year.\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year))\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = mpg,\n       mapping = aes(x = cty,\n                     y = hwy,\n                     color = drv)) +\n  geom_point() +\n  facet_grid(cols = vars(year)) +\n  labs(x = \"city MPG\",\n       y = \"highway MPG\") +\n  scale_color_discrete(name = \"drive type\",\n                      labels = c(\"4-wheel\",\"front\",\"rear\"))"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#pa-2-using-data-visualization-to-find-the-penguins",
+    "href": "slides/week-2/w2-ggplot.html#pa-2-using-data-visualization-to-find-the-penguins",
+    "title": "Graphics with ggplot2",
+    "section": "PA 2: Using Data Visualization to Find the Penguins",
+    "text": "PA 2: Using Data Visualization to Find the Penguins\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#to-do",
+    "href": "slides/week-2/w2-ggplot.html#to-do",
+    "title": "Graphics with ggplot2",
+    "section": "To do…",
+    "text": "To do…\n\nPA 2: Using Data Visualization to Find the Penguins\n\nDue Tuesday (4/7) at 11:59pm\n\nReading and review\nLab 2: Exploring Rodents with ggplot2\n\nDue Sunday (4/12) at 11:59 pm"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#creating-a-graphic-1",
+    "href": "slides/week-2/w2-ggplot.html#creating-a-graphic-1",
+    "title": "Graphics with ggplot2",
+    "section": "Creating a Graphic",
+    "text": "Creating a Graphic\n\nThe GoalGame Planggplot\n\n\nStart with the TX housing data.\n\nMake a plot of median house price over time, distinguishing between different cities.\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median, color = city)) + \n  geom_line() + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#practice",
+    "href": "slides/week-2/w2-ggplot.html#practice",
+    "title": "Graphics with ggplot2",
+    "section": "Practice 🧩",
+    "text": "Practice 🧩\n\nGoalPlanggplot\n\n\nStart with TX housing data.\n\nMake a plot of median house price over time, distinguishing between different cities.\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, \n           y = median, \n           color = city)) + \n  geom_line() + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices\",\n       color = \"City\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#submission",
+    "href": "slides/week-2/w2-ggplot.html#submission",
+    "title": "Graphics with ggplot2",
+    "section": "Submission",
+    "text": "Submission\n\nWhen you have completed the puzzle, you will submit the name of the poem on Canvas.\n\nYou can ask me if it is correct before you submit\n\nThe person who was the last to be the computer will submit your .qmd to Canvas for the whole group.\n\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person whose family name starts first alphabetically starts as the project manager, second as the computer."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#collaborative-protocol",
+    "href": "slides/week-2/w2-ggplot.html#collaborative-protocol",
+    "title": "Graphics with ggplot2",
+    "section": "Collaborative Protocol",
+    "text": "Collaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code."
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#ggplot2-can-basically-do-anything",
+    "href": "slides/week-2/w2-ggplot.html#ggplot2-can-basically-do-anything",
+    "title": "Graphics with ggplot2",
+    "section": "ggplot2 can basically do anything!",
+    "text": "ggplot2 can basically do anything!\n\nimagine the graphic you want to make, and the support exists for you to make it!\n\nSome general resources:\n\nggplot2 cheatsheet\nindex of all functions\n\nMaking your exact graphic:\n\nall theme elements\nalready created themes"
+  },
+  {
+    "objectID": "reading/week-2.1.html",
+    "href": "reading/week-2.1.html",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "",
+    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+  },
+  {
+    "objectID": "reading/week-2.1.html#learning-objectives",
+    "href": "reading/week-2.1.html#learning-objectives",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "",
+    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html",
+    "href": "slides/week-2/w2-import-graphics.html",
+    "title": "Basics of Graphics",
+    "section": "",
+    "text": "Today we will…\n\nImporting Data\nWhat makes a good graphic?\nLab 2: Exploring Rodents with ggplot2"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#wednesday-april-8",
+    "href": "slides/week-2/w2-import-graphics.html#wednesday-april-8",
+    "title": "Basics of Graphics",
+    "section": "",
+    "text": "Today we will…\n\nImporting Data\nWhat makes a good graphic?\nLab 2: Exploring Rodents with ggplot2"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#lab-1-notes",
+    "href": "slides/week-2/w2-import-graphics.html#lab-1-notes",
+    "title": "Basics of Graphics",
+    "section": "Lab 1 Notes",
+    "text": "Lab 1 Notes\n\nOverall looking nice!\nmake sure your code is visible: echo: true\nsee what your rendered document looks like before you submit it\nif you have questions about statistical interpretations, just ask!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#data-science-workflow",
+    "href": "slides/week-2/w2-import-graphics.html#data-science-workflow",
+    "title": "Basics of Graphics",
+    "section": "Data Science Workflow",
+    "text": "Data Science Workflow"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#common-types-of-data-files",
+    "href": "slides/week-2/w2-import-graphics.html#common-types-of-data-files",
+    "title": "Basics of Graphics",
+    "section": "Common Types of Data Files",
+    "text": "Common Types of Data Files\nLook at the file extension for the type of data file.\n. . .\n\n\n.csv : “comma-separated values”\n\nName, Age\nBob, 49\nJoe, 40\n\n\n. . .\n.xls, .xlsx: Microsoft Excel spreadsheet\n\nCommon approach: save as .csv\nNicer approach: use the readxl package\n\n. . .\n.txt: plain text\n\nCould have any sort of delimiter…\nNeed to let R know what to look for!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#common-types-of-data-files-1",
+    "href": "slides/week-2/w2-import-graphics.html#common-types-of-data-files-1",
+    "title": "Basics of Graphics",
+    "section": "Common Types of Data Files",
+    "text": "Common Types of Data Files\n\nFile AFile BFile CSources\n\n\n\n\n\n\n\n\n\n\n\n\nFile A\nFile B\nFile C"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#loading-external-data",
+    "href": "slides/week-2/w2-import-graphics.html#loading-external-data",
+    "title": "Basics of Graphics",
+    "section": "Loading External Data",
+    "text": "Loading External Data\nUsing base R functions:\n\nread.csv() is for reading in .csv files.\nread.table() and read.delim() are for any data with “columns” (you specify the separator)."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#loading-external-data-1",
+    "href": "slides/week-2/w2-import-graphics.html#loading-external-data-1",
+    "title": "Basics of Graphics",
+    "section": "Loading External Data",
+    "text": "Loading External Data\nThe tidyverse has some cleaned-up versions in the readr and readxl packages:\n\nread_csv() is for comma-separated data.\nread_tsv() is for tab-separated data.\nread_table() is for white-space-separated data.\nread_delim() is any data with “columns” (you specify the separator). The above are special cases.\nread_excel() is specifically for dealing with Excel files.\n\nRemember to load the readr and readxl packages first!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#take-a-look-at-the-documentation",
+    "href": "slides/week-2/w2-import-graphics.html#take-a-look-at-the-documentation",
+    "title": "Basics of Graphics",
+    "section": "Take a look at the documentation",
+    "text": "Take a look at the documentation"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#reminder-notebooks-and-file-paths",
+    "href": "slides/week-2/w2-import-graphics.html#reminder-notebooks-and-file-paths",
+    "title": "Basics of Graphics",
+    "section": "Reminder: Notebooks and File Paths",
+    "text": "Reminder: Notebooks and File Paths\n\nYou have to tell R where to “find” the data you want to read in using a file path.\nQuarto automatically sets the working directory to the be directory where the Quarto document is for any code within the Quarto document\nThis overrides the directory set by an .Rproj\n\n. . .\n\n\n\nPay attention to this when setting relative filepaths\n\nTo “backout” of one directory, use \"../\"\ne.g.: \"../data/dat.csv\""
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#graphics",
+    "href": "slides/week-2/w2-import-graphics.html#graphics",
+    "title": "Basics of Graphics",
+    "section": "Graphics",
+    "text": "Graphics\nGraphics consist of:\n\nStructure: boxplot, scatterplot, etc.\nAesthetics: features such as color, shape, and size that map other variables to structural features.\n\nBoth the structure and aesthetics should help viewers interpret the information."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#what-makes-bad-graphics-bad",
+    "href": "slides/week-2/w2-import-graphics.html#what-makes-bad-graphics-bad",
+    "title": "Basics of Graphics",
+    "section": "What makes bad graphics bad?",
+    "text": "What makes bad graphics bad?\n\nBAD DATA.\nToo much “chartjunk” – superfluous details (Tufte).\nDesign choices that are difficult for the human brain to process, including:\n\n\n\n\n\n\nColors\nOrientation\nOrganization"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#what-makes-good-graphics-good",
+    "href": "slides/week-2/w2-import-graphics.html#what-makes-good-graphics-good",
+    "title": "Basics of Graphics",
+    "section": "What makes good graphics good?",
+    "text": "What makes good graphics good?\nEdward R. Tufte is a well-known critic of visualizations, and his definition of graphical excellence consists of:\n\n\ncommunicating complex ideas with clarity, precision, and efficiency.\nmaximizing the data-to-ink ratio.\nusing multivariate displays.\ntelling the truth about the data."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#graphics-1",
+    "href": "slides/week-2/w2-import-graphics.html#graphics-1",
+    "title": "Basics of Graphics",
+    "section": "Graphics",
+    "text": "Graphics\n\nWhen creating graphics, we need to think carefully about how we make structural and aesthetic decisions.\nThis takes iteration and practice!"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#gestalt-principles",
+    "href": "slides/week-2/w2-import-graphics.html#gestalt-principles",
+    "title": "Basics of Graphics",
+    "section": "Gestalt Principles",
+    "text": "Gestalt Principles\nOur brains have an amazing ability to create and perceive structure among visual objects.\n\n“Gestalt principles of visual perception”\nThis framework can help us think about how to create the most expressive and effective data visualizations"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#gestalt-principles-1",
+    "href": "slides/week-2/w2-import-graphics.html#gestalt-principles-1",
+    "title": "Basics of Graphics",
+    "section": "Gestalt Principles",
+    "text": "Gestalt Principles\n\n\n\nGestalt Hierarchy\nGraphical Feature\n\n\n\n\n1. Enclosure\nFacets\n\n\n2. Connection\nLines\n\n\n3. Proximitiy\nWhite Space\n\n\n4. Similarity\nColor/Shape\n\n\n\n. . .\nImplications for practice:\n\nKnow that we perceive some groups before others.\nDesign to facilitate and emphasize the most important comparisons."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#pre-attentive-features",
+    "href": "slides/week-2/w2-import-graphics.html#pre-attentive-features",
+    "title": "Basics of Graphics",
+    "section": "Pre-attentive Features",
+    "text": "Pre-attentive Features\n\nThe next slide will have one point that is not like the others.\n\nRaise your hand when you notice it."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#pre-attentive-features-1",
+    "href": "slides/week-2/w2-import-graphics.html#pre-attentive-features-1",
+    "title": "Basics of Graphics",
+    "section": "Pre-attentive Features",
+    "text": "Pre-attentive Features\n\nknitr::include_graphics(\"images/pre-atten1.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#pre-attentive-features-2",
+    "href": "slides/week-2/w2-import-graphics.html#pre-attentive-features-2",
+    "title": "Basics of Graphics",
+    "section": "Pre-attentive Features",
+    "text": "Pre-attentive Features\n\nknitr::include_graphics(\"images/pre-atten2.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#pre-attentive-features-3",
+    "href": "slides/week-2/w2-import-graphics.html#pre-attentive-features-3",
+    "title": "Basics of Graphics",
+    "section": "Pre-attentive Features",
+    "text": "Pre-attentive Features\nPre-attentive features are features that we see and perceive before we even think about it.\n\nThey will jump out at us in less than 250 ms.\nE.g., color, form, movement, spatial location.\n\n. . .\nThere is a hierarchy of features:\n\nColor is stronger than shape.\nCombinations of pre-attentive features may not be pre-attentive due to interference."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#double-encoding",
+    "href": "slides/week-2/w2-import-graphics.html#double-encoding",
+    "title": "Basics of Graphics",
+    "section": "Double Encoding",
+    "text": "Double Encoding\n\nknitr::include_graphics(\"images/double.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#no-double-encoding",
+    "href": "slides/week-2/w2-import-graphics.html#no-double-encoding",
+    "title": "Basics of Graphics",
+    "section": "No Double Encoding",
+    "text": "No Double Encoding\n\nknitr::include_graphics(\"images/no_double.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-1",
+    "href": "slides/week-2/w2-import-graphics.html#color-1",
+    "title": "Basics of Graphics",
+    "section": "Color",
+    "text": "Color\n\nColor, hue, and intensity are pre-attentive features, and bigger contrasts lead to faster detection.\n\nHue: main color family (red, orange, yellow…)\nIntensity: amount of color\n\n\n\n\n\nknitr::include_graphics(\"images/hue.png\")\n\n\n\n\n\n\n\n\n\n\nknitr::include_graphics(\"images/intensity.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\n\nDo not use rainbow color gradients!\nBe conscious of what certain colors “mean”.\n\nGood idea to use red for “good” and green for “bad”?\n\n\nknitr::include_graphics(\"images/rainbow.png\")\nknitr::include_graphics(\"images/red_green.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-1",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines-1",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\n\nFor categorical data, try not to use more than 7 colors:\n\n\nknitr::include_graphics(\"images/small_gradient.png\")\n\n\n\n\n\n\n\n\nCan use colorRampPalette() from the RColorBrewer package to produce larger palettes:\n\nknitr::include_graphics(\"images/big_gradient.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-2",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines-2",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\n\nFor quantitative data, use mappings from data to color that are numerically and perceptually uniform.\n\nRelative discriminability of two colors should be proportional to the difference between the corresponding data values."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-3",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines-3",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nuse double encoding - when you use color, also use another aesthetic (line type, shape, etc.).\n\n\nknitr::include_graphics(\"images/double.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-4",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines-4",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nwith a unidirectional scale (e.g., all + values), use a monochromatic color gradient.\n\n\nknitr::include_graphics(\"images/blues.png\")\n\n\n\n\n\n\n\n\n\nwith a bidirectional scale (e.g., + and - values), use a purple-white-orange color gradient. Transition through white!\n\n\nknitr::include_graphics(\"images/PuOr.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-5",
+    "href": "slides/week-2/w2-import-graphics.html#color-guidelines-5",
+    "title": "Basics of Graphics",
+    "section": "Color Guidelines",
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nprint your chart out in black and white – if you can still read it, it will be safe for all users.\n\nknitr::include_graphics(\"images/nyt_color.png\")\nknitr::include_graphics(\"images/nyt_bw.png\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#color-in-ggplot2",
+    "href": "slides/week-2/w2-import-graphics.html#color-in-ggplot2",
+    "title": "Basics of Graphics",
+    "section": "Color in ggplot2",
+    "text": "Color in ggplot2\nThere are several packages with color scheme options:\n\nRcolorbrewer\nggsci\nviridis\nwesanderson\n\nThese packages have color palettes that are aesthetically pleasing and, in many cases, colorblind friendly.\nYou can also take a look at other ways to find nice color palettes. ColorBrewer is my personal favorite."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species",
+    "href": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species",
+    "title": "Basics of Graphics",
+    "section": "Penguins - Flipper Length by Species",
+    "text": "Penguins - Flipper Length by Species\n\nSpecies X-AxisSpecies Facets\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm, \n                              x = species)) +\n    geom_boxplot() + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm)) +\n    geom_boxplot() + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`)."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species-sex",
+    "href": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species-sex",
+    "title": "Basics of Graphics",
+    "section": "Penguins - Flipper Length by Species & Sex",
+    "text": "Penguins - Flipper Length by Species & Sex\n\nOption 1Option 2Option 3\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm, \n                             x = species,\n                             color = sex)) + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = sex)) + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = species)) + \n    facet_grid(cols = vars(sex)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`)."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#pa-2-example---two-categorical-variables",
+    "href": "slides/week-2/w2-import-graphics.html#pa-2-example---two-categorical-variables",
+    "title": "Basics of Graphics",
+    "section": "PA 2 Example - Two Categorical Variables",
+    "text": "PA 2 Example - Two Categorical Variables\n\ndata(penguins)\n\n\nColors & ShapesColors & Facets\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_point(mapping = aes(x = bill_length_mm, \n                             y = bill_depth_mm, \n                             color = species, \n                             shape = island )) + \n    labs(title = \"Relationship Between Bill Length and Bill Depth\", \n         x = \"Bill Length (mm)\" , \n         y = \"Bill Depth (mm)\")\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, \n                     y = bill_depth_mm, \n                     color = species)) +\n  geom_point() + \n  facet_wrap(~island) +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Bill Depth (mm)\", \n       title = \"Relationship Between Bill Length and Bill Depth\")\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#lecture-example---texas-housing-data",
+    "href": "slides/week-2/w2-import-graphics.html#lecture-example---texas-housing-data",
+    "title": "Basics of Graphics",
+    "section": "Lecture Example - Texas Housing Data",
+    "text": "Lecture Example - Texas Housing Data\n\ndata(txhousing)\nsm_tx &lt;- txhousing |&gt;\n  filter(city %in% c(\"Dallas\",\"Fort Worth\", \"Austin\",\n                     \"Houston\", \"El Paso\"))\n\n\nColorFacet\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median, color = city)) + \n  geom_point() + \n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  geom_smooth(method = \"loess\") + \n  facet_wrap(vars(city)) +\n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#example-1",
+    "href": "slides/week-2/w2-import-graphics.html#example-1",
+    "title": "Basics of Graphics",
+    "section": "Example 1",
+    "text": "Example 1\n\nknitr::include_graphics(\"images/covid-model.jpg\")"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#example-2",
+    "href": "slides/week-2/w2-import-graphics.html#example-2",
+    "title": "Basics of Graphics",
+    "section": "Example 2",
+    "text": "Example 2\n\n\n\nhttps://www.data-to-viz.com/graph/area.html"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#example-3",
+    "href": "slides/week-2/w2-import-graphics.html#example-3",
+    "title": "Basics of Graphics",
+    "section": "Example 3",
+    "text": "Example 3\n\n\n\nhttps://r-graph-gallery.com/web-vertical-line-chart-with-ggplot2.html"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#example-4",
+    "href": "slides/week-2/w2-import-graphics.html#example-4",
+    "title": "Basics of Graphics",
+    "section": "Example 4",
+    "text": "Example 4\n\n\n\nhttps://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#lab-2-exploring-rodents-with-ggplot2",
+    "href": "slides/week-2/w2-import-graphics.html#lab-2-exploring-rodents-with-ggplot2",
+    "title": "Basics of Graphics",
+    "section": "Lab 2: Exploring Rodents with ggplot2",
+    "text": "Lab 2: Exploring Rodents with ggplot2"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#lab-formatting",
+    "href": "slides/week-2/w2-import-graphics.html#lab-formatting",
+    "title": "Basics of Graphics",
+    "section": "Lab Formatting",
+    "text": "Lab Formatting\n\nStarting with Lab 2, your labs will be graded more strictly on appearance and code format.\nReview the lab formatting guidelines on Canvas before you submit your lab!\nBig points:\n\nuse relative file paths\nmake sure all markdown renders as expected\nNEVER PRINT OUT FULL DATASETS\nno long code lines - use line breaks liberally\n“clean up” the lab before submitting"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#ggplot2-cheatsheet",
+    "href": "slides/week-2/w2-import-graphics.html#ggplot2-cheatsheet",
+    "title": "Basics of Graphics",
+    "section": "ggplot2 cheatsheet",
+    "text": "ggplot2 cheatsheet\n\n\n\nggplot2 cheatsheet"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#to-do",
+    "href": "slides/week-2/w2-import-graphics.html#to-do",
+    "title": "Basics of Graphics",
+    "section": "To do…",
+    "text": "To do…\n\nLab 2: Exploring Rodents with ggplot2\n\ndue Monday 4/14 at 11:59pm\n\nRead Chapter 3: Data Cleaning and Manipulation\n\nCheck-in 3.1 due Tuesday 4/15 before class"
+  },
+  {
+    "objectID": "slides/week-1/w1-intro-r.html",
+    "href": "slides/week-1/w1-intro-r.html",
+    "title": "Intro to STAT 331/531 + Intro to R",
+    "section": "",
+    "text": "Today we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
+  },
+  {
+    "objectID": "reading/week-2.1.html#building-graphics-with-ggplot2",
+    "href": "reading/week-2.1.html#building-graphics-with-ggplot2",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "2 Building Graphics with ggplot2",
+    "text": "2 Building Graphics with ggplot2\n\n\n\n\n\nBuilding a masterpiece, by Allison Horst\n\n\nWe went over the big-picture, most important (IMO) elements of creating graphics using ggplot2 in class. These readings and tutorials will get into more of the details and nitty-gritty of working with ggplot2.\n\n📖 Required Reading: R4DS Data Visualization 1.1 - 1.5.\n\n\n💻 Suggested Tutorials\n\nBar Charts\nHistograms\nScatterplots\nLine Plots\n\n\n\n📖 Required Reading: R4DS Layers."
+  },
+  {
+    "objectID": "reading/week-2.1.html#optional-videos",
+    "href": "reading/week-2.1.html#optional-videos",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "3 Optional Videos",
+    "text": "3 Optional Videos\nIf you like learning and reviewing with videos, these videos created by Dr. Allison Theobold for STAT 331 will review what is covered in the required reading.\n\nggplot2 First Steps\nWhat is an aesthetic?\nWhat is a geometric object?\nGlobal vs. local aesthetics\nAdding a third variable with facets\nWhat is being plotted? Positions"
+  },
+  {
+    "objectID": "practice-activities/pa2.html",
+    "href": "practice-activities/pa2.html",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "",
+    "text": "Download the .qmd template and save it in a reasonable location.\nToday you will be exploring different types of visualizations to uncover which species of penguins reside on different islands.\nSome advice:"
+  },
+  {
+    "objectID": "practice-activities/pa2.html#getting-started",
+    "href": "practice-activities/pa2.html#getting-started",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Getting Started",
+    "text": "Getting Started\nWe will be creating visualizations using the ggplot2 package.\nFor this activity, we will be exploring the penguins data from the palmerpenguins package, which has fantastic documentation with really awesome artwork. So, you will need to install the palmerpenguins package.\ninstall.packages(\"palmerpenguins\")\n\n\n\n\n\n\ninstall.packages() in the console NOT in your .qmd file!\n\n\n\nYou should type this into your console and NOT include it in a code chunk in your .qmd file. Recall that we only have to install a package once, but load it each time we open R. Each time you render your .qmd file, ALLthe code chunks are run. Therefore, installing a package in a code chunk would cause R to unnecessarily install the package over and over again. Not good."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#creating-a-setup-code-chunk",
+    "href": "practice-activities/pa2.html#creating-a-setup-code-chunk",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Creating a Setup Code Chunk",
+    "text": "Creating a Setup Code Chunk\n\nInsert a code chunk at the beginning of your document (directly under the YAML).\nName the code chunk setup.\nUse the hashpipe #| to specify a code chunk option that prevents any messages (e.g., from loading in packages) from appearing.\nLoad in the tidyverse or ggplot2 package.\nLoad in the palmerpenguins package.\n\n\n\n\n\n\n\nCode chunk name: setup\n\n\n\nNaming your code chunk “setup” has special properties in a .qmd - specifically, this code chunk will run automatically when you try to run a subsequent code chunk. This ensures all packages and any other specifications for your document are loaded and will not cause you errors or messages."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#dataset-penguins",
+    "href": "practice-activities/pa2.html#dataset-penguins",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Dataset: penguins",
+    "text": "Dataset: penguins\nI like to start by seeing the dataset I will be working with, so I am going to pull the penguins data into my R environment. Do you see it in the top right Environment tab?\n\ndata(penguins)\n\nYou may notice that a dataset called penquins_raw also loaded. We will ignore this and focus on the penguins dataset.\n\nGet to know your data. What are the variables and what units are they measured in? What does each row represent?"
+  },
+  {
+    "objectID": "practice-activities/pa2.html#step-1-barchart",
+    "href": "practice-activities/pa2.html#step-1-barchart",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Step 1: Barchart",
+    "text": "Step 1: Barchart\n\nCreate a plot of the frequency of each penguin species in the data.\n\n\nUse https://excalidraw.com/ (or pen and paper, a tablet, etc.) to create a sketch for this plot. Label the aesthetics that will be needed.\nUse ggplot2 to create the plot you sketched above."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#step-2-histogram-or-density-curve",
+    "href": "practice-activities/pa2.html#step-2-histogram-or-density-curve",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Step 2: Histogram or Density Curve",
+    "text": "Step 2: Histogram or Density Curve\n\nUse ggplot2 to plot the distribution of bill lengths for the penguins included in the dataset."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#step-3-scatterplot",
+    "href": "practice-activities/pa2.html#step-3-scatterplot",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Step 3: Scatterplot",
+    "text": "Step 3: Scatterplot\n\nUse ggplot2 to plot the relationship between the length of a penguin’s bill (bill_length_mm) and the depth of their bill (bill_depth_mm)."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#step-4-add-a-trend-line",
+    "href": "practice-activities/pa2.html#step-4-add-a-trend-line",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Step 4: Add a Trend Line",
+    "text": "Step 4: Add a Trend Line\n\nAdd a linear trend line to the scatterplot you made above!"
+  },
+  {
+    "objectID": "practice-activities/pa2.html#step-5-adding-a-categorical-variable",
+    "href": "practice-activities/pa2.html#step-5-adding-a-categorical-variable",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Step 5: Adding A Categorical Variable",
+    "text": "Step 5: Adding A Categorical Variable\n\nBuilding off of the plot you made in Step 4, add an aesthetic to differentiate the species of the penguins in the scatterplot by color for both the points and the trend line.\n\n\nEdit your plot in (11) above so that the points are colored by species, but there is only one overall linear trend line.\n\n\nBuilding on your code from (11), add the location of the penguins (island) to your visualization. There is more than one method to address this, however, one method will more easiliy allow you to address the quesitons below."
+  },
+  {
+    "objectID": "practice-activities/pa2.html#canvas-quiz",
+    "href": "practice-activities/pa2.html#canvas-quiz",
+    "title": "PA 2: Using Data Visualization to Find the Penguins",
+    "section": "Canvas Quiz",
+    "text": "Canvas Quiz\nWorking as a team, use the plots you created to answer the following questions on Canvas.\n\nWhich species of penguins is represented least in the Palmer Penguins data set?\nWhich species had the weakest relationship between bill length and bill depth?\nWhich species of penguins are found on every island?\nWhich species of penguins are found only on Dream Island?\nWhich species of penguins are found only on Biscoe Island?"
+  },
+  {
+    "objectID": "reading/week-2.2.html",
+    "href": "reading/week-2.2.html",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "",
+    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+  },
+  {
+    "objectID": "reading/week-2.2.html#learning-objectives",
+    "href": "reading/week-2.2.html#learning-objectives",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "",
+    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+  },
+  {
+    "objectID": "reading/week-2.2.html#building-graphics-with-ggplot2",
+    "href": "reading/week-2.2.html#building-graphics-with-ggplot2",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "2 Building Graphics with ggplot2",
+    "text": "2 Building Graphics with ggplot2\n\n\n\n\n\nBuilding a masterpiece, by Allison Horst\n\n\nWe went over the big-picture, most important (IMO) elements of creating graphics using ggplot2 in class. These readings and tutorials will get into more of the details and nitty-gritty of working with ggplot2.\n\n📖 Required Reading: R4DS Data Visualization 1.1 - 1.5.\n\n\n💻 Suggested Tutorials\n\nBar Charts\nHistograms\nScatterplots\nLine Plots\n\n\n\n📖 Required Reading: R4DS Layers."
+  },
+  {
+    "objectID": "reading/week-2.2.html#optional-videos",
+    "href": "reading/week-2.2.html#optional-videos",
+    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "section": "3 Optional Videos",
+    "text": "3 Optional Videos\nIf you like learning and reviewing with videos, these videos created by Dr. Allison Theobold for STAT 331 will review what is covered in the required reading.\n\nggplot2 First Steps\nWhat is an aesthetic?\nWhat is a geometric object?\nGlobal vs. local aesthetics\nAdding a third variable with facets\nWhat is being plotted? Positions"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html",
+    "href": "slides/week-2/w2-ggplot.html",
+    "title": "Graphics with ggplot2",
+    "section": "",
+    "text": "Today we will…\n\nGroup Quiz (15 min)\nStyle Note of the Day\nNew Material\n\nWelcome to the Tidyverse\nGraphics with ggplot2\nGame Planning\n\nPA 2: Using Data Visualization to Find the Penguins"
+  },
+  {
+    "objectID": "slides/week-2/w2-ggplot.html#footnotes",
+    "href": "slides/week-2/w2-ggplot.html#footnotes",
+    "title": "Graphics with ggplot2",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://www.tidyverse.org/↩︎"
   }
 ]

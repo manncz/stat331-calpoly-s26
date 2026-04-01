@@ -1007,58 +1007,7 @@ Follow the instructions in the file to uncover a secret message.
 
 Submit the name of the poem as the answer to the Canvas Quiz question.
 
-## Collaborative Protocol
 
-::: {.small}
-During your collaboration, your group will alternate between three roles: 
-:::
-
-
-::: panel-tabset
-
-## Project Manager
--   Reads out the prompt and ensures the group understands what is being asked. 
--   Manages resources (e.g., cheatsheets, textbook). 
--   Answers Coder's questions about syntax based on the resources.
--   Works with the group to debug the code.
-
-
-## Computer
-
--   Encourages the Coder to vocalize and explain their thinking.
--   Types the code specified by the Coder into the Quarto document.
--   Runs the code provided by the Coder. 
--   Works with group to debug the code.
--   Evaluates the output against the question prompt. 
-
-
-
-## Coder
-
--   Confirms they understand what the prompt is asking.
--   Talks with the group about their ideas. 
--   Explains their thinking.
--   Directs the Computer what to type. 
--   Works with the group to debug the code. 
-
-:::
-
-
-## Submission
-
-- When you have completed the puzzle, you will submit the name of the poem on Canvas.
-  - You can ask me if it is correct before you submit
-- For *future* PA's the person who was the last to be the computer will submit your code to Canvas for the whole group.
-
-. . .
-
-::: callout-tip
-
-## Starting Roles Today
-
-The person whose family name starts first alphabetically starts as the project manager, second as the computer.
-
-:::
 
 ## To do...
 
