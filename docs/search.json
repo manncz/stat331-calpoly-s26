@@ -263,7 +263,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -584,8 +584,8 @@
     "objectID": "slides/week-1/w1-intro-r.html#monday-march-30",
     "href": "slides/week-1/w1-intro-r.html#monday-march-30",
     "title": "Intro to STAT 331/531 + Intro to R",
-    "section": "",
-    "text": "Today we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
+    "section": "Monday, March 30",
+    "text": "Monday, March 30\nToday we will…\n\nWelcome to Stat 331/531: Statistical Computing in R\nIntro to Me + You + the course\n“Unplugged” Warm-up\nIntro to R + RStudio\nOrganization\nR Basics & Troubleshooting\nPA 1: Find the Mistakes"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#me",
@@ -627,7 +627,7 @@
     "href": "slides/week-1/w1-intro-r.html#assessments---evaluative",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Assessments - Evaluative",
-    "text": "Assessments - Evaluative\n\nExams\n\nMidterm Exam (20%)\nFinal Exam (25%)\n\nFinal project (15%)\n\nmore info soon\ndue end of week 10\n\n\n\n\n\n\n\n\nExam Conflicts\n\n\n\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date"
+    "text": "Assessments - Evaluative\n\nExams\n\nMidterm Exam (20%)\nFinal Exam (25%)\n\nFinal project (15%)\n\nmore info soon\ndue end of week 10\n\n\n\n\n\n\n\n\nExam Conflicts\n\n\nIf you have a known conflict with an exam, please discuss it with me at least three weeks prior to the exam date"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#assessments---general-criteria",
@@ -683,7 +683,7 @@
     "href": "slides/week-1/w1-intro-r.html#statistical-computing-involves",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Statistical computing involves…",
-    "text": "Statistical computing involves…\n\n\nunderstanding data structures\n\ni.e. “what you have to work with”\n\ndeveloping an algorithm\n\ni.e. “what you want the computer to do”\n\nknowing the syntax of a specific language\n\ni.e. “how to tell the computer what to do so it will understand”\n\nimproving efficiency of your code\n\n\n. . .\n\n\n\n\n\n\nNot just syntax\n\n\n\nAll of these skills improve as the others improve and we will work on all of them in this course!"
+    "text": "Statistical computing involves…\n\n\nunderstanding data structures\n\ni.e. “what you have to work with”\n\ndeveloping an algorithm\n\ni.e. “what you want the computer to do”\n\nknowing the syntax of a specific language\n\ni.e. “how to tell the computer what to do so it will understand”\n\nimproving efficiency of your code\n\n\n\n\n\n\n\n\n\nNot just syntax\n\n\nAll of these skills improve as the others improve and we will work on all of them in this course!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#paper-planes",
@@ -718,7 +718,7 @@
     "href": "slides/week-1/w1-intro-r.html#packages",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Packages",
-    "text": "Packages\nThe heart and soul of R are packages.\n. . .\n\nThese are “extra” sets of code that add new functionality to R when installed.\n“base” R refers to functions that are in the R software, and do not require a package."
+    "text": "Packages\nThe heart and soul of R are packages.\n\n\nThese are “extra” sets of code that add new functionality to R when installed.\n“base” R refers to functions that are in the R software, and do not require a package."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#open-source",
@@ -788,7 +788,7 @@
     "href": "slides/week-1/w1-intro-r.html#manage-your-class-directory",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Manage your Class Directory",
-    "text": "Manage your Class Directory\nCreate a directory for this class!\n\n\nIs it in a place you can easily find it?\n\nNOT IN YOUR DOWNLOADS FOLDER ☠️\n\nDoes it have an informative name?\n\nlike “stat-331” or similar\n\nAre the files inside it well-organized?\n\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nI cannot stress how important this is!!"
+    "text": "Manage your Class Directory\nCreate a directory for this class!\n\n\nIs it in a place you can easily find it?\n\nNOT IN YOUR DOWNLOADS FOLDER ☠️\n\nDoes it have an informative name?\n\nlike “stat-331” or similar\n\nAre the files inside it well-organized?\n\n\n\n\n\n\n\n\n\nWarning\n\n\nI cannot stress how important this is!!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#how-do-i-run-code-in-r",
@@ -802,63 +802,63 @@
     "href": "slides/week-1/w1-intro-r.html#packages-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Packages 🧩",
-    "text": "Packages 🧩\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n. . .\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n. . .\n\n\n\n\n\n\nWarning\n\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
+    "text": "Packages 🧩\nTo install a package use:\n\ninstall.packages(\"tibble\")\n\n\nYou should have to install a package only once.\n\n\nTo load a package use:\n\nlibrary(tibble)\n\n\nYou have to load a package each time you restart R.\nYou also should load packages at the beginning of any script.\n\n\n\n\n\n\n\n\n\nWarning\n\n\nNote that when you install packages you need to include quotation marks around the package name, but you don’t need to when loading a package!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#variables",
     "href": "slides/week-1/w1-intro-r.html#variables",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Variables",
-    "text": "Variables\nVariables are names that refer to values.\n\nA variable is like a container that holds something - when you refer to the container, you get whatever is stored inside.\nWe assign values to variables using the syntax object_name &lt;- value.\n\nYou can read this as “object name gets value” in your head.\n\n\n. . .\n\nmessage &lt;- \"So long and thanks for all the fish\"\nyear &lt;- 2025\nthe_answer &lt;- 42\nearth_demolished &lt;- FALSE"
+    "text": "Variables\nVariables are names that refer to values.\n\nA variable is like a container that holds something - when you refer to the container, you get whatever is stored inside.\nWe assign values to variables using the syntax object_name &lt;- value.\n\nYou can read this as “object name gets value” in your head.\n\n\n\n\nmessage &lt;- \"So long and thanks for all the fish\"\nyear &lt;- 2025\nthe_answer &lt;- 42\nearth_demolished &lt;- FALSE"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#naming-conventions",
     "href": "slides/week-1/w1-intro-r.html#naming-conventions",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Naming Conventions",
-    "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\n\nJust pick one and stick with it!"
+    "text": "Naming Conventions\n\nsome_people_use_snake_case\nsomePeopleUseCamelCase\nsome.people.use.periods\nA few people mix conventions with variables_thatLookLike.this and they are almost universally hated.\n\n\n\n\n\n\n\nTip\n\n\nJust pick one and stick with it!"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#data-types",
     "href": "slides/week-1/w1-intro-r.html#data-types",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Data Types 🧩",
-    "text": "Data Types 🧩\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n. . .\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n. . .\n\ninteger: whole numbers.\n\n. . .\n\ndouble / float / numeric: decimal numbers.\n\n. . .\n\ncharacter / string - holds text, usually enclosed in quotes."
+    "text": "Data Types 🧩\n\nA value is a basic unit of stuff that a program works with.\nValues have types:\n\n\n\nlogical / boolean: FALSE/TRUE or 0/1 values.\n\n\n\n\ninteger: whole numbers.\n\n\n\n\ndouble / float / numeric: decimal numbers.\n\n\n\n\ncharacter / string - holds text, usually enclosed in quotes."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#data-structures",
     "href": "slides/week-1/w1-intro-r.html#data-structures",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Data Structures 🧩",
-    "text": "Data Structures 🧩\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n. . .\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
+    "text": "Data Structures 🧩\nHomogeneous: every element has the same data type.\n\nVector: a one-dimensional column of homogeneous data.\nMatrix: the next step after a vector - it’s a set of homogenous data arranged in a two-dimensional, rectangular format.\n\n\nHeterogeneous: the elements can be of different types.\n\nList: a one-dimensional column of heterogeneous data.\nDataframe: a two-dimensional set of heterogeneous data arranged in a rectangular format."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#indexing",
     "href": "slides/week-1/w1-intro-r.html#indexing",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Indexing 🧩",
-    "text": "Indexing 🧩\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n. . .\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
+    "text": "Indexing 🧩\nWe use square brackets ([]) to access elements within data structures.\n\nIn R, we start indexing from 1.\n\n\n\n\nVector:\n\n\nvec[4]    # 4th element\nvec[1:3]  # first 3 elements\n\n\n\n\nMatrix:\n\n\nmat[2,6]  # element in row 2, col 6\nmat[,3]   # all elements in col 3\n\n\n\n\nList:\n\n\nli[[5]]    # 5th element\n\n\n\n\nDataframe:\n\n\ndf[1,2]     # element in row 1, col 2\ndf[17,]     # all elements in row 17\ndf$calName  # all elements in the col named \"colName\"\ndf[[\"calName\"]] # all elements in the col named \"colName\""
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#logic",
     "href": "slides/week-1/w1-intro-r.html#logic",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Logic 🧩",
-    "text": "Logic 🧩\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n. . .\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
+    "text": "Logic 🧩\nWe can combine logical statements using and, or, and not.\n\n(X AND Y) requires that both X and Y are true.\n(X OR Y) requires that one of X or Y is true.\n(NOT X) is true if X is false, and false if X is true.\n\n\n\nx &lt;- c(TRUE, FALSE, TRUE, FALSE)\ny &lt;- c(TRUE, TRUE, FALSE, FALSE)\n\nx & y   # AND\n\n[1]  TRUE FALSE FALSE FALSE\n\nx | y   # OR\n\n[1]  TRUE  TRUE  TRUE FALSE\n\n!x & y  # NOT X AND Y\n\n[1] FALSE  TRUE FALSE FALSE"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#vectorization",
     "href": "slides/week-1/w1-intro-r.html#vectorization",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Vectorization",
-    "text": "Vectorization\n\n\nR is designed to do vector and matrix math nicely\nMany operations in R are vectorized.\n\nThese functions operate on vectors of values rather than a single value.\ni.e. the function applies to every element of a vector individually.\n\n\n\n. . .\ne.g.:\n\nx &lt;- seq(from = -2, to = 2)\nx\n\n[1] -2 -1  0  1  2\n\n\nSay we want to add 1 to every element of x…"
+    "text": "Vectorization\n\n\nR is designed to do vector and matrix math nicely\nMany operations in R are vectorized.\n\nThese functions operate on vectors of values rather than a single value.\ni.e. the function applies to every element of a vector individually.\n\n\n\n\ne.g.:\n\nx &lt;- seq(from = -2, to = 2)\nx\n\n[1] -2 -1  0  1  2\n\n\nSay we want to add 1 to every element of x…"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#vectorization-1",
     "href": "slides/week-1/w1-intro-r.html#vectorization-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Vectorization",
-    "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n. . .\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
+    "text": "Vectorization\n\n\nLoop:\n\nfor(i in 1:length(x)){\n  x[i] &lt;- x[i] + 1\n}\nx\n\n[1] -1  0  1  2  3\n\n\n\nVectorized:\n\nx &lt;- x + 1\nx\n\n[1] -1  0  1  2  3\n\n\n\n\n\nSee how leveraging vectorization in R is great?\n\n\n\n\n\n\n\nLoops be gone!\n\n\nNow forget about loops after this slide! We rarely need them in R and will avoid using them in this class"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#logic-indexing-and-vectorization",
@@ -872,21 +872,21 @@
     "href": "slides/week-1/w1-intro-r.html#messages",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Messages",
-    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n. . .\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
+    "text": "Messages\nJust because you see scary red text, this does not mean something went wrong! This is just R communicating with you.\n\n\nFor example, you will often see:\n\n\nlibrary(lme4)\n\nLoading required package: Matrix"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#warnings",
     "href": "slides/week-1/w1-intro-r.html#warnings",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Warnings",
-    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n. . .\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n. . .\n\nmy_new_vec\n\n[1] NA NA NA"
+    "text": "Warnings\nOften, R will give you a warning.\n\nThis means that your code did run…\n…but you probably want to make sure it succeeded.\n\n\nDoes this look right?\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- as.numeric(my_vec)\n\nWarning: NAs introduced by coercion\n\n\n\n\n\nmy_new_vec\n\n[1] NA NA NA"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#errors",
     "href": "slides/week-1/w1-intro-r.html#errors",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Errors",
-    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n. . .\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
+    "text": "Errors\nIf the word Error appears in your message from R, then you have a problem.\n\nThis means your code could not run!\n\n\n\nmy_vec &lt;- c(\"a\", \"b\", \"c\")\n\nmy_new_vec &lt;- my_vec + 1\n\nError in `my_vec + 1`:\n! non-numeric argument to binary operator"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#types-of-errors",
@@ -900,63 +900,63 @@
     "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-parenthesis",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you leave off a parenthesis?",
-    "text": "Did you leave off a parenthesis?\nseq(from = 1, to = 10, by = 1\n\nseq(from = 1, to = 10, by = 1\n\nError in parse(text = input): &lt;text&gt;:2:0: unexpected end of input\n1: seq(from = 1, to = 10, by = 1\n   ^\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you leave off a parenthesis?\nseq(from = 1, to = 10, by = 1\n\nseq(from = 1, to = 10, by = 1\n\nError in parse(text = input): &lt;text&gt;:2:0: unexpected end of input\n1: seq(from = 1, to = 10, by = 1\n   ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
     "href": "slides/week-1/w1-intro-r.html#did-you-leave-off-a-comma",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you leave off a comma?",
-    "text": "Did you leave off a comma?\nseq(from = 1, to = 10 by = 1)\n\nseq(from = 1, to = 10 by = 1)\n\nError in parse(text = input): &lt;text&gt;:1:23: unexpected symbol\n1: seq(from = 1, to = 10 by\n                          ^\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you leave off a comma?\nseq(from = 1, to = 10 by = 1)\n\nseq(from = 1, to = 10 by = 1)\n\nError in parse(text = input): &lt;text&gt;:1:23: unexpected symbol\n1: seq(from = 1, to = 10 by\n                          ^\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
     "href": "slides/week-1/w1-intro-r.html#did-you-make-a-typo-are-you-using-the-right-names",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Did you make a typo? Are you using the right names?",
-    "text": "Did you make a typo? Are you using the right names?\nsequence(from = 1, to = 10, by = 1)\n\nsequence(from = 1, to = 10, by = 1)\n\nError in `sequence.default()`:\n! argument \"nvec\" is missing, with no default\n\n\n. . .\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
+    "text": "Did you make a typo? Are you using the right names?\nsequence(from = 1, to = 10, by = 1)\n\nsequence(from = 1, to = 10, by = 1)\n\nError in `sequence.default()`:\n! argument \"nvec\" is missing, with no default\n\n\n\n\nseq(from = 1, to = 10, by = 1)\n\n [1]  1  2  3  4  5  6  7  8  9 10"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
     "href": "slides/week-1/w1-intro-r.html#are-you-using-the-right-input-that-the-function-expects",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Are you using the right input that the function expects?",
-    "text": "Are you using the right input that the function expects?\nsqrt(‘1’)\n\nsqrt('1')\n\nError in `sqrt()`:\n! non-numeric argument to mathematical function\n\n\n. . .\n\nsqrt(1)\n\n[1] 1"
+    "text": "Are you using the right input that the function expects?\nsqrt(‘1’)\n\nsqrt('1')\n\nError in `sqrt()`:\n! non-numeric argument to mathematical function\n\n\n\n\nsqrt(1)\n\n[1] 1"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
     "href": "slides/week-1/w1-intro-r.html#are-you-expecting-the-right-output-of-the-function",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Are you expecting the right output of the function?",
-    "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n. . .\n\nmy_obj[5]\n\n[1] 5"
+    "text": "Are you expecting the right output of the function?\n\nmy_obj &lt;- seq(from = 1, to = 10, by = 1)\n\nmy_obj(5)\n\nError in `my_obj()`:\n! could not find function \"my_obj\"\n\n\n\n\nmy_obj[5]\n\n[1] 5"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says",
     "href": "slides/week-1/w1-intro-r.html#r-says",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError in ggplot() : could not find function “ggplot”\n\n. . .\nIt probably means…\n\nYou haven’t installed/loaded the package that includes the ggplot() function OR you mispelled the function name\n\nYou should:\n\ncheck if the package is installed\nload the package (library())"
+    "text": "R says…\n\nError in ggplot() : could not find function “ggplot”\n\n\nIt probably means…\n\nYou haven’t installed/loaded the package that includes the ggplot() function OR you mispelled the function name\n\nYou should:\n\ncheck if the package is installed\nload the package (library())"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-1",
     "href": "slides/week-1/w1-intro-r.html#r-says-1",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Object some_obj not found.\n\n. . .\nIt probably means…\n\nYou haven’t run the code to create some_obj OR you have a typo in the name!\n\n\nsome_ojb &lt;- 1:10\n\nmean(some_obj)\n\nError in `h()`:\n! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found"
+    "text": "R says…\n\nError: Object some_obj not found.\n\n\nIt probably means…\n\nYou haven’t run the code to create some_obj OR you have a typo in the name!\n\n\nsome_ojb &lt;- 1:10\n\nmean(some_obj)\n\nError in `h()`:\n! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-2",
     "href": "slides/week-1/w1-intro-r.html#r-says-2",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Object of type ‘closure’ is not subsettable.\n\n. . .\nIt probably means…\n\nOops, you tried to use square brackets on a function\n\n\nmean[1, 2]\n\nError in `mean[1, 2]`:\n! object of type 'closure' is not subsettable"
+    "text": "R says…\n\nError: Object of type ‘closure’ is not subsettable.\n\n\nIt probably means…\n\nOops, you tried to use square brackets on a function\n\n\nmean[1, 2]\n\nError in `mean[1, 2]`:\n! object of type 'closure' is not subsettable"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#r-says-3",
     "href": "slides/week-1/w1-intro-r.html#r-says-3",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "R says…",
-    "text": "R says…\n\nError: Non-numeric argument to binary operator.\n\n. . .\nIt probably means…\n\nYou tried to do math on data that isn’t numeric.\n\n\n\"a\" + 2\n\nError in `\"a\" + 2`:\n! non-numeric argument to binary operator"
+    "text": "R says…\n\nError: Non-numeric argument to binary operator.\n\n\nIt probably means…\n\nYou tried to do math on data that isn’t numeric.\n\n\n\"a\" + 2\n\nError in `\"a\" + 2`:\n! non-numeric argument to binary operator"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#what-if-none-of-these-solved-my-error",
@@ -970,7 +970,7 @@
     "href": "slides/week-1/w1-intro-r.html#try-it",
     "title": "Intro to STAT 331/531 + Intro to R",
     "section": "Try it…",
-    "text": "Try it…\nWhat’s wrong here?\n\nmatrix(c(\"a\", \"b\", \"c\", \"d\"), num_row = 2)\n\nError in `matrix()`:\n! unused argument (num_row = 2)\n\n\n. . .\n\n\n\n\n\n\nTip\n\n\n\nLook up the help file for the function matrix by running ?matrix in the Console."
+    "text": "Try it…\nWhat’s wrong here?\n\nmatrix(c(\"a\", \"b\", \"c\", \"d\"), num_row = 2)\n\nError in `matrix()`:\n! unused argument (num_row = 2)\n\n\n\n\n\n\n\n\n\nTip\n\n\nLook up the help file for the function matrix by running ?matrix in the Console."
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html#pa-1-find-the-mistakes",
@@ -1522,8 +1522,8 @@
     "objectID": "slides/week-2/w2-import-graphics.html#wednesday-april-8",
     "href": "slides/week-2/w2-import-graphics.html#wednesday-april-8",
     "title": "Basics of Graphics",
-    "section": "",
-    "text": "Today we will…\n\nImporting Data\nWhat makes a good graphic?\nLab 2: Exploring Rodents with ggplot2"
+    "section": "Wednesday, April 8",
+    "text": "Wednesday, April 8\nToday we will…\n\nImporting Data\nWhat makes a good graphic?\nLab 2: Exploring Rodents with ggplot2"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#lab-1-notes",
@@ -1544,7 +1544,7 @@
     "href": "slides/week-2/w2-import-graphics.html#common-types-of-data-files",
     "title": "Basics of Graphics",
     "section": "Common Types of Data Files",
-    "text": "Common Types of Data Files\nLook at the file extension for the type of data file.\n. . .\n\n\n.csv : “comma-separated values”\n\nName, Age\nBob, 49\nJoe, 40\n\n\n. . .\n.xls, .xlsx: Microsoft Excel spreadsheet\n\nCommon approach: save as .csv\nNicer approach: use the readxl package\n\n. . .\n.txt: plain text\n\nCould have any sort of delimiter…\nNeed to let R know what to look for!"
+    "text": "Common Types of Data Files\nLook at the file extension for the type of data file.\n\n\n\n.csv : “comma-separated values”\n\nmost typical type used in R\n\n\nName, Age\nBob, 49\nJoe, 40\n\n\n\n.xls, .xlsx: Microsoft Excel spreadsheet\n\nuse readxl package . . .\n\n.txt: plain text\n\nCould have any sort of delimiter…\nNeed to let R know what to look for!"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#common-types-of-data-files-1",
@@ -1558,7 +1558,7 @@
     "href": "slides/week-2/w2-import-graphics.html#loading-external-data",
     "title": "Basics of Graphics",
     "section": "Loading External Data",
-    "text": "Loading External Data\nUsing base R functions:\n\nread.csv() is for reading in .csv files.\nread.table() and read.delim() are for any data with “columns” (you specify the separator)."
+    "text": "Loading External Data\nThe tidyverse has nice functions for reading in data in the readr and readxl packages:\n\nread_csv() is for comma-separated data.\nread_tsv() is for tab-separated data.\nread_table() is for white-space-separated data.\nread_delim() is any data with “columns” (you specify the separator). The above are special cases.\nread_excel() is specifically for dealing with Excel files.\n\nRemember to load the readr and readxl packages first!"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#loading-external-data-1",
@@ -1579,7 +1579,7 @@
     "href": "slides/week-2/w2-import-graphics.html#reminder-notebooks-and-file-paths",
     "title": "Basics of Graphics",
     "section": "Reminder: Notebooks and File Paths",
-    "text": "Reminder: Notebooks and File Paths\n\nYou have to tell R where to “find” the data you want to read in using a file path.\nQuarto automatically sets the working directory to the be directory where the Quarto document is for any code within the Quarto document\nThis overrides the directory set by an .Rproj\n\n. . .\n\n\n\nPay attention to this when setting relative filepaths\n\nTo “backout” of one directory, use \"../\"\ne.g.: \"../data/dat.csv\""
+    "text": "Reminder: Notebooks and File Paths\n\nYou have to tell R where to “find” the data you want to read in using a file path.\nQuarto automatically sets the working directory to the be directory where the Quarto document is for any code within the Quarto document\nThis overrides the directory set by an .Rproj\n\n\n\n\n\nPay attention to this when setting relative filepaths\n\nTo “backout” of one directory, use \"../\"\ne.g.: \"../data/dat.csv\""
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#graphics",
@@ -1600,7 +1600,7 @@
     "href": "slides/week-2/w2-import-graphics.html#what-makes-good-graphics-good",
     "title": "Basics of Graphics",
     "section": "What makes good graphics good?",
-    "text": "What makes good graphics good?\nEdward R. Tufte is a well-known critic of visualizations, and his definition of graphical excellence consists of:\n\n\ncommunicating complex ideas with clarity, precision, and efficiency.\nmaximizing the data-to-ink ratio.\nusing multivariate displays.\ntelling the truth about the data."
+    "text": "What makes good graphics good?\nEdward R. Tufte is a well-known critic of visualizations, and his definition of graphical excellence consists of:\n\n\ncommunicating complex ideas with clarity, precision, and efficiency.\nmaximizing the data-to-ink ratio.\ntelling the truth about the data."
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#graphics-1",
@@ -1677,35 +1677,35 @@
     "href": "slides/week-2/w2-import-graphics.html#color-guidelines",
     "title": "Basics of Graphics",
     "section": "Color Guidelines",
-    "text": "Color Guidelines\n\nDo not use rainbow color gradients!\nBe conscious of what certain colors “mean”.\n\nGood idea to use red for “good” and green for “bad”?\n\n\nknitr::include_graphics(\"images/rainbow.png\")\nknitr::include_graphics(\"images/red_green.png\")"
+    "text": "Color Guidelines\n\nDo not use rainbow color gradients!\nBe conscious of what certain colors “mean”.\n\nGood idea to use red for “good” and green for “bad”???"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-1",
     "href": "slides/week-2/w2-import-graphics.html#color-guidelines-1",
     "title": "Basics of Graphics",
     "section": "Color Guidelines",
-    "text": "Color Guidelines\n\nFor categorical data, try not to use more than 7 colors:\n\n\nknitr::include_graphics(\"images/small_gradient.png\")\n\n\n\n\n\n\n\n\nCan use colorRampPalette() from the RColorBrewer package to produce larger palettes:\n\nknitr::include_graphics(\"images/big_gradient.png\")"
+    "text": "Color Guidelines\n\nFor categorical data, try not to use more than 7 colors.\n\n\n\nFor quantitative data, use mappings from data to color that are numerically and perceptually uniform."
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-2",
     "href": "slides/week-2/w2-import-graphics.html#color-guidelines-2",
     "title": "Basics of Graphics",
     "section": "Color Guidelines",
-    "text": "Color Guidelines\n\nFor quantitative data, use mappings from data to color that are numerically and perceptually uniform.\n\nRelative discriminability of two colors should be proportional to the difference between the corresponding data values."
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nuse double encoding - when you use color, also use another aesthetic (line type, shape, etc.)."
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-3",
     "href": "slides/week-2/w2-import-graphics.html#color-guidelines-3",
     "title": "Basics of Graphics",
     "section": "Color Guidelines",
-    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nuse double encoding - when you use color, also use another aesthetic (line type, shape, etc.).\n\n\nknitr::include_graphics(\"images/double.png\")"
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nwith a unidirectional scale (e.g., all + values), use a monochromatic color gradient.\n\n\n\n\n\n\n\n\n\n\n\nwith a bidirectional scale (e.g., + and - values), use a purple-white-orange color gradient. Transition through white!"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-4",
     "href": "slides/week-2/w2-import-graphics.html#color-guidelines-4",
     "title": "Basics of Graphics",
     "section": "Color Guidelines",
-    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nwith a unidirectional scale (e.g., all + values), use a monochromatic color gradient.\n\n\nknitr::include_graphics(\"images/blues.png\")\n\n\n\n\n\n\n\n\n\nwith a bidirectional scale (e.g., + and - values), use a purple-white-orange color gradient. Transition through white!\n\n\nknitr::include_graphics(\"images/PuOr.png\")"
+    "text": "Color Guidelines\nTo colorblind-proof a graphic…\n\nprint your chart out in black and white – if you can still read it, it will be safe for all users."
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#color-guidelines-5",
@@ -1726,49 +1726,49 @@
     "href": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species",
     "title": "Basics of Graphics",
     "section": "Penguins - Flipper Length by Species",
-    "text": "Penguins - Flipper Length by Species\n\nSpecies X-AxisSpecies Facets\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm, \n                              x = species)) +\n    geom_boxplot() + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm)) +\n    geom_boxplot() + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`)."
+    "text": "Penguins - Flipper Length by Species\n\nSpecies X-AxisSpecies Facets\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm, \n                              x = species)) +\n    geom_boxplot() + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(y = flipper_length_mm)) +\n    geom_boxplot() + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species-sex",
     "href": "slides/week-2/w2-import-graphics.html#penguins---flipper-length-by-species-sex",
     "title": "Basics of Graphics",
     "section": "Penguins - Flipper Length by Species & Sex",
-    "text": "Penguins - Flipper Length by Species & Sex\n\nOption 1Option 2Option 3\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm, \n                             x = species,\n                             color = sex)) + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = sex)) + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = species)) + \n    facet_grid(cols = vars(sex)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\nWarning: Removed 2 rows containing non-finite outside the scale range\n(`stat_boxplot()`)."
+    "text": "Penguins - Flipper Length by Species & Sex\n\nOption 1Option 2Option 3\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm, \n                             x = species,\n                             color = sex)) + \n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         x = \"Species\" , \n         y = \"Flipper Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = sex)) + \n    facet_grid(cols = vars(species)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_boxplot(mapping = aes(y = flipper_length_mm,\n                               x = species)) + \n    facet_grid(cols = vars(sex)) +\n    labs(title = \"Distribution of Flipper Lengths for Penguin Species\", \n         y = \"Flipper Length (mm)\")"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#pa-2-example---two-categorical-variables",
     "href": "slides/week-2/w2-import-graphics.html#pa-2-example---two-categorical-variables",
     "title": "Basics of Graphics",
     "section": "PA 2 Example - Two Categorical Variables",
-    "text": "PA 2 Example - Two Categorical Variables\n\ndata(penguins)\n\n\nColors & ShapesColors & Facets\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_point(mapping = aes(x = bill_length_mm, \n                             y = bill_depth_mm, \n                             color = species, \n                             shape = island )) + \n    labs(title = \"Relationship Between Bill Length and Bill Depth\", \n         x = \"Bill Length (mm)\" , \n         y = \"Bill Depth (mm)\")\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`).\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, \n                     y = bill_depth_mm, \n                     color = species)) +\n  geom_point() + \n  facet_wrap(~island) +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Bill Depth (mm)\", \n       title = \"Relationship Between Bill Length and Bill Depth\")\n\n\nWarning: Removed 2 rows containing missing values or values outside the scale range\n(`geom_point()`)."
+    "text": "PA 2 Example - Two Categorical Variables\n\nColors & ShapesColors & Facets\n\n\n\n\nCode\nggplot(data = penguins) +\n    geom_point(mapping = aes(x = bill_length_mm, \n                             y = bill_depth_mm, \n                             color = species, \n                             shape = island )) + \n    labs(title = \"Relationship Between Bill Length and Bill Depth\", \n         x = \"Bill Length (mm)\" , \n         y = \"Bill Depth (mm)\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = penguins,\n       mapping = aes(x = bill_length_mm, \n                     y = bill_depth_mm, \n                     color = species)) +\n  geom_point() + \n  facet_wrap(~island) +\n  labs(x = \"Bill Length (mm)\",\n       y = \"Bill Depth (mm)\", \n       title = \"Relationship Between Bill Length and Bill Depth\")"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#lecture-example---texas-housing-data",
     "href": "slides/week-2/w2-import-graphics.html#lecture-example---texas-housing-data",
     "title": "Basics of Graphics",
     "section": "Lecture Example - Texas Housing Data",
-    "text": "Lecture Example - Texas Housing Data\n\ndata(txhousing)\nsm_tx &lt;- txhousing |&gt;\n  filter(city %in% c(\"Dallas\",\"Fort Worth\", \"Austin\",\n                     \"Houston\", \"El Paso\"))\n\n\nColorFacet\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median, color = city)) + \n  geom_point() + \n  geom_smooth(method = \"loess\") + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")\n\n\n`geom_smooth()` using formula = 'y ~ x'\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_point() + \n  geom_smooth(method = \"loess\") + \n  facet_wrap(vars(city)) +\n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")\n\n\n`geom_smooth()` using formula = 'y ~ x'"
+    "text": "Lecture Example - Texas Housing Data\n\nColorFacet\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median, color = city)) + \n  geom_line() + \n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nggplot(data = sm_tx,\n       aes(x = date, y = median)) + \n  geom_line() + \n  facet_wrap(vars(city)) +\n  labs(x = \"Date\",\n       y = \"Median Home Price\",\n       title = \"Texas Housing Prices over Time for Select Cities\")"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#example-1",
     "href": "slides/week-2/w2-import-graphics.html#example-1",
     "title": "Basics of Graphics",
     "section": "Example 1",
-    "text": "Example 1\n\nknitr::include_graphics(\"images/covid-model.jpg\")"
+    "text": "Example 1\n\nhttps://www.data-to-viz.com/graph/area.html"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#example-2",
     "href": "slides/week-2/w2-import-graphics.html#example-2",
     "title": "Basics of Graphics",
     "section": "Example 2",
-    "text": "Example 2\n\n\n\nhttps://www.data-to-viz.com/graph/area.html"
+    "text": "Example 2\n\nhttps://r-graph-gallery.com/web-vertical-line-chart-with-ggplot2.html"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#example-3",
     "href": "slides/week-2/w2-import-graphics.html#example-3",
     "title": "Basics of Graphics",
     "section": "Example 3",
-    "text": "Example 3\n\n\n\nhttps://r-graph-gallery.com/web-vertical-line-chart-with-ggplot2.html"
+    "text": "Example 3\n\nhttps://r-graph-gallery.com/web-line-chart-with-labels-at-end-of-line.html"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#example-4",
@@ -1796,14 +1796,14 @@
     "href": "slides/week-2/w2-import-graphics.html#ggplot2-cheatsheet",
     "title": "Basics of Graphics",
     "section": "ggplot2 cheatsheet",
-    "text": "ggplot2 cheatsheet\n\n\n\nggplot2 cheatsheet"
+    "text": "ggplot2 cheatsheet\n\nggplot2 cheatsheet"
   },
   {
     "objectID": "slides/week-2/w2-import-graphics.html#to-do",
     "href": "slides/week-2/w2-import-graphics.html#to-do",
     "title": "Basics of Graphics",
     "section": "To do…",
-    "text": "To do…\n\nLab 2: Exploring Rodents with ggplot2\n\ndue Monday 4/14 at 11:59pm\n\nRead Chapter 3: Data Cleaning and Manipulation\n\nCheck-in 3.1 due Tuesday 4/15 before class"
+    "text": "To do…\n\nLab 2: Exploring Rodents with ggplot2\n\ndue Sunday 4/12 at 11:59pm\n\nRequired Reading\nReview all material from this week for the group quiz on Monday!\n\nMake sure that you can answer all of the questions in this week’s notes!\nGroup quiz at the beginning of class"
   },
   {
     "objectID": "slides/week-1/w1-intro-r.html",
@@ -1899,16 +1899,16 @@
   {
     "objectID": "reading/week-2.2.html",
     "href": "reading/week-2.2.html",
-    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "title": "Week 2, Part 2: Importing Data and More Graphics",
     "section": "",
-    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+    "text": "Read in data from common formats into R\nRecognize options for reading in data suck as declaring variable types and skipping lines\nConsider best practices for visualization design"
   },
   {
     "objectID": "reading/week-2.2.html#learning-objectives",
     "href": "reading/week-2.2.html#learning-objectives",
-    "title": "Week 2, Part 1: Graphics with ggplot2",
+    "title": "Week 2, Part 2: Importing Data and More Graphics",
     "section": "",
-    "text": "Describe charts using the grammar of graphics\nCreate layered graphics that highlight multiple aspects of the data"
+    "text": "Read in data from common formats into R\nRecognize options for reading in data suck as declaring variable types and skipping lines\nConsider best practices for visualization design"
   },
   {
     "objectID": "reading/week-2.2.html#building-graphics-with-ggplot2",
@@ -1937,5 +1937,26 @@
     "title": "Graphics with ggplot2",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nhttps://www.tidyverse.org/↩︎"
+  },
+  {
+    "objectID": "slides/week-2/w2-import-graphics.html#data-import-options",
+    "href": "slides/week-2/w2-import-graphics.html#data-import-options",
+    "title": "Basics of Graphics",
+    "section": "Data Import Options 🧩",
+    "text": "Data Import Options 🧩\n\nDepending on how messy your original data file is, you may need to add no extra arguments to these import functions\nBut there are plenty of options!\n\nhow to handle column names\nwhat data types columns should be\nwhat rows to import …\netc.\n\nSee readr and readxl cheatsheets"
+  },
+  {
+    "objectID": "reading/week-2.2.html#reading-data-into-r",
+    "href": "reading/week-2.2.html#reading-data-into-r",
+    "title": "Week 2, Part 2: Importing Data and More Graphics",
+    "section": "2 Reading Data Into R",
+    "text": "2 Reading Data Into R\n\n📖 Required Reading: R4DS Data import."
+  },
+  {
+    "objectID": "reading/week-2.2.html#creating-good-visualizations",
+    "href": "reading/week-2.2.html#creating-good-visualizations",
+    "title": "Week 2, Part 2: Importing Data and More Graphics",
+    "section": "3 Creating Good Visualizations",
+    "text": "3 Creating Good Visualizations\nI don’t want you to just be thinking about creating the “coolest” visualization or just focusing on the code. How well your visualization communicates the relationships between variables in your data is the most important element of graphics!\nA visualization is good if it allows the user to draw useful conclusions that are supported by the data. Your visualizations should communicate relationships in the data clearly, without extraneous “ink”.\nThe reading below goes into more techniques and functions within ggplot2 that help you further refine your graphics.\n\n📖 Required Reading: R4DS Communication"
   }
 ]

@@ -9,6 +9,7 @@ project:
     - "!/course-info/stud-info/"
     - "!/project/"
     - "!/handouts/"
+    - "!/quiz/"
 
 website:
   page-navigation: true

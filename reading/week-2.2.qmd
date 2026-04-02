@@ -1,0 +1,45 @@
+---
+title: "Week 2, Part 2: Importing Data and More Graphics"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+```
+
+
+## Learning Objectives
+
+- Read in data from common formats into R
+- Recognize options for reading in data suck as declaring variable types and skipping lines
+- Consider best practices for visualization design
+
+#### 📖 Readings: 45-60 min
+
+------------------------------------------------------------------------
+
+## Reading Data Into R
+
+#### 📖 Required Reading: [R4DS Data import](https://r4ds.hadley.nz/data-import.html).
+
+## Creating Good Visualizations
+
+I don't want you to just be thinking about creating the "coolest" visualization or just focusing on the code. How well your visualization communicates the relationships between variables in your data is the most important element of graphics!
+
+
+A visualization is good if it allows the user to draw useful conclusions that are supported by the data. Your visualizations should communicate relationships in the data clearly, without extraneous "ink".
+
+The reading below goes into more techniques and functions within `ggplot2` that help you further refine your graphics.
+
+#### 📖 Required Reading: [R4DS Communication](https://r4ds.hadley.nz/communication.html)
+
+
+
+<!--If you are interested in learning more, here are some additional resources:
+
+- [What to consider when choosing colors for data visualization](https://www.dataquest.io/blog/what-to-consider-when-choosing-colors-for-data-visualization/)
+- -->

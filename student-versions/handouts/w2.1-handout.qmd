@@ -130,6 +130,14 @@ ggplot(data = sm_tx) +
 ```
 
 g. What does the warning message indicate for the above two plots??
+    
+## More About Facets
+
+a.  What function do you use to facet by 1 variable?
+
+b.  What function do you use to facet by 2 variables?
+
+c.  Do facets always need to have the same axis scales? If not, how can you change the scales?
       
 ## Customization
 

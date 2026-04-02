@@ -1,0 +1,93 @@
+---
+title: "STAT 331 Week 2 Day 2 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+library(RColorBrewer)
+```
+
+## Data Import
+
+a. What is a delimiter? What does it do in a data file?
+
+
+b. Download and unzip the Ages_Data.zip file from Canvas. Save the unzipped directory in a reasonable place, like where you have this Quarto document!
+
+Use the `readr` and `readxl` packages to do the following:
+
+- load the appropriate package(s) if they aren't already
+- read in all four data files in the `Ages_Data` directory
+- use `read_csv()` to read *ages.csv* with the variable "Name" as a factor data type and "Age" as a character data type.
+
+
+```{r}
+#| label: read-data
+
+```
+
+c. Look over the `readr` and `readxl` cheatsheets. What is at least one functionality that would likely be frequently useful. (This is subjective, I just want you to think about how you can use the packages for data files in the future.)
+
+
+
+## Graphics Guidelines
+
+a. Why would you want to use double encoding in a plot?
+
+
+
+b. What are some guidelines for using colors in plots?
+
+
+
+## Color
+
+We loaded `RColorBrewer` at the beginning of this document.
+
+You can look at pallete options using `display.brewer.all()` or by looking at
+[https://colorbrewer2.org/](https://colorbrewer2.org/):
+
+```{r}
+display.brewer.all(n = 3, type = "qual" , colorblindFriendly = TRUE)
+```
+
+```{r}
+mycols <- brewer.pal(n = 3, name = "Set2")
+mycols
+```
+
+The nicest way to define colors yourself is with their Hex code! The vector `mycols` is a vector of Hex codes.
+
+We can then input this vector of Hex codes as the `value` argument in the `scale_color_manual()` function in `ggplot2`:
+
+```{r}
+data(mpg)
+
+ggplot(data = mpg,
+       mapping = aes(x = cty,
+                     y = hwy,
+                     color = drv)) +
+  scale_color_manual(values = mycols) + 
+  geom_point() +
+  facet_grid(cols = vars(year))
+```
+
+
+a. Give it a try yourself! Change the colors in the plot below to an appropriate color scheme.
+
+```{r}
+ggplot(data = mpg) + 
+  geom_jitter(mapping = aes(x = displ, 
+                            y = hwy, 
+                            color = cyl)) + 
+  labs(x = "Engine Displacement (liters)", 
+       y = "Highway MPG", 
+       color = "Number of \nCylinders",
+       title = "Car Efficiency")
+```
