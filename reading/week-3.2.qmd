@@ -1,0 +1,36 @@
+---
+title: "Week 3, Part 2: Extending `dplyr` verbs"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+```
+
+
+## Learning Objectives
+
+- apply functions to multiple columns using `across()`
+- recognize additional useful `dplyr` functions such as `pull()`, `count()`, `distinct()`, and `case_when()`
+
+#### 📖 Readings: 15-30 min
+
+------------------------------------------------------------------------
+
+## Lots of functions!
+
+We covered the main `dplyr` functions in the first half of the week. It is worth continuing to review those readings if it was too much or confusing the first time!
+
+We introduced a couple more in class this week, namely
+`pull()`, `count()`, `distinct()`, and `case_when()`. I would recommend that you look through both the `dplyr` cheatsheet and the `dplyr` [documentation](https://dplyr.tidyverse.org/reference/index.html) to see all of the options and see examples of how to use them.
+
+
+
+## `across()`
+
+#### 📖 Required Reading: [R4DS Modifying Multiple Columns](https://r4ds.hadley.nz/iteration.html#sec-across) through 26.2.5
+

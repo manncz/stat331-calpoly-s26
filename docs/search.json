@@ -263,7 +263,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -2354,140 +2354,140 @@
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#reminder-example-data-cereal",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#reminder-example-data-cereal",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Reminder: Example Data Cereal",
     "text": "Reminder: Example Data Cereal\n\nlibrary(liver)\ndata(cereal)\nhead(cereal, n = 5)\n\n\n\n\n\n\n\nname\nmanuf\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\n100% Bran\nN\ncold\n70\n4\n1\n130\n10\n5\n6\n280\n25\n3\n1\n0.33\n68.40297\n\n\n100% Natural Bran\nQ\ncold\n120\n3\n5\n15\n2\n8\n8\n135\n0\n3\n1\n1.00\n33.98368\n\n\nAll-Bran\nK\ncold\n70\n4\n1\n260\n9\n7\n5\n320\n25\n3\n1\n0.33\n59.42551\n\n\nAll-Bran with Extra Fiber\nK\ncold\n50\n4\n0\n140\n14\n8\n0\n330\n25\n3\n1\n0.50\n93.70491\n\n\nAlmond Delight\nR\ncold\n110\n2\n2\n200\n1\n14\n8\n-1\n25\n3\n1\n0.75\n34.38484"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#more-dplyr",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#more-dplyr",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "More dplyr",
     "text": "More dplyr\n\nWe have already covered a lot, but not everything you might want…\nToday we will cover functions that help with the following tasks:\n\nextract a variable as a vector\nsimple frequency table of a categorical variable\ncreating a categorical variable from levels of a quantitatie variable\napplying slice to groups and multiple variables\nmutating or summarizing many variables at once"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#pull",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#pull",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "pull()",
     "text": "pull()\nWhat is the mean potassium for cold cereals?\n\nYou can’t use the $ operator in a pipeline\npull() to the rescue!\npull() extracts a data frame column as a vector\n\n\n\ncereal |&gt; \n  filter(type == \"cold\") |&gt; \n  pull(potass) |&gt; \n  mean(na.rm = T)\n\n[1] 97.21622"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#reminder-count-with-summarize",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#reminder-count-with-summarize",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Reminder: count with summarize()",
     "text": "Reminder: count with summarize()\nHow many cereals does each manuf have in this dataset?\n\n\ncereal |&gt; \n  group_by(manuf) |&gt; \n  summarize(n = n())\n\n\n\n\n\n\n\nmanuf\nn\n\n\n\n\nA\n1\n\n\nG\n22\n\n\nK\n23\n\n\nN\n6\n\n\nP\n9\n\n\nQ\n8\n\n\nR\n8"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#count-with-count",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#count-with-count",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Count with count()",
     "text": "Count with count()\nHow many cereals does each manuf have in this dataset?\n\n\ncereal |&gt; \n  group_by(manuf) |&gt; \n  count()\n\n\n\n\n\n\n\nmanuf\nn\n\n\n\n\nA\n1\n\n\nG\n22\n\n\nK\n23\n\n\nN\n6\n\n\nP\n9\n\n\nQ\n8\n\n\nR\n8"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#if_else",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#if_else",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "if_else()",
     "text": "if_else()\nFor each cereal, label the potass as “high” or “low”.\n\nOne if-else statement:\n\n\nif_else(&lt;CONDITION&gt;, &lt;TRUE OUTPUT&gt;, &lt;FALSE OUTPUT&gt;)\n\n\n\n\n\ncereal |&gt; \n  mutate(po_category = if_else(potass &lt;= 100, \"low\", \"high\"),\n         .after = potass)\n\n\n\n\n\n\n\nname\nmanuf\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\npo_category\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\n100% Bran\nN\ncold\n70\n4\n1\n130\n10.0\n5.0\n6\n280\nhigh\n25\n3\n1.00\n0.33\n68.40297\n\n\n100% Natural Bran\nQ\ncold\n120\n3\n5\n15\n2.0\n8.0\n8\n135\nhigh\n0\n3\n1.00\n1.00\n33.98368\n\n\nAll-Bran\nK\ncold\n70\n4\n1\n260\n9.0\n7.0\n5\n320\nhigh\n25\n3\n1.00\n0.33\n59.42551\n\n\nAll-Bran with Extra Fiber\nK\ncold\n50\n4\n0\n140\n14.0\n8.0\n0\n330\nhigh\n25\n3\n1.00\n0.50\n93.70491\n\n\nAlmond Delight\nR\ncold\n110\n2\n2\n200\n1.0\n14.0\n8\n-1\nlow\n25\n3\n1.00\n0.75\n34.38484\n\n\nApple Cinnamon Cheerios\nG\ncold\n110\n2\n2\n180\n1.5\n10.5\n10\n70\nlow\n25\n1\n1.00\n0.75\n29.50954\n\n\nApple Jacks\nK\ncold\n110\n2\n0\n125\n1.0\n11.0\n14\n30\nlow\n25\n2\n1.00\n1.00\n33.17409\n\n\nBasic 4\nG\ncold\n130\n3\n2\n210\n2.0\n18.0\n8\n100\nlow\n25\n3\n1.33\n0.75\n37.03856\n\n\nBran Chex\nR\ncold\n90\n2\n1\n200\n4.0\n15.0\n6\n125\nhigh\n25\n1\n1.00\n0.67\n49.12025\n\n\nBran Flakes\nP\ncold\n90\n3\n0\n210\n5.0\n13.0\n5\n190\nhigh\n25\n3\n1.00\n0.67\n53.31381\n\n\nCap'n'Crunch\nQ\ncold\n120\n1\n2\n220\n0.0\n12.0\n12\n35\nlow\n25\n2\n1.00\n0.75\n18.04285\n\n\nCheerios\nG\ncold\n110\n6\n2\n290\n2.0\n17.0\n1\n105\nhigh\n25\n1\n1.00\n1.25\n50.76500\n\n\nCinnamon Toast Crunch\nG\ncold\n120\n1\n3\n210\n0.0\n13.0\n9\n45\nlow\n25\n2\n1.00\n0.75\n19.82357\n\n\nClusters\nG\ncold\n110\n3\n2\n140\n2.0\n13.0\n7\n105\nhigh\n25\n3\n1.00\n0.50\n40.40021\n\n\nCocoa Puffs\nG\ncold\n110\n1\n1\n180\n0.0\n12.0\n13\n55\nlow\n25\n2\n1.00\n1.00\n22.73645\n\n\nCorn Chex\nR\ncold\n110\n2\n0\n280\n0.0\n22.0\n3\n25\nlow\n25\n1\n1.00\n1.00\n41.44502\n\n\nCorn Flakes\nK\ncold\n100\n2\n0\n290\n1.0\n21.0\n2\n35\nlow\n25\n1\n1.00\n1.00\n45.86332\n\n\nCorn Pops\nK\ncold\n110\n1\n0\n90\n1.0\n13.0\n12\n20\nlow\n25\n2\n1.00\n1.00\n35.78279\n\n\nCount Chocula\nG\ncold\n110\n1\n1\n180\n0.0\n12.0\n13\n65\nlow\n25\n2\n1.00\n1.00\n22.39651\n\n\nCracklin' Oat Bran\nK\ncold\n110\n3\n3\n140\n4.0\n10.0\n7\n160\nhigh\n25\n3\n1.00\n0.50\n40.44877\n\n\nCream of Wheat (Quick)\nN\nhot\n100\n3\n0\n80\n1.0\n21.0\n0\n-1\nlow\n0\n2\n1.00\n1.00\n64.53382\n\n\nCrispix\nK\ncold\n110\n2\n0\n220\n1.0\n21.0\n3\n30\nlow\n25\n3\n1.00\n1.00\n46.89564\n\n\nCrispy Wheat & Raisins\nG\ncold\n100\n2\n1\n140\n2.0\n11.0\n10\n120\nhigh\n25\n3\n1.00\n0.75\n36.17620\n\n\nDouble Chex\nR\ncold\n100\n2\n0\n190\n1.0\n18.0\n5\n80\nlow\n25\n3\n1.00\n0.75\n44.33086\n\n\nFroot Loops\nK\ncold\n110\n2\n1\n125\n1.0\n11.0\n13\n30\nlow\n25\n2\n1.00\n1.00\n32.20758\n\n\nFrosted Flakes\nK\ncold\n110\n1\n0\n200\n1.0\n14.0\n11\n25\nlow\n25\n1\n1.00\n0.75\n31.43597\n\n\nFrosted Mini-Wheats\nK\ncold\n100\n3\n0\n0\n3.0\n14.0\n7\n100\nlow\n25\n2\n1.00\n0.80\n58.34514\n\n\nFruit & Fibre Dates; Walnuts; and Oats\nP\ncold\n120\n3\n2\n160\n5.0\n12.0\n10\n200\nhigh\n25\n3\n1.25\n0.67\n40.91705\n\n\nFruitful Bran\nK\ncold\n120\n3\n0\n240\n5.0\n14.0\n12\n190\nhigh\n25\n3\n1.33\n0.67\n41.01549\n\n\nFruity Pebbles\nP\ncold\n110\n1\n1\n135\n0.0\n13.0\n12\n25\nlow\n25\n2\n1.00\n0.75\n28.02576\n\n\nGolden Crisp\nP\ncold\n100\n2\n0\n45\n0.0\n11.0\n15\n40\nlow\n25\n1\n1.00\n0.88\n35.25244\n\n\nGolden Grahams\nG\ncold\n110\n1\n1\n280\n0.0\n15.0\n9\n45\nlow\n25\n2\n1.00\n0.75\n23.80404\n\n\nGrape Nuts Flakes\nP\ncold\n100\n3\n1\n140\n3.0\n15.0\n5\n85\nlow\n25\n3\n1.00\n0.88\n52.07690\n\n\nGrape-Nuts\nP\ncold\n110\n3\n0\n170\n3.0\n17.0\n3\n90\nlow\n25\n3\n1.00\n0.25\n53.37101\n\n\nGreat Grains Pecan\nP\ncold\n120\n3\n3\n75\n3.0\n13.0\n4\n100\nlow\n25\n3\n1.00\n0.33\n45.81172\n\n\nHoney Graham Ohs\nQ\ncold\n120\n1\n2\n220\n1.0\n12.0\n11\n45\nlow\n25\n2\n1.00\n1.00\n21.87129\n\n\nHoney Nut Cheerios\nG\ncold\n110\n3\n1\n250\n1.5\n11.5\n10\n90\nlow\n25\n1\n1.00\n0.75\n31.07222\n\n\nHoney-comb\nP\ncold\n110\n1\n0\n180\n0.0\n14.0\n11\n35\nlow\n25\n1\n1.00\n1.33\n28.74241\n\n\nJust Right Crunchy Nuggets\nK\ncold\n110\n2\n1\n170\n1.0\n17.0\n6\n60\nlow\n100\n3\n1.00\n1.00\n36.52368\n\n\nJust Right Fruit & Nut\nK\ncold\n140\n3\n1\n170\n2.0\n20.0\n9\n95\nlow\n100\n3\n1.30\n0.75\n36.47151\n\n\nKix\nG\ncold\n110\n2\n1\n260\n0.0\n21.0\n3\n40\nlow\n25\n2\n1.00\n1.50\n39.24111\n\n\nLife\nQ\ncold\n100\n4\n2\n150\n2.0\n12.0\n6\n95\nlow\n25\n2\n1.00\n0.67\n45.32807\n\n\nLucky Charms\nG\ncold\n110\n2\n1\n180\n0.0\n12.0\n12\n55\nlow\n25\n2\n1.00\n1.00\n26.73451\n\n\nMaypo\nA\nhot\n100\n4\n1\n0\n0.0\n16.0\n3\n95\nlow\n25\n2\n1.00\n1.00\n54.85092\n\n\nMuesli Raisins; Dates; & Almonds\nR\ncold\n150\n4\n3\n95\n3.0\n16.0\n11\n170\nhigh\n25\n3\n1.00\n1.00\n37.13686\n\n\nMuesli Raisins; Peaches; & Pecans\nR\ncold\n150\n4\n3\n150\n3.0\n16.0\n11\n170\nhigh\n25\n3\n1.00\n1.00\n34.13976\n\n\nMueslix Crispy Blend\nK\ncold\n160\n3\n2\n150\n3.0\n17.0\n13\n160\nhigh\n25\n3\n1.50\n0.67\n30.31335\n\n\nMulti-Grain Cheerios\nG\ncold\n100\n2\n1\n220\n2.0\n15.0\n6\n90\nlow\n25\n1\n1.00\n1.00\n40.10596\n\n\nNut&Honey Crunch\nK\ncold\n120\n2\n1\n190\n0.0\n15.0\n9\n40\nlow\n25\n2\n1.00\n0.67\n29.92429\n\n\nNutri-Grain Almond-Raisin\nK\ncold\n140\n3\n2\n220\n3.0\n21.0\n7\n130\nhigh\n25\n3\n1.33\n0.67\n40.69232\n\n\nNutri-grain Wheat\nK\ncold\n90\n3\n0\n170\n3.0\n18.0\n2\n90\nlow\n25\n3\n1.00\n1.00\n59.64284\n\n\nOatmeal Raisin Crisp\nG\ncold\n130\n3\n2\n170\n1.5\n13.5\n10\n120\nhigh\n25\n3\n1.25\n0.50\n30.45084\n\n\nPost Nat. Raisin Bran\nP\ncold\n120\n3\n1\n200\n6.0\n11.0\n14\n260\nhigh\n25\n3\n1.33\n0.67\n37.84059\n\n\nProduct 19\nK\ncold\n100\n3\n0\n320\n1.0\n20.0\n3\n45\nlow\n100\n3\n1.00\n1.00\n41.50354\n\n\nPuffed Rice\nQ\ncold\n50\n1\n0\n0\n0.0\n13.0\n0\n15\nlow\n0\n3\n0.50\n1.00\n60.75611\n\n\nPuffed Wheat\nQ\ncold\n50\n2\n0\n0\n1.0\n10.0\n0\n50\nlow\n0\n3\n0.50\n1.00\n63.00565\n\n\nQuaker Oat Squares\nQ\ncold\n100\n4\n1\n135\n2.0\n14.0\n6\n110\nhigh\n25\n3\n1.00\n0.50\n49.51187\n\n\nQuaker Oatmeal\nQ\nhot\n100\n5\n2\n0\n2.7\n-1.0\n-1\n110\nhigh\n0\n1\n1.00\n0.67\n50.82839\n\n\nRaisin Bran\nK\ncold\n120\n3\n1\n210\n5.0\n14.0\n12\n240\nhigh\n25\n2\n1.33\n0.75\n39.25920\n\n\nRaisin Nut Bran\nG\ncold\n100\n3\n2\n140\n2.5\n10.5\n8\n140\nhigh\n25\n3\n1.00\n0.50\n39.70340\n\n\nRaisin Squares\nK\ncold\n90\n2\n0\n0\n2.0\n15.0\n6\n110\nhigh\n25\n3\n1.00\n0.50\n55.33314\n\n\nRice Chex\nR\ncold\n110\n1\n0\n240\n0.0\n23.0\n2\n30\nlow\n25\n1\n1.00\n1.13\n41.99893\n\n\nRice Krispies\nK\ncold\n110\n2\n0\n290\n0.0\n22.0\n3\n35\nlow\n25\n1\n1.00\n1.00\n40.56016\n\n\nShredded Wheat\nN\ncold\n80\n2\n0\n0\n3.0\n16.0\n0\n95\nlow\n0\n1\n0.83\n1.00\n68.23588\n\n\nShredded Wheat 'n'Bran\nN\ncold\n90\n3\n0\n0\n4.0\n19.0\n0\n140\nhigh\n0\n1\n1.00\n0.67\n74.47295\n\n\nShredded Wheat spoon size\nN\ncold\n90\n3\n0\n0\n3.0\n20.0\n0\n120\nhigh\n0\n1\n1.00\n0.67\n72.80179\n\n\nSmacks\nK\ncold\n110\n2\n1\n70\n1.0\n9.0\n15\n40\nlow\n25\n2\n1.00\n0.75\n31.23005\n\n\nSpecial K\nK\ncold\n110\n6\n0\n230\n1.0\n16.0\n3\n55\nlow\n25\n1\n1.00\n1.00\n53.13132\n\n\nStrawberry Fruit Wheats\nN\ncold\n90\n2\n0\n15\n3.0\n15.0\n5\n90\nlow\n25\n2\n1.00\n1.00\n59.36399\n\n\nTotal Corn Flakes\nG\ncold\n110\n2\n1\n200\n0.0\n21.0\n3\n35\nlow\n100\n3\n1.00\n1.00\n38.83975\n\n\nTotal Raisin Bran\nG\ncold\n140\n3\n1\n190\n4.0\n15.0\n14\n230\nhigh\n100\n3\n1.50\n1.00\n28.59278\n\n\nTotal Whole Grain\nG\ncold\n100\n3\n1\n200\n3.0\n16.0\n3\n110\nhigh\n100\n3\n1.00\n1.00\n46.65884\n\n\nTriples\nG\ncold\n110\n2\n1\n250\n0.0\n21.0\n3\n60\nlow\n25\n3\n1.00\n0.75\n39.10617\n\n\nTrix\nG\ncold\n110\n1\n1\n140\n0.0\n13.0\n12\n25\nlow\n25\n2\n1.00\n1.00\n27.75330\n\n\nWheat Chex\nR\ncold\n100\n3\n1\n230\n3.0\n17.0\n3\n115\nhigh\n25\n1\n1.00\n0.67\n49.78744\n\n\nWheaties\nG\ncold\n100\n3\n1\n200\n3.0\n17.0\n3\n110\nhigh\n25\n1\n1.00\n1.00\n51.59219\n\n\nWheaties Honey Gold\nG\ncold\n110\n2\n1\n200\n1.0\n16.0\n8\n60\nlow\n25\n1\n1.00\n0.75\n36.18756\n\n\n\n\n\n\n\n.after – specifies the location of the newly created column"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#case_when",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#case_when",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "case_when()",
     "text": "case_when()\nFor each cereal, label the amount of sugar as “low”, “medium”, “high”, or “very high”.\n\nA series of if-else statements.\n\ncereal |&gt; \n  mutate(sugar_level = case_when(sugars == -1 ~ NA_character_,\n                                 sugars &lt; 2   ~ \"low\",\n                                 sugars &lt; 5   ~ \"medium\",\n                                 sugars &lt; 10  ~ \"high\",\n                                 TRUE         ~ \"very high\")) |&gt; \n  select(name, sugars, sugar_level)\n\n\n\n\n\n\n\nname\nsugars\nsugar_level\n\n\n\n\n100% Bran\n6\nhigh\n\n\n100% Natural Bran\n8\nhigh\n\n\nAll-Bran\n5\nmedium\n\n\nAll-Bran with Extra Fiber\n0\nlow\n\n\nAlmond Delight\n8\nhigh\n\n\nApple Cinnamon Cheerios\n10\nhigh\n\n\nApple Jacks\n14\nvery high\n\n\nBasic 4\n8\nhigh\n\n\nBran Chex\n6\nhigh\n\n\nBran Flakes\n5\nmedium\n\n\nCap'n'Crunch\n12\nvery high\n\n\nCheerios\n1\nlow\n\n\nCinnamon Toast Crunch\n9\nhigh\n\n\nClusters\n7\nhigh\n\n\nCocoa Puffs\n13\nvery high\n\n\nCorn Chex\n3\nmedium\n\n\nCorn Flakes\n2\nlow\n\n\nCorn Pops\n12\nvery high\n\n\nCount Chocula\n13\nvery high\n\n\nCracklin' Oat Bran\n7\nhigh\n\n\nCream of Wheat (Quick)\n0\nlow\n\n\nCrispix\n3\nmedium\n\n\nCrispy Wheat & Raisins\n10\nhigh\n\n\nDouble Chex\n5\nmedium\n\n\nFroot Loops\n13\nvery high\n\n\nFrosted Flakes\n11\nvery high\n\n\nFrosted Mini-Wheats\n7\nhigh\n\n\nFruit & Fibre Dates; Walnuts; and Oats\n10\nhigh\n\n\nFruitful Bran\n12\nvery high\n\n\nFruity Pebbles\n12\nvery high\n\n\nGolden Crisp\n15\nvery high\n\n\nGolden Grahams\n9\nhigh\n\n\nGrape Nuts Flakes\n5\nmedium\n\n\nGrape-Nuts\n3\nmedium\n\n\nGreat Grains Pecan\n4\nmedium\n\n\nHoney Graham Ohs\n11\nvery high\n\n\nHoney Nut Cheerios\n10\nhigh\n\n\nHoney-comb\n11\nvery high\n\n\nJust Right Crunchy Nuggets\n6\nhigh\n\n\nJust Right Fruit & Nut\n9\nhigh\n\n\nKix\n3\nmedium\n\n\nLife\n6\nhigh\n\n\nLucky Charms\n12\nvery high\n\n\nMaypo\n3\nmedium\n\n\nMuesli Raisins; Dates; & Almonds\n11\nvery high\n\n\nMuesli Raisins; Peaches; & Pecans\n11\nvery high\n\n\nMueslix Crispy Blend\n13\nvery high\n\n\nMulti-Grain Cheerios\n6\nhigh\n\n\nNut&Honey Crunch\n9\nhigh\n\n\nNutri-Grain Almond-Raisin\n7\nhigh\n\n\nNutri-grain Wheat\n2\nlow\n\n\nOatmeal Raisin Crisp\n10\nhigh\n\n\nPost Nat. Raisin Bran\n14\nvery high\n\n\nProduct 19\n3\nmedium\n\n\nPuffed Rice\n0\nlow\n\n\nPuffed Wheat\n0\nlow\n\n\nQuaker Oat Squares\n6\nhigh\n\n\nQuaker Oatmeal\n-1\nNA\n\n\nRaisin Bran\n12\nvery high\n\n\nRaisin Nut Bran\n8\nhigh\n\n\nRaisin Squares\n6\nhigh\n\n\nRice Chex\n2\nlow\n\n\nRice Krispies\n3\nmedium\n\n\nShredded Wheat\n0\nlow\n\n\nShredded Wheat 'n'Bran\n0\nlow\n\n\nShredded Wheat spoon size\n0\nlow\n\n\nSmacks\n15\nvery high\n\n\nSpecial K\n3\nmedium\n\n\nStrawberry Fruit Wheats\n5\nmedium\n\n\nTotal Corn Flakes\n3\nmedium\n\n\nTotal Raisin Bran\n14\nvery high\n\n\nTotal Whole Grain\n3\nmedium\n\n\nTriples\n3\nmedium\n\n\nTrix\n12\nvery high\n\n\nWheat Chex\n3\nmedium\n\n\nWheaties\n3\nmedium\n\n\nWheaties Honey Gold\n8\nhigh"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#group_by-slice",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#group_by-slice",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "group_by() + slice()",
     "text": "group_by() + slice()\nFor each manuf, find the cereal with the most fiber.\n\n\ncereal |&gt; \n  group_by(manuf) |&gt; \n  slice_max(order_by = fiber)\n\n\n\n\n\n\n\nname\nmanuf\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\nMaypo\nA\nhot\n100\n4\n1\n0\n0.0\n16\n3\n95\n25\n2\n1.00\n1.00\n54.85092\n\n\nTotal Raisin Bran\nG\ncold\n140\n3\n1\n190\n4.0\n15\n14\n230\n100\n3\n1.50\n1.00\n28.59278\n\n\nAll-Bran with Extra Fiber\nK\ncold\n50\n4\n0\n140\n14.0\n8\n0\n330\n25\n3\n1.00\n0.50\n93.70491\n\n\n100% Bran\nN\ncold\n70\n4\n1\n130\n10.0\n5\n6\n280\n25\n3\n1.00\n0.33\n68.40297\n\n\nPost Nat. Raisin Bran\nP\ncold\n120\n3\n1\n200\n6.0\n11\n14\n260\n25\n3\n1.33\n0.67\n37.84059\n\n\nQuaker Oatmeal\nQ\nhot\n100\n5\n2\n0\n2.7\n-1\n-1\n110\n0\n1\n1.00\n0.67\n50.82839\n\n\nBran Chex\nR\ncold\n90\n2\n1\n200\n4.0\n15\n6\n125\n25\n1\n1.00\n0.67\n49.12025"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#multiple-variables-in-slice",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#multiple-variables-in-slice",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Multiple Variables in slice()",
     "text": "Multiple Variables in slice()\nFind the 3 cereals with the highest fiber and potass.\n\n\nIf you are ordering by multiple variables, wrap them in a data.frame!\n\n\ncereal |&gt; \n  slice_max(order_by = data.frame(fiber, potass),\n            n = 3)\n\n\n\n\n\n\n\nname\nmanuf\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\nAll-Bran with Extra Fiber\nK\ncold\n50\n4\n0\n140\n14\n8\n0\n330\n25\n3\n1\n0.50\n93.70491\n\n\n100% Bran\nN\ncold\n70\n4\n1\n130\n10\n5\n6\n280\n25\n3\n1\n0.33\n68.40297\n\n\nAll-Bran\nK\ncold\n70\n4\n1\n260\n9\n7\n5\n320\n25\n3\n1\n0.33\n59.42551"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Summarize multiple columns",
     "text": "Summarize multiple columns\nFor each type of cereal, calculate the mean nutrient levels.\n\n\ncereal |&gt; \n  group_by(type) |&gt; \n  summarize(mean_calories = mean(calories, na.rm = T),\n            mean_protein  = mean(protein, na.rm = T),\n            mean_fat      = mean(fat, na.rm = T),\n            mean_sodium   = mean(sodium, na.rm = T),\n            . . .,\n            mean_vitamins = mean(vitamins, na.rm = T))\n\n\n\n\n\n\n\n\n\nSO MUCH COPY-PASTE!\n\n\nThere are 9 different nutrient columns in the dataset! There has to be a better way…"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Summarize multiple columns with across()",
     "text": "Summarize multiple columns with across()\nFor each type of cereal, calculate the mean nutrient levels.\n\ncereal |&gt; \n  group_by(type) |&gt; \n  summarise(across(.cols = calories:potass, \n                   .fns = ~ mean(.x, na.rm = T)))\n\n\n\n\n\n\n\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\n\n\n\n\ncold\n107.1622\n2.486486\n1.013513\n165.06757\n2.189189\n14.7027\n7.1756757\n97.21622\n\n\nhot\n100.0000\n4.000000\n1.000000\n26.66667\n1.233333\n12.0000\n0.6666667\n68.00000\n\n\n\n\n\n\n\n\n\n\n\n\n\nSo much better!"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across-1",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across-1",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Summarize multiple columns with across()",
     "text": "Summarize multiple columns with across()\nWithin the summarize() function, we use the across() function, with three arguments:\n\n.cols – to specify the columns to apply functions to.\n.fns – to specify the functions to apply.\n.x – as a placeholder for the variables being passed into the function.\n\n\ncereal |&gt; \n  group_by(type) |&gt; \n  summarise(across(.cols = calories:potass, \n                   .fns = ~ mean(.x, na.rm = T)))\n\nUse lambda functions: ~ &lt;FUN_NAME&gt;(.x, &lt;ARGS&gt;)"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across-2",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#summarize-multiple-columns-with-across-2",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Summarize multiple columns with across()",
     "text": "Summarize multiple columns with across()\n\nTo choose columns, you can use the same options as with select()\n\n\nFor each type of cereal, calculate the means of all numeric variables.\n\n\n\ncereal |&gt; \n  group_by(type) |&gt; \n  summarise(across(.cols = where(is.numeric),\n                   .fns = ~ mean(.x, na.rm = T)))\n\n\n\n\n\n\n\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\ncold\n107.1622\n2.486486\n1.013513\n165.06757\n2.189189\n14.7027\n7.1756757\n97.21622\n29.054054\n2.229730\n1.030811\n0.8182432\n42.09522\n\n\nhot\n100.0000\n4.000000\n1.000000\n26.66667\n1.233333\n12.0000\n0.6666667\n68.00000\n8.333333\n1.666667\n1.000000\n0.8900000\n56.73771"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#if-you-are-struggling-with-across",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#if-you-are-struggling-with-across",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "If you are struggling with across()",
     "text": "If you are struggling with across()\n\nBreak it down:\n\nthink about what the code would be for one column\n\n\nsummarize(calories = mean(calories, na.rm = T))\n\n\nreplace the column name with the placeholder .x and add a ~ in front for the .fns argument. You have created a lambda function!\n\n\nsummarize(across(.cols = ,\n                 .fns  = ~mean(.x, na.rm = T)))\n\n\nthink about which columns you want to apply this to for the .cols argument\n\n\nsummarize(across(.cols = calories:potass,\n                 .fns  = ~mean(.x, na.rm = T)))"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#across-related-functions",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#across-related-functions",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "across(): Related Functions",
     "text": "across(): Related Functions\nThese functions are used with filter() to select rows based on a logical statement applied to multiple columns\n\nif_any() – returns a logical vector (one element for each row) that is TRUE if the logical statement is true for any column in the supplied columns\nif_all() – returns a logical vector (one element for each row) that is TRUE if the logical statement is true for all columns in the supplied columns"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#if_any-example",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#if_any-example",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "if_any() Example",
     "text": "if_any() Example\nRemember, you got warnings in PA3 when converting some columns to numeric? If you look at the original data, you can see this is because missing values were indicated with the string \"NULL\".\n\n\n\n\n\n\nINSTNM\nCITY\nSTABBR\nZIP\nADM_RATE\nSAT_AVG\nUGDS\nTUITIONFEE_IN\nTUITIONFEE_OUT\nCONTROL\nREGION\n\n\n\n\nAlabama A & M University\nNormal\nAL\n35762\n0.9027\n929\n4824\n9857\n18236\n1\n5\n\n\nUniversity of Alabama at Birmingham\nBirmingham\nAL\n35294-0110\n0.9181\n1195\n12866\n8328\n19032\n1\n5\n\n\nAmridge University\nMontgomery\nAL\n36117-3553\nNULL\nNULL\n322\n6900\n6900\n2\n5\n\n\n\n\n\n\n\n\nWe could drop these rows before converting the columns to numeric if desired, using if_any():\n\ncolleges_clean &lt;- colleges_clean |&gt; \n  filter(!if_any(.cols = ADM_RATE:TUITIONFEE_OUT, \n                 .fns = ~ .x == \"NULL\"))"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Piping into ggplot()",
     "text": "Piping into ggplot()\nPlot the mean protein per cup for each manuf.\n\n\ncereal |&gt; \n  mutate(manuf = case_when(manuf == \"A\" ~ \"American Home Food Products\", \n                           manuf == \"G\" ~ \"General Mills\", \n                           manuf == \"K\" ~ \"Kelloggs\", \n                           manuf == \"N\" ~ \"Nabisco\", \n                           manuf == \"P\" ~ \"Post\", \n                           manuf == \"Q\" ~ \"Quaker Oats\", \n                           manuf == \"R\" ~ \"Ralston Purina\"))  |&gt; \n  filter(type == \"cold\") |&gt; \n  mutate(pro_per_cup = protein / cups) |&gt; \n  group_by(manuf) |&gt; \n  summarise(mean_pro_per_cup = mean(pro_per_cup)) |&gt;  \n  ggplot(aes(x = manuf, \n             y = mean_pro_per_cup)) +\n  geom_point(size = 6) +\n  labs(x = \"Manufacturer\",\n       subtitle = \"Mean Protein per Cup\") +\n  theme_bw() +\n  theme(axis.title.y = element_blank(),\n        axis.title.x  = element_text(size = 24),\n        plot.subtitle = element_text(size = 24),\n        axis.text = element_text(size = 20),\n        axis.text.x = element_text(angle = 13)) +\n  scale_y_continuous(limits = c(0,6))"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot-1",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot-1",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Piping into ggplot()",
     "text": "Piping into ggplot()\nPlot the mean protein per cup for each manuf.\n\ncereal |&gt; \n  mutate(manuf = case_when(manuf == \"A\" ~ \"American Home Food Products\", \n                           manuf == \"G\" ~ \"General Mills\", \n                           manuf == \"K\" ~ \"Kelloggs\", \n                           manuf == \"N\" ~ \"Nabisco\", \n                           manuf == \"P\" ~ \"Post\", \n                           manuf == \"Q\" ~ \"Quaker Oats\", \n                           manuf == \"R\" ~ \"Ralston Purina\"))  |&gt; \n  filter(type == \"cold\") |&gt; \n  mutate(pro_per_cup = protein / cups) |&gt; \n  group_by(manuf) |&gt; \n  summarise(mean_pro_per_cup = mean(pro_per_cup)) |&gt;  \n  ggplot(aes(x = manuf, \n             y = mean_pro_per_cup)) +\n  geom_point(size = 6) +\n  labs(x = \"Manufacturer\",\n       subtitle = \"Mean Protein per Cup\") +\n  theme_bw() +\n  theme(axis.title.y = element_blank(),\n        axis.title.x  = element_text(size = 24),\n        plot.subtitle = element_text(size = 24),\n        axis.text = element_text(size = 20),\n        axis.text.x = element_text(angle = 13)) +\n  scale_y_continuous(limits = c(0,6))"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot-1-output",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#piping-into-ggplot-1-output",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Piping into ggplot()",
     "text": "Piping into ggplot()"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#putting-it-all-together---lets-practice",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#putting-it-all-together---lets-practice",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Putting it all Together - Let’s Practice!",
     "text": "Putting it all Together - Let’s Practice!\nHow would you make this plot from the diamonds dataset in ggplot2?\n\n\nCode\ndiamonds |&gt; \n  mutate(category = case_when(price &lt; 1000 ~ \"&lt;$1k\",\n                              price &lt;= 5000 ~ \"$1k-$5k\",\n                              .default = \"&gt;$5k\")) |&gt;\n  ggplot(mapping = aes(x = cut,\n                       fill = cut)) +\n  geom_bar() +\n  facet_wrap(vars(category)) +\n  labs(subtitle = \"Number of Diamonds\",\n       x = \"Cut\",\n       y = \"\",\n       fill = \"Cut\") +\n  theme(axis.text.x = element_blank(),\n        axis.title = element_text(size = 14),\n        legend.title = element_text(size = 14),\n        legend.text = element_text(size = 14),\n        strip.text = element_text(size = 14),\n        title = element_text(size = 14))"
   },
@@ -2501,28 +2501,28 @@
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#answering-a-research-question",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#answering-a-research-question",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Answering a Research Question",
     "text": "Answering a Research Question\n\nThe QuestionThe CodeFormatting Code Output\n\n\nWhat is the median grams of sugars per shelf and the number of cereals per shelf, when we drop the missing values (coded as sugars = -1)?\n\n\n\ncereal |&gt; \n  select(sugars, shelf) |&gt; \n  filter(sugars != -1) |&gt; \n  group_by(shelf) |&gt; \n  summarise(med_sugars = median(sugars),\n            n_cereal = n())\n\n# A tibble: 3 × 3\n  shelf med_sugars n_cereal\n  &lt;int&gt;      &lt;dbl&gt;    &lt;int&gt;\n1     1          3       19\n2     2         12       21\n3     3          6       36\n\n\n\n\nUse kable() from the knitr package and the kableExtra package to format tables in Quarto.\n\ncereal |&gt; \n  select(sugars, shelf) |&gt; \n  filter(sugars != -1) |&gt; \n  group_by(shelf) |&gt; \n  summarise(med_sugars = median(sugars),\n            n_cereal = n()) |&gt; \n  kable()\n\n\n\n\n\n\n\nshelf\nmed_sugars\nn_cereal\n\n\n\n\n1\n3\n19\n\n\n2\n12\n21\n\n\n3\n6\n36"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#data-ethics",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#data-ethics",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Data Ethics",
     "text": "Data Ethics\n1. What do we mean by data ethics?\n\n\n\n2. Why do we (as statisticians, data scientists, folks working with data) need to think about data ethics?"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#data-ethics-1",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#data-ethics-1",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Data Ethics",
     "text": "Data Ethics\n1. What do we mean by data ethics?\n\nThe process of evaluating data collection, processing, analysis, and dissemination practices for their adverse impacts on individuals, systems, and society.\n\n2. Why do we (as statisticians, data scientists, folks working with data) need to think about data ethics?\n\nWe have a lot of power to declare truth and fact, hiding behind the black box of data science methods."
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#principles-of-data-ethics",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#principles-of-data-ethics",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Principles of Data Ethics",
     "text": "Principles of Data Ethics\n\n\nI will not be ashamed to say, “I don’t know”\nI will respect the privacy of my data subjects\nI will remember that my data are not just numbers without meaning or context, but represent real people and situations\nI will interrogate how my work may lead to unintended societal consequences or perpetuate inequity"
   },
@@ -2536,49 +2536,49 @@
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#the-numbers-dont-speak-for-themselves",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#the-numbers-dont-speak-for-themselves",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "The Numbers Don’t Speak for Themselves",
     "text": "The Numbers Don’t Speak for Themselves\nWith the people next to you discuss:\n\nWhat was the main take-away for you?\nWhat points stood out to you?\nWhat was something that suprised you?\nIs there anything you didn’t agree with?\nWhat questions do you have after reading?\n\n\nSource: Data Feminism by by Catherine D’Ignazio and Lauren Klein (2020)"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#data-biography",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#data-biography",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Data Biography",
     "text": "Data Biography\nHeather Kraus suggests asking 5 questions of your data:\n\nWhere did it come from?\nWho collected it?\nWhen?\nHow was it collected?\nWhy was it collected?"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#additional-resources",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#additional-resources",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Additional Resources",
     "text": "Additional Resources\n\nMore Data Feminism\nCritical Quantitative Research\n\nResource 1\nResource 2\n\n\n\nI would love to discuss these with you in office hours!"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#lab-3-teacher-evaluations",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#lab-3-teacher-evaluations",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Lab 3: Teacher Evaluations",
     "text": "Lab 3: Teacher Evaluations"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#dplyr-cheatsheet",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#dplyr-cheatsheet",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "dplyr cheatsheet",
     "text": "dplyr cheatsheet\n\nggplot2 cheatsheet"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#using-kable-for-formatting-in-labs",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#using-kable-for-formatting-in-labs",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Using kable() for formatting in labs",
     "text": "Using kable() for formatting in labs\n\nWhen printing rows of a data frame or tibble\nneed to load the knitr package at the beginning of your file\nkable() outputs a markdown version of your data\nshould only be used to nicely format data you are printing\n\n\n\ne.g.\n\ncereal |&gt; \n  mutate(ratio = sugars / potass) |&gt; \n  slice_head(n = 3) |&gt; \n  kable()\n\n\nNOT\n\ncereal_clean &lt;- cereal |&gt; \n  mutate(ratio = sugars / potass) |&gt; \n  slice_head(n = 3) |&gt; \n  kable()"
   },
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#to-do",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#to-do",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "To do…",
     "text": "To do…\n\nLab 3: Teacher Evaluations\n\nDue Monday, 4/21 at 11:59pm\n\nRead Chapter 4: Data Joins and Transformations\n\nCheck-in 4.1 + 4.2 due Tuesday 4/22 before class"
   },
@@ -2592,7 +2592,7 @@
   {
     "objectID": "slides/week-3/w3-more-dplyr-ethics.html#wednesday-april-15",
     "href": "slides/week-3/w3-more-dplyr-ethics.html#wednesday-april-15",
-    "title": "Data Cleaning & Manipulation",
+    "title": "More dplyr and Data Ethics",
     "section": "Wednesday, April 15",
     "text": "Wednesday, April 15\nToday we will…\n\nNew Material\n\nExtend dplyr verbs to have more functionality.\nDiscuss data ethics.\n\nLab 3: Teacher Evaluations"
   },
@@ -2630,5 +2630,40 @@
     "title": "Week 3, Part 1: Data Wrangling with dplyr and Data Ethics",
     "section": "4 Data Ethics",
     "text": "4 Data Ethics\n\n📖 Required Reading: The Numbers Don’t Speak for Themselves\nSome things to think about while you read to prepare for our class discussion:\n\nWhat was the main take-away for you?\nWhat points stood out to you?\nWhat was something that suprised you?\nIs there anything you didn’t agree with?\nWhat questions do you have after reading?"
+  },
+  {
+    "objectID": "reading/week-3.2.html#across",
+    "href": "reading/week-3.2.html#across",
+    "title": "Week 3, Part 2: Extending dplyr verbs",
+    "section": "3 across()",
+    "text": "3 across()\n\n📖 Required Reading: R4DS Modifying Multiple Columns through 26.2.5"
+  },
+  {
+    "objectID": "slides/week-3/w3-dplyr.html",
+    "href": "slides/week-3/w3-dplyr.html",
+    "title": "Data Cleaning & Manipulation",
+    "section": "",
+    "text": "Today we will…\n\nComments from Week 2\nNew Material\n\nData wrangling\nIntroduce the dplyr package.\nUse dplyr verbs to manipulate data.\n\nPA 3: Identify the Mystery College\n\n\n\n\n\n\n\nFollow along\n\n\n\nRemember to download, save, and open up the handout for today!"
+  },
+  {
+    "objectID": "reading/week-3.2.html#lots-of-functions",
+    "href": "reading/week-3.2.html#lots-of-functions",
+    "title": "Week 3, Part 2: Extending dplyr verbs",
+    "section": "2 Lots of functions!",
+    "text": "2 Lots of functions!\nWe covered the main dplyr functions in the first half of the week. It is worth continuing to review those readings if it was too much or confusing the first time!\nWe introduced a couple more in class this week, namely pull(), count(), distinct(), and case_when(). I would recommend that you look through both the dplyr cheatsheet and the dplyr documentation to see all of the options and see examples of how to use them."
+  },
+  {
+    "objectID": "reading/week-3.2.html",
+    "href": "reading/week-3.2.html",
+    "title": "Week 3, Part 2: Extending dplyr verbs",
+    "section": "",
+    "text": "apply functions to multiple columns using across()\nrecognize additional useful dplyr functions such as pull(), count(), distinct(), and case_when()"
+  },
+  {
+    "objectID": "reading/week-3.2.html#learning-objectives",
+    "href": "reading/week-3.2.html#learning-objectives",
+    "title": "Week 3, Part 2: Extending dplyr verbs",
+    "section": "",
+    "text": "apply functions to multiple columns using across()\nrecognize additional useful dplyr functions such as pull(), count(), distinct(), and case_when()"
   }
 ]

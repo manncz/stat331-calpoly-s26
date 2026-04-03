@@ -1,5 +1,5 @@
 ---
-title: "Data Cleaning & Manipulation"
+title: "More `dplyr` and Data Ethics"
 format: 
   revealjs:
         theme: [default, ../slide_custom.scss]
