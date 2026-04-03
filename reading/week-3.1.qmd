@@ -1,0 +1,93 @@
+---
+title: "Week 3, Part 1: Data Wrangling with `dplyr` and Data Ethics"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+```
+
+
+## Learning Objectives
+
+
+- Use the five main dplyr verbs:
+
+  - `filter()`
+  - `arrange()`
+  - `select()`
+  - `mutate()`
+  - `summarize()`
+
+- Use `group_by()` to perform groupwise operations
+
+- Use the pipe operator (`|>`) to chain together data wrangling operations
+
+#### 📖 Readings: 45-60 min
+
+#### 💻 Optional Activity: 30 min
+
+#### 📽 Optional Videos: 60 min
+
+------------------------------------------------------------------------
+
+## Data Structures -- `list`, `data.frame`, and `tibble`
+
+We had a brief introduction to data structures in R on the first day, but it is useful to re-visit some of these concepts now and introduce a new structure called a `tibble`.
+
+### `list` and `data.frame`
+
+We are exclusively working with "rectangular" data in this class - where there are n rows, and each column represents a variable. These columns can be of multiple different data types (i.e. string, boolean, integer, date, etc.), so we can't use a matrix to represent our data typically. This is because matrices are *homogeneous* data structures, meaning all values need to be of one data type.
+
+As we learned earlier in the course, a [**list**](https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html#lists) is a one-dimensional column of **heterogeneous data** -- i.e. the things stored in a list can be of different types. For example, I could create a list like this:
+
+```{r}
+mylist <- list(x = c(1, 2, 3),
+               y = 3,
+               d = matrix(c("a", "b", "c", "d"), ncol = 2))
+```
+
+Lists are a super powerful data structure and offer a lot of flexibility. 
+
+When working with rectangular data, we don't need (or want) quite as much flexibility as a pure `list`. Since rectangular data is so common and we more or less know the kinds of things we want to do with it, there is a special data structure in R called a [data.frame](https://bookdown.org/rdpeng/rprogdatascience/r-nuts-and-bolts.html#data-frames). A `data.frame` is really a special kind of `list`, where every element of is a column of equal length. Many functions in R are built to work with `data.frame`s, including all of the `dplyr` functions that we are learning with this week.
+
+### `tibble`
+
+Essentially, `tibble`s are "fancy" data frames. They operate the same as data frames, with some extra features that can make them easier to work in certain circumstances. You may notice that when you print a table after applying `dplyr` functions to it, it will be identified as a `tibble`. For the purposes of this class, the distinctions between `data.frame`s and `tibbles` are only important when we start doing more complex analyses towards the end of the course. If you are curious now, you can read more about `tibble`s on the old [R4DS](https://r4ds.had.co.nz/tibbles.html).
+
+
+
+## Data Wrangling with `dplyr`
+
+#### 📖 Required Reading: [R4DS Data Transform](https://r4ds.hadley.nz/data-transform.html)
+
+
+#### 📽 Optional Videos on `dplyr` verbs
+
+- [`filter()` -- 11 minutes](https://youtu.be/pPI-prhLYqI)
+- [`select()` -- 6 minutes](https://youtu.be/OInnmiccHt8)
+- [`mutate()` -- 9 minutes](https://youtu.be/QWyUnQ2EzPs)
+- [`arrange()` -- 7 minutes](https://youtu.be/4Qhdc81mpvo)
+- [`summarize()`-- 8 minutes](http://somup.com/crflYibWZw)
+- [`group_by()` -- 6 minutes](http://somup.com/crflqbbWFy)
+- [The pipe operator -- 8 minutes](http://somup.com/crflYfbWZD)
+- [Extending the pipe -- 3 minutes](http://somup.com/crflYmbWup)
+
+#### 💻 Optional Tutorial for more practice:  [Practice with dplyr](https://r-primers.andrewheiss.com/transform-data/03-deriving/)
+
+## Data Ethics
+
+#### 📖 Required Reading: [The Numbers Don't Speak for Themselves](https://data-feminism.mitpress.mit.edu/pub/czq9dfs5/release/3?readingCollection=0cd867ef)
+
+Some things to think about while you read to prepare for our class discussion:
+
+- What was the main take-away for you?
+- What points stood out to you?
+- What was something that suprised you?
+- Is there anything you didn't agree with?
+- What questions do you have after reading?
+
