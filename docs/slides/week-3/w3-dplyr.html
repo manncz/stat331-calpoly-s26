@@ -635,18 +635,15 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <section>
 <section id="filter" class="title-slide slide level1 center">
 <h1><code>filter()</code></h1>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/dplyr_filter.jpg"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-</div>
 <img data-src="https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/dplyr_filter.jpg" class="r-stretch quarto-figure-center"><p class="caption">(Allison Horst)</p></section>
 <section id="filter-1" class="slide level2">
 <h2><code>filter()</code></h2>
 <p>We <strong>filter</strong> to the rows (observations) we would like to <strong>keep</strong> in the data.</p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb15-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb14-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1153,9 +1150,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2><code>filter()</code></h2>
 <p>We can add <strong>multiple filters</strong> to our data, to get a more specific subset.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb16-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>,</span>
-<span id="cb16-3"><a></a>         type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb15-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>,</span>
+<span id="cb15-3"><a></a>         type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1263,9 +1260,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <section id="filter-3" class="slide level2">
 <h2><code>filter()</code>: <code>|</code></h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb17-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>,</span>
-<span id="cb17-3"><a></a>         type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb16-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span>,</span>
+<span id="cb16-3"><a></a>         type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1357,9 +1354,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb18-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span> <span class="sc">|</span></span>
-<span id="cb18-3"><a></a>           type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb17-2"><a></a>  <span class="fu">filter</span>(sugars <span class="sc">&lt;</span> <span class="dv">5</span> <span class="sc">|</span></span>
+<span id="cb17-3"><a></a>           type <span class="sc">==</span> <span class="st">"hot"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </div>
@@ -1369,8 +1366,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <p>Are you interested in observations with values in multiple levels?</p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb19-2"><a></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Cheerios"</span>, <span class="st">"Cinnamon Toast Crunch"</span>, <span class="st">"Raisin Bran"</span>, <span class="st">"Cracklin' Oat Bran"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a></a>  <span class="fu">filter</span>(name <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Cheerios"</span>, <span class="st">"Cinnamon Toast Crunch"</span>, <span class="st">"Raisin Bran"</span>, <span class="st">"Cracklin' Oat Bran"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -1502,8 +1499,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="fragment">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb20-2"><a></a>  <span class="fu">arrange</span>(sodium)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb19-2"><a></a>  <span class="fu">arrange</span>(sodium)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -2930,9 +2927,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="fragment">
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21" data-code-line-numbers="1-2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb21-2"><a></a>  <span class="fu">arrange</span>(sodium, sugars) <span class="sc">|&gt;</span></span>
-<span id="cb21-3"><a></a>  <span class="fu">select</span>(name<span class="sc">:</span>type, sodium, sugars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20" data-code-line-numbers="1-2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb20-2"><a></a>  <span class="fu">arrange</span>(sodium, sugars) <span class="sc">|&gt;</span></span>
+<span id="cb20-3"><a></a>  <span class="fu">select</span>(name<span class="sc">:</span>type, sodium, sugars)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -3499,14 +3496,14 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2><code>arrange()</code>: Descending Order</h2>
 <p>Default is ascending order…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb22-2"><a></a>  <span class="fu">arrange</span>(sodium)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb21-2"><a></a>  <span class="fu">arrange</span>(sodium)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <p>…but can add <code>desc()</code> to get descending order!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb23-2"><a></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sodium))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb22-2"><a></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sodium))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="arrange-related-functions" class="slide level2">
@@ -3521,8 +3518,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2><code>slice_max()</code></h2>
 <p>Selects the <code>n</code> rows with the maximum values of the specified variable.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb24-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb23-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -3647,8 +3644,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb25-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>, <span class="at">with_ties =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb24-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>, <span class="at">with_ties =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -3656,8 +3653,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2>Efficiency note</h2>
 <p>Use <code>slice_max()</code>/<code>slice_min()</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb26-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb25-2"><a></a>  <span class="fu">slice_max</span>(<span class="at">order_by =</span> sugars, <span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -3782,9 +3779,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 </div>
 <p>Not <code>arrange()</code> and <code>slice_head()</code>:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb27-2"><a></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sugars)) <span class="sc">|&gt;</span> </span>
-<span id="cb27-3"><a></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb26-2"><a></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(sugars)) <span class="sc">|&gt;</span> </span>
+<span id="cb26-3"><a></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -3882,8 +3879,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <p>We <strong>select</strong> which variables we would like to remain in the data.</p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb28-2"><a></a>  <span class="fu">select</span>(name, manuf, calories, cups)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb27-2"><a></a>  <span class="fu">select</span>(name, manuf, calories, cups)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -4372,8 +4369,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2><code>select()</code></h2>
 <p>You can use <code>:</code> to select a sequence of columns.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb29-2"><a></a>  <span class="fu">select</span>(name<span class="sc">:</span>calories)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb28-2"><a></a>  <span class="fu">select</span>(name<span class="sc">:</span>calories)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -4859,8 +4856,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="fragment">
 <p>You can <strong>remove</strong> columns from the dataset using a <code>-</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb30-2"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>rating)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb29-2"><a></a>  <span class="fu">select</span>(<span class="sc">-</span>rating)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -4868,9 +4865,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2><code>select()</code>: Reordering</h2>
 <p>You can reorder columns inside of <code>select()</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb31-2"><a></a>  <span class="fu">select</span>(name, rating, manuf, type, calories, cups, weight,</span>
-<span id="cb31-3"><a></a>         <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb30-2"><a></a>  <span class="fu">select</span>(name, rating, manuf, type, calories, cups, weight,</span>
+<span id="cb30-3"><a></a>         <span class="fu">everything</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -6310,8 +6307,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb32-2"><a></a>  <span class="fu">rename</span>(<span class="at">temp =</span> type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb31-2"><a></a>  <span class="fu">rename</span>(<span class="at">temp =</span> type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -7734,17 +7731,14 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <section>
 <section id="mutate" class="title-slide slide level1 center">
 <h1><code>mutate()</code></h1>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/dplyr_mutate.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-</div>
 <img data-src="https://github.com/allisonhorst/stats-illustrations/raw/main/rstats-artwork/dplyr_mutate.png" class="r-stretch quarto-figure-center"><p class="caption">(Allison Horst)</p></section>
 <section id="mutate-1" class="slide level2">
 <h2><code>mutate()</code></h2>
 <p>The dataset gets <strong>mutated</strong> to either <strong>include a new variable</strong>…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb34-2"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potass <span class="sc">/</span> cups)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb32-2"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potass <span class="sc">/</span> cups)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -9244,8 +9238,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="fragment">
 <p>…OR <strong>revise an existing variable</strong>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb35-2"><a></a>  <span class="fu">mutate</span>(<span class="at">shelf =</span> <span class="fu">as.factor</span>(shelf))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb33-2"><a></a>  <span class="fu">mutate</span>(<span class="at">shelf =</span> <span class="fu">as.factor</span>(shelf))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -9269,8 +9263,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <p>We can calculate <strong>summaries</strong> of variables in the data.</p>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb36-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb34-2"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  mean_fiber
 1   2.151948</code></pre>
@@ -9280,10 +9274,10 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="fragment">
 <p>Or <strong>multiple</strong> summaries at the same time.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb38-2"><a></a><span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber),</span>
-<span id="cb38-3"><a></a>          <span class="at">num_cereals =</span> <span class="fu">n</span>(),</span>
-<span id="cb38-4"><a></a>          <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb36-2"><a></a><span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber),</span>
+<span id="cb36-3"><a></a>          <span class="at">num_cereals =</span> <span class="fu">n</span>(),</span>
+<span id="cb36-4"><a></a>          <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>  mean_fiber num_cereals mean_sugar
 1   2.151948          77   6.922078</code></pre>
@@ -9322,10 +9316,7 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <section id="group_by" class="title-slide slide level1 center">
 <h1><code>group_by()</code></h1>
 <p><code>summarize()</code> is almost always paired with <code>group_by()</code>!</p>
-<div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/rstats-blanks/ungroup_blank.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-</div>
 <img data-src="https://raw.githubusercontent.com/allisonhorst/stats-illustrations/main/rstats-blanks/ungroup_blank.png" class="r-stretch quarto-figure-center"><p class="caption">(Allison Horst)</p></section>
 <section id="group_by-1" class="slide level2">
 <h2><code>group_by()</code></h2>
@@ -9335,8 +9326,8 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <li>The data gets grouped, but nothing happens externally if used on its own.</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb41-2"><a></a>  <span class="fu">group_by</span>(type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb38-2"><a></a>  <span class="fu">group_by</span>(type)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -10764,9 +10755,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <li><code>summarize</code> a variable (or multiple variables) <strong>within</strong> the groups</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb42-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb42-3"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb39-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb39-3"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -10821,9 +10812,9 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <li><code>mutate</code> a variable (or multiple variables) <strong>within</strong> the groups</li>
 </ol>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb43-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb43-3"><a></a>  <span class="fu">mutate</span>(<span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb40-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb40-3"><a></a>  <span class="fu">mutate</span>(<span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -12355,15 +12346,15 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2>Quick check</h2>
 <p>How many <strong>rows</strong> and <strong>columns</strong> will each of these data frames have?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb44-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb44-3"><a></a>  <span class="fu">mutate</span>(<span class="at">fiber_carb_rat =</span> <span class="fu">mean</span>(fiber <span class="sc">/</span> carbo))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb41-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb41-3"><a></a>  <span class="fu">mutate</span>(<span class="at">fiber_carb_rat =</span> <span class="fu">mean</span>(fiber <span class="sc">/</span> carbo))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb45-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb45-3"><a></a>  <span class="fu">summarize</span>(<span class="at">fiber_carb_rat =</span> <span class="fu">mean</span>(fiber <span class="sc">/</span> carbo))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb42-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb42-3"><a></a>  <span class="fu">summarize</span>(<span class="at">fiber_carb_rat =</span> <span class="fu">mean</span>(fiber <span class="sc">/</span> carbo))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><br></p>
 <div class="callout callout-tip callout-titled callout-style-default">
@@ -12399,11 +12390,11 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <section id="glue-it-all-together" class="slide level2">
 <h2>Glue it all together!</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb46-2"><a></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"cold"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb46-3"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potass <span class="sc">/</span> cups) <span class="sc">|&gt;</span> </span>
-<span id="cb46-4"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb46-5"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_potass_per_cup =</span> <span class="fu">mean</span>(potass_per_cup))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb43-2"><a></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"cold"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb43-3"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potass <span class="sc">/</span> cups) <span class="sc">|&gt;</span> </span>
+<span id="cb43-4"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb43-5"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_potass_per_cup =</span> <span class="fu">mean</span>(potass_per_cup))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -12451,11 +12442,11 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <h2>Save your changes!</h2>
 <p>If you need to use your manipulated data in another part of your code, make sure you assign your new dataset to a variable!</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a>cereal_summary <span class="ot">&lt;-</span> cereal <span class="sc">|&gt;</span> </span>
-<span id="cb47-2"><a></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"cold"</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb47-3"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potas <span class="sc">/</span> cups) <span class="sc">|&gt;</span> </span>
-<span id="cb47-4"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb47-5"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_potass_per_cup =</span> <span class="fu">mean</span>(potass_per_cup))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a></a>cereal_summary <span class="ot">&lt;-</span> cereal <span class="sc">|&gt;</span> </span>
+<span id="cb44-2"><a></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">"cold"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb44-3"><a></a>  <span class="fu">mutate</span>(<span class="at">potass_per_cup =</span> potas <span class="sc">/</span> cups) <span class="sc">|&gt;</span> </span>
+<span id="cb44-4"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
+<span id="cb44-5"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_potass_per_cup =</span> <span class="fu">mean</span>(potass_per_cup))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>If you don’t need that table again… no need to save a new object</p>
 </section>
@@ -12467,16 +12458,16 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
 <div class="tab-content">
 <div id="tabset-3-1">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a></a>cereal <span class="sc">|&gt;</span> <span class="fu">group_by</span>(type) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber), <span class="at">num_cereals =</span> <span class="fu">n</span>(), <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>cereal <span class="sc">|&gt;</span> <span class="fu">group_by</span>(type) <span class="sc">|&gt;</span> <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber), <span class="at">num_cereals =</span> <span class="fu">n</span>(), <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div id="tabset-3-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb49-2"><a></a>  <span class="fu">group_by</span>(type) <span class="sc">|&gt;</span> </span>
-<span id="cb49-3"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber), </span>
-<span id="cb49-4"><a></a>            <span class="at">num_cereals =</span> <span class="fu">n</span>(),</span>
-<span id="cb49-5"><a></a>            <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
+<span id="cb46-2"><a></a>  <span class="fu">group_by</span>(type) <span class="sc">|&gt;</span> </span>
+<span id="cb46-3"><a></a>  <span class="fu">summarise</span>(<span class="at">mean_fiber =</span> <span class="fu">mean</span>(fiber), </span>
+<span id="cb46-4"><a></a>            <span class="at">num_cereals =</span> <span class="fu">n</span>(),</span>
+<span id="cb46-5"><a></a>            <span class="at">mean_sugar =</span> <span class="fu">mean</span>(sugars))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -12734,6 +12725,44 @@ You can also pipe manipulated data or summaries directly into your `ggplot2` cod
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
