@@ -40,6 +40,8 @@ ggplot(data = mpg)
 
 a. Why does it make sense that the above code produces just a blank plot?
 
+*The ggplot() function with just the data argument initiates a plot, but there is nothing else mapped to the aesthetics of the plot like the axes.*
+
 
 ```{r}
 ggplot(data = mpg, 
@@ -48,14 +50,32 @@ ggplot(data = mpg,
 
 b. What kind of variable is `class`? What about `hwy`? What kind of plot (i.e.) geometries could be appropriate here?
 
+*`class` is categorical and `hwy` is quantitative (continuous). The most typical plot would be side-by-side (or stacked) boxplots.*
 
 c. Fill in the code below to add appropriate layers of geometries:
 
 ```{r}
 ggplot(data = mpg, 
-       aes(x = class, y = hwy)) + 
-  geom_boxplot() +
-  geom_jitter()
+       aes(x = class, y = hwy)) +
+  geom_boxplot() # add boxplot geometry
+```
+
+*In the slides, we also added `geom_jitter()` to include the raw data points on the plot. This is typically considered good practice since boxplots only show the 5-number summary and can hide things!* 
+
+```{r}
+ggplot(data = mpg, 
+       aes(x = class, y = hwy)) +
+  geom_jitter() + # add jittered raw data points
+  geom_boxplot() # add boxplot geometry
+```
+
+*To put the points on top of the boxplots, switch the order of the layers*:
+
+```{r}
+ggplot(data = mpg, 
+       aes(x = class, y = hwy)) +
+  geom_boxplot() + # add boxplot geometry
+  geom_jitter() # add jittered raw data points
 ```
 
 
@@ -66,17 +86,27 @@ Using the `sm_tx` data, make a plot of median house price over time, distinguish
 
 a. Sketch what this plot could look like. 
 
+*(see slides)*
+
 b. What aesthetics and geometrie(s) will you use? Which variables map to each aesthetic?
+
+*I think it makes sense to use a line plot (`geom_line()`) to track the median house price over time. I will map the `date` variable to the `x` aesthetic, `median` to `y`, and `city` to `color`.*
 
 
 ```{r}
-# plot code
+#| label: house-price-plot
+
+ggplot(data = sm_tx,
+       aes(x = date,
+           y = med,
+           color = city)) +
+  geom_line()
 ```
 
 
 ## Aesthetics
 
-a. Below is an example of ______ aesthetics:
+a. Below is an example of *global* aesthetics:
 
 ```{r}
 ggplot(data = sm_tx, 
@@ -87,7 +117,7 @@ ggplot(data = sm_tx,
 ```
 
 
-b. Below is an example of ______ aesthetics:
+b. Below is an example of *local* aesthetics:
 
 ```{r}
 ggplot(data = sm_tx) +
@@ -97,6 +127,8 @@ ggplot(data = sm_tx) +
 ```
 
 c. Why do the two chunks above result in the same plot?
+
+*The same mapped aeshtetics are getting passed to `geom_line()`.*
 
 
 ```{r}

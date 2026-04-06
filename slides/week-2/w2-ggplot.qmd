@@ -321,6 +321,8 @@ Make a plot of [ median house price ]{style="color:teal"} over [ time ]{style="c
 
 ### Plan
 
+![](images/plot-plan.png){width=60%}
+
 ### ggplot
 
 ```{r}
@@ -879,8 +881,7 @@ During your collaboration, your group will alternate between three roles:
 
 - When you have completed the puzzle, you will submit the name of the poem on Canvas.
   - You can ask me if it is correct before you submit
-- The person who was the last to be the computer will submit your .qmd to Canvas for the whole group.
-
+- You do not need to submit your code, but you should check your code against the solutions when they are posted!
 . . .
 
 ::: callout-tip
