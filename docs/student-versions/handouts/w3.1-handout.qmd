@@ -1,0 +1,174 @@
+---
+title: "STAT 331 Week 3 Day 1 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+library(liver) # cereal data is in this package
+```
+
+## Cereal Data
+
+This cereal dataset is part of the `liver` package.
+
+```{r}
+#| label: cereal-data
+
+data(cereal)
+head(cereal)
+```
+
+## Data wrangling
+
+a. For the following, **sketch** what the output would look like and describe in words steps you would take from `cereal` data to get the output.
+
+1. What is the ratio of fiber to sugars in each cereal?
+
+2. Create a new dataset that only has Nabisco cereals and displays the protein, fat, and sodium in each.
+
+3. Create a table that shows, for each manufacturer the average and standard deviation of the grams of sugar in their cereals, along with how many cereals are in the data for each manufacturer. Order the table from most sugar (on average) to least.
+
+## `dplyr` verbs
+
+b. Now go back to whaht you wrote above and match the `dplyr` verbs to your suggested steps.
+
+
+## `filter()`
+
+a.  What symbol do you use to join two logical statements with an "or"?
+
+b.  What symbol do you use to join two logical statements with an "and"?
+
+c. What does the symbol `%in%` do?
+
+
+## `arrange()`
+
+a.  By default what order does the `arrange()` function put values in?
+
+b.  What can you add **inside** the `arrange()` function to change the default order?
+
+
+c. Sort the cereals by manufacturer and from the largest to the smallest amount of fiber (within each manufacturer).
+
+```{r}
+#| label: arrange-practice
+
+
+```
+
+d. Find the cereal with the largest amount of fiber. Output just the row for that cereal.
+
+```{r}
+#| label: highest-fiber
+
+```
+
+e.  What does the `n` argument of `slice_max()` and `slice_min()` do?
+
+## `select()`
+
+a. What symbol do you use to **remove** a column from the dataset?
+
+b. What columns does `everything()` match to?
+
+c. Create a new cereal dataset that only has the name of the cereal and any numeric columns.
+
+```{r}
+#| label: numeric-cereal
+
+
+```
+
+
+d. Create a new cereal dataset that only has the name of the cereal and columns with names that start with the letter "c".
+
+```{r}
+#| label: c-cereal
+
+
+```
+
+e. In the slides, we change the name of the variable `type` to `temp` using the `rename()` function. Just to see how it is more of a pain and to practice, rename the variable `type` to `temp` using `select()`, still keeping all of the variables and in the same order.
+
+```{r}
+#| label: select-rename
+
+
+
+```
+
+Note: If you want to rename variables and then only select some variables, use `select()` like below:
+
+```{r}
+cereal |> 
+  select(name,
+         temp = type,
+         cons_rating = rating)
+```
+
+## `mutate()`
+
+a. How do you create a new variable using `mutate()`? How do you revise an existing variable?
+
+
+## `summarize()`
+
+a. When you use `summarize()` with a dataframe with n rows, how many rows will the output be? How many columns? 
+
+b.  What are common summary functions you might want to use?
+
+## grouping
+
+a. How many rows and columns will each of these data frames have? (Try to figure this out before running the code)
+
+```{r}
+cereal |> 
+  group_by(manuf) |> 
+  mutate(fiber_carb_rat = mean(fiber / carbo))
+```
+
+
+```{r}
+cereal |> 
+  group_by(manuf) |> 
+  summarize(fiber_carb_rat = mean(fiber / carbo))
+```
+
+b. What happens when you group by **two** variables?
+
+
+## practice
+
+a. What is the ratio of fiber to sugars in each cereal?
+
+```{r}
+#| label: sugar-ratio
+
+
+```
+
+
+b. Create a new dataset that only has Nabisco cereals and displays the protein, fat, and sodium in each.
+
+```{r}
+#| label: nabisco
+
+
+```
+
+c. Create a table that shows, for each manufacturer the average and standard deviation of the grams of sugar in their cereals, along with how many cereals are in the data for each manufacturer. Order the table from most sugar (on average) to least.
+
+```{r}
+#| label: sugar-table
+
+
+
+```
+

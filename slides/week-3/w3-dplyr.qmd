@@ -150,7 +150,7 @@ summary(cereal)
 
 ## Before jumping in to code...
 
-**In groups**, write a game plan or describe in words steps you would take from `cereal` data to get the output for each of the following:
+**In groups**, sketch the output and describe in words steps you would take from `cereal` data to get the output for each of the following:
 
 1. What is the ratio of fiber to sugars in each cereal?
 
