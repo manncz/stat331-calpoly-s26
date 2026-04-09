@@ -64,7 +64,7 @@ cereal |>
 
 ## `pull()`
 
-What is the mean potassium for cold cereals?
+What is the mean potassium for cold cereals? 🧩
 
 . . .
 
@@ -186,7 +186,7 @@ cereal |>
                                  sugars < 2   ~ "low",
                                  sugars < 5   ~ "medium",
                                  sugars < 10  ~ "high",
-                                 TRUE         ~ "very high")) |> 
+                                 .default = "very high")) |> 
   select(name, sugars, sugar_level)
 ```
 
@@ -205,7 +205,7 @@ cereal |>
   kableExtra::kable_styling(font_size = 30)
 ```
 
-## `group_by()` + `slice()`
+## `group_by()` + `slice()` 🧩
 
 For each `manuf`, find the cereal with the most `fiber`.
 
@@ -347,7 +347,7 @@ Use **lambda functions**: `~ <FUN_NAME>(.x, <ARGS>)`
 
 . . .
 
-For each `type` of cereal, calculate the means of all numeric variables.
+For each `type` of cereal, calculate the means of all numeric variables. 🧩
 
 . . .
 
@@ -434,7 +434,7 @@ colleges_clean <- colleges |>
   filter(CONTROL == 1 | CONTROL == 2)
 ```
 
-Remember, you got warnings in PA3 when converting some columns to numeric? If you look at the original data, you can see this is because missing values were indicated with the string `"NULL"`.
+Remember, you got warnings in PA3 when converting some columns to numeric? If you look at the original data, you can see this is because missing values were indicated with the string `"NULL"`. 🧩
 
 ```{r}
 colleges_clean |> 
@@ -734,6 +734,8 @@ cereal_clean <- cereal |>
 ## To do...
 
 -   **Lab 3: Teacher Evaluations**
-    -   Due Monday, 4/21 at 11:59pm
--   **Read Chapter 4: Data Joins and Transformations**
-    -   **Check-in 4.1 + 4.2** due Tuesday 4/22 before class
+    -   Due Sunday, 4/19 at 11:59pm
+-   **Required [Reading](../../reading/week-3.2.qmd)**
+-   Review all material from this week for the **group quiz on Monday**!
+    - Make sure that you can answer all of the questions in this week's notes!
+    - Group quiz at the **beginning** of class
