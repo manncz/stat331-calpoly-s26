@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/manncz/stat-331-s26/slides/week-3/w3-more-dplyr-ethics.html</loc>
-    <lastmod>2026-04-03T23:28:48.477Z</lastmod>
+    <lastmod>2026-04-07T22:35:14.170Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/manncz/stat-331-s26/slides/week-2/w2-import-graphics.html</loc>
@@ -83,5 +83,9 @@
   <url>
     <loc>https://github.com/manncz/stat-331-s26/practice-activities/pa3.html</loc>
     <lastmod>2026-04-07T16:42:14.367Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/manncz/stat-331-s26/labs/lab3/lab3-dplyr.html</loc>
+    <lastmod>2026-04-09T06:19:39.768Z</lastmod>
   </url>
 </urlset>

@@ -1,0 +1,118 @@
+---
+title: "STAT 331 Week 3 Day 2 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+library(liver)
+```
+
+
+```{r}
+#| label: data
+
+data(cereal)
+
+colleges <- read_csv("https://www.dropbox.com/s/bt5hvctdevhbq6j/colleges.csv?dl=1")
+```
+
+
+## `pull()`
+
+a. What is the mean potassium for cold cereals? Use the `mean()` function and indexing (in base R) to find it.
+
+```{r}
+#| label: mean-potass-base
+
+```
+
+b. Now try to calculate this with a `dplyr` pipline where the output is just one number.
+
+```{r}
+#| label: mean-potass-dplyr
+
+```
+
+
+b. What does the function `pull()` return?
+
+
+c. When / why would you use `pull()` rather than `$`?
+
+
+## `count()`
+
+a. What doe the `count()` function do in dplyr?
+
+## `if_else()` and `case_when()`
+
+a. Which of `if_else()` or `case_when()` creates a binary categorical variable? Which can create a categorical variable with more than two levels?
+
+b. What is the general syntax of `case_when()`?
+
+
+c. How do you provide a value for the "rest" of the rows that do not meet the criterias you already included in `case_when()`?
+
+
+d. How are missing values treated in `case_when()`?
+
+## `group_by()` + `slice()`
+
+a. What happens when you use `group_by()` before `slice_max()`? What output will you get?
+
+b. For each type of cereal, find the manufacturer(s) with the most cereals in the data. (Hint, you will have to use another function we learned today as well).
+
+```{r}
+#| label: most-manuf
+
+
+```
+
+## `across()`
+
+a.  How do columns need to be input into the `across()` function?
+
+b. How do functions need to be input into the `across()` function?
+
+c. What does the `.x` inside the function represent?
+
+d. What does `across()` do by default to column names?
+
+e. Edit the code below so that all of the summarized columns have the names `mean_<colname>` where `<colname>` is the original name of the summarized column. Hint: check out the documentation for `across()`.
+
+```{r}
+cereal |> 
+  group_by(type) |> 
+  summarise(across(.cols = where(is.numeric),
+                   .fns = ~ mean(.x, na.rm = T)))
+```
+
+f. What dplyr verbs can `across()` be combined with?
+
+## `across()` helpers
+
+
+
+Remember, you got warnings in PA3 when converting some columns to numeric? If you look at the original data, you can see this is because missing values were indicated with the string `"NULL"`.
+
+We could drop these rows before converting the columns to numeric if desired, using `if_any()`:
+
+```{r}
+#| echo: true
+
+colleges_clean <- colleges |> 
+  filter(
+    !if_any(.cols = ADM_RATE:TUITIONFEE_OUT, 
+            .fns = ~ .x == "NULL")
+    ) 
+```
+
+a. How would you describe what `~ .x == "NULL"` is doing?
+
+b. What does the `!` in front of the `if_any()` do?

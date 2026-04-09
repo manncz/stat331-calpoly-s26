@@ -362,11 +362,13 @@
 <section id="pull" class="slide level2">
 <h2><code>pull()</code></h2>
 <p>What is the mean potassium for cold cereals?</p>
+<div class="fragment">
 <ul>
 <li>You can’t use the <code>$</code> operator in a pipeline</li>
 <li><code>pull()</code> to the rescue!</li>
 <li><code>pull()</code> extracts a data frame column as a <em>vector</em></li>
 </ul>
+</div>
 <div class="fragment">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
@@ -441,8 +443,7 @@
 <div class="fragment">
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a>cereal <span class="sc">|&gt;</span> </span>
-<span id="cb5-2"><a></a>  <span class="fu">group_by</span>(manuf) <span class="sc">|&gt;</span> </span>
-<span id="cb5-3"><a></a>  <span class="fu">count</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-2"><a></a>  <span class="fu">count</span>(manuf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">

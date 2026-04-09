@@ -66,6 +66,8 @@ cereal |>
 
 What is the mean potassium for cold cereals?
 
+. . .
+
 - You can't use the `$` operator in a pipeline
 - `pull()` to the rescue!
 - `pull()` extracts a data frame column as a *vector* 
@@ -117,8 +119,7 @@ How many cereals does each `manuf` have in this dataset?
 #| echo: true
 #| eval: false
 cereal |> 
-  group_by(manuf) |> 
-  count()
+  count(manuf)
 ```
 
 ```{r}
@@ -197,7 +198,7 @@ cereal |>
                                  sugars <= 2  ~ "low",
                                  sugars <= 5  ~ "medium",
                                  sugars <= 10 ~ "high",
-                                 TRUE        ~ "very high")) |> 
+                                 .default = "very high")) |> 
   select(name, sugars, sugar_level) |> 
   knitr::kable() |> 
   kableExtra::scroll_box(height = "250px") |> 
