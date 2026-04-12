@@ -1086,6 +1086,61 @@ Today you will use the `dplyr` package to clean some data and then use that clea
 
 ![](https://events.calpoly.edu/sites/default/files/styles/width_2048px/public/2025-01/aerial-campus.png?itok=k7k7Dcev)
 
+
+
+## Collaborative Protocol
+
+::: {.small}
+During your collaboration, your group will alternate between three roles: 
+:::
+
+
+::: panel-tabset
+
+### Project Manager
+-   Reads out the prompt and ensures the group understands what is being asked. 
+-   Manages resources (e.g., cheatsheets, textbook). 
+-   Answers Coder's questions about syntax based on the resources.
+-   Works with the group to debug the code.
+
+
+### Computer
+
+-   Encourages the Coder to vocalize and explain their thinking.
+-   Types the code specified by the Coder into the Quarto document.
+-   Runs the code provided by the Coder. 
+-   Works with group to debug the code.
+-   Evaluates the output against the question prompt. 
+
+
+
+### Coder
+
+-   Confirms they understand what the prompt is asking.
+-   Talks with the group about their ideas. 
+-   Explains their thinking.
+-   Directs the Computer what to type. 
+-   Works with the group to debug the code. 
+
+:::
+
+
+## Submission
+
+- When you have completed the puzzle, you will submit the college on Canvas.
+  - You can ask me if it is correct before you submit
+- You do not need to submit your code, but you should check your code against the solutions when they are posted!
+. . .
+
+::: callout-tip
+
+## Starting Roles Today
+
+The person whose birthday is closest to today starts as the project manager, second as the computer.
+
+:::
+
+
 ## To do...
 
 + **PA 3: Identify the Mystery College**
