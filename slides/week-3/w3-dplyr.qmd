@@ -31,7 +31,7 @@ Today we will...
 :::callout-tip
 ## Follow along
 
-Remember to download, save, and open up the [handout](../../student-versions/handouts/w2.1-handout.qmd) for today!
+Remember to download, save, and open up the [handout](../../student-versions/handouts/w3.1-handout.qmd) for today!
 :::
 
 
