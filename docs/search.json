@@ -788,7 +788,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -2301,5 +2301,390 @@
     "title": "Prepare County Data Lab 4",
     "section": "Save data",
     "text": "Save data\n\nwrite_csv(tax_dat, \n          file = \"ca_tax_revenue.csv\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#tuesday-april-22",
+    "href": "slides/week-4/w4-joins-pivots.html#tuesday-april-22",
+    "title": "Data Joins + Pivots",
+    "section": "",
+    "text": "Today we will…\n\nBig Picture\nNew Material\n\nJoining data with dplyr\nPivoting data with tidyr\n\nPA 4: Military Spending\n\n\n\n\n\n\n\nFollow along\n\n\n\nRemember to download, save, and open up the handout for this week! This week you need to download and save some data as well."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#comments-from-week-3",
+    "href": "slides/week-4/w4-joins-pivots.html#comments-from-week-3",
+    "title": "Data Joins + Pivots",
+    "section": "Comments from Week 3",
+    "text": "Comments from Week 3\n\nVery nice work overall!!\nWork on the lab early!\n\nGet an idea of how long it may take and what any big challenges are\n\nBe thoughtful about use of color in plots\nOnly save variables / intermediate objects when needed\nAvoid long lines of code"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#data-science-process",
+    "href": "slides/week-4/w4-joins-pivots.html#data-science-process",
+    "title": "Data Joins + Pivots",
+    "section": "Data Science Process",
+    "text": "Data Science Process\n\nknitr::include_graphics(\"images/data-science-workflow.png\")\n\n\n\n\n\n\n\n\nAdapted from r4ds"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#we-have-covered",
+    "href": "slides/week-4/w4-joins-pivots.html#we-have-covered",
+    "title": "Data Joins + Pivots",
+    "section": "We have covered…",
+    "text": "We have covered…\n\nknitr::include_graphics(\"images/data-science-workflow-sofar.png\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#today",
+    "href": "slides/week-4/w4-joins-pivots.html#today",
+    "title": "Data Joins + Pivots",
+    "section": "Today",
+    "text": "Today\n\nknitr::include_graphics(\"images/data-science-workflow-today.png\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#getting-data",
+    "href": "slides/week-4/w4-joins-pivots.html#getting-data",
+    "title": "Data Joins + Pivots",
+    "section": "Getting Data",
+    "text": "Getting Data\n\nSo far, we have simply needed to import one nice rectangular data set in a typical file type\nReal life often gets a bit more complicated!!"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#motivating-real-example1",
+    "href": "slides/week-4/w4-joins-pivots.html#motivating-real-example1",
+    "title": "Data Joins + Pivots",
+    "section": "Motivating (Real) Example1",
+    "text": "Motivating (Real) Example1\n\n\nTexas Education Data (AEIS): K-12 student performance data provided by the Texas Education Agency\nProvides A LOT of information … in many separate files:\n\nby year\nfor State, Regions, Districts, or Schools\nfor different sets of variables\n\n\n\n. . .\n🧐 need to get this #%$ together before we can analyze it"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#relational-data",
+    "href": "slides/week-4/w4-joins-pivots.html#relational-data",
+    "title": "Data Joins + Pivots",
+    "section": "Relational Data",
+    "text": "Relational Data\n\n\nMultiple, interconnected tables of data are called relational.\nIndividual datsets may not provide exactly what we need - but we can use the relation between datasets to get the information we want.\n\n\n. . .\n\n\n\nIMDb movie relational data"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#example---imdb-movie-data",
+    "href": "slides/week-4/w4-joins-pivots.html#example---imdb-movie-data",
+    "title": "Data Joins + Pivots",
+    "section": "Example - IMDb Movie Data",
+    "text": "Example - IMDb Movie Data\n\n\n\n\n\n\nDiscussion\n\n\n\nWhat if we want to know which actor has worked with the most directors in the dataset?\nWhat analytical dataset would we need to answer this question? What are the rows, and variables needed?"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#example---imdb-movie-data-1",
+    "href": "slides/week-4/w4-joins-pivots.html#example---imdb-movie-data-1",
+    "title": "Data Joins + Pivots",
+    "section": "Example - IMDb Movie Data",
+    "text": "Example - IMDb Movie Data\n\n\n\n\n\n\nDiscussion\n\n\n\nWhat if we want to know which actor has worked with the most directors in the dataset?\nWhat analytical dataset would we need to answer this question? What are the rows, and variables needed?\n\n\n. . .\n\n💡 In order to answer our question, we need to combine some of the individual datasets into one big dataset\nJoins!"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#data-joins-1",
+    "href": "slides/week-4/w4-joins-pivots.html#data-joins-1",
+    "title": "Data Joins + Pivots",
+    "section": "Data Joins",
+    "text": "Data Joins\nWe can combine (join) data tables based on their relations.\n\n\nMutating joins\nAdd variables from a new dataframe to observations in an existing dataframe.\nfull_join(), left_join(), right_join(), inner_join()\n\nFiltering Joins\nFilter observations based on values in new dataframe.\nsemi_join(), anti_join()"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#keys",
+    "href": "slides/week-4/w4-joins-pivots.html#keys",
+    "title": "Data Joins + Pivots",
+    "section": "Keys",
+    "text": "Keys\nSome combination of variables (should) uniquely identify an observation in a data set.\n\nTo combine (join) two datasets, a key needs to be present in both.\n\n. . ."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#general-structure-of-a-join",
+    "href": "slides/week-4/w4-joins-pivots.html#general-structure-of-a-join",
+    "title": "Data Joins + Pivots",
+    "section": "General Structure of a Join",
+    "text": "General Structure of a Join\n\n\n\n\nChoose a left and a right dataset\nAdd or remove rows based on the type of join and the structure of the left vs. right data\nAdd columns (or not) based on the type of join and the and the structure of the left vs. right data"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#inner_join",
+    "href": "slides/week-4/w4-joins-pivots.html#inner_join",
+    "title": "Data Joins + Pivots",
+    "section": "inner_join()",
+    "text": "inner_join()\nKeeps observations when their keys are present in both datasets.\n\n\n\n\n\n\n\n. . .\n\n\n\n\n\n\nDiscussion\n\n\n\nWhen would you want to use inner_join()?"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#inner_join-imdb-example",
+    "href": "slides/week-4/w4-joins-pivots.html#inner_join-imdb-example",
+    "title": "Data Joins + Pivots",
+    "section": "inner_join(): IMDb Example",
+    "text": "inner_join(): IMDb Example\n\ndirectors_genres_subset &lt;- directors_genres |&gt;\n  filter(director_id %in% c(429, 2931, 11652, 14927, 15092)) |&gt; \n  group_by(director_id) |&gt; \n  slice_max(order_by = prob, n = 2, with_ties = F)\n\nmovies_directors_subset &lt;- movies_directors |&gt; \n  filter(director_id %in% c(429, 9247, 11652, 14927, 15092))\n\ndirectors_subset &lt;- directors |&gt; \n  filter(id %in% c(429, 9247, 11652, 14927, 15092))\n\n\n\n\ndirectors_genres\n\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n429\nAdventure\n0.750000\n\n\n429\nFantasy\n0.750000\n\n\n2931\nDrama\n0.714286\n\n\n2931\nAction\n0.428571\n\n\n11652\nSci-Fi\n0.500000\n\n\n11652\nAction\n0.500000\n\n\n14927\nAnimation\n1.000000\n\n\n14927\nFamily\n1.000000\n\n\n15092\nComedy\n0.545455\n\n\n15092\nCrime\n0.545455\n\n\n\n\n\n\n\n\n\nmovies_directors\n\n\n\n\n\n\n\ndirector_id\nmovie_id\n\n\n\n\n429\n300229\n\n\n9247\n124110\n\n\n11652\n10920\n\n\n11652\n333856\n\n\n14927\n192017\n\n\n15092\n109093\n\n\n15092\n237431\n\n\n\n\n\n\n\n\n\n\nID: 429, 2931, 11652, 14927, 15092       ID: 429, 9247, 11652, 14927, 15092\n\n. . .\n\ninner_join(directors_genres, movies_directors, \n           by = \"director_id\")\n\n\n\nJoining with `by = join_by(director_id)`\n\n\nWarning in inner_join(directors_genres_subset, movies_directors_subset): Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 5 of `x` matches multiple rows in `y`.\nℹ Row 1 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning.\n\n\n\n\n\n\ndirector_id\ngenre\nprob\nmovie_id\n\n\n\n\n429\nAdventure\n0.750000\n300229\n\n\n429\nFantasy\n0.750000\n300229\n\n\n11652\nSci-Fi\n0.500000\n10920\n\n\n11652\nSci-Fi\n0.500000\n333856\n\n\n11652\nAction\n0.500000\n10920\n\n\n11652\nAction\n0.500000\n333856\n\n\n14927\nAnimation\n1.000000\n192017\n\n\n14927\nFamily\n1.000000\n192017\n\n\n15092\nComedy\n0.545455\n109093\n\n\n15092\nComedy\n0.545455\n237431\n\n\n15092\nCrime\n0.545455\n109093\n\n\n15092\nCrime\n0.545455\n237431\n\n\n\n\n\n\n\n\nID: 429, 2931, 9247, 11652, 14927, 15092"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#inner_join-imdb-example-1",
+    "href": "slides/week-4/w4-joins-pivots.html#inner_join-imdb-example-1",
+    "title": "Data Joins + Pivots",
+    "section": "inner_join(): IMDb Example",
+    "text": "inner_join(): IMDb Example\nWhat if our key does not have the same name?\n\n\n\ndirectors_genres\n\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n429\nAdventure\n0.750000\n\n\n429\nFantasy\n0.750000\n\n\n2931\nDrama\n0.714286\n\n\n2931\nAction\n0.428571\n\n\n11652\nSci-Fi\n0.500000\n\n\n11652\nAction\n0.500000\n\n\n14927\nAnimation\n1.000000\n\n\n14927\nFamily\n1.000000\n\n\n15092\nComedy\n0.545455\n\n\n15092\nCrime\n0.545455\n\n\n\n\n\n\n\n\n\ndirectors\n\n\n\n\n\n\n\nid\nfirst_name\nlast_name\n\n\n\n\n429\nAndrew\nAdamson\n\n\n9247\nZach\nBraff\n\n\n11652\nJames (I)\nCameron\n\n\n14927\nRon\nClements\n\n\n15092\nEthan\nCoen\n\n\n\n\n\n\n\n\n\n. . .\n\ninner_join(directors_genres, \n           directors, \n           by = join_by(director_id == id))\n\n\n\n\n\n\n\nid\nfirst_name\nlast_name\ngenre\nprob\n\n\n\n\n429\nAndrew\nAdamson\nAdventure\n0.750000\n\n\n429\nAndrew\nAdamson\nFantasy\n0.750000\n\n\n11652\nJames (I)\nCameron\nSci-Fi\n0.500000\n\n\n11652\nJames (I)\nCameron\nAction\n0.500000\n\n\n14927\nRon\nClements\nAnimation\n1.000000\n\n\n14927\nRon\nClements\nFamily\n1.000000\n\n\n15092\nEthan\nCoen\nComedy\n0.545455\n\n\n15092\nEthan\nCoen\nCrime\n0.545455\n\n\n\n\n\n\n\n Join by different variables on dataX and dataY: join_by(a == b) will match dataX$a to dataY$b."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#piping-joins",
+    "href": "slides/week-4/w4-joins-pivots.html#piping-joins",
+    "title": "Data Joins + Pivots",
+    "section": "Piping Joins",
+    "text": "Piping Joins\nRemember: the dataset you pipe in becomes the first argument of the function you are piping into!\n\nIf you are using a pipe,\n\nthe piped in data is the left dataset\nspecify the right dataset inside the join function.\n\n\n. . .\n\ninner_join(directors_genres, movies_directors)\n\n…is equivalent to…\n\ndirectors_genres |&gt; \n  inner_join(movies_directors, by = \"director_id\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#more-mutating-joins",
+    "href": "slides/week-4/w4-joins-pivots.html#more-mutating-joins",
+    "title": "Data Joins + Pivots",
+    "section": "More Mutating Joins",
+    "text": "More Mutating Joins\n\nleft_join() – keep only (and all) observations present in the left data set\nright_join() – keep only (and all) observations present in the right data set\nfull_join() – keep only (and all) observations present in both data sets"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#why-use-a-certain-mutating-join",
+    "href": "slides/week-4/w4-joins-pivots.html#why-use-a-certain-mutating-join",
+    "title": "Data Joins + Pivots",
+    "section": "Why Use a Certain Mutating Join?",
+    "text": "Why Use a Certain Mutating Join?\n\n\n\ninner_join()\n\nYou want all of the columns from both left and right data and only to include the observations that have information in both\n\nleft_join()\n\nThe left dataset is your “main” data and you just want to add information (columns) from the right dataset\n\nright_join()\n\nThe right data is your “main data” and you just want to add columns from the left dataset\n\nfull_join()\n\nYou want all of the columns from both left and right data for all of the observations possible"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#which-join",
+    "href": "slides/week-4/w4-joins-pivots.html#which-join",
+    "title": "Data Joins + Pivots",
+    "section": "Which Join?",
+    "text": "Which Join?\n\n\n\n\n\n\nDiscussion\n\n\n\nHow many movies are there in the data for each director (by name), including if any directors don’t have any movies in the data? Which join should I use??\n\n\ndirectors |&gt; \n  ??_join(movies_directors, \n          by = join_by(\"id\" == \"director_id\"))\n\n\n\n\ndirectors |&gt; \n  slice_head(n = 5)\n\n\n\n\n\n\n\nid\nfirst_name\nlast_name\n\n\n\n\n429\nAndrew\nAdamson\n\n\n2931\nDarren\nAronofsky\n\n\n9247\nZach\nBraff\n\n\n11652\nJames (I)\nCameron\n\n\n14927\nRon\nClements\n\n\n\n\n\n\n\n\n\nmovies_directors |&gt; \n  slice_head(n = 5)\n\n\n\n\n\n\n\ndirector_id\nmovie_id\n\n\n\n\n429\n300229\n\n\n2931\n254943\n\n\n9247\n124110\n\n\n11652\n10920\n\n\n11652\n333856"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#which-join-1",
+    "href": "slides/week-4/w4-joins-pivots.html#which-join-1",
+    "title": "Data Joins + Pivots",
+    "section": "Which Join?",
+    "text": "Which Join?\n\n\n\n\n\n\nDiscussion\n\n\n\nWhat is the complete set movies and actors included in the data? Which join should I use??\n\n\nroles |&gt; \n  ??_join(actors, \n          by = join_by(\"actor_id\" == \"id\"))\n\n\n\n\nroles |&gt; \n  slice_head(n = 5)\n\n\n\n\n\n\n\nactor_id\nmovie_id\nrole\n\n\n\n\n933\n333856\nLewis Bodine\n\n\n2547\n300229\nDuloc Mascot\n\n\n2700\n306032\nTyrone\n\n\n2898\n333856\nSlovakian three-year-old boy\n\n\n2925\n192017\nAdditional Voices\n\n\n\n\n\n\n\n\n\nactors |&gt; \n  slice_head(n = 5)\n\n\n\n\n\n\n\nid\nfirst_name\nlast_name\ngender\nfilm_count\n\n\n\n\n933\nLewis\nAbernathy\nM\n1\n\n\n2547\nAndrew\nAdamson\nM\n1\n\n\n2700\nWilliam\nAddy\nM\n1\n\n\n2898\nSeth (I)\nAdkins\nM\n1\n\n\n2925\nCharles (I)\nAdler\nM\n1"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#filtering-joins-semi_join",
+    "href": "slides/week-4/w4-joins-pivots.html#filtering-joins-semi_join",
+    "title": "Data Joins + Pivots",
+    "section": "Filtering Joins: semi_join()",
+    "text": "Filtering Joins: semi_join()\nKeeps observations when their keys are present in both datasets, but only keeps variables from the left dataset.\n\n\n\n\n\n\n→"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#imdb-data-example",
+    "href": "slides/week-4/w4-joins-pivots.html#imdb-data-example",
+    "title": "Data Joins + Pivots",
+    "section": "IMDb Data Example",
+    "text": "IMDb Data Example\n\n\n\ndirectors_genres |&gt; \n  distinct(director_id)\n\n\n\n\n\n\n\ndirector_id\n\n\n\n\n429\n\n\n2931\n\n\n11652\n\n\n14927\n\n\n15092\n\n\n\n\n\n\n\n\n\nmovies_directors |&gt; \n  distinct(director_id)\n\n\n\n\n\n\n\ndirector_id\n\n\n\n\n429\n\n\n9247\n\n\n11652\n\n\n14927\n\n\n15092"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#filtering-joins-semi_join-1",
+    "href": "slides/week-4/w4-joins-pivots.html#filtering-joins-semi_join-1",
+    "title": "Data Joins + Pivots",
+    "section": "Filtering Joins: semi_join()",
+    "text": "Filtering Joins: semi_join()\n\nsemi_join()Connection to filter()\n\n\n\ndirectors_genres |&gt; \n  semi_join(movies_directors)\n\n\n\nJoining with `by = join_by(director_id)`\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n429\nAdventure\n0.750000\n\n\n429\nFantasy\n0.750000\n\n\n11652\nSci-Fi\n0.500000\n\n\n11652\nAction\n0.500000\n\n\n14927\nAnimation\n1.000000\n\n\n14927\nFamily\n1.000000\n\n\n15092\nComedy\n0.545455\n\n\n15092\nCrime\n0.545455\n\n\n\n\n\n\n\nMovie Directors: 429, 2931, 11652, 14927, 15092\n\n\n\ndirectors_genres |&gt;\n  filter(director_id %in% movies_directors$director_id)\n\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n429\nAdventure\n0.750000\n\n\n429\nFantasy\n0.750000\n\n\n11652\nSci-Fi\n0.500000\n\n\n11652\nAction\n0.500000\n\n\n14927\nAnimation\n1.000000\n\n\n14927\nFamily\n1.000000\n\n\n15092\nComedy\n0.545455\n\n\n15092\nCrime\n0.545455"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#filtering-joins-anti_join",
+    "href": "slides/week-4/w4-joins-pivots.html#filtering-joins-anti_join",
+    "title": "Data Joins + Pivots",
+    "section": "Filtering Joins: anti_join()",
+    "text": "Filtering Joins: anti_join()\nRemoves observations when their keys are present in both datasets, and only keeps variables from the left dataset.\n\n\n\n\n\n\n→"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#filtering-joins-anti_join-1",
+    "href": "slides/week-4/w4-joins-pivots.html#filtering-joins-anti_join-1",
+    "title": "Data Joins + Pivots",
+    "section": "Filtering Joins: anti_join()",
+    "text": "Filtering Joins: anti_join()\n\nanti_join()Connection to filter()\n\n\n\ndirectors_genres |&gt; \n  anti_join(movies_directors)\n\n\n\nJoining with `by = join_by(director_id)`\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n2931\nDrama\n0.714286\n\n\n2931\nAction\n0.428571\n\n\n\n\n\n\n\nMovie Directors: 429, 2931, 11652, 14927, 15092\n\n\n\ndirectors_genres |&gt;\n  filter(!director_id %in% movies_directors$director_id)\n\n\n\n\n\n\n\ndirector_id\ngenre\nprob\n\n\n\n\n2931\nDrama\n0.714286\n\n\n2931\nAction\n0.428571"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#building-an-analytical-dataset-1",
+    "href": "slides/week-4/w4-joins-pivots.html#building-an-analytical-dataset-1",
+    "title": "Data Joins + Pivots",
+    "section": "Building an Analytical Dataset",
+    "text": "Building an Analytical Dataset\nNow we have tools to:\n\nCombine multiple data sets (xx_join())\nSubset to certain observations (filter() and xx_join())\nCreate new variables (mutate())\nSelect columns of interest (select())\n\n. . .\nWe are well on our way to building and cleaning up a nice dataset! 🥳"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#transform-and-tidy",
+    "href": "slides/week-4/w4-joins-pivots.html#transform-and-tidy",
+    "title": "Data Joins + Pivots",
+    "section": "Transform and Tidy",
+    "text": "Transform and Tidy\nWhat’s next?\n\nknitr::include_graphics(\"images/data-science-workflow.png\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#transform-and-tidy-1",
+    "href": "slides/week-4/w4-joins-pivots.html#transform-and-tidy-1",
+    "title": "Data Joins + Pivots",
+    "section": "Transform and Tidy",
+    "text": "Transform and Tidy\nWhat’s next?\nWe may need to transform our data to turn it into the version of tidy that is best for a task at hand.\n\n\n\nAllison Horst"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#creating-tidy-data",
+    "href": "slides/week-4/w4-joins-pivots.html#creating-tidy-data",
+    "title": "Data Joins + Pivots",
+    "section": "Creating Tidy Data",
+    "text": "Creating Tidy Data\nLet’s say we want to look at mean cereal nutrients based on shelf.\n. . .\n\nThe data are in a wide format – a separate column for each nutrient.\n\n\nlibrary(liver)\ndata(cereal)\nhead(cereal)\n\n\n\n\n\n\n\nname\nmanuf\ntype\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\nshelf\nweight\ncups\nrating\n\n\n\n\n100% Bran\nN\ncold\n70\n4\n1\n130\n10.0\n5.0\n6\n280\n25\n3\n1\n0.33\n68.40297\n\n\n100% Natural Bran\nQ\ncold\n120\n3\n5\n15\n2.0\n8.0\n8\n135\n0\n3\n1\n1.00\n33.98368\n\n\nAll-Bran\nK\ncold\n70\n4\n1\n260\n9.0\n7.0\n5\n320\n25\n3\n1\n0.33\n59.42551\n\n\nAll-Bran with Extra Fiber\nK\ncold\n50\n4\n0\n140\n14.0\n8.0\n0\n330\n25\n3\n1\n0.50\n93.70491\n\n\nAlmond Delight\nR\ncold\n110\n2\n2\n200\n1.0\n14.0\n8\n-1\n25\n3\n1\n0.75\n34.38484\n\n\nApple Cinnamon Cheerios\nG\ncold\n110\n2\n2\n180\n1.5\n10.5\n10\n70\n25\n1\n1\n0.75\n29.50954"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#creating-tidy-data-1",
+    "href": "slides/week-4/w4-joins-pivots.html#creating-tidy-data-1",
+    "title": "Data Joins + Pivots",
+    "section": "Creating Tidy Data",
+    "text": "Creating Tidy Data\n\n\n\n\n\n\nDiscussion\n\n\n\nHow would we plot the mean cereal nutrients by shelf (as shown below) with the wide data using ggplot2?\n\n\n\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by shelf and Nutrient.\nℹ Output is grouped by shelf.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(shelf, Nutrient))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\n\n\n\n\n\n\n\n\n. . .\nTransforming the data will make plotting much easier"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#creating-tidy-data-2",
+    "href": "slides/week-4/w4-joins-pivots.html#creating-tidy-data-2",
+    "title": "Data Joins + Pivots",
+    "section": "Creating Tidy Data",
+    "text": "Creating Tidy Data\n\nWideWide PlotLongLong Plot\n\n\n\n\nCode\ncereal_wide &lt;- cereal |&gt; \n  group_by(shelf) |&gt; \n  summarise(across(calories:vitamins, mean))\n\n\n\n\n\n\n\n\nshelf\ncalories\nprotein\nfat\nsodium\nfiber\ncarbo\nsugars\npotass\nvitamins\n\n\n\n\n1\n102.5000\n2.650000\n0.60\n176.2500\n1.6850000\n15.80000\n4.800000\n75.50000\n20.00000\n\n\n2\n109.5238\n1.904762\n1.00\n145.7143\n0.9047619\n13.61905\n9.619048\n57.80952\n23.80952\n\n\n3\n107.7778\n2.861111\n1.25\n158.6111\n3.1388889\n14.50000\n6.527778\n129.83333\n35.41667\n\n\n\n\n\n\n\n\n\n\n\nCode\nmy_colors &lt;- c(\"calories_col\" = \"steelblue\", \"sugars_col\" = \"orange3\")\n\ncereal_wide |&gt; \n  ggplot() +\n  geom_point(aes(x = shelf, y = calories, color = \"calories_col\")) +\n  geom_line(aes(x = shelf, y = calories, color = \"calories_col\")) + \n  geom_point(aes(x = shelf, y = sugars, color = \"sugars_col\")) +\n  geom_line(aes(x = shelf, y = sugars, color = \"sugars_col\")) +\n  scale_color_manual(values = my_colors, labels = names(my_colors)) +\n  labs(x = \"Shelf\", y = \"\", subtitle = \"Mean Amount\", color = \"Nutrient\")\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\ncereal_long&lt;- cereal |&gt; \n  pivot_longer(cols = calories:vitamins,\n               names_to = \"Nutrient\",\n               values_to = \"Amount\") |&gt; \n  group_by(shelf, Nutrient) |&gt; \n  summarise(mean_amount = mean(Amount))\n\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by shelf and Nutrient.\nℹ Output is grouped by shelf.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(shelf, Nutrient))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\n\n\n\n\n\n\n\nshelf\nNutrient\nmean_amount\n\n\n\n\n1\ncalories\n102.5000000\n\n\n1\ncarbo\n15.8000000\n\n\n1\nfat\n0.6000000\n\n\n1\nfiber\n1.6850000\n\n\n1\npotass\n75.5000000\n\n\n1\nprotein\n2.6500000\n\n\n1\nsodium\n176.2500000\n\n\n1\nsugars\n4.8000000\n\n\n1\nvitamins\n20.0000000\n\n\n2\ncalories\n109.5238095\n\n\n2\ncarbo\n13.6190476\n\n\n2\nfat\n1.0000000\n\n\n2\nfiber\n0.9047619\n\n\n2\npotass\n57.8095238\n\n\n2\nprotein\n1.9047619\n\n\n2\nsodium\n145.7142857\n\n\n2\nsugars\n9.6190476\n\n\n2\nvitamins\n23.8095238\n\n\n3\ncalories\n107.7777778\n\n\n3\ncarbo\n14.5000000\n\n\n3\nfat\n1.2500000\n\n\n3\nfiber\n3.1388889\n\n\n3\npotass\n129.8333333\n\n\n3\nprotein\n2.8611111\n\n\n3\nsodium\n158.6111111\n\n\n3\nsugars\n6.5277778\n\n\n3\nvitamins\n35.4166667\n\n\n\n\n\n\n\n\n\n\n\nCode\ncereal_long |&gt; \n  ggplot(aes(x = shelf, \n             y = mean_amount, \n             color = Nutrient)) +\n  geom_point() +\n  geom_line() +\n  labs(x = \"Shelf\", y = \"\", subtitle = \"Mean Amount\")"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#data-layouts",
+    "href": "slides/week-4/w4-joins-pivots.html#data-layouts",
+    "title": "Data Joins + Pivots",
+    "section": "Data Layouts",
+    "text": "Data Layouts\n\n\n\nKelsey Gonzalez"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#manual-method",
+    "href": "slides/week-4/w4-joins-pivots.html#manual-method",
+    "title": "Data Joins + Pivots",
+    "section": "Manual Method",
+    "text": "Manual Method\nConsider daily rainfall observed in SLO in January 2023.\n\nThe data is in a human-friendly form (like a calendar).\nEach week has a row, and each day has a column.\n\n\n\n\nData source\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\nHow would you manually convert this to long format?"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#manual-method-steps",
+    "href": "slides/week-4/w4-joins-pivots.html#manual-method-steps",
+    "title": "Data Joins + Pivots",
+    "section": "Manual Method: Steps",
+    "text": "Manual Method: Steps\n\nKeep the column Week.\nCreate a new column Day_of_Week.\nCreate a new column Rainfall (hold daily rainfall values).\nNow we have three columns – move Sunday values over.\nDuplicate Week 1-5 and copy Monday values over.\n\n\n\n\n\nRepeat …"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#computational-approach",
+    "href": "slides/week-4/w4-joins-pivots.html#computational-approach",
+    "title": "Data Joins + Pivots",
+    "section": "Computational Approach",
+    "text": "Computational Approach\n\nWe can use pivot_longer() to turn a wide dataset into a long(er) dataset."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#pivot_longer",
+    "href": "slides/week-4/w4-joins-pivots.html#pivot_longer",
+    "title": "Data Joins + Pivots",
+    "section": "pivot_longer()",
+    "text": "pivot_longer()\nTake a wide dataset and turn it into a long dataset.\n\ncols – specify the columns that should be pivoted.\n\nDo not include the names of ID columns (columns to not be pivoted).\n\nnames_to – the name of the new column containing the old column names.\nvalues_to – the name of the new column containing the old column values."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#pivot_longer-1",
+    "href": "slides/week-4/w4-joins-pivots.html#pivot_longer-1",
+    "title": "Data Joins + Pivots",
+    "section": "pivot_longer()",
+    "text": "pivot_longer()\n\nslo_rainfall |&gt; \n  pivot_longer(cols      = Sunday:Saturday,\n               names_to  = \"Day_of_Week\",\n               values_to = \"Daily_Rainfall\")\n\n\n\nWarning: There were 4 warnings in `mutate()`.\nThe first warning was:\nℹ In argument: `across(Sunday:Saturday, as.numeric)`.\nCaused by warning:\n! NAs introduced by coercion\nℹ Run `dplyr::last_dplyr_warnings()` to see the 3 remaining warnings.\n\n\n\n\n\n\nWeek\nDay_of_Week\nDaily_Rainfall\n\n\n\n\n1\nSunday\n0.00\n\n\n1\nMonday\n0.12\n\n\n1\nTuesday\n0.00\n\n\n1\nWednesday\n1.58\n\n\n1\nThursday\n0.91\n\n\n1\nFriday\n0.00\n\n\n1\nSaturday\n0.05\n\n\n2\nSunday\n0.27\n\n\n2\nMonday\n4.26\n\n\n2\nTuesday\n0.43\n\n\n2\nWednesday\n0.00\n\n\n2\nThursday\n0.00\n\n\n2\nFriday\n0.16\n\n\n2\nSaturday\n1.41\n\n\n3\nSunday\n0.34\n\n\n3\nMonday\n0.33\n\n\n3\nTuesday\n0.00\n\n\n3\nWednesday\n0.00\n\n\n3\nThursday\n0.13\n\n\n3\nFriday\n0.00\n\n\n3\nSaturday\n0.00\n\n\n4\nSunday\n0.00\n\n\n4\nMonday\n0.00\n\n\n4\nTuesday\n0.00\n\n\n4\nWednesday\n0.00\n\n\n4\nThursday\n0.00\n\n\n4\nFriday\n0.00\n\n\n4\nSaturday\nNA\n\n\n5\nSunday\nNA\n\n\n5\nMonday\nNA\n\n\n5\nTuesday\nNA\n\n\n5\nWednesday\nNA\n\n\n5\nThursday\nNA\n\n\n5\nFriday\nNA\n\n\n5\nSaturday\nNA"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#long-to-wide",
+    "href": "slides/week-4/w4-joins-pivots.html#long-to-wide",
+    "title": "Data Joins + Pivots",
+    "section": "Long to Wide",
+    "text": "Long to Wide\nWhat are the mean amount of protein for cereals on each shelf and for each manuf?\n\nmean_protein &lt;- cereal |&gt; \n  group_by(manuf, shelf) |&gt; \n  summarize(mean_protein = mean(protein))\n\n\n\n`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by manuf and shelf.\nℹ Output is grouped by manuf.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(manuf, shelf))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.\n\n\n\n\n\n\nmanuf\nshelf\nmean_protein\n\n\n\n\nA\n2\n4.000000\n\n\nG\n1\n3.000000\n\n\nG\n2\n1.285714\n\n\nG\n3\n2.666667\n\n\nK\n1\n2.750000\n\n\nK\n2\n2.142857\n\n\nK\n3\n2.916667\n\n\nN\n1\n2.666667\n\n\nN\n2\n2.500000\n\n\nN\n3\n4.000000\n\n\nP\n1\n1.500000\n\n\nP\n2\n1.000000\n\n\nP\n3\n3.000000\n\n\nQ\n1\n5.000000\n\n\nQ\n2\n2.000000\n\n\nQ\n3\n2.500000\n\n\nR\n1\n2.000000\n\n\nR\n3\n3.000000\n\n\n\n\n\n\n\n\n\n\n\n\n\nDiscussion\n\n\n\nWhat could we do to make this table easier to understand?"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#pivot_wider",
+    "href": "slides/week-4/w4-joins-pivots.html#pivot_wider",
+    "title": "Data Joins + Pivots",
+    "section": "pivot_wider()",
+    "text": "pivot_wider()\nTake a long dataset and turn it into a wide dataset.\n\nid_cols – specify the column(s) that contain the ID for unique rows in the wide dataset.\nnames_from – the name of the column containing the new column names.\nvalues_from – the name of the column containing the new column values."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#pivot_wider-1",
+    "href": "slides/week-4/w4-joins-pivots.html#pivot_wider-1",
+    "title": "Data Joins + Pivots",
+    "section": "pivot_wider()",
+    "text": "pivot_wider()\nMuch easier to read!\n\nmean_protein |&gt; \n  arrange(shelf) |&gt; \n  pivot_wider(id_cols = manuf,\n              names_from = shelf,\n              values_from = mean_protein)\n\n\n\n\n\n\n\nmanuf\n1\n2\n3\n\n\n\n\nG\n3.000000\n1.285714\n2.666667\n\n\nK\n2.750000\n2.142857\n2.916667\n\n\nN\n2.666667\n2.500000\n4.000000\n\n\nP\n1.500000\n1.000000\n3.000000\n\n\nQ\n5.000000\n2.000000\n2.500000\n\n\nR\n2.000000\nNA\n3.000000\n\n\nA\nNA\n4.000000\nNA"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#better-names-in-pivot_wider",
+    "href": "slides/week-4/w4-joins-pivots.html#better-names-in-pivot_wider",
+    "title": "Data Joins + Pivots",
+    "section": "Better names in pivot_wider()",
+    "text": "Better names in pivot_wider()\nEven better!\n\nmean_protein |&gt; \n  arrange(shelf) |&gt; \n  pivot_wider(id_cols = manuf,\n              names_from = shelf,\n              values_from = mean_protein,\n              names_prefix = \"Shelf_\")\n\n\n\n\n\n\n\nmanuf\nShelf_1\nShelf_2\nShelf_3\n\n\n\n\nG\n3.000000\n1.285714\n2.666667\n\n\nK\n2.750000\n2.142857\n2.916667\n\n\nN\n2.666667\n2.500000\n4.000000\n\n\nP\n1.500000\n1.000000\n3.000000\n\n\nQ\n5.000000\n2.000000\n2.500000\n\n\nR\n2.000000\nNA\n3.000000\n\n\nA\nNA\n4.000000\nNA"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#pa-4-military-spending",
+    "href": "slides/week-4/w4-joins-pivots.html#pa-4-military-spending",
+    "title": "Data Joins + Pivots",
+    "section": "PA 4: Military Spending",
+    "text": "PA 4: Military Spending\nToday you will be tidying messy data to explore the relationship between countries of the world and military spending."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#resources---use-them-all",
+    "href": "slides/week-4/w4-joins-pivots.html#resources---use-them-all",
+    "title": "Data Joins + Pivots",
+    "section": "Resources - use them all!",
+    "text": "Resources - use them all!\n\n\n\ndplyr and tidyr cheatsheets\nslides and textbook\nhelp files\n\n\n\n⭐️️ each other⭐️\nand me 😎\n\n\n\n. . .\nDon’t struggle individually for too long!"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#to-do",
+    "href": "slides/week-4/w4-joins-pivots.html#to-do",
+    "title": "Data Joins + Pivots",
+    "section": "To do…",
+    "text": "To do…\n\nPA 4: Military Spending\n\nDue Thursday, 4/24 before class"
+  },
+  {
+    "objectID": "reading/week-4.1.html",
+    "href": "reading/week-4.1.html",
+    "title": "Week 4, Part 1: Data Joins and Pivots",
+    "section": "",
+    "text": "Determine what data format is necessary to generate a desired plot or statistical model.\nUnderstand the differences between “wide” and “long” format data and how to transition between the two structures.\nUnderstand relational data formats and how to use data joins to assemble data from multiple tables into a single table."
+  },
+  {
+    "objectID": "reading/week-4.1.html#learning-objectives",
+    "href": "reading/week-4.1.html#learning-objectives",
+    "title": "Week 4, Part 1: Data Joins and Pivots",
+    "section": "",
+    "text": "Determine what data format is necessary to generate a desired plot or statistical model.\nUnderstand the differences between “wide” and “long” format data and how to transition between the two structures.\nUnderstand relational data formats and how to use data joins to assemble data from multiple tables into a single table."
+  },
+  {
+    "objectID": "reading/week-4.1.html#data-pivoting",
+    "href": "reading/week-4.1.html#data-pivoting",
+    "title": "Week 4, Part 1: Data Joins and Pivots",
+    "section": "2 Data Pivoting",
+    "text": "2 Data Pivoting\n\n📖 Required Reading: R4DS 5: Data tidying"
+  },
+  {
+    "objectID": "reading/week-4.1.html#relational-data-and-joins",
+    "href": "reading/week-4.1.html#relational-data-and-joins",
+    "title": "Week 4, Part 1: Data Joins and Pivots",
+    "section": "2 Relational Data and Joins",
+    "text": "2 Relational Data and Joins\n\n📖 Required Reading: R4DS 19.1-19.4: Joins\n\nNote: don’t read 19.5! We will not cover non-equi joins in this course"
+  },
+  {
+    "objectID": "reading/week-4.1.html#data-transformation",
+    "href": "reading/week-4.1.html#data-transformation",
+    "title": "Week 4, Part 1: Data Joins and Pivots",
+    "section": "3 Data Transformation",
+    "text": "3 Data Transformation\n\nData Pivots\n\n📖 Required Reading: R4DS 5: Data tidying\n\n\n📽 Optional Videos\n\nPivot Longer\nPivot Wider\n\n\n\n\nSplitting Cells\nExpanding on what we talked about in class, there’s a task that is fairly commonly encountered with functions that belong to the tidyr package: separating variables into two different columns separate_xxx() and it’s complement, unite(), which is useful for combining two variables into one column.\nThe datasets used in the examples below are included in the tidyr package!\n\nseparate_wider_delim() and separate_wider_position()unite()\n\n\nTable 3 from before is a great example of when you would want to separate the values of a column into different columns. In this dataset, the variable rate is recorded as 745/19987071, where the first number is the amount of cases and the second number is the population.\n\n\n\n\n\nA visual representation of what separating variables means for data set operations.\n\n\n\n\n\ntable3 |&gt; \n  kable()\n\n\n\n\ncountry\nyear\nrate\n\n\n\n\nAfghanistan\n1999\n745/19987071\n\n\nAfghanistan\n2000\n2666/20595360\n\n\nBrazil\n1999\n37737/172006362\n\n\nBrazil\n2000\n80488/174504898\n\n\nChina\n1999\n212258/1272915272\n\n\nChina\n2000\n213766/1280428583\n\n\n\n\n\n\ntable3 |&gt;\n  separate_wider_delim(cols        = rate,\n                       names       = c(\"cases\", \"population\"),\n                       delim       = \"/\",\n                       cols_remove = FALSE\n           ) |&gt; \n  kable()\n\n\n\n\ncountry\nyear\ncases\npopulation\nrate\n\n\n\n\nAfghanistan\n1999\n745\n19987071\n745/19987071\n\n\nAfghanistan\n2000\n2666\n20595360\n2666/20595360\n\n\nBrazil\n1999\n37737\n172006362\n37737/172006362\n\n\nBrazil\n2000\n80488\n174504898\n80488/174504898\n\n\nChina\n1999\n212258\n1272915272\n212258/1272915272\n\n\nChina\n2000\n213766\n1280428583\n213766/1280428583\n\n\n\n\n\nI’ve left the rate column in the original data frame (cols_remove = FALSE) just to make it easy to compare and verify that yes, it worked.\n\n\nAnd, of course, there is a complementary operation, which is when it’s necessary to join two columns to get a useable data value.\n\n\n\n\n\nA visual representation of what uniting variables means for data set operations.\n\n\n\n\n\ntable5 |&gt; \n  kable()\n\n\n\n\ncountry\ncentury\nyear\nrate\n\n\n\n\nAfghanistan\n19\n99\n745/19987071\n\n\nAfghanistan\n20\n00\n2666/20595360\n\n\nBrazil\n19\n99\n37737/172006362\n\n\nBrazil\n20\n00\n80488/174504898\n\n\nChina\n19\n99\n212258/1272915272\n\n\nChina\n20\n00\n213766/1280428583\n\n\n\n\n\n\ntable5 |&gt;\n  unite(col = \"year\",\n        c(century, year),\n        sep = ''\n        ) |&gt; \n  kable()\n\n\n\n\ncountry\nyear\nrate\n\n\n\n\nAfghanistan\n1999\n745/19987071\n\n\nAfghanistan\n2000\n2666/20595360\n\n\nBrazil\n1999\n37737/172006362\n\n\nBrazil\n2000\n80488/174504898\n\n\nChina\n1999\n212258/1272915272\n\n\nChina\n2000\n213766/1280428583"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html",
+    "href": "slides/week-4/w4-joins-pivots.html",
+    "title": "Data Joins + Pivots",
+    "section": "",
+    "text": "Today we will…\n\nBig Picture\nNew Material\n\nJoining data with dplyr\nPivoting data with tidyr\n\nPA 4: Military Spending\n\n\n\n\n\n\n\nFollow along\n\n\n\nRemember to download, save, and open up the handout for this week! This week you need to download and save some data as well."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#footnotes",
+    "href": "slides/week-4/w4-joins-pivots.html#footnotes",
+    "title": "Data Joins + Pivots",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nI worked with this data for a project. See the paper and Github repo if you are interested!↩︎"
+  },
+  {
+    "objectID": "reading/week-4.2.html",
+    "href": "reading/week-4.2.html",
+    "title": "Week 4, Part 1: Working with Categorical Variables",
+    "section": "",
+    "text": "Use forcats to reorder and relabel factor variables in data cleaning steps and data visualizations."
+  },
+  {
+    "objectID": "reading/week-4.2.html#learning-objectives",
+    "href": "reading/week-4.2.html#learning-objectives",
+    "title": "Week 4, Part 1: Working with Categorical Variables",
+    "section": "",
+    "text": "Use forcats to reorder and relabel factor variables in data cleaning steps and data visualizations."
+  },
+  {
+    "objectID": "reading/week-4.2.html#factors-with-forcats",
+    "href": "reading/week-4.2.html#factors-with-forcats",
+    "title": "Week 4, Part 1: Working with Categorical Variables",
+    "section": "2 Factors with forcats",
+    "text": "2 Factors with forcats\n\n📖 Required Reading: R4DS 16: Factors\n\n\n📽 Optional Video: forcats"
   }
 ]
