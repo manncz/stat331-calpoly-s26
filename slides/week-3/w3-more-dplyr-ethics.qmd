@@ -663,12 +663,12 @@ Heather Kraus suggests asking 5 questions of your data:
 
 ## Principles of Data Ethics
 
-::: incremental
+
 -   I will not be ashamed to say, **“I don't know”**
 -   I will respect the **privacy** of my data subjects
 -   I will remember that my data are not just numbers without meaning or context, but represent **real people and situations**
 -   I will interrogate how my work may lead to unintended societal consequences or perpetuate inequity
-:::
+
 
 ## Additional Resources
 
@@ -690,7 +690,7 @@ Heather Kraus suggests asking 5 questions of your data:
 
 
 
-![[ggplot2 cheatsheet](https://rstudio.github.io/cheatsheets/data-transformation.pdf)](https://rstudio.github.io/cheatsheets/pngs/data-transformation.png)
+![[dplyr cheatsheet](https://rstudio.github.io/cheatsheets/data-transformation.pdf)](https://rstudio.github.io/cheatsheets/pngs/data-transformation.png)
 
 ## Using `kable()` for formatting in labs
 
@@ -739,3 +739,4 @@ cereal_clean <- cereal |>
 -   Review all material from this week for the **group quiz on Monday**!
     - Make sure that you can answer all of the questions in this week's notes!
     - Group quiz at the **beginning** of class
+- Reminder: rescheduled office hours 12-1:30 pm tomorrow
