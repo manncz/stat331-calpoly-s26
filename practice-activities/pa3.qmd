@@ -211,7 +211,7 @@ You should use the **cleaned version** of the data (`colleges_clean`) and these 
 
 6.  The average SAT score of this college is an odd number.
 
-7.  Out of the two remaining colleges, this college has the **least expensive** tuition. While you could just glance at the result to find this, practice using a dplyr verb to get down to one college.
+7.  Out of the two remaining colleges, this college has the **least expensive** tuition (both in and out of state -- you can just look at one). While you could just glance at the result to find this, practice using a dplyr verb to get down to one college.
 
 ```{r identify-college}
 # Code to solve for the mystery college using the 7 clues above.
