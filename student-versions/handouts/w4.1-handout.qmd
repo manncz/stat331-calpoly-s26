@@ -1,0 +1,182 @@
+---
+title: "STAT 331 Week 4 Day 1 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+library(liver)
+```
+
+## Data
+
+::: callout-warning
+For this handout, you need to download `imdb_data.Rdata` from the Week 4 Schedule Canvas page and save them on your computer.
+:::
+
+We will use 7 datasets that describe movies from [IMDb](https://www.imdb.com/). 
+
+```{r}
+#| echo: false
+#| eval: true
+#| fig-cap: "Relationship between data sets in IMDb movie data."
+#| out-width: 90%
+knitr::include_graphics("https://github.com/manncz/stat-331-s25/blob/main/slides/week-4/images/imdb_relational.png?raw=true")
+```
+
+Save the `imdb_data.Rdata` file to a reasonable directory, and change the file path below as needed to read it in.
+
+```{r}
+load(file = "data/imdb_data.Rdata")
+```
+
+## Mutating Joins
+
+### `inner_join()`
+
+```{r}
+inner_join(directors_genres, 
+           movies_directors, 
+           by = "director_id")
+```
+
+a. When using one variable name for a join, does the variable name need to be in quotation marks (as a string)?
+
+
+b. How does the number of observations in the result above compare to the `directors_genres` data and `movies_directors` data? Why does this make sense?
+
+
+
+```{r}
+inner_join(directors_genres, 
+           directors, 
+           by = join_by(director_id == id))
+```
+
+c. Why did we use `join_by()` in the join above? Note that the variable names do not need to be in quotation marks when using `join_by()`!
+
+
+
+
+d. How does the number of observations in the result above compare to the `directors_genres` data and `directors` data? Why does this make sense?
+
+### `left_join()`
+
+```{r}
+directors_genres |> 
+  left_join(directors, 
+            by = join_by(director_id == id))
+```
+
+e. Which directors will remain after the above join?
+
+
+### `right_join()`
+
+```{r}
+directors_genres |> 
+  right_join(directors, 
+            by = join_by(director_id == id))
+```
+
+f. Which directors will remain after the above join?
+
+### `full_join()`
+
+```{r}
+directors_genres |> 
+  full_join(directors, 
+            by = join_by(director_id == id))
+```
+
+f. Which directors will remain after the above join?
+
+
+### Comparing joins
+
+e. Why / when would you use each kind of join?
+
+  - `inner_join()`
+  - `left_join()`
+  - `right_join()`
+  - `full_join()`
+  
+f. What might be the cause of `NA` values when joining two datasets together?
+
+## Filtering Joins
+
+a. How are filtering joins different from mutating joins?
+
+
+
+b. What is the equivalent to the below join, using the `filter()` verb instead?
+
+```{r}
+#| eval: false
+
+actors |> 
+  semi_join(roles,
+            by = join_by(id == actor_id))
+```
+
+
+## Tidy Data
+
+```{r}
+data(cereal)
+```
+
+a. The `cereal` data is considered to be "wide" because...
+
+
+b. How would we plot the mean cereal nutrients by shelf (as shown on the slides) with original cereal data?
+
+```{r}
+
+
+```
+
+
+## Pivot
+
+### `pivot_longer()`
+
+a. What do you input in the `names_to` argument?
+
+
+b. What do you input in the `values_to` argument?
+
+
+a. Pivot the cereal data into long format in terms of the nutrient information. 
+
+```{r}
+
+```
+
+### `pivot_wider()`
+
+```{r}
+mean_protein <- cereal |> 
+  group_by(manuf, shelf) |> 
+  summarize(mean_protein = mean(protein))
+```
+
+```{r}
+mean_protein |> 
+  arrange(shelf) |> 
+  pivot_wider(id_cols = manuf,
+              names_from = shelf,
+              values_from = mean_protein)
+```
+
+a. Why are the names of the columns in the output above `1`, `2`, and `3`?
+
+b. Why are there missing values in some of the columns?
+
+
+c. How can we make the column names nicer? Specifically, I would like to make the column names something like "shelf_1".

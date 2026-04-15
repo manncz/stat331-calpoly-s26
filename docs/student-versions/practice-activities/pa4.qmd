@@ -3,6 +3,7 @@ title: "PA 4: Military Spending"
 subtitle: "Tidy Data with `dplyr` and `tidyr`"
 format: 
   html:
+    embed-resources: true
     code-tools: true
     toc: true
 editor: source
@@ -20,10 +21,6 @@ library(tidyverse)
 ```
 
 Today you will be tidying messy data to explore the relationship between countries of the world and military spending.
-
-[Download starter .qmd file](../student-versions/practice-activities/pa4.qmd)
-
-[Download data -- `SPIRI-Milex-data-1949-2024.xlsx`](_data/SIPRI-Milex-data-1949-2024.xlsx)
 
 
 ## Data Description
@@ -44,7 +41,7 @@ SIPRI military expenditure data is based on open sources only.
 
 First, you should notice that there are ten different sheets included in the dataset. We are interested in the sheet labeled *"Share of Govt. spending"*, which contains information about the share of all government spending that is allocated to the military.
 
-Next, you'll notice that there are notes about the data in the first several rows. **Ugh**!
+Next, you'll notice that there are notes about the data in the first six rows. **Ugh**!
 
 Rather than copying this one sheet into a new Excel file and deleting the first few rows, let's learn something new about the `read_xlsx()` function!
 
@@ -94,7 +91,7 @@ The information in the top 6 rows of the excel sheet will help you answer this q
 
 Helpful functions: `mutate()`, `across()` -- you will need two of these, `na_if()`
 
-**Note:** When referring to one of the year variable names that start with a number **must** put tick marks (above the tab key) around the name. Starting the name of a variable with a number is not commonly read as a variable name. E.g., to read the 1988 column through the 2019 column, use ``` `1988.0`:`2019.0` ```. However, you don't *have* to refer to the variable names to complete this task - it might be most efficient to specify columns you **don't** want to mutate.
+**Note:** When referring to one of the year variable names that start with a number **must** put tick marks (above the tab key) around the name. Starting the name of a variable with a number is not commonly read as a variable name. E.g., to read the 1988 column through the 2019 column, use ``` `1988.0`:`2019.0` ```. However, you don't *have* to refer to the variable names to complete this task - it might be most efficient to specify columns you don't want to mutate.
 :::
 
 ```{r}
@@ -156,21 +153,7 @@ Useful functions: `filter()`, `if_all()`, `is.na()`. You will also want to doubl
 
 ## Data Organization
 
-We are interested in comparing the military expenditures of countries in Eastern Europe. We want to look at trends over time and to visualize variability in expenditures within and between countries, like the following two plots:
-
-```{r}
-#| echo: false
-#| fig-cap: "Desired boxplot: Countries from Central Asia used for demonstration -- your plot will have different countries and spending values."
-#| out-width: 70%
-knitr::include_graphics("https://github.com/earobinson95/stat331-calpoly/blob/master/practice-activities/military-expenditure.png?raw=true")
-```
-
-```{r}
-#| echo: false
-#| fig-cap: "Desired line plot: Countries from North Africa used for demonstration -- your plot will have different countries and spending values."
-#| out-width: 70%
-knitr::include_graphics("_images/military-expenditure-ex-line.png")
-```
+We are interested in comparing the military expenditures of countries in Eastern Europe. We want to look at trends over time and to visualize variability in expenditures within and between countries, like the following two plots (shown in the renderd version on online).
 
 
 ::: callout-warning
