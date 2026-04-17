@@ -153,7 +153,7 @@ This will require transforming your data! Sketch out what you want the data to l
 
 ::: callout-warning
 
-The code for the first question should give me the EXACT answer. This means having the code output the exact row(s) and variable(s) necessary for providing the solution. To answer the second question, compare this output with the output from Q4.
+The code for the first question should give me the EXACT answer. This means having the code output the exact row(s) and variable(s) necessary for providing the solution. To answer the second question, compare this output with the output from Q5.
 
 :::
 

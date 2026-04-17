@@ -1,0 +1,257 @@
+---
+title: "STAT 331 Week 4 Day 2 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| echo: false
+
+library(tidyverse)
+library(readxl)
+library(janitor)
+```
+
+## Data
+
+::: callout-warning
+For this handout, you need to download TS_data.xlsx from the Week 4 Schedule Canvas page and save it on your computer.
+:::
+
+Change the file path below as needed to read in the imdb_data.Rdata file that we used on Monday. 
+
+```{r}
+load(file = "data/imdb_data.Rdata")
+```
+
+Save the `TS_data.xlsx` file to a reasonable directory, and change the file path below as needed to read it in.
+
+```{r}
+eras_data <- read_excel(path = "data/TS_data.xlsx")
+```
+
+Change the file path below to read in the military spending data that we used for PA3.
+
+```{r}
+military <- read_xlsx("data/SIPRI-Milex-data-1949-2024.xlsx", 
+                sheet = "Share of Govt. spending", 
+                skip  = 7)
+```
+
+## Variable Names in R
+
+a. How do column names need to be referenced in `dplyr` if they start with a number or include spaces?
+
+
+
+b. What does the `clean_names()` function from the `janitor` package do?
+
+
+```{r}
+military |> 
+  clean_names() |> 
+  colnames()
+```
+
+
+
+## Advanced Joins
+
+a. What were the active years of each director?
+
+```{r}
+
+```
+
+b. What happens for directors that have multiple movies in the join below?
+
+```{r}
+directors |> 
+  inner_join(movies_directors, 
+             join_by(id == director_id))
+```
+
+c. When do you need to join on multiple keys?
+
+
+d. What is the general syntax for joining on multiple keys?
+
+
+## Working with Categorical Variables (Factors)
+
+a. What are the two general purposes for factor variables (in R)?
+
+b. What function have you used previously to create a factor variable?
+
+
+### `fct()`
+
+a. The `fct()` function in **forcats** serves the same purpose as what function in base R?
+
+b. How are the levels automatically ordered with the `fct()` function? How is this different from base R?
+
+
+```{r}
+eras_data |> 
+  mutate(Album = fct(Album)) |> 
+  pull(Album)
+```
+c. Edit the code above to just output just the levels of the `Album` variable.
+
+d. What does including the `levels = ` argument do?
+
+```{r}
+eras_data |> 
+  mutate(Album = fct(Album,
+                     levels = c("Fearless","Speak Now","Red",
+                                "1989", "Reputation","Lover",
+                                "Folklore", "Evermore","Midnights"))) |> 
+  pull(Album)
+```
+
+e. What happens if you forget to provide an album that exists in the data above?
+
+
+
+### `fct_recode()`
+
+a. What does this function do? When would you want to use it?
+
+
+b. What happens to non-specified levels in `fct_recode()`?
+
+
+c. Change the level "Red" to "Red!" and "Fearless" to "Fearless - Taylors Version" in the `Album` variable:
+
+```{r}
+
+```
+
+
+### `fct_collapse()`
+
+a. What does this function do?  When would you want to use it?
+
+
+
+```{r}
+eras_data |> 
+  mutate(Genre = fct_collapse(.f= Album,
+                       "country pop" = c("Fearless"),
+                       "pop rock" = c("Speak Now","Red"),
+                       "electropop" = c("1989","Reputation","Lover"),
+                       "folk pop" = c("Folklore","Evermore"),
+                       "alt-pop" = "Midnights"))
+```
+
+b. Why would you want to use `fct_collapse()` rather than `case_when()`? (How is the syntax different?)
+
+
+c. What happens to levels of the variable `.f = ` that you do not include in `fct_collapse()`?
+ 
+```{r}
+eras_data |> 
+  mutate(genre = fct_collapse(.f= Album,
+                       "country pop" = c( "Fearless"),
+                       "pop rock" = c("Speak Now","Red"),
+                       "electropop" = c("1989","Reputation","Lover"),
+                       "folk pop" = c("Folklore","Evermore")
+                       )) |> 
+  pull(genre) |> 
+  levels()
+``` 
+ 
+d. Edit the code below to fix this, so that the Midnights album is categorized as "other" in the `genre` variable.
+
+```{r}
+eras_data |> 
+  mutate(genre = fct_collapse(.f= Album,
+                       "country pop" = c( "Fearless"),
+                       "pop rock" = c("Speak Now","Red"),
+                       "electropop" = c("1989","Reputation","Lover"),
+                       "folk pop" = c("Folklore","Evermore")
+                       )) |> 
+  pull(genre) |> 
+  levels()
+``` 
+ 
+ 
+### `fct_relevel()` 
+
+a. What does this function do?  When would you want to use it?
+
+```{r}
+eras_data |> 
+  mutate(Album = fct_relevel(.f = Album, 
+                             c("Fearless","1989","Taylor Swift",
+                               "Speak Now","Red","Midnights","Reputation"))) |>
+  pull(Album) |>
+  levels()
+```
+
+b. What happens with levels that are not specified?
+
+
+
+### `fct_infreq()`
+
+a. What does `fct_infreq()` do?  When would you want to use it?
+
+
+```{r}
+eras_data |> 
+  ggplot() +
+  geom_bar(aes(y = fct_infreq(Album)), 
+           fill = "#A5C9A5") +
+  theme_minimal() +
+  labs(x = "Number of Songs",
+       y = "",
+       subtitle = "Album",
+       title = "Songs Played on the Eras Tour")
+```
+
+### `fct_reorder()`
+
+a. What does `fct_reorder()` do?  In what setting would you use it?
+
+
+```{r}
+eras_data |> 
+  ggplot(aes(x = Length, 
+             y = fct_reorder(.f = Album,
+                             .x = Length,
+                             .fun = mean), 
+             fill = Album)) +
+  geom_density_ridges() +
+  theme_minimal() +
+  theme(legend.position = "none")+
+  labs(x = "Song Length (mins)",
+       y = "",
+       subtitle = "Album",
+       title = "Songs Played on the Eras Tour")
+```
+
+
+### `fct_reorder2()`
+
+a. What does `fct_reorder2()` do?  In what setting would you use it?
+
+
+b. What are the arguments to `fct_reorder2()`?
+
+
+c. Let's improve the plot that we made way back in week 2 of the number of listings over time for five cities in Texas. Use `fct_reorder2()` to reorder the legend below so that the legend aligns with the order of the lines in the plot.
+
+```{r}
+data(txhousing)
+
+txhousing |>
+  filter(city %in% c("Dallas","Fort Worth", "Austin",
+                     "Houston", "El Paso")) |> 
+  ggplot() +
+  geom_line(mapping = aes(x = date, 
+                          y = listings,
+                          color = city))
+```
