@@ -2931,5 +2931,19 @@
     "title": "Extending Data Joins + Working with Categorical Data",
     "section": "Categorical variables in R",
     "text": "Categorical variables in R\n\nAs you have seen, categorical variables can be stored as\n\ncharacter OR\nfactor\n\nSo what’s the difference??"
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#collaborative-protocol",
+    "href": "slides/week-4/w4-joins-pivots.html#collaborative-protocol",
+    "title": "Data Joins + Pivots",
+    "section": "Collaborative Protocol",
+    "text": "Collaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code."
+  },
+  {
+    "objectID": "slides/week-4/w4-joins-pivots.html#submission",
+    "href": "slides/week-4/w4-joins-pivots.html#submission",
+    "title": "Data Joins + Pivots",
+    "section": "Submission",
+    "text": "Submission\n\nWhen you have completed the puzzle, you will submit the college on Canvas.\n\nYou can ask me if it is correct before you submit\n\nYou do not need to submit your code, but you should check your code against the solutions when they are posted! . . .\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person whose birthday is closest to today starts as the project manager, second as the computer."
   }
 ]
