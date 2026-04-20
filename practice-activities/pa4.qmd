@@ -28,7 +28,7 @@ Today you will be tidying messy data to explore the relationship between countri
 
 ## Data Description
 
-We will be using data from the Stockholm International Peace Research Institute (SIPRI). [The SIPRI Military Expenditure Database](https://milex.sipri.org/sipri) is an open source data set containing time series on the military spending of countries from 1949--2023. The database is updated annually, which may include updates to data from previous years.
+We will be using data from the Stockholm International Peace Research Institute (SIPRI). [The SIPRI Military Expenditure Database](https://www.sipri.org/databases/milex) is an open source data set containing time series on the military spending of countries from 1949--2023. The database is updated annually, which may include updates to data from previous years.
 
 Military expenditure is presented in many ways:
 
@@ -77,7 +77,7 @@ If you have the Excel file open on your computer while trying to import the data
 
 ## Data Cleaning
 
-You will notice that there are a couple of columns that don't include spending data or are all missing (`Notes` and `Reporting year`). There is also an extra row that doesn't include information on a country. 
+You will notice that there are a couple of columns that don't include spending data or are all missing (`Notes` and `Reporting year`). There is also an extra row that doesn't include information on a country (i.e. it doesn't include a country name!). 
 
 **2. In one pipeline, drop those columns and that row. Save this dataset as a new object named `military_clean`.**
 
