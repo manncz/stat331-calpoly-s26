@@ -3,6 +3,7 @@ title: "Lab 4: Childcare Costs in California"
 author: "YOUR NAME"
 format: 
   html:  
+    embed-resources: true
     code-tools: true
     toc: true
 editor: source
