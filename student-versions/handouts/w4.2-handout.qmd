@@ -98,9 +98,10 @@ eras_data |>
   mutate(Album = fct(Album)) |> 
   pull(Album)
 ```
-c. Edit the code above to just output just the levels of the `Album` variable.
 
-d. What does including the `levels = ` argument do?
+c. Edit the code above to just output the levels of the `Album` variable.
+
+d. What does including the `levels = ` argument do in `fct()`?
 
 ```{r}
 eras_data |> 
@@ -111,7 +112,7 @@ eras_data |>
   pull(Album)
 ```
 
-e. What happens if you forget to provide an album that exists in the data above?
+e. What happens if you forget to provide an album to `levels = ` that exists in the data in the code above?
 
 
 
