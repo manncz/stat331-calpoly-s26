@@ -2,6 +2,7 @@
 title: "PA 5.2:  Jewel Heist"
 subtitle: "Dates and Times with `lubridate`"
 format: html
+  embed-resources: true
 editor: source
 execute: 
   error: true
@@ -9,8 +10,6 @@ execute:
   message: false
   warning: false
 ---
-
-[Download starter qmd file](../student-versions/practice-activities/pa5-2.qmd)
 
 ```{r setup}
 library(tidyverse)

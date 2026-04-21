@@ -212,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><a href="../student-versions/pas/pa5-2.qmd">Download starter qmd file</a></p>
+<p><a href="../student-versions/practice-activities/pa5-2.qmd">Download starter qmd file</a></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -252,19 +252,19 @@ Caused by error:
 </div>
 </div>
 <ol type="1">
-<li>Based on the cleaning schedule for the room where the jewels are held, the heist was not committed in the morning (i.e.&nbsp;at 12:00pm PCT or later).</li>
+<li>Based on the cleaning schedule for the room where the jewels are held, the heist was not committed in the morning (i.e.&nbsp;it was committed at 12:00pm PCT or later).</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># end with 112 suspects left</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="2" type="1">
-<li>The room where the heist was committed is closed on Tuesdays and Thursdays (and there were no signs of forced entry), so the heist did not happen on those days.</li>
+<li>The room where the heist was committed is closed on Tuesdays and Thursdays (and there were no signs of forced entry), so the heist did <strong>not</strong> happen on those days. <em>Hint: if you are getting something weird, it is because you did not set the time zone correctly in step 0!!</em>.</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># end with 78 suspects left</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="3" type="1">
-<li>It is believed that the heist was committed within 5 weeks (35 days) of Thanksgiving 2022 (before or after).</li>
+<li>It is believed that the heist was committed within 35 days of Thanksgiving 2022 (before or after).</li>
 </ol>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -277,8 +277,9 @@ Hints
 </div>
 <div class="callout-body-container callout-body">
 <p>Pay attention to <strong>time zones</strong>!</p>
-<p>You will want to look up the date of Thanksgiving 2022.</p>
+<p>Thanksgiving 2022 was on November 24th.</p>
 <p>I would recommend using an interval</p>
+<p>Helpful code: <code>%--%</code>, <code>%within%</code></p>
 </div>
 </div>
 <div class="cell">
@@ -298,14 +299,14 @@ Hints
 </div>
 <div class="callout-body-container callout-body">
 <p>In November, the sun sets at 4:00pm in Iceland.</p>
-<p>Pay attention to time zones!</p>
+<p>Pay attention to time zones! Iceland is actually in the “UTC” timezone.</p>
 </div>
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># end with 4 suspects left</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol start="5" type="1">
-<li>The thief left behind a receipt at the scene of the crime. The receipt is smudged, but the day of the month is shown to be 22. It is thought that the heist took place no more than three days after the receipt was issued.</li>
+<li>The thief left behind a receipt at the scene of the crime. The receipt is smudged, but the day of the month is shown to be 22. It is thought that the heist took place no more than three days <strong>after</strong> the receipt was issued.</li>
 </ol>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># end with 2 suspects left</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
