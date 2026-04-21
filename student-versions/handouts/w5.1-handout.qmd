@@ -1,0 +1,229 @@
+---
+title: "STAT 331 Week 5 Day 1 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+colleges <- read_csv("https://www.dropbox.com/s/bt5hvctdevhbq6j/colleges.csv?dl=1") 
+```
+
+Open and edit this handout in VISUAL mode to help with editing tables.
+
+1.  What is a character vector versus a string?
+
+2.  What inputs do `str_XXXX()` functions require?
+
+## Regular Expressions
+
+### Summary
+
+Fill in the table on basic regular expression below
+
+| Regular Expression | Example | What does this expression it mean (in words)? |
+|----|----|----|
+| `.` | `".ells"` |  |
+| `\\` | `"\\."` |  |
+| `^` | `"^California State"` |  |
+| `$` | `"State University$"` |  |
+| `[]` | `"[AC]"` |  |
+| `[^]` | `"[^University]"` |  |
+| `^[^]` | `"^[^University]"` |  |
+| `[A-Z]` | `"[A-z]"` |  |
+| `[0-9]` | `"[0-9]"` |  |
+| `[:punct:]` | `"[:punct:]"` |  |
+| `+` | `"St\\.+"` |  |
+| `*` | `"\\s*-\\s*"` |  |
+| `{a}` | `"[A-Z]{4}"` |  |
+| `{a,b}` | `"[A-Z]{4,6}"` |  |
+| `{a,}` | `"[A-Z]{4,}"` |  |
+| `()` | `"(T|t)ech"` |  |
+| `|` | `"(T|t)ech"` |  |
+| `()\\1` | `"([aeiou])\\1"` |  |
+
+### Code for Testing
+
+#### Anchors
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "^California State") |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "State University$") |> 
+  head()
+```
+
+#### Classes \[\]
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "^[AC]")  |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "[^University]")  |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "[0-9]")  |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "[:punct:]$")  |> 
+  head()
+```
+
+#### Qualifiers
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "St\\.+")  |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "\\s*-\\s*") |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "[A-Z]{4}") |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "[A-Z]{6}") |> 
+  head()
+```
+
+#### Groups ()
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "(T|t)ech") |> 
+  head()
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
+           pattern = "([aeiou])\\1") |> 
+  head()
+```
+
+## `stringr` functions
+
+### Summary
+
+Fill in the table on `stringr` functions below.
+
+|  |  |  |
+|----|----|----|
+| Function | **Example** | **What does this function do?** |
+| `str_subset()` | `str_subset(my_vector, pattern = "Bond")` |  |
+| `str_detect(, pattern = ...)` | `str_detect(my_vector,            pattern = "Bond")` |  |
+| `str_replace(, pattern = ...,  replacement = ...)` | `str_replace(my_vector,             pattern = "Bond",             replace = "Franco")` |  |
+| `str_remove(, pattern = ...)` | `str_remove(my_vector, pattern = "Bond")` |  |
+| `str_length()` | `str_length(INSTNM)` |  |
+| `str_sub(, start = ..., end = ...)` | `str_sub(INSTNM, start = 1, end = 8)` |  |
+| `str_pad(, side = ...)` | `str_pad(INSTNM, width = 20, pad = "_")` |  |
+| `str_extract(, pattern = ...)` | `str_extract(INSTNM, pattern = "[A-z]*\\s")` |  |
+| `str_to_lower()` | `str_to_lower(INSTNM)` |  |
+| `str_to_upper()` | `str_to_upper(INSTNM)` |  |
+| `str_to_title()` | `str_to_title(INSTNM)` |  |
+| `str_trim()` | `str_to_trim(INSTNM, side = "both")` |  |
+| `str_c()` | `str_c(CITY, STABBR, ZIP, sep = ", ")` |  |
+
+### Code for Testing
+
+```{r}
+colleges |> 
+  filter(str_detect(INSTNM, pattern = "Polytechnic"))
+```
+
+```{r}
+colleges |> 
+  summarize(n = sum(
+    str_detect(INSTNM, pattern = "Polytechnic"))
+    )
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_replace(INSTNM, 
+                              pattern = "$u", 
+                              replacement = "U")
+         )
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_remove(INSTNM, 
+                             pattern = "(College|University)"
+                             )
+         )
+```
+
+```{r}
+colleges |> 
+  mutate(short_name = str_sub(INSTNM, 
+                                  start = 1,
+                                  end = 8)
+         ) |> 
+  select(INSTNM, short_name)
+```
+
+```{r}
+colleges |> 
+  mutate(long_name = str_pad(INSTNM, 
+                             width = 20, 
+                             pad = "_", 
+                             side = "both")) |> 
+  select(INSTNM, short_name)
+```
+
+```{r}
+colleges |> 
+  mutate(first_word = str_extract(INSTNM,
+                                  pattern = "[A-z]*\\s")) |> 
+  select(INSTNM, first_word)
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_to_lower(INSTNM)) |> 
+  head()
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_to_upper(INSTNM)) |> 
+  head()
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_to_title(INSTNM)) |> 
+  head()
+```
+
+```{r}
+colleges |> 
+  mutate(INSTNM = str_trim(INSTNM, side = "both")) |> 
+  head()
+```

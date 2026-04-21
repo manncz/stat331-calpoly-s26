@@ -1,0 +1,36 @@
+---
+title: "Week 4, Part 2: Working with Dates using `lubridate`"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+library(knitr)
+```
+
+
+## Learning Objectives
+
+
+- recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)
+- specify time zones for data variables
+extract elements of a date variable
+- create intervals of time using the `%–%` operator
+- check if a date is within an interval using the `%within%` operator
+
+#### 📖 Readings: 45 min
+
+#### 📽 Optional Videos: 15 min
+
+------------------------------------------------------------------------
+
+## Dates with `lubridate`
+
+#### 📖 Required Reading: [R4DS 17: Dates and Times](https://r4ds.hadley.nz/datetimes.html)
+
+#### 📽 Optional Video: [Working wtih Dates](https://www.youtube.com/watch?v=SEPjN2AJqbo)
+

@@ -1,0 +1,247 @@
+---
+title: "Week 5, Part 1: Working with Strings Using `stringr`"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| include: false
+#| label: packages-setup
+
+library(tidyverse)
+library(knitr)
+```
+
+This week is all about special data types in R. Similar to the tools you learned last week for working with factors, this week you are going to learn about tools for working with strings and dates
+
+## Learning Objectives
+
+- hypothesize what type of output a `str_XXX()` function will provide (e.g., character vector, logical vector, matrix, numeric vector)
+- recognize what `str_XXX()` function is best suited for a particular problem (e.g., replacing, detecting a pattern, removing whitespace)
+- construct simple regular expressions using character classes (`[]`), repeated patterns (`{2,}`), anchoring (`^` and `$`), and groups (`()`)
+
+#### 📖 Readings: 60-75 min
+
+#### 📽 Optional Videos: 10 min
+
+------------------------------------------------------------------------
+
+:::callout-important
+I provide the [**stringr** cheatsheet](https://rstudio.github.io/cheatsheets/strings.pdf) for your table in class, but I would strongly recommend you also print it for yourself to use outside of class!
+:::
+
+##  Working with Strings
+
+#### 📖 Required Reading: [R4DS 14.1-14.5: Strings](https://r4ds.had.co.nz/strings.html#strings)
+
+- Note: don't read past 14.5! You could also skip 14.3 and come back to it.
+
+#### 📽 Optional Video: [Strings](https://www.youtube.com/watch?v=Oo_MtXwpi2Q)
+
+::: callout-note
+### Common **stringr** functions and what they do
+
+|  |  |  |
+|---------------------------|---------------------------|------------------|
+| **Task** | **stringr** | **Output** |
+| Find a `pattern` and replace it | `str_replace(x, pattern, replacement)` and `str_replace_all(x, pattern, replacement)` | Modified string or character vector |
+| Convert a string from uppercase to lower case or visa versa | `str_to_lower(x)`, `str_to_upper(x)` , `str_to_title(x)` | Modified string or character vector |
+| Strip whitespace from the start / end of a string | `str_trim(x)` , `str_squish(x)` | Modified string or character vector |
+| Detect if the string contains a pattern | `str_detect(x, pattern)` | Logical |
+| Count how many times a pattern appears in the string | `str_count(x, pattern)` | Numeric |
+| Find the first appearance of the pattern within the string | `str_locate(x, pattern)` | Integer matrix (start position, end position) |
+| Find all appearances of the pattern within the string | `str_locate_all(x, pattern)` | Integer matrix (start position, end position) |
+| Detect if a string contains a pattern at the start / end | `str_starts(x, pattern)`, `str_ends(x, pattern)` | Logical |
+| Subset a string from index a to b | `str_sub(x, a, b)` | Modified string or character vector |
+
+: Across **every** function in the **stringr** package, `x` is the string (or vector of strings) and `pattern` is a pattern to be found within the string.
+:::
+
+## Regular Expressions
+
+Regular expressions (or regex) is a concise and powerful language created to describe patterns in strings. We are going to cover only relatively simple regular expressions in this class, but you could build a regular expression to match extremely complex string patterns! I think that it is a fun puzzle. The [**stringr** cheatsheet](https://rstudio.github.io/cheatsheets/strings.pdf) has a helpful regex reference. You can also use this [web app](https://spannbaueradam.shinyapps.io/r_regex_tester/) to test regular expressions for R.
+
+:::callout-important
+Regular expressions in R can be slightly different from python or other languages! Mainly, you usually need more escapes `"\\"` than in other languages. 
+:::
+
+#### 📖 Required Reading: [R4DS 15.1-15.4: Strings](https://r4ds.hadley.nz/regexps.html)
+
+::: {.callout-note collapse="true"}
+# Here is Dr. T \& C's short primer on regular expressions
+
+Some basics:
+
+-   `[]` enclose sets of characters
+    + For example, `[abc]` will match *any* single character `a`, `b`, `c`
+
+-   `-` specifies a range of characters 
+    + For example, `A-z` will match all upper and lower case letters (A-Z, and then a-z)
+
+-   `.` matches any character (except a newline)
+
+-   To match special characters, you need to escape them using a `\\` in R. 
+    + For example, `\\.` will match a literal `.`, `\\$` will
+    match a literal `$`.
+
+```{r}
+#| label: phone-strings
+
+num_string <- "phone: 123-456-7890, nuid: 12345678, ssn: 123-45-6789"
+
+str_extract(num_string, 
+            pattern = "[0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9][0-9][0-9]")
+```
+
+### Repeating Patterns
+
+Listing out all of those numbers can get repetitive, though. How do we specify repetition?
+
+-   `*` means repeat between 0 and inf times
+-   `+` means 1 or more times
+-   `?` means 0 or 1 times -- most useful when you're looking for something
+optional
+-   `{a, b}` means repeat between `a` and `b` times, where `a` and `b` are
+integers. 
+    + Note that `b` can be blank. So `[abc]{3,}` will match `abc`, `aaaa`, 
+    `cbbaa`, but not `ab`, `bb`, or `a`.
+-   `{a}` specifies an exact number of repeated charaters. 
+    + For example, `{3}` means "exactly 3 times" whereas `{3,}` means "3 or
+    more times."
+
+```{r}
+#| label: regular-expression-phone-ssn
+
+num_string
+
+# Matches a sequence of *three* numbers, followed by a dash, 
+# then a sequence of *two* numbers, followed by a dash, 
+# then a sequence of *four* numbers, followed by a dash.
+str_extract(num_string, pattern = "[0-9]{3}-[0-9]{2}-[0-9]{4}")
+
+# Matches a sequence of *three* numbers, followed by any character, 
+# then a sequence of *three* numbers, followed by any character, 
+# then a sequence of *four* numbers, followed by any character, 
+str_extract(num_string, pattern = "[0-9]{3}.[0-9]{3}.[0-9]{4}")
+
+# Matches a sequence of at least *eight* numbers 
+str_extract(num_string, pattern = "[0-9]{8,}")
+
+```
+
+### Anchoring
+
+There are also ways to "anchor" a pattern to a part of the string (e.g. the beginning or the end)
+
+-   `^` has multiple meanings:
+    -   If `^` is the first character in a pattern (e.g., `^Al`) it matches the
+    beginning of a string.
+    -   If `^` follows a `[` (e.g., `[^abc]`) then it means "not." So, `[^abc]`
+    means "the collection of all characters that **are not** a, b, or c."
+-   `$` means the end of a string (e.g., `bold$`)
+
+
+```{r}
+#| label: regular-expression-addresses
+
+address <- "1600 Pennsylvania Ave NW, Washington D.C., 20500"
+```
+
+**Grabbing the house number**
+```{r}
+# Match a sequence of one or more digits at the beginning of the string
+house_num <- str_extract(address, pattern = "^[0-9]{1,}")
+house_num
+```
+
+**Grabbing the street**
+
+```{r} 
+# Match everything alphanumeric up to the comma
+street <- str_extract(address, pattern = "[A-z0-9 ]{1,}")
+street
+
+# Remove house number from street address
+street <- str_remove(street, house_num) |> 
+  # Trim any leading or trailing whitespace from remaining string
+  str_trim() 
+street
+```
+
+**Grabbing the city**
+
+```{r} 
+# Match one or more characters between the two commas  
+city <- str_extract(address, pattern = ",.{1,},") |> 
+  # Remove the leading and trailing commas
+  str_remove_all(",") |> 
+  # Trim any leading or trailing whitespace from remaining string
+  str_trim()
+city
+```
+
+**Grabbing the zip code**
+
+```{r} 
+# Matches both 5 and 9 digit zip codes found at the end of the string
+zip <- str_extract(address, pattern = "[0-9]{5,10}$") 
+zip
+```
+
+### Making Groups
+
+-   `()` are used to capture information
+    + For example, `([0-9]{4})` captures any 4-digit number
+-   an `|` means "or" 
+    + For example, `a|b` will select a or b.
+- You can reference formed groups to indicate repetition or extract only certain parts of your regex
+
+**Making a group of characters**
+```{r}
+#| label: regular-expression-groups
+
+fruit
+
+# Searches for fruits containing a group of two p's (need to be together)
+str_view(fruit, pattern = "(pp)")
+
+```
+
+**Using an "or"**
+```{r}
+#| label: regular-expression-or 
+
+# Searches for fruits containing apple OR melon OR nut
+str_view(fruit, pattern = "apple|melon|nut")
+
+```
+
+**Referencing groups**
+
+We can then reference groups in order with escaped numbers (`\\1`) to specify that certain groupings repeat.
+
+```{r}
+#| label: regular-expression-back-references
+
+# Searches for fruits where there are two characters (..) that get repeated
+# a second time \\1
+str_view(fruit, pattern = "(..)\\1")
+```
+
+Groups also let us be very precise with extracting strings!
+
+```{r}
+shopping_list <- c("apples x4", 
+                   "bag of flour", 
+                   "bag of sugar", 
+                   "milk x2")
+
+str_extract(shopping_list, "([a-z]+) x([1-9])")
+
+str_extract(shopping_list, "([a-z]+) x([1-9])", group = 1)
+
+str_extract(shopping_list, "([a-z]+) x([1-9])", group = 2)
+```
+
+
+:::

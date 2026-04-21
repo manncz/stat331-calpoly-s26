@@ -1,0 +1,745 @@
+---
+title: "Using `lubridate` to Work with Dates"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+editor: source
+self-contained: true
+---
+
+```{r}
+#| include: false
+#| message: false
+#| label: setup
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+## Thursday, May 1
+
+Today we will...
+
+-   Midterm Exam - What to expect
+-   New Material
+    -   Working with Date & Time Variables
+-   PA 5.2: Jewel Heist 
+
+<!-- # A Couple Of Tips -->
+
+
+<!-- ## Nice column names with `pivot_wider()` -->
+
+<!-- ```{r} -->
+<!-- load("ca-childcare.Rdata") -->
+<!-- ``` -->
+
+<!-- ::: panel-tabset -->
+
+<!-- ## Not wrong... -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| eval: false -->
+
+<!-- ca_childcare |>  -->
+<!--   filter(study_year %in% c(2008, 2018)) |>  -->
+<!--   group_by(region, study_year) |>  -->
+<!--   summarize(med_income = median(me_2018)) |>  -->
+<!--   pivot_wider(names_from = study_year, -->
+<!--               values_from = med_income) |>  -->
+<!--   arrange(desc(`2018`)) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   filter(study_year %in% c(2008, 2018)) |>  -->
+<!--   group_by(region, study_year) |>  -->
+<!--   summarize(med_income = median(me_2018)) |>  -->
+<!--   pivot_wider(names_from = study_year, -->
+<!--               values_from = med_income) |>  -->
+<!--   arrange(desc(`2018`)) |>  -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "320px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 30) -->
+<!-- ``` -->
+
+<!-- ## Better! -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| eval: false -->
+
+<!-- ca_childcare |>  -->
+<!--   filter(study_year %in% c(2008, 2018)) |>  -->
+<!--   group_by(region, study_year) |>  -->
+<!--   summarize(med_income = median(me_2018)) |>  -->
+<!--   pivot_wider(names_from = study_year, -->
+<!--               values_from = med_income, -->
+<!--               names_prefix = "income_") |>  -->
+<!--   arrange(desc(income_2018)) -->
+<!-- ``` -->
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   filter(study_year %in% c(2008, 2018)) |>  -->
+<!--   group_by(region, study_year) |>  -->
+<!--   summarize(med_income = median(me_2018)) |>  -->
+<!--   pivot_wider(names_from = study_year, -->
+<!--               values_from = med_income, -->
+<!--               names_prefix = "income_") |>  -->
+<!--   arrange(desc(income_2018)) |>  -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "320px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 30) -->
+<!-- ``` -->
+
+
+<!-- ::: -->
+
+<!-- ## Saving time with `pivot_longer()` -->
+
+<!-- - We want a longer dataset with a column for type of care (Center or Family Based) and the age of the children (Infant, Toddler, Preschool) -->
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   select(county_name, study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   slice_head(n = 6) |>  -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "200px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 20) -->
+<!-- ``` -->
+
+<!-- ## Saving time with `pivot_longer()` -->
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   select(county_name, study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   slice_head(n = 6) |>  -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "100px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 20) -->
+<!-- ``` -->
+<!-- ::: panel-tabset -->
+
+<!-- ## More work left -->
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| eval: false -->
+<!-- ca_childcare |>  -->
+<!--     select(county_name,  study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   pivot_longer(cols = starts_with("mc") | starts_with("mfcc"), -->
+<!--                names_to = "type_age_group", -->
+<!--                values_to = "med_cost") -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   select(county_name,  study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   pivot_longer(cols = starts_with("mc") | starts_with("mfcc"), -->
+<!--                names_to = "type_age_group", -->
+<!--                values_to = "med_cost") |>  -->
+<!--   slice_head(n = 20) |> -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "200px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 20) -->
+<!-- ``` -->
+
+<!-- ## One shot! -->
+
+<!-- - When "wide" column names follow a nice pattern, we can specify multiple grouping variables (`names_to`) in `pivot_longer()`: -->
+
+<!-- ```{r} -->
+<!-- #| echo: true -->
+<!-- #| eval: false -->
+<!-- ca_childcare |>  -->
+<!--   select(county_name, study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   pivot_longer(cols = starts_with("mc") | starts_with("mfcc"), -->
+<!--                names_to = c("type", "age_group"), -->
+<!--                names_sep = "_", -->
+<!--                values_to = "med_cost") -->
+<!-- ``` -->
+
+
+<!-- ```{r} -->
+<!-- ca_childcare |>  -->
+<!--   select(county_name, study_year, mc_infant:mfcc_preschool) |>  -->
+<!--   pivot_longer(cols = starts_with("mc") | starts_with("mfcc"), -->
+<!--                names_to = c("type", "age_group"), -->
+<!--                names_sep = "_", -->
+<!--                values_to = "med_cost") |>  -->
+<!--   slice_head(n = 20) |>  -->
+<!--   knitr::kable() |>  -->
+<!--   kableExtra::scroll_box(height = "200px") |>  -->
+<!--   kableExtra::kable_styling(font_size = 20) -->
+<!-- ``` -->
+
+<!-- ::: -->
+
+# Midterm Info
+
+## Midterm Exam - Thu 5/8
+
+:::{.incremental}
+
++ This is a three-part exam
++ First two sections are completed in the one hour and 50 minute class period
+  1. You will first complete a **General Questions** section **on paper** and **without your computer**.
+  2. After you turn that in, you will complete a **Short Answer** section **with your computer**.
++ Third section is "takehome" and due **48 hours** after the end of class.
+  3. The **Take-Home Analysis** is completed out of class (should not take more than 3 hours)
+
+:::
+
+## Midterm Exam - Thu 5/8
+
+:::{.incremental}
+
+- Review the "What to Expect" document thoroughly as it includes
+  + detailed expectations
+  + the dataset you will be working with
+- Set yourself up with a dedicated directory that has the data in it
+- Make sure to bring to the exam:
+  + something to write with (black/blue pen or pencils)
+  + your laptop (& a charging chord)
+
+:::
+
+. . .
+
+::: callout-caution
+While the coding tasks are open-resource, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions.
+:::
+
+## Midterm Preparation Suggestions
+
+:::{.incremental}
+- Review course slides \& Check-Ins
+- Quiz each other on the uses of different functions
+- Try to re-do parts of the PAs or LAs from scratch
+- Start working with the data
+  - HAVE CODE SET UP THAT READS IN THE DATA
+  - Ask some questions about the data and try to answer them
+- Save example code for things you find tricky in a place you can find it
+- [**Get sleep and feed yourself!**]{style="color:green;"} 🛌🥞🥙🍛
+
+:::
+
+
+
+# Date + Time Variables
+
+
+
+## `lubridate`
+
+::::: columns
+::: {.column width="80%"}
+-   Convert a date-like variable ("May 8, 1995") to a date or date-time object.
+
+-   Find the weekday, month, year, etc from a date-time object.
+
+-   Convert between time zones.
+:::
+
+::: {.column width="20%"}
+```{r}
+#| fig-align: center
+#| fig-alt: "The image shows the hex logo for the lubridate R package. The logo is a green hexagon with a stylized calendar in the center. The calendar has a small clock icon overlapping its bottom left corner, symbolizing time-related functions. The text 'lubridate' appears prominently below the calendar icon within the hexagon. Lubridate is commonly used in R for working with date and time data."
+
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/blob/main/thumbs/lubridate.png?raw=true")
+```
+:::
+:::::
+
+::: callout-note
+The `lubridate` package **installs** and **loads** with the `tidyverse`. 
+:::
+## Why are dates and times tricky?
+
+:::{.columns}
+::: {.column width="55%"}
+When parsing dates and times, we have to consider complicating factors like...
+
+-   Daylight Savings Time.
+    -   One day a year is 23 hours; one day a year is 25 hours.
+    -   Some places use it, some don't.
+-   Leap years -- most years have 365 days, some have 366.
+-   Time zones.
+
+:::
+
+:::{.column width ="45%"}
+
+![](images/time_jumps.png)
+:::
+:::
+
+## `date-time` Objects
+
+There are multiple **data types** for dates and times.
+
+-   A date:
+    -   `date` or `Date`
+-   A date and a time (identifies a unique instant in time):
+    -   `dtm`
+    -   `POSIXlt` -- stores date-times as the number of seconds since January 1, 1970 ("Unix Epoch")
+    -   `POSIXct` -- stores date-times as a list with elements for second, minute, hour, day, month, year, etc.
+
+## Creating `date-time` Objects
+
+::: callout-tip
+# Big Picture
+
+There are a lot of diferent ways to create `date-time` objects!
+:::
+
+. . .
+
+Create a date from individual components:
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+make_date(year = 1995, month = 05, day = 08)
+```
+
+## Create a `date-time` Object from a String
+
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+mdy("August 29, 1991")
+```
+:::
+
+. . .
+
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+dmy("29-August-1991", 
+    tz = "America/Denver")
+```
+:::
+
+. . .
+
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+dmy_hms("29-August-1991 9:32:12", 
+        tz = "America/Denver")
+```
+:::
+
+. . .
+
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+as_datetime("91-08-29", 
+            format = "%y-%m-%d")
+```
+:::
+
+. . .
+
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+parse_datetime("8/29/1991", 
+               format = "%m/%d/%Y")
+```
+:::
+
+## Creating `date-time` Objects
+
+![](images/date_symbols.png){width="80%" fig-alt=""}
+
+## Common Mistake with Dates
+
+::: columns
+::: {.column width="48%"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+as_datetime(2023-02-6)
+```
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="48%"}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+my_date <- 2023-02-6
+my_date
+```
+:::
+:::
+
+</br>
+
+::: {.centered}
+***What's wrong here?***
+:::
+
+<br>
+
+. . .
+
+Make sure you use quotes!
+
+-   2,015 seconds $\approx$ 33.5 minutes
+
+## Extracting `date-time` Components
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+bday <- ymd_hms("1995-02-27 07:03:12", 
+                tz = "America/Chicago")
+bday
+```
+
+. . .
+
+</br> 
+
+::::: columns
+::: column
+::: {.small}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+year(bday)
+month(bday)
+day(bday)
+```
+:::
+:::
+
+::: column
+::: {.small}
+::: {.fragment}
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+wday(bday)
+
+wday(bday, 
+     label = TRUE, 
+     abbr = FALSE)
+```
+:::
+:::
+:::
+:::::
+
+## Subtraction with `date-time` Objects
+
+Doing subtraction gives you a `difftime` object. 
+
+`difftime` objects do not always have the same units -- it depends on the scale of the objects you are working with.
+
+. . .
+
+How old am I?
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+today() - mdy("02-27-1995")
+```
+
+. . .
+
+</br> 
+
+How long did it take me to type this slide?
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+begin <- mdy_hms("10/21/2024 20:40:34")
+finish <- mdy_hms("10/21/2024 20:43:11")
+
+finish - begin
+```
+
+## Durations and Periods
+
+::: columns
+::: {.column width="48%"}
+**Durations** will always give the time span in an **exact number of seconds**.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+as.duration(
+  today() - mdy("02-27-1995")
+            )
+```
+
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="48%"}
+::: {.fragment}
+**Periods** will give the time span in more approximate, but **human readable times**.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+as.period(
+  today() - mdy("02-27-1995")
+  )
+```
+:::
+:::
+:::
+
+## Durations and Periods
+
+::: columns
+::: {.column width="40%"}
+We can also **add** time to `date-time` objects:
+
+-   `days()`, `years()`, etc. will add a **period** of time.
+-   `ddays()`, `dyears()`, etc. will add a **duration** of time.
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+::: {.fragment}
+Because durations use the **exact** number of seconds to represent days and years, you might get unexpected results. 
+
+</br> 
+
+When is is my 99th birthday?
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+mdy("02/27/1995") + years(99)
+```
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+mdy("02/27/1995") + dyears(99)
+```
+:::
+:::
+:::
+
+
+## Time Zones...
+
+...are complicated! 
+
+</br> 
+
+Specify time zones in the form:
+
+-   {continent}/{city} -- "America/Denver", "Africa/Nairobi"
+-   {ocean}/{city} -- "Pacific/Auckland"
+
+. . .
+
+What time zone does R think I'm in?
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+Sys.timezone()
+```
+
+## Time Zones
+
+You can change the time zone of a date in two ways:
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x <- ymd_hms("2024-10-24 18:00:00", 
+             tz = "Europe/Copenhagen")
+```
+
+. . .
+
+::: columns
+::: {.column width="48%"}
+`with_tz()`
+
+::: {.small}
+Keeps the instant in time the same, but changes the visual representation.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x |> 
+  with_tz()
+
+x |> 
+  with_tz(tzone = "Asia/Kolkata")
+```
+:::
+:::
+
+::: {.column width="3%"}
+:::
+
+::: {.column width="48%"}
+::: {.fragment}
+`force_tz()`
+
+::: {.small}
+Changes the instant in time by forcing a time zone change.
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x |> 
+  force_tz()
+
+x |> 
+  force_tz(tzone = "Asia/Kolkata")
+```
+:::
+:::
+:::
+:::
+
+## Common Mistake with Dates
+
+When you read data in or create a new date-time object, the default time zone (if not specified) is UTC (Universal Time Coordinated)*.  
+
+. . .
+
+So, make sure you specify your desired time zone!
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x <- mdy("11/20/1993")
+tz(x)
+```
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+x <- mdy("11/20/1993", 
+         tz = "America/Los_Angeles")
+tz(x)
+```
+
+::: {.small}
+*UTC is the same as GMT (Greenwich Mean Time)
+:::
+
+
+
+## Tips for Working with Dates
+
+- Always just check that you are getting results that you expect!
+- Pay attention to time zones
+- Use the lubridate [cheatsheet](https://rstudio.github.io/cheatsheets/lubridate.pdf)
+
+![](images/lubridate-cheatsheet.png)
+
+## PA 5.2: Jewel Heist
+::: columns
+::: {.column width="55%"}
+
+::: {.small}
+
+- Use dates from clues to find the jewel thief!
+- Make sure to pay attention to time zones ⏰
+:::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](images/pink_panther.jpeg){fig-alt="Movie poster for The Pink Panther, a movie and TV show series. Shows a detective following paw prints with a magnifying glass, but a shadow of the pink panther looming over them looking mischieveous."}
+:::
+:::
+
+## LA 5: Murder in SQL City
+
+
+::: columns
+::: {.column width="55%"}
+
+::: {.incremental}
+
+- This lab looks different!
+- You will need a number of steps to follow the clues - it won't be done in one pipeline
+- Read the instructions carefully
+- At the end, try to delete any code or output that you don't actually need
+- Check with others if you are stuck! You can see if they get the witness or clues answers at that step.
+:::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+![](images/thumbtacks_and_string_2x.png){fig-alt="T"}
+:::
+:::
+
+
+
+## To do...
+
+- **PA 5.2: Jewel Heist**
+  + due Friday (5/2) at 11:59pm
+- **Lab 5: Murder in SQL City**
+  + due Monday (5/5) at 11:59pm
+- **Read Chapter 6: Version Control**
+  + **Check-in 6.1 - 6.2** due Tuesday (5/6) before class
+- **Project Checkpoint 1: Group Formation Survey**
+  + due Tuesday (5/6) at 11:59pm
