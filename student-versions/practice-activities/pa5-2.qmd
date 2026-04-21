@@ -63,9 +63,7 @@ Pay attention to **time zones**!
 
 Thanksgiving 2022 was on November 24th.
 
-I would recommend using an interval
-
-Helpful code: `%--%`, `%within%`
+I would recommend using an interval and `%within%`
 :::
 
 ```{r}
