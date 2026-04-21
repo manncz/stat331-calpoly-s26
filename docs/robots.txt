@@ -1,1 +1,1 @@
-Sitemap: https://github.com/manncz/stat-331-s26/sitemap.xml
+Sitemap: https://github.com/manncz/stat331-calpoly-s26/sitemap.xml

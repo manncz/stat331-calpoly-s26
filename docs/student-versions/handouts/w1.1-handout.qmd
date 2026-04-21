@@ -101,7 +101,7 @@ What are the dimensions of ...
 - index the second and third elements of the **vector** `vec`
 
 ```{r}
-
+vec[2:3]
 ```
 
 - index the first **row** of the **matrix** `mat`

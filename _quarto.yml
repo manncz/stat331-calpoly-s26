@@ -15,8 +15,8 @@ website:
   page-navigation: true
   title: "Introduction to Statistical Computing in R"
   description: "Homepage for STAT 331/531 at Cal Poly Spring 2025"
-  site-url: "https://github.com/manncz/stat-331-s26"
-  repo-url: https://github.com/manncz/stat-331-s26
+  site-url: "https://github.com/manncz/stat331-calpoly-s26"
+  repo-url: https://github.com/manncz/stat331-calpoly-s26
   repo-actions: [issue]
 
   page-footer:
