@@ -12,6 +12,7 @@ embed-resources: true
 library(tidyverse)
 library(readxl)
 library(janitor)
+library(ggridges)
 ```
 
 ## Data
@@ -147,7 +148,7 @@ eras_data |>
                        "alt-pop" = "Midnights"))
 ```
 
-b. Why would you want to use `fct_collapse()` rather than `case_when()`? (How is the syntax different?)
+b. Why would you want to use `fct_collapse()` rather than `case_when()`? 
 
 
 c. What happens to levels of the variable `.f = ` that you do not include in `fct_collapse()`?
@@ -219,6 +220,9 @@ a. What does `fct_reorder()` do?  In what setting would you use it?
 
 
 ```{r}
+# you may need to install this package!
+library(ggridges)
+
 eras_data |> 
   ggplot(aes(x = Length, 
              y = fct_reorder(.f = Album,
@@ -250,7 +254,8 @@ data(txhousing)
 
 txhousing |>
   filter(city %in% c("Dallas","Fort Worth", "Austin",
-                     "Houston", "El Paso")) |> 
+                     "Houston", "El Paso"),
+         !is.na(listings)) |> 
   ggplot() +
   geom_line(mapping = aes(x = date, 
                           y = listings,
