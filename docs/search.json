@@ -3294,7 +3294,7 @@
     "href": "slides/week-5/w5-dates.html#midterm-preparation-suggestions",
     "title": "Using lubridate to Work with Dates",
     "section": "Midterm Preparation Suggestions",
-    "text": "Midterm Preparation Suggestions\n\n\nReview course slides & Quizzes\nQuiz each other on the uses of different functions\nTry to re-do parts of the PAs or LAs from scratch\nStart working with the data\n\nHAVE CODE SET UP THAT READS IN THE DATA\nAsk some questions about the data and try to answer them\n\nSave example code for things you find tricky in a place you can find it\nGet sleep and feed yourself! 🛌🥞🥙🍛"
+    "text": "Midterm Preparation Suggestions\n\n\nReview course slides, handouts, & Quizzes\nQuiz each other on the uses of different functions\nTry to re-do parts of the PAs or LAs from scratch\nStart working with the data\n\nHAVE CODE SET UP THAT READS IN THE DATA\nAsk some questions about the data and try to answer them\n\nSave example code for things you find tricky in a place you can find it\nGet sleep and feed yourself! 🛌🥞🥙🍛"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#lubridate",
@@ -3322,7 +3322,7 @@
     "href": "slides/week-5/w5-dates.html#creating-date-time-objects",
     "title": "Using lubridate to Work with Dates",
     "section": "Creating date-time Objects",
-    "text": "Creating date-time Objects\n\n\n\n\n\n\nBig Picture\n\n\nThere are a lot of diferent ways to create date-time objects!\n\n\n\n\nCreate a date from individual components:\n\nmake_date(year = 1995, month = 05, day = 08)\n\n[1] \"1995-05-08\""
+    "text": "Creating date-time Objects\n\n\n\n\n\n\nBig Picture\n\n\nThere are a lot of diferent ways to create date-time objects!\n\n\n\n\nCreate a date from individual components:\n\nmake_date(year = 1995, month = 05, day = 08)\n\n[1] \"1995-05-08\"\n\n\n\n\nCreate a date from a number:\n\ndmy(08051995)\n\n[1] \"1995-05-08\"\n\n\n\nymd(19950508)\n\n[1] \"1995-05-08\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#create-a-date-time-object-from-a-string",
@@ -3336,14 +3336,14 @@
     "href": "slides/week-5/w5-dates.html#creating-date-time-objects-1",
     "title": "Using lubridate to Work with Dates",
     "section": "Creating date-time Objects",
-    "text": "Creating date-time Objects"
+    "text": "Creating date-time Objects\n  ## Extracting date-time Components\n\nbday &lt;- ymd_hms(\"1995-02-27 07:03:12\", \n                tz = \"America/Chicago\")\nbday\n\n[1] \"1995-02-27 07:03:12 CST\"\n\n\n\n\n\n\n\n\nyear(bday)\n\n[1] 1995\n\nmonth(bday)\n\n[1] 2\n\nday(bday)\n\n[1] 27\n\n\n\n\n\n\n\nwday(bday)\n\n[1] 2\n\nwday(bday, \n     label = TRUE, \n     abbr = FALSE)\n\n[1] Monday\n7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; ... &lt; Saturday"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#common-mistake-with-dates",
     "href": "slides/week-5/w5-dates.html#common-mistake-with-dates",
     "title": "Using lubridate to Work with Dates",
     "section": "Common Mistake with Dates",
-    "text": "Common Mistake with Dates\n\n\n\nas_datetime(2023-02-6)\n\n[1] \"1970-01-01 00:33:35 UTC\"\n\n\n\n\n\n\nmy_date &lt;- 2023-02-6\nmy_date\n\n[1] 2015\n\n\n\n\n\nWhat’s wrong here?\n\n\n\nMake sure you use quotes!\n\n2,015 seconds \\(\\approx\\) 33.5 minutes"
+    "text": "Common Mistake with Dates\nWhen you read data in or create a new date-time object, the default time zone (if not specified) is UTC (Universal Time Coordinated)*.\n\nSo, make sure you specify your desired time zone!\n\nx &lt;- mdy(\"11/20/1993\")\ntz(x)\n\n[1] \"UTC\"\n\n\n\nx &lt;- mdy(\"11/20/1993\", \n         tz = \"America/Los_Angeles\")\ntz(x)\n\n[1] \"America/Los_Angeles\"\n\n\n\n*UTC is the same as GMT (Greenwich Mean Time) which is where Iceland is located"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#extracting-date-time-components",
@@ -3357,14 +3357,14 @@
     "href": "slides/week-5/w5-dates.html#subtraction-with-date-time-objects",
     "title": "Using lubridate to Work with Dates",
     "section": "Subtraction with date-time Objects",
-    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11376 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
+    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11379 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods",
     "href": "slides/week-5/w5-dates.html#durations-and-periods",
     "title": "Using lubridate to Work with Dates",
     "section": "Durations and Periods",
-    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"982886400s (~31.15 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11376d 0H 0M 0S\""
+    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"983145600s (~31.15 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11379d 0H 0M 0S\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods-1",
@@ -3441,7 +3441,7 @@
     "href": "slides/week-5/w5-dates.html#midterm---coding-portion",
     "title": "Using lubridate to Work with Dates",
     "section": "Midterm - Coding Portion",
-    "text": "Midterm - Coding Portion\n\nYou may course and online resources other but not generative AI\nAll questions can be addressed with just the course materials\n\nthis includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)\n\nYou must cite any resources that are not the course materials\n\ninclude the prompt for Google searchers\n\nI expect what you submit is your work\n\n\n\n\n\n\n\nCaution\n\n\nWhile the coding tasks allow resources, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions."
+    "text": "Midterm - Coding Portion\n\nYou may use course and online resources other but not generative AI\nAll questions can be addressed with just the course materials\n\nthis includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)\n\nYou must cite any resources that are not the course materials\n\ninclude the prompt for Google searchers\n\nI expect what you submit is your work\n\n\n\n\n\n\n\nCaution\n\n\nWhile the coding tasks allow resources, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions."
   },
   {
     "objectID": "slides/week-5/w5-dates.html",
@@ -3505,5 +3505,12 @@
     "title": "Using stringr to Work with Strings",
     "section": "Removing Whitespace",
     "text": "Removing Whitespace\n\n\nstr_trim()\n\nremoves whitespace from start and end of string\n\n\nstr_trim(\"  Hi.     there  \", \n         side = \"both\")\n\n[1] \"Hi.     there\"\n\n\n\nstr_squish()\n\ntrims whitespace from each end and collapses multiple spaces into single spaces\n\n\nstr_squish(\"  Hi.     there  \")\n\n[1] \"Hi. there\""
+  },
+  {
+    "objectID": "slides/week-5/w5-dates.html#midterm---practice-gradescope-submission",
+    "href": "slides/week-5/w5-dates.html#midterm---practice-gradescope-submission",
+    "title": "Using lubridate to Work with Dates",
+    "section": "Midterm - Practice Gradescope Submission",
+    "text": "Midterm - Practice Gradescope Submission\n\nRather than an .html to directly to Canvas, you will submit a rendered .pdf to Gradescope through Canvas\nLet’s make sure this works now!"
   }
 ]

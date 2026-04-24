@@ -205,7 +205,7 @@ Today we will...
 
 ## Midterm - Coding Portion
 
-- You may course and online resources other but **not generative AI**
+- You may use course and online resources other but **not generative AI**
 - All questions can be addressed with just the course materials
   - this includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)
 - You must **cite** any resources that are not the course materials
@@ -219,7 +219,7 @@ While the coding tasks allow resources, you will likely run out of time if you h
 ## Midterm Preparation Suggestions
 
 :::{.incremental}
-- Review course slides \& Quizzes
+- Review course slides, handouts, \& Quizzes
 - Quiz each other on the uses of different functions
 - Try to re-do parts of the PAs or LAs from scratch
 - Start working with the data
@@ -231,6 +231,10 @@ While the coding tasks allow resources, you will likely run out of time if you h
 :::
 
 
+## Midterm - Practice Gradescope Submission
+
+- Rather than an .html to directly to Canvas, you will submit a rendered .pdf to Gradescope through Canvas
+- Let's make sure this works now! 
 
 # Date + Time Variables
 
@@ -310,6 +314,24 @@ Create a date from individual components:
 make_date(year = 1995, month = 05, day = 08)
 ```
 
+. . .
+
+Create a date from a number:
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+dmy(08051995)
+```
+
+```{r}
+#| echo: true
+#| code-line-numbers: false
+
+ymd(19950508)
+```
+
 ## Create a `date-time` Object from a String
 
 ::: {.small}
@@ -372,7 +394,7 @@ parse_datetime("8/29/1991",
 ## Creating `date-time` Objects
 
 ![](images/date_symbols.png){width="80%" fig-alt=""}
-
+<!--
 ## Common Mistake with Dates
 
 ::: columns
@@ -413,7 +435,7 @@ my_date
 Make sure you use quotes!
 
 -   2,015 seconds $\approx$ 33.5 minutes
-
+-->
 ## Extracting `date-time` Components
 
 ```{r}
