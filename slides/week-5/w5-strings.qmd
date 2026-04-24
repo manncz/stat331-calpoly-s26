@@ -58,7 +58,8 @@ Remember to download, save, and open up the [handout](../../student-versions/han
 
 ## Week 6 Layout
 
-- Monday: Version control with `git`
+- Monday: Version control with `git` and GitHub
+  + There are two "Course Setup" assignments to complete before class
   + Practice Activity - done in groups **in class**
   + Last day to submit Lab 5
   
@@ -393,8 +394,8 @@ str_subset(colleges$INSTNM,
 ## Character Classes: `[]`
 
 
-Character classes let you specify multiple possible characters to match on.
-
+- Character classes let you specify multiple possible characters to match on.
+- Anything inside `[]` is treated like "or"
 
 ```{r}
 #| echo: true
@@ -445,7 +446,7 @@ str_subset(colleges$INSTNM,
 #| code-line-numbers: false
 
 str_subset(colleges$INSTNM, 
-           pattern = "^University")
+           pattern = "^U")
 ```
 
 
@@ -457,7 +458,7 @@ str_subset(colleges$INSTNM,
 #| code-line-numbers: false
 
 str_subset(colleges$INSTNM, 
-           pattern = "^[^University]")
+           pattern = "^[^U]")
 ```
 :::
 :::
@@ -605,7 +606,20 @@ str_subset(colleges$INSTNM,
 ## Character Groups: `()`
 
 
-+ `()` creates a group of characters
++ `()` creates a group of characters to be matched exactly
+
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+
+str_subset(colleges$INSTNM, 
+           pattern = "(iss){2}")
+```
+
+
+. . .
 
 + We can specify "either" / "or" within a group using `|`.
 
@@ -728,7 +742,7 @@ str_replace(my_vector,
 
 ## `str_replace()` with `mutate()`
 
-- Make capitalization of "University" consistent
+- Change "University" to "Uni" to pretend we live in Australia
 
 ```{r}
 #| echo: true
@@ -737,8 +751,8 @@ str_replace(my_vector,
 
 colleges |> 
   mutate(INSTNM = str_replace(INSTNM, 
-                              pattern = "$u", 
-                              replacement = "U")
+                              pattern = "University", 
+                              replacement = "Uni")
          )
 ```
 
@@ -949,21 +963,40 @@ colleges |>
 
 # Handling Whitespace
 
-## `str_trim()`
+## Removing Whitespace
+
+
+
+:::columns
+
+:::column
+`str_trim()`
 
 > removes whitespace from start and end of string
 
 ```{r}
 #| echo: true
-#| eval: false
+#| eval: true
 #| code-line-numbers: false
 
-colleges |> 
-  mutate(
-    INSTNM = str_trim(INSTNM, side = "both")
-         )
+str_trim("  Hi.     there  ", 
+         side = "both")
 ```
+:::
+:::column
+`str_squish()`
 
+> trims whitespace from each end and collapses multiple spaces into single spaces
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: false
+
+str_squish("  Hi.     there  ")
+```
+:::
+:::
 # Combining Strings
 
 ## `str_c()`

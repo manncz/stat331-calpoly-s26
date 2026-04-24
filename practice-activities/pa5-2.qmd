@@ -14,19 +14,21 @@ execute:
 
 ```{r setup}
 library(tidyverse)
+library(janitor)
 ```
 
 ## Solve the Mystery
 
 Just down the road in Montecito, CA several rare jewels went missing. The jewels were stolen and replaced with fakes, but detectives have not been able to solve the case. They are now calling in a data scientist to help parse their clues.
 
-A camera was located near the building where the jewels went missing, so the detectives have provided you with a list of people who may have entered the building. This list includes the date and time they were spotted on the camera, **in Pacific Standard Time (PST)**.
+A camera was located near the building where the jewels went missing, so the detectives have provided you with a list of people who may have entered the building. This list includes the date and time they were spotted on the camera, **in Pacific Time (PT)**.
 
 Unfortunately, the date and time of the jewel heist is not known. You have been hired to crack the case. Use the clues below to discover the thief's identity.
 
 ```{r}
 # 214 total suspects
-suspects <- read_csv("https://raw.githubusercontent.com/zoerehnberg/STAT331-S23/main/practice_activities/suspects.csv")
+suspects <- read_csv("https://raw.githubusercontent.com/zoerehnberg/STAT331-S23/main/practice_activities/suspects.csv") |> 
+  clean_names()
 ```
 
 ::: callout-note
@@ -35,11 +37,11 @@ suspects <- read_csv("https://raw.githubusercontent.com/zoerehnberg/STAT331-S23/
 
 :::
 
-0. When data is read into `R`, dates are automatically read in as the UTC time zone. The first thing that we need to do is tell `R` that the times listed are actually in **PST**. Fill in the code below to do this.
+0. When data is read into `R`, dates are automatically read in as the UTC time zone. The first thing that we need to do is tell `R` that the times listed are actually in **PT**. Fill in the code below to do this.
 
 ```{r}
 suspects <- suspects |> 
-  mutate(Time.Spotted = )
+  mutate(time_spotted = )
 ```
 
 

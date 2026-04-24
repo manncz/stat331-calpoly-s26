@@ -18,7 +18,7 @@
     "href": "slides/week-5/w5-strings.html#week-6-layout",
     "title": "Using stringr to Work with Strings",
     "section": "Week 6 Layout",
-    "text": "Week 6 Layout\n\nMonday: Version control with git\n\nPractice Activity - done in groups in class\nLast day to submit Lab 5\n\n\n\n\nWednesday: Midterm Exam"
+    "text": "Week 6 Layout\n\nMonday: Version control with git and GitHub\n\nThere are two “Course Setup” assignments to complete before class\nPractice Activity - done in groups in class\nLast day to submit Lab 5\n\n\n\n\nWednesday: Midterm Exam"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#what-is-a-string",
@@ -102,14 +102,14 @@
     "href": "slides/week-5/w5-strings.html#character-classes",
     "title": "Using stringr to Work with Strings",
     "section": "Character Classes: []",
-    "text": "Character Classes: []\nCharacter classes let you specify multiple possible characters to match on.\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[AC]\")"
+    "text": "Character Classes: []\n\nCharacter classes let you specify multiple possible characters to match on.\nAnything inside [] is treated like “or”\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[AC]\")"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#excluding-characters",
     "href": "slides/week-5/w5-strings.html#excluding-characters",
     "title": "Using stringr to Work with Strings",
     "section": "Excluding Characters",
-    "text": "Excluding Characters\n\n[^ ] – specifies characters not to match on\n\n\n\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"[^y]$\")\n\n\n\n\n\nBeware / Reminder: a ^ doesn’t always mean “not”\n\nStarts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^University\")\n\nDoes not starts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[^University]\")"
+    "text": "Excluding Characters\n\n[^ ] – specifies characters not to match on\n\n\n\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"[^y]$\")\n\n\n\n\n\nBeware / Reminder: a ^ doesn’t always mean “not”\n\nStarts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^U\")\n\nDoes not starts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[^U]\")"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#special-character-classes",
@@ -137,7 +137,7 @@
     "href": "slides/week-5/w5-strings.html#character-groups",
     "title": "Using stringr to Work with Strings",
     "section": "Character Groups: ()",
-    "text": "Character Groups: ()\n\n() creates a group of characters\nWe can specify “either” / “or” within a group using |.\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"(T|t)ech\")\n\n\n\nWe can refer to created groups with escaped numbers\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"([aeiou])\\\\1\")"
+    "text": "Character Groups: ()\n\n() creates a group of characters to be matched exactly\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"(iss){2}\")\n\n\n\nWe can specify “either” / “or” within a group using |.\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"(T|t)ech\")\n\n\n\n\nWe can refer to created groups with escaped numbers\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"([aeiou])\\\\1\")"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#str_detect",
@@ -165,7 +165,7 @@
     "href": "slides/week-5/w5-strings.html#str_replace-with-mutate",
     "title": "Using stringr to Work with Strings",
     "section": "str_replace() with mutate()",
-    "text": "str_replace() with mutate()\n\nMake capitalization of “University” consistent\n\n\ncolleges |&gt; \n  mutate(INSTNM = str_replace(INSTNM, \n                              pattern = \"$u\", \n                              replacement = \"U\")\n         )"
+    "text": "str_replace() with mutate()\n\nChange “University” to “Uni” to pretend we live in Australia\n\n\ncolleges |&gt; \n  mutate(INSTNM = str_replace(INSTNM, \n                              pattern = \"University\", \n                              replacement = \"Uni\")\n         )"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#str_remove",
@@ -1341,14 +1341,14 @@
     "href": "practice-activities/pa5-2.html",
     "title": "PA 5.2: Jewel Heist",
     "section": "",
-    "text": "Download starter qmd file\nlibrary(tidyverse)"
+    "text": "Download starter qmd file\nlibrary(tidyverse)\nlibrary(janitor)"
   },
   {
     "objectID": "practice-activities/pa5-2.html#solve-the-mystery",
     "href": "practice-activities/pa5-2.html#solve-the-mystery",
     "title": "PA 5.2: Jewel Heist",
     "section": "Solve the Mystery",
-    "text": "Solve the Mystery\nJust down the road in Montecito, CA several rare jewels went missing. The jewels were stolen and replaced with fakes, but detectives have not been able to solve the case. They are now calling in a data scientist to help parse their clues.\nA camera was located near the building where the jewels went missing, so the detectives have provided you with a list of people who may have entered the building. This list includes the date and time they were spotted on the camera, in Pacific Standard Time (PST).\nUnfortunately, the date and time of the jewel heist is not known. You have been hired to crack the case. Use the clues below to discover the thief’s identity.\n\n# 214 total suspects\nsuspects &lt;- read_csv(\"https://raw.githubusercontent.com/zoerehnberg/STAT331-S23/main/practice_activities/suspects.csv\")\n\n\n\n\n\n\n\nNote\n\n\n\nTime Zones will be very important to find the right suspect!\n\n\n\nWhen data is read into R, dates are automatically read in as the UTC time zone. The first thing that we need to do is tell R that the times listed are actually in PST. Fill in the code below to do this.\n\n\nsuspects &lt;- suspects |&gt; \n  mutate(Time.Spotted = )\n\nError in `mutate()`:\nℹ In argument: `Time.Spotted = &lt;empty&gt;`.\nCaused by error:\n! object '' not found\n\n\n\nBased on the cleaning schedule for the room where the jewels are held, the heist was not committed in the morning (i.e. it was committed at 12:00pm PCT or later).\n\n\n# end with 112 suspects left\n\n\nThe room where the heist was committed is closed on Tuesdays and Thursdays (and there were no signs of forced entry), so the heist did not happen on those days. Hint: if you are getting something weird, it is because you did not set the time zone correctly in step 0!!.\n\n\n# end with 78 suspects left\n\n\nIt is believed that the heist was committed within 35 days of Thanksgiving 2022 (before or after).\n\n\n\n\n\n\n\nHints\n\n\n\nPay attention to time zones!\nThanksgiving 2022 was on November 24th.\nI would recommend using an interval and %within%\n\n\n\n# end with 11 suspects left\n\n\nThe detectives partially decoded a message from the thief to a notorious fence in Iceland. In it, the thief said the job would be done “after the sun sets for you, but before midnight.”\n\n\n\n\n\n\n\nHints\n\n\n\nIn November, the sun sets at 4:00pm in Iceland.\nPay attention to time zones! Iceland is actually in the “UTC” timezone.\n\n\n\n# end with 4 suspects left\n\n\nThe thief left behind a receipt at the scene of the crime. The receipt is smudged, but the day of the month is shown to be 22. It is thought that the heist took place no more than three days after the receipt was issued.\n\n\n# end with 2 suspects left\n\n\nThe thief is amused by your efforts and has sent you a cryptic clue:\n\n\n“The exact number of seconds between midnight on Jan 1, 1970 and the time I arrived on the scene is divisible by 6.”\n\n\n\n\n\n\n\nHint\n\n\n\nCheck out how date-time objects are stored on the lubridate cheatsheet.\n\n\n\n# end with 1 suspect left\n\n\n\n\n\n\n\nCanvas Quiz Submission\n\n\n\nWho is the thief? Only one name should remain. Remember that you can check with classmates and me about the answer!"
+    "text": "Solve the Mystery\nJust down the road in Montecito, CA several rare jewels went missing. The jewels were stolen and replaced with fakes, but detectives have not been able to solve the case. They are now calling in a data scientist to help parse their clues.\nA camera was located near the building where the jewels went missing, so the detectives have provided you with a list of people who may have entered the building. This list includes the date and time they were spotted on the camera, in Pacific Time (PT).\nUnfortunately, the date and time of the jewel heist is not known. You have been hired to crack the case. Use the clues below to discover the thief’s identity.\n\n# 214 total suspects\nsuspects &lt;- read_csv(\"https://raw.githubusercontent.com/zoerehnberg/STAT331-S23/main/practice_activities/suspects.csv\") |&gt; \n  clean_names()\n\n\n\n\n\n\n\nNote\n\n\n\nTime Zones will be very important to find the right suspect!\n\n\n\nWhen data is read into R, dates are automatically read in as the UTC time zone. The first thing that we need to do is tell R that the times listed are actually in PT. Fill in the code below to do this.\n\n\nsuspects &lt;- suspects |&gt; \n  mutate(time_spotted = )\n\nError in `mutate()`:\nℹ In argument: `time_spotted = &lt;empty&gt;`.\nCaused by error:\n! object '' not found\n\n\n\nBased on the cleaning schedule for the room where the jewels are held, the heist was not committed in the morning (i.e. it was committed at 12:00pm PCT or later).\n\n\n# end with 112 suspects left\n\n\nThe room where the heist was committed is closed on Tuesdays and Thursdays (and there were no signs of forced entry), so the heist did not happen on those days. Hint: if you are getting something weird, it is because you did not set the time zone correctly in step 0!!.\n\n\n# end with 78 suspects left\n\n\nIt is believed that the heist was committed within 35 days of Thanksgiving 2022 (before or after).\n\n\n\n\n\n\n\nHints\n\n\n\nPay attention to time zones!\nThanksgiving 2022 was on November 24th.\nI would recommend using an interval and %within%\n\n\n\n# end with 11 suspects left\n\n\nThe detectives partially decoded a message from the thief to a notorious fence in Iceland. In it, the thief said the job would be done “after the sun sets for you, but before midnight.”\n\n\n\n\n\n\n\nHints\n\n\n\nIn November, the sun sets at 4:00pm in Iceland.\nPay attention to time zones! Iceland is actually in the “UTC” timezone.\n\n\n\n# end with 4 suspects left\n\n\nThe thief left behind a receipt at the scene of the crime. The receipt is smudged, but the day of the month is shown to be 22. It is thought that the heist took place no more than three days after the receipt was issued.\n\n\n# end with 2 suspects left\n\n\nThe thief is amused by your efforts and has sent you a cryptic clue:\n\n\n“The exact number of seconds between midnight on Jan 1, 1970 and the time I arrived on the scene is divisible by 6.”\n\n\n\n\n\n\n\nHint\n\n\n\nCheck out how date-time objects are stored on the lubridate cheatsheet.\n\n\n\n# end with 1 suspect left\n\n\n\n\n\n\n\nCanvas Quiz Submission\n\n\n\nWho is the thief? Only one name should remain. Remember that you can check with classmates and me about the answer!"
   },
   {
     "objectID": "practice-activities/pa4.html",
@@ -1922,7 +1922,7 @@
     "href": "practice-activities/pa5-1.html#warm-up-exercises",
     "title": "PA 5.1: Scrambled Message",
     "section": "Warm-up exercises",
-    "text": "Warm-up exercises\n\n\nPrint out every word in the scrambled message that starts with the letter “m”. Hint: What symbol do you use to indicate the beginning of a string?\nPrint out every word in the scrambled message that ends with a letter “z”. Hint: What symbol do you use to indicate the end of a string?\nPrint out the punctuation symbols that are present in the scrambled message. Your output should just be the unique symbols! Hint: You don’t need to type out every punctuation symbol! There is a shortcut way to look for any punctuation symbol.\n\n\n\nPrint out the words that have more than 16 characters. Hint: This should take two steps!\nPrint out the longest word in the scrambled message. Hint: If you already have the length of each word, you can grab the max easily!"
+    "text": "Warm-up exercises\n\n\nPrint out every word in the scrambled message that starts with the letter “m”. Hint: What symbol do you use to indicate the beginning of a string?\nPrint out every word in the scrambled message that ends with a letter “z”. Hint: What symbol do you use to indicate the end of a string?\nPrint out the punctuation symbols that are present in the scrambled message. Your output should just be the unique symbols! Hint: You don’t need to type out every punctuation symbol! There is a shortcut way to look for any punctuation symbol.\n\n\n\nPrint out the words that have more than 10 characters. Hint: This should take two steps!\nPrint out the longest word in the scrambled message. Hint: If you already have the length of each word, you can grab the max easily!"
   },
   {
     "objectID": "practice-activities/pa5-1.html#decode-the-message",
@@ -3491,5 +3491,19 @@
     "title": "Lab 5: Murder in SQL City",
     "section": "Solve the Crime",
     "text": "Solve the Crime\n\nCrime Scene Report\nDetective Wickham reaches out to you…\n\nA crime has taken place and I need your help! There was a murder in SQL City sometime on Jan. 15, 2018. Could you retrieve the crime scene report from the police department’s database and follow the clues to find the person responsible for the murder?!\n\nSolve the murder mystery, showing all of your work in this document. Your document and code must be well organized, easy to follow, and reproducible.\n\nUse headers and written descriptions to indicate what you are doing.\nYou must use dplyr verbs and join functions rather than just looking through the tables manually.\nYou should never filter on a specific person id – rather use join functions\nYou should have a final output that just includes the murder’s name as well as their interview transcript (which is missing!).\nUse the data frames you just created when helpful!\nUse good code formatting practices.\nComment your code.\nCite any external sources you use to solve the mystery.\n\n\n\n\n\n\n\nTip\n\n\n\nUse kable() to nicely output clues!\n\n\nFollow the evidence to the person responsible for the murder, building a report as you go.\n\n# code for looking at the relevant crime scene report.\n\n# you will want to use multiple chunks!\n\n\n\n\n\n\n\nCaution\n\n\n\nMake sure you check for interviews with any suspects and anyone mentioned!\nThe murderer will have no interview - don’t stop until you find them!\n\n\n\n\n\n\n\n\nAnd the final suspect is…\n\n\n\nput the name of the person responsible for the murder here.\nAGAIN THE MURDERER WILL HAVE NO INTERVIEW"
+  },
+  {
+    "objectID": "slides/week-5/w5-strings.html#str_trim-str_squish",
+    "href": "slides/week-5/w5-strings.html#str_trim-str_squish",
+    "title": "Using stringr to Work with Strings",
+    "section": "str_trim() & str_squish()",
+    "text": "str_trim() & str_squish()\n\n\nstr_trim()\n\nremoves whitespace from start and end of string\n\n\nstr_trim(\"  Hi.     there  \", \n         side = \"both\")\n\n[1] \"Hi.     there\"\n\n\n\nstr_squish()\n\ntrims whitespace from each end and collapses multiple spaces into single spaces\n\n\nstr_squish(\"  Hi.     there  \")\n\n[1] \"Hi. there\""
+  },
+  {
+    "objectID": "slides/week-5/w5-strings.html#removing-whitespace",
+    "href": "slides/week-5/w5-strings.html#removing-whitespace",
+    "title": "Using stringr to Work with Strings",
+    "section": "Removing Whitespace",
+    "text": "Removing Whitespace\n\n\nstr_trim()\n\nremoves whitespace from start and end of string\n\n\nstr_trim(\"  Hi.     there  \", \n         side = \"both\")\n\n[1] \"Hi.     there\"\n\n\n\nstr_squish()\n\ntrims whitespace from each end and collapses multiple spaces into single spaces\n\n\nstr_squish(\"  Hi.     there  \")\n\n[1] \"Hi. there\""
   }
 ]

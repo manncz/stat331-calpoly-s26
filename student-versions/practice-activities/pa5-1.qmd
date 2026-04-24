@@ -53,7 +53,7 @@ The person who has the most pets starts as the Computer (listening to instructio
 Switch roles! Coder becomes computer, computer becomes project manager, etc.
 -->
 
-4. Print out the words that have more than 16 characters. *Hint: This should take two steps!*
+4. Print out the words that have more than 10 characters. *Hint: This should take two steps!*
 
 5. Print out the longest word in the scrambled message. *Hint: If you already have the length of each word, you can grab the max easily!*
 

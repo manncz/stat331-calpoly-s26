@@ -8,7 +8,8 @@ embed-resources: true
 #| label: setup
 
 library(tidyverse)
-colleges <- read_csv("https://www.dropbox.com/s/bt5hvctdevhbq6j/colleges.csv?dl=1") 
+colleges <- read_csv("https://www.dropbox.com/s/bt5hvctdevhbq6j/colleges.csv?dl=1")  |> 
+  select(INSTNM, CITY, STABBR, ZIP)
 ```
 
 Open and edit this handout in VISUAL mode to help with editing tables.
@@ -24,14 +25,14 @@ Open and edit this handout in VISUAL mode to help with editing tables.
 Fill in the table on basic regular expression below
 
 | Regular Expression | Example | What does this expression it mean (in words)? |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | `.` | `".ells"` |  |
 | `\\` | `"\\."` |  |
 | `^` | `"^California State"` |  |
 | `$` | `"State University$"` |  |
 | `[]` | `"[AC]"` |  |
-| `[^]` | `"[^University]"` |  |
-| `^[^]` | `"^[^University]"` |  |
+| `[^]` | `"[^U]"` |  |
+| `^[^]` | `"^[^U]"` |  |
 | `[A-Z]` | `"[A-z]"` |  |
 | `[0-9]` | `"[0-9]"` |  |
 | `[:punct:]` | `"[:punct:]"` |  |
@@ -40,7 +41,7 @@ Fill in the table on basic regular expression below
 | `{a}` | `"[A-Z]{4}"` |  |
 | `{a,b}` | `"[A-Z]{4,6}"` |  |
 | `{a,}` | `"[A-Z]{4,}"` |  |
-| `()` | `"(T|t)ech"` |  |
+| `()` | `"(iss){2}"` |  |
 | `|` | `"(T|t)ech"` |  |
 | `()\\1` | `"([aeiou])\\1"` |  |
 
@@ -70,7 +71,7 @@ str_subset(colleges$INSTNM,
 
 ```{r}
 str_subset(colleges$INSTNM, 
-           pattern = "[^University]")  |> 
+           pattern = "[^U]")  |> 
   head()
 ```
 
@@ -116,6 +117,11 @@ str_subset(colleges$INSTNM,
 
 ```{r}
 str_subset(colleges$INSTNM, 
+           pattern = "(iss){2}")
+```
+
+```{r}
+str_subset(colleges$INSTNM, 
            pattern = "(T|t)ech") |> 
   head()
 ```
@@ -133,7 +139,7 @@ str_subset(colleges$INSTNM,
 Fill in the table on `stringr` functions below.
 
 |  |  |  |
-|----|----|----|
+|-----------------------|---------------------------|-----------------------|
 | Function | **Example** | **What does this function do?** |
 | `str_subset()` | `str_subset(my_vector, pattern = "Bond")` |  |
 | `str_detect(, pattern = ...)` | `str_detect(my_vector,            pattern = "Bond")` |  |
@@ -146,14 +152,15 @@ Fill in the table on `stringr` functions below.
 | `str_to_lower()` | `str_to_lower(INSTNM)` |  |
 | `str_to_upper()` | `str_to_upper(INSTNM)` |  |
 | `str_to_title()` | `str_to_title(INSTNM)` |  |
-| `str_trim()` | `str_to_trim(INSTNM, side = "both")` |  |
+| `str_trim()` | `str_trim(INSTNM, side = "both")` |  |
+| `str_squish()` | `str_squish(ISTNM)` |  |
 | `str_c()` | `str_c(CITY, STABBR, ZIP, sep = ", ")` |  |
 
 ### Code for Testing
 
 ```{r}
 colleges |> 
-  filter(str_detect(INSTNM, pattern = "Polytechnic"))
+  filter(str_detect(INSTNM, pattern = "Polytechnic")) 
 ```
 
 ```{r}
@@ -166,9 +173,10 @@ colleges |>
 ```{r}
 colleges |> 
   mutate(INSTNM = str_replace(INSTNM, 
-                              pattern = "$u", 
-                              replacement = "U")
-         )
+                              pattern = "University", 
+                              replacement = "Uni")
+         ) |> 
+  slice_sample(n = 10)
 ```
 
 ```{r}
@@ -176,7 +184,8 @@ colleges |>
   mutate(INSTNM = str_remove(INSTNM, 
                              pattern = "(College|University)"
                              )
-         )
+         ) |> 
+  slice_sample(n = 10)
 ```
 
 ```{r}
@@ -185,7 +194,8 @@ colleges |>
                                   start = 1,
                                   end = 8)
          ) |> 
-  select(INSTNM, short_name)
+  select(INSTNM, short_name) |> 
+  head()
 ```
 
 ```{r}
@@ -194,14 +204,16 @@ colleges |>
                              width = 20, 
                              pad = "_", 
                              side = "both")) |> 
-  select(INSTNM, short_name)
+  select(INSTNM, long_name) |> 
+  head()
 ```
 
 ```{r}
 colleges |> 
   mutate(first_word = str_extract(INSTNM,
-                                  pattern = "[A-z]*\\s")) |> 
-  select(INSTNM, first_word)
+                                  pattern = "[A-z]*")) |> 
+  select(INSTNM, first_word) |> 
+  head()
 ```
 
 ```{r}
@@ -226,4 +238,13 @@ colleges |>
 colleges |> 
   mutate(INSTNM = str_trim(INSTNM, side = "both")) |> 
   head()
+```
+
+```{r}
+
+colleges |> 
+  mutate(
+    address = str_c(CITY, STABBR, ZIP, sep = ", ")
+         ) |> 
+  slice_sample(n = 10)
 ```
