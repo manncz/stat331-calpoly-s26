@@ -3512,5 +3512,19 @@
     "title": "Using lubridate to Work with Dates",
     "section": "Midterm - Practice Gradescope Submission",
     "text": "Midterm - Practice Gradescope Submission\n\nRather than an .html to directly to Canvas, you will submit a rendered .pdf to Gradescope through Canvas\nLet’s make sure this works now!"
+  },
+  {
+    "objectID": "slides/week-5/w5-strings.html#collaborative-protocol",
+    "href": "slides/week-5/w5-strings.html#collaborative-protocol",
+    "title": "Using stringr to Work with Strings",
+    "section": "Collaborative Protocol",
+    "text": "Collaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code."
+  },
+  {
+    "objectID": "slides/week-5/w5-strings.html#submission",
+    "href": "slides/week-5/w5-strings.html#submission",
+    "title": "Using stringr to Work with Strings",
+    "section": "Submission",
+    "text": "Submission\n\nWhen you have completed the puzzle, you will submit the movie on Canvas.\n\nYou can ask me if it is correct before you submit\n\nYou do not need to submit your code, but you should check your code against the solutions when they are posted! . . .\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person whose hometown is closest to SLO starts as the project manager, second as the computer."
   }
 ]
