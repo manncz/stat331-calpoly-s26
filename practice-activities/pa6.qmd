@@ -116,7 +116,7 @@ If more than this shows up, then your `.gitignore` was not completed correctly! 
   + `Stage` (checkmark) `PA6.qmd` > `Commit` ✅ > add a commit message (*"create PA quarto file"*) > `Commit` > `Close`.
 + Rstudio: `Git` pane > `Push` (green arrow ⬆) the changes to the remote repo.
 
-![Staged file ready to commit. Don't forget to actually commit before pushing!](_images/commit.png)
+![Staged file ready to commit. Don't forget to actually commit before pushing!](_images/commit.png){width="70%"  fig-alt="Git window in Rstudio with one Staged document README.md and a circle around the Commit comand."}
 
 ### 6. Pull Changes from GitHub.
 
@@ -166,7 +166,7 @@ You got an error! Ugh. We forgot to **pull** before we started making changes.
 
 :::
 
-![](_images/same-changes-error.png)
+![](_images/same-changes-error.png){width="70%"  fig-alt="Image of error with attempted Push when the local repo is not up to date with the remote repo."}
 
 
 ### 10. Resolve the Merge Conflict.
@@ -180,17 +180,17 @@ Rstudio: `Git` pane > `Pull` ⬇ the changes from the repo.
 
 If your Git Pull window does **NOT** look like this...
 
-![](_images/git-merge.png)
+![](_images/git-merge.png){width="70%"  fig-alt="Rstudio Git Pull window with merge conflict."}
 
 but maybe it looks like this:
 
-![](_images/git-rebase.png)
+![](_images/git-rebase.png){width="70%"  fig-alt="Git window error when cannot complete merge."}
 
 **then...**
 
 (a) copy-paste the first command: `git config pull.rebase false` into the **Terminal** pane (not the Console) in RStudio and hit Enter,
 
-![Image showing the command in the Terminal pane of Rstudio.](_images/terminal.png)
+![Image showing the command in the Terminal pane of Rstudio.](_images/terminal.png){width="70%"  fig-alt="Terminal Rstudio pane with git config pull.rebase false command."}
 
 (b) and `Pull` ⬇ again.
 
@@ -200,7 +200,7 @@ After sucessfully starting the pull and getting the message about a *merge confl
 
 Your **Quarto** file should now look like this...
 
-![](_images/fix-merge-conflict.png)
+![](_images/fix-merge-conflict.png){width="70%"  fig-alt="Header YAML with git conflict symbols."}
 
 
 ::: callout-tip
@@ -214,7 +214,7 @@ Note how the conflicting lines are marked! You might need to submit this to Canv
 + Render.
 + Note that in the Rstudio Git window, your files will be marked with "U"s to indicate a merge conflict.
 
-![](_images/merge-conflict.png)
+![](_images/merge-conflict.png){width="70%"  fig-alt="Rstudio Git pane with file that is edited after a merge conflict."}
 
 + ⚠️ the "Staged" box is also fully blue. This is a bit misleading -- **you still need to select the file to be staged** to `Stage` it -- make sure there is a CHECK mark in the staged box! The orange Us will then go away.
 + `Commit` ✅ your changes with a good commit message.
@@ -243,7 +243,7 @@ Note how the conflicting lines are marked! You might need to submit this to Canv
 + No merge conflicts should occur -- the changes were **auto-merged**!
     + Your merge may have been made by a different strategy, but that's okay.
 
-![](_images/auto-merge.png)
+![](_images/auto-merge.png){width="50%"  fig-alt="Git Pull window after a successful merge."}
 
 + `Push` ⬆  your changes again.
 

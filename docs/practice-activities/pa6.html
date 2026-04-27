@@ -224,6 +224,7 @@ window.Quarto = {
   <li><a href="#collaborating-in-github" id="toc-collaborating-in-github" class="nav-link" data-scroll-target="#collaborating-in-github">Collaborating in GitHub</a>
   <ul class="collapse">
   <li><a href="#add-documents-to-the-repo." id="toc-add-documents-to-the-repo." class="nav-link" data-scroll-target="#add-documents-to-the-repo.">4. Add Documents to the Repo.</a></li>
+  <li><a href="#push-documents-to-github." id="toc-push-documents-to-github." class="nav-link" data-scroll-target="#push-documents-to-github.">5. Push Documents to GitHub.</a></li>
   <li><a href="#pull-changes-from-github." id="toc-pull-changes-from-github." class="nav-link" data-scroll-target="#pull-changes-from-github.">6. Pull Changes from GitHub.</a></li>
   <li><a href="#make-a-change." id="toc-make-a-change." class="nav-link" data-scroll-target="#make-a-change.">7. Make a Change.</a></li>
   <li><a href="#forget-to-pull." id="toc-forget-to-pull." class="nav-link" data-scroll-target="#forget-to-pull.">8. Forget to Pull.</a></li>
@@ -367,19 +368,22 @@ Note
 <li><code>.gitignore</code></li>
 <li><code>PA6.qmd</code></li>
 </ul>
-<p>If more than this shows up, then your <code>.gitignore</code> was not completed correctly! Git should be ignoring <code>PA6.html</code> and <code>stat331-PA6.Rproj</code> for tracking. ### 5. Push Documents to GitHub.</p>
+<p>If more than this shows up, then your <code>.gitignore</code> was not completed correctly! Git should be ignoring <code>PA6.html</code> and <code>stat331-PA6.Rproj</code> for tracking.</p>
+</section>
+<section id="push-documents-to-github." class="level3">
+<h3 class="anchored" data-anchor-id="push-documents-to-github.">5. Push Documents to GitHub.</h3>
 <p><img src="_images/spade.jpg" class="img-fluid" style="width:4.0%"></p>
 <ul>
 <li>Rstudio: <code>Git</code> pane.
 <ul>
-<li>Stage (checkmark) the <code>.gitignore</code> &gt; <code>Commit</code> &gt; add a commit message (<em>“ignore all .Rproj files and .html files”</em>) &gt; <code>Commit</code> &gt; <code>Close</code>.</li>
-<li>Stage (checkmark) <code>PA6.qmd</code> &gt; <code>Commit</code> &gt; add a commit message (<em>“create PA quarto file”</em>) &gt; <code>Commit</code> &gt; <code>Close</code>.</li>
+<li><code>Stage</code> (checkmark) the <code>.gitignore</code> &gt; <code>Commit</code> ✅ &gt; add a commit message (<em>“ignore all .Rproj files and .html files”</em>) &gt; <code>Commit</code> &gt; <code>Close</code>.</li>
+<li><code>Stage</code> (checkmark) <code>PA6.qmd</code> &gt; <code>Commit</code> ✅ &gt; add a commit message (<em>“create PA quarto file”</em>) &gt; <code>Commit</code> &gt; <code>Close</code>.</li>
 </ul></li>
 <li>Rstudio: <code>Git</code> pane &gt; <code>Push</code> (green arrow ⬆) the changes to the remote repo.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_images/commit.png" class="img-fluid figure-img"></p>
+<p><img src="_images/commit.png" class="img-fluid figure-img" style="width:70.0%" alt="Git window in Rstudio with one Staged document README.md and a circle around the Commit comand."></p>
 <figcaption>Staged file ready to commit. Don’t forget to actually commit before pushing!</figcaption>
 </figure>
 </div>
@@ -401,11 +405,11 @@ Note
 <ul>
 <li><strong>Directly under</strong> the <code>title:</code> line, add <code>author:</code> to the YAML and include everyone’s <strong>first</strong> names.</li>
 <li>Render the document.</li>
-<li>Rstudio: <code>Git</code> pane &gt; Stage (checkmark) files &gt; <code>Commit</code> &gt; add commit message &gt; <code>Commit</code> &gt; <code>Close</code>.
+<li>Rstudio: <code>Git</code> pane &gt; <code>Stage</code> (checkmark) files &gt; <code>Commit</code> ✅ &gt; add commit message &gt; <code>Commit</code> &gt; <code>Close</code>.
 <ul>
 <li>Use a commit message like <em>“add first names”</em>.</li>
 </ul></li>
-<li>Rstudio: <code>Git</code> pane &gt; <code>Push</code> the changes.</li>
+<li>Rstudio: <code>Git</code> pane &gt; <code>Push</code> ⬆ the changes.</li>
 </ul>
 </section>
 <section id="forget-to-pull." class="level3">
@@ -419,7 +423,7 @@ Note
 <ul>
 <li><strong>Directly under</strong> the <code>title:</code> line, add <code>author:</code> to the YAML and include everyone’s <strong>first and last</strong> names.</li>
 <li>Render the document.</li>
-<li>Rstudio: <code>Git</code> pane &gt; Stage (checkmark) files &gt; <code>Commit</code> &gt; add commit message &gt; <code>Commit</code> &gt; <code>Close</code>.
+<li>Rstudio: <code>Git</code> pane &gt; <code>Stage</code> (checkmark) files &gt; <code>Commit</code> ✅ &gt; add commit message &gt; <code>Commit</code> &gt; <code>Close</code>.
 <ul>
 <li>Use a commit message like <em>“add first and last names”</em>.</li>
 </ul></li>
@@ -438,7 +442,7 @@ Oh No!
 <p>You got an error! Ugh. We forgot to <strong>pull</strong> before we started making changes.</p>
 </div>
 </div>
-<p><img src="_images/same-changes-error.png" class="img-fluid"></p>
+<p><img src="_images/same-changes-error.png" class="img-fluid" style="width:70.0%" alt="Image of error with attempted Push when the local repo is not up to date with the remote repo."></p>
 </section>
 <section id="resolve-the-merge-conflict." class="level3">
 <h3 class="anchored" data-anchor-id="resolve-the-merge-conflict.">10. Resolve the Merge Conflict.</h3>
@@ -455,16 +459,16 @@ Oh No!
 </div>
 <div class="callout-body-container callout-body">
 <p>If your Git Pull window does <strong>NOT</strong> look like this…</p>
-<p><img src="_images/git-merge.png" class="img-fluid"></p>
+<p><img src="_images/git-merge.png" class="img-fluid" style="width:70.0%" alt="Rstudio Git Pull window with merge conflict."></p>
 <p>but maybe it looks like this:</p>
-<p><img src="_images/git-rebase.png" class="img-fluid"></p>
+<p><img src="_images/git-rebase.png" class="img-fluid" style="width:70.0%" alt="Git window error when cannot complete merge."></p>
 <p><strong>then…</strong></p>
 <ol type="a">
 <li>copy-paste the first command: <code>git config pull.rebase false</code> into the <strong>Terminal</strong> pane (not the Console) in RStudio and hit Enter,</li>
 </ol>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="_images/terminal.png" class="img-fluid figure-img"></p>
+<p><img src="_images/terminal.png" class="img-fluid figure-img" style="width:70.0%" alt="Terminal Rstudio pane with git config pull.rebase false command."></p>
 <figcaption>Image showing the command in the Terminal pane of Rstudio.</figcaption>
 </figure>
 </div>
@@ -475,7 +479,7 @@ Oh No!
 </div>
 <p>After sucessfully starting the pull and getting the message about a <em>merge conflict</em>…</p>
 <p>Your <strong>Quarto</strong> file should now look like this…</p>
-<p><img src="_images/fix-merge-conflict.png" class="img-fluid"></p>
+<p><img src="_images/fix-merge-conflict.png" class="img-fluid" style="width:70.0%" alt="Header YAML with git conflict symbols."></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -497,7 +501,12 @@ Tip
 <li>Render.</li>
 <li>Note that in the Rstudio Git window, your files will be marked with “U”s to indicate a merge conflict.</li>
 </ul>
-<p><img src="_images/merge-conflict.png" class="img-fluid"> + ⚠️ the “Staged” box is also fully blue. This is a bit misleading – <strong>you still need to select the file to be staged</strong> – make sure there is a CHECK mark in the staged box! The orange Us will then go away. + <code>Commit</code> your changes with a good commit message. + <code>Push</code> ⬆ your changes to GitHub.</p>
+<p><img src="_images/merge-conflict.png" class="img-fluid" style="width:70.0%" alt="Rstudio Git pane with file that is edited after a merge conflict."></p>
+<ul>
+<li>⚠️ the “Staged” box is also fully blue. This is a bit misleading – <strong>you still need to select the file to be staged</strong> to <code>Stage</code> it – make sure there is a CHECK mark in the staged box! The orange Us will then go away.</li>
+<li><code>Commit</code> ✅ your changes with a good commit message.</li>
+<li><code>Push</code> ⬆ your changes to GitHub.</li>
+</ul>
 </section>
 <section id="forget-to-pull.-1" class="level3">
 <h3 class="anchored" data-anchor-id="forget-to-pull.-1">11. Forget to Pull.</h3>
@@ -510,7 +519,7 @@ Tip
 <ul>
 <li>Edit the first code chunk to find the product of <span class="math inline">\(13 \times 13\)</span>.</li>
 <li>Render the document.</li>
-<li><code>Commit</code> your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
+<li><code>Stage</code> and <code>Commit</code> ✅ your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -531,7 +540,7 @@ Warning
 <li>Your merge may have been made by a different strategy, but that’s okay.</li>
 </ul></li>
 </ul>
-<p><img src="_images/auto-merge.png" class="img-fluid"></p>
+<p><img src="_images/auto-merge.png" class="img-fluid" style="width:50.0%" alt="Git Pull window after a successful merge."></p>
 <ul>
 <li><code>Push</code> ⬆ your changes again.</li>
 </ul>
@@ -547,7 +556,7 @@ Warning
 <ul>
 <li>Edit the first code chunk to find the product of <span class="math inline">\(11 \times 11\)</span>.</li>
 <li>Render the document.</li>
-<li><code>Commit</code> your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
+<li><code>Stage</code> and <code>Commit</code> ✅ your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
 </ul>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -565,13 +574,13 @@ Warning
 <ul>
 <li><code>Pull</code> ⬇ the changes from GitHub.</li>
 <li>Edit the <code>.qmd</code> file to resolve the conflict with the preferred change.</li>
-<li><code>Commit</code> your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
+<li><code>Stage</code> and <code>Commit</code> ✅ your changes and <code>Push</code> ⬆ your changes to GitHub.</li>
 </ul>
 </section>
 <section id="final-document" class="level3">
 <h3 class="anchored" data-anchor-id="final-document">15. Final Document</h3>
 <p><img src="_images/spade.jpg" class="img-fluid" style="width:4.0%"> <img src="_images/diamond.jpg" class="img-fluid" style="width:4.0%"> <img src="_images/club.jpg" class="img-fluid" style="width:4.0%"> <img src="_images/heart.jpg" class="img-fluid" style="width:4.0%"></p>
-<p><code>Pull</code> the changes and look at your final document.</p>
+<p><code>Pull</code> ⬇ the changes and look at your final document.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1326,7 +1335,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a><span class="ss">  + </span><span class="in">`Stage`</span> (checkmark) <span class="in">`PA6.qmd`</span> &gt; <span class="in">`Commit`</span> ✅ &gt; add a commit message (*"create PA quarto file"*) &gt; <span class="in">`Commit`</span> &gt; <span class="in">`Close`</span>.</span>
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>Rstudio: <span class="in">`Git`</span> pane &gt; <span class="in">`Push`</span> (green arrow ⬆) the changes to the remote repo.</span>
 <span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="al">![Staged file ready to commit. Don't forget to actually commit before pushing!](_images/commit.png)</span></span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a><span class="al">![Staged file ready to commit. Don't forget to actually commit before pushing!](_images/commit.png)</span>{width="70%"  fig-alt="Git window in Rstudio with one Staged document README.md and a circle around the Commit comand."}</span>
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a><span class="fu">### 6. Pull Changes from GitHub.</span></span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
@@ -1376,7 +1385,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/same-changes-error.png)</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/same-changes-error.png)</span>{width="70%"  fig-alt="Image of error with attempted Push when the local repo is not up to date with the remote repo."}</span>
 <span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="fu">### 10. Resolve the Merge Conflict.</span></span>
@@ -1390,17 +1399,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>If your Git Pull window does **NOT** look like this...</span>
 <span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/git-merge.png)</span></span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/git-merge.png)</span>{width="70%"  fig-alt="Rstudio Git Pull window with merge conflict."}</span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>but maybe it looks like this:</span>
 <span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/git-rebase.png)</span></span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/git-rebase.png)</span>{width="70%"  fig-alt="Git window error when cannot complete merge."}</span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>**then...**</span>
 <span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>(a) copy-paste the first command: <span class="in">`git config pull.rebase false`</span> into the **Terminal** pane (not the Console) in RStudio and hit Enter,</span>
 <span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="al">![Image showing the command in the Terminal pane of Rstudio.](_images/terminal.png)</span></span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a><span class="al">![Image showing the command in the Terminal pane of Rstudio.](_images/terminal.png)</span>{width="70%"  fig-alt="Terminal Rstudio pane with git config pull.rebase false command."}</span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>(b) and <span class="in">`Pull`</span> ⬇ again.</span>
 <span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a></span>
@@ -1410,7 +1419,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>Your **Quarto** file should now look like this...</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/fix-merge-conflict.png)</span></span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/fix-merge-conflict.png)</span>{width="70%"  fig-alt="Header YAML with git conflict symbols."}</span>
 <span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
@@ -1424,7 +1433,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>Render.</span>
 <span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>Note that in the Rstudio Git window, your files will be marked with "U"s to indicate a merge conflict.</span>
 <span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/merge-conflict.png)</span></span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/merge-conflict.png)</span>{width="70%"  fig-alt="Rstudio Git pane with file that is edited after a merge conflict."}</span>
 <span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>⚠️ the "Staged" box is also fully blue. This is a bit misleading -- **you still need to select the file to be staged** to <span class="in">`Stage`</span> it -- make sure there is a CHECK mark in the staged box! The orange Us will then go away.</span>
 <span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span><span class="in">`Commit`</span> ✅ your changes with a good commit message.</span>
@@ -1453,7 +1462,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>No merge conflicts should occur -- the changes were **auto-merged**!</span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>Your merge may have been made by a different strategy, but that's okay.</span>
 <span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/auto-merge.png)</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a><span class="al">![](_images/auto-merge.png)</span>{width="50%"  fig-alt="Git Pull window after a successful merge."}</span>
 <span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span><span class="in">`Push`</span> ⬆  your changes again.</span>
 <span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a></span>
