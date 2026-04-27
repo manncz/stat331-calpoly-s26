@@ -25,7 +25,7 @@ Open and edit this handout in VISUAL mode to help with editing tables.
 Fill in the table on basic regular expression below
 
 | Regular Expression | Example | What does this expression it mean (in words)? |
-|------------------------|------------------------|------------------------|
+|-------------------|-------------------------|-----------------------------|
 | `.` | `".ells"` |  |
 | `\\` | `"\\."` |  |
 | `^` | `"^California State"` |  |
@@ -71,7 +71,7 @@ str_subset(colleges$INSTNM,
 
 ```{r}
 str_subset(colleges$INSTNM, 
-           pattern = "[^U]")  |> 
+           pattern = "^[^U]")  |> 
   head()
 ```
 
@@ -103,8 +103,7 @@ str_subset(colleges$INSTNM,
 
 ```{r}
 str_subset(colleges$INSTNM, 
-           pattern = "[A-Z]{4}") |> 
-  head()
+           pattern = "[A-Z]{4}")
 ```
 
 ```{r}
@@ -139,7 +138,7 @@ str_subset(colleges$INSTNM,
 Fill in the table on `stringr` functions below.
 
 |  |  |  |
-|-----------------------|---------------------------|-----------------------|
+|-------------------|-------------------------|----------------------------|
 | Function | **Example** | **What does this function do?** |
 | `str_subset()` | `str_subset(my_vector, pattern = "Bond")` |  |
 | `str_detect(, pattern = ...)` | `str_detect(my_vector,            pattern = "Bond")` |  |

@@ -109,7 +109,7 @@
     "href": "slides/week-5/w5-strings.html#excluding-characters",
     "title": "Using stringr to Work with Strings",
     "section": "Excluding Characters",
-    "text": "Excluding Characters\n\n[^ ] – specifies characters not to match on\n\n\n\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"[^y]$\")\n\n\n\n\n\nBeware / Reminder: a ^ doesn’t always mean “not”\n\nStarts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^U\")\n\nDoes not starts with “University”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[^U]\")"
+    "text": "Excluding Characters\n\n[^ ] – specifies characters not to match on\n\n\n\n\n\nstr_subset(colleges$INSTNM, \n           pattern = \"[^y]$\")\n\n\n\n\n\nBeware / Reminder: a ^ doesn’t always mean “not”\n\nStarts with “U”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^U\")\n\nDoes not start with “U”\n\nstr_subset(colleges$INSTNM, \n           pattern = \"^[^U]\")"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#special-character-classes",
@@ -193,7 +193,7 @@
     "href": "slides/week-5/w5-strings.html#str_extract",
     "title": "Using stringr to Work with Strings",
     "section": "str_extract()",
-    "text": "str_extract()\nReturns a character vector with either NA or the pattern, depending on if the pattern was found.\n\n\ncolleges |&gt; \n  mutate(first_word = str_extract(INSTNM,\n                                  pattern = \"[A-z]*\\\\s\"))\n\n\n\n\n\n\n\n\n\nWarning\n\n\nstr_extract() only returns the first pattern match."
+    "text": "str_extract()\nReturns a character vector with either NA or the pattern, depending on if the pattern was found.\n\n\ncolleges |&gt; \n  mutate(first_word = str_extract(INSTNM,\n                                  pattern = \"[A-z]*\"))\n\n\n\n\n\n\n\n\n\nWarning\n\n\nstr_extract() only returns the first pattern match."
   },
   {
     "objectID": "slides/week-5/w5-strings.html#edit-capitalization-of-strings",
@@ -228,7 +228,7 @@
     "href": "slides/week-5/w5-strings.html#to-do",
     "title": "Using stringr to Work with Strings",
     "section": "To do…",
-    "text": "To do…\n\nPA 5.1: Scrambled Message\n\nDue Thursday before class\n\nLA 5: Murder in SQL City\n\nDue Monday at 11:59 pm\nYou can use maximum 1 late day on this lab!\n\nLook out for exam information posted on Canvas - we will discuss on Thursday"
+    "text": "To do…\n\nPA 5.1: Scrambled Message\n\nDue Tuesday by 11:59 pm\n\nLA 5: Murder in SQL City\n\nDue Sunday at 11:59 pm\nYou can use maximum 1 late day on this lab!\n\nReview exam information posted on Canvas - we will discuss on Wednesday"
   },
   {
     "objectID": "slides/week-5/w5-strings.html#str_match",

@@ -438,7 +438,7 @@ str_subset(colleges$INSTNM,
 
 </br>
 
-**Starts with "University"**
+**Starts with "U"**
 
 ```{r}
 #| echo: true
@@ -450,7 +450,7 @@ str_subset(colleges$INSTNM,
 ```
 
 
-**[Does not]{.underline} starts with "University"**
+**[Does not]{.underline} start with "U"**
 
 ```{r}
 #| echo: true
@@ -861,7 +861,7 @@ Returns a **character vector** with either `NA` or the pattern, depending on if 
 
 colleges |> 
   mutate(first_word = str_extract(INSTNM,
-                                  pattern = "[A-z]*\\s"))
+                                  pattern = "[A-z]*"))
 ```
 :::
 
@@ -1103,11 +1103,11 @@ The person whose hometown is closest to SLO starts as the project manager, secon
 ## To do...
 
 + **PA 5.1: Scrambled Message**
-  + Due Thursday before class
+  + Due Tuesday by 11:59 pm
 + **LA 5: Murder in SQL City**
-  + Due Monday at 11:59 pm
+  + Due Sunday at 11:59 pm
   + You can use maximum 1 late day on this lab!
-+ Look out for exam information posted on Canvas - we will discuss on Thursday
++ Review exam information posted on Canvas - we will discuss on Wednesday
 
 
 # Appendix -- More stringr verbs and practice with regex

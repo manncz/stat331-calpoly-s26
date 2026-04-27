@@ -560,12 +560,12 @@
 <div class="fragment">
 <p><span class="large">Beware / Reminder: a <code>^</code> doesn’t always mean “not”</span></p>
 <p><br></p>
-<p><strong>Starts with “University”</strong></p>
+<p><strong>Starts with “U”</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">str_subset</span>(colleges<span class="sc">$</span>INSTNM, </span>
 <span id="cb19-2"><a aria-hidden="true" tabindex="-1"></a>           <span class="at">pattern =</span> <span class="st">"^U"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p><strong><u>Does not</u> starts with “University”</strong></p>
+<p><strong><u>Does not</u> start with “U”</strong></p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">str_subset</span>(colleges<span class="sc">$</span>INSTNM, </span>
 <span id="cb20-2"><a aria-hidden="true" tabindex="-1"></a>           <span class="at">pattern =</span> <span class="st">"^[^U]"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -916,7 +916,7 @@
 <div class="cell">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a aria-hidden="true" tabindex="-1"></a>colleges <span class="sc">|&gt;</span> </span>
 <span id="cb41-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">first_word =</span> <span class="fu">str_extract</span>(INSTNM,</span>
-<span id="cb41-3"><a aria-hidden="true" tabindex="-1"></a>                                  <span class="at">pattern =</span> <span class="st">"[A-z]*</span><span class="sc">\\</span><span class="st">s"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb41-3"><a aria-hidden="true" tabindex="-1"></a>                                  <span class="at">pattern =</span> <span class="st">"[A-z]*"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="fragment">
@@ -1136,14 +1136,14 @@
 <ul>
 <li><strong>PA 5.1: Scrambled Message</strong>
 <ul>
-<li>Due Thursday before class</li>
+<li>Due Tuesday by 11:59 pm</li>
 </ul></li>
 <li><strong>LA 5: Murder in SQL City</strong>
 <ul>
-<li>Due Monday at 11:59 pm</li>
+<li>Due Sunday at 11:59 pm</li>
 <li>You can use maximum 1 late day on this lab!</li>
 </ul></li>
-<li>Look out for exam information posted on Canvas - we will discuss on Thursday</li>
+<li>Review exam information posted on Canvas - we will discuss on Wednesday</li>
 </ul>
 </section></section>
 <section>
