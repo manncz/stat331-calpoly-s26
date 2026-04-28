@@ -1,0 +1,38 @@
+---
+title: "Week 6: Version Control with Git and GitHub"
+number-sections: true
+number-depth: 2
+---
+
+
+
+## Learning Objectives
+
+
++ Recognize the benefits of using version control to improve your coding
+practices and workflow.
++ Identify git / GitHub as a version control platform (and helper).
++ Start applying version control practices to your workflow.
+
+#### 📖 Required Readings: 15 min
+
+#### 📖 Optional Readings: 60 min
+
+------------------------------------------------------------------------
+
+## Git and GitHub
+
+Git and GitHub are powerful tools for version control and collaboration. We are only going to learn about the most basic workflow in this course, but it is worth starting to integrate Git and GitHub into your workflow early! If you start now and simply, you can add complexity later.
+
+While you can use command-line for Git commands, I recommend using a user interfase to make things easier. We used the RStudio interface in class, which honestly isn't my absolute favorite, but it gets the job done to start learning. I recommend  you also look into [GitHub Desktop](https://github.com/apps/desktop) as an alternative. 
+
+### 📖 Required Reading: [Big Picture: Why Git? Why GitHub?](https://happygitwithr.com/big-picture)
+
+### Additional Resources
+
+- [Git "Hello World" Tutorial on GitHub](https://guides.github.com/activities/hello-world/)
+
+- [Crash course on git](https://www.youtube.com/watch?v=SWYqp7iY_Tc) (30 minute YouTube video)
+
+- [Git and GitHub for poets](https://www.youtube.com/watch?v=BCQHnlnPusY&list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV) YouTube playlist (this is supposed to be the best introduction to Git out there...) 
+

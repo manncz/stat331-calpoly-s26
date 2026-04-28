@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 5, Part 2: Working with Dates using lubridate – Introduction to Statistical Computing in R</title>
+<title>Week 6: Version Control with Git and GitHub – Introduction to Statistical Computing in R</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -152,7 +152,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">1</span> Learning Objectives</a></li>
-  <li><a href="#dates-with-lubridate" id="toc-dates-with-lubridate" class="nav-link" data-scroll-target="#dates-with-lubridate"><span class="header-section-number">2</span> Dates with <code>lubridate</code></a></li>
+  <li><a href="#git-and-github" id="toc-git-and-github" class="nav-link" data-scroll-target="#git-and-github"><span class="header-section-number">2</span> Git and GitHub</a>
+  <ul class="collapse">
+  <li><a href="#required-reading-big-picture-why-git-why-github" id="toc-required-reading-big-picture-why-git-why-github" class="nav-link" data-scroll-target="#required-reading-big-picture-why-git-why-github">📖 Required Reading: Big Picture: Why Git? Why GitHub?</a></li>
+  <li><a href="#additional-resources" id="toc-additional-resources" class="nav-link" data-scroll-target="#additional-resources">Additional Resources</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/manncz/stat331-calpoly-s26/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -161,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 5, Part 2: Working with Dates using <code>lubridate</code></h1>
+<h1 class="title">Week 6: Version Control with Git and GitHub</h1>
 </div>
 
 
@@ -181,26 +185,32 @@ ul.task-list li input[type="checkbox"] {
 <section id="learning-objectives" class="level2" data-number="1">
 <h2 data-number="1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">1</span> Learning Objectives</h2>
 <ul>
-<li>recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)</li>
-<li>specify time zones for data variables extract elements of a date variable</li>
-<li>create intervals of time using the <code>%–%</code> operator</li>
-<li>check if a date is within an interval using the <code>%within%</code> operator</li>
+<li>Recognize the benefits of using version control to improve your coding practices and workflow.</li>
+<li>Identify git / GitHub as a version control platform (and helper).</li>
+<li>Start applying version control practices to your workflow.</li>
 </ul>
-<section id="readings-45-min" class="level4">
-<h4 class="anchored" data-anchor-id="readings-45-min">📖 Readings: 45 min</h4>
+<section id="required-readings-15-min" class="level4">
+<h4 class="anchored" data-anchor-id="required-readings-15-min">📖 Required Readings: 15 min</h4>
 </section>
-<section id="optional-videos-15-min" class="level4">
-<h4 class="anchored" data-anchor-id="optional-videos-15-min">📽 Optional Videos: 15 min</h4>
+<section id="optional-readings-60-min" class="level4">
+<h4 class="anchored" data-anchor-id="optional-readings-60-min">📖 Optional Readings: 60 min</h4>
 <hr>
 </section>
 </section>
-<section id="dates-with-lubridate" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="dates-with-lubridate"><span class="header-section-number">2</span> Dates with <code>lubridate</code></h2>
-<section id="required-reading-r4ds-17-dates-and-times" class="level4">
-<h4 class="anchored" data-anchor-id="required-reading-r4ds-17-dates-and-times">📖 Required Reading: <a href="https://r4ds.hadley.nz/datetimes.html">R4DS 17: Dates and Times</a></h4>
+<section id="git-and-github" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="git-and-github"><span class="header-section-number">2</span> Git and GitHub</h2>
+<p>Git and GitHub are powerful tools for version control and collaboration. We are only going to learn about the most basic workflow in this course, but it is worth starting to integrate Git and GitHub into your workflow early! If you start now and simply, you can add complexity later.</p>
+<p>While you can use command-line for Git commands, I recommend using a user interfase to make things easier. We used the RStudio interface in class, which honestly isn’t my absolute favorite, but it gets the job done to start learning. I recommend you also look into <a href="https://github.com/apps/desktop">GitHub Desktop</a> as an alternative.</p>
+<section id="required-reading-big-picture-why-git-why-github" class="level3">
+<h3 class="anchored" data-anchor-id="required-reading-big-picture-why-git-why-github">📖 Required Reading: <a href="https://happygitwithr.com/big-picture">Big Picture: Why Git? Why GitHub?</a></h3>
 </section>
-<section id="optional-video-working-wtih-dates" class="level4">
-<h4 class="anchored" data-anchor-id="optional-video-working-wtih-dates">📽 Optional Video: <a href="https://www.youtube.com/watch?v=SEPjN2AJqbo">Working wtih Dates</a></h4>
+<section id="additional-resources" class="level3">
+<h3 class="anchored" data-anchor-id="additional-resources">Additional Resources</h3>
+<ul>
+<li><p><a href="https://guides.github.com/activities/hello-world/">Git “Hello World” Tutorial on GitHub</a></p></li>
+<li><p><a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">Crash course on git</a> (30 minute YouTube video)</p></li>
+<li><p><a href="https://www.youtube.com/watch?v=BCQHnlnPusY&amp;list=PLRqwX-V7Uu6ZF9C0YMKuns9sLDzK6zoiV">Git and GitHub for poets</a> YouTube playlist (this is supposed to be the best introduction to Git out there…)</p></li>
+</ul>
 
 
 </section>

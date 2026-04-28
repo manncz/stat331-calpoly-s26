@@ -1234,21 +1234,21 @@
   {
     "objectID": "reading/week-5.2.html",
     "href": "reading/week-5.2.html",
-    "title": "Week 4, Part 2: Working with Dates using lubridate",
+    "title": "Week 5, Part 2: Working with Dates using lubridate",
     "section": "",
     "text": "recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)\nspecify time zones for data variables extract elements of a date variable\ncreate intervals of time using the %–% operator\ncheck if a date is within an interval using the %within% operator"
   },
   {
     "objectID": "reading/week-5.2.html#learning-objectives",
     "href": "reading/week-5.2.html#learning-objectives",
-    "title": "Week 4, Part 2: Working with Dates using lubridate",
+    "title": "Week 5, Part 2: Working with Dates using lubridate",
     "section": "",
     "text": "recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)\nspecify time zones for data variables extract elements of a date variable\ncreate intervals of time using the %–% operator\ncheck if a date is within an interval using the %within% operator"
   },
   {
     "objectID": "reading/week-5.2.html#dates-with-lubridate",
     "href": "reading/week-5.2.html#dates-with-lubridate",
-    "title": "Week 4, Part 2: Working with Dates using lubridate",
+    "title": "Week 5, Part 2: Working with Dates using lubridate",
     "section": "2 Dates with lubridate",
     "text": "2 Dates with lubridate\n\n📖 Required Reading: R4DS 17: Dates and Times\n\n\n📽 Optional Video: Working wtih Dates"
   },
@@ -1792,7 +1792,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nIteration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nIteration and Simulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nFunctional Programming\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nAdvanced Graphics",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -3336,7 +3336,7 @@
     "href": "slides/week-5/w5-dates.html#creating-date-time-objects-1",
     "title": "Using lubridate to Work with Dates",
     "section": "Creating date-time Objects",
-    "text": "Creating date-time Objects\n  ## Extracting date-time Components\n\nbday &lt;- ymd_hms(\"1995-02-27 07:03:12\", \n                tz = \"America/Chicago\")\nbday\n\n[1] \"1995-02-27 07:03:12 CST\"\n\n\n\n\n\n\n\n\nyear(bday)\n\n[1] 1995\n\nmonth(bday)\n\n[1] 2\n\nday(bday)\n\n[1] 27\n\n\n\n\n\n\n\nwday(bday)\n\n[1] 2\n\nwday(bday, \n     label = TRUE, \n     abbr = FALSE)\n\n[1] Monday\n7 Levels: Sunday &lt; Monday &lt; Tuesday &lt; Wednesday &lt; Thursday &lt; ... &lt; Saturday"
+    "text": "Creating date-time Objects"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#common-mistake-with-dates",
@@ -3357,28 +3357,28 @@
     "href": "slides/week-5/w5-dates.html#subtraction-with-date-time-objects",
     "title": "Using lubridate to Work with Dates",
     "section": "Subtraction with date-time Objects",
-    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11379 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
+    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11383 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods",
     "href": "slides/week-5/w5-dates.html#durations-and-periods",
     "title": "Using lubridate to Work with Dates",
     "section": "Durations and Periods",
-    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"983145600s (~31.15 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11379d 0H 0M 0S\""
+    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"983491200s (~31.16 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11383d 0H 0M 0S\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods-1",
     "href": "slides/week-5/w5-dates.html#durations-and-periods-1",
     "title": "Using lubridate to Work with Dates",
     "section": "Durations and Periods",
-    "text": "Durations and Periods\n\n\nWe can also add time to date-time objects:\n\ndays(), years(), etc. will add a period of time.\nddays(), dyears(), etc. will add a duration of time.\n\n\n\n\n\nBecause durations use the exact number of seconds to represent days and years, you might get unexpected results.\n\nWhen is is my 99th birthday?\n\nmdy(\"02/27/1995\") + years(99)\n\n[1] \"2094-02-27\"\n\n\n\nmdy(\"02/27/1995\") + dyears(99)\n\n[1] \"2094-02-26 18:00:00 UTC\""
+    "text": "Durations and Periods\n\n\nWe can also add time to date-time objects:\n\nddays(), dyears(), etc. will add a duration of time.\ndays(), years(), etc. will add a period of time.\n\n\n\n\n\nBecause durations use the exact number of seconds to represent days and years, you might get unexpected results.\n\nWhen is is my 99th birthday?\n\nmdy(\"02/27/1995\") + dyears(99)\n\n[1] \"2094-02-26 18:00:00 UTC\"\n\n\n\nmdy(\"02/27/1995\") + years(99)\n\n[1] \"2094-02-27\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#time-zones",
     "href": "slides/week-5/w5-dates.html#time-zones",
     "title": "Using lubridate to Work with Dates",
     "section": "Time Zones…",
-    "text": "Time Zones…\n…are complicated!\n\nSpecify time zones in the form:\n\n{continent}/{city} – “America/Denver”, “Africa/Nairobi”\n{ocean}/{city} – “Pacific/Auckland”\n\n\nWhat time zone does R think I’m in?\n\nSys.timezone()\n\n[1] \"America/Los_Angeles\""
+    "text": "Time Zones…\n…are complicated!\n\nTime zones are specified as:\n\n{continent}/{city} – “America/Denver”, “Africa/Nairobi”\n{ocean}/{city} – “Pacific/Auckland”\n\n\nWhat time zone does R think I’m in?\n\nSys.timezone()\n\n[1] \"America/Los_Angeles\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#time-zones-1",
@@ -3441,7 +3441,7 @@
     "href": "slides/week-5/w5-dates.html#midterm---coding-portion",
     "title": "Using lubridate to Work with Dates",
     "section": "Midterm - Coding Portion",
-    "text": "Midterm - Coding Portion\n\nYou may use course and online resources other but not generative AI\nAll questions can be addressed with just the course materials\n\nthis includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)\n\nYou must cite any resources that are not the course materials\n\ninclude the prompt for Google searchers\n\nI expect what you submit is your work\n\n\n\n\n\n\n\nCaution\n\n\nWhile the coding tasks allow resources, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions."
+    "text": "Midterm - Coding Portion\n\n\nYou may use course and online resources other but not generative AI\nAll questions can be addressed with just the course materials\n\nthis includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)\n\nYou must cite any resources that are not the course materials\n\ninclude the prompt for Google searchers\n\nI expect what you submit is your work\n\n\n\n\n\n\n\n\nCaution\n\n\nWhile the coding tasks allow resources, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions."
   },
   {
     "objectID": "slides/week-5/w5-dates.html",
@@ -3455,7 +3455,7 @@
     "href": "slides/week-5/w5-dates.html#intervals",
     "title": "Using lubridate to Work with Dates",
     "section": "Intervals",
-    "text": "Intervals\nSppose Delta requires members to travel within 4 weeks before or after their birthday to earn a “Birthday Bonus Flight.”\nWell, we first need to make an interval of time around my birthday.\n\nbonus_flight_window &lt;- interval(\n  bday - weeks(4),  \n  bday + weeks(4)\n)\n\nThen I can check if today is within this interval.\n\ntoday() %within% bonus_flight_window\n\n[1] FALSE"
+    "text": "Intervals\nSppose Delta requires members to travel within 4 weeks before or after their birthday to earn a “Birthday Bonus Flight.”\nWell, we first need to make an interval of time around my birthday.\n\nbday &lt;- mdy(\"02-27-2026\")\n\nbonus_flight_window &lt;- interval(\n  bday - weeks(4),  \n  bday + weeks(4)\n)\n\nThen I can check if today is within this interval.\n\ntoday() %within% bonus_flight_window\n\n[1] FALSE"
   },
   {
     "objectID": "labs/lab5/lab5-murder.html",
@@ -3771,5 +3771,40 @@
     "title": "Version Control",
     "section": "Monday, May 4",
     "text": "Monday, May 4\nToday we will…\n\nQuestions about Midterm?\nNew Material\n\ngit/GitHub\nConnect GitHub to RStudio\n\nPA 6: Merge Conflicts – Collaborating within a GitHub Repo"
+  },
+  {
+    "objectID": "reading/week-6.1.html",
+    "href": "reading/week-6.1.html",
+    "title": "Week 6: Version Control with Git and GitHub",
+    "section": "",
+    "text": "Recognize the benefits of using version control to improve your coding practices and workflow.\nIdentify git / GitHub as a version control platform (and helper).\nStart applying version control practices to your workflow."
+  },
+  {
+    "objectID": "reading/week-6.1.html#learning-objectives",
+    "href": "reading/week-6.1.html#learning-objectives",
+    "title": "Week 6: Version Control with Git and GitHub",
+    "section": "",
+    "text": "Recognize the benefits of using version control to improve your coding practices and workflow.\nIdentify git / GitHub as a version control platform (and helper).\nStart applying version control practices to your workflow."
+  },
+  {
+    "objectID": "reading/week-6.1.html#dates-with-lubridate",
+    "href": "reading/week-6.1.html#dates-with-lubridate",
+    "title": "Week 6, Part 1: Working with Dates using lubridate",
+    "section": "2 Dates with lubridate",
+    "text": "2 Dates with lubridate\n\n📖 Required Reading: R4DS 17: Dates and Times\n\n\n📽 Optional Video: Working wtih Dates"
+  },
+  {
+    "objectID": "reading/week-6.1.html#git-and-github",
+    "href": "reading/week-6.1.html#git-and-github",
+    "title": "Week 6: Version Control with Git and GitHub",
+    "section": "2 Git and GitHub",
+    "text": "2 Git and GitHub\nGit and GitHub are powerful tools for version control and collaboration. We are only going to learn about the most basic workflow in this course, but it is worth starting to integrate Git and GitHub into your workflow early! If you start now and simply, you can add complexity later.\nWhile you can use command-line for Git commands, I recommend using a user interfase to make things easier. We used the RStudio interface in class, which honestly isn’t my absolute favorite, but it gets the job done to start learning. I recommend you also look into GitHub Desktop as an alternative.\n\n📖 Required Reading: Big Picture: Why Git? Why GitHub?\n\n\nAdditional Resources\n\nGit “Hello World” Tutorial on GitHub\nCrash course on git (30 minute YouTube video)\nGit and GitHub for poets YouTube playlist (this is supposed to be the best introduction to Git out there…)"
+  },
+  {
+    "objectID": "slides/week-5/w5-dates.html#midterm-exam---wed-56-1",
+    "href": "slides/week-5/w5-dates.html#midterm-exam---wed-56-1",
+    "title": "Using lubridate to Work with Dates",
+    "section": "Midterm Exam - Wed 5/6",
+    "text": "Midterm Exam - Wed 5/6\n\n\nReview the “What to Expect” document thoroughly as it includes\n\ndetailed expectations\nthe dataset you will be working with\n\nSet yourself up with a dedicated directory that has the data in it\nMake sure to bring to the exam:\n\nsomething to write with (black/blue pen or pencils)\nyour laptop (& a charging chord)"
   }
 ]

@@ -1208,8 +1208,8 @@ margin-right: 0; }
 </ul>
 </div>
 </section>
-<section id="midterm-exam---thu-58" class="slide level2">
-<h2>Midterm Exam - Thu 5/8</h2>
+<section id="midterm-exam---wed-56-1" class="slide level2">
+<h2>Midterm Exam - Wed 5/6</h2>
 <div>
 <ul>
 <li class="fragment">Review the “What to Expect” document thoroughly as it includes
@@ -1228,18 +1228,20 @@ margin-right: 0; }
 </section>
 <section id="midterm---coding-portion" class="slide level2">
 <h2>Midterm - Coding Portion</h2>
+<div>
 <ul>
-<li>You may use course and online resources other but <strong>not generative AI</strong></li>
-<li>All questions can be addressed with just the course materials
+<li class="fragment">You may use course and online resources other but <strong>not generative AI</strong></li>
+<li class="fragment">All questions can be addressed with just the course materials
 <ul>
-<li>this includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)</li>
+<li class="fragment">this includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)</li>
 </ul></li>
-<li>You must <strong>cite</strong> any resources that are not the course materials
+<li class="fragment">You must <strong>cite</strong> any resources that are not the course materials
 <ul>
-<li>include the <em>prompt</em> for Google searchers</li>
+<li class="fragment">include the <em>prompt</em> for Google searchers</li>
 </ul></li>
-<li>I expect what you submit is <strong>your</strong> work</li>
+<li class="fragment">I expect what you submit is <strong>your</strong> work</li>
 </ul>
+</div>
 <div class="callout callout-caution callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
@@ -1511,7 +1513,10 @@ my_date
 Make sure you use quotes!
 
 -   2,015 seconds $\approx$ 33.5 minutes
---> ## Extracting <code>date-time</code> Components</p>
+--></p>
+</section>
+<section id="extracting-date-time-components" class="slide level2">
+<h2>Extracting <code>date-time</code> Components</h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a aria-hidden="true" tabindex="-1"></a>bday <span class="ot">&lt;-</span> <span class="fu">ymd_hms</span>(<span class="st">&quot;1995-02-27 07:03:12&quot;</span>, </span>
 <span id="cb17-2"><a aria-hidden="true" tabindex="-1"></a>                <span class="at">tz =</span> <span class="st">&quot;America/Chicago&quot;</span>)</span>
@@ -1570,7 +1575,7 @@ Make sure you use quotes!
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 11379 days</code></pre>
+<pre><code>Time difference of 11383 days</code></pre>
 </div>
 </div>
 </div>
@@ -1598,7 +1603,7 @@ Make sure you use quotes!
 <span id="cb33-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span>
 <span id="cb33-3"><a aria-hidden="true" tabindex="-1"></a>            )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;983145600s (~31.15 years)&quot;</code></pre>
+<pre><code>[1] &quot;983491200s (~31.16 years)&quot;</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:3%;">
@@ -1611,7 +1616,7 @@ Make sure you use quotes!
 <span id="cb35-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span>
 <span id="cb35-3"><a aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;11379d 0H 0M 0S&quot;</code></pre>
+<pre><code>[1] &quot;11383d 0H 0M 0S&quot;</code></pre>
 </div>
 </div>
 </div>
@@ -1623,8 +1628,8 @@ Make sure you use quotes!
 <div class="column" style="width:40%;">
 <p>We can also <strong>add</strong> time to <code>date-time</code> objects:</p>
 <ul>
-<li><code>days()</code>, <code>years()</code>, etc. will add a <strong>period</strong> of time.</li>
 <li><code>ddays()</code>, <code>dyears()</code>, etc. will add a <strong>duration</strong> of time.</li>
+<li><code>days()</code>, <code>years()</code>, etc. will add a <strong>period</strong> of time.</li>
 </ul>
 </div><div class="column" style="width:5%;">
 
@@ -1634,15 +1639,15 @@ Make sure you use quotes!
 <p><br></p>
 <p>When is is my 99th birthday?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mdy</span>(<span class="st">&quot;02/27/1995&quot;</span>) <span class="sc">+</span> <span class="fu">years</span>(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mdy</span>(<span class="st">&quot;02/27/1995&quot;</span>) <span class="sc">+</span> <span class="fu">dyears</span>(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2094-02-27&quot;</code></pre>
+<pre><code>[1] &quot;2094-02-26 18:00:00 UTC&quot;</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mdy</span>(<span class="st">&quot;02/27/1995&quot;</span>) <span class="sc">+</span> <span class="fu">dyears</span>(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mdy</span>(<span class="st">&quot;02/27/1995&quot;</span>) <span class="sc">+</span> <span class="fu">years</span>(<span class="dv">99</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;2094-02-26 18:00:00 UTC&quot;</code></pre>
+<pre><code>[1] &quot;2094-02-27&quot;</code></pre>
 </div>
 </div>
 </div>
@@ -1653,10 +1658,12 @@ Make sure you use quotes!
 <p>Sppose Delta requires members to travel within 4 weeks before or after their birthday to earn a “Birthday Bonus Flight.”</p>
 <p>Well, we first need to make an interval of time around my birthday.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>bonus_flight_window <span class="ot">&lt;-</span> <span class="fu">interval</span>(</span>
-<span id="cb41-2"><a></a>  bday <span class="sc">-</span> <span class="fu">weeks</span>(<span class="dv">4</span>),  </span>
-<span id="cb41-3"><a></a>  bday <span class="sc">+</span> <span class="fu">weeks</span>(<span class="dv">4</span>)</span>
-<span id="cb41-4"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a></a>bday <span class="ot">&lt;-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-2026&quot;</span>)</span>
+<span id="cb41-2"><a></a></span>
+<span id="cb41-3"><a></a>bonus_flight_window <span class="ot">&lt;-</span> <span class="fu">interval</span>(</span>
+<span id="cb41-4"><a></a>  bday <span class="sc">-</span> <span class="fu">weeks</span>(<span class="dv">4</span>),  </span>
+<span id="cb41-5"><a></a>  bday <span class="sc">+</span> <span class="fu">weeks</span>(<span class="dv">4</span>)</span>
+<span id="cb41-6"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Then I can check if today is within this interval.</p>
 <div class="cell">
@@ -1670,7 +1677,7 @@ Make sure you use quotes!
 <h2>Time Zones…</h2>
 <p>…are complicated!</p>
 <p><br></p>
-<p>Specify time zones in the form:</p>
+<p>Time zones are specified as:</p>
 <ul>
 <li>{continent}/{city} – “America/Denver”, “Africa/Nairobi”</li>
 <li>{ocean}/{city} – “Pacific/Auckland”</li>

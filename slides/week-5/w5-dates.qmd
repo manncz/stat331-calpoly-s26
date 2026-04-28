@@ -189,7 +189,7 @@ Today we will...
   2. After you turn that in, you will complete a **Short Answer** section **with your computer**.
 :::
 
-## Midterm Exam - Thu 5/8
+## Midterm Exam - Wed 5/6
 
 :::{.incremental}
 
@@ -205,12 +205,17 @@ Today we will...
 
 ## Midterm - Coding Portion
 
+:::{.incremental}
 - You may use course and online resources other but **not generative AI**
 - All questions can be addressed with just the course materials
   - this includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)
 - You must **cite** any resources that are not the course materials
   - include the *prompt* for Google searchers
 - I expect what you submit is **your** work
+
+:::
+
+
 
 ::: callout-caution
 While the coding tasks allow resources, you will likely run out of time if you have to look everything up. Know what functions you might need and where to find documentation for implementing these functions.
@@ -436,6 +441,7 @@ Make sure you use quotes!
 
 -   2,015 seconds $\approx$ 33.5 minutes
 -->
+
 ## Extracting `date-time` Components
 
 ```{r}
@@ -558,8 +564,8 @@ as.period(
 ::: {.column width="40%"}
 We can also **add** time to `date-time` objects:
 
--   `days()`, `years()`, etc. will add a **period** of time.
 -   `ddays()`, `dyears()`, etc. will add a **duration** of time.
+-   `days()`, `years()`, etc. will add a **period** of time.
 :::
 
 ::: {.column width="5%"}
@@ -577,15 +583,17 @@ When is is my 99th birthday?
 #| echo: true
 #| code-line-numbers: false
 
-mdy("02/27/1995") + years(99)
+mdy("02/27/1995") + dyears(99)
 ```
 
 ```{r}
 #| echo: true
 #| code-line-numbers: false
 
-mdy("02/27/1995") + dyears(99)
+mdy("02/27/1995") + years(99)
 ```
+
+
 :::
 :::
 :::
@@ -598,6 +606,8 @@ Well, we first need to make an interval of time around my birthday.
 
 ```{r}
 #| echo: true
+
+bday <- mdy("02-27-2026")
 
 bonus_flight_window <- interval(
   bday - weeks(4),  
@@ -621,7 +631,7 @@ today() %within% bonus_flight_window
 
 </br> 
 
-Specify time zones in the form:
+Time zones are specified as:
 
 -   {continent}/{city} -- "America/Denver", "Africa/Nairobi"
 -   {ocean}/{city} -- "Pacific/Auckland"
