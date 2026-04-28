@@ -3554,5 +3554,222 @@
     "title": "PA 6: Merge Conflicts",
     "section": "Collaborating in GitHub",
     "text": "Collaborating in GitHub\n\n4. Add Documents to the Repo.\n\n\nIn RStudio, create a new Quarto file.\n\nIf the Quarto file is totally blank (no default content), then add a single code chunk with 1 + 1.\nChange the title to “Practice Activity 6”.\nResist the urge to add authors.\nSave as PA6.qmd in your new stat331-PA6 folder on your desktop.\nAdd embed-resources: true to the YAML.\nKeep the default template as is.\nRender the document.\n\nIn RStudio, open and edit the .gitignore file to include *.Rproj and *.html.\n\nYour directory stat331-PA6 should have the following files:\n\n.gitignore\nPA6.qmd\nPA6.html\nstat331-PA6.Rproj\n\nYour Git window, should only show the following files:\n\n.gitignore\nPA6.qmd\n\nIf more than this shows up, then your .gitignore was not completed correctly! Git should be ignoring PA6.html and stat331-PA6.Rproj for tracking.\n\n\n5. Push Documents to GitHub.\n\n\nRstudio: Git pane.\n\nStage (checkmark) the .gitignore &gt; Commit ✅ &gt; add a commit message (“ignore all .Rproj files and .html files”) &gt; Commit &gt; Close.\nStage (checkmark) PA6.qmd &gt; Commit ✅ &gt; add a commit message (“create PA quarto file”) &gt; Commit &gt; Close.\n\nRstudio: Git pane &gt; Push (green arrow ⬆) the changes to the remote repo.\n\n\n\n\nStaged file ready to commit. Don’t forget to actually commit before pushing!\n\n\n\n\n6. Pull Changes from GitHub.\n  \n\nRstudio: Git pane &gt; Pull (teal arrow ⬇) the changes that were made!\n\nEveryone should now have the .qmd and updated .gitignore files in their local repo!\n\nLook in your Files pane to make sure.\n\n\n\n7. Make a Change.\n\n\nDirectly under the title: line, add author: to the YAML and include everyone’s first names.\nRender the document.\nRstudio: Git pane &gt; Stage (checkmark) files &gt; Commit ✅ &gt; add commit message &gt; Commit &gt; Close.\n\nUse a commit message like “add first names”.\n\nRstudio: Git pane &gt; Push ⬆ the changes.\n\n\n\n8. Forget to Pull.\n  \nDo NOT pull the changes that were made!\n\n\n9. Make the Same Change.\n\n\nDirectly under the title: line, add author: to the YAML and include everyone’s first and last names.\nRender the document.\nRstudio: Git pane &gt; Stage (checkmark) files &gt; Commit ✅ &gt; add commit message &gt; Commit &gt; Close.\n\nUse a commit message like “add first and last names”.\n\nRstudio: Git pane &gt; Push ⬆ the changes.\n\n\n\n\n\n\n\nOh No!\n\n\n\nYou got an error! Ugh. We forgot to pull before we started making changes.\n\n\n\n\n\n10. Resolve the Merge Conflict.\n\nRstudio: Git pane &gt; Pull ⬇ the changes from the repo.\n\n\n\n\n\n\n🚨 READ THIS - DO NOT IGNORE - did it work?? 🚨\n\n\n\nIf your Git Pull window does NOT look like this…\n\nbut maybe it looks like this:\n\nthen…\n\ncopy-paste the first command: git config pull.rebase false into the Terminal pane (not the Console) in RStudio and hit Enter,\n\n\n\n\nImage showing the command in the Terminal pane of Rstudio.\n\n\n\nand Pull ⬇ again.\n\n\n\nAfter sucessfully starting the pull and getting the message about a merge conflict…\nYour Quarto file should now look like this…\n\n\n\n\n\n\n\nTip\n\n\n\nNote how the conflicting lines are marked! You might need to submit this to Canvas…\n\n\n\nEdit the .qmd file to resolve the conflict with your preferred change.\n\nThis means deleting all of the symbols marking the conflict and just leaving your preferred change.\n\nRender.\nNote that in the Rstudio Git window, your files will be marked with “U”s to indicate a merge conflict.\n\n\n\n⚠️ the “Staged” box is also fully blue. This is a bit misleading – you still need to select the file to be staged to Stage it – make sure there is a CHECK mark in the staged box! The orange Us will then go away.\nCommit ✅ your changes with a good commit message.\nPush ⬆ your changes to GitHub.\n\n\n\n11. Forget to Pull.\n  \nDo NOT pull the changes that were made!\n\n\n12. Make a Different Change.\n\n\nEdit the first code chunk to find the product of \\(13 \\times 13\\).\nRender the document.\nStage and Commit ✅ your changes and Push ⬆ your changes to GitHub.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou will get an error, read it and Pull ⬇ .\n\n\n\nNo merge conflicts should occur – the changes were auto-merged!\n\nYour merge may have been made by a different strategy, but that’s okay.\n\n\n\n\nPush ⬆ your changes again.\n\n\n\n13. Forget to Pull.\n  \nDo NOT pull the changes that were made!\n\n\n14. Make the Same Change (Again).\n\n\nEdit the first code chunk to find the product of \\(11 \\times 11\\).\nRender the document.\nStage and Commit ✅ your changes and Push ⬆ your changes to GitHub.\n\n\n\n\n\n\n\nWarning\n\n\n\nYou will get an error. Ugh!!!! We forgot to pull again!\n\n\n\nPull ⬇ the changes from GitHub.\nEdit the .qmd file to resolve the conflict with the preferred change.\nStage and Commit ✅ your changes and Push ⬆ your changes to GitHub.\n\n\n\n15. Final Document\n   \nPull ⬇ the changes and look at your final document.\n\n\n\n\n\n\nCanvas Quiz Submission\n\n\n\nHow does Git mark the start of lines with a merge conflict?\n\nSpecifically, I want the four capital characters with which every conflict is marked."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#tuesday-may-6",
+    "href": "slides/week-6/w6-version-control.html#tuesday-may-6",
+    "title": "Version Control",
+    "section": "Tuesday, May 6",
+    "text": "Tuesday, May 6\nToday we will…\n\nQuestions about Midterm?\nNew Material\n\ngit/GitHub\nConnect GitHub to RStudio\n\nPA 6: Merge Conflicts – Collaborating within a GitHub Repo"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#what-is-version-control",
+    "href": "slides/week-6/w6-version-control.html#what-is-version-control",
+    "title": "Version Control",
+    "section": "What is version control?",
+    "text": "What is version control?\n\n\nA process of tracking changes to a file or set of files over time so that you can recall specific versions later."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#git-vs-github",
+    "href": "slides/week-6/w6-version-control.html#git-vs-github",
+    "title": "Version Control",
+    "section": "Git vs GitHub",
+    "text": "Git vs GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nA system for version control that manages a collection of files in a structured way.\nUses the command line or a GUI.\nGit is local."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#git-vs-github-1",
+    "href": "slides/week-6/w6-version-control.html#git-vs-github-1",
+    "title": "Version Control",
+    "section": "Git vs GitHub",
+    "text": "Git vs GitHub\n\n\n\n\n\n\n\n\n\n\n\n\nA system for version control that manages a collection of files in a structured way.\nUses the command line or a GUI.\nGit is local.\n\n\n\n\n\n\n\n\n\n\n\n\nA cloud-based service that lets you use git across many computers.\nBasic services are free, advanced services are paid.\nGitHub is remote."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#why-learn-gitgithub",
+    "href": "slides/week-6/w6-version-control.html#why-learn-gitgithub",
+    "title": "Version Control",
+    "section": "Why Learn Git/GitHub?",
+    "text": "Why Learn Git/GitHub?\n\n\nGitHub provides a structured way for tracking changes to files over the course of a project.\n\n\nThink Google Docs or Dropbox history, but more structured and powerful!\n\n\nShare your work transparently!\nDesigned for programming collaboration and project management.\nYou can host a URL of fun things (like the class text, these slides, a personal website, etc.) with GitHub pages."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#in-this-class",
+    "href": "slides/week-6/w6-version-control.html#in-this-class",
+    "title": "Version Control",
+    "section": "In this class…",
+    "text": "In this class…\n\nWe just want to introduce you to the basics of Git and GitHub\nThere is a lot more cool functionality in both!\nCome chat with me if you want to learn more"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#git-repositories",
+    "href": "slides/week-6/w6-version-control.html#git-repositories",
+    "title": "Version Control",
+    "section": "Git Repositories",
+    "text": "Git Repositories\nGit is based on repositories.\n\n\n\nThink of a repository (repo) as a directory (folder) for a single project.\n\nThis directory will likely contain code, documentation, data, to do lists, etc. associated with the project.\nYou can link a local repo with a remote copy on GitHub.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTo create a repository, you can start with your local computer or you can start with the remote copy."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#git-repositories-1",
+    "href": "slides/week-6/w6-version-control.html#git-repositories-1",
+    "title": "Version Control",
+    "section": "Git Repositories",
+    "text": "Git Repositories\n\nLocal repoRemote copy on GitHub"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#what-does-git-do-very-basics",
+    "href": "slides/week-6/w6-version-control.html#what-does-git-do-very-basics",
+    "title": "Version Control",
+    "section": "What does Git do?? (very basics)",
+    "text": "What does Git do?? (very basics)\nBy default:\n\nGit tracks changes in any documents in a given repo\nGit records any changes to lines in the document since the last version of the document was saved (committed)\n\nYou need to:\n\nTell Git if there are files you don’t want it to track (.gitignore)\nTell Git when to save changes to the repo (commit)\n\nOnce you do that, you can always look back on your previous versions and changes!"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#gitignore",
+    "href": "slides/week-6/w6-version-control.html#gitignore",
+    "title": "Version Control",
+    "section": ".gitignore",
+    "text": ".gitignore\nSometimes there are files that you do not want to track.\n\nA .gitignore file specifies the files that git should intentionally ignore.\n\nNote that annoyingly a .gitignore is an “invisible file” in many file browsers\n\nOften you want to ignore machine generated files (e.g., /bin, .DS_Store) or files/directories that you do not want to be shared (e.g., solutions/).\nWe want to ignore .Rproj files!"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#gitignore-example",
+    "href": "slides/week-6/w6-version-control.html#gitignore-example",
+    "title": "Version Control",
+    "section": ".gitignore example",
+    "text": ".gitignore example\n\nDr. C’s .gitignore for her STAT 331 materials repo"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#cloning-a-repo",
+    "href": "slides/week-6/w6-version-control.html#cloning-a-repo",
+    "title": "Version Control",
+    "section": "Cloning a Repo",
+    "text": "Cloning a Repo\n\n\n\nCreate an exact copy of a remote repo on your local machine.\n(typically only done once at the beginning of a project.)"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#committing-changes",
+    "href": "slides/week-6/w6-version-control.html#committing-changes",
+    "title": "Version Control",
+    "section": "Committing Changes",
+    "text": "Committing Changes\nTell git you have made changes you want to add (save ✅) to the repo.\n\nlocal action\nAlso provide a commit message – a short label describing what the changes are and why they exist.\n\n\n\nThe red line is a change we commit (add) to the repo.\n\n\n\n\n\n\n\n\n\n\n\n\nThe log of these changes (and the file history) is called your git commit history.\n\nYou can always go back to old copies!"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#commit-tips",
+    "href": "slides/week-6/w6-version-control.html#commit-tips",
+    "title": "Version Control",
+    "section": "Commit Tips",
+    "text": "Commit Tips\n\nUse short, but informative commit messages.\nCommit small blocks of changes – commit every time you accomplish a small task.\n\nYou’ll have a set of bite-sized changes (with description) to serve as a record of what you’ve done.\n\nWith frequent commits its easier to…\n\nfind the issue when you mess up!\nread back through what you changed!"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#pushing-changes",
+    "href": "slides/week-6/w6-version-control.html#pushing-changes",
+    "title": "Version Control",
+    "section": "Pushing Changes",
+    "text": "Pushing Changes\n\n\n\nUpdate the copy of your repo on GitHub so it has the most recent changes you’ve made on your machine.\n\nlocal to remote ⬆ action"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#pulling-changes",
+    "href": "slides/week-6/w6-version-control.html#pulling-changes",
+    "title": "Version Control",
+    "section": "Pulling Changes",
+    "text": "Pulling Changes\n\n\n\nUpdate the local copy of your repo (the copy on your computer) with the version on GitHub.\n\nremote to local ⬇ action"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#pushing-and-pulling",
+    "href": "slides/week-6/w6-version-control.html#pushing-and-pulling",
+    "title": "Version Control",
+    "section": "Pushing and Pulling",
+    "text": "Pushing and Pulling"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#workflow",
+    "href": "slides/week-6/w6-version-control.html#workflow",
+    "title": "Version Control",
+    "section": "Workflow",
+    "text": "Workflow\nWhen you have an existing local repo:\n\n\nPull ⬇ the repo (especially if collaborating).\nMake some changes locally.\nCommit ✅ the changes to git.\nPull ⬇ any changes from the remote repository (again!).\nResolve any merge conflicts.\nPush ⬆ your changes to GitHub."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#section",
+    "href": "slides/week-6/w6-version-control.html#section",
+    "title": "Version Control",
+    "section": "",
+    "text": "Artwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#merge-conflicts-1",
+    "href": "slides/week-6/w6-version-control.html#merge-conflicts-1",
+    "title": "Version Control",
+    "section": "Merge Conflicts",
+    "text": "Merge Conflicts\nThese occur when git encounters conflicting changes."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#merge-conflicts-2",
+    "href": "slides/week-6/w6-version-control.html#merge-conflicts-2",
+    "title": "Version Control",
+    "section": "Merge Conflicts",
+    "text": "Merge Conflicts\n\nMaybe you are working in real time on the same line of code or text as a collaborator.\nMaybe you forgot to push your changes the last time you finished working.\nMaybe you forgot to pull your changes before you started working this time."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#merge-conflicts-3",
+    "href": "slides/week-6/w6-version-control.html#merge-conflicts-3",
+    "title": "Version Control",
+    "section": "Merge Conflicts",
+    "text": "Merge Conflicts\nWe will work on resolving merge conflicts today!\n\n\nBut when all else fails…\n\ndelete your local repo and clone again.\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#tips-for-avoiding-merge-conflicts",
+    "href": "slides/week-6/w6-version-control.html#tips-for-avoiding-merge-conflicts",
+    "title": "Version Control",
+    "section": "Tips for Avoiding Merge Conflicts",
+    "text": "Tips for Avoiding Merge Conflicts\n\nAlways pull before you start working and always push after you are done working!\n\nIf you do this, you will only have problems if two people are making local changes to the same line in the same file at the same time.\n\n\n\n\nIf you are working with collaborators in real time, pull, commit, and push often.\n\n\n\n\nGit commits lines – lines of code, lines of text, etc.\n\nPractice good code format – no overly long lines!"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#install-load-r-packages",
+    "href": "slides/week-6/w6-version-control.html#install-load-r-packages",
+    "title": "Version Control",
+    "section": "Install + Load R Packages",
+    "text": "Install + Load R Packages\nWork in your console or an Rscript for this.\n\nInstall and load the usethis package.\n\n\ninstall.packages(\"usethis\")\nlibrary(usethis)\n\n\nInstall and load the gitcreds Package.\n\n\ninstall.packages(\"gitcreds\")\nlibrary(gitcreds)"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#configure-git",
+    "href": "slides/week-6/w6-version-control.html#configure-git",
+    "title": "Version Control",
+    "section": "Configure git",
+    "text": "Configure git\n\nTell git your email and GitHub username.\n\n\nuse_git_config(user.name = \"JaneDoe2\", user.email = \"jane@example.org\")\n\n(Nothing should happen.)"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#generate-your-personal-access-token",
+    "href": "slides/week-6/w6-version-control.html#generate-your-personal-access-token",
+    "title": "Version Control",
+    "section": "Generate your Personal Access Token",
+    "text": "Generate your Personal Access Token\n\nGenerate a PAT.\n\n\ncreate_github_token()\n\n\nThis will open GitHub and ask you to log in.\nFill in a Note and an Expiration (AT LEAST 60 days from now).\nClick Generate Token."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#store-your-pat",
+    "href": "slides/week-6/w6-version-control.html#store-your-pat",
+    "title": "Version Control",
+    "section": "Store your PAT",
+    "text": "Store your PAT\n\nCopy your PAT.\n\n\n\nRun the following code.\n\n\ngitcreds_set()\n\nWhen prompted to Enter password or token:, paste your PAT."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#verify-your-pat",
+    "href": "slides/week-6/w6-version-control.html#verify-your-pat",
+    "title": "Version Control",
+    "section": "Verify your PAT",
+    "text": "Verify your PAT\n\nLet’s verify.\n\n\ngit_sitrep()"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#pa-6-merge-conflicts",
+    "href": "slides/week-6/w6-version-control.html#pa-6-merge-conflicts",
+    "title": "Version Control",
+    "section": "PA 6: Merge Conflicts",
+    "text": "PA 6: Merge Conflicts\nYou will be completing this activity in groups of 3-4.\n\n\n\n\n\n\nIMPORTANT\n\n\nThis activity will only work if you follow the directions in the exact order that I have specified them. Do not work ahead of your group members!\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#to-do",
+    "href": "slides/week-6/w6-version-control.html#to-do",
+    "title": "Version Control",
+    "section": "To do…",
+    "text": "To do…\n\nPA 6: Merge Conflicts\n\nDue Monday, 5/4 at 11:59pm – TODAY.\n\nMidterm Exam\n\nWednesday, 5/6.\n\n\n\n\n\n\n\n\nOffice Hours\n\n\nTuesday from 9:30-11am and 2-3:30 pm.\nNone scheduled on Thursday but available upon request."
+  },
+  {
+    "objectID": "slides/week-6/w6-version-control.html#monday-may-4",
+    "href": "slides/week-6/w6-version-control.html#monday-may-4",
+    "title": "Version Control",
+    "section": "Monday, May 4",
+    "text": "Monday, May 4\nToday we will…\n\nQuestions about Midterm?\nNew Material\n\ngit/GitHub\nConnect GitHub to RStudio\n\nPA 6: Merge Conflicts – Collaborating within a GitHub Repo"
   }
 ]
