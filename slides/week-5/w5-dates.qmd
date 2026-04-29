@@ -13,7 +13,6 @@ self-contained: true
 #| label: setup
 
 library(tidyverse)
-library(palmerpenguins)
 ```
 
 
@@ -631,10 +630,15 @@ today() %within% bonus_flight_window
 
 </br> 
 
-Time zones are specified as:
+Time zones have specific values in lubridate. Most are specified as:
 
 -   {continent}/{city} -- "America/Denver", "Africa/Nairobi"
 -   {ocean}/{city} -- "Pacific/Auckland"
+. . .
+
+The US time-zones can be specified as:
+
+- "US/Eastern", "US/Central", "US/Mountain", and "US/Pacific"
 
 . . .
 
@@ -735,7 +739,45 @@ tz(x)
 *UTC is the same as GMT (Greenwich Mean Time) which is where Iceland is located
 :::
 
+## Working with Dates in Data
 
+- the `lubridate` functions take a **vector** as the first argument
+- when working with data, we need to combine `lubridate` functions with `dplyr` verbs!
+
+. . .
+
+```{r}
+#| echo: false
+
+dat <- tibble(date = c("05-04-2026",
+                       "05-01-2026",
+                       "06-01-2026"),
+              event = c("may the 4th be with you",
+                        "may day",
+                        "pride month"))
+```
+
+:::columns
+
+:::column
+```{r}
+#| echo: true
+
+dat
+```
+:::
+:::column
+
+```{r}
+#| echo: true
+
+dat |>
+  mutate(date = mdy(date),
+         month = month(date)
+         )
+```
+:::
+:::
 
 ## Tips for Working with Dates
 

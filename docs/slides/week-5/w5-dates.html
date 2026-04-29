@@ -1575,7 +1575,7 @@ Make sure you use quotes!
 <div class="cell">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Time difference of 11383 days</code></pre>
+<pre><code>Time difference of 11384 days</code></pre>
 </div>
 </div>
 </div>
@@ -1603,7 +1603,7 @@ Make sure you use quotes!
 <span id="cb33-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span>
 <span id="cb33-3"><a aria-hidden="true" tabindex="-1"></a>            )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;983491200s (~31.16 years)&quot;</code></pre>
+<pre><code>[1] &quot;983577600s (~31.17 years)&quot;</code></pre>
 </div>
 </div>
 </div><div class="column" style="width:3%;">
@@ -1616,7 +1616,7 @@ Make sure you use quotes!
 <span id="cb35-2"><a aria-hidden="true" tabindex="-1"></a>  <span class="fu">today</span>() <span class="sc">-</span> <span class="fu">mdy</span>(<span class="st">&quot;02-27-1995&quot;</span>)</span>
 <span id="cb35-3"><a aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] &quot;11383d 0H 0M 0S&quot;</code></pre>
+<pre><code>[1] &quot;11384d 0H 0M 0S&quot;</code></pre>
 </div>
 </div>
 </div>
@@ -1677,10 +1677,14 @@ Make sure you use quotes!
 <h2>Time Zones…</h2>
 <p>…are complicated!</p>
 <p><br></p>
-<p>Time zones are specified as:</p>
+<p>Time zones have specific values in lubridate. Most are specified as:</p>
 <ul>
 <li>{continent}/{city} – “America/Denver”, “Africa/Nairobi”</li>
-<li>{ocean}/{city} – “Pacific/Auckland”</li>
+<li>{ocean}/{city} – “Pacific/Auckland” . . .</li>
+</ul>
+<p>The US time-zones can be specified as:</p>
+<ul>
+<li>“US/Eastern”, “US/Central”, “US/Mountain”, and “US/Pacific”</li>
 </ul>
 <div class="fragment">
 <p>What time zone does R think I’m in?</p>
@@ -1765,6 +1769,44 @@ Make sure you use quotes!
 <div class="small">
 <p>*UTC is the same as GMT (Greenwich Mean Time) which is where Iceland is located</p>
 </div>
+</div>
+</section>
+<section id="working-with-dates-in-data" class="slide level2">
+<h2>Working with Dates in Data</h2>
+<ul>
+<li>the <code>lubridate</code> functions take a <strong>vector</strong> as the first argument</li>
+<li>when working with data, we need to combine <code>lubridate</code> functions with <code>dplyr</code> verbs!</li>
+</ul>
+<div class="fragment">
+<div class="columns">
+<div class="column">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a></a>dat</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  date       event                  
+  &lt;chr&gt;      &lt;chr&gt;                  
+1 05-04-2026 may the 4th be with you
+2 05-01-2026 may day                
+3 06-01-2026 pride month            </code></pre>
+</div>
+</div>
+</div><div class="column">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a></a>dat <span class="sc">|&gt;</span></span>
+<span id="cb61-2"><a></a>  <span class="fu">mutate</span>(<span class="at">date =</span> <span class="fu">mdy</span>(date),</span>
+<span id="cb61-3"><a></a>         <span class="at">month =</span> <span class="fu">month</span>(date)</span>
+<span id="cb61-4"><a></a>         )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  date       event                   month
+  &lt;date&gt;     &lt;chr&gt;                   &lt;dbl&gt;
+1 2026-05-04 may the 4th be with you     5
+2 2026-05-01 may day                     5
+3 2026-06-01 pride month                 6</code></pre>
+</div>
+</div>
+</div></div>
 </div>
 </section>
 <section id="tips-for-working-with-dates" class="slide level2">

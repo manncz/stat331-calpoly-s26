@@ -3357,14 +3357,14 @@
     "href": "slides/week-5/w5-dates.html#subtraction-with-date-time-objects",
     "title": "Using lubridate to Work with Dates",
     "section": "Subtraction with date-time Objects",
-    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11383 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
+    "text": "Subtraction with date-time Objects\nDoing subtraction gives you a difftime object.\ndifftime objects do not always have the same units – it depends on the scale of the objects you are working with.\n\nHow old am I?\n\ntoday() - mdy(\"02-27-1995\")\n\nTime difference of 11384 days\n\n\n\n\n\nHow long did it take me to type this slide?\n\nbegin &lt;- mdy_hms(\"10/21/2024 20:40:34\")\nfinish &lt;- mdy_hms(\"10/21/2024 20:43:11\")\n\nfinish - begin\n\nTime difference of 2.616667 mins"
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods",
     "href": "slides/week-5/w5-dates.html#durations-and-periods",
     "title": "Using lubridate to Work with Dates",
     "section": "Durations and Periods",
-    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"983491200s (~31.16 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11383d 0H 0M 0S\""
+    "text": "Durations and Periods\n\n\nDurations will always give the time span in an exact number of seconds.\n\nas.duration(\n  today() - mdy(\"02-27-1995\")\n            )\n\n[1] \"983577600s (~31.17 years)\"\n\n\n\n\n\n\nPeriods will give the time span in more approximate, but human readable times.\n\nas.period(\n  today() - mdy(\"02-27-1995\")\n  )\n\n[1] \"11384d 0H 0M 0S\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#durations-and-periods-1",
@@ -3378,7 +3378,7 @@
     "href": "slides/week-5/w5-dates.html#time-zones",
     "title": "Using lubridate to Work with Dates",
     "section": "Time Zones…",
-    "text": "Time Zones…\n…are complicated!\n\nTime zones are specified as:\n\n{continent}/{city} – “America/Denver”, “Africa/Nairobi”\n{ocean}/{city} – “Pacific/Auckland”\n\n\nWhat time zone does R think I’m in?\n\nSys.timezone()\n\n[1] \"America/Los_Angeles\""
+    "text": "Time Zones…\n…are complicated!\n\nTime zones have specific values in lubridate. Most are specified as:\n\n{continent}/{city} – “America/Denver”, “Africa/Nairobi”\n{ocean}/{city} – “Pacific/Auckland” . . .\n\nThe US time-zones can be specified as:\n\n“US/Eastern”, “US/Central”, “US/Mountain”, and “US/Pacific”\n\n\nWhat time zone does R think I’m in?\n\nSys.timezone()\n\n[1] \"America/Los_Angeles\""
   },
   {
     "objectID": "slides/week-5/w5-dates.html#time-zones-1",
@@ -3806,5 +3806,12 @@
     "title": "Using lubridate to Work with Dates",
     "section": "Midterm Exam - Wed 5/6",
     "text": "Midterm Exam - Wed 5/6\n\n\nReview the “What to Expect” document thoroughly as it includes\n\ndetailed expectations\nthe dataset you will be working with\n\nSet yourself up with a dedicated directory that has the data in it\nMake sure to bring to the exam:\n\nsomething to write with (black/blue pen or pencils)\nyour laptop (& a charging chord)"
+  },
+  {
+    "objectID": "slides/week-5/w5-dates.html#working-with-dates-in-data",
+    "href": "slides/week-5/w5-dates.html#working-with-dates-in-data",
+    "title": "Using lubridate to Work with Dates",
+    "section": "Working with Dates in Data",
+    "text": "Working with Dates in Data\n\nthe lubridate functions take a vector as the first argument\nwhen working with data, we need to combine lubridate functions with dplyr verbs!\n\n\n\n\n\ndat\n\n# A tibble: 3 × 2\n  date       event                  \n  &lt;chr&gt;      &lt;chr&gt;                  \n1 05-04-2026 may the 4th be with you\n2 05-01-2026 may day                \n3 06-01-2026 pride month            \n\n\n\n\ndat |&gt;\n  mutate(date = mdy(date),\n         month = month(date)\n         )\n\n# A tibble: 3 × 3\n  date       event                   month\n  &lt;date&gt;     &lt;chr&gt;                   &lt;dbl&gt;\n1 2026-05-04 may the 4th be with you     5\n2 2026-05-01 may day                     5\n3 2026-06-01 pride month                 6"
   }
 ]
