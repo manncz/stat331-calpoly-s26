@@ -1,0 +1,118 @@
+---
+title: "What to Expect -- Midterm Exam"
+number-sections: true
+number-depth: 2
+---
+
+***Disclaimer: Points could be adjusted as I finalize my rubric, but I am thinking this general weighting across the categories.***
+
+## Exam Overview {-}
+
++ The exam is worth a total of 60 points and consists of 2 sections: General Questions and Short Answer
++ The General Questions section is written, with no resources
++ The Short Answer section is coded in a `.qmd` file and resources other than generative AI can be used
++ I will bring paper copies of the exam questions 
++ You will have one hour and 50 minutes to complete both of these sections
++ A `.qmd` starter file for the short answer will be unlocked at the start of each section's class.
+
+
+
+## General Questions  [20 points] 
+
+First, you will complete a General Questions section **on paper** and **without your computer or any other resources.**
+
+*You will submit this section to me __before__ you start the Short Answer section.*
+
+You will be asked a series of fill in the blank or multiple choice questions about `R`, `RStudio`, and performing operations with the `tidyverse`, etc. The questions will be similar to the questions in the Group Quizzes.
+
+## Short Answer [40 points]
+
+Second, you will complete a Short Answer coding section with data **on your computer** in class. (More on the data below).
+
+You will be given a `.qmd` template similar to lab assignments and asked a series of short questions, such as "Which word was most and least familiar to participants under 20 years old?" Each of these questions should be answered using functions from the `tidyverse`.
+
+There will be at least one "create a plot" question.
+
+You will separately turn in a rendered `.pdf` file with all code and answers to the questions *and* your `.qmd` file. Only your `.pdf` file will be graded, so make sure that all quesitons are answered and clearly shown there. The `.qmd` file is for backup in case you have serious rendering issues.
+
+You will be graded on the correct output, as well as your code style and design.
+
+:::callout-important
+
+## Using Resources
+
+**Use of ChatGPT (or other generative AI) is not allowed for work on this section.** Your answers will be compared against what ChatGPT would provide. If you use generative AI during the exam, you will receive a 0.
+
+As with labs, **any resources outside of course materials MUST be cited**. Course materials include anything that is linked via Canvas or our course materials page or that you completed yourself as an assignment!! These materials contain everything you need for the exam, so it is in your best interest to stick with those materials, rather than have to spend time citing outside resources.
+
+Here is a list of what I consider to be course materials, which you *do not* need to cite:
+
+- slides
+- handouts
+- readings (all of R4DS is fine)
+- practice activities and labs (your and my solutions)
+- quizzes
+- tidyverse cheatsheets
+- R help files
+
+**If you use Google or another search engine**, you must report your search query.  Not doing so will be considered academic dishonesty. Copying the entire question is not an appropriate query. Copying a full chunk of code and asking why it does not run is not an appropriate query.
+
+Citation do not need to be "formal" and can just be included as code comments. Here are some examples:
+
+```{r}
+#| eval: false
+
+# Googled: "keep certain columns using tidyverse function R"
+# https://carpentries-incubator.github.io/r-tidyverse-4-datasets/instructor/03-data-subsetting.html 
+
+data |>
+  select(my_col)
+```
+
+:::
+
+
+::: callout-caution
+While the coding portion of this exam allows for any recourses other than generative AI, you will likely get caught running out of time if you have to look everything up. Know what functions you might need to approach the problem and where to find documentation for implementing these functions.
+:::
+
+### The Data {-}
+
+Your data sets for the short-answer portion of the exam: `us-minimum-wage-data.csv` and `us-party-data.csv` can be downloaded from canvas.
+
+The `us-minimum-wage-data.csv` data set contains information about the minimum wage for each US state across years. The `us-party-data.csv` data set contains information about political leanings of US states across years.
+
+::: callout-tip
+# Data Documentation
+Documentation for the data can be found on Canvas. I **highly** recommend that you look over the documentation and data before the exam.
+:::
+
+You may bring to the exam any pre-analysis you have done of this data. 
+
+Be aware that I will expect that you are starting with the original data at the beginning of the exam (i.e. if you have thought about data cleaning, that is great, but you should *only* take cleaning steps that I *explicitly* tell you to do in the actual exam).
+  
+
+
+### Tips for Short Answer Section {-}
+
++ You should set up a directory with the exam data before the exam begins! You should be able to download the starter `.qmd` and immediately and easily read in the data at the exam.
++ Please note that you will need to use the **data documentation** in order to successfully complete this exam.
++ The problems on this exam do not need to be completed sequentially, e.g., if you cannot accomplish problem 1, you may still be able to accomplish problem 2.
++ All questions should be answered **using R code**.  Make sure your code prints out only the information that directly answers the question.  **Penalties will be given if your rendered file has extra output beyond that which answers the question.**
++ If your code has errors that you cannot fix in time, you may also include in the comments explanations of your thought process, to potentially receive partial credit.
++ **Late uploads will automatically be deducted 1 point per minute!**
+
+
+  
+
+
+## Additional Policies {-}
+
++ You may use: any online resources excluding generative AI, including anything posted on Canvas, in the text, or in your past assignments.
++ You may **NOT** contact anyone, inside or outside this class, during the course of the exam.  This includes email, chat/messenger services, and posting on online forums and message boards.
++ You may **NOT** use exam materials from previous years.
++ Violations of academic honesty include accessing and using any illegal materials, and giving or receiving help on this exam including looking at other student's exams, allowing other students to look at your own exam, and/or revealing any information about this exam or future exams to someone who has not yet taken it.
++ Students who exhibit academic misconduct will be reported to the Office of Student Rights
+and Responsibilities; academic dishonesty may be punishable by a grade of F in this course.
++ You may **NOT** discuss the exam with any other students until after the exams have been returned to all students.
++ If you witness others exhibiting academic misconduct, you have a duty to report them to your professor.
