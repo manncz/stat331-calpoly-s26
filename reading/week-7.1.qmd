@@ -106,8 +106,8 @@ You can also privide a specific error message for users:
 #| error: true
 
 add <- function(x, y) {
-  stopifnot(is.numeric(x) == "argument input for x is not numeric", 
-            is.numeric(y) == "argument input for y is not numeric"
+  stopifnot("argument input for x is not numeric" = is.numeric(x), 
+            "argument input for y is not numeric" = is.numeric(y)
             )
   x + y
 }
