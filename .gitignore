@@ -30,4 +30,5 @@ student-versions/setup/*
 # Large files
 *.docx
 labs/lab5/bCH_murder_data/*
+
 **/*.quarto_ipynb

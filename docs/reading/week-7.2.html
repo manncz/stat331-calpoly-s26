@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Week 5, Part 2: Working with Dates using lubridate – Introduction to Statistical Computing in R</title>
+<title>Week 7, Part 2: Iteration – Introduction to Statistical Computing in R</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -320,7 +355,12 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives"><span class="header-section-number">1</span> Learning Objectives</a></li>
-  <li><a href="#dates-with-lubridate" id="toc-dates-with-lubridate" class="nav-link" data-scroll-target="#dates-with-lubridate"><span class="header-section-number">2</span> Dates with <code>lubridate</code></a></li>
+  <li><a href="#introduction-to-iteration" id="toc-introduction-to-iteration" class="nav-link" data-scroll-target="#introduction-to-iteration"><span class="header-section-number">2</span> Introduction to Iteration</a></li>
+  <li><a href="#for-loops" id="toc-for-loops" class="nav-link" data-scroll-target="#for-loops"><span class="header-section-number">3</span> For loops</a></li>
+  <li><a href="#iteration-with-purrr" id="toc-iteration-with-purrr" class="nav-link" data-scroll-target="#iteration-with-purrr"><span class="header-section-number">4</span> Iteration with <code>purrr</code></a>
+  <ul class="collapse">
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">4.1</span> Lists</a></li>
+  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/manncz/stat331-calpoly-s26/issues/new" class="toc-action"><i class="bi bi-github"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -330,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Week 5, Part 2: Working with Dates using <code>lubridate</code></h1>
+<h1 class="title">Week 7, Part 2: Iteration</h1>
 </div>
 
 
@@ -347,13 +387,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="learning-objectives" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">1</span> Learning Objectives</h2>
+<section id="learning-objectives" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Learning Objectives</h1>
 <ul>
-<li>recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)</li>
-<li>specify time zones for data variables extract elements of a date variable</li>
-<li>create intervals of time using the <code>%–%</code> operator</li>
-<li>check if a date is within an interval using the <code>%within%</code> operator</li>
+<li>Recognize a <code>for()</code> loop in R to handle repeated tasks</li>
+<li>Use the <code>map()</code> family of functions in the <code>purrr</code> package to handle repeated tasks.</li>
+<li>Identify the advantages of using the <code>map()</code> family of functions for repeated tasks.</li>
 </ul>
 <section id="readings-45-min" class="level4">
 <h4 class="anchored" data-anchor-id="readings-45-min">📖 Readings: 45 min</h4>
@@ -363,15 +402,168 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 </section>
 </section>
-<section id="dates-with-lubridate" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="dates-with-lubridate"><span class="header-section-number">2</span> Dates with <code>lubridate</code></h2>
-<section id="required-reading-r4ds-17-dates-and-times" class="level4">
-<h4 class="anchored" data-anchor-id="required-reading-r4ds-17-dates-and-times">📖 Required Reading: <a href="https://r4ds.hadley.nz/datetimes.html">R4DS 17: Dates and Times</a></h4>
+<section id="introduction-to-iteration" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Introduction to Iteration</h1>
+<p>We just learned the rule of “don’t repeat yourself more than two times” and to instead automate our procedures with functions.</p>
+<p>We previously used<code>across()</code> to help eliminate copy-paste when working with data frames. This is a form of iteration in programming as <code>across()</code> “iterates” over variables, applying a function to manipulate each variable and then doing the same for the next variable.</p>
+<p>This week, we are adding to our toolbox of ways to do efficient iteration rather than repeating code.</p>
 </section>
-<section id="optional-video-working-wtih-dates" class="level4">
-<h4 class="anchored" data-anchor-id="optional-video-working-wtih-dates">📽 Optional Video: <a href="https://www.youtube.com/watch?v=SEPjN2AJqbo">Working wtih Dates</a></h4>
+<section id="for-loops" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> For loops</h1>
+<p><code>while()</code> and <code>for()</code> loops are a common form of iteration that can be extremely useful when logically thinking through a problem. If you are unfamiliar with loops or have not seen them in R, read the R4DS section linked below.</p>
+<p>Unlike some other programming languages, loops are extremely computationally intensive in R. Thus, we will avoid using them at all costs!</p>
+<section id="optional-reading-r4ds-ed.-1-12.2-for-loops" class="level4">
+<h4 class="anchored" data-anchor-id="optional-reading-r4ds-ed.-1-12.2-for-loops">📖 Optional Reading: <a href="https://r4ds.had.co.nz/iteration.html#for-loops">R4DS Ed. 1 12.2: For loops</a></h4>
+</section>
+</section>
+<section id="iteration-with-purrr" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Iteration with <code>purrr</code></h1>
+<section id="lists" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="lists"><span class="header-section-number">4.1</span> Lists</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Review of Lists
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<p>A <strong>list</strong> is a 1-dimensional data structure that has no restrictions on what type of content is stored within it. A list is a “vector”, but it is not an atomic vector - that is, it does not necessarily contain things that are all the same type.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>mylist <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="at">logicals =</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>), </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">numeric_vec =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">12</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">third_thing =</span> letters[<span class="dv">1</span><span class="sc">:</span><span class="dv">2</span>]</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>mylist</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$logicals
+[1]  TRUE  TRUE FALSE FALSE  TRUE
+
+$numeric_vec
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12
+
+$third_thing
+[1] "a" "b"</code></pre>
+</div>
+</div>
+<p>List components may have names (or not), be homogeneous (or not), have the same length (or not).</p>
+<section id="indexing" class="level3">
+<h3 class="anchored" data-anchor-id="indexing">Indexing</h3>
+<p>Indexing necessarily differs between R and Python, and since the list types are also somewhat different (e.g.&nbsp;lists cannot be named in python), we will treat list indexing in the two languages separately.</p>
+<div id="fig-pepper" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-pepper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-pepper.jpg" class="img-fluid figure-img" alt="A pepper shaker containing several individual paper packets of pepper"></p>
+<figcaption>An unusual pepper shaker which we’ll call <code>pepper</code></figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-pepper-1.jpg" class="img-fluid figure-img" alt="A pepper shaker containing a single individual paper packet of pepper."></p>
+<figcaption>When a list is indexed with single brackets, <code>pepper[1]</code>, the return value is always a list containing the selected element(s).</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-pepper-2.jpg" class="img-fluid figure-img" alt="A single individual paper packet of pepper, no longer contained within a pepper shaker."></p>
+<figcaption>When a list is indexed with double brackets, <code>pepper[[1]]</code>, the return value is the selected element.</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 25.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/07-pepper-3.jpg" class="img-fluid figure-img" alt="A pile of pepper, free from any containment structures."></p>
+<figcaption>To actually access the pepper, we have to use double indexing and index both the list object and the sub-object, as in <code>pepper[[1]][[1]]</code>.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-pepper-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: The types of indexing are made most memorable with a fantastic visual example from <span class="citation" data-cites="r4ds">@r4ds</span>, which I have repeated here.
+</figcaption>
+</figure>
+</div>
+<p><strong>There are 3 ways to index a list:</strong></p>
+<ul>
+<li>With single square brackets, just like we index atomic vectors. In this case, the return value is always a list.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>mylist[<span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$logicals
+[1]  TRUE  TRUE FALSE FALSE  TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mylist[<span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$numeric_vec
+ [1]  1  2  3  4  5  6  7  8  9 10 11 12</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mylist[<span class="fu">c</span>(T, F, T)]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$logicals
+[1]  TRUE  TRUE FALSE FALSE  TRUE
+
+$third_thing
+[1] "a" "b"</code></pre>
+</div>
+</div>
+<ul>
+<li>With double square brackets. In this case, the return value is the thing inside the specified position in the list, but you also can only get one entry in the main list at a time. You can also get things by name.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mylist[[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  TRUE  TRUE FALSE FALSE  TRUE</code></pre>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>mylist[[<span class="st">"third_thing"</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a" "b"</code></pre>
+</div>
+</div>
+<ul>
+<li>Using <code>x$name</code>. This is equivalent to using <code>x[["name"]]</code>. Note that this does not work on unnamed entries in the list.</li>
+</ul>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>mylist<span class="sc">$</span>third_thing</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a" "b"</code></pre>
+</div>
+</div>
+<p>To access the contents of a list object, we have to use double-indexing:</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>mylist[[<span class="st">"third_thing"</span>]][[<span class="dv">1</span>]]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "a"</code></pre>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<section id="required-reading-r4ds-ed.-1-12.5-the-map-functions" class="level4">
+<h4 class="anchored" data-anchor-id="required-reading-r4ds-ed.-1-12.5-the-map-functions">📖 Required Reading: <a href="https://r4ds.had.co.nz/iteration.html#the-map-functions">R4DS Ed. 1 12.5: The map functions</a></h4>
+</section>
+<section id="optional-video-iteration-with-the-map-family" class="level4">
+<h4 class="anchored" data-anchor-id="optional-video-iteration-with-the-map-family">📽 Optional Video: <a href="https://www.youtube.com/watch?v=FPD3a6IHO6w">Iteration with the <code>map()</code> family</a></h4>
 
 
+</section>
 </section>
 </section>
 

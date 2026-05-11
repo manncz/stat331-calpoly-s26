@@ -1,5 +1,5 @@
 ---
-title: "Week 5, Part 2: Working with Dates using `lubridate`"
+title: "Week 7, Part 2: Iteration"
 number-sections: true
 number-depth: 2
 ---
@@ -13,14 +13,11 @@ library(knitr)
 ```
 
 
-## Learning Objectives
+# Learning Objectives
 
-
-- recognize structure of how dates were stored (e.g., day-month-year, month-day-year, month-day-year-hours-minutes)
-- specify time zones for data variables
-extract elements of a date variable
-- create intervals of time using the `%–%` operator
-- check if a date is within an interval using the `%within%` operator
+- Recognize a `for()` loop in R to handle repeated tasks
+- Use the `map()` family of functions in the `purrr` package to handle repeated tasks.
+- Identify the advantages of using the `map()` family of functions for repeated tasks.
 
 #### 📖 Readings: 45 min
 
@@ -28,9 +25,114 @@ extract elements of a date variable
 
 ------------------------------------------------------------------------
 
-## Dates with `lubridate`
+# Introduction to Iteration 
 
-#### 📖 Required Reading: [R4DS 17: Dates and Times](https://r4ds.hadley.nz/datetimes.html)
+We just learned the rule of “don’t repeat yourself more than two times” and to instead automate our procedures with functions. 
 
-#### 📽 Optional Video: [Working wtih Dates](https://www.youtube.com/watch?v=SEPjN2AJqbo)
+We previously used`across()` to help eliminate copy-paste when working with data frames. This is a form of iteration in programming as `across()` “iterates” over variables, applying a function to manipulate each variable and then doing the same for the next variable.
+
+This week, we are adding to our toolbox of ways to do efficient iteration rather than repeating code.
+
+# For loops
+
+`while()` and `for()` loops are a common form of iteration that can be extremely useful when logically thinking through a problem. If you are unfamiliar with loops or have not seen them in R, read the R4DS section linked below.
+
+Unlike some other programming languages, loops are extremely computationally intensive in R. Thus, we will avoid using them at all costs! 
+
+#### 📖 Optional Reading: [R4DS Ed. 1 12.2: For loops](https://r4ds.had.co.nz/iteration.html#for-loops)
+
+
+# Iteration with `purrr`
+
+## Lists 
+
+::: {.callout-note collapse=TRUE}
+## Review of Lists 
+
+A **list** is a 1-dimensional data structure that has no restrictions on what
+type of content is stored within it. 
+A list is a "vector", but it is not an atomic vector - that is, it does not necessarily contain things that are all the same type.
+
+```{r purrr-review4}
+#| eval: true
+
+mylist <- list(
+    logicals = c(TRUE, TRUE, FALSE, FALSE, TRUE), 
+    numeric_vec = 1:12, 
+    third_thing = letters[1:2]
+    )
+
+mylist
+```
+
+List components may have names (or not), be homogeneous (or not), have the same length (or not). 
+
+### Indexing
+
+Indexing necessarily differs between R and Python, and since the list types are
+also somewhat different (e.g. lists cannot be named in python), we will treat 
+list indexing in the two languages separately.
+
+::: {#fig-pepper layout-ncol=4}
+
+![An unusual pepper shaker which we'll call `pepper`](images/07-pepper.jpg){fig-alt="A pepper shaker containing several individual paper packets of pepper"}
+
+![When a list is indexed with single brackets, `pepper[1]`, the return value is always a list containing the selected element(s).](images/07-pepper-1.jpg){fig-alt="A pepper shaker containing a single individual paper packet of pepper."}
+
+![When a list is indexed with double brackets, `pepper[[1]]`, the return value is the selected element.](images/07-pepper-2.jpg){fig-alt="A single individual paper packet of pepper, no longer contained within a pepper shaker."}
+
+![To actually access the pepper, we have to use double indexing and index both the list object and the sub-object, as in `pepper[[1]][[1]]`.](images/07-pepper-3.jpg){fig-alt="A pile of pepper, free from any containment structures."}
+
+The types of indexing are made most memorable with a fantastic visual example
+from @r4ds, which I have repeated here.
+:::
+
+**There are 3 ways to index a list:**
+
+- With single square brackets, just like we index atomic vectors. In this case, the return value is always a list.
+
+```{r purrr-review5}
+#| eval: true
+
+mylist[1]
+
+mylist[2]
+
+mylist[c(T, F, T)]
+```
+
+- With double square brackets. In this case, the return value is the thing
+inside the specified position in the list, but you also can only get one entry
+in the main list at a time. You can also get things by name.
+
+```{r purrr-review6}
+#| eval: true
+
+mylist[[1]]
+
+mylist[["third_thing"]]
+```
+
+- Using `x$name`. This is equivalent to using `x[["name"]]`. Note that this does
+not work on unnamed entries in the list. 
+
+```{r purrr-review7}
+#| eval: true
+
+mylist$third_thing
+```
+
+To access the contents of a list object, we have to use double-indexing:
+
+```{r purrr-review8}
+#| eval: true
+
+mylist[["third_thing"]][[1]]
+```
+:::
+
+#### 📖 Required Reading: [R4DS Ed. 1 12.5: The map functions](https://r4ds.had.co.nz/iteration.html#the-map-functions)
+
+
+#### 📽 Optional Video: [Iteration with the `map()` family](https://www.youtube.com/watch?v=FPD3a6IHO6w)
 

@@ -6,8 +6,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.37">
 
   <title>Introduction to Statistical Computing in R – Intro to STAT 331/531 + Intro to R</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +16,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,8 +31,9 @@
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
     pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
     pre > code.sourceCode > span:empty { height: 1.2em; }
     .sourceCode { overflow: visible; }
     code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -40,7 +44,7 @@
     }
     @media print {
     pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
     }
     pre.numberSource code
       { counter-reset: source-line 0; }
@@ -93,7 +97,7 @@
     code span.vs { color: #20794d; } /* VerbatimString */
     code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-4cb0d285e5e633b223dc56df76ce2d99.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-fddb0e386adc8c8674083fe5a4d16615.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -220,13 +224,11 @@
 <div class="columns">
 <div class="column" style="width:60%;">
 <p>Hi, I’m Dr.&nbsp;C!</p>
-<div>
 <ul>
 <li class="fragment"><p>I am a transplant to the west coast.</p></li>
 <li class="fragment"><p>My favorite things right now are cooking, knitting, and biking around SLO county.</p></li>
 <li class="fragment"><p>I genuinely love <code>R</code>.</p></li>
 </ul>
-</div>
 </div><div class="column" style="width:40%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -253,7 +255,6 @@
 </section>
 <section id="communication" class="slide level2">
 <h2>Communication</h2>
-<div>
 <ul>
 <li class="fragment">✉️ email
 <ul>
@@ -271,11 +272,9 @@
 <li class="fragment">reach out to schedule other times</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="course-materials" class="slide level2">
 <h2>Course Materials</h2>
-<div>
 <ul>
 <li class="fragment">🏫 Canvas
 <ul>
@@ -293,11 +292,9 @@
 <li class="fragment">this is for convenience, but everything will also be linked in Canvas</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="assessments---formative" class="slide level2">
 <h2>Assessments - Formative</h2>
-<div>
 <ul>
 <li class="fragment">Group Quizes (10%)
 <ul>
@@ -315,7 +312,6 @@
 <li class="fragment">“homework”</li>
 </ul></li>
 </ul>
-</div>
 <!--. . .
 
 :::callout-tip
@@ -355,14 +351,12 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="assessments---general-criteria" class="slide level2">
 <h2>Assessments - General Criteria</h2>
-<div>
 <ul>
 <li class="fragment">correct outputs are great, but you will also need to demonstrate that you are <strong>intellectually engaging</strong> with the material in assignments</li>
 <li class="fragment">in addition to getting a correct output from your code, you will be assessed for <strong>efficiency and formatting</strong></li>
 <li class="fragment">technical <strong>communication</strong> will also be an important element of assessments</li>
 <li class="fragment">I hope you will be proud of your work in this class!</li>
 </ul>
-</div>
 </section>
 <section id="weekly-overview" class="slide level2">
 <h2>Weekly Overview</h2>
@@ -370,7 +364,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="course-policies" class="slide level2">
 <h2>Course Policies</h2>
-<div>
 <p><strong>Late Policy</strong></p>
 <ul>
 <li class="fragment">4 “deadline extensions”</li>
@@ -385,22 +378,18 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">let me know what I can do better</li>
 <li class="fragment">email me if you use the DRC</li>
 </ul>
-</div>
 </section>
 <section id="academic-integrity" class="slide level2">
 <h2>Academic Integrity</h2>
-<div>
 <ul>
 <li class="fragment">let’s be <strong>proactive</strong> to prevent situations where you are overwhelmed!</li>
 <li class="fragment">use generative AI as a tutor, not a substitute for your own work</li>
 <li class="fragment"><strong>cite outside resources!</strong> including AI</li>
 <li class="fragment">please review the <a href="../../course-info/syllabus-s26.html">syllabus</a> carefully</li>
 </ul>
-</div>
 </section>
 <section id="my-expectations-for-you" class="slide level2">
 <h2>My expectations for you</h2>
-<div>
 <ul>
 <li class="fragment">ask lots of questions</li>
 <li class="fragment">take advantage of resources to help you learn
@@ -413,11 +402,9 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">productive struggle</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="my-expectations-for-me" class="slide level2">
 <h2>My expectations for me</h2>
-<div>
 <ul>
 <li class="fragment">creating an inclusive and accessible classroom</li>
 <li class="fragment">providing resources needed to learn the material</li>
@@ -425,17 +412,14 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">doing my best to make class worth your time</li>
 <li class="fragment">clearly communicating</li>
 </ul>
-</div>
 </section>
 <section id="what-to-expect-from-this-course" class="slide level2">
 <h2>What to expect from this course</h2>
-<div>
 <ul>
 <li class="fragment">everyone comes with different knowledge and skills – figure out what helps you learn the best in this course</li>
 <li class="fragment">independent learning and learning from documentation is <em>part</em> of the course</li>
 <li class="fragment">coding involves unique challenges, frustrations, and satisfaction!</li>
 </ul>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/5ccff989-900e-4f2b-aece-55278b563cfa_rw_3840.png?h=0e42e3b3516e2d9ae08909ffee7fed0c" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
@@ -449,7 +433,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="statistical-computing-involves" class="slide level2">
 <h2>Statistical computing involves…</h2>
-<div>
 <ul>
 <li class="fragment">understanding data structures
 <ul>
@@ -465,7 +448,6 @@ You should work with other's on all assignments! The final work you submit for a
 </ul></li>
 <li class="fragment">improving efficiency of your code</li>
 </ul>
-</div>
 <div class="fragment">
 <div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
@@ -484,14 +466,12 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="paper" class="slide level2">
 <h2>Paper ??</h2>
-<div>
 <ol start="0" type="1">
 <li class="fragment">Work with the person (or people) next to you &amp; introduce yourself!</li>
 <li class="fragment">Write a set of instructions to create the paper item I provided for you</li>
 <li class="fragment">Swap the instructions with the group across from you</li>
 <li class="fragment">Follow their instructions as literally as possible to fold an object</li>
 </ol>
-</div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
 <p><img data-src="https://www.diy-magazine.com/wp-content/uploads/2021/03/Long-distance-paper-airplane-kite-flyer-00-768x384.jpg" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
@@ -522,23 +502,19 @@ You should work with other's on all assignments! The final work you submit for a
 <div class="tab-content">
 <div id="tabset-1-1">
 <p><code>R</code>’s <strong>strengths</strong> are…</p>
-<div>
 <ul>
 <li class="fragment"><p>handling data with lots of <strong>different types</strong> of variables.</p></li>
 <li class="fragment"><p>making nice and complex data <strong>visualizations</strong>.</p></li>
 <li class="fragment"><p>having cutting-edge statistical <strong>methods</strong> available to users.</p></li>
 </ul>
 </div>
-</div>
 <div id="tabset-1-2">
 <p><code>R</code>’s <strong>weaknesses</strong> are…</p>
-<div>
 <ul>
 <li class="fragment"><p>performing non-analysis programming tasks, like website creation (<em>python</em>, <em>ruby</em>, …).</p></li>
 <li class="fragment"><p>hyper-efficient numerical computation (<em>matlab</em>, <em>C</em>, …).</p></li>
 <li class="fragment"><p>being a simple tool for all audiences (<em>SPSS</em>, <em>STATA</em>, <em>JMP</em>, <em>minitab</em>, …).</p></li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -560,26 +536,22 @@ You should work with other's on all assignments! The final work you submit for a
 <section id="open-source" class="slide level2">
 <h2>Open-Source</h2>
 <p>Importantly, <code>R</code> is <em>open-source</em>.</p>
-<div>
 <ul>
 <li class="fragment">There is no company that owns <code>R</code>, like there is for <em>SAS</em> or <em>Matlab</em>.</li>
 <li class="fragment"><strong>This means packages are created by users like you and me!</strong></li>
 <li class="fragment">“Official” <code>R</code> packages live on the <em>Comprehensive R Archive Network</em>, or <strong>CRAN</strong>.</li>
 <li class="fragment">But anyone can write and share new code in “package form”</li>
 </ul>
-</div>
 </section>
 <section id="open-source-1" class="slide level2">
 <h2>Open-Source</h2>
 <p>Being a good open-source citizen means…</p>
-<div>
 <ul>
 <li class="fragment"><strong>sharing</strong> your code publicly when possible (later in this course, we’ll learn about <em>GitHub</em>!).</li>
 <li class="fragment"><strong>contributing</strong> to public projects and packages, as you are able.</li>
 <li class="fragment">creating your own <strong>packages</strong>, if you can.</li>
 <li class="fragment">using <code>R</code> for <strong>ethical and respectful</strong> projects.</li>
 </ul>
-</div>
 </section></section>
 <section>
 <section id="intro-to" class="title-slide slide level1 center">
@@ -673,7 +645,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="what-is-a-directory" class="slide level2">
 <h2>What is a directory?</h2>
-<div>
 <ul>
 <li class="fragment"><p>A <strong>directory</strong> is just a fancy name for a folder.</p></li>
 <li class="fragment"><p>Directories are your <strong>friends</strong>!</p></li>
@@ -683,7 +654,6 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">do not include spaces in directory names</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="project-directory-examples" class="slide level2">
 <h2>Project Directory Examples</h2>
@@ -716,7 +686,6 @@ You should work with other's on all assignments! The final work you submit for a
 <section id="manage-your-class-directory" class="slide level2">
 <h2>Manage your Class Directory</h2>
 <p>Create a directory for this class!</p>
-<div>
 <ul>
 <li class="fragment"><p>Is it in a place you can easily find it?</p>
 <ul>
@@ -728,7 +697,6 @@ You should work with other's on all assignments! The final work you submit for a
 </ul></li>
 <li class="fragment"><p>Are the files inside it well-organized?</p></li>
 </ul>
-</div>
 <div class="fragment">
 <div class="callout callout-warning callout-titled callout-style-default">
 <div class="callout-body">
@@ -768,7 +736,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="how-do-i-run-code-in-r" class="slide level2">
 <h2>How do I run code in R? 🧩</h2>
-<div>
 <ul>
 <li class="fragment">You can run any lines of code directly in the <em>Console</em>
 <ul>
@@ -781,13 +748,12 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">More on scripts vs.&nbsp;notebooks tomorrow</li>
 </ul></li>
 </ul>
-</div>
 </section>
 <section id="packages-1" class="slide level2">
 <h2>Packages 🧩</h2>
 <p>To <strong>install</strong> a package use:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tibble"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tibble"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>You should have to install a package <strong>only once</strong>.</li>
@@ -795,7 +761,7 @@ You should work with other's on all assignments! The final work you submit for a
 <div class="fragment">
 <p>To <strong>load</strong> a package use:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <ul>
 <li>You have to load a package <strong>each time you restart R</strong>.</li>
@@ -830,10 +796,10 @@ You should work with other's on all assignments! The final work you submit for a
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>message <span class="ot">&lt;-</span> <span class="st">"So long and thanks for all the fish"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a>message <span class="ot">&lt;-</span> <span class="st">"So long and thanks for all the fish"</span></span>
 <span id="cb3-2"><a></a>year <span class="ot">&lt;-</span> <span class="dv">2025</span></span>
 <span id="cb3-3"><a></a>the_answer <span class="ot">&lt;-</span> <span class="dv">42</span></span>
-<span id="cb3-4"><a></a>earth_demolished <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-4"><a></a>earth_demolished <span class="ot">&lt;-</span> <span class="cn">FALSE</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
@@ -913,8 +879,8 @@ You should work with other's on all assignments! The final work you submit for a
 <p>Vector:</p>
 </div><div class="column" style="width:75%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>vec[<span class="dv">4</span>]    <span class="co"># 4th element</span></span>
-<span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>vec[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]  <span class="co"># first 3 elements</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a aria-hidden="true" tabindex="-1"></a>vec[<span class="dv">4</span>]    <span class="co"># 4th element</span></span>
+<span id="cb4-2"><a aria-hidden="true" tabindex="-1"></a>vec[<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]  <span class="co"># first 3 elements</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
 <div class="columns">
@@ -922,8 +888,8 @@ You should work with other's on all assignments! The final work you submit for a
 <p>Matrix:</p>
 </div><div class="column" style="width:75%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>mat[<span class="dv">2</span>,<span class="dv">6</span>]  <span class="co"># element in row 2, col 6</span></span>
-<span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>mat[,<span class="dv">3</span>]   <span class="co"># all elements in col 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a aria-hidden="true" tabindex="-1"></a>mat[<span class="dv">2</span>,<span class="dv">6</span>]  <span class="co"># element in row 2, col 6</span></span>
+<span id="cb5-2"><a aria-hidden="true" tabindex="-1"></a>mat[,<span class="dv">3</span>]   <span class="co"># all elements in col 3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
 <div class="columns">
@@ -931,7 +897,7 @@ You should work with other's on all assignments! The final work you submit for a
 <p>List:</p>
 </div><div class="column" style="width:75%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>li[[<span class="dv">5</span>]]    <span class="co"># 5th element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a aria-hidden="true" tabindex="-1"></a>li[[<span class="dv">5</span>]]    <span class="co"># 5th element</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
 <div class="columns">
@@ -939,10 +905,10 @@ You should work with other's on all assignments! The final work you submit for a
 <p>Dataframe:</p>
 </div><div class="column" style="width:75%;">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>df[<span class="dv">1</span>,<span class="dv">2</span>]     <span class="co"># element in row 1, col 2</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a aria-hidden="true" tabindex="-1"></a>df[<span class="dv">1</span>,<span class="dv">2</span>]     <span class="co"># element in row 1, col 2</span></span>
 <span id="cb7-2"><a aria-hidden="true" tabindex="-1"></a>df[<span class="dv">17</span>,]     <span class="co"># all elements in row 17</span></span>
 <span id="cb7-3"><a aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>calName  <span class="co"># all elements in the col named "colName"</span></span>
-<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a>df[[<span class="st">"calName"</span>]] <span class="co"># all elements in the col named "colName"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-4"><a aria-hidden="true" tabindex="-1"></a>df[[<span class="st">"calName"</span>]] <span class="co"># all elements in the col named "colName"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div></div>
 </div>
@@ -957,18 +923,18 @@ You should work with other's on all assignments! The final work you submit for a
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>)</span>
 <span id="cb8-2"><a></a>y <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>)</span>
 <span id="cb8-3"><a></a></span>
-<span id="cb8-4"><a></a>x <span class="sc">&amp;</span> y   <span class="co"># AND</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-4"><a></a>x <span class="sc">&amp;</span> y   <span class="co"># AND</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  TRUE FALSE FALSE FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>x <span class="sc">|</span> y   <span class="co"># OR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a></a>x <span class="sc">|</span> y   <span class="co"># OR</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  TRUE  TRUE  TRUE FALSE</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="sc">!</span>x <span class="sc">&amp;</span> y  <span class="co"># NOT X AND Y</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="sc">!</span>x <span class="sc">&amp;</span> y  <span class="co"># NOT X AND Y</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE  TRUE FALSE FALSE</code></pre>
 </div>
@@ -977,7 +943,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="vectorization" class="slide level2">
 <h2>Vectorization</h2>
-<div>
 <ul>
 <li class="fragment"><p><code>R</code> is designed to do vector and matrix math nicely</p></li>
 <li class="fragment"><p>Many operations in <code>R</code> are <strong>vectorized</strong>.</p>
@@ -986,12 +951,11 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">i.e.&nbsp;the function applies to every element of a vector individually.</li>
 </ul></li>
 </ul>
-</div>
 <div class="fragment">
 <p>e.g.:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">to =</span> <span class="dv">2</span>)</span>
-<span id="cb14-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="sc">-</span><span class="dv">2</span>, <span class="at">to =</span> <span class="dv">2</span>)</span>
+<span id="cb14-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -2 -1  0  1  2</code></pre>
 </div>
@@ -1005,10 +969,10 @@ You should work with other's on all assignments! The final work you submit for a
 <div class="column" style="width:50%;">
 <p>Loop:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x)){</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(x)){</span>
 <span id="cb16-2"><a></a>  x[i] <span class="ot">&lt;-</span> x[i] <span class="sc">+</span> <span class="dv">1</span></span>
 <span id="cb16-3"><a></a>}</span>
-<span id="cb16-4"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb16-4"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -1  0  1  2  3</code></pre>
 </div>
@@ -1016,8 +980,8 @@ You should work with other's on all assignments! The final work you submit for a
 </div><div class="column" style="width:50%;">
 <p>Vectorized:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>x <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb18-2"><a></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a></a>x <span class="ot">&lt;-</span> x <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb18-2"><a></a>x</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] -1  0  1  2  3</code></pre>
 </div>
@@ -1044,21 +1008,20 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="logic-indexing-and-vectorization" class="slide level2">
 <h2>Logic, Indexing, and Vectorization 🧩</h2>
-<div>
 <ul>
 <li class="fragment"><p>We can do some nifty things putting logic, indexing and vectorization together!</p></li>
 <li class="fragment"><p>Booleans can be used for indexing, where <code>TRUE</code> elements are kept</p></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
 <span id="cb20-2"><a></a></span>
-<span id="cb20-3"><a></a>vec <span class="sc">&gt;</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb20-3"><a></a>vec <span class="sc">&gt;</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] FALSE FALSE  TRUE</code></pre>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>vec[vec <span class="sc">&gt;</span> <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a></a>vec[vec <span class="sc">&gt;</span> <span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 3</code></pre>
 </div>
@@ -1070,10 +1033,9 @@ You should work with other's on all assignments! The final work you submit for a
 </ul></li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">sum</span>(vec <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb24"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a></a><span class="fu">sum</span>(vec <span class="sc">&gt;</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1</code></pre>
-</div>
 </div>
 </div>
 </section></section>
@@ -1095,7 +1057,7 @@ You should work with other's on all assignments! The final work you submit for a
 <li>For example, you will often see:</li>
 </ul>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required package: Matrix</code></pre>
 </div>
@@ -1112,9 +1074,9 @@ You should work with other's on all assignments! The final work you submit for a
 <div class="fragment">
 <p><strong>Does this look right?</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
 <span id="cb28-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb28-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(my_vec)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb28-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(my_vec)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Warning: NAs introduced by coercion</code></pre>
 </div>
@@ -1122,7 +1084,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>my_new_vec</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a aria-hidden="true" tabindex="-1"></a>my_new_vec</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] NA NA NA</code></pre>
 </div>
@@ -1137,9 +1099,9 @@ You should work with other's on all assignments! The final work you submit for a
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a aria-hidden="true" tabindex="-1"></a>my_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>)</span>
 <span id="cb32-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> my_vec <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb32-3"><a aria-hidden="true" tabindex="-1"></a>my_new_vec <span class="ot">&lt;-</span> my_vec <span class="sc">+</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `my_vec + 1`:
 ! non-numeric argument to binary operator</code></pre>
@@ -1149,7 +1111,6 @@ You should work with other's on all assignments! The final work you submit for a
 </section>
 <section id="types-of-errors" class="slide level2">
 <h2>Types of Errors</h2>
-<div>
 <ul>
 <li class="fragment">syntax errors (aka typos)
 <ul>
@@ -1163,7 +1124,6 @@ You should work with other's on all assignments! The final work you submit for a
 <li class="fragment">are you getting the type of output you expect?</li>
 </ul></li>
 </ul>
-</div>
 </section></section>
 <section>
 <section id="syntax-errors" class="title-slide slide level1 center">
@@ -1174,7 +1134,7 @@ You should work with other's on all assignments! The final work you submit for a
 <h2>Did you leave off a parenthesis?</h2>
 <p>seq<span style="background-color:#ffff7f">(</span>from = 1, to = 10, by = 1</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in parse(text = input): &lt;text&gt;:2:0: unexpected end of input
 1: seq(from = 1, to = 10, by = 1
@@ -1183,7 +1143,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 </div>
@@ -1194,7 +1154,7 @@ You should work with other's on all assignments! The final work you submit for a
 <h2>Did you leave off a comma?</h2>
 <p>seq(from = 1, to = 10 <span style="background-color:#ffff7f">by</span> = 1)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span> <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span> <span class="at">by =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in parse(text = input): &lt;text&gt;:1:23: unexpected symbol
 1: seq(from = 1, to = 10 by
@@ -1203,7 +1163,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 </div>
@@ -1214,7 +1174,7 @@ You should work with other's on all assignments! The final work you submit for a
 <h2>Did you make a typo? Are you using the right names?</h2>
 <p><span style="background-color:#ffff7f">sequence</span>(from = 1, to = 10, by = 1)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sequence</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sequence</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `sequence.default()`:
 ! argument "nvec" is missing, with no default</code></pre>
@@ -1222,7 +1182,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code> [1]  1  2  3  4  5  6  7  8  9 10</code></pre>
 </div>
@@ -1238,7 +1198,7 @@ You should work with other's on all assignments! The final work you submit for a
 <h2>Are you using the right <em>input</em> that the function expects?</h2>
 <p>sqrt(<span style="background-color:#ffff7f">‘1’</span>)</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">'1'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="st">'1'</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `sqrt()`:
 ! non-numeric argument to mathematical function</code></pre>
@@ -1246,7 +1206,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">sqrt</span>(<span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1</code></pre>
 </div>
@@ -1256,9 +1216,9 @@ You should work with other's on all assignments! The final work you submit for a
 <section id="are-you-expecting-the-right-output-of-the-function" class="slide level2">
 <h2>Are you expecting the right <em>output</em> of the function?</h2>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a aria-hidden="true" tabindex="-1"></a>my_obj <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a aria-hidden="true" tabindex="-1"></a>my_obj <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="at">from =</span> <span class="dv">1</span>, <span class="at">to =</span> <span class="dv">10</span>, <span class="at">by =</span> <span class="dv">1</span>)</span>
 <span id="cb50-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb50-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">my_obj</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb50-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">my_obj</span>(<span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `my_obj()`:
 ! could not find function "my_obj"</code></pre>
@@ -1266,7 +1226,7 @@ You should work with other's on all assignments! The final work you submit for a
 </div>
 <div class="fragment">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-hidden="true" tabindex="-1"></a>my_obj[<span class="dv">5</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a aria-hidden="true" tabindex="-1"></a>my_obj[<span class="dv">5</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
@@ -1306,9 +1266,9 @@ You should work with other's on all assignments! The final work you submit for a
 <p>You haven’t run the code to create <code>some_obj</code> OR you have a typo in the name!</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-hidden="true" tabindex="-1"></a>some_ojb <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a aria-hidden="true" tabindex="-1"></a>some_ojb <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
 <span id="cb54-2"><a aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb54-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(some_obj)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb54-3"><a aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(some_obj)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `h()`:
 ! error in evaluating the argument 'x' in selecting a method for function 'mean': object 'some_obj' not found</code></pre>
@@ -1327,7 +1287,7 @@ You should work with other's on all assignments! The final work you submit for a
 <p>Oops, you tried to use square brackets on a function</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a aria-hidden="true" tabindex="-1"></a>mean[<span class="dv">1</span>, <span class="dv">2</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a aria-hidden="true" tabindex="-1"></a>mean[<span class="dv">1</span>, <span class="dv">2</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `mean[1, 2]`:
 ! object of type 'closure' is not subsettable</code></pre>
@@ -1346,7 +1306,7 @@ You should work with other's on all assignments! The final work you submit for a
 <p>You tried to do math on data that isn’t numeric.</p>
 </blockquote>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"a"</span> <span class="sc">+</span> <span class="dv">2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a aria-hidden="true" tabindex="-1"></a><span class="st">"a"</span> <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `"a" + 2`:
 ! non-numeric argument to binary operator</code></pre>
@@ -1369,7 +1329,7 @@ You should work with other's on all assignments! The final work you submit for a
 <h2>Try it…</h2>
 <p><strong>What’s wrong here?</strong></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>), <span class="at">num_row =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="fu">c</span>(<span class="st">"a"</span>, <span class="st">"b"</span>, <span class="st">"c"</span>, <span class="st">"d"</span>), <span class="at">num_row =</span> <span class="dv">2</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `matrix()`:
 ! unused argument (num_row = 2)</code></pre>
@@ -1605,7 +1565,7 @@ You should work with other's on all assignments! The final work you submit for a
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1670,190 +1630,173 @@ You should work with other's on all assignments! The final work you submit for a
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
           }
+          return false;
         }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
           }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
           for (const childEl of codeEl.children) {
             if (isCodeAnnotation(childEl)) {
               childEl.remove();
             }
           }
           return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/github\.com\/manncz\/stat331-calpoly-s26");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/github\.com\/manncz\/stat331-calpoly-s26");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
             }
           }
-        }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
           }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
           }
-        } else {
-          return undefined;
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
         }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
-              }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
