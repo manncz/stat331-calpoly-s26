@@ -1,0 +1,55 @@
+---
+title: "STAT 331 Week 7 Day 2 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(purrr)
+library(palmerpenguins)
+data(penguins)
+```
+
+
+1. Why do we not want to use loops in R?
+
+2. What does the `map()` function do?
+
+3. What type of object does the `.x` argument take in a `map_xxx` function?
+
+4. What type of object does the `.f` argument take in a `map_xxx` function?
+
+5. What type of output does each function produce?
+
++ `map()`: 
++ `map_chr()`:
++ `map_lgl()`:
++ `map_int()`:
++ `map_dbl()`: 
+
+6. What happens if you try and use the wrong `map_xxx()` function?
+
+7. What does `map_if()` do?
+
+8. What is the output of `map_if()`?
+
+9. How do you get the output of `map_if()` back into a data frame? Implement it below:
+
+```{r}
+penguins |> 
+  slice_head(n = 20) |> 
+  map_if(.p = is.numeric,
+         .f = ~ .x / 10)
+```
+
+10. What is the output of `map_int()`?
+
+11. How do you get the output of `map_int()` into a data frame?
+
+```{r}
+penguins |> 
+  map_int(.f = ~ sum(is.na(.x))) 
+```

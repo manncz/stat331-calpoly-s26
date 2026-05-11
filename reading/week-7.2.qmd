@@ -21,7 +21,7 @@ library(knitr)
 
 #### 📖 Readings: 45 min
 
-#### 📽 Optional Videos: 15 min
+#### 📽 Optional Videos: 6 min
 
 ------------------------------------------------------------------------
 
@@ -33,6 +33,8 @@ We previously used`across()` to help eliminate copy-paste when working with data
 
 This week, we are adding to our toolbox of ways to do efficient iteration rather than repeating code.
 
+
+
 # For loops
 
 `while()` and `for()` loops are a common form of iteration that can be extremely useful when logically thinking through a problem. If you are unfamiliar with loops or have not seen them in R, read the R4DS section linked below.
@@ -41,10 +43,42 @@ Unlike some other programming languages, loops are extremely computationally int
 
 #### 📖 Optional Reading: [R4DS Ed. 1 12.2: For loops](https://r4ds.had.co.nz/iteration.html#for-loops)
 
+# Vectorized Operations
+
+As we discussed at the beginning of the quarter, one of the beautiful things about R is that many functions are **vectorized**. This means, that functions are built to work with vectors, and specifically to apply some operation to each element of a vector separately. This is actually a form of iteration! 
+
+```{r}
+x <- c(10, 34, 3)
+y <- c(3, 35, 1)
+
+x + y
+```
+
+Since addition is vectorized, we don't have to use a for loop to add each element of the two vectors `x` and `y` together.
+
+In languages which don’t have implicit support for vectorized computations, you would have to instead do:
+
+```{r}
+result <- rep(NA, 3)
+
+for(i in 1:3){
+  result[i] <- x[i] + y[i]
+}
+
+result
+```
+
+In other words, we would **map** the function `+` to each entry of a and b. For atomic vectors, most functions if a function is vectorized, it will do this automatically!
+
+But what if we want to map a function to each element of a list? Or what if a function isn't vectorized? This is where the `map` family of the `purrr` package comes in.
 
 # Iteration with `purrr`
 
-## Lists 
+The `purrr` package in R provides functions that allow us to apply some task (function) to all elements of a **list**. This supports very computationally efficient iteration!
+
+Note that there are base functions in R that solve similar problems (`apply()`, `lapply()`, `tapply()`, etc.), but `purrr` is much easier to use and has more consistent behavior. For that reason, we will *not* be working with the apply family functions in this course. I will also say that I would not use apply after learning how to use the `map` family of functions in `purrr` myself -- they are much better!
+
+If you feel a bit shaky on lists, please read the review below before continuing.
 
 ::: {.callout-note collapse=TRUE}
 ## Review of Lists 
@@ -130,6 +164,8 @@ To access the contents of a list object, we have to use double-indexing:
 mylist[["third_thing"]][[1]]
 ```
 :::
+
+The `map` family of functions is so called, because all of the function names start with the word `map`. We can think of these functions as "mapping" a function to all elements of a list. You will learn more about these functions in the reading.
 
 #### 📖 Required Reading: [R4DS Ed. 1 12.5: The map functions](https://r4ds.had.co.nz/iteration.html#the-map-functions)
 
