@@ -1,0 +1,453 @@
+---
+title: "Writing Data Functions"
+format: 
+  revealjs:
+    theme: [default, ../slide_custom.scss]
+editor: source
+---
+
+```{r setup}
+#| include: false
+#| message: false
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Monday, May 18
+
+Today we will...
+
++ Group Quiz 7
++ New Material
+  + Calling Functions on Datasets
+  + Tidy Evaluation
+
+
+
+# Writing Data Frame Functions
+
+## Moving Beyond Vectors
+
+This week, we're writing functions that take a data frame and variable names as
+arguments. 
+
+These functions can be incredibly powerful, but they require us 
+to learn some interesting details about how some of the functions we've grown
+very accustomed to (e.g., `select()`, `mutate()`, `group_by()`) work
+"behind the scenes."
+
+
+
+
+## Function to Standardize Data
+
+We want to take in a vector of numbers and **standardize** it. One form of standardization is ensuring that the mean is 0 and standard deviation is 1.
+
+. . .
+
+```{r}
+#| echo: true
+std_vec <- function(var) {
+  stopifnot(is.numeric(var))
+  
+  (var - mean(var, na.rm = T))/sd(var, na.rm = T)
+}
+```
+
+
+## Standardizing Variables
+
+Is it a good idea to standardize (scale) variables in a data analysis?
+
+:::: columns
+::: column
+**Why standardize?**
+
++ Easier to compare across variables.
++ Easier to model -- standardizes the amount of variability.
+:::
+::: column
+**Why not standardize?**
+
++ More difficult to interpret the values.
+:::
+::::
+
+
+
+## Pair Our Function with `dplyr`
+
+Let's standardize penguin measurements.
+
+```{r}
+#| eval: false
+#| echo: true
+penguins |> 
+  mutate(bill_length_mm    = std_vec(bill_length_mm), 
+         bill_depth_mm     = std_vec(bill_depth_mm), 
+         flipper_length_mm = std_vec(flipper_length_mm), 
+         body_mass_g       = std_vec(body_mass_g))
+```
+
+That's nice, but our function must be combined with `mutate()` now to work...
+
+
+## Write the function like a tidyverse function?
+
+```{r stdcol}
+#| echo: true
+std_column <- function(data, var) {
+  stopifnot(is.data.frame(data))
+  
+  data |> 
+    mutate(var = std_vec(var))
+}
+```
+
+::: callout-note
+I used the existing function `std_vec()` inside the new
+function for clarity!
+:::
+
+. . . 
+
+But it didn't work...
+
+```{r}
+#| error: true
+#| echo: true
+
+penguins |> 
+  std_column(var = body_mass_g)
+```
+
+
+## Tidy Evaluation
+
+Functions using **unquoted** variable names as arguments are said to use
+***nonstandard evaluation*** or ***tidy evaluation***.
+
+:::: columns
+::: column
+**Tidy**:
+
+```{r}
+#| echo: true
+#| eval: false
+penguins |> 
+  pull(body_mass_g)
+```
+
+&emsp; OR
+
+```{r}
+#| echo: true
+#| eval: false
+penguins$body_mass_g
+```
+:::
+::: column
+**Untidy**: 
+
+```{r}
+#| echo: true
+#| eval: false
+penguins[, "body_mass_g"]
+```
+
+&emsp; OR
+
+```{r}
+#| echo: true
+#| eval: false
+penguins[["body_mass_g"]]
+```
+:::
+::::
+
+<br>
+
+. . .
+
+tidy evaluation is not supported in writing your own functions
+
+## Solution 1
+
+Don't use tidy evaluation in your own functions.
+
++ This is more complicated to read and use, but it's  safe.
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "4,8"
+std_column <- function(data, variable) {
+  stopifnot(is.data.frame(data))
+  
+  data[[variable]] <- std_vec(data[[variable]])
+  
+  return(data)
+}
+
+std_column(penguins, "bill_length_mm")
+```
+
+
+
+## Solution 2: `rlang`
+
+Use the `rlang` package!
+
+:::: {.columns}
+::: {.column width="70%"}
++ This package provides operators that simplify writing functions around `tidyverse` pipelines. 
+:::
+::: {.column width="30%"}
+```{r}
+#| fig-align: center
+#| out-width: 50%
+knitr::include_graphics("https://github.com/rstudio/hex-stickers/blob/main/thumbs/rlang.png?raw=true")
+```
+:::
+::::
+
++ Note: you do not need to load `rlang`
++ Read more about using this package for function writing [here](https://rlang.r-lib.org/reference/topic-defuse.html)!
+
+# Indirection
+
+::: {.midi}
+The **tidyverse** functions use either "tidy selection" or "data masking." Both
+of these features makes common tasks easier at the cost of making less commons
+tasks harder. 
+:::
+
+## Clarifying our language
+
+::: {.midi}
+Blurs the line between the two different meanings of the word "variable":
+
+- `env-variables` -- "programming" variables that live in an environment
+  * These are typically created using a `<-`.
+
+- `data-variables` --- "statistical" variables that live in a data frame. 
+    * These come from data files or are created manipulating existing variables.
+:::
+
+## Embrace Operator
+
+::: {.midi}
+In the case of our function, the name of the columns we want to use are stored
+in an intermediate variable (e.g., `var = bill_length_mm`). 
+:::
+
+
+::: {.fragment}
+When you have a `data-variable` in a function argument, you need to **embrace**
+the argument. 
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: false
+
+summarize({{ var }})
+select({{ var }})
+```
+:::
+
+## Walrus Operator
+
+If you want to create a `data-variable` where the name is a user-provided function, argument, you need to use the the **walrus operator** (`:=`) 
+
+```{r}
+#| eval: false
+#| echo: true
+
+mutate({{ var }} := {{ var2 }} / 3)
+```
+
+
+
+## Recall Our Broken Function
+
+```{r}
+#| error: true
+#| echo: true
+
+std_column <- function(data, var) {
+  stopifnot(is.data.frame(data))
+  
+  data |> 
+    mutate(var = std_vec(var))
+}
+
+penguins |> 
+  std_column(body_mass_g)
+```
+
++ `mutate()` doesn't know what `body_mass_g` is.
++ We need to embrace `var` so that `mutate()` knows to look for `body_mass_g` as a `data-variable`
+
+
+## Fixing Our Broken Function 
+
+Use the embrace operator:
+
+```{r}
+#| echo: true
+#| eval: true
+#| code-line-numbers: "5"
+std_column <- function(data, var) {
+  stopifnot(is.data.frame(data))
+  
+  data |> 
+    mutate({{ var }} := std_vec({{ var }}))
+}
+
+penguins |> 
+  std_column(body_mass_g) |> 
+  slice_head(n = 5)
+```
+
+## Now you can create your own tidy functions!
+
+
+
+<!--# Missing Data
+
+
+## Types of Missing Data
+
+1. **Missing Completely at Random** (MCAR)
+    + *No difference* between missing and observed values.
+    + Missing observations are a random subset of all observations.
+2. **Missing at Random** (MAR)
+    + *Systematic difference* between missing and observed values, but can be entirely explained by other observed variables.
+3. **Missing Not at Random** (MNAR)
+    + Missingness is *directly* related to the unobserved value.
+
+
+## Types of Missing Data
+
+Consider a study of depression.
+
+1. **Missing Completely at Random** (MCAR)
+    + Some subjects have missing lab values because a batch of samples was processed improperly.
+2. **Missing at Random** (MAR)
+    + Subjects who *identify as men* are less likely to complete a survey on depression severity.
+3. **Missing Not at Random** (MNAR)
+    + Subjects *with more severe depression* are less likely to complete a survey on depression severity.
+
+
+## When we remove missing data...
+
+We implicitly assume observations are missing **completely** at random!
+
++ We might be mostly removing data from subjects who identify as men.
++ We might be mostly removing data from subjects with severe depression.
++ We are inadvertently making our data **less representative**.
+
+. . .
+
+**We need to take more care when dealing with missing values!**
+
+
+## Dealing with Missing Data
+
++ Look for patterns!
+    + Do observations with missing values have similar traits?
+
+. . .
+
++ Consider outside explanations!
+    + Why might missing data exist?
+    + Should we have a "missing" category in our analysis?
+
+. . .
+
++ Can we impute values?
+    + If depression is MCAR *within* gender, age, and education level, then the distribution of depression will be similar for people of the same gender, age, and education level.
+-->
+
+## PA 8: Data Frame Functions
+
+::: columns
+::: {.column width="40%"}
+You will write a tidy function for a contingency table like the `table()` function in base R. 
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="55%"}
+
+:::
+
+## Collaborative Protocol
+
+::: {.small}
+During your collaboration, your group will alternate between three roles: 
+:::
+
+
+::: panel-tabset
+
+### Project Manager
+-   Reads out the prompt and ensures the group understands what is being asked. 
+-   Manages resources (e.g., cheatsheets, textbook). 
+-   Answers Coder's questions about syntax based on the resources.
+-   Works with the group to debug the code.
+
+
+### Computer
+
+-   Encourages the Coder to vocalize and explain their thinking.
+-   Types the code specified by the Coder into the Quarto document.
+-   Runs the code provided by the Coder. 
+-   Works with group to debug the code.
+-   Evaluates the output against the question prompt. 
+
+
+
+### Coder
+
+-   Confirms they understand what the prompt is asking.
+-   Talks with the group about their ideas. 
+-   Explains their thinking.
+-   Directs the Computer what to type. 
+-   Works with the group to debug the code. 
+
+:::
+
+
+## Submission
+
+- Instead of a simple puzzle answer to this one, you will submit a screenshot of your function code
+. . .
+
+::: callout-tip
+
+## Starting Roles Today
+
+The person who lives closest to campus starts as the coder, second as the project manager.
+
+:::
+
+
+
+## To do...
+  
++ **PA 8: Data Frame Functions**  
+  + Due Tuesday 5/19 at 11:59pm.
+
++ **Project Checkpoint 3: Progress Report**
+  + Due Friday, 5/22 at 11:59pm.
+
++ **Lab 8: Data Frame Functions + Simulation**
+  + Due Sunday 5/24 at 11:59pm.
+  
+
+
+  
+  

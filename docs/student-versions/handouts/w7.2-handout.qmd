@@ -18,7 +18,7 @@ data(penguins)
 
 2. What does the `map()` function do?
 
-3. What type of object does the `.x` argument take in a `map_xxx` function?
+3. What type of object(s) does the `.x` argument take in a `map_xxx` function?
 
 4. What type of object does the `.f` argument take in a `map_xxx` function?
 

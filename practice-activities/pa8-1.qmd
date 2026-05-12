@@ -1,0 +1,91 @@
+---
+title: "PA 8.1: Tidy Eval Exploration"
+format: html
+execute: 
+  error: true
+  echo: true
+  message: false
+  warning: false
+---
+
+[Download starter qmd file](../student-versions/practice-activities/pa8-1.qmd)
+
+We're going to explore our functions using the `penguins` dataset from the `palmerpenguins` package. You should have this package installed previously, but if not, install it again!
+
+```{r}
+#| label: setup
+
+library(palmerpenguins)
+library(tidyverse)
+```
+
+In this practice activity, you are going to explore writing "tidy" versions of some base R table functions. 
+
+### Base R function
+
+Let's explore the `table()` function first.
+
+```{r}
+table(penguins$species)
+```
+
+```{r}
+table(penguins$species, penguins$island)
+```
+
+**1. What does the base R `table()` function do? What does it do if you provide it with one variable? What about 2?**
+
+### Write dplyr / tidyr code to accomplish the task
+
+**2. Using the penguins data, write code which will:**
+
++ count() the number of penguins for each species and island
++ pivot the table to a wide format
++ replace NA values with 0s
+
+```{r}
+# code to create table
+
+
+```
+
+
+**3. Now, use that code to help create a `tidy_table()` function.**
+
+This function should accept as inputs:
+
+1. A dataframe
+2. A variable name to be the columns of the table
+3. A variable name to be the rows of the table
+
+These variable names should be bare (no quotation marks around them). This means you will have to use one of the tidy evaluation techniques we learned!
+
+```{r}
+# tidy table function
+
+
+```
+
+
+
+**4. Test out your function!**
+
+```{r}
+#| eval: false
+
+tidy_table(df = penguins, 
+           row_var = species, 
+           col_var = island)
+```
+
+
+**5. Does it work if only one variable is input?**
+
+```{r}
+#| eval: false
+
+tidy_table(df = penguins, species)
+```
+
+
+
