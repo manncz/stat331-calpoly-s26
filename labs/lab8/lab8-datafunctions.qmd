@@ -1,0 +1,205 @@
+---
+title: "Lab 8: Data Frame Functions and Simulation Exploration"
+format: 
+  html:
+    code-tools: true
+    toc: true
+    html-table-processing: none
+editor: source
+execute: 
+  error: true
+  echo: true
+  message: false
+  warning: false
+---
+
+[Download .qmd starter file](../../student-versions/labs/lab8-datafunctions.qmd)
+
+[Download `BlackfootFish.csv`](BlackfootFish.csv)
+
+
+## Data Frame Functions with Fish
+
+We are going to start this lab with some mark-recapture data on four species of trout from the Blackfoot River outside of Helena, Montana. These four species are **rainbow trout (RBT)**, **westslope cutthroat trout (WCT)**, **bull trout**, and **brown trout**.
+
+![](https://github.com/earobinson95/stat331-calpoly/blob/master/lab-assignments/lab7/images/blackfoot_river.jpg?raw=true)
+
+Mark-recapture is a common method used by ecologists to estimate a population's size when it is impossible to conduct a census (count every animal). This method works by *tagging* animals with a tracking device so that scientists can track their movement and presence.
+
+The measurements of each captured fish were taken by a biologist on a raft in the river. The lack of a laboratory setting opens the door to the possibility of measurement errors! We are going to work on a couple of functions to clean up the data.
+
+### Standardizing Variables
+
+For some statistical methods, we need to first rescale quantitative variables such that they only take values between 0 and 1. One scaling approach is to subtract the minimum value of a variable from each data point and then divide by the range of the variable.
+
+I might write the following `R` code to carry out the rescaling procedure for the `length` and `weight` columns of the `BlackfootFish` data:
+
+\vspace{0.25cm}
+
+```{r}
+#| echo: true
+#| eval: false
+fish <- fish |> 
+  mutate(length = (length - min(length, na.rm = TRUE)) / 
+           (max(length, na.rm = TRUE) - min(length, na.rm = TRUE)), 
+         weight = (weight - min(weight, na.rm = TRUE)) / 
+           (max(weight, na.rm = TRUE) - min(length, na.rm = TRUE)))
+```
+
+This process of duplicating an action multiple times can make it difficult to understand the intent of the process. *Additionally, it can make it very difficult to spot mistakes.*
+
+**1. What is the mistake I made in the above rescaling code?**
+
+*When you find yourself copy-pasting lines of code, it's time to write a function, instead!*
+
+Since we are working with rescaling variables in a dataset, we would like to write a function that takes a dataset and column names as inputs! Before jumping right in there, it can be helpful to write "helper function" that break down our task further. 
+
+**2. Start by writing a function that rescales a vector. Transform the repeated process above into a `rescale_01()` function. Your function should...**
+
++ **... take a single vector as input.**
++ **... return the rescaled vector.**
++ include reasonable input validation
+
+::: callout-tip
+
+Think about the **efficiency** of your function. Are you calling the **same** function multiple times?
+
+Look into the function `range()`.
+
+:::
+
+```{r}
+# Code for Q2.
+```
+
+
+**3. Run the code below to test your function. Verify that the maximum of your rescaled vector is 1 and the minimum is 0!**
+
+```{r}
+#| eval: false 
+#| 
+rescaled <- rescale_01(fish$weight)
+
+min(rescaled, na.rm = TRUE)
+max(rescaled, na.rm = TRUE)
+```
+
+Now we can use this helper `rescale_01` function in a data frame function!
+
+**4. Create a `rescale_column()` function that accepts two arguments:**
+
+1. a dataframe and
+2. the name(s) of the columns(s) to be rescaled. 
+
+The body of the function should call the original `rescale_01()` function you wrote previously and return the original data frame with the provided columns **replaced** by their rescaled versions.
+
+:::callout-important
+Your function call must look like this:
+
+```{r}
+#| eval: false
+
+# Tidy (unquoted) variable names
+rescale_column(df, c(height, weight))
+```
+
+To achieve this, your function must use the `rlang` (tidy evaluation) option from class.
+:::
+
+```{r}
+# Code for Q4.
+```
+
+**5. Run the code below to test your function. You might need to edit the code if you call your dataset something different.**
+
+```{r}
+#| eval: false 
+
+fish |> 
+  rescale_column(c(length, weight)) |> 
+  select(length:weight) |> 
+  slice_head(n = 5) |> 
+  kable()
+```
+
+### Accounting for Unlikely Values
+
+Like we mentioned before, collecting data can be very messy! One thing you always want to check first is that there are no unusual values. There are different ways to approach unusual values, but a reasonable approach would be to treat them like missing values.
+
+**6. Write a function that will replace unlikely values of a variable in a dataframe with missing values. Your function should accept at least four inputs**:
+
++ a data frame
++ **one** (bare) column name
++ a minimum reasonable value
++ a maximum reasonable value
+
+Like the standardization function, your function should return the original data frame, with the provided column replaced by the cleaned version. Also like the standardization function, your function must use tidy evaluation.
+
+```{r}
+# Q6 code
+```
+
+**7. Write a test that demonstrates that your function worked using the fish data!**
+
+```{r}
+# Q7 code
+```
+
+## Random Babies Simulation
+
+Perhaps you have seen the [Random Babies applet](https://www.rossmanchance.com/applets/2021/randombabies/RandomBabies.html)? 
+Suppose one night at a hospital some number of babies are born. The hospital is not very
+organized and looses track of which baby belongs to each parent(s), so they 
+decide to return the babies to parents *at random*. Here, we are interested in the
+number of babies that are correctly returned to their respective parent(s).
+
+**8. Simulate the distribution of the number of babies that are correctly returned if there were four babies born in a night at our disorganized hospital. Use 10,000 simulations. Make sure to add a line of code to make your simulation reproducible every time you run it.**
+
+::: callout-tip
+First, write a function to accomplish one simulation (i.e. one night), given a number of babies (`n_babies`) that were born in a hospital on a given night . 
+
+Then use `map_int()` to run 10,000 simulations assuming 4 babies were born. 
+
+Keep in mind that your function needs to output a single number (not data frame) 
+for it to be compatible with `map_int()`!
+:::
+
+```{r}
+#| label: function-for-random-babies
+
+randomBabies <- function(n_babies){
+  ...
+}
+```
+
+```{r}
+#| label: full-simulation-for-random-babies
+
+results <- map_int(.x =  ,
+                   .f = 
+                  )
+```
+
+**9. Create a table displaying the proportion of simulations where 0, 1, 2, 3, and 4 babies were given to their correct parent(s).** 
+
+::: callout-tip
+The output of your `map_int()` is a vector, but to make a nice table (and plot) 
+you need this to be a data frame! Luckily, the `enframe()` function does just 
+that--it converts a vector to a data frame. 
+:::
+
+```{r}
+#| label: table-for-random-babies
+
+# Q9 code
+```
+
+**10. Now create a barplot showing the proportion of simulations where 0, 1, 2, 3, and 4 babies were given to their correct parent(s).** Don't forget a title and appropriate axis labels.
+
+
+```{r}
+#| label: visualization-for-random-babies
+
+# Q10 code
+```
+

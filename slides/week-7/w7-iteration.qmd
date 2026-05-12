@@ -428,7 +428,7 @@ The `map()` function **iterates** through each item in a list (or vector) and ap
 knitr::include_graphics("images/map.png")
 ```
 
-Note: the first argument in `map()` is the list, so if we pipe into it, we **only** specify the function!
+Note: the first argument in `map()` is the list (or vector), so if we pipe into it, we **only** specify the function!
 
 
 ## `map()` + Dataframes
@@ -440,7 +440,7 @@ A dataframe is just a list of columns -- `map()` will apply a function to every 
 ```{r}
 penguins |> 
   select(bill_length_mm:body_mass_g) |>
-  map(~ mean(.x, na.rm = TRUE))
+  map(.f = ~ mean(.x, na.rm = TRUE))
 ```
 
 Use a lambda function (with `~` and `.x`), just like in <font size=6> `across()`</font>!
