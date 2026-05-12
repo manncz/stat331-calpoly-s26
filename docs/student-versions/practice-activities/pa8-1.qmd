@@ -8,7 +8,7 @@ execute:
   warning: false
 ---
 
-[Download starter qmd  file](../student-versions/practice-activities/pa8-1.qmd)
+[Download starter qmd file](../student-versions/practice-activities/pa8-1.qmd)
 
 We're going to explore our functions using the `penguins` dataset from the `palmerpenguins` package. You should have this package installed previously, but if not, install it again!
 

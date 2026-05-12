@@ -414,11 +414,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="write-dplyr-tidyr-code-to-accomplish-the-task" class="level3">
 <h3 class="anchored" data-anchor-id="write-dplyr-tidyr-code-to-accomplish-the-task">Write dplyr / tidyr code to accomplish the task</h3>
-<p><strong>2. Using the penguins data, write code which will:</strong></p>
+<p><strong>2. Using the penguins data, write code which will recreate the table of <code>species</code> vs.&nbsp;<code>island</code> but using <code>dplyr</code> and <code>tidyr</code> verbs:</strong></p>
 <ul>
-<li>count() the number of penguins for each species and island</li>
-<li>pivot the table to a wide format</li>
-<li>replace NA values with 0s</li>
+<li>count the number of penguins for each species and island</li>
+<li>pivot the table appropriately</li>
+<li>replace NA values with 0s (do this within a pivot function)</li>
 </ul>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code to create table</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -430,7 +430,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>A variable name to be the columns of the table</li>
 <li>A variable name to be the rows of the table</li>
 </ol>
-<p>These variable names should be bare (no quotation marks around them). This means you will have to use one of the tidy evaluation techniques we learned!</p>
+<p>These variable names should be bare (no quotation marks around them). This means you will have to use the tidy evaluation techniques we learned!</p>
+<p>The output should be a tibble or data frame formatted like the output from the <code>table()</code> function.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># tidy table function</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
@@ -441,8 +442,37 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">col_var =</span> island)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p><strong>5. Does it work if only one variable is input?</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Edit your function to make sure it works with only one variable as well if you haven’t already!</p>
+<p>To mirror the <code>table()</code> function, if one variable is given it should be considered the column variable.</p>
+<p>You may need to think about the order of your arguments to make this work nicely.</p>
+</div>
+</div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tidy_table</span>(<span class="at">df =</span> penguins, species)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Submission
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Take a screenshot of the test from Q5 with the output and submit it to Canvas.</p>
+<p>Sorry no puzzle today!</p>
+</div>
 </div>
 
 
