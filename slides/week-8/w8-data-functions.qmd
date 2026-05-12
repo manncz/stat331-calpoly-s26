@@ -251,7 +251,7 @@ the argument.
 #| eval: false
 #| code-line-numbers: false
 
-summarize({{ var }})
+summarize(mean({{ var }}))
 select({{ var }})
 ```
 :::

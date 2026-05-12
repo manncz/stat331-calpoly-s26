@@ -1,0 +1,34 @@
+---
+title: "Week 8 Day 1: Writing Data Frame Functions"
+number-sections: true
+number-depth: 2
+---
+
+
+
+# Learning Objectives
+
+This week, we’re going to learn how to write our own dplyr-like functions—functions that behave the way dplyr verbs do. To do this, we’ll dive into some of the deeper ideas that power the tidyverse, especially how functions in dplyr interpret and evaluate code. These ideas—collectively known as tidy evaluation—make the tidyverse so expressive and intuitive for common data-analysis tasks, but they can also make programming with it more challenging.
+
+By the end of the week, you should have a grasp of:
+
++ What the “embracing” (`{{ }}`) operator is
++ How to use the `{{ }}` operator in data frame functions
++ Why we need to use the `{{ }}` operator when writing data frame functions
++ What data masking and tidy selection are and the consequences for writing data frame functions
+
+#### 📖 Required Readings: 60 min
+
+------------------------------------------------------------------------
+
+# Data Frame Functions
+
+R4DS and the dplyr documentation cover this topic, so we will just read what they have to say!
+
+#### 📖 Required Reading: [R4DS 25.3: Data Frame Functions](https://r4ds.hadley.nz/functions#data-frame-functions)
+
+#### 📖 Required Reading: [Programming with dplyr: Tidy Selection & Data Masking](https://dplyr.tidyverse.org/articles/programming.html)
+
+Just read through [One or More User Supplied Expressions](https://dplyr.tidyverse.org/articles/programming.html#one-or-more-user-supplied-expressions)
+
+
