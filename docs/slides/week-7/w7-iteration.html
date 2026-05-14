@@ -762,7 +762,7 @@ $body_mass_g
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
 <span id="cb45-2"><a></a>  <span class="fu">select</span>(bill_length_mm<span class="sc">:</span>body_mass_g) <span class="sc">|&gt;</span> </span>
-<span id="cb45-3"><a></a>  <span class="fu">map_dbl</span>(<span class="sc">~</span> <span class="fu">mean</span>(.x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb45-3"><a></a>  <span class="fu">map_dbl</span>(<span class="at">.f =</span> <span class="sc">~</span> <span class="fu">mean</span>(.x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>   bill_length_mm     bill_depth_mm flipper_length_mm       body_mass_g 
          43.92193          17.15117         200.91520        4201.75439 </code></pre>
@@ -774,7 +774,7 @@ $body_mass_g
 <p>Calculate the number of <code>NA</code>s in each column.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb47-2"><a></a>  <span class="fu">map_int</span>(<span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb47-2"><a></a>  <span class="fu">map_int</span>(<span class="at">.f =</span> <span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          species            island    bill_length_mm     bill_depth_mm 
                 0                 0                 2                 2 
@@ -788,7 +788,7 @@ flipper_length_mm       body_mass_g               sex              year
 <p>Calculate if there are any <code>NA</code>s in each column.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb49"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb49-2"><a></a>  <span class="fu">map_lgl</span>(<span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)) <span class="sc">&gt;</span> <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb49-2"><a></a>  <span class="fu">map_lgl</span>(<span class="at">.f =</span> <span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)) <span class="sc">&gt;</span> <span class="dv">0</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>          species            island    bill_length_mm     bill_depth_mm 
             FALSE             FALSE              TRUE              TRUE 
@@ -802,7 +802,7 @@ flipper_length_mm       body_mass_g               sex              year
 <p>Calculate the number of <code>NA</code>s in each column.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb51-2"><a></a>  <span class="fu">map_lgl</span>(<span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb51-2"><a></a>  <span class="fu">map_lgl</span>(<span class="at">.f =</span> <span class="sc">~</span> <span class="fu">sum</span>(<span class="fu">is.na</span>(.x)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `map_lgl()`:
 ℹ In index: 3.
@@ -848,7 +848,7 @@ Caused by error:
 <div id="tabset-2-2">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb55"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb55-2"><a></a>  <span class="fu">map_if</span>(is.numeric, scale)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb55-2"><a></a>  <span class="fu">map_if</span>(<span class="at">.p =</span> is.numeric, <span class="at">.f =</span> scale)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>$species
   [1] Adelie    Adelie    Adelie    Adelie    Adelie    Adelie    Adelie   
@@ -2754,7 +2754,7 @@ attr(,"scaled:scale")
 <div id="tabset-2-3">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb57"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb57-2"><a></a>  <span class="fu">map_if</span>(is.numeric, scale) <span class="sc">|&gt;</span> </span>
+<span id="cb57-2"><a></a>  <span class="fu">map_if</span>(<span class="at">.p =</span> is.numeric, <span class="at">.f =</span> scale) <span class="sc">|&gt;</span> </span>
 <span id="cb57-3"><a></a>  <span class="fu">bind_cols</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="cell">
@@ -3440,23 +3440,23 @@ Weight (g)
 <span id="cb60-24"><a></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="iloofphiko" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#iloofphiko table {
+<div id="gmkidvvqjg" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#gmkidvvqjg table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#iloofphiko thead, #iloofphiko tbody, #iloofphiko tfoot, #iloofphiko tr, #iloofphiko td, #iloofphiko th {
+#gmkidvvqjg thead, #gmkidvvqjg tbody, #gmkidvvqjg tfoot, #gmkidvvqjg tr, #gmkidvvqjg td, #gmkidvvqjg th {
   border-style: none;
 }
 
-#iloofphiko p {
+#gmkidvvqjg p {
   margin: 0;
   padding: 0;
 }
 
-#iloofphiko .gt_table {
+#gmkidvvqjg .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -3482,12 +3482,12 @@ Weight (g)
   border-left-color: #D3D3D3;
 }
 
-#iloofphiko .gt_caption {
+#gmkidvvqjg .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#iloofphiko .gt_title {
+#gmkidvvqjg .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -3499,7 +3499,7 @@ Weight (g)
   border-bottom-width: 0;
 }
 
-#iloofphiko .gt_subtitle {
+#gmkidvvqjg .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -3511,7 +3511,7 @@ Weight (g)
   border-top-width: 0;
 }
 
-#iloofphiko .gt_heading {
+#gmkidvvqjg .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -3523,13 +3523,13 @@ Weight (g)
   border-right-color: #D3D3D3;
 }
 
-#iloofphiko .gt_bottom_border {
+#gmkidvvqjg .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#iloofphiko .gt_col_headings {
+#gmkidvvqjg .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3544,7 +3544,7 @@ Weight (g)
   border-right-color: #D3D3D3;
 }
 
-#iloofphiko .gt_col_heading {
+#gmkidvvqjg .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3564,7 +3564,7 @@ Weight (g)
   overflow-x: hidden;
 }
 
-#iloofphiko .gt_column_spanner_outer {
+#gmkidvvqjg .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3576,15 +3576,15 @@ Weight (g)
   padding-right: 4px;
 }
 
-#iloofphiko .gt_column_spanner_outer:first-child {
+#gmkidvvqjg .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#iloofphiko .gt_column_spanner_outer:last-child {
+#gmkidvvqjg .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#iloofphiko .gt_column_spanner {
+#gmkidvvqjg .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3596,11 +3596,11 @@ Weight (g)
   width: 100%;
 }
 
-#iloofphiko .gt_spanner_row {
+#gmkidvvqjg .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#iloofphiko .gt_group_heading {
+#gmkidvvqjg .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3626,7 +3626,7 @@ Weight (g)
   text-align: left;
 }
 
-#iloofphiko .gt_empty_group_heading {
+#gmkidvvqjg .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3641,15 +3641,15 @@ Weight (g)
   vertical-align: middle;
 }
 
-#iloofphiko .gt_from_md > :first-child {
+#gmkidvvqjg .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#iloofphiko .gt_from_md > :last-child {
+#gmkidvvqjg .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#iloofphiko .gt_row {
+#gmkidvvqjg .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3668,7 +3668,7 @@ Weight (g)
   overflow-x: hidden;
 }
 
-#iloofphiko .gt_stub {
+#gmkidvvqjg .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3681,7 +3681,7 @@ Weight (g)
   padding-right: 5px;
 }
 
-#iloofphiko .gt_stub_row_group {
+#gmkidvvqjg .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -3695,15 +3695,15 @@ Weight (g)
   vertical-align: top;
 }
 
-#iloofphiko .gt_row_group_first td {
+#gmkidvvqjg .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#iloofphiko .gt_row_group_first th {
+#gmkidvvqjg .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#iloofphiko .gt_summary_row {
+#gmkidvvqjg .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3713,16 +3713,16 @@ Weight (g)
   padding-right: 5px;
 }
 
-#iloofphiko .gt_first_summary_row {
+#gmkidvvqjg .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#iloofphiko .gt_first_summary_row.thick {
+#gmkidvvqjg .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#iloofphiko .gt_last_summary_row {
+#gmkidvvqjg .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3732,7 +3732,7 @@ Weight (g)
   border-bottom-color: #D3D3D3;
 }
 
-#iloofphiko .gt_grand_summary_row {
+#gmkidvvqjg .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -3742,7 +3742,7 @@ Weight (g)
   padding-right: 5px;
 }
 
-#iloofphiko .gt_first_grand_summary_row {
+#gmkidvvqjg .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3752,7 +3752,7 @@ Weight (g)
   border-top-color: #D3D3D3;
 }
 
-#iloofphiko .gt_last_grand_summary_row_top {
+#gmkidvvqjg .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -3762,11 +3762,11 @@ Weight (g)
   border-bottom-color: #D3D3D3;
 }
 
-#iloofphiko .gt_striped {
+#gmkidvvqjg .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#iloofphiko .gt_table_body {
+#gmkidvvqjg .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -3775,7 +3775,7 @@ Weight (g)
   border-bottom-color: #D3D3D3;
 }
 
-#iloofphiko .gt_footnotes {
+#gmkidvvqjg .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3789,7 +3789,7 @@ Weight (g)
   border-right-color: #D3D3D3;
 }
 
-#iloofphiko .gt_footnote {
+#gmkidvvqjg .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -3798,7 +3798,7 @@ Weight (g)
   padding-right: 5px;
 }
 
-#iloofphiko .gt_sourcenotes {
+#gmkidvvqjg .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -3812,7 +3812,7 @@ Weight (g)
   border-right-color: #D3D3D3;
 }
 
-#iloofphiko .gt_sourcenote {
+#gmkidvvqjg .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3820,72 +3820,72 @@ Weight (g)
   padding-right: 5px;
 }
 
-#iloofphiko .gt_left {
+#gmkidvvqjg .gt_left {
   text-align: left;
 }
 
-#iloofphiko .gt_center {
+#gmkidvvqjg .gt_center {
   text-align: center;
 }
 
-#iloofphiko .gt_right {
+#gmkidvvqjg .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#iloofphiko .gt_font_normal {
+#gmkidvvqjg .gt_font_normal {
   font-weight: normal;
 }
 
-#iloofphiko .gt_font_bold {
+#gmkidvvqjg .gt_font_bold {
   font-weight: bold;
 }
 
-#iloofphiko .gt_font_italic {
+#gmkidvvqjg .gt_font_italic {
   font-style: italic;
 }
 
-#iloofphiko .gt_super {
+#gmkidvvqjg .gt_super {
   font-size: 65%;
 }
 
-#iloofphiko .gt_footnote_marks {
+#gmkidvvqjg .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#iloofphiko .gt_asterisk {
+#gmkidvvqjg .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#iloofphiko .gt_indent_1 {
+#gmkidvvqjg .gt_indent_1 {
   text-indent: 5px;
 }
 
-#iloofphiko .gt_indent_2 {
+#gmkidvvqjg .gt_indent_2 {
   text-indent: 10px;
 }
 
-#iloofphiko .gt_indent_3 {
+#gmkidvvqjg .gt_indent_3 {
   text-indent: 15px;
 }
 
-#iloofphiko .gt_indent_4 {
+#gmkidvvqjg .gt_indent_4 {
   text-indent: 20px;
 }
 
-#iloofphiko .gt_indent_5 {
+#gmkidvvqjg .gt_indent_5 {
   text-indent: 25px;
 }
 
-#iloofphiko .katex-display {
+#gmkidvvqjg .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#iloofphiko div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#gmkidvvqjg div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>

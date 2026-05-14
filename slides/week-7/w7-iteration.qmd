@@ -470,7 +470,7 @@ Calculate the mean of each column.
 ```{r}
 penguins |> 
   select(bill_length_mm:body_mass_g) |> 
-  map_dbl(~ mean(.x, na.rm = TRUE))
+  map_dbl(.f = ~ mean(.x, na.rm = TRUE))
 ```
 
 Output is a **vector of doubles**.
@@ -482,7 +482,7 @@ Calculate the number of `NA`s in each column.
 
 ```{r}
 penguins |> 
-  map_int(~ sum(is.na(.x)))
+  map_int(.f = ~ sum(is.na(.x)))
 ```
 
 Output is a **vector of integers**.
@@ -495,7 +495,7 @@ Calculate if there are any `NA`s in each column.
 ```{r}
 
 penguins |> 
-  map_lgl(~ sum(is.na(.x)) > 0)
+  map_lgl(.f = ~ sum(is.na(.x)) > 0)
 ```
 
 Output is a **vector of booleans**.
@@ -509,7 +509,7 @@ Calculate the number of `NA`s in each column.
 ```{r}
 #| error: true
 penguins |> 
-  map_lgl(~ sum(is.na(.x)))
+  map_lgl(.f = ~ sum(is.na(.x)))
 ```
 
 
@@ -550,7 +550,7 @@ penguins |>
 
 ```{r}
 penguins |> 
-  map_if(is.numeric, scale)
+  map_if(.p = is.numeric, .f = scale)
 ```
 
 ### `map_if()` to data (tibble)
@@ -558,7 +558,7 @@ penguins |>
 ```{r}
 #| eval: false
 penguins |> 
-  map_if(is.numeric, scale) |> 
+  map_if(.p = is.numeric, .f = scale) |> 
   bind_cols()
 ```
 
