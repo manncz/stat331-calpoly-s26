@@ -8,8 +8,6 @@ execute:
   warning: false
 ---
 
-[Download starter qmd file](../student-versions/practice-activities/pa8-1.qmd)
-
 We're going to explore our functions using the `penguins` dataset from the `palmerpenguins` package. You should have this package installed previously, but if not, install it again!
 
 ```{r}
@@ -72,8 +70,6 @@ The output should be a tibble or data frame formatted like the output from the `
 **4. Test out your function!**
 
 ```{r}
-#| eval: false
-
 tidy_table(df = penguins, 
            row_var = species, 
            col_var = island)
@@ -92,8 +88,6 @@ You may need to think about the order of your arguments to make this work nicely
 :::
 
 ```{r}
-#| eval: false
-
 tidy_table(df = penguins, species)
 ```
 
