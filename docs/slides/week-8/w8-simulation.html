@@ -282,6 +282,7 @@
 <ul>
 <li>When you know the <strong>range</strong> of values, but not much else.</li>
 <li>All values in the range are <strong>equally likely</strong> to occur.</li>
+<li>Defined by minimum and maximum values: <span class="math inline">\(Unif(a, b)\)</span></li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -302,6 +303,7 @@
 <ul>
 <li>When you expect values to fall <strong>near the center</strong>.</li>
 <li>Frequency of values follows a <strong>bell shaped curve</strong>.</li>
+<li>Defined by mean and standard deviation (or variance): <span class="math inline">\(N(\mu, \sigma^2)\)</span></li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -322,6 +324,7 @@
 <ul>
 <li>A slightly <strong>wider</strong> bell curve.</li>
 <li>Basically used in the same context as the <strong>normal distribution</strong>, but more common with real data (when the <em>standard deviation</em> is unknown).</li>
+<li>Defined by degrees of freedom: <span class="math inline">\(t(df)\)</span></li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -342,6 +345,7 @@
 <ul>
 <li>Somewhat <strong>skewed</strong>, and only allows values <strong>above zero</strong>.</li>
 <li>Commonly used in statistical testing.</li>
+<li>Defined by degrees of freedom: <span class="math inline">\(\chi^2_{df}\)</span></li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -360,8 +364,7 @@
 <div class="columns">
 <div class="column">
 <ul>
-<li>There are <strong>two possible outcomes</strong>, and you are <strong>counting</strong> how many times one of the outcomes occured out of a fixed number of trials.</li>
-<li>Takes discrete values from 0 to the number of trials.</li>
+<li>There are <strong>two possible outcomes</strong>, and you are <strong>counting</strong> how many times one of the outcomes (“success”) occurred out of a fixed number of trials.</li>
 </ul>
 </div><div class="column">
 <div class="cell">
@@ -374,6 +377,10 @@
 </div>
 </div>
 </div></div>
+<ul>
+<li>Takes discrete values from 0 to the number of trials.</li>
+<li>Defined by the number of trials (<span class="math inline">\(n\)</span>) and the probability of success (<span class="math inline">\(p\)</span>): <span class="math inline">\(Binom(n, p)\)</span></li>
+</ul>
 </div>
 </div>
 </div>
@@ -397,13 +404,29 @@
 </section>
 <section id="distribution-functions-in-r" class="slide level2">
 <h2>Distribution Functions in R</h2>
+<div class="columns">
+<div class="column">
+<ul>
+<li>There are four functions for each of these distributions to accomplish different tasks!</li>
+<li>The parameters that define each distribution are arguments
+<ul>
+<li>e.g.&nbsp;<code>min</code> and <code>max</code> for the Uniform distribution</li>
+</ul></li>
+<li>Documentation can be found for each distribution</li>
+</ul>
+</div><div class="column">
+<p><img data-src="images/unif_doc.png"></p>
+</div></div>
+</section>
+<section id="distribution-functions-in-r-1" class="slide level2">
+<h2>Distribution Functions in R</h2>
 <div class="panel-tabset">
 <ul id="tabset-3" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-3-1"><code>r</code></a></li><li><a href="#tabset-3-2"><code>p</code></a></li><li><a href="#tabset-3-3"><code>q</code></a></li><li><a href="#tabset-3-4"><code>d</code></a></li></ul>
 <div class="tab-content">
 <div id="tabset-3-1">
 <p><code>r</code> is for <strong>random sampling</strong>.</p>
 <ul>
-<li>Generate random values from a distribution.</li>
+<li>Generate <code>n</code> random values from a distribution.</li>
 <li>We use this to <strong>simulate</strong> data (create pretend observations).</li>
 </ul>
 <div class="columns">
@@ -411,30 +434,30 @@
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">min =</span> <span class="dv">10</span>, <span class="at">max =</span> <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 18.50426 15.67683 13.62507</code></pre>
+<pre><code>[1] 12.90136 14.45314 16.92792</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.1140229 -0.2986825 -0.9349331</code></pre>
+<pre><code>[1] -0.1923707  0.6384424 -1.0781340</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">mean =</span> <span class="sc">-</span><span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">50</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  -37.12937  -43.76815 -150.15480</code></pre>
+<pre><code>[1]  -53.19816 -135.72071 -129.54559</code></pre>
 </div>
 </div>
 </div><div class="column">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">rt</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">df =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  0.8079693 -1.7314823  0.9994506</code></pre>
+<pre><code>[1]  1.3158358  0.4700858 -0.8475279</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">rbinom</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 8 8 7</code></pre>
+<pre><code>[1] 9 7 5</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">rchisq</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">df =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 25.70136 12.92771  5.85420</code></pre>
+<pre><code>[1]  1.273001 10.164426 12.749629</code></pre>
 </div>
 </div>
 </div></div>
@@ -476,7 +499,7 @@
 <div id="tabset-3-3">
 <p><code>q</code> is for <strong>quantile</strong>.</p>
 <ul>
-<li>Given a probability <span class="math inline">\(p\)</span>, compute <span class="math inline">\(x\)</span> such that <span class="math inline">\(P(X &lt; x) = p\)</span>.</li>
+<li>Given a probability <code>p</code>, compute <span class="math inline">\(x\)</span> such that <span class="math inline">\(P(X &lt; x) = p\)</span>.</li>
 <li>The <code>q</code> functions are “backwards” of the <code>p</code> functions.</li>
 <li>We use this for calculating critical values (z*).</li>
 </ul>
@@ -494,8 +517,8 @@
 <div id="tabset-3-4">
 <p><code>d</code> is for <strong>density</strong>.</p>
 <ul>
-<li>Compute the <em>height</em> of a distribution curve at a given <span class="math inline">\(x\)</span>.</li>
-<li>For <strong>discrete</strong> dist: probability of getting <strong>exactly</strong> <span class="math inline">\(x\)</span>.</li>
+<li>Compute the <em>height</em> of a distribution curve at a given <code>x</code>.</li>
+<li>For <strong>discrete</strong> dist: probability of getting <strong>exactly</strong> <code>x</code>.</li>
 <li>For <strong>continuous</strong> dist: usually meaningless.</li>
 <li>Mostly useful for plotting the distribution!</li>
 </ul>
@@ -562,7 +585,7 @@
 <section id="plotting-both-distributions" class="slide level2">
 <h2>Plotting Both Distributions</h2>
 <div class="panel-tabset">
-<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1"><font size="6"> <code>geom_histogram</code> </font></a></li><li><a href="#tabset-5-2"><font size="6"> <code>dnorm</code> </font></a></li><li><a href="#tabset-5-3"><font size="6"> <code>after_state(density)</code> </font></a></li></ul>
+<ul id="tabset-5" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-5-1"><font size="6"> <code>geom_histogram</code> </font></a></li><li><a href="#tabset-5-2"><font size="6"> <code>dnorm</code> </font></a></li><li><a href="#tabset-5-3"><font size="6"> <code>after_stat(density)</code> </font></a></li></ul>
 <div class="tab-content">
 <div id="tabset-5-1">
 <div class="columns">
@@ -979,13 +1002,13 @@
 <h2>Example: Birthday Simulation</h2>
 <p>Write a function to …</p>
 <ul>
-<li>… simulate the birthdays of 50 random people (assuming it is equally likely to be born any day of the year).</li>
+<li>… simulate the birthdays of <code>n</code> random people (assuming it is equally likely to be born any day of the year).</li>
 <li>… count how many birthdays are shared.</li>
 <li>… return whether or not a shared birthday exists.</li>
 </ul>
 <div class="fragment">
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a>bDays <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n =</span> <span class="dv">50</span>){</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb50"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a></a>bday_prob <span class="ot">&lt;-</span> <span class="cf">function</span>(<span class="at">n =</span> <span class="dv">50</span>){</span>
 <span id="cb50-2"><a></a>  bday_data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(<span class="at">person =</span> <span class="dv">1</span><span class="sc">:</span>n,</span>
 <span id="cb50-3"><a></a>                      <span class="at">bday   =</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">365</span>, <span class="at">size =</span> n, <span class="at">replace =</span> T))</span>
 <span id="cb50-4"><a></a>  </span>
@@ -1003,11 +1026,11 @@
 <h2>Example: Birthday Simulation</h2>
 <p>Use a <code>map()</code> function to repeat this simulation 1,000 times.</p>
 <ul>
-<li>What proportion of these datasets contain at least two people with the same birthday?</li>
+<li>What proportion of the iterations contain at least two people with the same birthday?</li>
 </ul>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb51"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a></a>sim_results <span class="ot">&lt;-</span> <span class="fu">map_lgl</span>(<span class="at">.x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
-<span id="cb51-2"><a></a>                       <span class="at">.f =</span> <span class="sc">~</span> <span class="fu">bDays</span>(<span class="at">n =</span> <span class="dv">50</span>))</span>
+<span id="cb51-2"><a></a>                       <span class="at">.f =</span> <span class="sc">~</span> <span class="fu">bday_prob</span>(<span class="at">n =</span> <span class="dv">50</span>))</span>
 <span id="cb51-3"><a></a></span>
 <span id="cb51-4"><a></a><span class="fu">mean</span>(sim_results)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1027,8 +1050,8 @@
 <pre><code>[1] 0.969</code></pre>
 </div>
 </div>
-<p>Type this: `<code>r mean(sim_results)*100`% of the datasets contain at least two people with the same birthday.</code></p>
-<p>To get this: 96.9% of the datasets contain at least two people with the same birthday.</p>
+<p>Type this: `<code>r mean(sim_results)*100`% of the iterations contain at least two people with the same birthday.</code></p>
+<p>To get this: 96.9% of the iterations contain at least two people with the same birthday.</p>
 </section></section>
 <section>
 <section id="simulating-multiple-datasets" class="title-slide slide level1 center">

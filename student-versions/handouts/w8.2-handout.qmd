@@ -1,0 +1,204 @@
+---
+title: "STAT 331 Week 8 Day 2 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+```
+
+## Statistical Distributions
+
+For the following distributions:
+
+1. What is the nickname for the distribution in R?
+2. Draw or describe what the distribution looks like
+3. What parameter(s) define the distribution? 
+4. What are those parameter(s) called in the R functions affiliated with that distribution? What are the default values for the parameter(s) in the R functions?
+
+
+- Uniform
+
+
+
+- Normal 
+
+
+
+- t
+   
+   
+   
+-  Chi-square 
+
+
+
+-  Binomial
+
+  + Also, how is the binomial distribution different from other distributions?
+
+
+## Distribution Functions in R
+
+
+-   `r` stands for:
+
+    -   What is the required argument to the `r` functions?
+
+    -   What does the `rnorm()` function return?
+
+-   `p` stands for:
+
+    -   What is the required argument to the `p` functions?
+
+    -   What does the `pchisq()` function return?
+    
+-   `q` stands for:
+
+    -   What is the required argument to the `q` functions?
+
+    -   What does the `qt()` function return?
+
+-   `d` stands for:
+
+    -   What is the required argument to the `d` functions?
+
+    -   What does the `dbinom()` function return?
+
+## Random Samples
+
+1. I want to randomly permute the elements of a vector `1:10`. How can I use the `sample()` function to do this? How do I ensure the permutation is the same every time this code is run?
+
+```{r}
+
+
+```
+
+2. Emulate randomly selecting a bingo number (a number between 1 and 75).
+
+```{r}
+
+
+```
+
+3. What happens if you try to sample more items from a vector (`size`) than the length of the vector? Why?
+
+```{r}
+sample(1:10, size = 20)
+```
+
+4. Take a random selection of 10 songs from the `billboard` data. (This data is built into R.) 
+
+```{r}
+billboard 
+```
+
+## Iterating Simulations
+
+Birthday Problem: Simulate the approximate probability that at least two people have the same birthday (same day of the year, not considering year of birth or leap years).
+
+1. Write a function to ...
+
++ simulate the birthdays of `n` random people (assuming it is equally likely to be born any day of the year).
++ count how many birthdays are shared.
++ return whether or not a shared birthday exists.
+
+```{r}
+bday_prob <- function( ){
+  
+  
+  
+}
+
+
+```
+
+
+2. Now use a `map()` function to repeat this simulation 1,000 times.
+
+```{r}
+
+sim_results <- map_lgl(.x = ,
+                       .y = ~ bday_prob(n = 50))
+
+```
+
+3. What proportion of the time did at least two people have the same birthday?
+
+
+```{r}
+
+```
+
+
+4. What does the `r ...` syntax below do? What do we call this?
+
+`r mean(sim_results)*100`% of the iterations contain at least two people with the same birthday.
+
+## Simulating Multiple Datasets
+
+1. What does the function `sim_ht()` do?
+
+```{r}
+sim_ht <- function(n = 200, avg, std){
+  
+  tibble(person = 1:n,
+         ht = rnorm(n = n, mean = avg, sd = std))
+  
+}
+```
+
+2. What does the `crossing()` function do? What is the purpose of using it here?
+
+```{r}
+parameters <- crossing(mean_ht = seq(from = 60, to = 78, by = 6),
+                       std_ht  = c(3, 6))
+```
+
+3. What are the arguments to the `pmap` family of functions?
+
+
+
+4. In the code below...
+
+a. Where do the variables `mean_ht` and `std_ht` come from?
+b. Why do we name the elements of the list `avg` and `std`?
+c. Why is the `ht_data` column so weird!? What is it's data structure?
+
+```{r}
+parameters |> 
+   mutate(ht_data = pmap(.l = list(avg = mean_ht, 
+                                   std = std_ht), 
+                         .f = sim_ht)
+          )
+```
+
+5. What does the `unnest` function do?
+
+```{r}
+sim_dat <- parameters |> 
+   mutate(ht_data = pmap(.l = list(avg = mean_ht, 
+                                   std = std_ht), 
+                         .f = sim_ht)
+          ) |> 
+  unnest(cols = ht_data)
+
+sim_dat
+```
+
+6. Where are the `person` and `ht` columns coming from?
+
+
+7. How many rows should I have for each `mean_ht`, `std_ht` combination?
+
+
+8. Calculate empirical (simulated) mean and standard deviation of the generated heights for each simulated dataset. Do they align with our expectation?
+
+
+```{r}
+
+```
+

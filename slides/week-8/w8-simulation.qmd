@@ -98,6 +98,7 @@ The **distribution** of a random variable tells us its **possible values** and *
 ::: column
 + When you know the **range** of values, but not much else.
 + All values in the range are **equally likely** to occur.
++ Defined by minimum and maximum values: $Unif(a, b)$
 :::
 ::: column
 ```{r}
@@ -120,6 +121,7 @@ ggplot(my_samples, aes(x)) +
 ::: column
 + When you expect values to fall **near the center**.
 + Frequency of values follows a **bell shaped curve**.
++ Defined by mean and standard deviation (or variance): $N(\mu, \sigma^2)$
 :::
 ::: column
 ```{r}
@@ -142,6 +144,7 @@ ggplot(my_samples, aes(x)) +
 ::: column
 + A slightly **wider** bell curve.
 + Basically used in the same context as the **normal distribution**, but more common with  real data (when the *standard deviation* is unknown).
++ Defined by degrees of freedom: $t(df)$ 
 :::
 ::: column
 ```{r}
@@ -164,6 +167,7 @@ ggplot(my_samples, aes(x)) +
 ::: column
 + Somewhat **skewed**, and only allows values **above zero**.
 + Commonly used in statistical testing.
++ Defined by degrees of freedom: $\chi^2_{df}$
 :::
 ::: column
 ```{r}
@@ -185,8 +189,8 @@ ggplot(my_samples, aes(x)) +
 
 :::: columns
 ::: column
-+ There are **two possible outcomes**, and you are **counting** how many times one of the outcomes occured out of a fixed number of trials.
-+ Takes discrete values from 0 to the number of trials.
++ There are **two possible outcomes**, and you are **counting** how many times one of the outcomes ("success") occurred out of a fixed number of trials.
+
 :::
 ::: column
 ```{r}
@@ -200,6 +204,9 @@ ggplot(my_samples, aes(x)) +
 ```
 :::
 ::::
+
++ Takes discrete values from 0 to the number of trials.
++ Defined by the number of trials ($n$) and the probability of success ($p$): $Binom(n, p)$
 :::
 
 
@@ -214,6 +221,21 @@ ggplot(my_samples, aes(x)) +
 + Quantify the **evidence** in your **data**.
   + In my survey of 100 people, 67 said they were voting for Measure A.  How confident am I that Measure A will pass?
 
+## Distribution Functions in R
+
+:::columns
+:::column
++ There are four functions for each of these distributions to accomplish different tasks!
++ The parameters that define each distribution are arguments
+  + e.g. `min` and `max` for the Uniform distribution
++ Documentation can be found for each distribution
+
+:::
+:::column
+![](images/unif_doc.png)
+
+:::
+:::
 
 ## Distribution Functions in R
 
@@ -222,7 +244,7 @@ ggplot(my_samples, aes(x)) +
 
 `r` is for **random sampling**.
 
-+ Generate random values from a distribution.
++ Generate `n` random values from a distribution.
 + We use this to **simulate** data (create pretend observations).
 
 :::: columns
@@ -284,7 +306,7 @@ rnorm(10000, mean = 67, sd = 3) |>
 
 `q` is for **quantile**.
 
-+ Given a probability $p$, compute $x$ such that $P(X < x) = p$.
++ Given a probability `p`, compute $x$ such that $P(X < x) = p$.
 + The `q` functions are "backwards" of the `p` functions.
 + We use this for calculating critical values (z*).
 
@@ -297,8 +319,8 @@ qnorm(p = 0.95, mean = 67, sd = 3)
 
 `d` is for **density**.
 
-+ Compute the *height* of a distribution curve at a given $x$.
-+ For **discrete** dist: probability of getting **exactly** $x$.
++ Compute the *height* of a distribution curve at a given `x`.
++ For **discrete** dist: probability of getting **exactly** `x`.
 + For **continuous** dist: usually meaningless.
 + Mostly useful for plotting the distribution!
 
@@ -399,7 +421,7 @@ data |>
 :::
 ::::
 
-### <font size = 6> `after_state(density)` </font>
+### <font size = 6> `after_stat(density)` </font>
 
 :::: {.columns}
 ::: {.column width=76%}
@@ -614,14 +636,14 @@ Suppose there is a group of 50 people.
 
 Write a function to ...
 
-+ ... simulate the birthdays of 50 random people (assuming it is equally likely to be born any day of the year).
++ ... simulate the birthdays of `n` random people (assuming it is equally likely to be born any day of the year).
 + ... count how many birthdays are shared.
 + ... return whether or not a shared birthday exists.
 
 . . .
 
 ```{r}
-bDays <- function(n = 50){
+bday_prob <- function(n = 50){
   bday_data <- tibble(person = 1:n,
                       bday   = sample(1:365, size = n, replace = T))
   
@@ -639,11 +661,11 @@ bDays <- function(n = 50){
 
 Use a `map()` function to repeat this simulation 1,000 times.
 
-+ What proportion of these datasets contain at least two people with the same birthday?
++ What proportion of the iterations contain at least two people with the same birthday?
 
 ```{r}
 sim_results <- map_lgl(.x = 1:1000,
-                       .f = ~ bDays(n = 50))
+                       .f = ~ bday_prob(n = 50))
 
 mean(sim_results)
 ```
@@ -660,9 +682,9 @@ We can automatically include code output in the written portion of a Quarto docu
 mean(sim_results)
 ```
 
-Type this: ```r knitr::inline_expr("mean(sim_results)*100")`% of the datasets contain at least two people with the same birthday. ``
+Type this: ```r knitr::inline_expr("mean(sim_results)*100")`% of the iterations contain at least two people with the same birthday. ``
 
-To get this: `r mean(sim_results)*100`% of the datasets contain at least two people with the same birthday.
+To get this: `r mean(sim_results)*100`% of the iterations contain at least two people with the same birthday.
 
 
 # Simulating Multiple Datasets

@@ -18,7 +18,7 @@
     "href": "slides/week-8/w8-data-functions.html#function-to-standardize-data",
     "title": "Writing Data Functions",
     "section": "Function to Standardize Data",
-    "text": "Function to Standardize Data\nWe want to take in a vector of numbers and standardize it. One form of standardization is ensuring that the mean is 0 and standard deviation is 1.\n. . .\n\nstd_vec &lt;- function(var) {\n  stopifnot(is.numeric(var))\n  \n  (var - mean(var, na.rm = T))/sd(var, na.rm = T)\n}"
+    "text": "Function to Standardize Data\nWe want to take in a vector of numbers and standardize it. One form of standardization is ensuring that the mean is 0 and standard deviation is 1.\n\n\nstd_vec &lt;- function(var) {\n  stopifnot(is.numeric(var))\n  \n  (var - mean(var, na.rm = T))/sd(var, na.rm = T)\n}"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#standardizing-variables",
@@ -46,7 +46,7 @@
     "href": "slides/week-8/w8-data-functions.html#tidy-evaluation",
     "title": "Writing Data Functions",
     "section": "Tidy Evaluation",
-    "text": "Tidy Evaluation\nFunctions using unquoted variable names as arguments are said to use nonstandard evaluation or tidy evaluation.\n\n\nTidy:\n\npenguins |&gt; \n  pull(body_mass_g)\n\n  OR\n\npenguins$body_mass_g\n\n\nUntidy:\n\npenguins[, \"body_mass_g\"]\n\n  OR\n\npenguins[[\"body_mass_g\"]]\n\n\n\n\n. . .\ntidy evaluation is not supported in writing your own functions"
+    "text": "Tidy Evaluation\nFunctions using unquoted variable names as arguments are said to use nonstandard evaluation or tidy evaluation.\n\n\nTidy:\n\npenguins |&gt; \n  pull(body_mass_g)\n\n  OR\n\npenguins$body_mass_g\n\n\nUntidy:\n\npenguins[, \"body_mass_g\"]\n\n  OR\n\npenguins[[\"body_mass_g\"]]\n\n\n\n\ntidy evaluation is not supported in writing your own functions"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#defused-r-code",
@@ -67,7 +67,7 @@
     "href": "slides/week-8/w8-data-functions.html#solution-2-rlang",
     "title": "Writing Data Functions",
     "section": "Solution 2: rlang",
-    "text": "Solution 2: rlang\nUse the rlang package!\n\n\n\nThis package provides operators that simplify writing functions around tidyverse pipelines.\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/blob/main/thumbs/rlang.png?raw=true\")\n\n\n\n\n\n\n\n\n\n\n\nNote: you do not need to load rlang\nRead more about using this package for function writing here!"
+    "text": "Solution 2: rlang\nUse the rlang package!\n\n\n\nThis package provides operators that simplify writing functions around tidyverse pipelines.\n\n\n\nknitr::include_graphics(\"https://github.com/rstudio/hex-stickers/blob/main/thumbs/rlang.png?raw=true\")\n\n\n\n\n\n\n\n\n\n\nNote: you do not need to load rlang\nRead more about using this package for function writing here!"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#solution-2-rlang-1",
@@ -2289,7 +2289,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -4539,8 +4539,8 @@
     "objectID": "slides/week-8/w8-data-functions.html#monday-may-18",
     "href": "slides/week-8/w8-data-functions.html#monday-may-18",
     "title": "Writing Data Functions",
-    "section": "",
-    "text": "Today we will…\n\nGroup Quiz 7\nNew Material\n\nCalling Functions on Datasets\nTidy Evaluation"
+    "section": "Monday, May 18",
+    "text": "Monday, May 18\nToday we will…\n\nGroup Quiz 7\nNew Material\n\nCalling Functions on Datasets\nTidy Evaluation"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#moving-beyond-vectors",
@@ -4624,7 +4624,7 @@
     "href": "slides/week-8/w8-data-functions.html#pa-8-data-frame-functions",
     "title": "Writing Data Functions",
     "section": "PA 8: Data Frame Functions",
-    "text": "PA 8: Data Frame Functions\n\n\nYou will write a tidy function for a contingency table like the table() function in base R.\n\n\n\n\n\nCollaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code.\n\n\n\n\n\nSubmission\n\nInstead of a simple puzzle answer to this one, you will submit a screenshot of your function code . . .\n\n\n\n\n\n\n\nTipStarting Roles Today\n\n\n\nThe person who lives closest to campus starts as the coder, second as the project manager.\n\n\n\nTo do…\n\nPA 8: Data Frame Functions\n\nDue Tuesday 5/19 at 11:59pm.\n\nProject Checkpoint 3: Progress Report\n\nDue Friday, 5/22 at 11:59pm.\n\nLab 8: Data Frame Functions + Simulation\n\nDue Sunday 5/24 at 11:59pm."
+    "text": "PA 8: Data Frame Functions\n\n\nYou will write a tidy function for a contingency table like the table() function in base R.\n\n\n\n\n\nCollaborative Protocol\n\nDuring your collaboration, your group will alternate between three roles:\n\n\nProject ManagerComputerCoder\n\n\n\nReads out the prompt and ensures the group understands what is being asked.\nManages resources (e.g., cheatsheets, textbook).\nAnswers Coder’s questions about syntax based on the resources.\nWorks with the group to debug the code.\n\n\n\n\nEncourages the Coder to vocalize and explain their thinking.\nTypes the code specified by the Coder into the Quarto document.\nRuns the code provided by the Coder.\nWorks with group to debug the code.\nEvaluates the output against the question prompt.\n\n\n\n\nConfirms they understand what the prompt is asking.\nTalks with the group about their ideas.\nExplains their thinking.\nDirects the Computer what to type.\nWorks with the group to debug the code.\n\n\n\n\n\nSubmission\n\nInstead of a simple puzzle answer to this one, you will submit a screenshot of your function code . . .\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person who lives closest to campus starts as the coder, second as the project manager.\n\n\n\n\nTo do…\n\nPA 8: Data Frame Functions\n\nDue Tuesday 5/19 at 11:59pm.\n\nProject Checkpoint 3: Progress Report\n\nDue Friday, 5/22 at 11:59pm.\n\nLab 8: Data Frame Functions + Simulation\n\nDue Sunday 5/24 at 11:59pm."
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#collaborative-protocol",
@@ -4638,7 +4638,7 @@
     "href": "slides/week-8/w8-data-functions.html#submission",
     "title": "Writing Data Functions",
     "section": "Submission",
-    "text": "Submission\n\nInstead of a simple puzzle answer to this one, you will submit a screenshot of your function code . . .\n\n\n\n\n\n\n\nTipStarting Roles Today\n\n\n\nThe person who lives closest to campus starts as the coder, second as the project manager."
+    "text": "Submission\n\nInstead of a simple puzzle answer to this one, you will submit a screenshot of your function code . . .\n\n\n\n\n\n\n\nStarting Roles Today\n\n\nThe person who lives closest to campus starts as the coder, second as the project manager."
   },
   {
     "objectID": "reading/week-8.1.html",
@@ -4687,7 +4687,7 @@
     "href": "slides/week-8/w8-simulation.html#statistical-distributions-with-names",
     "title": "Simulation",
     "section": "Statistical Distributions with Names!",
-    "text": "Statistical Distributions with Names!\n\nunifnormtchisqbinom\n\n\nUniform Distribution\n\n\n\nWhen you know the range of values, but not much else.\nAll values in the range are equally likely to occur.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNormal Distribution\n\n\n\nWhen you expect values to fall near the center.\nFrequency of values follows a bell shaped curve.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nt-Distribution\n\n\n\nA slightly wider bell curve.\nBasically used in the same context as the normal distribution, but more common with real data (when the standard deviation is unknown).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChi-Square Distribution\n\n\n\nSomewhat skewed, and only allows values above zero.\nCommonly used in statistical testing.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBinomial Distribution\n\n\n\nThere are two possible outcomes, and you are counting how many times one of the outcomes occured out of a fixed number of trials.\nTakes discrete values from 0 to the number of trials."
+    "text": "Statistical Distributions with Names!\n\nunifnormtchisqbinom\n\n\nUniform Distribution\n\n\n\nWhen you know the range of values, but not much else.\nAll values in the range are equally likely to occur.\nDefined by minimum and maximum values: \\(Unif(a, b)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNormal Distribution\n\n\n\nWhen you expect values to fall near the center.\nFrequency of values follows a bell shaped curve.\nDefined by mean and standard deviation (or variance): \\(N(\\mu, \\sigma^2)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nt-Distribution\n\n\n\nA slightly wider bell curve.\nBasically used in the same context as the normal distribution, but more common with real data (when the standard deviation is unknown).\nDefined by degrees of freedom: \\(t(df)\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nChi-Square Distribution\n\n\n\nSomewhat skewed, and only allows values above zero.\nCommonly used in statistical testing.\nDefined by degrees of freedom: \\(\\chi^2_{df}\\)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBinomial Distribution\n\n\n\nThere are two possible outcomes, and you are counting how many times one of the outcomes (“success”) occurred out of a fixed number of trials.\n\n\n\n\n\n\n\n\n\n\n\n\n\nTakes discrete values from 0 to the number of trials.\nDefined by the number of trials (\\(n\\)) and the probability of success (\\(p\\)): \\(Binom(n, p)\\)"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#how-do-we-use-distributions",
@@ -4701,7 +4701,7 @@
     "href": "slides/week-8/w8-simulation.html#distribution-functions-in-r",
     "title": "Simulation",
     "section": "Distribution Functions in R",
-    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 18.50426 15.67683 13.62507\n\nrnorm(n = 3)\n\n[1] -0.1140229 -0.2986825 -0.9349331\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1]  -37.12937  -43.76815 -150.15480\n\n\n\n\nrt(n = 3, df = 11)\n\n[1]  0.8079693 -1.7314823  0.9994506\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 8 8 7\n\nrchisq(n = 3, df = 11)\n\n[1] 25.70136 12.92771  5.85420\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability \\(p\\), compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given \\(x\\).\nFor discrete dist: probability of getting exactly \\(x\\).\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
+    "text": "Distribution Functions in R\n\n\n\nThere are four functions for each of these distributions to accomplish different tasks!\nThe parameters that define each distribution are arguments\n\ne.g. min and max for the Uniform distribution\n\nDocumentation can be found for each distribution"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#empirical-vs.-theoretical-distributions",
@@ -4715,7 +4715,7 @@
     "href": "slides/week-8/w8-simulation.html#plotting-both-distributions",
     "title": "Simulation",
     "section": "Plotting Both Distributions",
-    "text": "Plotting Both Distributions\n\n geom_histogram  dnorm  after_state(density) \n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(bins = 10, color = \"white\")\n\n\n\n\n\n\n\n\n\n\nPlot your data.\n\n\n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(bins = 10, color = \"white\") +\n  stat_function(fun = ~ dnorm(.x, mean = 67, sd = 3),\n                color = \"steelblue\", lwd = 2)\n\n\n\n\n\n\n\n\n\n\nAdd a density curve.\n\n\n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(aes(y = after_stat(density)),\n                 bins = 10, color = \"white\") +\n  stat_function(fun = ~ dnorm(.x, mean = 67, sd = 3),\n                color = \"steelblue\", lwd = 2)\n\n\n\n\n\n\n\n\n\n\nChange the y-axis of the histogram to match the y-axis of the density."
+    "text": "Plotting Both Distributions\n\n geom_histogram  dnorm  after_stat(density) \n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(bins = 10, color = \"white\")\n\n\n\n\n\n\n\n\n\n\nPlot your data.\n\n\n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(bins = 10, color = \"white\") +\n  stat_function(fun = ~ dnorm(.x, mean = 67, sd = 3),\n                color = \"steelblue\", lwd = 2)\n\n\n\n\n\n\n\n\n\n\nAdd a density curve.\n\n\n\n\n\n\n\ndata |&gt; \n  ggplot(aes(x = height)) +\n  geom_histogram(aes(y = after_stat(density)),\n                 bins = 10, color = \"white\") +\n  stat_function(fun = ~ dnorm(.x, mean = 67, sd = 3),\n                color = \"steelblue\", lwd = 2)\n\n\n\n\n\n\n\n\n\n\nChange the y-axis of the histogram to match the y-axis of the density."
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#generating-simulated-data---the-idea",
@@ -4764,21 +4764,21 @@
     "href": "slides/week-8/w8-simulation.html#example-birthday-simulation-1",
     "title": "Simulation",
     "section": "Example: Birthday Simulation",
-    "text": "Example: Birthday Simulation\nWrite a function to …\n\n… simulate the birthdays of 50 random people (assuming it is equally likely to be born any day of the year).\n… count how many birthdays are shared.\n… return whether or not a shared birthday exists.\n\n\n\nbDays &lt;- function(n = 50){\n  bday_data &lt;- tibble(person = 1:n,\n                      bday   = sample(1:365, size = n, replace = T))\n  \n  double_bdays &lt;- bday_data |&gt; \n    count(bday) |&gt; \n    filter(n &gt;= 2) |&gt; \n    nrow()\n  \n  return(double_bdays &gt; 0)\n}"
+    "text": "Example: Birthday Simulation\nWrite a function to …\n\n… simulate the birthdays of n random people (assuming it is equally likely to be born any day of the year).\n… count how many birthdays are shared.\n… return whether or not a shared birthday exists.\n\n\n\nbday_prob &lt;- function(n = 50){\n  bday_data &lt;- tibble(person = 1:n,\n                      bday   = sample(1:365, size = n, replace = T))\n  \n  double_bdays &lt;- bday_data |&gt; \n    count(bday) |&gt; \n    filter(n &gt;= 2) |&gt; \n    nrow()\n  \n  return(double_bdays &gt; 0)\n}"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#example-birthday-simulation-2",
     "href": "slides/week-8/w8-simulation.html#example-birthday-simulation-2",
     "title": "Simulation",
     "section": "Example: Birthday Simulation",
-    "text": "Example: Birthday Simulation\nUse a map() function to repeat this simulation 1,000 times.\n\nWhat proportion of these datasets contain at least two people with the same birthday?\n\n\nsim_results &lt;- map_lgl(.x = 1:1000,\n                       .f = ~ bDays(n = 50))\n\nmean(sim_results)\n\n[1] 0.969"
+    "text": "Example: Birthday Simulation\nUse a map() function to repeat this simulation 1,000 times.\n\nWhat proportion of the iterations contain at least two people with the same birthday?\n\n\nsim_results &lt;- map_lgl(.x = 1:1000,\n                       .f = ~ bday_prob(n = 50))\n\nmean(sim_results)\n\n[1] 0.969"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#in-line-code",
     "href": "slides/week-8/w8-simulation.html#in-line-code",
     "title": "Simulation",
     "section": "In-line Code",
-    "text": "In-line Code\nWe can automatically include code output in the written portion of a Quarto document using `r `.\n\nThis ensures reproducibility when you have results from a random generation process.\n\n\nmean(sim_results)\n\n[1] 0.969\n\n\nType this: `r mean(sim_results)*100`% of the datasets contain at least two people with the same birthday.\nTo get this: 96.9% of the datasets contain at least two people with the same birthday."
+    "text": "In-line Code\nWe can automatically include code output in the written portion of a Quarto document using `r `.\n\nThis ensures reproducibility when you have results from a random generation process.\n\n\nmean(sim_results)\n\n[1] 0.969\n\n\nType this: `r mean(sim_results)*100`% of the iterations contain at least two people with the same birthday.\nTo get this: 96.9% of the iterations contain at least two people with the same birthday."
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#simulate-multiple-datasets---step-1",
@@ -4876,7 +4876,7 @@
     "href": "slides/week-8/w8-data-functions.html#write-the-function-like-a-dplyr-function",
     "title": "Writing Data Functions",
     "section": "Write the function like a dplyr function?",
-    "text": "Write the function like a dplyr function?\n\nstd_column &lt;- function(data, var) {\n  stopifnot(is.data.frame(data))\n  \n  data |&gt; \n    mutate(var = std_vec(var))\n}\n\n\n\n\n\n\n\nNote\n\n\n\nI used the existing function std_vec() inside the new function for clarity!\n\n\n. . .\nBut it didn’t work…\n\npenguins |&gt; \n  std_column(var = body_mass_g)\n\nError in `mutate()`:\nℹ In argument: `var = std_vec(var)`.\nCaused by error:\n! object 'body_mass_g' not found"
+    "text": "Write the function like a dplyr function?\n\nstd_column &lt;- function(data, var) {\n  stopifnot(is.data.frame(data))\n  \n  data |&gt; \n    mutate(var = std_vec(var))\n}\n\n\n\n\n\n\n\nNote\n\n\nI used the existing function std_vec() inside the new function for clarity!\n\n\n\n\nBut it didn’t work…\n\npenguins |&gt; \n  std_column(var = body_mass_g)\n\nError in `mutate()`:\nℹ In argument: `var = std_vec(var)`.\nCaused by error:\n! object 'body_mass_g' not found"
   },
   {
     "objectID": "practice-activities/pa8-2.html",
@@ -4982,5 +4982,12 @@
     "title": "Week 8 Day 2: Simulation",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nvos Savant, Marilyn (9 September 1990). “Ask Marilyn”. Parade. p. 16. Archived from the original Retrieved 5 May 2026. Link↩︎"
+  },
+  {
+    "objectID": "slides/week-8/w8-simulation.html#distribution-functions-in-r-1",
+    "href": "slides/week-8/w8-simulation.html#distribution-functions-in-r-1",
+    "title": "Simulation",
+    "section": "Distribution Functions in R",
+    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate n random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 12.90136 14.45314 16.92792\n\nrnorm(n = 3)\n\n[1] -0.1923707  0.6384424 -1.0781340\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1]  -53.19816 -135.72071 -129.54559\n\n\n\n\nrt(n = 3, df = 11)\n\n[1]  1.3158358  0.4700858 -0.8475279\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 9 7 5\n\nrchisq(n = 3, df = 11)\n\n[1]  1.273001 10.164426 12.749629\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability p, compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given x.\nFor discrete dist: probability of getting exactly x.\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
   }
 ]
