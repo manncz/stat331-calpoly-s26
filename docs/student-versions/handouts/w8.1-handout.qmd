@@ -1,0 +1,83 @@
+---
+title: "STAT 331 Week 8 Day 1 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+
+library(tidyverse)
+library(palmerpenguins)
+data(penguins)
+```
+
+
+```{r}
+std_vec <- function(var) {
+  stopifnot(is.numeric(var))
+  
+  (var - mean(var, na.rm = T))/sd(var, na.rm = T)
+}
+```
+
+1. How can I use the `std_vec` function as written to standardize the `bill_length_mm` variable in the penguins dataset?
+
+
+```{r}
+
+
+
+```
+
+
+Instead, I want to write the function like a `dplyr` function, where a data frame and variable name are the inputs and the output is a data frame with the change I wanted to make.
+
+```{r}
+std_column <- function(data, var) {
+  stopifnot(is.data.frame(data))
+  
+  data |> 
+    mutate(var = std_vec(var))
+}
+```
+
+2. Why does this function not work?
+
+```{r}
+penguins |> 
+  std_column(var = body_mass_g)
+```
+
+
+3. When do we need to use the embrace operator? `{{ }}`
+
+
+4. When do we need to use the walrus operator? `:=`
+
+
+5. Fix the broken function!
+
+```{r}
+std_column <- function(data, var) {
+  stopifnot(is.data.frame(data))
+  
+  data |> 
+    mutate(var = std_vec(var))
+}
+```
+
+make sure that it works:
+
+```{r}
+penguins |> 
+  std_column(body_mass_g) |> 
+  slice_head(n = 5)
+```
+
+6. Add input validation that checks that the variable given is numeric and check that your input validation worked below.
+
+```{r}
+penguins |> 
+  std_column(island)
+```
