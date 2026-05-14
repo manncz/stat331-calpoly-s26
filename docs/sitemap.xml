@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://github.com/manncz/stat331-calpoly-s26/slides/week-8/w8-data-functions.html</loc>
-    <lastmod>2026-05-12T21:41:23.536Z</lastmod>
+    <lastmod>2026-05-13T21:38:57.012Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/manncz/stat331-calpoly-s26/slides/week-7/w7-functions.html</loc>
@@ -194,10 +194,22 @@
   </url>
   <url>
     <loc>https://github.com/manncz/stat331-calpoly-s26/slides/week-7/w7-iteration.html</loc>
-    <lastmod>2026-05-12T04:01:29.105Z</lastmod>
+    <lastmod>2026-05-14T16:25:27.832Z</lastmod>
   </url>
   <url>
     <loc>https://github.com/manncz/stat331-calpoly-s26/reading/week-8.1.html</loc>
     <lastmod>2026-05-12T21:50:04.124Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/manncz/stat331-calpoly-s26/slides/week-8/w8-simulation.html</loc>
+    <lastmod>2026-05-14T17:14:48.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/manncz/stat331-calpoly-s26/practice-activities/pa8-2.html</loc>
+    <lastmod>2026-05-14T18:37:30.362Z</lastmod>
+  </url>
+  <url>
+    <loc>https://github.com/manncz/stat331-calpoly-s26/reading/week-8.2.html</loc>
+    <lastmod>2026-05-14T18:31:42.003Z</lastmod>
   </url>
 </urlset>

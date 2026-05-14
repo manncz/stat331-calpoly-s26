@@ -92,7 +92,7 @@ penguins |>
 That's nice, but our function must be combined with `mutate()` now to work...
 
 
-## Write the function like a tidyverse function?
+## Write the function like a `dplyr` function?
 
 ```{r stdcol}
 #| echo: true

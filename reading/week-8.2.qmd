@@ -1,0 +1,249 @@
+---
+title: "Week 8 Day 2: Simulation"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| echo: false
+#| label: setup
+#| message: false
+
+library(tidyverse)
+library(knitr)
+library(palmerpenguins)
+data(penguins)
+```
+
+
+# Learning Objectives
+
+This week we will learn about simulating data and running simulations in R. By the end of the week you should:
+
+- know functions for simulating some of the common statistical distributions (e.g., Normal, t, Chi-Square, Binomial)
+- know what each of the `r`, `p`, `d`, and `q` functions do when simulating data from different statistical distributions
+- know how to plot an empirical and theoretical distribution
+- know how to use random sampling with replacement or not in R
+- know how to implement multiple iterations of a simulation using a `map` or `pmap` function.
+
+#### 📖 Required Readings: 60 min
+
+------------------------------------------------------------------------
+
+# Simulation in R
+
+Simulation is a very important tool for statistical computing! "Simulation" is a very broad term that encompasses a lot of different things. For our purposes, we will focus on:
+
+- simulating data by drawing from probability distributions
+- simulating random processes to get an idea of their behavior
+
+# Working with Common Statistical Distributions in R
+
+#### 📖 Required Reading: [R Programming for Data Science : 20.1 - 20.3](https://bookdown.org/rdpeng/rprogdatascience/simulation.html)
+
+#### 📽 Optional Video: [Introduction to Simulating Data](https://www.youtube.com/watch?v=J5XQaxmznNE)
+
+## Reproducibility -- Setting seeds
+
+Whenever you are working with an operation in R that involves randomness (like generating random samples from a probability distribution!), you  should choose your own seed using the `set.seed()` function. This
+guarantees your results will be consistent across runs (and hopefully  computers):
+
+```{r}
+set.seed(1234)
+
+rnorm(1, mean = 0, sd = 1)
+```
+
+```{r}
+set.seed(1234)
+
+rnorm(1, mean = 0, sd = 1)
+```
+
+Of course, it doesn't mean the results will be the same in every subsequent run
+if you forget or reset the seed in between each line of code!
+
+```{r}
+set.seed(1234)
+
+rnorm(1, mean = 0, sd = 1)
+
+## Calling rnorm() again without a seed "resets" the seed! 
+rnorm(1, mean = 0, sd = 1)
+```
+
+It is very important to always set a seed at the **beginning** of a Quarto
+document that contains any random steps, so that your rendered results are
+consistent.
+
+Note that you can choose your favorite number to be your seed - any number will do!
+
+::: {.callout-caution}
+Note, though, that this only guarantees your rendered results will be the same
+*if the code has not changed*.
+
+Changing any part of the code will re-randomize everything that comes after it!
+:::
+
+## Reproducibility -- inline code
+
+When writing up a report which includes results from a random generation
+process, in order to ensure reproducibility in your document, use `` `{r}` `` or `` `r` `` to
+include your output within your written description with [inline code](https://quarto.org/docs/computations/inline-code.html).
+
+::: {.callout-note collapse=TRUE}
+# Reproducibility: inline code example
+
+```{r}
+#| eval: true
+my_rand <- rnorm(1, mean = 0, sd = 1)
+my_rand
+```
+
+Using `{r} knitr::inline_expr('my_rand', syntax = "md")` will display the result
+within my text: 
+
+My random number is `{r} my_rand`.
+
+Alternatively, you could have put the `rnorm` code directly into the inline text
+`{r} knitr::inline_expr('rnorm(1, mean = 0, sd = 1)', syntax = "md")`, but this
+can get messy if you have a result that requires a larger chunk of code.
+
+::: 
+
+## Plotting Distributions
+
+If you took an intro statistics class at Cal Poly, you likely generated null distributions using both simulation and with a theoretical distribution. It is often helpful to be able to plot both a simulated (or empirical) distribution and a theoretical distribution together to see how well they match.
+
+Let's walk through the example in the lecture slides. 
+
+First, I will create simulated data with 1,000 observations, drawn from a normal distribution with mean 67 and standard deviation 3 ($N(67, 3)$).
+
+```{r}
+set.seed(395)
+
+my_samples <- set.seed(93401)
+my_samples <- tibble(height = rnorm(n    = 1000, 
+                                    mean = 67, 
+                                    sd   = 3)
+                     )
+
+my_samples |> 
+  head()
+```
+To visualize the simulated heights, we can look at the density of the values. 
+
+To plot simulated (emprical) data we:
+
++ use the `geom_histogram()` 
++ and define a local aesthetic
+to calculate and plot the **density** of these values. Including the `y = after_after(density)` is very important to make the plot on the same scale as the theoretical density curve!
+
+To plot the theoretical curve we:
+
++ use the `state_function()` geometry
++ specify the function as the density function `dnorm()` with the specified `mean` and `sd`.
+
+```{r}
+#| message: false
+#| warning: false
+#| echo: true
+
+my_samples %>%
+  ggplot(aes(x = height)) +
+  geom_histogram(aes(y = after_stat(density)), 
+                 binwidth = 1, fill = "grey") +
+  stat_function(fun = ~ dnorm(.x, mean = 67, sd = 3), 
+                col = "cornflowerblue", lwd = 2) + 
+  xlim(c(55, 80))
+```
+
+# Simulating Random Samples
+
+Taking random samples of either vectors or data frames is relatively simple in R using the functions `sample()` and `slice_sample()`
+
+#### 📖 Required Reading: [R Programming for Data Science : 20.4](https://bookdown.org/rdpeng/rprogdatascience/simulation.html#random-sampling)
+
+A couple of things that I want to emphasize or add from the reading:
+
++ Pay attention to whether your random process requires sampling *with* replacement or sampling *without* replacement.
++ You can implement a random permutation by taking a sample without replacement the same length as the provided vector:
+
+```{r}
+sample(x = 1:10, size = 10)
+```
++ To get a random sample of rows from a dataframe, rather than a vector, use `slice_sample()` from dplyr. You can provide a number or samples or poportion of the rows to sample:
+
+```{r}
+penguins |> 
+  slice_sample(n = 5)
+```
+
+```{r}
+penguins |> 
+  slice_sample(prop = .01)
+```
+
+# Efficient Simulation Iteration
+
+Often, we want to repeat a simulation (random process) many times to see how it behaves! This involves **iteration**. Thus, to implement iterative simulations, we will want to write a **function** that implements one iteration of the simulation, and then use a `map` function to efficiently repeat that function many times and save the results.
+
+Let's take a classic problem -- the [Monty Hall Problem](https://en.wikipedia.org/wiki/Monty_Hall_problem). A question was posed by Craig F. Whittaker in Marilyn vos Savant's "Ask Marilyn" column in Parade Magazine in 1990.[^1]
+
+> Suppose you're on a game show, and you're given the choice of three doors: Behind one door is a car; behind the others, goats. You pick a door, say No. 1, and the host, who knows what's behind the doors, opens another door, say No. 3, which has a goat. He then says to you, "Do you want to pick door No. 2?" Is it to your advantage to switch your choice?
+
+```{r}
+monty_hall <- function(x){
+  
+  # randomly permute the three possibilities between 3 "doors"
+  doors <- sample(c("car", "goat", "goat"),
+                  3)
+  
+  # randomly select one door as a first choice
+  first_choice <- sample(1:3, 1)
+  
+  # find which of the remaining doors have goats behind them
+  remaining_goat_doors <- setdiff(which(doors == "goat"), first_choice)
+  
+  # reveal one of the goat doors 
+  # (if there are still 2 doors with goats, choose randomly)
+  
+  revealed_door <- ifelse(length(remaining_goat_doors) > 1, 
+                          sample(remaining_goat_doors, 1),
+                          remaining_goat_doors)
+
+  # have the player switch their choice (aka, choose the remaining door option)
+  final_prize <- doors[setdiff(1:3, c(first_choice, revealed_door))]
+  
+  # return if they won the car or got a goat!
+  final_prize
+}
+```
+
+```{r}
+monty_hall()
+```
+
+Now that we have implemented one iteration of the simulation, let's repeat it many times! The mathematical solution to the problem is that the probability of getting a car if you switch is 2/3. Let's see if our simulation shows that too.
+
+Since the output of my function is a character, I am going to use `map_chr()`. All I want to do is repeatedly run the function many times, so I will input a vector of `1:n` where `n` is how many times I want to run the simulation as the first argument `.x` to `map_chr()`:
+
+```{r}
+sim_result <- map_chr(.x = 1:1000,
+                      .f = monty_hall)
+```
+
+:::callout-note
+
+If you don't have any additional arguments to pass to the function you provide to `map` you do not need to write the function as a lambda function. You only need to provide the function *name*. But careful! This would not work if I wrote `.f = monty_hall()`.
+:::
+
+Now let's see the proportion of times that we won a car:
+
+```{r}
+mean(sim_result == "car")
+```
+
+Pretty close to the theoretical value!
+
+[^1]: vos Savant, Marilyn (9 September 1990). "Ask Marilyn". Parade. p. 16. Archived from the original  Retrieved 5 May 2026. [Link](https://web.archive.org/web/20130121183432/http://marilynvossavant.com/game-show-problem/)
