@@ -144,7 +144,7 @@
     "href": "slides/week-8/w8-data-functions.html#to-do",
     "title": "Writing Data Functions",
     "section": "To do…",
-    "text": "To do…\n\nPA 8: Data Frame Functions\n\nDue Tuesday 5/19 at 11:59pm.\n\nProject Checkpoint 3: Progress Report\n\nDue Friday, 5/22 at 11:59pm.\n\nLab 8: Data Frame Functions + Simulation\n\nDue Sunday 5/24 at 11:59pm."
+    "text": "To do…\n\nPA 8.1: Data Frame Functions\n\nDue Tuesday 5/19 at 11:59pm.\n\nProject Checkpoint 3: Progress Report\n\nDue Friday, 5/22 at 11:59pm.\n\nLab 8: Data Frame Functions + Simulation\n\nDue Tuesday 5/26 at 11:59pm."
   },
   {
     "objectID": "slides/week-7/w7-functions.html#monday-may-11",
@@ -4996,5 +4996,12 @@
     "title": "Writing Data Functions",
     "section": "Common Final",
     "text": "Common Final\n\nMonday June, 8th 7-10pm\nBuilding 180 Room 102\nEmail me today if you have a conflict"
+  },
+  {
+    "objectID": "slides/week-8/w8-data-functions.html#pa-8.1-data-frame-functions",
+    "href": "slides/week-8/w8-data-functions.html#pa-8.1-data-frame-functions",
+    "title": "Writing Data Functions",
+    "section": "PA 8.1: Data Frame Functions",
+    "text": "PA 8.1: Data Frame Functions\nYou will write a tidy function for a contingency table like the table() function in base R.\n\nAllison Horst"
   }
 ]
