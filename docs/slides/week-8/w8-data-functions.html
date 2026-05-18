@@ -213,6 +213,14 @@
 </ul></li>
 </ul>
 </section>
+<section id="common-final" class="slide level2">
+<h2>Common Final</h2>
+<ul>
+<li>Monday June, 8th 7-10pm</li>
+<li>Building 180 Room 102</li>
+<li>Email me <strong>today</strong> if you have a conflict</li>
+</ul>
+</section>
 <section>
 <section id="writing-data-frame-functions" class="title-slide slide level1 center">
 <h1>Writing Data Frame Functions</h1>
@@ -359,7 +367,6 @@ Caused by error:
 </ul>
 </div><div class="column" style="width:30%;">
 <div class="cell" data-layout-align="center">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"https://github.com/rstudio/hex-stickers/blob/main/thumbs/rlang.png?raw=true"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -405,8 +412,8 @@ Caused by error:
 <div class="fragment">
 <p>When you have a <code>data-variable</code> in a function argument, you need to <strong>embrace</strong> the argument.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">summarize</span>(<span class="fu">mean</span>({{ var }}))</span>
-<span id="cb12-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>({{ var }})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a aria-hidden="true" tabindex="-1"></a><span class="fu">summarize</span>(<span class="fu">mean</span>({{ var }}))</span>
+<span id="cb11-2"><a aria-hidden="true" tabindex="-1"></a><span class="fu">select</span>({{ var }})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 </section>
@@ -414,21 +421,21 @@ Caused by error:
 <h2>Walrus Operator</h2>
 <p>If you want to create a <code>data-variable</code> where the name is a user-provided function, argument, you need to use the the <strong>walrus operator</strong> (<code>:=</code>)</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a><span class="fu">mutate</span>({{ var }} <span class="sc">:</span><span class="er">=</span> {{ var2 }} <span class="sc">/</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a></a><span class="fu">mutate</span>({{ var }} <span class="sc">:</span><span class="er">=</span> {{ var2 }} <span class="sc">/</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="recall-our-broken-function" class="slide level2">
 <h2>Recall Our Broken Function</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a></a>std_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, var) {</span>
-<span id="cb14-2"><a></a>  <span class="fu">stopifnot</span>(<span class="fu">is.data.frame</span>(data))</span>
-<span id="cb14-3"><a></a>  </span>
-<span id="cb14-4"><a></a>  data <span class="sc">|&gt;</span> </span>
-<span id="cb14-5"><a></a>    <span class="fu">mutate</span>(<span class="at">var =</span> <span class="fu">std_vec</span>(var))</span>
-<span id="cb14-6"><a></a>}</span>
-<span id="cb14-7"><a></a></span>
-<span id="cb14-8"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb14-9"><a></a>  <span class="fu">std_column</span>(body_mass_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a></a>std_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, var) {</span>
+<span id="cb13-2"><a></a>  <span class="fu">stopifnot</span>(<span class="fu">is.data.frame</span>(data))</span>
+<span id="cb13-3"><a></a>  </span>
+<span id="cb13-4"><a></a>  data <span class="sc">|&gt;</span> </span>
+<span id="cb13-5"><a></a>    <span class="fu">mutate</span>(<span class="at">var =</span> <span class="fu">std_vec</span>(var))</span>
+<span id="cb13-6"><a></a>}</span>
+<span id="cb13-7"><a></a></span>
+<span id="cb13-8"><a></a>penguins <span class="sc">|&gt;</span> </span>
+<span id="cb13-9"><a></a>  <span class="fu">std_column</span>(body_mass_g)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in `mutate()`:
 ℹ In argument: `var = std_vec(var)`.
@@ -445,16 +452,16 @@ Caused by error:
 <h2>Fixing Our Broken Function</h2>
 <p>Use the embrace operator:</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb16" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a></a>std_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, var) {</span>
-<span id="cb16-2"><a></a>  <span class="fu">stopifnot</span>(<span class="fu">is.data.frame</span>(data))</span>
-<span id="cb16-3"><a></a>  </span>
-<span id="cb16-4"><a></a>  data <span class="sc">|&gt;</span> </span>
-<span id="cb16-5"><a></a>    <span class="fu">mutate</span>({{ var }} <span class="sc">:</span><span class="er">=</span> <span class="fu">std_vec</span>({{ var }}))</span>
-<span id="cb16-6"><a></a>}</span>
-<span id="cb16-7"><a></a></span>
-<span id="cb16-8"><a></a>penguins <span class="sc">|&gt;</span> </span>
-<span id="cb16-9"><a></a>  <span class="fu">std_column</span>(body_mass_g) <span class="sc">|&gt;</span> </span>
-<span id="cb16-10"><a></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15" data-code-line-numbers="5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a></a>std_column <span class="ot">&lt;-</span> <span class="cf">function</span>(data, var) {</span>
+<span id="cb15-2"><a></a>  <span class="fu">stopifnot</span>(<span class="fu">is.data.frame</span>(data))</span>
+<span id="cb15-3"><a></a>  </span>
+<span id="cb15-4"><a></a>  data <span class="sc">|&gt;</span> </span>
+<span id="cb15-5"><a></a>    <span class="fu">mutate</span>({{ var }} <span class="sc">:</span><span class="er">=</span> <span class="fu">std_vec</span>({{ var }}))</span>
+<span id="cb15-6"><a></a>}</span>
+<span id="cb15-7"><a></a></span>
+<span id="cb15-8"><a></a>penguins <span class="sc">|&gt;</span> </span>
+<span id="cb15-9"><a></a>  <span class="fu">std_column</span>(body_mass_g) <span class="sc">|&gt;</span> </span>
+<span id="cb15-10"><a></a>  <span class="fu">slice_head</span>(<span class="at">n =</span> <span class="dv">5</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 5 × 8
   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
@@ -528,14 +535,10 @@ We implicitly assume observations are missing **completely** at random!
 </section>
 <section id="pa-8-data-frame-functions" class="slide level2">
 <h2>PA 8: Data Frame Functions</h2>
-<div class="columns">
-<div class="column" style="width:40%;">
 <p>You will write a tidy function for a contingency table like the <code>table()</code> function in base R.</p>
-</div><div class="column" style="width:5%;">
 
-</div><div class="column" style="width:55%;">
-
-</div><section id="collaborative-protocol" class="slide level2">
+<img data-src="https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/20dce8ef-f4bb-49ce-b084-81d677a0b4fc_rw_1920.jpg?h=b54b00e7e53d92de2fd8674c940321f9" alt="Digital illustration of a cute fuzzy monster holding a brief case that says tidy data, standing beside a friendly looking data table character, being welcomed with cheers by many other data tables and another cute monster jumping with joy." class="r-stretch quarto-figure-center"><p class="caption">Allison Horst</p></section>
+<section id="collaborative-protocol" class="slide level2">
 <h2>Collaborative Protocol</h2>
 <div class="small">
 <p>During your collaboration, your group will alternate between three roles:</p>
@@ -571,7 +574,8 @@ We implicitly assume observations are missing **completely** at random!
 </div>
 </div>
 </div>
-</section><section id="submission" class="slide level2">
+</section>
+<section id="submission" class="slide level2">
 <h2>Submission</h2>
 <ul>
 <li>Instead of a simple puzzle answer to this one, you will submit a screenshot of your function code . . .</li>
@@ -589,7 +593,8 @@ We implicitly assume observations are missing **completely** at random!
 </div>
 </div>
 </div>
-</section><section id="to-do" class="slide level2">
+</section>
+<section id="to-do" class="slide level2">
 <h2>To do…</h2>
 <ul>
 <li><strong>PA 8: Data Frame Functions</strong>
@@ -607,8 +612,6 @@ We implicitly assume observations are missing **completely** at random!
 </ul>
 
 
-</section>
-</div>
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
@@ -825,6 +828,44 @@ We implicitly assume observations are missing **completely** at random!
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")

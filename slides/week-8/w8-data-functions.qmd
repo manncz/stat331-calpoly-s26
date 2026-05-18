@@ -22,7 +22,11 @@ Today we will...
   + Calling Functions on Datasets
   + Tidy Evaluation
 
+## Common Final
 
+- Monday June, 8th 7-10pm
+- Building 180 Room 102
+- Email me **today** if you have a conflict
 
 # Writing Data Frame Functions
 
@@ -372,17 +376,13 @@ We implicitly assume observations are missing **completely** at random!
 
 ## PA 8: Data Frame Functions
 
-::: columns
-::: {.column width="40%"}
+
 You will write a tidy function for a contingency table like the `table()` function in base R. 
-:::
 
-::: {.column width="5%"}
-:::
 
-::: {.column width="55%"}
 
-:::
+![Allison Horst](https://cdn.myportfolio.com/45214904-6a61-4e23-98d6-b140f8654a40/20dce8ef-f4bb-49ce-b084-81d677a0b4fc_rw_1920.jpg?h=b54b00e7e53d92de2fd8674c940321f9){fig-alt="Digital illustration of a cute fuzzy monster holding a brief case that says tidy data, standing beside a friendly looking data table character, being welcomed with cheers by many other data tables and another cute monster jumping with joy."}
+
 
 ## Collaborative Protocol
 
