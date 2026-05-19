@@ -4911,7 +4911,7 @@
     "href": "slides/week-8/w8-simulation.html#simulations-big-picture",
     "title": "Simulation",
     "section": "Simulations – Big Picture",
-    "text": "Simulations – Big Picture"
+    "text": "Simulations – Big Picture\n\n“simulation” is a broad term…\nIn statistics, we will typically think of simulation as involving some form of randomness/stochasticity\nIn this class, we will consider:\n\nGenerating synthetic/simulated data from probability distributions\nRepeating random processes many times to understand their long-term behavior"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#the-pmap-family",
@@ -4939,7 +4939,7 @@
     "href": "slides/week-8/w8-simulation.html#wednesday-may-20",
     "title": "Simulation",
     "section": "Wednesday May 20",
-    "text": "Wednesday May 20\nToday we will…\n\nStatistical Distributions\nSimulating Data\nPA 8.2: Instrument Con"
+    "text": "Wednesday May 20\nToday we will…\n\nSimulation\n\nStatistical Distributions\nSimulating Data\nIterating Random Processes\n\nPA 8.2: Instrument Con"
   },
   {
     "objectID": "reading/week-8.2.html",
@@ -4988,7 +4988,7 @@
     "href": "slides/week-8/w8-simulation.html#distribution-functions-in-r-1",
     "title": "Simulation",
     "section": "Distribution Functions in R",
-    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate n random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 12.90136 14.45314 16.92792\n\nrnorm(n = 3)\n\n[1] -0.1923707  0.6384424 -1.0781340\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1]  -53.19816 -135.72071 -129.54559\n\n\n\n\nrt(n = 3, df = 11)\n\n[1]  1.3158358  0.4700858 -0.8475279\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 9 7 5\n\nrchisq(n = 3, df = 11)\n\n[1]  1.273001 10.164426 12.749629\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability p, compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given x.\nFor discrete dist: probability of getting exactly x.\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
+    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate n random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 19.68304 16.76434 10.32163\n\nrnorm(n = 3)\n\n[1] -2.1864121 -2.1622613  0.8358512\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1] -131.88410 -169.14390  -42.15545\n\n\n\n\nrt(n = 3, df = 11)\n\n[1]  1.1027812 -2.0349252  0.8525043\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 6 4 7\n\nrchisq(n = 3, df = 11)\n\n[1]  4.846342 11.296644  6.017880\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability p, compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given x.\nFor discrete dist: probability of getting exactly x.\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#common-final",
@@ -5003,5 +5003,12 @@
     "title": "Writing Data Functions",
     "section": "PA 8.1: Data Frame Functions",
     "text": "PA 8.1: Data Frame Functions\nYou will write a tidy function for a contingency table like the table() function in base R.\n\nAllison Horst"
+  },
+  {
+    "objectID": "slides/week-8/w8-simulation.html#project-checkpoint",
+    "href": "slides/week-8/w8-simulation.html#project-checkpoint",
+    "title": "Simulation",
+    "section": "Project Checkpoint",
+    "text": "Project Checkpoint\n\nFor checkpoint 3 you will turn in a partially complete lab with at least:\n\na preamble that describes the data\nthree question (one related to week 7 or after)\n\nReminder: references\n\nkeep track of all outside resources\nprovide links to generative AI “conversations”"
   }
 ]

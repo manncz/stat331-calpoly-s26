@@ -207,33 +207,41 @@
 <h2>Wednesday May 20</h2>
 <p>Today we will…</p>
 <ul>
+<li>Simulation
+<ul>
 <li>Statistical Distributions</li>
 <li>Simulating Data</li>
+<li>Iterating Random Processes</li>
+</ul></li>
 <li>PA 8.2: Instrument Con</li>
 </ul>
-<!--
-# Debugging Functions
-
-## A couple of strategies
-
-:::{.incremental}
-
-- Don't write a whole function at once (if it is complicated)!
-    - Write small parts and test each
-    - test often
-    
-- Set up intermediate tests
-
-- Print a lot
-
-- Just staring at your code *probably* won't help
-
-:::
-
--->
+</section>
+<section id="project-checkpoint" class="slide level2">
+<h2>Project Checkpoint</h2>
+<ul>
+<li>For checkpoint 3 you will turn in a partially complete lab with at least:
+<ul>
+<li>a preamble that describes the data</li>
+<li>three question (one related to week 7 or after)</li>
+</ul></li>
+<li>Reminder: references
+<ul>
+<li>keep track of all outside resources</li>
+<li>provide links to generative AI “conversations”</li>
+</ul></li>
+</ul>
 </section>
 <section id="simulations-big-picture" class="slide level2">
 <h2>Simulations – Big Picture</h2>
+<ul>
+<li class="fragment">“simulation” is a broad term…</li>
+<li class="fragment">In statistics, we will typically think of simulation as involving some form of randomness/stochasticity</li>
+<li class="fragment">In this class, we will consider:
+<ul>
+<li class="fragment">Generating synthetic/simulated data from probability distributions</li>
+<li class="fragment">Repeating random processes many times to understand their long-term behavior</li>
+</ul></li>
+</ul>
 </section>
 <section>
 <section id="statistical-distributions" class="title-slide slide level1 center">
@@ -434,30 +442,30 @@
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">runif</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">min =</span> <span class="dv">10</span>, <span class="at">max =</span> <span class="dv">20</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 12.90136 14.45314 16.92792</code></pre>
+<pre><code>[1] 19.68304 16.76434 10.32163</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] -0.1923707  0.6384424 -1.0781340</code></pre>
+<pre><code>[1] -2.1864121 -2.1622613  0.8358512</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a></a><span class="fu">rnorm</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">mean =</span> <span class="sc">-</span><span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">50</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  -53.19816 -135.72071 -129.54559</code></pre>
+<pre><code>[1] -131.88410 -169.14390  -42.15545</code></pre>
 </div>
 </div>
 </div><div class="column">
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a></a><span class="fu">rt</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">df =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  1.3158358  0.4700858 -0.8475279</code></pre>
+<pre><code>[1]  1.1027812 -2.0349252  0.8525043</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a></a><span class="fu">rbinom</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">prob =</span> <span class="fl">0.7</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 9 7 5</code></pre>
+<pre><code>[1] 6 4 7</code></pre>
 </div>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a></a><span class="fu">rchisq</span>(<span class="at">n =</span> <span class="dv">3</span>, <span class="at">df =</span> <span class="dv">11</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1]  1.273001 10.164426 12.749629</code></pre>
+<pre><code>[1]  4.846342 11.296644  6.017880</code></pre>
 </div>
 </div>
 </div></div>
@@ -990,6 +998,11 @@
 </div>
 </div>
 </div>
+</section></section>
+<section>
+<section id="simulation-iterating-random-processes" class="title-slide slide level1 center">
+<h1>Simulation – Iterating Random Processes</h1>
+
 </section>
 <section id="example-birthday-simulation" class="slide level2">
 <h2>Example: Birthday Simulation</h2>

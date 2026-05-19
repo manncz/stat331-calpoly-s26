@@ -23,34 +23,32 @@ library(gt)
 
 Today we will...
 
-+ Statistical Distributions
-+ Simulating Data
++ Simulation
+  + Statistical Distributions
+  + Simulating Data
+  + Iterating Random Processes
 + PA 8.2: Instrument Con
 
-<!--
-# Debugging Functions
 
-## A couple of strategies
+## Project Checkpoint
 
-:::{.incremental}
-
-- Don't write a whole function at once (if it is complicated)!
-    - Write small parts and test each
-    - test often
-    
-- Set up intermediate tests
-
-- Print a lot
-
-- Just staring at your code *probably* won't help
-
-:::
-
--->
+- For checkpoint 3 you will turn in a partially complete lab with at least:
+  - a preamble that describes the data
+  - three question (one related to week 7 or after)
+- Reminder: references
+  - keep track of all outside resources
+  - provide links to generative AI "conversations"
 
 ## Simulations -- Big Picture
 
+:::incremental
+- "simulation" is a broad term...
+- In statistics, we will typically think of simulation as involving some form of randomness/stochasticity
+- In this class, we will consider:
+  - Generating synthetic/simulated data from probability distributions
+  - Repeating random processes many times to understand their long-term behavior
 
+:::
 
 # Statistical Distributions
 
@@ -624,6 +622,7 @@ fake_data |>
   kableExtra::kable_styling(font_size = 25)
 ```
 
+# Simulation -- Iterating Random Processes
 
 ## Example: Birthday Simulation
 
@@ -996,7 +995,7 @@ Which is clearer to a general audience?:
 
 :::{columns}
 :::{.column width=50%}
-Work with statistical distributions to determine if an instrument salesman is lying.
+Work with statistical distributions and iterating random processes to determine if an instrument salesman is lying.
 :::
 :::{.column width=50%}
 ![](images/The_Music_Man_poster_1957.jpg){width=80%}
