@@ -2289,7 +2289,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nStatistical Inference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nLinear Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -4855,7 +4855,7 @@
     "href": "slides/week-8/w8-simulation.html#pa-8.2-instrument-con",
     "title": "Simulation",
     "section": "PA 8.2: Instrument Con",
-    "text": "PA 8.2: Instrument Con\n\n\nWork with statistical distributions to determine if an instrument salesman is lying.\n\n\n\n–&gt;"
+    "text": "PA 8.2: Instrument Con\n\n\nWork with statistical distributions and iterating random processes to determine if an instrument salesman is lying.\n\n\n\n–&gt;"
   },
   {
     "objectID": "slides/week-8/w8-simulation.html#lab-8-data-frame-functions-and-simulation",
@@ -4988,7 +4988,7 @@
     "href": "slides/week-8/w8-simulation.html#distribution-functions-in-r-1",
     "title": "Simulation",
     "section": "Distribution Functions in R",
-    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate n random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 19.68304 16.76434 10.32163\n\nrnorm(n = 3)\n\n[1] -2.1864121 -2.1622613  0.8358512\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1] -131.88410 -169.14390  -42.15545\n\n\n\n\nrt(n = 3, df = 11)\n\n[1]  1.1027812 -2.0349252  0.8525043\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 6 4 7\n\nrchisq(n = 3, df = 11)\n\n[1]  4.846342 11.296644  6.017880\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability p, compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given x.\nFor discrete dist: probability of getting exactly x.\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
+    "text": "Distribution Functions in R\n\nrpqd\n\n\nr is for random sampling.\n\nGenerate n random values from a distribution.\nWe use this to simulate data (create pretend observations).\n\n\n\n\nrunif(n = 3, min = 10, max = 20)\n\n[1] 16.92139 18.04868 14.02135\n\nrnorm(n = 3)\n\n[1]  1.6698102  0.4636894 -0.5901209\n\nrnorm(n = 3, mean = -100, sd = 50)\n\n[1]  -25.23379 -129.34119  -73.10600\n\n\n\n\nrt(n = 3, df = 11)\n\n[1] -0.7259724  0.6612374 -0.4653897\n\nrbinom(n = 3, size = 10, prob = 0.7)\n\n[1] 8 4 5\n\nrchisq(n = 3, df = 11)\n\n[1] 11.272748  5.271973  6.008911\n\n\n\n\n\np is for probability.\n\nCompute the chances of observing a value less than x: \\(P(X &lt; x)\\)\nWe use this for calculating p-values.\n\n\n\n\npnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.8413447\n\n1 - pnorm(q = 70, mean = 67, sd = 3)\n\n[1] 0.1586553\n\npnorm(q = 70, mean = 67, sd = 3, lower.tail = FALSE)\n\n[1] 0.1586553\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nq is for quantile.\n\nGiven a probability p, compute \\(x\\) such that \\(P(X &lt; x) = p\\).\nThe q functions are “backwards” of the p functions.\nWe use this for calculating critical values (z*).\n\n\nqnorm(p = 0.95)\n\n[1] 1.644854\n\nqnorm(p = 0.95, mean = 67, sd = 3)\n\n[1] 71.93456\n\n\n\n\nd is for density.\n\nCompute the height of a distribution curve at a given x.\nFor discrete dist: probability of getting exactly x.\nFor continuous dist: usually meaningless.\nMostly useful for plotting the distribution!\n\nProbability of exactly 12 heads in 20 coin tosses, with a 70% chance of tails?\n\ndbinom(x = 12, size = 20, prob = 0.3)\n\n[1] 0.003859282"
   },
   {
     "objectID": "slides/week-8/w8-data-functions.html#common-final",
@@ -5010,5 +5010,215 @@
     "title": "Simulation",
     "section": "Project Checkpoint",
     "text": "Project Checkpoint\n\nFor checkpoint 3 you will turn in a partially complete lab with at least:\n\na preamble that describes the data\nthree question (one related to week 7 or after)\n\nReminder: references\n\nkeep track of all outside resources\nprovide links to generative AI “conversations”"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#wednesday-may-27",
+    "href": "slides/week-9/w9-regression.html#wednesday-may-27",
+    "title": "Linear Regression",
+    "section": "Wednesday, May 27",
+    "text": "Wednesday, May 27\nToday we will…\n\nGroup Quiz 8\nNew Material\n\nReview of Simple Linear Regression\nAssessing Model Fit\n\nWork Time\n\nLab 9: Regression Exploration\nGroup Project"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#nc-births-data",
+    "href": "slides/week-9/w9-regression.html#nc-births-data",
+    "title": "Linear Regression",
+    "section": "NC Births Data",
+    "text": "NC Births Data\nThis dataset contains a random sample of 1,000 births from North Carolina in 2004 (sampled from a larger dataset).\n\nEach case describes the birth of a single child, including characteristics of the:\n\nchild (birth weight, length of gestation, etc.).\nbirth parents (age, weight gained during pregnancy, smoking habits, etc.)."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#nc-births-data-1",
+    "href": "slides/week-9/w9-regression.html#nc-births-data-1",
+    "title": "Linear Regression",
+    "section": "NC Births Data",
+    "text": "NC Births Data\n\nlibrary(openintro)\ndata(ncbirths)\nslice_sample(ncbirths, n = 10) |&gt; \n  knitr::kable() |&gt; \n  kableExtra::scroll_box(height = \"400px\") |&gt; \n  kableExtra::kable_styling(font_size = 30)\n\n\n \n  \n    fage \n    mage \n    mature \n    weeks \n    premie \n    visits \n    marital \n    gained \n    weight \n    lowbirthweight \n    gender \n    habit \n    whitemom \n  \n \n\n  \n    22 \n    21 \n    younger mom \n    38 \n    full term \n    14 \n    not married \n    36 \n    6.38 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    NA \n    25 \n    younger mom \n    39 \n    full term \n    6 \n    not married \n    40 \n    7.38 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    40 \n    38 \n    mature mom \n    42 \n    full term \n    13 \n    married \n    20 \n    7.56 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    28 \n    20 \n    younger mom \n    35 \n    premie \n    7 \n    not married \n    30 \n    4.50 \n    low \n    male \n    nonsmoker \n    not white \n  \n  \n    21 \n    24 \n    younger mom \n    40 \n    full term \n    18 \n    married \n    35 \n    7.13 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    28 \n    28 \n    younger mom \n    40 \n    full term \n    15 \n    married \n    32 \n    7.75 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    35 \n    34 \n    younger mom \n    39 \n    full term \n    13 \n    married \n    30 \n    7.56 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    30 \n    28 \n    younger mom \n    39 \n    full term \n    13 \n    not married \n    0 \n    7.50 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    41 \n    36 \n    mature mom \n    31 \n    premie \n    5 \n    married \n    40 \n    3.25 \n    low \n    male \n    nonsmoker \n    white \n  \n  \n    20 \n    20 \n    younger mom \n    40 \n    full term \n    15 \n    not married \n    46 \n    8.38 \n    not low \n    male \n    nonsmoker \n    white"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#relationships-between-variables-1",
+    "href": "slides/week-9/w9-regression.html#relationships-between-variables-1",
+    "title": "Linear Regression",
+    "section": "Relationships Between Variables",
+    "text": "Relationships Between Variables\nIn statistical models, we generally have one variable that is the response and one or more variables that are explanatory.\n\n\n\nResponse variable\n\nAlso: \\(y\\), dependent variable\nThis is the quantity we want to understand.\n\n\n\n\nExplanatory variable\n\nAlso: \\(x\\), independent variable, predictor\nThis is something we think might be related to the response."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#visualizing-a-relationship",
+    "href": "slides/week-9/w9-regression.html#visualizing-a-relationship",
+    "title": "Linear Regression",
+    "section": "Visualizing a Relationship",
+    "text": "Visualizing a Relationship\nThe scatterplot has been called the most “generally useful invention in the history of statistical graphics.”\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterizing Relationships\n\nForm: linear, quadratic, non-linear?\nDirection: positive, negative?\nStrength: how much scatter/noise?\nUnusual observations: do points not fit the overall pattern?"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#your-turn",
+    "href": "slides/week-9/w9-regression.html#your-turn",
+    "title": "Linear Regression",
+    "section": "Your turn!",
+    "text": "Your turn!\nHow would you characterize this relationship?\n\n\n\nShape?\nDirection?\nStrength?\nOutliers?\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote: Much of what we are doing at this stage involves making judgment calls!\n\nAs we work through these, please keep in mind that much of what we are doing at this stage involves making judgment calls. This is part of the nature of statistics, and while it can be frustrating - especially as a beginner - it is inescapable. For better or for worse, statistics is not a field where there is one right answer. There are of course an infinite number of indefensible claims, but many judgments are open to interpretation.\nThere isn’t a universal, hard-and-fast definition of what constitutes an outlier, but they are often easy to spot in a scatterplot.\n\nWhat observations would you consider to be outliers?\nHow would you go about removing these outliers from the data?"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#fitting-a-model",
+    "href": "slides/week-9/w9-regression.html#fitting-a-model",
+    "title": "Linear Regression",
+    "section": "Fitting a Model",
+    "text": "Fitting a Model\nWe often assume the value of our response variable is some function of our explanatory variable, plus some random noise.\n\\[response = f(explanatory) + noise\\]\n\nThere is a mathematical function \\(f\\) that can translate values of one variable into values of another.\nBut there is some randomness in the process."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#simple-linear-regression-slr",
+    "href": "slides/week-9/w9-regression.html#simple-linear-regression-slr",
+    "title": "Linear Regression",
+    "section": "Simple Linear Regression (SLR)",
+    "text": "Simple Linear Regression (SLR)\nIf we assume the relationship between \\(x\\) and \\(y\\) takes the form of a linear function…\n\\[\n  response = intercept + slope \\times explanatory + noise\n\\]\n\nWe use the following notation for this model:\n\n\nPopulation Regression Model\n\\(Y_i = \\beta_0 + \\beta_1 X_i + \\varepsilon_i\\)\nwhere \\(\\varepsilon \\sim N(0, \\sigma)\\) is the random noise.\n\nFitted Regression Model\n\\(\\hat{y}_i = \\hat{\\beta}_0 + \\hat{\\beta}_1 x_i\\)\nwhere   \\(\\hat{}\\)   indicates the value was estimated."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#fitting-an-slr-model",
+    "href": "slides/week-9/w9-regression.html#fitting-an-slr-model",
+    "title": "Linear Regression",
+    "section": "Fitting an SLR Model",
+    "text": "Fitting an SLR Model\n\nQuestion geom_smooth  lm \n\n\nRegress baby birthweight (response variable) on the pregnant parent’s weight gain (explanatory variable).\n\nWe are assuming there is a linear relationship between how much weight the parent gains and how much the baby weighs at birth.\n\n\n\nWhen visualizing data, fit a regression line (\\(y\\) on \\(x\\)) to your scatterplot.\n\nncbirths |&gt; \n  ggplot(aes(x = gained, y = weight)) +\n  geom_jitter() + \n  geom_smooth(method = \"lm\") \n\n\n\n\n\n\n\n\n\n\nThe lm() function fits a linear regression model.\n\nWe use formula notation to specify the response variable (LHS) and the explanatory variable (RHS) y ~ x.\nThis code creates an lm object.\n\n\nncbirth_lm &lt;- lm(weight ~ gained, \n                 data = ncbirths)"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#model-outputs",
+    "href": "slides/week-9/w9-regression.html#model-outputs",
+    "title": "Linear Regression",
+    "section": "Model Outputs",
+    "text": "Model Outputs\n\nlm objectCoefficients broomResiduals\n\n\n\nsummary(ncbirth_lm)\n\n\nCall:\nlm(formula = weight ~ gained, data = ncbirths)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-6.4085 -0.6950  0.1643  0.9222  4.5158 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  6.63003    0.11120  59.620  &lt; 2e-16 ***\ngained       0.01614    0.00332   4.862 1.35e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.474 on 971 degrees of freedom\n  (27 observations deleted due to missingness)\nMultiple R-squared:  0.02377,   Adjusted R-squared:  0.02276 \nF-statistic: 23.64 on 1 and 971 DF,  p-value: 1.353e-06\n\n\n\n\n\nbroom::tidy(ncbirth_lm)\n\n\n\n\n \n  \n    term \n    estimate \n    std.error \n    statistic \n    p.value \n  \n \n\n  \n    (Intercept) \n    6.6300336 \n    0.1112054 \n    59.619718 \n    0.0e+00 \n  \n  \n    gained \n    0.0161405 \n    0.0033195 \n    4.862253 \n    1.4e-06 \n  \n\n\n\n\n\n\n\n\nIntercept: expected mean of \\(y\\), when \\(x\\) is 0.\n\nSomeone gaining 0 lb, will have a baby weighing 6.63 lbs, on average.\n\n\n\n\nSlope: expected change in the mean of \\(y\\), when \\(x\\) increases by 1 unit.\n\nFor each pound gained, the baby will weigh 0.016 lbs more, on average.\n\n\n\n\n\nThe difference between observed (point) and expected (line).\n\n\n\n\nncbirth_lm$residuals |&gt; \n  head(3)\n\n         1          2          3 \n 0.3866279  0.9271567 -0.6133721 \n\n\n\n\nresid(ncbirth_lm) |&gt; \n  head(3)\n\n         1          2          3 \n 0.3866279  0.9271567 -0.6133721 \n\n\n\n\nbroom::augment(ncbirth_lm) |&gt; \n  head(3)\n\n\n\n\n \n  \n    .rownames \n    weight \n    gained \n    .fitted \n    .resid \n    .hat \n    .sigma \n    .cooksd \n    .std.resid \n  \n \n\n  \n    1 \n    7.63 \n    38 \n    7.243372 \n    0.3866279 \n    0.0013265 \n    1.474586 \n    0.0000458 \n    0.2624942 \n  \n  \n    2 \n    7.88 \n    20 \n    6.952843 \n    0.9271567 \n    0.0015686 \n    1.474337 \n    0.0003113 \n    0.6295530 \n  \n  \n    3 \n    6.63 \n    38 \n    7.243372 \n    -0.6133721 \n    0.0013265 \n    1.474506 \n    0.0001152 \n    -0.4164381"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#model-diagnostics",
+    "href": "slides/week-9/w9-regression.html#model-diagnostics",
+    "title": "Linear Regression",
+    "section": "Model Diagnostics",
+    "text": "Model Diagnostics\nThere are four conditions that must be met for a linear regression model to be appropriate:\n\nLinear relationship.\nIndependent observations.\nNormally distributed residuals.\nEqual variance of residuals."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#model-diagnostics-1",
+    "href": "slides/week-9/w9-regression.html#model-diagnostics-1",
+    "title": "Linear Regression",
+    "section": "Model Diagnostics",
+    "text": "Model Diagnostics\n\nLinearityIndependenceNormalityEqual Variance\n\n\nIs the relationship linear?\n\n\n\nAlmost nothing will look perfectly linear.\nBe careful with relationships that have curvature.\nTry transforming your variables!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAre the observations independent?   Difficult to tell!\n\n\nWhat does independence mean?\nShould not be able to know the \\(y\\) value for one observation based on the \\(y\\) value for another observation.\n\nIndependence violations:\n\nStock market prices over time.\nGeographical similarities.\nBiological conditions of family members.\nRepeated observations.\n\n\n\n\nAre the residuals normally distributed?\nLess important than linearity or independence:\n\n\n\n\n\n\n\n\n\n\n\nDo the residuals have equal (constant) variance?\n\n\n\nThe variability of points around the regression line is roughly constant.\nData with non-equal variance across the range of \\(x\\) can seriously mis-estimate the variability of the slope.\n\n\n\nncbirth_lm |&gt; \n  augment() |&gt; \n  ggplot(aes(x = .fitted, y = .resid)) +\n  geom_point() +\n  geom_hline(yintercept = 0, linetype = \"dashed\", \n             color = \"red\", lwd = 1.5)"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#assessing-model-fit",
+    "href": "slides/week-9/w9-regression.html#assessing-model-fit",
+    "title": "Linear Regression",
+    "section": "Assessing Model Fit",
+    "text": "Assessing Model Fit\nSum of Square Errors (SSE)\n\nThis is calculated as the sum of the squared residuals.\nA small SSE means small differences between observed and fitted values.\nAlso: Sum Sq of Residuals or deviance."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#assessing-model-fit-1",
+    "href": "slides/week-9/w9-regression.html#assessing-model-fit-1",
+    "title": "Linear Regression",
+    "section": "Assessing Model Fit",
+    "text": "Assessing Model Fit\nRoot Mean Square Error (RMSE)\n\n\n\nThe standard deviation of the residuals.\nA small RMSE means small differences between observed and fitted values.\nAlso: Residual standard error or sigma.\n\n\n\nsummary(ncbirth_lm)\n\n\nCall:\nlm(formula = weight ~ gained, data = ncbirths)\n\nResiduals:\n    Min      1Q  Median      3Q     Max \n-6.4085 -0.6950  0.1643  0.9222  4.5158 \n\nCoefficients:\n            Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)  6.63003    0.11120  59.620  &lt; 2e-16 ***\ngained       0.01614    0.00332   4.862 1.35e-06 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 1.474 on 971 degrees of freedom\n  (27 observations deleted due to missingness)\nMultiple R-squared:  0.02377,   Adjusted R-squared:  0.02276 \nF-statistic: 23.64 on 1 and 971 DF,  p-value: 1.353e-06"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#assessing-model-fit-2",
+    "href": "slides/week-9/w9-regression.html#assessing-model-fit-2",
+    "title": "Linear Regression",
+    "section": "Assessing Model Fit",
+    "text": "Assessing Model Fit\nR-squared\n\nThe proportion of variability in response accounted for by the linear model.\nA large R-squared means the explanatory variable is good at explaining the response.\nR-squared is between 0 and 1.\n\n\nbroom::glance(ncbirth_lm) |&gt; \n  knitr::kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nr.squared\nadj.r.squared\nsigma\nstatistic\np.value\ndf\nlogLik\nAIC\nBIC\ndeviance\ndf.residual\nnobs\n\n\n\n\n0.0237689\n0.0227635\n1.473879\n23.6415\n1.4e-06\n1\n-1757.05\n3520.101\n3534.742\n2109.321\n971\n973"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#model-comparison",
+    "href": "slides/week-9/w9-regression.html#model-comparison",
+    "title": "Linear Regression",
+    "section": "Model Comparison",
+    "text": "Model Comparison\nRegress baby birthweight on…\n\n\n… gestation weeks.\n\nweight_weeks &lt;- lm(weight ~ weeks, \n                   data = ncbirths)\n\n\nSSE = 1246.55\nRMSE = 1.119\n\\(R^2\\) = 0.449\n\n\n… number of doctor visits.\n\nweight_visits &lt;- lm(weight ~ visits, \n                    data = ncbirths)\n\n\nSSE = 2152.74\nRMSE = 1.475\n\\(R^2\\) = 0.01819\n\n\n\nWhy does it make sense that the left model is better?"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#multiple-linear-regression",
+    "href": "slides/week-9/w9-regression.html#multiple-linear-regression",
+    "title": "Linear Regression",
+    "section": "Multiple Linear Regression",
+    "text": "Multiple Linear Regression\nWhen fitting a linear regression, you can include…\n…multiple explanatory variables.\nlm(y ~ x1 + x2 + x3 + ... + xn)\n…interaction terms.\nlm(y ~ x1 + x2 + x1:x2)\nlm(y ~ x1*x2)\n…quadratic relationships.\nlm(y ~ I(x1^2) + x1)"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#communicating-regression-model-results",
+    "href": "slides/week-9/w9-regression.html#communicating-regression-model-results",
+    "title": "Linear Regression",
+    "section": "Communicating Regression Model Results",
+    "text": "Communicating Regression Model Results\n\nYou can report the estimated linear model:\n\n\\[\\hat{y}_i = 6.6 + .016x_i\\]\nwhere \\(\\hat{y}_i\\) is the estimated birth weight in pounds and \\(x_i\\) is the weight gained during pregnancy by the birthing parent in pounds.\n\nDiscuss the slope:\n\nThink about units that are helpful for interpretation!\ne.g.: We estimate that for every 10 pounds gained during pregnancy by the birthing parent the baby will weigh around 2.5 ounces more, on average."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#regression-table",
+    "href": "slides/week-9/w9-regression.html#regression-table",
+    "title": "Linear Regression",
+    "section": "Regression Table",
+    "text": "Regression Table\n\nCommonly researchers will include a table like this to report the estimated coefficients and inference:\n\n\nncbirth_lm |&gt; \n  tbl_regression(intercept = TRUE)\n\n\n\n\n  \n    \n      Characteristic\n      Beta\n      95% CI\n      p-value\n    \n  \n  \n    (Intercept)\n6.6\n6.4, 6.8\n&lt;0.001\n    gained\n0.02\n0.01, 0.02\n&lt;0.001\n  \n  \n    \n      Abbreviation: CI = Confidence Interval\n    \n  \n\n\n\n\n\nThis is a nice build-it function from an extension of the gt package (gtsummary)"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#the-map2-family",
+    "href": "slides/week-9/w9-regression.html#the-map2-family",
+    "title": "Linear Regression",
+    "section": "The map2() Family",
+    "text": "The map2() Family\nThese functions allow us to iterate over two lists at the same time.\n\n\nEach function has two list arguments, denoted .x and .y, and a function argument."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#small-map2-example",
+    "href": "slides/week-9/w9-regression.html#small-map2-example",
+    "title": "Linear Regression",
+    "section": "Small map2() Example",
+    "text": "Small map2() Example\nFind the minimum.\n\na &lt;- c(1, 2, 4)\nb &lt;- c(6, 5, 3)\n\nmap2_chr(.x = a, \n         .y = b,\n         ~ str_glue(\"The minimum of {.x} and {.y} is {min(.x, .y)}.\"))\n\n[1] \"The minimum of 1 and 6 is 1.\" \"The minimum of 2 and 5 is 2.\"\n[3] \"The minimum of 4 and 3 is 3.\""
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#nest-and-unnest",
+    "href": "slides/week-9/w9-regression.html#nest-and-unnest",
+    "title": "Linear Regression",
+    "section": "nest() and unnest()",
+    "text": "nest() and unnest()\n\nWe can pair functions from the map() family very nicely with two tidyr functions: nest() and unnest().\nThese allow us to easily map functions onto subsets of the data."
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#nest",
+    "href": "slides/week-9/w9-regression.html#nest",
+    "title": "Linear Regression",
+    "section": "nest()",
+    "text": "nest()\nNest subsets the data (as tibbles) inside a tibble.\n\nSpecify the column(s) to create subsets on.\n\n\n\n\nncbirths |&gt; \n  nest(premie_dat = -premie)\n\n# A tibble: 3 × 2\n  premie    premie_dat         \n  &lt;fct&gt;     &lt;list&gt;             \n1 full term &lt;tibble [846 × 12]&gt;\n2 premie    &lt;tibble [152 × 12]&gt;\n3 &lt;NA&gt;      &lt;tibble [2 × 12]&gt;  \n\n\n\n\nncbirths |&gt; \n  nest(ph_dat = -c(premie, habit))\n\n# A tibble: 6 × 3\n  premie    habit     ph_dat             \n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;             \n1 full term nonsmoker &lt;tibble [739 × 11]&gt;\n2 premie    nonsmoker &lt;tibble [133 × 11]&gt;\n3 full term smoker    &lt;tibble [107 × 11]&gt;\n4 premie    smoker    &lt;tibble [19 × 11]&gt; \n5 &lt;NA&gt;      nonsmoker &lt;tibble [1 × 11]&gt;  \n6 &lt;NA&gt;      &lt;NA&gt;      &lt;tibble [1 × 11]&gt;"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#unnest",
+    "href": "slides/week-9/w9-regression.html#unnest",
+    "title": "Linear Regression",
+    "section": "unnest()",
+    "text": "unnest()\nUn-nest the data by row binding the subsets back together.\n\nSpecify the column(s) that contains the subsets.\n\n\nncbirths |&gt; \n  nest(premie_dat = -premie) |&gt; \n  unnest(premie_dat) |&gt; \n  head()\n\n# A tibble: 6 × 13\n  premie     fage  mage mature weeks visits marital gained weight lowbirthweight\n  &lt;fct&gt;     &lt;int&gt; &lt;int&gt; &lt;fct&gt;  &lt;int&gt;  &lt;int&gt; &lt;fct&gt;    &lt;int&gt;  &lt;dbl&gt; &lt;fct&gt;         \n1 full term    NA    13 young…    39     10 not ma…     38   7.63 not low       \n2 full term    NA    14 young…    42     15 not ma…     20   7.88 not low       \n3 full term    19    15 young…    37     11 not ma…     38   6.63 not low       \n4 full term    21    15 young…    41      6 not ma…     34   8    not low       \n5 full term    NA    15 young…    39      9 not ma…     27   6.38 not low       \n6 full term    NA    15 young…    38     19 not ma…     22   5.38 low           \n# ℹ 3 more variables: gender &lt;fct&gt;, habit &lt;fct&gt;, whitemom &lt;fct&gt;"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#big-map2-example---regression",
+    "href": "slides/week-9/w9-regression.html#big-map2-example---regression",
+    "title": "Linear Regression",
+    "section": "Big map2() Example - Regression",
+    "text": "Big map2() Example - Regression\n\nnest()lm()predict()unnest()\n\n\n\nncbirths_clean &lt;- ncbirths |&gt; \n    filter(!if_any(.cols = c(premie, habit, weight, gained),\n                 .fns = is.na))\n\nncbirths_clean |&gt; \n  nest(ph_dat = -c(premie, habit))\n\n# A tibble: 4 × 3\n  premie    habit     ph_dat             \n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;             \n1 full term nonsmoker &lt;tibble [724 × 11]&gt;\n2 premie    nonsmoker &lt;tibble [126 × 11]&gt;\n3 full term smoker    &lt;tibble [103 × 11]&gt;\n4 premie    smoker    &lt;tibble [19 × 11]&gt; \n\n\n\n\n\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)))\n\n# A tibble: 4 × 4\n  premie    habit     premie_smoke_dat    mod   \n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;              &lt;list&gt;\n1 full term nonsmoker &lt;tibble [724 × 11]&gt; &lt;lm&gt;  \n2 premie    nonsmoker &lt;tibble [126 × 11]&gt; &lt;lm&gt;  \n3 full term smoker    &lt;tibble [103 × 11]&gt; &lt;lm&gt;  \n4 premie    smoker    &lt;tibble [19 × 11]&gt;  &lt;lm&gt;  \n\n\n\n\n\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)),\n         pred_weight = map2(.x = mod,\n                         .y = premie_smoke_dat, \n                         .f = ~ predict(object = .x, data = .y)))\n\n# A tibble: 4 × 5\n  premie    habit     premie_smoke_dat    mod    pred_weight\n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;              &lt;list&gt; &lt;list&gt;     \n1 full term nonsmoker &lt;tibble [724 × 11]&gt; &lt;lm&gt;   &lt;dbl [724]&gt;\n2 premie    nonsmoker &lt;tibble [126 × 11]&gt; &lt;lm&gt;   &lt;dbl [126]&gt;\n3 full term smoker    &lt;tibble [103 × 11]&gt; &lt;lm&gt;   &lt;dbl [103]&gt;\n4 premie    smoker    &lt;tibble [19 × 11]&gt;  &lt;lm&gt;   &lt;dbl [19]&gt; \n\n\n\n\n\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)),\n         pred_weight = map2(.x = mod,\n                         .y = premie_smoke_dat, \n                         .f = ~ predict(object = .x, data = .y))) |&gt; \n  select(-mod) |&gt; \n  unnest(cols = c(premie_smoke_dat, pred_weight)) |&gt; \n  select(premie, habit, weight, gained, pred_weight) |&gt; \n  head()\n\n# A tibble: 6 × 5\n  premie    habit     weight gained pred_weight\n  &lt;fct&gt;     &lt;fct&gt;      &lt;dbl&gt;  &lt;int&gt;       &lt;dbl&gt;\n1 full term nonsmoker   7.63     38        7.55\n2 full term nonsmoker   7.88     20        7.43\n3 full term nonsmoker   6.63     38        7.55\n4 full term nonsmoker   8        34        7.53\n5 full term nonsmoker   6.38     27        7.48\n6 full term nonsmoker   5.38     22        7.44"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#example-cont.---regression-coefficients",
+    "href": "slides/week-9/w9-regression.html#example-cont.---regression-coefficients",
+    "title": "Linear Regression",
+    "section": "Example Cont. - Regression Coefficients",
+    "text": "Example Cont. - Regression Coefficients\n\nnest() + lm()Pull CoefficientsFormat Table\n\n\n\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)),\n         coefs = map(mod,\n                      ~ broom::tidy(.x))) \n\n# A tibble: 4 × 5\n  premie    habit     premie_smoke_dat    mod    coefs           \n  &lt;fct&gt;     &lt;fct&gt;     &lt;list&gt;              &lt;list&gt; &lt;list&gt;          \n1 full term nonsmoker &lt;tibble [724 × 11]&gt; &lt;lm&gt;   &lt;tibble [2 × 5]&gt;\n2 premie    nonsmoker &lt;tibble [126 × 11]&gt; &lt;lm&gt;   &lt;tibble [2 × 5]&gt;\n3 full term smoker    &lt;tibble [103 × 11]&gt; &lt;lm&gt;   &lt;tibble [2 × 5]&gt;\n4 premie    smoker    &lt;tibble [19 × 11]&gt;  &lt;lm&gt;   &lt;tibble [2 × 5]&gt;\n\n\n\n\n\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)),\n         coefs = map(mod,\n                      ~ broom::tidy(.x))) |&gt; \n  select(premie, habit, coefs) |&gt; \n  unnest(cols = coefs)\n\n# A tibble: 8 × 7\n  premie    habit     term        estimate std.error statistic  p.value\n  &lt;fct&gt;     &lt;fct&gt;     &lt;chr&gt;          &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;    &lt;dbl&gt;\n1 full term nonsmoker (Intercept)  7.29      0.0965      75.5  0       \n2 full term nonsmoker gained       0.00705   0.00285      2.48 1.34e- 2\n3 premie    nonsmoker (Intercept)  4.55      0.393       11.6  1.75e-21\n4 premie    nonsmoker gained       0.0258    0.0137       1.89 6.09e- 2\n5 full term smoker    (Intercept)  6.77      0.223       30.3  1.71e-52\n6 full term smoker    gained       0.0121    0.00613      1.98 5.08e- 2\n7 premie    smoker    (Intercept)  5.75      0.880        6.54 5.04e- 6\n8 premie    smoker    gained      -0.0320    0.0293      -1.09 2.89e- 1\n\n\n\n\n\n\nCode\nncbirths_clean |&gt; \n  nest(premie_smoke_dat = -c(premie, habit)) |&gt; \n  mutate(mod = map(premie_smoke_dat, \n                   ~ lm(weight ~ gained, data = .x)),\n         coefs = map(mod,\n                      ~ broom::tidy(.x))) |&gt; \n  select(premie, habit, coefs) |&gt; \n  unnest(cols = coefs) |&gt; \n  mutate(term = fct_recode(.f = term,\n                            \"Intercept\" = \"(Intercept)\",\n                            \"Mother Weight Gain (lb.)\" = \"gained\"\n                            )) |&gt; \n  select(-std.error, -statistic) |&gt; \n  mutate(p.value = case_when(p.value &lt; .0001 ~ \"&lt;.001\",\n                             TRUE ~ as.character(round(p.value, 3)))) |&gt; \n  arrange(premie, habit, term) |&gt; \n  gt() |&gt; \n  fmt_number(estimate,\n             decimals = 3) |&gt; \n  tab_row_group(\n    label = md(\"**Premature + Smoker**\"),\n    rows = premie == \"premie\" & habit == \"smoker\") |&gt; \n  tab_row_group(\n    label = md(\"**Premature + Non-Smoker**\"),\n    rows = premie == \"premie\" & habit == \"nonsmoker\") |&gt; \n  tab_row_group(\n    label = md(\"**Full Term + Smoker**\"),\n    rows = premie == \"full term\" & habit == \"smoker\") |&gt; \n  tab_row_group(\n    label = md(\"**Full Term + Non-Smoker**\"),\n    rows = premie == \"full term\" & habit == \"nonsmoker\") |&gt; \n  cols_hide(c(premie, habit)) |&gt; \n  cols_align(align = \"left\",\n             columns = term) |&gt; \n  tab_style(\n    style = cell_fill(color = \"gray85\"),\n    locations = cells_row_groups()) |&gt; \n  cols_label(\n    \"term\" = md(\"**Model & Term**\"),\n    \"estimate\" = md(\"**Est. Coef.**\"),\n    \"p.value\" = md(\"**p-value**\")\n  ) \n\n\n\n\n\n  \n    \n      Model & Term\n      Est. Coef.\n      p-value\n    \n  \n  \n    \n      Full Term + Non-Smoker\n    \n    Intercept\n7.285\n&lt;.001\n    Mother Weight Gain (lb.)\n0.007\n0.013\n    \n      Full Term + Smoker\n    \n    Intercept\n6.767\n&lt;.001\n    Mother Weight Gain (lb.)\n0.012\n0.051\n    \n      Premature + Non-Smoker\n    \n    Intercept\n4.549\n&lt;.001\n    Mother Weight Gain (lb.)\n0.026\n0.061\n    \n      Premature + Smoker\n    \n    Intercept\n5.754\n&lt;.001\n    Mother Weight Gain (lb.)\n−0.032\n0.289"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#pa-9.1-mystery-animal",
+    "href": "slides/week-9/w9-regression.html#pa-9.1-mystery-animal",
+    "title": "Linear Regression",
+    "section": "PA 9.1: Mystery Animal",
+    "text": "PA 9.1: Mystery Animal"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#to-do",
+    "href": "slides/week-9/w9-regression.html#to-do",
+    "title": "Linear Regression",
+    "section": "To do…",
+    "text": "To do…\n\nOptional Project Checkpoint 4\n\nDue Friday 5/29 at 11:59pm.\n\nLab 9: Simulation Exploration\n\nDue Tuesday 6/2 at 11:59pm.\n\nRequired Reading\n\nReview the material from this week for the final Group Quiz Monday"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#lab-9-regression-exploration",
+    "href": "slides/week-9/w9-regression.html#lab-9-regression-exploration",
+    "title": "Linear Regression",
+    "section": "Lab 9: Regression Exploration",
+    "text": "Lab 9: Regression Exploration"
+  },
+  {
+    "objectID": "reading/week-9.html",
+    "href": "reading/week-9.html",
+    "title": "Week 9: Linear Regression",
+    "section": "",
+    "text": "1 Learning Objectives\nBy the end of the week, you should be able to:\n\nFit a simple linear regression model in R\nPull out relevant model information using the broom package\nConduct simulations illustrating statistical behaviors of regression estimates\n\n\n📖 Required Readings: 60 min\n\n\n\n\n2 Simple Linear Regression\nYou now have the skills to import, wrangle, and visualize data. All of these tools help us prepare our data for statistical modeling if that is desired for your analyses. While we have sprinkled some formal statistical analyses throughout the course, in this section we will be formally reviewing Linear Regression. First let’s review simple linear regression. Linear regression models the linear relationship between two quantitative variables.\n\n📖 Suggested Reading: Modern Dive: Basic Regression\n\n\n📽 Optional Video: Simple Linear Regression\n\n\n📽 Optional Video: Checking Model Conditions\n\n\n\n3 Linear Regression in R\nTo demonstrate linear regression in R, we will be working with the penguins data set.\n\nhead(penguins) |&gt; \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181\n3750\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186\n3800\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195\n3250\nfemale\n2007\n\n\nAdelie\nTorgersen\nNA\nNA\nNA\nNA\nNA\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193\n3450\nfemale\n2007\n\n\nAdelie\nTorgersen\n39.3\n20.6\n190\n3650\nmale\n2007\n\n\n\n\n\nWhen conducting linear regression with tools in R, we often want to visualize the relationship between the two quantitative variables of interest with a scatterplot. We can then use either geom_smooth(method = \"lm\") (or equivalently stat_smooth(method = \"lm\") to add a line of best fit (“regression line”) based on the ordinary least squares (OLS) equation to our scatter plot. The regression line is shown in a default blue line with the standard error uncertainty displayed in a gray transparent band (use se = FALSE to hide the standard error uncertainty band). These visual aesthetics can be changed just as any other plot aesthetics.\n\npenguins |&gt;\n  ggplot(aes(x = bill_depth_mm, \n             y = bill_length_mm\n             )\n         ) +\n  geom_point() +\n  geom_smooth(method = \"lm\") + \n  labs(x = \"Bill Depth (mm)\",\n       subtitle = \"Bill Length (mm)\",\n       title = \"Relationship between penguin bill length and depth\"\n       ) +\n  theme(axis.title.y = element_blank())\n\n\n\n\n\n\n\n\nIn simple linear regression, we can define the linear relationship with a mathematical equation given by:\n\\[y = a + b\\cdot x\\]\nwhere\n\n\\(y\\) are the values of the response variable,\n\\(x\\) are the values of the explanatory/predictor variable,\n\\(a\\) is the \\(y\\)-intercept (average value of \\(y\\) when \\(x = 0\\)), and\n\\(b\\) is the slope coefficient (for every 1 unit increase in \\(x\\), the average of \\(y\\) increases by b)\n\nIn statistics, we use slightly different notation to denote this relationship with the estimated linear regression equation:\n\\[\\hat{y}_i = \\hat{\\beta}_0 + \\hat{\\beta}_1 x_i \\]\nNote that the “hat” symbol above our response variable indicates this is an “estimated” value (or our best guess).\nWe can “fit” the linear regression equation with the lm function in R. The formula argument is denoted as y ~ x where the left hand side (LHS) is our response variable and the right hand side (RHS) contains our explanatory/predictor variable(s). We indicate the data set with the data argument and therefore use the variable names (as opposed to vectors) when defining our formula. We name (my_model) and save our fitted model just as we would any other R object.\n\nmy_model &lt;- lm(bill_length_mm ~ bill_depth_mm, \n               data = penguins)\n\nNow that we have fit our linear regression, we might be wondering how we actually get the information out of our model. What are the y-intercept and slope coefficient estimates? What is my residual? How good was the fit? The code options below help us obtain this information.\n\nRaw CoefficientsModel SummaryTidy Model Summary\n\n\nThis is what is output when you just call the name of the linear model object you created (my_model). Notice, the output doesn’t give you much information and it looks kind of bad.\n\nmy_model\n\n\nCall:\nlm(formula = bill_length_mm ~ bill_depth_mm, data = penguins)\n\nCoefficients:\n  (Intercept)  bill_depth_mm  \n      55.0674        -0.6498  \n\n\n\n\nThis is what is output when you use the summary() function on a linear model object. Notice, the output gives you a lot of information, some of which is really not that useful. And, the output is quite messy!\n\nsummary(my_model)\n\n\nCall:\nlm(formula = bill_length_mm ~ bill_depth_mm, data = penguins)\n\nResiduals:\n     Min       1Q   Median       3Q      Max \n-12.8949  -3.9042  -0.3772   3.6800  15.5798 \n\nCoefficients:\n              Estimate Std. Error t value Pr(&gt;|t|)    \n(Intercept)    55.0674     2.5160  21.887  &lt; 2e-16 ***\nbill_depth_mm  -0.6498     0.1457  -4.459 1.12e-05 ***\n---\nSignif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1\n\nResidual standard error: 5.314 on 340 degrees of freedom\n  (2 observations deleted due to missingness)\nMultiple R-squared:  0.05525,   Adjusted R-squared:  0.05247 \nF-statistic: 19.88 on 1 and 340 DF,  p-value: 1.12e-05\n\n\n\n\nThe tidy() function from the {broom} package takes a linear model object and puts the “important” information into a tidy tibble output.\nThat’s nice!\n\nlibrary(broom)\n\nbroom::tidy(my_model) |&gt; \n  kable()\n\n\n\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\n\n(Intercept)\n55.0673698\n2.5159514\n21.887295\n0.00e+00\n\n\nbill_depth_mm\n-0.6498356\n0.1457327\n-4.459093\n1.12e-05\n\n\n\n\n\nIf you are sad that you no longer have the statistics about the model fit (e.g., R-squared, adjusted R-squared, \\(\\sigma\\)), you can use the glance() function from the broom package to grab those!\n\nbroom::glance(my_model) |&gt; \n  kable()\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nr.squared\nadj.r.squared\nsigma\nstatistic\np.value\ndf\nlogLik\nAIC\nBIC\ndeviance\ndf.residual\nnobs\n\n\n\n\n0.0552499\n0.0524712\n5.314418\n19.88351\n1.12e-05\n1\n-1055.559\n2117.118\n2128.622\n9602.635\n340\n342"
   }
 ]

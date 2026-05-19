@@ -1,0 +1,132 @@
+---
+title: "Week 9: Linear Regression"
+number-sections: true
+number-depth: 2
+---
+
+```{r}
+#| label: setup
+#| echo: false
+#| message: false
+
+library(knitr)
+library(broom)
+library(tidyverse)
+library(palmerpenguins)
+```
+
+
+# Learning Objectives
+
+By the end of the week, you should be able to:
+
++ Fit a simple linear regression model in R
++ Pull out relevant model information using the `broom` package
++ Conduct simulations illustrating statistical behaviors of regression estimates
+
+#### 📖 Required Readings: 60 min
+
+------------------------------------------------------------------------
+
+# Simple Linear Regression
+
+
+You now have the skills to import, wrangle, and visualize data. All of these tools help us prepare our data for statistical modeling if that is desired for your analyses. While we have sprinkled some formal statistical analyses throughout the course, in this section we will be formally reviewing Linear Regression. First let’s review simple linear regression. Linear regression models the linear relationship between two quantitative variables.
+
+#### 📖 Suggested Reading: [Modern Dive: Basic Regression](https://moderndive.com/5-regression.html)
+
+#### 📽 Optional Video: [Simple Linear Regression](https://youtu.be/1IMpg1ukMpY)
+#### 📽 Optional Video: [Checking Model Conditions](https://youtu.be/LD3OSSVxKMU)
+
+# Linear Regression in R
+
+To demonstrate linear regression in R, we will be working with the `penguins` data set.
+
+```{r}
+head(penguins) |> 
+  kable()
+```
+
+When conducting linear regression with tools in R, we often want to **visualize the relationship** between the two quantitative variables of interest with a scatterplot. We can then use either `geom_smooth(method = "lm")` (or equivalently `stat_smooth(method = "lm")` to add a line of best fit ("regression line") based on the ordinary least squares (OLS) equation to our scatter plot. The regression line is shown in a default blue line with the standard error uncertainty displayed in a gray transparent band (use `se = FALSE` to hide the standard error uncertainty band). These visual aesthetics can be changed just as any other plot aesthetics.
+
+```{r}
+#| message: false
+#| warning: false
+penguins |>
+  ggplot(aes(x = bill_depth_mm, 
+             y = bill_length_mm
+             )
+         ) +
+  geom_point() +
+  geom_smooth(method = "lm") + 
+  labs(x = "Bill Depth (mm)",
+       subtitle = "Bill Length (mm)",
+       title = "Relationship between penguin bill length and depth"
+       ) +
+  theme(axis.title.y = element_blank())
+```
+
+In simple linear regression, we can define the linear relationship with a mathematical equation given by:
+
+$$y = a + b\cdot x$$
+
+where
+
++ $y$ are the values of the response variable,
++ $x$ are the values of the explanatory/predictor variable,
++ $a$ is the $y$-intercept (**average** value of $y$ when $x = 0$), and
++ $b$ is the slope coefficient (for every 1 unit increase in $x$, the **average** of $y$ increases by b)
+
+
+In statistics, we use slightly different notation to denote this relationship with the estimated linear regression equation:
+
+$$\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x_i $$
+
+Note that the "hat" symbol above our response variable indicates this is an "estimated" value (or our best guess).
+
+We can **"fit" the linear regression** equation with the `lm` function in R. The `formula` argument is denoted as `y ~ x` where the left hand side (LHS) is our response variable and the right hand side (RHS) contains our explanatory/predictor variable(s). We indicate the data set with the `data` argument and therefore use the variable names (as opposed to vectors) when defining our formula. We name (`my_model)` and save our fitted model just as we would any other R object.
+
+```{r}
+my_model <- lm(bill_length_mm ~ bill_depth_mm, 
+               data = penguins)
+```
+
+Now that we have fit our linear regression, we might be wondering how we actually *get* the information out of our model. What are the y-intercept and slope coefficient estimates? What is my residual? How good was the fit? The code options below help us obtain this information.
+
+::: panel-tabset
+#### Raw Coefficients
+This is what is output when you just call the name of the linear model object you created (`my_model`). Notice, the output doesn't give you much information and it looks kind of bad.
+
+```{r}
+my_model
+```
+
+#### Model Summary
+This is what is output when you use the `summary()` function on a linear model object. Notice, the output gives you a lot of information, some of which is really not that useful. And, the output is quite messy!
+
+```{r}
+summary(my_model)
+```
+
+#### Tidy Model Summary
+
+The `tidy()` function from the {broom} package takes a linear model object and puts the "important" information into a tidy tibble output.
+
+That's nice!
+
+```{r}
+library(broom)
+
+broom::tidy(my_model) |> 
+  kable()
+```
+
+If you are sad that you no longer have the statistics about the model fit (e.g., R-squared, adjusted R-squared, $\sigma$), you can use the `glance()` function from the broom package to grab those!
+
+```{r}
+broom::glance(my_model) |> 
+  kable()
+```
+:::
+
+
