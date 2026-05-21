@@ -27,7 +27,7 @@ not_here_dates <- c(
 
 # Dates of Exams
 exam_dates <- c(ymd(20260506), 
-                ymd(20260606)
+                ymd(20260608)
                 )
 finals_week <- seq(ymd(20260607), ymd(20260613), by = 1)
 project_dates <- ymd(20260605)
@@ -102,7 +102,7 @@ class_cal <- Cal |>
 exam_days <- Cal |> 
   filter(category == "Exam") |> 
   mutate(topic = c("Midterm Exam", 
-                   "Tentative Common Final Exam"
+                   "Common Final Exam 7:10-10pm"
                    )
          ) |> 
   rowwise() |> 
@@ -134,9 +134,9 @@ class_days <- Cal |>
     "Data Transformations + Factors",
     "Special Data Types",
     "Version Control",
-    "Functions",
-    "Functional Programming",
-    "Simulation",
+    "Functions and Iteration",
+    "Functions and Simulation",
+    "Regression",
     "Inference and Advanced Graphics")) |> 
   bind_rows(project_days) |> 
   bind_rows(exam_days) |> 
@@ -155,7 +155,7 @@ Cal2 <- tibble(date = seq(ymd(20240107), ymd(20240113), by = 1))  |>
          week     = wom(date),
          classday = wkdy %in% class_wdays,
          officehrday = wkdy %in% officehr_wdays,
-         officehrtime = c(NA, NA, "10:30am-\n12:00pm", NA, "9:00-\n10:00am",  NA, NA)
+         officehrtime = c(NA, NA, "9:30-\n11:00am", NA, "1:30-\n3:00pm",  NA, NA)
   )
 
 
