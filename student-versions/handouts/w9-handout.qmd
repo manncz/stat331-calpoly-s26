@@ -1,0 +1,88 @@
+---
+title: "STAT 331 Week 9 Handout"
+format: html
+embed-resources: true
+---
+
+```{r}
+#| label: setup
+
+library(gt)
+library(gtsummary)
+library(knitr)
+library(broom)
+library(tidyverse)
+```
+
+
+NC births data loaded from `openintro` package:
+
+```{r}
+library(openintro)
+data(ncbirths)
+?ncbirths
+```
+
+## Simple Linear Regression in R
+
+1. We are interested on how the length of pregnancy impacts the birth weight of babies.
+
+The explanatory variable is:
+The response variable is:
+
+2. When creating a scatterplot to explore the relationship between two quantitative variables, we put the __________ variable on the y-axis and the _________ variable on the x-axis.
+
+
+3. How are regression models specified in the `lm()` function in R?
+
+
+4. Fit a linear regression model of birth weight on length of pregnancy.
+
+```{r}
+
+```
+
+5. Which function in the `broom` package outputs a nice tibble table of the model coefficients? Use this function to get the table of coefficients for your model in 4. 
+
+```{r}
+
+```
+
+6. What are two different ways to pull out the residuals for your regression model and data?
+
+```{r}
+
+```
+
+
+7. What does the `augment()` function from the `broom` package do?
+
+8. Check the model assumptions for your model from Q4.
+
+```{r}
+
+```
+
+9. What does the `glance()` function from the `broom` package do?
+
+
+## Regression on Subsets of Data
+
+The code here removes missing values for our variables on interest and then "nests" the data into four subsets, based on whether the birth parent smokes and whether the baby was premature.
+
+```{r}
+ncbirths_clean <- ncbirths |> 
+    filter(!if_any(.cols = c(premie, habit, weight, gained),
+                 .fns = is.na))
+```
+
+
+```{r}
+ncbirths_clean |> 
+  nest(premie_smoke_dat = -c(premie, habit))
+```
+
+10. Add to the code above to fit the regression model `weight ~ gained` on each of the subsets separately using `map()`.
+
+
+11. Why might we want to use this kind of technique to fit separate regression models on subsets of the data?
