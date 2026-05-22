@@ -48,6 +48,8 @@ This dataset contains a random sample of 1,000 births from North Carolina in 200
 ## NC Births Data
 
 ```{r}
+#| eval: false
+
 library(openintro)
 data(ncbirths)
 slice_sample(ncbirths, n = 10) |> 
@@ -56,6 +58,15 @@ slice_sample(ncbirths, n = 10) |>
   kableExtra::kable_styling(font_size = 30)
 ```
 
+```{r}
+#| echo: false
+#| 
+library(openintro)
+slice_sample(ncbirths, n = 10) |> 
+  knitr::kable() |> 
+  kableExtra::scroll_box(height = "400px") |> 
+  kableExtra::kable_styling(font_size = 30)
+```
 
 # Relationships Between Variables
 
