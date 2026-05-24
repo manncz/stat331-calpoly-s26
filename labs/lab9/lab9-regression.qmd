@@ -105,11 +105,11 @@ Let's generate a simulation-based null distribution and see if it aligns with th
 
 :::callout-important
 
-I have filled in some of this code for you! You should not have to edit the code I provided for Step 1 and Step 3. 
+I have filled in some of this code for you! You shouldn't have to edit Step 2. 
 
-Getting a formula to work when providing bare variable names is sort of tricky, so I set that up for you in Step 1.
+Particularly, need another function we haven't learned yet to use bare variable names as a formula -- `substitute()`.
 
-For example, if the function is called like so:
+If the function is called like so:
 
 ```
 perm_slr(dat = penguins,
@@ -117,7 +117,7 @@ perm_slr(dat = penguins,
          exp = flipper_len)
 ```
 
-Then the code in Step 1 will create a formula object `bill_len ~ flipper_len` that can then be used in the `lm()` function in Step 3, as provided.
+Then the code in Step 2 will fit the model `bill_len ~ flipper_len`.
 
 :::
 
@@ -125,27 +125,17 @@ Then the code in Step 1 will create a formula object `bill_len ~ flipper_len` th
 #| eval: false
 
 perm_slr <- function(dat, resp, exp){
-  
-  # Step 1: create a formula object with the provided
-  # response and explanatory variables to be used with `lm()`
-  form <- formula(
-    str_c(
-      deparse(substitute(resp)),
-      "~",
-      deparse(substitute(exp))
-      ))
-  
-  # Step 2: create a new dataframe with the values of the explanatory
+
+  # Step 1: create a new dataframe with the values of the explanatory
   # variable randomly permuted between the observations
   
   perm_dat <- 
   
-  # Step 3: fit a regression model using the formula created in step 1
-  # and the permuted data created in step 2
+  # Step 2: fit a regression model with the permuted data created in step 1
   
-  mymod <- lm(form, data = perm_dat)
+  mymod <- lm(substitute(resp ~ exp), data = perm_dat)
   
-  # Step 4: return the t-statistic for the estimated slope coefficient 
+  # Step 3: return the t-statistic for the estimated slope coefficient 
   # from the model
   
   

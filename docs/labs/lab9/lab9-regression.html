@@ -508,43 +508,33 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>I have filled in some of this code for you! You should not have to edit the code I provided for Step 1 and Step 3.</p>
-<p>Getting a formula to work when providing bare variable names is sort of tricky, so I set that up for you in Step 1.</p>
-<p>For example, if the function is called like so:</p>
+<p>I have filled in some of this code for you! You shouldn’t have to edit Step 2.</p>
+<p>Particularly, need another function we haven’t learned yet to use bare variable names as a formula – <code>substitute()</code>.</p>
+<p>If the function is called like so:</p>
 <pre><code>perm_slr(dat = penguins,
          resp = bill_len,
          exp = flipper_len)</code></pre>
-<p>Then the code in Step 1 will create a formula object <code>bill_len ~ flipper_len</code> that can then be used in the <code>lm()</code> function in Step 3, as provided.</p>
+<p>Then the code in Step 2 will fit the model <code>bill_len ~ flipper_len</code>.</p>
 </div>
 </div>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>perm_slr <span class="ot">&lt;-</span> <span class="cf">function</span>(dat, resp, exp){</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 1: create a formula object with the provided</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># response and explanatory variables to be used with `lm()`</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  form <span class="ot">&lt;-</span> <span class="fu">formula</span>(</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_c</span>(</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>      <span class="fu">deparse</span>(<span class="fu">substitute</span>(resp)),</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      <span class="st">"~"</span>,</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      <span class="fu">deparse</span>(<span class="fu">substitute</span>(exp))</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>      ))</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 1: create a new dataframe with the values of the explanatory</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># variable randomly permuted between the observations</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  perm_dat <span class="ot">&lt;-</span> </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 2: fit a regression model with the permuted data created in step 1</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  mymod <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">substitute</span>(resp <span class="sc">~</span> exp), <span class="at">data =</span> perm_dat)</span>
 <span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 2: create a new dataframe with the values of the explanatory</span></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># variable randomly permuted between the observations</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 3: return the t-statistic for the estimated slope coefficient </span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># from the model</span></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  perm_dat <span class="ot">&lt;-</span> </span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 3: fit a regression model using the formula created in step 1</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and the permuted data created in step 2</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  mymod <span class="ot">&lt;-</span> <span class="fu">lm</span>(form, <span class="at">data =</span> perm_dat)</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 4: return the t-statistic for the estimated slope coefficient </span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># from the model</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Make sure that your function works by running this code! It should just output a single number.</p>
 <div class="cell">
@@ -1264,11 +1254,11 @@ Tip
 <span id="cb18-111"><a href="#cb18-111" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-112"><a href="#cb18-112" aria-hidden="true" tabindex="-1"></a>:::callout-important</span>
 <span id="cb18-113"><a href="#cb18-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-114"><a href="#cb18-114" aria-hidden="true" tabindex="-1"></a>I have filled in some of this code for you! You should not have to edit the code I provided for Step 1 and Step 3. </span>
+<span id="cb18-114"><a href="#cb18-114" aria-hidden="true" tabindex="-1"></a>I have filled in some of this code for you! You shouldn't have to edit Step 2. </span>
 <span id="cb18-115"><a href="#cb18-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-116"><a href="#cb18-116" aria-hidden="true" tabindex="-1"></a>Getting a formula to work when providing bare variable names is sort of tricky, so I set that up for you in Step 1.</span>
+<span id="cb18-116"><a href="#cb18-116" aria-hidden="true" tabindex="-1"></a>Particularly, need another function we haven't learned yet to use bare variable names as a formula -- <span class="in">`substitute()`</span>.</span>
 <span id="cb18-117"><a href="#cb18-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-118"><a href="#cb18-118" aria-hidden="true" tabindex="-1"></a>For example, if the function is called like so:</span>
+<span id="cb18-118"><a href="#cb18-118" aria-hidden="true" tabindex="-1"></a>If the function is called like so:</span>
 <span id="cb18-119"><a href="#cb18-119" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-120"><a href="#cb18-120" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-121"><a href="#cb18-121" aria-hidden="true" tabindex="-1"></a><span class="in">perm_slr(dat = penguins,</span></span>
@@ -1276,7 +1266,7 @@ Tip
 <span id="cb18-123"><a href="#cb18-123" aria-hidden="true" tabindex="-1"></a><span class="in">         exp = flipper_len)</span></span>
 <span id="cb18-124"><a href="#cb18-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-125"><a href="#cb18-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-126"><a href="#cb18-126" aria-hidden="true" tabindex="-1"></a>Then the code in Step 1 will create a formula object <span class="in">`bill_len ~ flipper_len`</span> that can then be used in the <span class="in">`lm()`</span> function in Step 3, as provided.</span>
+<span id="cb18-126"><a href="#cb18-126" aria-hidden="true" tabindex="-1"></a>Then the code in Step 2 will fit the model <span class="in">`bill_len ~ flipper_len`</span>.</span>
 <span id="cb18-127"><a href="#cb18-127" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-128"><a href="#cb18-128" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb18-129"><a href="#cb18-129" aria-hidden="true" tabindex="-1"></a></span>
@@ -1284,206 +1274,196 @@ Tip
 <span id="cb18-133"><a href="#cb18-133" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb18-134"><a href="#cb18-134" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-135"><a href="#cb18-135" aria-hidden="true" tabindex="-1"></a>perm_slr <span class="ot">&lt;-</span> <span class="cf">function</span>(dat, resp, exp){</span>
-<span id="cb18-136"><a href="#cb18-136" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-137"><a href="#cb18-137" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 1: create a formula object with the provided</span></span>
-<span id="cb18-138"><a href="#cb18-138" aria-hidden="true" tabindex="-1"></a>  <span class="co"># response and explanatory variables to be used with `lm()`</span></span>
-<span id="cb18-139"><a href="#cb18-139" aria-hidden="true" tabindex="-1"></a>  form <span class="ot">&lt;-</span> <span class="fu">formula</span>(</span>
-<span id="cb18-140"><a href="#cb18-140" aria-hidden="true" tabindex="-1"></a>    <span class="fu">str_c</span>(</span>
-<span id="cb18-141"><a href="#cb18-141" aria-hidden="true" tabindex="-1"></a>      <span class="fu">deparse</span>(<span class="fu">substitute</span>(resp)),</span>
-<span id="cb18-142"><a href="#cb18-142" aria-hidden="true" tabindex="-1"></a>      <span class="st">"~"</span>,</span>
-<span id="cb18-143"><a href="#cb18-143" aria-hidden="true" tabindex="-1"></a>      <span class="fu">deparse</span>(<span class="fu">substitute</span>(exp))</span>
-<span id="cb18-144"><a href="#cb18-144" aria-hidden="true" tabindex="-1"></a>      ))</span>
+<span id="cb18-136"><a href="#cb18-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-137"><a href="#cb18-137" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 1: create a new dataframe with the values of the explanatory</span></span>
+<span id="cb18-138"><a href="#cb18-138" aria-hidden="true" tabindex="-1"></a>  <span class="co"># variable randomly permuted between the observations</span></span>
+<span id="cb18-139"><a href="#cb18-139" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-140"><a href="#cb18-140" aria-hidden="true" tabindex="-1"></a>  perm_dat <span class="ot">&lt;-</span> </span>
+<span id="cb18-141"><a href="#cb18-141" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-142"><a href="#cb18-142" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 2: fit a regression model with the permuted data created in step 1</span></span>
+<span id="cb18-143"><a href="#cb18-143" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-144"><a href="#cb18-144" aria-hidden="true" tabindex="-1"></a>  mymod <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="fu">substitute</span>(resp <span class="sc">~</span> exp), <span class="at">data =</span> perm_dat)</span>
 <span id="cb18-145"><a href="#cb18-145" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-146"><a href="#cb18-146" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 2: create a new dataframe with the values of the explanatory</span></span>
-<span id="cb18-147"><a href="#cb18-147" aria-hidden="true" tabindex="-1"></a>  <span class="co"># variable randomly permuted between the observations</span></span>
+<span id="cb18-146"><a href="#cb18-146" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 3: return the t-statistic for the estimated slope coefficient </span></span>
+<span id="cb18-147"><a href="#cb18-147" aria-hidden="true" tabindex="-1"></a>  <span class="co"># from the model</span></span>
 <span id="cb18-148"><a href="#cb18-148" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-149"><a href="#cb18-149" aria-hidden="true" tabindex="-1"></a>  perm_dat <span class="ot">&lt;-</span> </span>
+<span id="cb18-149"><a href="#cb18-149" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb18-150"><a href="#cb18-150" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-151"><a href="#cb18-151" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 3: fit a regression model using the formula created in step 1</span></span>
-<span id="cb18-152"><a href="#cb18-152" aria-hidden="true" tabindex="-1"></a>  <span class="co"># and the permuted data created in step 2</span></span>
-<span id="cb18-153"><a href="#cb18-153" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-154"><a href="#cb18-154" aria-hidden="true" tabindex="-1"></a>  mymod <span class="ot">&lt;-</span> <span class="fu">lm</span>(form, <span class="at">data =</span> perm_dat)</span>
-<span id="cb18-155"><a href="#cb18-155" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-156"><a href="#cb18-156" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Step 4: return the t-statistic for the estimated slope coefficient </span></span>
-<span id="cb18-157"><a href="#cb18-157" aria-hidden="true" tabindex="-1"></a>  <span class="co"># from the model</span></span>
-<span id="cb18-158"><a href="#cb18-158" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-159"><a href="#cb18-159" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-160"><a href="#cb18-160" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-161"><a href="#cb18-161" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb18-162"><a href="#cb18-162" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-163"><a href="#cb18-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-164"><a href="#cb18-164" aria-hidden="true" tabindex="-1"></a>Make sure that your function works by running this code! It should just output a single number.</span>
+<span id="cb18-151"><a href="#cb18-151" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb18-152"><a href="#cb18-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-153"><a href="#cb18-153" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-154"><a href="#cb18-154" aria-hidden="true" tabindex="-1"></a>Make sure that your function works by running this code! It should just output a single number.</span>
+<span id="cb18-155"><a href="#cb18-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-158"><a href="#cb18-158" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-159"><a href="#cb18-159" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-160"><a href="#cb18-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-161"><a href="#cb18-161" aria-hidden="true" tabindex="-1"></a><span class="fu">perm_slr</span>(<span class="at">dat =</span> MA_schools,</span>
+<span id="cb18-162"><a href="#cb18-162" aria-hidden="true" tabindex="-1"></a>         <span class="at">resp =</span> average_sat_math,</span>
+<span id="cb18-163"><a href="#cb18-163" aria-hidden="true" tabindex="-1"></a>         <span class="at">exp =</span> perc_disadvan)</span>
+<span id="cb18-164"><a href="#cb18-164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-165"><a href="#cb18-165" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-168"><a href="#cb18-168" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-169"><a href="#cb18-169" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb18-170"><a href="#cb18-170" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-171"><a href="#cb18-171" aria-hidden="true" tabindex="-1"></a><span class="fu">perm_slr</span>(<span class="at">dat =</span> MA_schools,</span>
-<span id="cb18-172"><a href="#cb18-172" aria-hidden="true" tabindex="-1"></a>         <span class="at">resp =</span> average_sat_math,</span>
-<span id="cb18-173"><a href="#cb18-173" aria-hidden="true" tabindex="-1"></a>         <span class="at">exp =</span> perc_disadvan)</span>
-<span id="cb18-174"><a href="#cb18-174" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-175"><a href="#cb18-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-176"><a href="#cb18-176" aria-hidden="true" tabindex="-1"></a>**Now let's generate a null distribution for the t-statistic!** I set up code for you to run 1,000 iterations of the simulation. </span>
-<span id="cb18-177"><a href="#cb18-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-180"><a href="#cb18-180" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-181"><a href="#cb18-181" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-166"><a href="#cb18-166" aria-hidden="true" tabindex="-1"></a>**Now let's generate a null distribution for the t-statistic!** I set up code for you to run 1,000 iterations of the simulation. </span>
+<span id="cb18-167"><a href="#cb18-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-170"><a href="#cb18-170" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-171"><a href="#cb18-171" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-172"><a href="#cb18-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-173"><a href="#cb18-173" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">331</span>)</span>
+<span id="cb18-174"><a href="#cb18-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-175"><a href="#cb18-175" aria-hidden="true" tabindex="-1"></a>perm_results <span class="ot">&lt;-</span> <span class="fu">map_dbl</span>(<span class="at">.x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
+<span id="cb18-176"><a href="#cb18-176" aria-hidden="true" tabindex="-1"></a>                        <span class="at">.f =</span> <span class="sc">~</span> <span class="fu">perm_slr</span>(<span class="at">dat =</span> MA_schools,</span>
+<span id="cb18-177"><a href="#cb18-177" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">resp =</span> average_sat_math,</span>
+<span id="cb18-178"><a href="#cb18-178" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">exp =</span> perc_disadvan))</span>
+<span id="cb18-179"><a href="#cb18-179" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-180"><a href="#cb18-180" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-181"><a href="#cb18-181" aria-hidden="true" tabindex="-1"></a>**6. Plot the simulation results!** Using `ggplot`, **create a histogram of the simulated t-statistics.** Theory tells us that the distribution of those t-statistics should follow a $t$ distribution with $n-1$ degrees of freedom, where $n$ is the number of observations in the data. **Add the theoretical density curve** for a $t$ distribution with $n-1$ degrees of freedom. Does it look like the theoretical curve matches the simulated curve? Is the observed t-statistic for the actual data (Question 2) unusual based on this null distribution?</span>
 <span id="cb18-182"><a href="#cb18-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-183"><a href="#cb18-183" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">331</span>)</span>
+<span id="cb18-183"><a href="#cb18-183" aria-hidden="true" tabindex="-1"></a>:::callout-tip</span>
 <span id="cb18-184"><a href="#cb18-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-185"><a href="#cb18-185" aria-hidden="true" tabindex="-1"></a>perm_results <span class="ot">&lt;-</span> <span class="fu">map_dbl</span>(<span class="at">.x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
-<span id="cb18-186"><a href="#cb18-186" aria-hidden="true" tabindex="-1"></a>                        <span class="at">.f =</span> <span class="sc">~</span> <span class="fu">perm_slr</span>(<span class="at">dat =</span> MA_schools,</span>
-<span id="cb18-187"><a href="#cb18-187" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">resp =</span> average_sat_math,</span>
-<span id="cb18-188"><a href="#cb18-188" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">exp =</span> perc_disadvan))</span>
-<span id="cb18-189"><a href="#cb18-189" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-190"><a href="#cb18-190" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-191"><a href="#cb18-191" aria-hidden="true" tabindex="-1"></a>**6. Plot the simulation results!** Using `ggplot`, **create a histogram of the simulated t-statistics.** Theory tells us that the distribution of those t-statistics should follow a $t$ distribution with $n-1$ degrees of freedom, where $n$ is the number of observations in the data. **Add the theoretical density curve** for a $t$ distribution with $n-1$ degrees of freedom. Does it look like the theoretical curve matches the simulated curve? Is the observed t-statistic for the actual data (Question 2) unusual based on this null distribution?</span>
-<span id="cb18-192"><a href="#cb18-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-193"><a href="#cb18-193" aria-hidden="true" tabindex="-1"></a>:::callout-tip</span>
+<span id="cb18-185"><a href="#cb18-185" aria-hidden="true" tabindex="-1"></a>You will need to convert the <span class="in">`perm_result`</span> vector into a dataframe or tibble before passing it into <span class="in">`ggplot()`</span>!</span>
+<span id="cb18-186"><a href="#cb18-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-187"><a href="#cb18-187" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb18-188"><a href="#cb18-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-191"><a href="#cb18-191" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-192"><a href="#cb18-192" aria-hidden="true" tabindex="-1"></a><span class="co"># Q6 code</span></span>
+<span id="cb18-193"><a href="#cb18-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-194"><a href="#cb18-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-195"><a href="#cb18-195" aria-hidden="true" tabindex="-1"></a>You will need to convert the <span class="in">`perm_result`</span> vector into a dataframe or tibble before passing it into <span class="in">`ggplot()`</span>!</span>
+<span id="cb18-195"><a href="#cb18-195" aria-hidden="true" tabindex="-1"></a>You just implemented simluation-based inference for simple linear regression like in the <span class="co">[</span><span class="ot">Rossman-Chance applets</span><span class="co">](https://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm)</span> 🥳!</span>
 <span id="cb18-196"><a href="#cb18-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-197"><a href="#cb18-197" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb18-198"><a href="#cb18-198" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-201"><a href="#cb18-201" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-202"><a href="#cb18-202" aria-hidden="true" tabindex="-1"></a><span class="co"># Q6 code</span></span>
-<span id="cb18-203"><a href="#cb18-203" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-204"><a href="#cb18-204" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-205"><a href="#cb18-205" aria-hidden="true" tabindex="-1"></a>You just implemented simluation-based inference for simple linear regression like in the <span class="co">[</span><span class="ot">Rossman-Chance applets</span><span class="co">](https://www.rossmanchance.com/applets/2021/regshuffle/regshuffle.htm)</span> 🥳!</span>
+<span id="cb18-197"><a href="#cb18-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-198"><a href="#cb18-198" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simulating Coverage</span></span>
+<span id="cb18-199"><a href="#cb18-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-200"><a href="#cb18-200" aria-hidden="true" tabindex="-1"></a>Many students struggle with the definition of a confidence interval when first learning the concept. The interpretation that a lot of textbooks include is something like "if we were to repeat the study many many times, 95% of the confidence intervals would contain the true population parameter."</span>
+<span id="cb18-201"><a href="#cb18-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-202"><a href="#cb18-202" aria-hidden="true" tabindex="-1"></a>We are going to implement a simulation that illustrates this statistical concept using confidence intervals for the slope parameter in a linear regression model.</span>
+<span id="cb18-203"><a href="#cb18-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-204"><a href="#cb18-204" aria-hidden="true" tabindex="-1"></a>Let's break it down into a couple of steps.</span>
+<span id="cb18-205"><a href="#cb18-205" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-206"><a href="#cb18-206" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-207"><a href="#cb18-207" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-208"><a href="#cb18-208" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simulating Coverage</span></span>
-<span id="cb18-209"><a href="#cb18-209" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-210"><a href="#cb18-210" aria-hidden="true" tabindex="-1"></a>Many students struggle with the definition of a confidence interval when first learning the concept. The interpretation that a lot of textbooks include is something like "if we were to repeat the study many many times, 95% of the confidence intervals would contain the true population parameter."</span>
+<span id="cb18-207"><a href="#cb18-207" aria-hidden="true" tabindex="-1"></a>As a reminder, the typical population model that we assume for a linear regression is:</span>
+<span id="cb18-208"><a href="#cb18-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-209"><a href="#cb18-209" aria-hidden="true" tabindex="-1"></a>$$Y = \beta_0 + \beta_1 X + \varepsilon$$</span>
+<span id="cb18-210"><a href="#cb18-210" aria-hidden="true" tabindex="-1"></a>Where $\beta_0$ and $\beta_1$ are the population intercept and slope parameters and and $\varepsilon \sim N(0, \sigma^2)$ is random noise that is normally distributed with mean 0 and variance $\sigma^2$.</span>
 <span id="cb18-211"><a href="#cb18-211" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-212"><a href="#cb18-212" aria-hidden="true" tabindex="-1"></a>We are going to implement a simulation that illustrates this statistical concept using confidence intervals for the slope parameter in a linear regression model.</span>
-<span id="cb18-213"><a href="#cb18-213" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-214"><a href="#cb18-214" aria-hidden="true" tabindex="-1"></a>Let's break it down into a couple of steps.</span>
-<span id="cb18-215"><a href="#cb18-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-212"><a href="#cb18-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-213"><a href="#cb18-213" aria-hidden="true" tabindex="-1"></a>We will design a simulation that uses this "data generating model."</span>
+<span id="cb18-214"><a href="#cb18-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-215"><a href="#cb18-215" aria-hidden="true" tabindex="-1"></a>**7. Fill in the code below to generate a synthetic dataset with 100 observations. We will assume that the explanatory variable $X$ is uniformly distributed from 0 to 1 and that $\sigma^2$ = 1. The synthetic data should be a dataframe with 100 rows and two columns: `x` and `y`.**</span>
 <span id="cb18-216"><a href="#cb18-216" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-217"><a href="#cb18-217" aria-hidden="true" tabindex="-1"></a>As a reminder, the typical population model that we assume for a linear regression is:</span>
-<span id="cb18-218"><a href="#cb18-218" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-219"><a href="#cb18-219" aria-hidden="true" tabindex="-1"></a>$$Y = \beta_0 + \beta_1 X + \varepsilon$$</span>
-<span id="cb18-220"><a href="#cb18-220" aria-hidden="true" tabindex="-1"></a>Where $\beta_0$ and $\beta_1$ are the population intercept and slope parameters and and $\varepsilon \sim N(0, \sigma^2)$ is random noise that is normally distributed with mean 0 and variance $\sigma^2$.</span>
-<span id="cb18-221"><a href="#cb18-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-219"><a href="#cb18-219" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-220"><a href="#cb18-220" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: data-generation</span></span>
+<span id="cb18-221"><a href="#cb18-221" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
 <span id="cb18-222"><a href="#cb18-222" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-223"><a href="#cb18-223" aria-hidden="true" tabindex="-1"></a>We will design a simulation that uses this "data generating model."</span>
-<span id="cb18-224"><a href="#cb18-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-225"><a href="#cb18-225" aria-hidden="true" tabindex="-1"></a>**7. Fill in the code below to generate a synthetic dataset with 100 observations. We will assume that the explanatory variable $X$ is uniformly distributed from 0 to 1 and that $\sigma^2$ = 1. The synthetic data should be a dataframe with 100 rows and two columns: `x` and `y`.**</span>
+<span id="cb18-223"><a href="#cb18-223" aria-hidden="true" tabindex="-1"></a><span class="co"># define slope and intercept parameters</span></span>
+<span id="cb18-224"><a href="#cb18-224" aria-hidden="true" tabindex="-1"></a>intercept <span class="ot">=</span> <span class="dv">2</span></span>
+<span id="cb18-225"><a href="#cb18-225" aria-hidden="true" tabindex="-1"></a>slope <span class="ot">=</span> <span class="dv">1</span></span>
 <span id="cb18-226"><a href="#cb18-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-229"><a href="#cb18-229" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-230"><a href="#cb18-230" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: data-generation</span></span>
-<span id="cb18-231"><a href="#cb18-231" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-227"><a href="#cb18-227" aria-hidden="true" tabindex="-1"></a><span class="co"># generate x vector</span></span>
+<span id="cb18-228"><a href="#cb18-228" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-229"><a href="#cb18-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-230"><a href="#cb18-230" aria-hidden="true" tabindex="-1"></a><span class="co"># generate noise `ep` vector</span></span>
+<span id="cb18-231"><a href="#cb18-231" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-232"><a href="#cb18-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-233"><a href="#cb18-233" aria-hidden="true" tabindex="-1"></a><span class="co"># define slope and intercept parameters</span></span>
-<span id="cb18-234"><a href="#cb18-234" aria-hidden="true" tabindex="-1"></a>intercept <span class="ot">=</span> <span class="dv">2</span></span>
-<span id="cb18-235"><a href="#cb18-235" aria-hidden="true" tabindex="-1"></a>slope <span class="ot">=</span> <span class="dv">1</span></span>
+<span id="cb18-233"><a href="#cb18-233" aria-hidden="true" tabindex="-1"></a><span class="co"># generate outcome from population model</span></span>
+<span id="cb18-234"><a href="#cb18-234" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> intercept <span class="sc">+</span> x<span class="sc">*</span>slope <span class="sc">+</span> ep</span>
+<span id="cb18-235"><a href="#cb18-235" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-236"><a href="#cb18-236" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-237"><a href="#cb18-237" aria-hidden="true" tabindex="-1"></a><span class="co"># generate x vector</span></span>
+<span id="cb18-237"><a href="#cb18-237" aria-hidden="true" tabindex="-1"></a><span class="co"># create an "observed data" dataframe or tibble with only the x and y vectors</span></span>
 <span id="cb18-238"><a href="#cb18-238" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-239"><a href="#cb18-239" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-240"><a href="#cb18-240" aria-hidden="true" tabindex="-1"></a><span class="co"># generate noise `ep` vector</span></span>
-<span id="cb18-241"><a href="#cb18-241" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-239"><a href="#cb18-239" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-240"><a href="#cb18-240" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-241"><a href="#cb18-241" aria-hidden="true" tabindex="-1"></a>**8. Fit a simple linear regression model of the outcome `y` on `x`. Use `tidy()` from the `broom` package to extract a dataframe from the `lm()` output that includes the slope estimate and the lower and upper bounds for a a 95% confidence interval for the slope estimate. The output of this code should be a dataframe/tibble with one row  three columns: `estimate`, `conf.low` and `conf.high`**</span>
 <span id="cb18-242"><a href="#cb18-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-243"><a href="#cb18-243" aria-hidden="true" tabindex="-1"></a><span class="co"># generate outcome from population model</span></span>
-<span id="cb18-244"><a href="#cb18-244" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> intercept <span class="sc">+</span> x<span class="sc">*</span>slope <span class="sc">+</span> ep</span>
-<span id="cb18-245"><a href="#cb18-245" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-246"><a href="#cb18-246" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-247"><a href="#cb18-247" aria-hidden="true" tabindex="-1"></a><span class="co"># create an "observed data" dataframe or tibble with only the x and y vectors</span></span>
-<span id="cb18-248"><a href="#cb18-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-245"><a href="#cb18-245" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-246"><a href="#cb18-246" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: test-linear-model</span></span>
+<span id="cb18-247"><a href="#cb18-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-248"><a href="#cb18-248" aria-hidden="true" tabindex="-1"></a><span class="co"># Q8 code</span></span>
 <span id="cb18-249"><a href="#cb18-249" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-250"><a href="#cb18-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-251"><a href="#cb18-251" aria-hidden="true" tabindex="-1"></a>**8. Fit a simple linear regression model of the outcome `y` on `x`. Use `tidy()` from the `broom` package to extract a dataframe from the `lm()` output that includes the slope estimate and the lower and upper bounds for a a 95% confidence interval for the slope estimate. The output of this code should be a dataframe/tibble with one row  three columns: `estimate`, `conf.low` and `conf.high`**</span>
-<span id="cb18-252"><a href="#cb18-252" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-255"><a href="#cb18-255" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-256"><a href="#cb18-256" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: test-linear-model</span></span>
+<span id="cb18-251"><a href="#cb18-251" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-252"><a href="#cb18-252" aria-hidden="true" tabindex="-1"></a>**9. Check whether the true population slope is inside of the estimated 95% confidence interval for that simulated dataset. Specifically, *add* a variable called `cover` to the dataframe of estimates you created in the last question (Q5) that is `1` if the population slope is in the interval and `0` if not.**  </span>
+<span id="cb18-253"><a href="#cb18-253" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-254"><a href="#cb18-254" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
+<span id="cb18-255"><a href="#cb18-255" aria-hidden="true" tabindex="-1"></a>As a reminder, we set <span class="in">`slope = 1`</span> in the data generation (Q4) so the true population slope is $\beta_1 = 1$.</span>
+<span id="cb18-256"><a href="#cb18-256" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb18-257"><a href="#cb18-257" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-258"><a href="#cb18-258" aria-hidden="true" tabindex="-1"></a><span class="co"># Q8 code</span></span>
-<span id="cb18-259"><a href="#cb18-259" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-260"><a href="#cb18-260" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-261"><a href="#cb18-261" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-262"><a href="#cb18-262" aria-hidden="true" tabindex="-1"></a>**9. Check whether the true population slope is inside of the estimated 95% confidence interval for that simulated dataset. Specifically, *add* a variable called `cover` to the dataframe of estimates you created in the last question (Q5) that is `1` if the population slope is in the interval and `0` if not.**  </span>
-<span id="cb18-263"><a href="#cb18-263" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-264"><a href="#cb18-264" aria-hidden="true" tabindex="-1"></a>::: callout-tip</span>
-<span id="cb18-265"><a href="#cb18-265" aria-hidden="true" tabindex="-1"></a>As a reminder, we set <span class="in">`slope = 1`</span> in the data generation (Q4) so the true population slope is $\beta_1 = 1$.</span>
-<span id="cb18-266"><a href="#cb18-266" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb18-260"><a href="#cb18-260" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-261"><a href="#cb18-261" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: check-coverage</span></span>
+<span id="cb18-262"><a href="#cb18-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-263"><a href="#cb18-263" aria-hidden="true" tabindex="-1"></a><span class="co"># Q9 code</span></span>
+<span id="cb18-264"><a href="#cb18-264" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-265"><a href="#cb18-265" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-266"><a href="#cb18-266" aria-hidden="true" tabindex="-1"></a>**10. Now put this all together into a function called `mycifun`! Run the check provided to ensure that it works correctly**</span>
 <span id="cb18-267"><a href="#cb18-267" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-270"><a href="#cb18-270" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-271"><a href="#cb18-271" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: check-coverage</span></span>
-<span id="cb18-272"><a href="#cb18-272" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-273"><a href="#cb18-273" aria-hidden="true" tabindex="-1"></a><span class="co"># Q9 code</span></span>
-<span id="cb18-274"><a href="#cb18-274" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-275"><a href="#cb18-275" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-276"><a href="#cb18-276" aria-hidden="true" tabindex="-1"></a>**10. Now put this all together into a function called `mycifun`! Run the check provided to ensure that it works correctly**</span>
-<span id="cb18-277"><a href="#cb18-277" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-278"><a href="#cb18-278" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The function should have three required arguments: <span class="in">`beta0`</span>, <span class="in">`beta1`</span>, and <span class="in">`n`</span> (the number of observations in the simulated data). </span>
-<span id="cb18-279"><a href="#cb18-279" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The function should complete the steps in Q7-9 given these arguments:</span>
-<span id="cb18-280"><a href="#cb18-280" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-281"><a href="#cb18-281" aria-hidden="true" tabindex="-1"></a><span class="ss">  1. </span>generate one synthetic dataset based on the data generating model as above</span>
-<span id="cb18-282"><a href="#cb18-282" aria-hidden="true" tabindex="-1"></a><span class="ss">  2. </span>fit a linear regression model</span>
-<span id="cb18-283"><a href="#cb18-283" aria-hidden="true" tabindex="-1"></a><span class="ss">  3. </span>check that the **population slope** is contained in the estimated 95% confidence interval for the sample slope</span>
-<span id="cb18-284"><a href="#cb18-284" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb18-285"><a href="#cb18-285" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The output of the function should be a dataframe/tibble with one row and four columns: the slope estimate, lower bound of the CI, upper bound of the CI, and whether the population slope is within the CI.</span>
-<span id="cb18-286"><a href="#cb18-286" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-289"><a href="#cb18-289" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-290"><a href="#cb18-290" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: ci-sim-function</span></span>
-<span id="cb18-291"><a href="#cb18-291" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-292"><a href="#cb18-292" aria-hidden="true" tabindex="-1"></a><span class="co"># Q10 code</span></span>
-<span id="cb18-293"><a href="#cb18-293" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-268"><a href="#cb18-268" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The function should have three required arguments: <span class="in">`beta0`</span>, <span class="in">`beta1`</span>, and <span class="in">`n`</span> (the number of observations in the simulated data). </span>
+<span id="cb18-269"><a href="#cb18-269" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The function should complete the steps in Q7-9 given these arguments:</span>
+<span id="cb18-270"><a href="#cb18-270" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-271"><a href="#cb18-271" aria-hidden="true" tabindex="-1"></a><span class="ss">  1. </span>generate one synthetic dataset based on the data generating model as above</span>
+<span id="cb18-272"><a href="#cb18-272" aria-hidden="true" tabindex="-1"></a><span class="ss">  2. </span>fit a linear regression model</span>
+<span id="cb18-273"><a href="#cb18-273" aria-hidden="true" tabindex="-1"></a><span class="ss">  3. </span>check that the **population slope** is contained in the estimated 95% confidence interval for the sample slope</span>
+<span id="cb18-274"><a href="#cb18-274" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb18-275"><a href="#cb18-275" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>The output of the function should be a dataframe/tibble with one row and four columns: the slope estimate, lower bound of the CI, upper bound of the CI, and whether the population slope is within the CI.</span>
+<span id="cb18-276"><a href="#cb18-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-279"><a href="#cb18-279" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-280"><a href="#cb18-280" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: ci-sim-function</span></span>
+<span id="cb18-281"><a href="#cb18-281" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-282"><a href="#cb18-282" aria-hidden="true" tabindex="-1"></a><span class="co"># Q10 code</span></span>
+<span id="cb18-283"><a href="#cb18-283" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-284"><a href="#cb18-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-287"><a href="#cb18-287" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-288"><a href="#cb18-288" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: small-test-ci-fun</span></span>
+<span id="cb18-289"><a href="#cb18-289" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb18-290"><a href="#cb18-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-291"><a href="#cb18-291" aria-hidden="true" tabindex="-1"></a><span class="fu">mycifun</span>(<span class="at">beta0 =</span> <span class="dv">1</span>, <span class="at">beta1 =</span> <span class="dv">2</span>, <span class="at">n =</span> <span class="dv">1000</span>)</span>
+<span id="cb18-292"><a href="#cb18-292" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-293"><a href="#cb18-293" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-294"><a href="#cb18-294" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-297"><a href="#cb18-297" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-298"><a href="#cb18-298" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: small-test-ci-fun</span></span>
-<span id="cb18-299"><a href="#cb18-299" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb18-300"><a href="#cb18-300" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-301"><a href="#cb18-301" aria-hidden="true" tabindex="-1"></a><span class="fu">mycifun</span>(<span class="at">beta0 =</span> <span class="dv">1</span>, <span class="at">beta1 =</span> <span class="dv">2</span>, <span class="at">n =</span> <span class="dv">1000</span>)</span>
-<span id="cb18-302"><a href="#cb18-302" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-303"><a href="#cb18-303" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-304"><a href="#cb18-304" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-305"><a href="#cb18-305" aria-hidden="true" tabindex="-1"></a>**11a. Now run this simulation  1,000 times using `map_dfr()` and the function you wrote (`mycifun()`). Generate data with $\beta_0 = 3$, $\beta_1 = .5$ and $n = 100$. Make sure to add a line of code to make your simulation reproducible every time you run it.** </span>
-<span id="cb18-306"><a href="#cb18-306" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-309"><a href="#cb18-309" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-310"><a href="#cb18-310" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: run-ci-sim</span></span>
+<span id="cb18-295"><a href="#cb18-295" aria-hidden="true" tabindex="-1"></a>**11a. Now run this simulation  1,000 times using `map_dfr()` and the function you wrote (`mycifun()`). Generate data with $\beta_0 = 3$, $\beta_1 = .5$ and $n = 100$. Make sure to add a line of code to make your simulation reproducible every time you run it.** </span>
+<span id="cb18-296"><a href="#cb18-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-299"><a href="#cb18-299" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-300"><a href="#cb18-300" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: run-ci-sim</span></span>
+<span id="cb18-301"><a href="#cb18-301" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-302"><a href="#cb18-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-303"><a href="#cb18-303" aria-hidden="true" tabindex="-1"></a>ci_dat <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="at">.x =</span>     ,</span>
+<span id="cb18-304"><a href="#cb18-304" aria-hidden="true" tabindex="-1"></a>                  <span class="at">.f =</span> </span>
+<span id="cb18-305"><a href="#cb18-305" aria-hidden="true" tabindex="-1"></a>                    )</span>
+<span id="cb18-306"><a href="#cb18-306" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-307"><a href="#cb18-307" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-308"><a href="#cb18-308" aria-hidden="true" tabindex="-1"></a>**11b. What does one row in the resulting `ci_dat` represent?**</span>
+<span id="cb18-309"><a href="#cb18-309" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-310"><a href="#cb18-310" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-311"><a href="#cb18-311" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-312"><a href="#cb18-312" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-313"><a href="#cb18-313" aria-hidden="true" tabindex="-1"></a>ci_dat <span class="ot">&lt;-</span> <span class="fu">map_dfr</span>(<span class="at">.x =</span>     ,</span>
-<span id="cb18-314"><a href="#cb18-314" aria-hidden="true" tabindex="-1"></a>                  <span class="at">.f =</span> </span>
-<span id="cb18-315"><a href="#cb18-315" aria-hidden="true" tabindex="-1"></a>                    )</span>
-<span id="cb18-316"><a href="#cb18-316" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-317"><a href="#cb18-317" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-318"><a href="#cb18-318" aria-hidden="true" tabindex="-1"></a>**11b. What does one row in the resulting `ci_dat` represent?**</span>
+<span id="cb18-312"><a href="#cb18-312" aria-hidden="true" tabindex="-1"></a>**11c. What is your simulated coverage rate? In otherwords, for what proportion of the iterations was the population slope within the estimated 95% confidence interval? Write your answer as a sentence in Markdown using inline code!**</span>
+<span id="cb18-313"><a href="#cb18-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-316"><a href="#cb18-316" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-317"><a href="#cb18-317" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: sim-cov</span></span>
+<span id="cb18-318"><a href="#cb18-318" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-319"><a href="#cb18-319" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-320"><a href="#cb18-320" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-320"><a href="#cb18-320" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-321"><a href="#cb18-321" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-322"><a href="#cb18-322" aria-hidden="true" tabindex="-1"></a>**11c. What is your simulated coverage rate? In otherwords, for what proportion of the iterations was the population slope within the estimated 95% confidence interval? Write your answer as a sentence in Markdown using inline code!**</span>
-<span id="cb18-323"><a href="#cb18-323" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-326"><a href="#cb18-326" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-327"><a href="#cb18-327" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: sim-cov</span></span>
+<span id="cb18-322"><a href="#cb18-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-323"><a href="#cb18-323" aria-hidden="true" tabindex="-1"></a>**12. Create a visualization to illustrate the coverage rate.**</span>
+<span id="cb18-324"><a href="#cb18-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-325"><a href="#cb18-325" aria-hidden="true" tabindex="-1"></a>You can create any visualization that effectively illustrates the concept. I included a plot below with my idea of an effective plot to illustrate the concept of coverage. Actually, a professor showed me a plot like this in undergrad and I have always remembered it! </span>
+<span id="cb18-326"><a href="#cb18-326" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-327"><a href="#cb18-327" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-328"><a href="#cb18-328" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-329"><a href="#cb18-329" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-330"><a href="#cb18-330" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb18-329"><a href="#cb18-329" aria-hidden="true" tabindex="-1"></a>:::callout-tip</span>
+<span id="cb18-330"><a href="#cb18-330" aria-hidden="true" tabindex="-1"></a>You do not need to exactly copy the plot, even if you choose to do something like it.  A couple of hints to get you started on making a plot like this one:</span>
 <span id="cb18-331"><a href="#cb18-331" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-332"><a href="#cb18-332" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-333"><a href="#cb18-333" aria-hidden="true" tabindex="-1"></a>**12. Create a visualization to illustrate the coverage rate.**</span>
-<span id="cb18-334"><a href="#cb18-334" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-335"><a href="#cb18-335" aria-hidden="true" tabindex="-1"></a>You can create any visualization that effectively illustrates the concept. I included a plot below with my idea of an effective plot to illustrate the concept of coverage. Actually, a professor showed me a plot like this in undergrad and I have always remembered it! </span>
-<span id="cb18-336"><a href="#cb18-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-332"><a href="#cb18-332" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check out <span class="in">`geom_errorbar()`</span></span>
+<span id="cb18-333"><a href="#cb18-333" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check out <span class="in">`geom_vline()`</span> for the line indicating the true population slope</span>
+<span id="cb18-334"><a href="#cb18-334" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>See <span class="co">[</span><span class="ot">this slide</span><span class="co">](https://atheobold.github.io/ADS-course-materials/slides/week-9/iteration.html#/removing-your-legend)</span> for code from Dr. Theobold to include colors in a title rather than a legend.</span>
+<span id="cb18-335"><a href="#cb18-335" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I took a random sample of 100 simulations to make it easier to look at.</span>
+<span id="cb18-336"><a href="#cb18-336" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb18-337"><a href="#cb18-337" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-338"><a href="#cb18-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-339"><a href="#cb18-339" aria-hidden="true" tabindex="-1"></a>:::callout-tip</span>
-<span id="cb18-340"><a href="#cb18-340" aria-hidden="true" tabindex="-1"></a>You do not need to exactly copy the plot, even if you choose to do something like it.  A couple of hints to get you started on making a plot like this one:</span>
-<span id="cb18-341"><a href="#cb18-341" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-342"><a href="#cb18-342" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check out <span class="in">`geom_errorbar()`</span></span>
-<span id="cb18-343"><a href="#cb18-343" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Check out <span class="in">`geom_vline()`</span> for the line indicating the true population slope</span>
-<span id="cb18-344"><a href="#cb18-344" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>See <span class="co">[</span><span class="ot">this slide</span><span class="co">](https://atheobold.github.io/ADS-course-materials/slides/week-9/iteration.html#/removing-your-legend)</span> for code from Dr. Theobold to include colors in a title rather than a legend.</span>
-<span id="cb18-345"><a href="#cb18-345" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I took a random sample of 100 simulations to make it easier to look at.</span>
-<span id="cb18-346"><a href="#cb18-346" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb18-338"><a href="#cb18-338" aria-hidden="true" tabindex="-1"></a><span class="al">![Example Plot](ci_plot.png)</span></span>
+<span id="cb18-339"><a href="#cb18-339" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-342"><a href="#cb18-342" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb18-343"><a href="#cb18-343" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: cov-plot</span></span>
+<span id="cb18-344"><a href="#cb18-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-345"><a href="#cb18-345" aria-hidden="true" tabindex="-1"></a><span class="co"># Q12 code</span></span>
+<span id="cb18-346"><a href="#cb18-346" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 <span id="cb18-347"><a href="#cb18-347" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-348"><a href="#cb18-348" aria-hidden="true" tabindex="-1"></a><span class="al">![Example Plot](ci_plot.png)</span></span>
-<span id="cb18-349"><a href="#cb18-349" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-352"><a href="#cb18-352" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb18-353"><a href="#cb18-353" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: cov-plot</span></span>
-<span id="cb18-354"><a href="#cb18-354" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-355"><a href="#cb18-355" aria-hidden="true" tabindex="-1"></a><span class="co"># Q12 code</span></span>
-<span id="cb18-356"><a href="#cb18-356" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb18-357"><a href="#cb18-357" aria-hidden="true" tabindex="-1"></a></span>
 </code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
