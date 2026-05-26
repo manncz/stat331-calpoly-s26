@@ -138,7 +138,7 @@ How would you characterize this relationship?
 #| fig-width: 10
 ncbirths |> 
 ggplot(aes(x = weeks, y = weight)) +
-  geom_jitter() + 
+  geom_point(alpha = .5) +
   labs(x = "Length of pregnancy (in weeks)",
        y = "Birth weight of baby (in lbs)") +
   theme(axis.title = element_text(size = 20),
@@ -223,7 +223,7 @@ When visualizing data, fit a regression line ($y$ on $x$) to your scatterplot.
 #| fig-align: center
 ncbirths |> 
   ggplot(aes(x = gained, y = weight)) +
-  geom_jitter() + 
+  geom_point(alpha = .8) +
   geom_smooth(method = "lm") 
 ```
 
@@ -355,7 +355,7 @@ There are four conditions that must be met for  a linear regression model to be 
 library(patchwork)
 ## curvature
 p1 <- ggplot(ncbirths, aes(x = weeks, y = weight)) +
-  geom_jitter(alpha = 0.5) +
+  geom_point(alpha = 0.5) +
   geom_smooth(method = "lm") +
   labs(x = "Length of pregnancy (in weeks)", y = "Birth weight of baby (in lbs)")
 

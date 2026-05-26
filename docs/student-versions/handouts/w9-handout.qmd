@@ -42,28 +42,35 @@ The response variable is:
 
 ```
 
-5. Which function in the `broom` package outputs a nice tibble table of the model coefficients? Use this function to get the table of coefficients for your model in 4. 
-
-```{r}
-
-```
-
-6. What are two different ways to pull out the residuals for your regression model and data?
+5. What does the `summary()` function from base R return? What data type does it return?
 
 ```{r}
 
 ```
 
 
-7. What does the `augment()` function from the `broom` package do?
-
-8. Check the model assumptions for your model from Q4.
+6. Which function in the `broom` package outputs a nice tibble table of the model coefficients? Use this function to get the table of coefficients for your model in 4. 
 
 ```{r}
 
 ```
 
-9. What does the `glance()` function from the `broom` package do?
+7. What are two different ways to pull out the residuals for your regression model and data?
+
+```{r}
+
+```
+
+
+8. What does the `augment()` function from the `broom` package do?
+
+9. Check the model assumptions for your model from Q4.
+
+```{r}
+
+```
+
+10. What does the `glance()` function from the `broom` package do?
 
 
 ## Regression on Subsets of Data
@@ -82,7 +89,7 @@ ncbirths_clean |>
   nest(premie_smoke_dat = -c(premie, habit))
 ```
 
-10. Add to the code above to fit the regression model `weight ~ gained` on each of the subsets separately using `map()`.
+11. Add to the code above to fit the regression model `weight ~ gained` on each of the subsets separately using `map()`.
 
 
-11. Why might we want to use this kind of technique to fit separate regression models on subsets of the data?
+12. Why might we want to use this kind of technique to fit separate regression models on subsets of the data?
