@@ -5030,7 +5030,7 @@
     "href": "slides/week-9/w9-regression.html#nc-births-data-1",
     "title": "Linear Regression",
     "section": "NC Births Data",
-    "text": "NC Births Data\n\nlibrary(openintro)\ndata(ncbirths)\nslice_sample(ncbirths, n = 10) |&gt; \n  knitr::kable() |&gt; \n  kableExtra::scroll_box(height = \"400px\") |&gt; \n  kableExtra::kable_styling(font_size = 30)\n\n\n\n\n \n  \n    fage \n    mage \n    mature \n    weeks \n    premie \n    visits \n    marital \n    gained \n    weight \n    lowbirthweight \n    gender \n    habit \n    whitemom \n  \n \n\n  \n    28 \n    20 \n    younger mom \n    42 \n    full term \n    30 \n    not married \n    23 \n    7.44 \n    not low \n    female \n    smoker \n    white \n  \n  \n    NA \n    26 \n    younger mom \n    37 \n    full term \n    16 \n    not married \n    22 \n    6.56 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    28 \n    22 \n    younger mom \n    41 \n    full term \n    15 \n    married \n    9 \n    10.19 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    33 \n    28 \n    younger mom \n    39 \n    full term \n    10 \n    not married \n    39 \n    7.31 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    37 \n    35 \n    mature mom \n    28 \n    premie \n    8 \n    married \n    15 \n    2.25 \n    low \n    male \n    nonsmoker \n    white \n  \n  \n    33 \n    26 \n    younger mom \n    39 \n    full term \n    11 \n    not married \n    27 \n    5.38 \n    low \n    female \n    nonsmoker \n    not white \n  \n  \n    40 \n    34 \n    younger mom \n    39 \n    full term \n    15 \n    married \n    20 \n    6.38 \n    not low \n    male \n    nonsmoker \n    not white \n  \n  \n    NA \n    20 \n    younger mom \n    39 \n    full term \n    16 \n    not married \n    19 \n    5.44 \n    low \n    female \n    nonsmoker \n    white \n  \n  \n    28 \n    25 \n    younger mom \n    40 \n    full term \n    7 \n    married \n    31 \n    9.19 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    26 \n    29 \n    younger mom \n    37 \n    full term \n    12 \n    not married \n    12 \n    6.31 \n    not low \n    female \n    nonsmoker \n    white"
+    "text": "NC Births Data\n\nlibrary(openintro)\ndata(ncbirths)\nslice_sample(ncbirths, n = 10) |&gt; \n  knitr::kable() |&gt; \n  kableExtra::scroll_box(height = \"400px\") |&gt; \n  kableExtra::kable_styling(font_size = 30)\n\n\n\n\n \n  \n    fage \n    mage \n    mature \n    weeks \n    premie \n    visits \n    marital \n    gained \n    weight \n    lowbirthweight \n    gender \n    habit \n    whitemom \n  \n \n\n  \n    36 \n    35 \n    mature mom \n    37 \n    full term \n    14 \n    married \n    30 \n    7.63 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    21 \n    22 \n    younger mom \n    39 \n    full term \n    15 \n    married \n    80 \n    8.56 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    45 \n    37 \n    mature mom \n    35 \n    premie \n    9 \n    married \n    45 \n    4.31 \n    low \n    male \n    nonsmoker \n    white \n  \n  \n    38 \n    37 \n    mature mom \n    40 \n    full term \n    14 \n    married \n    35 \n    8.63 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    29 \n    25 \n    younger mom \n    39 \n    full term \n    10 \n    married \n    29 \n    7.63 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    35 \n    30 \n    younger mom \n    43 \n    full term \n    12 \n    married \n    30 \n    7.63 \n    not low \n    male \n    nonsmoker \n    white \n  \n  \n    NA \n    29 \n    younger mom \n    37 \n    full term \n    13 \n    not married \n    14 \n    5.00 \n    low \n    female \n    nonsmoker \n    not white \n  \n  \n    24 \n    27 \n    younger mom \n    39 \n    full term \n    15 \n    not married \n    42 \n    6.75 \n    not low \n    female \n    smoker \n    not white \n  \n  \n    44 \n    38 \n    mature mom \n    38 \n    full term \n    14 \n    married \n    65 \n    6.25 \n    not low \n    female \n    nonsmoker \n    white \n  \n  \n    37 \n    34 \n    younger mom \n    37 \n    full term \n    18 \n    married \n    0 \n    4.75 \n    low \n    female \n    nonsmoker \n    not white"
   },
   {
     "objectID": "slides/week-9/w9-regression.html#relationships-between-variables-1",
@@ -5318,5 +5318,180 @@
     "title": "Week 10: Model Validation and Advanced Graphics",
     "section": "3.2 Maps",
     "text": "3.2 Maps\nWhen you want to show trends over space, plotting maps can be extremely useful (and fun)!\n\n📖 Required Reading: Sections 6.1-6.3 from ggplot2: Elegant Graphics for Data Analysis (3e) (Wickham et al. 2025)\n\n\nBasic Polygon Maps\nAs you read in the ggplot2 book, there are a couple of different ways to work with geospatial data. I am going to focus on an example using the polygons because that is what I know and it does the trick for mapping US states and counties.\nThe map package provides polygon data of US states. I can pull that data using the map_data function:\n\nus_states &lt;- map_data(\"state\")\n\n\ndim(us_states)\n\n[1] 15537     6\n\ncolnames(us_states)\n\n[1] \"long\"      \"lat\"       \"group\"     \"order\"     \"region\"    \"subregion\"\n\n\nThe resulting dataset has 15,537 rows which seems weird because there are 50 states (51 with D.C.). What is going on??\n\nus_states |&gt; \n  head() |&gt; \n  knitr::kable()\n\n\n\n\nlong\nlat\ngroup\norder\nregion\nsubregion\n\n\n\n\n-87.46201\n30.38968\n1\n1\nalabama\nNA\n\n\n-87.48493\n30.37249\n1\n2\nalabama\nNA\n\n\n-87.52503\n30.37249\n1\n3\nalabama\nNA\n\n\n-87.53076\n30.33239\n1\n4\nalabama\nNA\n\n\n-87.57087\n30.32665\n1\n5\nalabama\nNA\n\n\n-87.58806\n30.32665\n1\n6\nalabama\nNA\n\n\n\n\n\nThere are many rows for each state, defining the boundaries of the state by latitude and longitude. It also turns out that the data only include the contiguous US states plus D.C. (so this excludes Hawaii and Alaska). We will just accept that for now.\nWe can quickly create a map of the US states using geom_polygon. Here, the x and y aesthetics are the longitude and latitude respectively. We also need to set the group aesthetic so that ggplot knows to group the shapes by state. I will use cartesian coordinates for now, which is set with coord_cartesian().\n\nus_states |&gt; \n  ggplot(aes(x = long, y = lat, group = group)) +\n  geom_polygon(fill = \"white\", color = \"grey25\",\n               linewidth = .1) +\n  coord_cartesian()\n\n\n\n\n\n\n\n\nNow for a map, we don’t really want the x or y axes grid, so I will remove all of that with the ggplot theme().\n\nus_states |&gt; \n  ggplot(aes(x = long, y = lat, group = group)) +\n  geom_polygon(fill = \"white\", color = \"grey25\",\n               linewidth = .1) +\n  coord_cartesian() +\n    xlab(\"\") + ylab(\"\") +\n  theme(plot.title = element_text(hjust = 0.5),\n        panel.border = element_blank(),\n        panel.grid.major = element_blank(),\n        panel.grid.minor = element_blank(),\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        legend.position = \"none\",\n        plot.margin = margin(0, 0, 0, 0, \"cm\"))\n\n\n\n\n\n\n\n\nNow let’s plot some of the minimum wage and political data on this map! To to this, we just need to join the wage data with the state polygon data. To make things simpler for now, I will just look at the latest year (2020).\n\nmap_wage &lt;- wage_party |&gt; \n  filter(year == 2020) |&gt; \n  mutate(state = str_to_lower(state)) |&gt;\n  right_join(us_states, \n             by = join_by(state == region))\n\nNow, when mapping, we just need to map the fill aesthetic to whichever varible we want to show. Below, I have filled by either the state minimum wage aes(fill = state_wage) and the % of the vote going to the Republican candidate aes(fill = perc_republican).\n\n\nCode\nmap_wage |&gt; \n  ggplot(aes(x = long, y = lat, group = group)) +\n  geom_polygon(aes(fill = state_wage), \n               color = \"grey25\",\n               linewidth = .1) +\n  scale_fill_gradient(low = \"#e7e1ef\", high = \"#c51b8a\") +\n  coord_cartesian() +\n  labs(x = \"\",\n       y = \"\",\n       fill = \"State Minimum Wage\\n2020 $\") +\n  theme(plot.title = element_text(hjust = 0.5),\n        legend.position = \"bottom\",\n        panel.border = element_blank(),\n        panel.grid.major = element_blank(),\n        panel.grid.minor = element_blank(),\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        plot.margin = margin(0, 0, 0, 0, \"cm\"))\n\n\n\n\n\n\n\n\n\n\n\nCode\nmap_wage |&gt; \n  ggplot(aes(x = long, y = lat, group = group)) +\n  geom_polygon(aes(fill = perc_republican), \n               color = \"grey25\",\n               linewidth = .1) +\n  scale_fill_gradient(low = \"white\", high = \"#b2182b\") +\n  coord_cartesian() +\n  labs(x = \"\",\n       y = \"\",\n       fill = \"% Vote\\nto Rep.\",\n       title = \"Percent of 2020 Presidential Election Vote for Republican Candidate by State\") +\n  theme(plot.title = element_text(hjust = 0.5),\n        legend.position = \"bottom\",\n        panel.border = element_blank(),\n        panel.grid.major = element_blank(),\n        panel.grid.minor = element_blank(),\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        plot.margin = margin(0, 0, 0, 0, \"cm\"))\n\n\n\n\n\n\n\n\n\nNow, let’s have some fun putting mapping and animated plots together! Here we are looking at the % of the presidential election vote to the Republican candidate by state for hte election years in the data.\n\n\nCode\nparty_anim &lt;- party_dat |&gt; \n  mutate(state = str_to_lower(state)) |&gt;\n  right_join(us_states, by = join_by(state == region)) |&gt; \n   ggplot(aes(x = long, y = lat, group = group)) +\n  geom_polygon(aes(fill = perc_republican), \n               color = \"grey25\",\n               linewidth = .1) +\n  scale_fill_gradient(low = \"white\", high = \"#b2182b\") +\n  coord_cartesian() +\n  labs(x = \"\",\n       y = \"\",\n       fill = \"% Vote\\nto Rep.\",\n       title = \"Percent of Presidential Election Vote for Republican Candidate by State\",\n       subtitle = \"{frame_time}\") +\n  theme(plot.title = element_text(hjust = 0.5),\n        legend.position = \"bottom\",\n        plot.subtitle = element_text(color = \"#b2182b\", \n                                             size = 14),\n        panel.border = element_blank(),\n        panel.grid.major = element_blank(),\n        panel.grid.minor = element_blank(),\n        axis.text = element_blank(),\n        axis.ticks = element_blank(),\n        plot.margin = margin(0, 0, 0, 0, \"cm\")) +\n  transition_time(year) +\n  ease_aes(\"linear\")\n\n\nWarning in right_join(mutate(party_dat, state = str_to_lower(state)), us_states, : Detected an unexpected many-to-many relationship between `x` and `y`.\nℹ Row 1 of `x` matches multiple rows in `y`.\nℹ Row 1 of `y` matches multiple rows in `x`.\nℹ If a many-to-many relationship is expected, set `relationship =\n  \"many-to-many\"` to silence this warning.\n\n\nCode\nanimate(party_anim, nframes = 12, fps = 1)"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#monday-june-1",
+    "href": "slides/week-10/w10-cv-maps.html#monday-june-1",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Monday, June 1",
+    "text": "Monday, June 1\nToday we will…\n\nGroup Quiz 9\nNew Material:\n\nModel Validation\nGraphics with Geospacial Data (Maps)\n\nWork Time\n\nPA 10: Map it!\nFinal Project Submission"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#final-project-submission",
+    "href": "slides/week-10/w10-cv-maps.html#final-project-submission",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Final Project Submission",
+    "text": "Final Project Submission"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#how-do-we-tell-if-a-model-is-good",
+    "href": "slides/week-10/w10-cv-maps.html#how-do-we-tell-if-a-model-is-good",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "How do we tell if a model is “good”?",
+    "text": "How do we tell if a model is “good”?\n\nThere are lots of different metrics to measure model performance!\n\nYour choice depends on the type of model and what is “good” for the context\nDo you only care about predictions? Or more about inference?\n\n\n\nRegressionClassification (binary outcomes)\n\n\n\nSee week 9 slides\nRMSE\n\\(R^2\\)\n\n\n\n\noverall prediction success or failure rate\nsensitivity: true positive rate\nspecificity: true negative rater\nmany more…"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#overfitting-and-underfitting",
+    "href": "slides/week-10/w10-cv-maps.html#overfitting-and-underfitting",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Overfitting and Underfitting",
+    "text": "Overfitting and Underfitting\n\n\n\nFrom Introduction to Statistical Modeling"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#big-question-for-model-validation",
+    "href": "slides/week-10/w10-cv-maps.html#big-question-for-model-validation",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Big Question for Model Validation",
+    "text": "Big Question for Model Validation\nEven if a model is “good” according to our metric with the data we have, how do we know if it will still work well with other data?"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#train-test-split",
+    "href": "slides/week-10/w10-cv-maps.html#train-test-split",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Train / Test Split",
+    "text": "Train / Test Split\nBig idea: Reserve part of your data for testing to get an idea of how the model would do on outside data\n\nSplit your data into a training and a testing set (typically 80%/20%)\nSet the testing set aside\nDo all the model development you want with the training data\nFit a final model with the training data\nGenerate predictions from that model with the testing data and calculate your performance metric\nCompare the testing and training metrics"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#comparing-train-test-performance",
+    "href": "slides/week-10/w10-cv-maps.html#comparing-train-test-performance",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Comparing Train / Test Performance",
+    "text": "Comparing Train / Test Performance\n\nIf the model is overfit…\n\ntest performance &lt; training performance\n\nIf the model is underfit …\n\ntest performance &gt; training performance\n\nIf the model is neither over nor underfit …\n\ntest performance \\(\\approx\\) training performance"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation",
+    "text": "\\(k\\)-fold Cross Validation\n\nIterates over \\(k\\) train / test splits\nUses all of the data\nEspecially useful for model development\n\ncovariate selection\nspecifying parameters for ML models"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process",
+    "text": "\\(k\\)-fold Cross Validation Process\n\nChoose a value for \\(k\\)\nSplit data into \\(k\\) folds\nFor fold \\(i\\) from 1 … \\(k\\):\n\nFit model on observations not in fold \\(i\\)\nGenerate predictions from this model for the observations in fold \\(i\\)\nCalculate and save performance metric of interest\n\nAverage the \\(k\\) performance metrics across folds"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process - details",
+    "text": "\\(k\\)-fold Cross Validation Process - details\n0.Choose a value for \\(k\\)\n\nTypical values are 5 or 10\n\n\nk &lt;- 5"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-1",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-1",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process - details",
+    "text": "\\(k\\)-fold Cross Validation Process - details\n\nSplit data into \\(k\\) folds\n\n\nShould be approximately the same size\nYou could just split the data into \\(k\\) groups based on their row number\n\n\nn &lt;- nrow(ncbirths) \n\nncbirths &lt;- ncbirths |&gt; \n  mutate(fold_cut = cut(1:n, breaks = k, labels = FALSE))\n\n\nMore typical to assign groups randomly\n\n\nset.seed(394)\n\nncbirths &lt;- ncbirths |&gt; \n  mutate(fold_random = sample(rep_len(1:k, length.out = n),\n                       size = n))"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-2",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-2",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process - details",
+    "text": "\\(k\\)-fold Cross Validation Process - details\nWe implemented 5-fold CV for the model of birth weight on gestation weeks with the NC births data…\n\ncv_r2\n\n[1] 0.3412554 0.4472941 0.5447437 0.5104462 0.2991063\n\n\n\n\nAverage the \\(k\\) performance metrics across folds\n\n\nmean(cv_r2)\n\n[1] 0.4285691\n\n\n\n\nThe \\(R^2\\) from fitting the model on the full dataset was 0.449, so it appears the model is neither overfitting or underfitting (maybe slightly overfitting)."
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-3",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process---details-3",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process - details",
+    "text": "\\(k\\)-fold Cross Validation Process - details\nWe implemented 5-fold CV for the model of birth weight on gestation weeks with the NC births data…\n\ncv_r2\n\n[1] 0.5723597 0.3065272 0.4468494 0.4915381 0.3129456\n\n\n\n\nAverage the \\(k\\) performance metrics across folds\n\n\nmean(cv_r2)\n\n[1] 0.426044\n\n\n\n\nThe \\(R^2\\) from fitting the model on the full dataset was 0.449, so it appears the model is neither overfitting or underfitting."
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#a-first-not-ideal-attempt-at-k-fold-cv",
+    "href": "slides/week-10/w10-cv-maps.html#a-first-not-ideal-attempt-at-k-fold-cv",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "A first (not ideal) attempt at k-fold CV",
+    "text": "A first (not ideal) attempt at k-fold CV\n\n\nCode\n# write a function to calculate the R2\nr2_calc &lt;- function(obs, pred){\n  \n  sse &lt;- sum((obs - pred)^2, na.rm = T)\n  sst &lt;- sum((obs - mean(obs))^2, na.rm = T)\n  \n  r2 &lt;- 1 - sse/sst\n  \n  return(r2)\n}\n\n\n\n\nCode\ncv_r2 &lt;- rep(NA, k)\n\n# for each fold 1-k...\nfor(x in 1:k){\n  \n  # separate fold (test) data\n  fold_dat &lt;- ncbirths |&gt; \n    filter(fold_random == x)\n  \n  # and training data\n  train_dat &lt;- ncbirths |&gt; \n    filter(fold_random != x)\n  \n  # fit model with training data\n  it_lm &lt;- lm(weight ~ weeks, \n               data = train_dat)\n  \n  # generate predictions for the held-out fold data\n  fold_preds &lt;- predict(it_lm, newdata = fold_dat)\n\n  # calculate R2 for the held-out fold data and save it\n  cv_r2[x] &lt;- r2_calc(obs = fold_dat$weight,\n                      pred = fold_preds)\n  \n}\n\n\n\nNot great!! This only works for the exact data and model that I was working with AND uses for-loops 🫣"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#lets-write-a-general-cv-function-to-make-this-efficient",
+    "href": "slides/week-10/w10-cv-maps.html#lets-write-a-general-cv-function-to-make-this-efficient",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Let’s write a general CV function to make this efficient!",
+    "text": "Let’s write a general CV function to make this efficient!\n\nInputs:\n\na dataframe\nformula for the desired model\nnumber of folds (\\(k\\))\n\nOutput:\n\nvector of \\(k\\) \\(R^2\\) values\n\n\n\n\n\n\n\n\nImportant\n\n\nYou may need this function on the final exam…"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#we-see-geospacial-graphics-all-the-time",
+    "href": "slides/week-10/w10-cv-maps.html#we-see-geospacial-graphics-all-the-time",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "We see geospacial graphics all the time",
+    "text": "We see geospacial graphics all the time\n\n\n\nhttps://www.npr.org/sections/health-shots/2020/07/01/885263658/green-yellow-orange-or-red-this-new-tool-shows-covid-19-risk-in-your-county"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#section",
+    "href": "slides/week-10/w10-cv-maps.html#section",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "",
+    "text": "Plotting geospacial data can uncover patterns that would be hard to determine through other analyses …\n\n\n\nhttps://hpcf-files.umbc.edu/research/papers/REU2015Team2.pdf"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#section-1",
+    "href": "slides/week-10/w10-cv-maps.html#section-1",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "",
+    "text": "… It can also help make grouping of observations in your analysis clear!\n\n\n\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC11180987/"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#arcgis-doesnt-get-to-have-all-the-fun",
+    "href": "slides/week-10/w10-cv-maps.html#arcgis-doesnt-get-to-have-all-the-fun",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "ArcGIS doesn’t get to have all the fun",
+    "text": "ArcGIS doesn’t get to have all the fun\n\nThere are now many tools in R to plot geospacial data\nmaps / mapdata + geom_polygon()\n\npros: simplest way to map the US counties / states and world countries\ncons: doesn’t include all geospacial boundaries you might want!\n\nsf\n\npros: work with any common spacial object (like those used in ArcGIS) plus well maintained and up to date!\ncons: a bit more of a learning curve to use"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#pa-10-map-it",
+    "href": "slides/week-10/w10-cv-maps.html#pa-10-map-it",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "PA 10: Map it!",
+    "text": "PA 10: Map it!\nThe best way to learn how to make nice maps with ggplot is to just jump in yourself!\n\n\n\nThis image has nothing to do with this PA, it used to and is too fun to remove."
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#to-do",
+    "href": "slides/week-10/w10-cv-maps.html#to-do",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "To do…",
+    "text": "To do…\n\nPA 10: Map it!\n\nDue Thursday, 6/5 before class.\n\nFinal Project Report\n\nDue Friday, 6/6 at 11:59pm.\n\nCourse Evaluation\n\nCloses Friday, 6/6 at 11:59pm."
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process-1",
+    "href": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process-1",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "\\(k\\)-fold Cross Validation Process",
+    "text": "\\(k\\)-fold Cross Validation Process\n\n\n\nVisualization of 5-fold CV by Joshua Ebner"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#actually-should-combine-cv-and-traintest",
+    "href": "slides/week-10/w10-cv-maps.html#actually-should-combine-cv-and-traintest",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Actually… should combine CV and train/test",
+    "text": "Actually… should combine CV and train/test\n\n\n\nSource: scikit learn documentation"
+  },
+  {
+    "objectID": "slides/week-10/w10-cv-maps.html#actually-should-combine",
+    "href": "slides/week-10/w10-cv-maps.html#actually-should-combine",
+    "title": "Model Validation + Geospacial Graphics",
+    "section": "Actually… should combine",
+    "text": "Actually… should combine\n\n\n\nSource: scikit learn documentation"
+  },
+  {
+    "objectID": "slides/week-9/w9-regression.html#project-notes",
+    "href": "slides/week-9/w9-regression.html#project-notes",
+    "title": "Linear Regression",
+    "section": "Project Notes",
+    "text": "Project Notes\n\nThey are coming together nicely!\nLook at Quarto documentation and the source code for our labs to see how to do quarto styling\n\nlinks\ncallouts\nLaTeX\ncode font (summarize())\n\nThis is a final project – I expect clean work and evidence of effort"
   }
 ]

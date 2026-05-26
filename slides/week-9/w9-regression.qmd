@@ -33,6 +33,19 @@ Today we will...
   + Group Project
 
 
+## Project Notes
+
+:::incremental
+- They are coming together nicely!
+- Look at Quarto documentation and the source code for our labs to see how to do quarto styling
+  - links
+  - callouts
+  - LaTeX
+  - code font (`summarize()`)
+- This is a **final** project -- I expect clean work and evidence of effort
+
+:::
+
 # Simple Linear Regression 
 
 
