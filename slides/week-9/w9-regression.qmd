@@ -794,7 +794,7 @@ ncbirths_clean |>
 
 ## Lab 9: Regression Exploration
 
-
+![](../../labs/lab9/ci_plot.png)
 
 ## To do...
 
