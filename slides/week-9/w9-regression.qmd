@@ -411,13 +411,16 @@ Should not be able to know the $y$ value for one observation based on the $y$ va
 Less important than linearity or independence: 
 
 ```{r}
-#| echo: false
+#| code-fold: true
 #| fig-height: 4
+
+resid_sd <- sd(ncbirth_lm$residuals)
+  
 ncbirth_lm |> 
   broom::augment() |> 
   ggplot(aes(x = .resid)) +
   geom_histogram(aes(y = ..density..)) +
-  stat_function(fun = ~ dnorm(.x, mean = 0, sd = 1),
+  stat_function(fun = ~ dnorm(.x, mean = 0, sd = resid_sd),
                 color = "steelblue", lwd = 1.5) +
   xlab("Residuals") +
   theme(aspect.ratio = 1)
