@@ -61,6 +61,12 @@ To make the table, you can either use a function from the `broom` package along 
 
 **3. Conduct model diagnostics to check that the conditions for linear regression that we discussed in class are met (L.I.N.E.).** You may need multiple plots or output to check all diagnostics. You should be using techniques that we learned *in class* - not base R functions.
 
+:::callout-tip
+
+For assessing the normality of the residuals, theory tells us that the random errors are normally distributed with mean 0 and standard deviation $\sigma$ ($N(0,\sigma)$). We don't know the value of $\sigma$, but can try to estimate it with the standard deviation of the residuals themselves. See the slides for helpful code to do this!
+
+:::
+
 ```{r}
 #| label: diagnostics
 
