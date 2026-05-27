@@ -352,8 +352,10 @@ The best way to learn how to make nice maps with `ggplot` is to just jump in you
 ## To do...
 
 -   **PA 10: Map it!**
-    -   Due **Thursday, 6/5 before class**.
+    - Due **Tuesday, 6/2  at 11:59pm**.
+-   **Lab 9**
+    - Due **Tuesday, 6/2  at 11:59pm**.
 -   **Final Project Report**
-    -   Due **Friday, 6/6 at 11:59pm**.
+    -   Due **Friday, 6/5 at 11:59pm**.
 -   **Course Evaluation**
-    -   Closes **Friday, 6/6 at 11:59pm**.
+    -   Closes **Friday, 6/5 at 11:59pm**.

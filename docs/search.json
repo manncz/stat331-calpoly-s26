@@ -2289,7 +2289,7 @@
     "href": "index.html",
     "title": "Introduction to Statistical Computing in R (Spring 2026)",
     "section": "",
-    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nLinear Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
+    "text": "This page contains an outline of the topics, content, and assignments for the quarter. Note that this schedule will be updated as the quarter progresses, with all changes documented here.\n\n\n\n\n\nweek\n\n\ndate\n\n\ntopic\n\n\nslides\n\n\nnotes\n\n\nactivity\n\n\nlab\n\n\nreading\n\n\n\n\n\n\n1\n\n\nMon, 3/30\n\n\nIntro to R & RStudio\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n1\n\n\nWed, 4/1\n\n\nIntro to Quarto\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nMon, 4/6\n\n\nData Visualization with ggplot2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2\n\n\nWed, 4/8\n\n\nMore Data Visualization!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nMon, 4/13\n\n\nData Wrangling with dplyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3\n\n\nWed, 4/15\n\n\nExtending Data Wrangling Verbs\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nMon, 4/20\n\n\nData Joins & Transformations with tidyr\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4\n\n\nWed, 4/22\n\n\nWorking with Categorical Variables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nMon, 4/27\n\n\nWorking with Strings\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n5\n\n\nWed, 4/29\n\n\nWorking with Dates\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nMon, 5/4\n\n\nVersion Control\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n6\n\n\nWed, 5/6\n\n\nMidterm Exam\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nMon, 5/11\n\n\nVector Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n7\n\n\nWed, 5/13\n\n\nIteration + Nice Tables\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nMon, 5/18\n\n\nData Frame Functions\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n8\n\n\nWed, 5/20\n\n\nSimulation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nMon, 5/25\n\n\nNo Class\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n9\n\n\nWed, 5/27\n\n\nLinear Regression\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nMon, 6/1\n\n\nModel Validation and Advanced Graphics\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n10\n\n\nWed, 6/3\n\n\nTBD",
     "crumbs": [
       "Course information",
       "Schedule"
@@ -5464,7 +5464,7 @@
     "href": "slides/week-10/w10-cv-maps.html#to-do",
     "title": "Model Validation + Geospacial Graphics",
     "section": "To do…",
-    "text": "To do…\n\nPA 10: Map it!\n\nDue Thursday, 6/5 before class.\n\nFinal Project Report\n\nDue Friday, 6/6 at 11:59pm.\n\nCourse Evaluation\n\nCloses Friday, 6/6 at 11:59pm."
+    "text": "To do…\n\nPA 10: Map it!\n\nDue Tuesday, 6/2 at 11:59pm.\n\nLab 9\n\nDue Tuesday, 6/2 at 11:59pm.\n\nFinal Project Report\n\nDue Friday, 6/5 at 11:59pm.\n\nCourse Evaluation\n\nCloses Friday, 6/5 at 11:59pm."
   },
   {
     "objectID": "slides/week-10/w10-cv-maps.html#k-fold-cross-validation-process-1",
@@ -5493,5 +5493,173 @@
     "title": "Linear Regression",
     "section": "Project Notes",
     "text": "Project Notes\n\nThey are coming together nicely!\nLook at Quarto documentation and the source code for our labs to see how to do quarto styling\n\nlinks\ncallouts\nLaTeX\ncode font (summarize())\n\nThis is a final project – I expect clean work and evidence of effort"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#wednesday-june-3",
+    "href": "slides/week-10/w10-wrapup.html#wednesday-june-3",
+    "title": "Course Review and Wrap-Up",
+    "section": "Wednesday, June 3",
+    "text": "Wednesday, June 3\nToday we will…\n\nCourse Review\nFinal Exam: What to Expect\nRemaining Q & A\nWork Time\n\nFinal Project\nFinal Exam Practice"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#tools-for-the-data-science-workflow",
+    "href": "slides/week-10/w10-wrapup.html#tools-for-the-data-science-workflow",
+    "title": "Course Review and Wrap-Up",
+    "section": "Tools for the Data Science Workflow",
+    "text": "Tools for the Data Science Workflow"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#guiding-principles-for-statistical-computing",
+    "href": "slides/week-10/w10-wrapup.html#guiding-principles-for-statistical-computing",
+    "title": "Course Review and Wrap-Up",
+    "section": "Guiding Principles for Statistical Computing",
+    "text": "Guiding Principles for Statistical Computing\n\nReproducibility\nEfficiency\nReadability\nCommunication\nEthics"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#reproducibility",
+    "href": "slides/week-10/w10-wrapup.html#reproducibility",
+    "title": "Course Review and Wrap-Up",
+    "section": "Reproducibility",
+    "text": "Reproducibility\nYou can to send your code to someone else, and they can jump in and start working right away.\nThis means:\n\nFiles are organized and well-named.\nReferences to data and code work for everyone.\nPackage dependency is clear.\nCode will run every time, even if data values change.\nAnalysis process is well-explained and easy to read."
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#tools-for-reproducibility",
+    "href": "slides/week-10/w10-wrapup.html#tools-for-reproducibility",
+    "title": "Course Review and Wrap-Up",
+    "section": "Tools for Reproducibility",
+    "text": "Tools for Reproducibility\n\nQuarto Notebooks\nRelative file paths\nset.seed() for simulations / random sampling\nCreating report-ready tables and plots using R code\nGeneralizing code as much as possible\n\ne.g. not “hard-coding” column or row indices\ne.g. regular expressions\n\nGit & GitHub"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#efficiency",
+    "href": "slides/week-10/w10-wrapup.html#efficiency",
+    "title": "Course Review and Wrap-Up",
+    "section": "Efficiency",
+    "text": "Efficiency\nWe mean a number of things by efficiency including:\n\nUsing as few steps / lines of code as possible\nNot unnecessarily saving variables or objects\nComputational efficiency"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#tools-for-efficiency",
+    "href": "slides/week-10/w10-wrapup.html#tools-for-efficiency",
+    "title": "Course Review and Wrap-Up",
+    "section": "Tools for Efficiency",
+    "text": "Tools for Efficiency\n\nPiping and pipelines |&gt;\nRecognizing when long vs. wide format will be better for a task (pivot)\nacross() and if_any()\nNO FOR-LOOPS\n\ntaking advantage of vectorization\nfunctional programming with purrr\n\nuser-written functions"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#efficiency-in-practice",
+    "href": "slides/week-10/w10-wrapup.html#efficiency-in-practice",
+    "title": "Course Review and Wrap-Up",
+    "section": "Efficiency in Practice",
+    "text": "Efficiency in Practice\n\nProgrammers will always be searching for efficiency!\nApproach a problem the way that makes the most sense for you first, then consider if you can make your approach or code more efficient.\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#readability",
+    "href": "slides/week-10/w10-wrapup.html#readability",
+    "title": "Course Review and Wrap-Up",
+    "section": "Readability",
+    "text": "Readability\n\nHopefully your code can read line a sentence!\nOther’s and your future self will thank you\nWith big projects you will be writing 1,000’s of lines of code – messy code gets exponentially more difficult to read"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#tools-for-readability",
+    "href": "slides/week-10/w10-wrapup.html#tools-for-readability",
+    "title": "Course Review and Wrap-Up",
+    "section": "Tools for Readability",
+    "text": "Tools for Readability\n\nPiping and pipelines |&gt;\nCoding style (spacing, new lines, etc.)\nUsing tidyverse packages / functions\nQuarto notebooks\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#communication",
+    "href": "slides/week-10/w10-wrapup.html#communication",
+    "title": "Course Review and Wrap-Up",
+    "section": "Communication",
+    "text": "Communication\n\nCommunication may come in many forms:\n\nemailing your boss / colleague about an analysis\npresenting to clients\nwriting a memo for your company\nwriting a news article\nwriting an academic paper\ncreating an infographic instagram post\ncreating documentation on GitHub\netc…."
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#communication-1",
+    "href": "slides/week-10/w10-wrapup.html#communication-1",
+    "title": "Course Review and Wrap-Up",
+    "section": "Communication",
+    "text": "Communication\n\nHow well you code doesn’t really matter unless you can effectively communicate what you did and found!\nI CANNOT STRESS THIS ENOUGH\n\n\n\n\nAllison Horst"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#tools-for-communication",
+    "href": "slides/week-10/w10-wrapup.html#tools-for-communication",
+    "title": "Course Review and Wrap-Up",
+    "section": "Tools for Communication",
+    "text": "Tools for Communication\n\nQuarto notebooks\nThoughtful plots and tables (ggplot and kable/gt)\nGitHub\nI yelled at you about this a bunch\nPay attention to how others communicate statistical findings"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#ethics",
+    "href": "slides/week-10/w10-wrapup.html#ethics",
+    "title": "Course Review and Wrap-Up",
+    "section": "Ethics",
+    "text": "Ethics\n\nData has context\nHow are variables defined?\nWhere / who does the data come from?\nWhat is the potential impact of your analysis?\nWhat does a plot emphasize or potentially cover-up?"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#my-two-cents",
+    "href": "slides/week-10/w10-wrapup.html#my-two-cents",
+    "title": "Course Review and Wrap-Up",
+    "section": "My two-cents",
+    "text": "My two-cents\n\nBe curious about your data\nTake a beat when you run into coding errors\nOrganize your &$!#% files\nFind people whose work you admire and integrate what they do into your workflow\nTake pride in your work!\n\n\n\n\n\nArtwork by Allison Horst"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#course-feedback-discussion",
+    "href": "slides/week-10/w10-wrapup.html#course-feedback-discussion",
+    "title": "Course Review and Wrap-Up",
+    "section": "Course Feedback Discussion",
+    "text": "Course Feedback Discussion\nIn groups of 4 discuss…\n\nWhich activities did you find most interesting?\nWhat was the most challenging topic in the course?\nIs there anything you wish you learned that we didn’t cover?\nWhat helped you when you felt stuck on a problem and/or were debugging code?\nWhat are 1 or 2 of your biggest take-aways from the course?"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#take-intermediate-r",
+    "href": "slides/week-10/w10-wrapup.html#take-intermediate-r",
+    "title": "Course Review and Wrap-Up",
+    "section": "Take Intermediate R!",
+    "text": "Take Intermediate R!\n\nSTAT 3820\nTopics can include:\n\nsome review of the end of STAT 331…\nwebsites & graphical user interfaces\ndata from API’s & webscraping\nwriting packages\nmore advanced statistical algorithms"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect",
+    "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect",
+    "title": "Course Review and Wrap-Up",
+    "section": "Final Exam: What to Expect",
+    "text": "Final Exam: What to Expect\n\nThe exam is worth a total of 100 points and has 2 parts: General Questions, and Short Answer\nYou will have 2 hours and 50 minutes for the entire exam.\nYou will complete Part 1: General Questions first.\n\nThis part is closed note and closed computer.\n\nPart 2: Short Answer.\n\nA .qmd starter file will be opened at the start of each final.\nAny non-human online resources other than ChatGPT allowed\nI will pass out paper copies of the questions."
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-1",
+    "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-1",
+    "title": "Course Review and Wrap-Up",
+    "section": "Final Exam: What to Expect",
+    "text": "Final Exam: What to Expect\nThe exam is cumulative so you can expect:\n\nData manipulations with dplyr and tidyr.\nData visualizations with ggplot.\nWorking with special variable types: strings, factors, and/or dates."
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-2",
+    "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-2",
+    "title": "Course Review and Wrap-Up",
+    "section": "Final Exam: What to Expect",
+    "text": "Final Exam: What to Expect\nThere is an emphasis on the material since the midterm:\n\nFunction writing.\nIteration with map\nStatistical modeling with lm\n\nCross-validation\n\nSimulation\nNicely formatted tables"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-3",
+    "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-3",
+    "title": "Course Review and Wrap-Up",
+    "section": "Final Exam: What to Expect",
+    "text": "Final Exam: What to Expect\n\nMonday 6/8 7:10-10pm in 180-102\n\nAlternative times as scheduled and confirmed.\n\nCheck that your short answer assignment on Canvas is for the right time!\nPlan for taking the full ~3 hours\n\nbring food, water, drinks 🧋🧉 ☕️, etc.\nbring a fully charged computer and a computer charger"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#office-hours",
+    "href": "slides/week-10/w10-wrapup.html#office-hours",
+    "title": "Course Review and Wrap-Up",
+    "section": "Office Hours",
+    "text": "Office Hours\n\nFriday (tomorrow) 12:30 - 2:00pm\nMonday (6/8) 3 - 5pm\nAll in-person (25-201)\nAvailable to meet by appointment (schedule via email)"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#project-group-evaluations",
+    "href": "slides/week-10/w10-wrapup.html#project-group-evaluations",
+    "title": "Course Review and Wrap-Up",
+    "section": "Project Group Evaluations",
+    "text": "Project Group Evaluations\n\nA form is now available on Canvas to discuss how group work went\nSubmit this form by 6/12"
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#to-do",
+    "href": "slides/week-10/w10-wrapup.html#to-do",
+    "title": "Course Review and Wrap-Up",
+    "section": "To do…",
+    "text": "To do…\n\nCourse Evaluation\n\nCloses Friday, 6/5 at 11:59pm.\n\nFinal Project Submission\n\nDue Friday, 6/5 at 11:59pm.\nMay use up to 4 deadline extensions on project\n\nFinal Exam\n\nMonday 6/8 7:10-10pm in 180-102\nAlternative times as scheduled and confirmed.\n\nFinal Project Group Evaluation\n\nDue by Friday, 6/12 at 11:59pm."
   }
 ]
