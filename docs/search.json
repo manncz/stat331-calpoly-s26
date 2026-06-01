@@ -5583,7 +5583,7 @@
     "href": "slides/week-10/w10-wrapup.html#tools-for-communication",
     "title": "Course Review and Wrap-Up",
     "section": "Tools for Communication",
-    "text": "Tools for Communication\n\nQuarto notebooks\nThoughtful plots and tables (ggplot and kable/gt)\nGitHub\nI yelled at you about this a bunch\nPay attention to how others communicate statistical findings"
+    "text": "Tools for Communication\n\nQuarto notebooks\nThoughtful plots and tables (ggplot and kable/gt)\nGitHub\nPay attention to how others communicate statistical findings"
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#ethics",
@@ -5604,7 +5604,7 @@
     "href": "slides/week-10/w10-wrapup.html#course-feedback-discussion",
     "title": "Course Review and Wrap-Up",
     "section": "Course Feedback Discussion",
-    "text": "Course Feedback Discussion\nIn groups of 4 discuss…\n\nWhich activities did you find most interesting?\nWhat was the most challenging topic in the course?\nIs there anything you wish you learned that we didn’t cover?\nWhat helped you when you felt stuck on a problem and/or were debugging code?\nWhat are 1 or 2 of your biggest take-aways from the course?"
+    "text": "Course Feedback Discussion\nIn your groups discuss…\n\nWhich activities did you find most interesting?\nWhat was the most challenging topic in the course?\nIs there anything you wish you learned that we didn’t cover?\nWhat helped you when you felt stuck on a problem and/or were debugging code?\nWhat are 1 or 2 of your biggest take-aways from the course?"
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#take-intermediate-r",
@@ -5618,7 +5618,7 @@
     "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect",
     "title": "Course Review and Wrap-Up",
     "section": "Final Exam: What to Expect",
-    "text": "Final Exam: What to Expect\n\nThe exam is worth a total of 100 points and has 2 parts: General Questions, and Short Answer\nYou will have 2 hours and 50 minutes for the entire exam.\nYou will complete Part 1: General Questions first.\n\nThis part is closed note and closed computer.\n\nPart 2: Short Answer.\n\nA .qmd starter file will be opened at the start of each final.\nAny non-human online resources other than ChatGPT allowed\nI will pass out paper copies of the questions."
+    "text": "Final Exam: What to Expect\n\nThe exam is worth a total of 90 points and has 2 parts like the midterm.\nYou will have 2 hours and 50 minutes for the entire exam.\nYou will complete Part 1: General Questions first.\n\nThis part is closed note and closed computer.\n\nPart 2: Short Answer.\n\nA .qmd starter file will be opened at the start of each final.\nSubmit .pdf to Gradescope and .qmd to Canvas\nSame deal as midterm regarding resources\nI will pass out paper copies of the questions."
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-1",
@@ -5632,21 +5632,21 @@
     "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-2",
     "title": "Course Review and Wrap-Up",
     "section": "Final Exam: What to Expect",
-    "text": "Final Exam: What to Expect\nThere is an emphasis on the material since the midterm:\n\nFunction writing.\nIteration with map\nStatistical modeling with lm\n\nCross-validation\n\nSimulation\nNicely formatted tables"
+    "text": "Final Exam: What to Expect\nThere is an emphasis on the material since the midterm:\n\nFunction writing.\nIteration with map\nStatistical modeling with lm\n\nCross-validation\n\nSimulation"
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-3",
     "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-3",
     "title": "Course Review and Wrap-Up",
     "section": "Final Exam: What to Expect",
-    "text": "Final Exam: What to Expect\n\nMonday 6/8 7:10-10pm in 180-102\n\nAlternative times as scheduled and confirmed.\n\nCheck that your short answer assignment on Canvas is for the right time!\nPlan for taking the full ~3 hours\n\nbring food, water, drinks 🧋🧉 ☕️, etc.\nbring a fully charged computer and a computer charger"
+    "text": "Final Exam: What to Expect\nResources on Short Answer Portion:\n\nYou may use course and online resources other but not generative AI\nAll questions can be addressed with only the course materials\n\nthis includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)\n\nYou must cite any resources that are not the course materials\n\ninclude the prompt for Google searchers\n\nI expect what you submit is your work"
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#office-hours",
     "href": "slides/week-10/w10-wrapup.html#office-hours",
     "title": "Course Review and Wrap-Up",
     "section": "Office Hours",
-    "text": "Office Hours\n\nFriday (tomorrow) 12:30 - 2:00pm\nMonday (6/8) 3 - 5pm\nAll in-person (25-201)\nAvailable to meet by appointment (schedule via email)"
+    "text": "Office Hours\n\nThursday normal time (1:30 - 3:00pm)\nFriday 12:30 - 2:00pm\nMonday (6/8) 2:00 - 4:00 pm\nAll in-person (25-201), but can join on Zoom if requested"
   },
   {
     "objectID": "slides/week-10/w10-wrapup.html#project-group-evaluations",
@@ -5661,5 +5661,12 @@
     "title": "Course Review and Wrap-Up",
     "section": "To do…",
     "text": "To do…\n\nCourse Evaluation\n\nCloses Friday, 6/5 at 11:59pm.\n\nFinal Project Submission\n\nDue Friday, 6/5 at 11:59pm.\nMay use up to 4 deadline extensions on project\n\nFinal Exam\n\nMonday 6/8 7:10-10pm in 180-102\nAlternative times as scheduled and confirmed.\n\nFinal Project Group Evaluation\n\nDue by Friday, 6/12 at 11:59pm."
+  },
+  {
+    "objectID": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-4",
+    "href": "slides/week-10/w10-wrapup.html#final-exam-what-to-expect-4",
+    "title": "Course Review and Wrap-Up",
+    "section": "Final Exam: What to Expect",
+    "text": "Final Exam: What to Expect\n\nMonday 6/8 7:10-10pm in 180-102\n\nAlternative times as scheduled and confirmed.\n\nCheck that your short answer assignment on Canvas is for the right time!\nPlan for taking the full ~3 hours\n\nbring food, water, drinks 🧋🧉 ☕️, etc.\nbring a fully charged computer and a computer charger"
   }
 ]

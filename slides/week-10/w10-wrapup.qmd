@@ -143,7 +143,6 @@ We mean a number of things by efficiency including:
 - Quarto notebooks
 - Thoughtful plots and tables (`ggplot` and `kable`/`gt`)
 - GitHub
-- I yelled at you about this a bunch
 - Pay attention to how others communicate statistical findings
 
 
@@ -175,7 +174,7 @@ We mean a number of things by efficiency including:
 
 ## Course Feedback Discussion
 
-In groups of 4 discuss...
+In your groups discuss...
 
 1. Which activities did you find most interesting?
 
@@ -203,13 +202,14 @@ In groups of 4 discuss...
 
 ## Final Exam: What to Expect
 
-+ The exam is worth a total of 100 points and has 2 parts: General Questions, and Short Answer
++ The exam is worth a total of 90 points and has 2 parts like the midterm.
 + You will have 2 hours and 50 minutes for the entire exam.
 + You will complete Part 1: General Questions first. 
   + This part is closed note and closed computer.
 + Part 2: Short Answer.
   + A .qmd starter file will be opened at the start of each final.
-  + Any non-human online resources other than ChatGPT allowed
+  + Submit .pdf to Gradescope and .qmd to Canvas
+  + Same deal as midterm regarding resources
   + I will pass out paper copies of the questions.
 
 
@@ -230,7 +230,23 @@ There is an emphasis on the material since the midterm:
 + Statistical modeling with `lm`
   + Cross-validation
 + Simulation
-+ Nicely formatted tables
+
+## Final Exam: What to Expect
+
+Resources on Short Answer Portion:
+
+:::{.incremental}
+- You may use course and online resources other but **not generative AI**
+- All questions *can* be addressed with only the course materials
+  - this includes cheatsheets, course slides, or course assignments (anything linked through the course materials page or Canvas)
+- **You must cite any resources that are not the course materials**
+  - include the *prompt* for Google searchers
+- I expect what you submit is **your** work
+
+:::
+
+
+
 
 
 ## Final Exam: What to Expect
@@ -244,10 +260,10 @@ There is an emphasis on the material since the midterm:
 
 ## Office Hours
 
-- Friday (tomorrow) 12:30 - 2:00pm
-- Monday (6/8) 3 - 5pm
-- All in-person (25-201)
-- Available to meet by appointment (schedule via email)
+- Thursday normal time (1:30 - 3:00pm)
+- Friday 12:30 - 2:00pm
+- Monday (6/8) 2:00 - 4:00 pm
+- All in-person (25-201), but can join on Zoom if requested
 
 ## Project Group Evaluations
 
