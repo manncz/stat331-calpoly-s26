@@ -17,7 +17,7 @@ library(tidyverse)
 ```
 
 
-## Thursday, June 5
+## Wednesday, June 3
 
 Today we will...
 
@@ -188,14 +188,13 @@ In groups of 4 discuss...
 5. What are 1 or 2 of your biggest take-aways from the course?
 
 
-## Take Advanced R!
+## Take Intermediate R!
 
-- STAT 431
+- STAT 3820
 - Topics can include:
-  - more advanced visualization
+  - some review of the end of STAT 331...
   - websites & graphical user interfaces
-  - data from API's
-  - webscraping
+  - data from API's & webscraping
   - writing packages
   - more advanced statistical algorithms
   
@@ -227,34 +226,33 @@ The exam is **cumulative** so you can expect:
 There is an emphasis on the material since the midterm:
 
 + Function writing.
-+ Functional programming with `map`.
-+ Statistical modeling with `lm`.
++ Iteration with `map`
++ Statistical modeling with `lm`
+  + Cross-validation
 + Simulation
-  + Statistical distributions (`rnorm`, `dunif`, etc.)
-  + Sampling from a finite population (`sample` and `slice_sample`)
 + Nicely formatted tables
+
 
 ## Final Exam: What to Expect
 
-- During university scheduled times in our classroom:
-  - Section 70: Tuesday 10:10-1
-  - Section 71: Thursday 10:10-1
+- Monday 6/8 7:10-10pm in **180-102**
+  - Alternative times as scheduled and confirmed.
 - Check that your short answer assignment on Canvas is for the right time!
 - Plan for taking the full ~3 hours
   - bring food, water, drinks 🧋🧉 ☕️, etc.
-  - bring a computer charger
+  - bring a fully charged computer and a computer charger
 
 ## Office Hours
 
-- Friday (tomorrow) 1 - 2:30pm
-- Monday (6/9) 12 - 2pm
+- Friday (tomorrow) 12:30 - 2:00pm
+- Monday (6/8) 3 - 5pm
 - All in-person (25-201)
 - Available to meet by appointment (schedule via email)
 
 ## Project Group Evaluations
 
 - A form is now available on Canvas to discuss how group work went
-- Submit this form by 6/13 
+- Submit this form by 6/12 
 
 # Final Exam + Final Project Q & A
 
@@ -262,17 +260,17 @@ There is an emphasis on the material since the midterm:
 ## To do...
 
 + **Course Evaluation**
-  + Closes **Friday, 6/6 at 11:59pm**.
+  + Closes **Friday, 6/5 at 11:59pm**.
   
-+ **Final Project Report**
-  + Due **Friday, 6/6 at 11:59pm**.
++ **Final Project Submission**
+  + Due **Friday, 6/5 at 11:59pm**.
   + May use up to 4 deadline extensions on project
 
 + **Final Exam**
-  + University scheduled time for section
+  + Monday 6/8 7:10-10pm in 180-102
   + Alternative times as scheduled and confirmed.
   
 + **Final Project Group Evaluation**
-  + Due by **Friday, 6/13 at 11:59pm**.
+  + Due by **Friday, 6/12 at 11:59pm**.
 
   

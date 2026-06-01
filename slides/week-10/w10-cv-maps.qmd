@@ -185,11 +185,10 @@ ncbirths <- ncbirths |>
 r2_calc <- function(obs, pred){
   
   sse <- sum((obs - pred)^2, na.rm = T)
-  sst <- sum((obs - mean(obs))^2, na.rm = T)
+  sst <- sum((obs - mean(obs, na.rm = T))^2, na.rm = T)
   
-  r2 <- 1 - sse/sst
+  1 - sse/sst
   
-  return(r2)
 }
 ```
 
@@ -258,11 +257,10 @@ The $R^2$ from fitting the model on the full dataset was 0.449, so it appears th
 r2_calc <- function(obs, pred){
   
   sse <- sum((obs - pred)^2, na.rm = T)
-  sst <- sum((obs - mean(obs))^2, na.rm = T)
+  sst <- sum((obs - mean(obs, na.rm = T))^2, na.rm = T)
   
-  r2 <- 1 - sse/sst
-  
-  return(r2)
+  1 - sse/sst
+
 }
 ```
 

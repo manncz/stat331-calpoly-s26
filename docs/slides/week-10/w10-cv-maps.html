@@ -1272,12 +1272,11 @@ margin-right: 0; }
 <span id="cb8-2"><a></a>r2_calc <span class="ot">&lt;-</span> <span class="cf">function</span>(obs, pred){</span>
 <span id="cb8-3"><a></a>  </span>
 <span id="cb8-4"><a></a>  sse <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> pred)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm =</span> T)</span>
-<span id="cb8-5"><a></a>  sst <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> <span class="fu">mean</span>(obs))<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm =</span> T)</span>
+<span id="cb8-5"><a></a>  sst <span class="ot">&lt;-</span> <span class="fu">sum</span>((obs <span class="sc">-</span> <span class="fu">mean</span>(obs, <span class="at">na.rm =</span> T))<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm =</span> T)</span>
 <span id="cb8-6"><a></a>  </span>
-<span id="cb8-7"><a></a>  r2 <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="sc">-</span> sse<span class="sc">/</span>sst</span>
-<span id="cb8-8"><a></a>  </span>
-<span id="cb8-9"><a></a>  <span class="fu">return</span>(r2)</span>
-<span id="cb8-10"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-7"><a></a>  <span class="dv">1</span> <span class="sc">-</span> sse<span class="sc">/</span>sst</span>
+<span id="cb8-8"><a></a></span>
+<span id="cb8-9"><a></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 <div class="cell">
